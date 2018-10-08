@@ -1,0 +1,82 @@
+/* ============================================ *
+ *                                              *
+ *                 ALWAYS BLOCK                 *
+ *                                              *
+ * ============================================ */
+
+
+/* ---------------------------------------------------------------- *
+ * This code only runs once, even if you install lots of components *
+ * ---------------------------------------------------------------- */
+
+ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
+
+	OUTER_SET always_once_section = 1
+
+   /////////////////////////////////////////////////////////
+   //    Determine if the game is an Enhanced Edition.    //
+   /////////////////////////////////////////////////////////
+
+	OUTER_SET d9_ee =(GAME_IS "bg2ee eet") ? 1 : 0
+
+
+	///////////////////////////////
+	//    Create a blank file    //
+	///////////////////////////////
+
+	<<<<<<<< .../butchery-inline/blank
+
+>>>>>>>>
+
+
+	/////////////////////////////////////////////////
+	//    Load in any shared function libraries    //
+	/////////////////////////////////////////////////
+
+	INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
+
+	/////////////////////////////////////////////////////////////////////////////////////////
+	//    Animation slot for chieftain orog in EE and classic BG2 have different labels    //
+	/////////////////////////////////////////////////////////////////////////////////////////
+
+	OUTER_SET slot_halfogre = IDS_OF_SYMBOL(~ANIMATE~ ~HALF_OGRE~)
+	OUTER_SET slot_orogchief = (d9_ee = 1) ? IDS_OF_SYMBOL(~ANIMATE~ ~OROG_CHIEFTAIN~) : IDS_OF_SYMBOL(~ANIMATE~ ~OROG3~)
+
+
+	///////////////////////////////////////////////////////////////////////////////////////
+	//    ---------------- Handling of correctly formatted tra-files ----------------    //
+	//    Copies tra files into the autotra folder (to leave the originals untouched)    //
+	///////////////////////////////////////////////////////////////////////////////////////
+
+	ACTION_IF (!FILE_EXISTS "%MOD_FOLDER%/lang/languages_installed.mrk") BEGIN
+
+		DEFINE_ACTION_FUNCTION ~autotra_workaround~ BEGIN
+			MKDIR "%MOD_FOLDER%/lang/autotra/%LANGUAGE%"
+			COPY ~%MOD_FOLDER%/lang/%LANGUAGE%~	~%MOD_FOLDER%/lang/autotra/%LANGUAGE%~
+		END
+
+		/* Converts tra files to UTF-8 */
+		LAF ~autotra_workaround~ END
+		
+		ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
+		ACTION_DEFINE_ARRAY fl#reload BEGIN butchery d9firorc END
+		LAF HANDLE_CHARSETS 
+			INT_VAR	infer_charsets = 1
+			STR_VAR	tra_path = EVAL ~%MOD_FOLDER%/lang/autotra~
+					iconv_path = EVAL ~%MOD_FOLDER%/lang/iconv~
+					noconvert_array = fl#noconvert
+					reload_array = fl#reload
+		END
+
+		COPY ~.../butchery-inline/blank~ ~%MOD_FOLDER%/lang/languages_installed.mrk~
+
+	END // of ACTION_IF (!FILE_EXISTS "%MOD_FOLDER%/lang/languages_installed.mrk")
+
+	/* TRAs declared in LANGUAGE must be reloaded - by hand, because of the copying (for non-EE version */
+	LOAD_TRA ~butchery/lang/autotra/%LANGUAGE%/setup.tra~
+	LOAD_TRA ~butchery/lang/autotra/%LANGUAGE%/butchery.tra~
+	LOAD_TRA ~butchery/lang/autotra/%LANGUAGE%/d9firorc.tra~
+
+END	// of ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
+
