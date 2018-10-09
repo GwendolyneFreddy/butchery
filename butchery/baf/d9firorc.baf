@@ -1,0 +1,28 @@
+IF
+	Detect([PC])
+	NumTimesTalkedTo(1)
+	Global("D9firkfirstspawn","AR1203",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9firkfirstspawn","AR1203",1)
+		SetGlobalTimer("HordeTimer","AR1203",35)
+END
+
+IF
+	Detect([PC])
+	NumTimesTalkedTo(2)
+THEN
+	RESPONSE #100
+	StartDialogueNoSet([PC])
+END
+
+IF
+	Global("D9DIGDAGDRINK","AR1203",1)
+THEN
+	RESPONSE #100
+		UseItem("potn19",Myself)
+		DisplayStringHead(Myself,@303) // ~*quaffs a Potion of Agility*~
+		UseItem("potn24",Myself)
+		DisplayStringHead(Myself,@304) // ~*quaffs a Potion of Defense*~
+		SetGlobal("D9DIGDAGDRINK","AR1203",2)
+END

@@ -1,0 +1,11 @@
+IF
+	Global("D9ORCE05move","LOCALS",0)
+	See([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("D9DIGDAGDRINK","AR1203",1)
+		UseItem("potn18",Myself)
+		DisplayStringHead(Myself,@301) // ~*quaffs a Potion of Absorption*~
+		MoveToPointNoInterrupt([1990.1870])
+		SetGlobal("D9ORCE05move","LOCALS",1)
+END

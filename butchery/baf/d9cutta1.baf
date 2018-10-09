@@ -1,0 +1,54 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("TAZOK")
+		MoveViewPoint([1679.589],VERY_FAST)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("TAZOK")
+		PlaySound("HOGRE03")
+		PlaySound("HOGRE03")
+		PlaySound("HOGRE03")
+		DisplayStringHead(Myself,@331) // ~Ha ha ha! These retards have fallen into our trap!
+ 		Wait(2)
+
+		PlaySound("HOBGL04")
+		PlaySound("HOBGL04")
+		PlaySound("HOBGL04")
+
+		MoveToPointNoInterrupt([1253.696])
+		Wait(1)
+		DisplayStringHead("HOBARC02",@333) // ~Attention!~
+
+		Wait(1)
+		MoveToPointNoInterrupt([1484.650])
+		PlaySound("HOBGL01")
+		PlaySound("HOBGL01")
+		PlaySound("HOBGL01")
+		Wait(1)
+		DisplayStringHead(Myself,@334) // ~Damn, you're so ugly!~
+		Wait(3)
+	    DisplayStringHead("ORC03",@335) // ~Yes, sir!~
+	    Wait(1)
+    	PlaySound("HOGRE04")
+		PlaySound("HOGRE04")
+		PlaySound("HOGRE04")
+
+ 	    ActionOverride("observe",DestroySelf())
+		MoveToPointNoInterrupt([2069.650])
+		CreateCreature("observe",[1833.393],0)
+		Wait(1)
+		DisplayStringHead("ORC04",@336) // ~My Lord, the magic barrier is working now, intruders are trapped.~
+		Wait(2)
+		DisplayStringHead(Myself,@337) // ~Excellent, the master will be pleased and I will have my revenge!~
+		PlaySound("OGREE01")
+		PlaySound("OGREE01")
+		PlaySound("OGREE01")
+		Wait(8)
+		StartCutScene("d9cutta2")
+END

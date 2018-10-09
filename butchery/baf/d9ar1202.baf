@@ -1,0 +1,48 @@
+IF
+	Global("D9removevilains","AR1202",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9removevilains","AR1202",1)
+		ActionOverride("TAZOK",DestroySelf())
+		ActionOverride("FIRORC01",MoveBetweenAreas("AR1203",[1179.1199],9))
+END
+
+IF
+	Global("D9someorcExists","AR1202",0)
+THEN
+	RESPONSE #100
+		OpenDoor("Door34")
+		Wait(1)
+		CreateCreature("ORC01",[1852.2197],0)
+		CreateCreature("ORC01",[1916.2100],0)
+		CreateCreature("ORC01",[1916.2100],0)
+		CreateCreature("ORC01",[1916.2100],0)
+		CreateCreature("ORC01",[1916.2100],0)
+		CreateCreature("D9ORC01",[2033.2046],0)
+		SetGlobal("D9someorcExists","AR1202",1)
+END
+
+IF
+	Global("D9removevilains2","AR1202",0)
+	OR(2)
+		Global("Firmag01Move","GLOBAL",1)
+		Dead("FIRORC01") // Chef DigDag
+THEN
+	RESPONSE #100
+		SetGlobal("D9removevilains2","AR1202",1)
+		ActionOverride("TAZOK",DestroySelf())
+		ActionOverride("ORC05",DestroySelf())
+		ActionOverride("D9Groumt",DestroySelf())
+		ActionOverride("ORC06",DestroySelf())
+		ActionOverride("ORC02",DestroySelf())
+		ActionOverride("D9ORC01",DestroySelf())
+		ActionOverride("D9Bourt",DestroySelf())
+		ActionOverride("D9OGRGA",DestroySelf())
+		ActionOverride("OGREMA01",DestroySelf())
+		ActionOverride("observe",DestroySelf())
+		ActionOverride("ORC03",DestroySelf())
+		ActionOverride("ORC04",DestroySelf())
+		ActionOverride("HOBARC02",DestroySelf())
+		ActionOverride("HOBARC01",DestroySelf())
+		ActionOverride("HOBSHA01",DestroySelf())
+END

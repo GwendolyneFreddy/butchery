@@ -1,0 +1,45 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([20.0],0)
+		Wait(4)
+		LeaveAreaLUA("AR1202","",[1700.2283],4)
+		FadeFromColor([20.0],0)
+		PlaySound("d9tazoka")
+		CreateCreature("HOBARC02",[1248.750],8)	// Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("HOBARC01",[1297.753],8)	// Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("HOBSHA01",[1203.755],8)	// Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("ORC03",[1517.587],0)	// Prêtre Orque
+		CreateCreature("ORC04",[2023.555],0)	// Prêtre Orque
+		CreateCreature("OGRE01",[2183.801],3)	// Ogre
+		CreateCreature("OGRE01",[2142.860],6)
+
+		CreateCreature("ORC05",[1771.404],0)
+		CreateCreature("ORC06",[1771.404],0)
+		CreateCreature("ORC02",[1771.404],0)
+		CreateCreature("D9ORC01",[1771.404],0)
+
+		MoveViewPoint([1184.430],INSTANT)
+		Explore()
+		CreateCreature("observe",[1184.430],0)
+		Wait(2)
+		CreateCreature("d9groumt",[1270.430],0)
+		Wait(1)
+		PlaySound("d9groua")
+		PlaySound("d9groua")
+		PlaySound("d9groua")
+
+		Wait(2)
+		CreateCreature("d9bourt",[1151.438],0)
+		Wait(1)
+		PlaySound("d9baraa")
+		PlaySound("d9baraa")
+		PlaySound("d9baraa")
+
+		Wait(2)
+		CreateCreature("D9TAZOK",[1211.430],0)
+		Wait(1)
+		StartCutScene("d9cutta1")
+END

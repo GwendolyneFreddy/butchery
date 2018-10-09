@@ -1,0 +1,19 @@
+IF
+	NumTimesTalkedTo(0)
+	See([PC])
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END
+
+IF
+	Global("D9deaddigdag","AR1203",1)
+	Global("D9TAZOKDRINK","LOCALS",0)
+THEN
+	RESPONSE #100
+		UseItem("potn41",Myself)
+		DisplayStringHead(Myself,@302) // ~*quaffs a Potion of Power*~
+		UseItem("potn18",Myself)
+		DisplayStringHead(Myself,@301) // ~*quaffs a Potion of Absorption*~
+		SetGlobal("D9TAZOKDRINK","LOCALS",1)
+END
