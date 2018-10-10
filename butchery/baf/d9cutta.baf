@@ -14,7 +14,7 @@ THEN
 		CreateCreature("ORC03",[1517.587],0)	// Prêtre Orque
 		CreateCreature("ORC04",[2023.555],0)	// Prêtre Orque
 		CreateCreature("OGRE01",[2183.801],3)	// Ogre
-		CreateCreature("OGRE01",[2142.860],6)
+		CreateCreature("D9OGRGA",[2142.860],6)
 
 		CreateCreature("ORC05",[1771.404],0)
 		CreateCreature("ORC06",[1771.404],0)

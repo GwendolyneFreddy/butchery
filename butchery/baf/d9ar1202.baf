@@ -7,6 +7,7 @@ THEN
 		ActionOverride("FIRORC01",MoveBetweenAreas("AR1203",[1179.1199],9))
 END
 
+/* DEPRECATED as of v > 3.2
 IF
 	Global("D9someorcExists","AR1202",0)
 THEN
@@ -21,7 +22,7 @@ THEN
 		CreateCreature("D9ORC01",[2033.2046],0)
 		SetGlobal("D9someorcExists","AR1202",1)
 END
-
+*/
 IF
 	Global("D9removevilains2","AR1202",0)
 	OR(2)
@@ -35,14 +36,16 @@ THEN
 		ActionOverride("D9Groumt",DestroySelf())
 		ActionOverride("ORC06",DestroySelf())
 		ActionOverride("ORC02",DestroySelf())
-		ActionOverride("D9ORC01",DestroySelf())
+//		ActionOverride("D9ORC01",DestroySelf())
 		ActionOverride("D9Bourt",DestroySelf())
-		ActionOverride("D9OGRGA",DestroySelf())
-		ActionOverride("OGREMA01",DestroySelf())
 		ActionOverride("observe",DestroySelf())
 		ActionOverride("ORC03",DestroySelf())
 		ActionOverride("ORC04",DestroySelf())
 		ActionOverride("HOBARC02",DestroySelf())
 		ActionOverride("HOBARC01",DestroySelf())
 		ActionOverride("HOBSHA01",DestroySelf())
+		ActionOverride("OGRE01",DestroySelf())
+		ActionOverride("D9ORC01",DestroySelf())
+		ActionOverride("D9OGRGA",DestroySelf())
+//		ActionOverride("OGREMA01",DestroySelf())
 END

@@ -20,7 +20,8 @@ THEN
 		StartCutScene("d9cutta")
 END
 
-//BARRIÈRE MAGIQUE
+
+// BARRIÈRE MAGIQUE
 IF
 	GlobalTimerExpired("D9GateTimer","AR1203")
 	Global("D9tazokdead","AR1203",0)
@@ -36,6 +37,8 @@ THEN
 		CreateVisualEffect("SPSTRENH",[520.319])
 END
 
+
+// Removes Firkaag and Conster from AR1203 and create many enemies on the map
 IF
 	Global("D9removevilains","AR1203",0)
 THEN
@@ -43,105 +46,191 @@ THEN
 		SetGlobal("D9removevilains","AR1203",1)
 		ActionOverride("FIRKRA02",DestroySelf())
 		ActionOverride("FIRMAG01",DestroySelf())
+		CreateCreature("ORC05",[1250.1220],0)		// Orog
+		CreateCreature("ORC05",[1250.1220],0)		// Orog
+		CreateCreature("ORC01",[1250.1220],0)		// Orque
+		CreateCreature("ORC01",[1250.1220],0)		// Orque
+		CreateCreature("ORC02",[1465.1169],0)		// Archer Orque
+		CreateCreature("ORC02",[1465.1169],0)		// Archer Orque
 
-		CreateCreature("ORC05",[1250.1220],0)
-		CreateCreature("ORC06",[1151.1227],0)
-		CreateCreature("ORC01",[1250.1220],0)
-		CreateCreature("ORC01",[1250.1220],0)
+		CreateCreature("D9ORC05B",[1638.1488],0)	// Orog
+		CreateCreature("D9ORC05",[1638.1488],0)		// Orog
 
-		CreateCreature("ORC02",[1283.1240],0)
-		CreateCreature("ORC02",[1283.1240],0)
-
-		CreateCreature("D9ORC01",[1200.1327],0)
-		CreateCreature("D9ORC01",[1200.1327],0)
-
-		CreateCreature("D9ORC05B",[1638.1488],0)
-		CreateCreature("ORC06",[2019.1840],0)
-		CreateCreature("D9ORC05",[1638.1488],0)
-		CreateCreature("ORC06",[2079.1809],0)
-
-		CreateCreature("ORC03",[2017.1798],0)
-		CreateCreature("ORC02",[2057.1879],0)
-		CreateCreature("ORC02",[2080.1860],0)
-		CreateCreature("ORC02",[2111.1836],0)
-		CreateCreature("D9ORC01",[2080.1860],0)
+		CreateCreature("D9ORC01",[1200.1327],0)		// Orque
+		CreateCreature("ORC06",[2032.1874],0)		// Orog
+		CreateCreature("ORC02",[1995.1979],0)		// Archer Orque
+		CreateCreature("ORC02",[1995.1979],0)		// Archer Orque
+		CreateCreature("D9ORC01",[2080.1860],0)		// Orque
 END
 
+IF
+	Global("D9removevilains","AR1203",1)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+	    CreateCreature("d9OGMAGE",[1283.1240],0)	// Ogre-mage
+		CreateCreature("ORC03",[1283.1240],0)		// Prêtre Orque
+		CreateCreature("ORC02",[1205.1348],0)		// Archer Orque
+		CreateCreature("ORC06",[1151.1227],0)		// Orog
+		CreateCreature("ORC01",[1250.1220],0)		// Orque
+		CreateCreature("D9ORC01",[1200.1327],0)		// Orque
+
+		CreateCreature("ORC02",[2285.1775],0)		// Archer Orque
+		CreateCreature("ORC02",[2111.1836],0)		// Archer Orque
+		CreateCreature("ORC06",[2079.1809],0)		// Orog
+		CreateCreature("ORC03",[2079.1809],0)		// Prêtre Orque
+		CreateCreature("d9OGMAGE",[2079.1809],0)	// Ogre-mage
+		SetGlobal("D9removevilains","AR1203",2)
+END
+
+IF
+	Global("D9removevilains","AR1203",2)
+	Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		CreateCreature("d9OGMAGE",[1283.1240],0)	// Ogre-mage
+		CreateCreature("ORC02",[1283.1240],0)		// Archer Orque
+		CreateCreature("ORC06",[1151.1227],0)		// Orog
+		CreateCreature("ORC03",[1283.1240],0)		// Prêtre Orque
+		
+		CreateCreature("ORC02",[2080.1860],0)		// Archer Orque
+		CreateCreature("ORC02",[2111.1836],0)		// Archer Orque
+		CreateCreature("ORC02",[1995.1979],0)		// Archer Orque
+		CreateCreature("ORC02",[2285.1775],0)		// Archer Orque
+		CreateCreature("ORC06",[2079.1809],0)		// Orog
+		CreateCreature("d9OGMAGE",[2079.1809],0)	// Ogre-mage
+		CreateCreature("ORC03",[2079.1809],0)		// Prêtre Orque
+		SetGlobal("D9removevilains","AR1203",3)
+END
+
+
+// First spawn after second talk with DigDag
 IF
 	Global("D9firkfirstspawn","AR1203",1)
 THEN
 	RESPONSE #100
-		CreateCreature("ORC05",[735.754],0) // Orog
-		CreateCreature("ORC06",[735.754],0) // Orog
-		CreateCreature("ORC02",[735.754],0) // Archer Orque
-		CreateCreature("ORC02",[735.754],0) // Archer Orque
-		CreateCreature("ORC02",[735.754],0) // Archer Orque
-		CreateCreature("D9ORC01",[735.754],0) // Archer Orque
-
-		CreateCreature("ORC06",[735.754],0) //
+		CreateCreature("D9ORGAHJ",[425.425],0)		// Orog
+		CreateCreature("D9ORGAME",[425.425],0)		// Orog
+		CreateCreature("D9ORGAHJ",[425.425],0)		// Orog
 		SetGlobal("D9firkfirstspawn","AR1203",2)
 END
 
 IF
-	GlobalTimerExpired("HordeTimer","AR1203")
-	!Dead("FIRORC01") // Chieftain DigDag
+	Global("D9firkfirstspawn","AR1203",2)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
 THEN
 	RESPONSE #100
-		SetGlobalTimer("HordeTimer","AR1203",180)
-		CreateCreature("D9ORGAHJ",[364.372],0) // Orc
-		CreateCreature("D9ORGAME",[364.372],0) // Orc
-	RESPONSE #100
-		SetGlobalTimer("HordeTimer","AR1203",180)
-		CreateCreature("D9ORGAHJ",[364.372],0) // Orc
-		CreateCreature("D9ORGAME",[364.372],0) // Orc
-	RESPONSE #100
-		SetGlobalTimer("HordeTimer","AR1203",180)
-		CreateCreature("D9ORGAME",[364.372],0) // Orc
-		CreateCreature("D9ORGAME",[364.372],0) // Orc
+		CreateCreature("D9ORGAME",[425.425],0)		// Orog
+		CreateCreature("D9ORGAHJ",[425.425],0)		// Orog
+		CreateCreature("D9ORGAME",[425.425],0)		// Orog
+		SetGlobal("D9firkfirstspawn","AR1203",3)
 END
 
 IF
-	GlobalTimerExpired("HordeTimer1","AR1203")
-	Global("D9deaddigdag","AR1203",1)
+	Global("D9firkfirstspawn","AR1203",3)
+	Difficulty(HARDEST)
 THEN
 	RESPONSE #100
-		SetGlobalTimer("HordeTimer1","AR1203",180)
-		CreateCreature("D9OGRGA2",[364.372],0) // Ogre Barbare
-		CreateCreature("D9OGRGA2",[364.372],0) // Ogre Barbare
-	RESPONSE #100
-		SetGlobalTimer("HordeTimer1","AR1203",180)
-		CreateCreature("D9OGRGA",[364.372],0) // Ogre Berserk
-		CreateCreature("D9OGRGA2",[364.372],0) // Ogre Barbare
-	RESPONSE #100
-		SetGlobalTimer("HordeTimer1","AR1203",180)
-		CreateCreature("D9OGRGA",[364.372],0) // Ogre Berserk
-		CreateCreature("D9OGRGA",[364.372],0) // Ogre Berserk
+		CreateCreature("D9ORGAHJ",[425.425],0)		// Orog
+		CreateCreature("D9ORGAME",[425.425],0)		// Orog
+		CreateCreature("D9ORGAHJ",[425.425],0)		// Orog
+		SetGlobal("D9firkfirstspawn","AR1203",4)
 END
 
+
+// Second spawn after last talk with DigDag
+IF
+	Global("D9firksecondspawn","AR1203",1)
+THEN
+	RESPONSE #100
+		CreateCreature("D9ORGAME",[425.425],0)		// Orog
+		CreateCreature("D9ORGAHJ",[425.425],0)		// Orog
+		CreateCreature("D9ORGAME",[425.425],0)		// Orog
+		SetGlobal("D9firksecondspawn","AR1203",2)
+END
+
+IF
+	Global("D9firksecondspawn","AR1203",2)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		CreateCreature("D9ORGAHJ",[425.425],0)		// Orog
+		CreateCreature("D9ORGAME",[425.425],0)		// Orog
+		CreateCreature("D9ORGAHJ",[425.425],0)		// Orog
+		SetGlobal("D9firksecondspawn","AR1203",3)
+END
+
+IF
+	Global("D9firksecondspawn","AR1203",3)
+	Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		CreateCreature("D9ORGAME",[425.425],0)		// Orog
+		CreateCreature("D9ORGAHJ",[425.425],0)		// Orog
+		CreateCreature("D9ORGAME",[425.425],0)		// Orog
+		SetGlobal("D9firksecondspawn","AR1203",4)
+END
+
+
+// Final fight after DigDag death
 IF
 	Global("D9deaddigdag","AR1203",0)
 	Dead("FIRORC01") // Chef DigDag
 	CombatCounter(0)
 THEN
 	RESPONSE #100
-		Wait(30)
+		Wait(2)
 		SetGlobal("D9deaddigdag","AR1203",1)
 		MoveViewPoint([913.994],INSTANT)
-		CreateCreature("TAZOK",[913.994],0) // Tazok
-		CreateCreature("HOBSHA01",[913.994],0) // Shaman Hobgobelin
-		CreateCreature("HOBARC02",[913.994],0) // Archer hobgobelin - Archer Hobgobelin
-		CreateCreature("d9groumt",[913.994],0) // Groumf
-		CreateCreature("d9bourt",[913.994],0) // Bourrinos
-		CreateCreature("OGRE01",[838.1001],0)
-		CreateCreature("D9OGRGA2",[364.372],0)
-		CreateCreature("HOBARC02",[918.900],0) // Archer hobgobelin - Archer Hobgobelin
-		CreateCreature("HOBARC02",[822.963],0) // Archer hobgobelin - Archer Hobgobelin
-		CreateCreature("HOBARC02",[862.924],0) // Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("TAZOK",[913.994],0)		// Tazok
+		CreateCreature("HOBSHA01",[913.994],0)	// Shaman Hobgobelin
+		CreateCreature("HOBARC02",[913.994],0)	// Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("d9groumt",[913.994],0)	// Groumf
+		CreateCreature("d9bourt",[913.994],0)	// Bourrinos
+		CreateCreature("D9OGRGA",[838.1001],0)
+		CreateCreature("D9OGRGA",[838.1001],0)
+		CreateCreature("HOBARC02",[918.900],0)	// Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("HOBARC02",[918.900],0)	// Archer hobgobelin - Archer Hobgobelin
 		Wait(2)
 		MoveViewObject(Player1,INSTANT)
-		SetGlobalTimer("HordeTimer1","AR1203",45)
 END
 
+IF
+	Global("D9deaddigdag","AR1203",1)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("D9deaddigdag","AR1203",2)
+		CreateCreature("HOBARC02",[822.963],0)	// Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("HOBARC02",[862.924],0)	// Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("D9OGRGA",[838.1001],0)
+		CreateCreature("ORC03",[970.952],0)		// Orc Priest
+		CreateCreature("d9OGMAGE",[970.952],0) 
+END
+
+IF
+	Global("D9deaddigdag","AR1203",2)
+	Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("D9deaddigdag","AR1203",3)
+		CreateCreature("HOBARC02",[822.963],0)	// Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("HOBARC02",[862.924],0)	// Archer hobgobelin - Archer Hobgobelin
+		CreateCreature("D9OGRGA",[838.1001],0)
+		CreateCreature("d9OGMAGE",[970.952],0) 
+		CreateCreature("ORC03",[970.952],0)		// Orc Priest
+END
+
+
+// Displays stringref when DigDag dies
 IF
 	Global("D9deaddigdagstring","AR1203",0)
 	Dead("FIRORC01")
@@ -151,6 +240,20 @@ THEN
 		SetGlobal("D9deaddigdagstring","AR1203",1)
 END
 
+
+// Displays stringref when Tazok dies
+IF
+	Global("D9deadtazokstring","AR1203",0)
+	Dead("TAZOK")
+THEN
+	RESPONSE #100
+		DisplayStringHead(Player1,@323) // ~This time, Tazok has defenitely rejoined Sarevok in hell and his minions will not disturb you for a long time.~
+		SetGlobal("D9deadtazokstring","AR1203",1)
+		SetGlobal("D9deaddigdag","AR1203",2)
+END
+
+
+// Firkraag and Conster appear when Tazok id dead and CombatCounter(0)
 IF
 	Global("D9tazokdead","AR1203",0)
 	Dead("TAZOK")
@@ -169,14 +272,4 @@ THEN
 		MoveViewObject(Player1,INSTANT)
 		TriggerActivation("Tran1202",TRUE)
 		SetGlobal("D9tazokdead","AR1203",1)
-END
-
-IF
-	Global("D9deadtazokstring","AR1203",0)
-	Dead("TAZOK")
-THEN
-	RESPONSE #100
-		DisplayStringHead(Player1,@323) // ~This time, Tazok has defenitely rejoined Sarevok in hell and his minions will not disturb you for a long time.~
-		SetGlobal("D9deadtazokstring","AR1203",1)
-		SetGlobal("D9deaddigdag","AR1203",2)
 END
