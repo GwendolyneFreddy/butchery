@@ -1,0 +1,67 @@
+BACKUP ~butchery\backup~
+AUTHOR ~"draztik.vince@gmail.com"~
+
+VERSION ~4.0.0~
+
+README ~butchery/butchery-readme-%LANGUAGE%.html~ ~butchery/butchery-readme-english.html~
+AUTO_EVAL_STRINGS
+
+AUTO_TRA ~butchery\lang\autotra\%s~
+
+ALWAYS
+
+	INCLUDE ~%MOD_FOLDER%/lib/always.tph~
+
+END	// of ALWAYS block
+
+
+//////////////////////////////////////
+//          CHOSE LANGUAGE          //
+//////////////////////////////////////
+
+LANGUAGE ~English~
+         ~english~
+         ~butchery/lang/english/setup.tra~
+         ~butchery/lang/english/butchery.tra~
+//         ~butchery/lang/english/d9CutTa.tra~	// DEPRECATED as of v 3.2
+         ~butchery/lang/english/d9firorc.tra~
+
+LANGUAGE ~Francais~
+         ~french~
+         ~butchery/lang/french/setup.tra~
+         ~butchery/lang/french/butchery.tra~
+//         ~butchery/lang/french/d9CutTa.tra~	// DEPRECATED as of v 3.2
+         ~butchery/lang/french/d9firorc.tra~
+
+
+///////////////////////////////////////////////////////////////////
+//          BUTCHERY IN FIRKRAAG'S LAIR (COMPONENT #10)          //
+///////////////////////////////////////////////////////////////////
+
+BEGIN @10
+	REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// This mod requires ToB, BGT, BG2:EE or EET to be installed.
+	DESIGNATED 10
+
+	INCLUDE ~%MOD_FOLDER%/components/10_first_component.tpa~
+
+
+/////////////////////////////////////////////////////////////////////
+//          REBALANCING VANILLA CREATURES (COMPONENT #20)          //
+/////////////////////////////////////////////////////////////////////
+
+BEGIN @20
+	REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// This mod requires ToB, BGT, BG2:EE or EET to be installed.
+	DESIGNATED 20
+
+	INCLUDE ~%MOD_FOLDER%/components/20_second_component.tpa~
+
+
+////////////////////////////////////////////////////////////////
+//          REBALANCING MINOR BOSSES (COMPONENT #30)          //
+////////////////////////////////////////////////////////////////
+
+BEGIN @30
+	REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// This mod requires ToB, BGT, BG2:EE or EET to be installed.
+	DESIGNATED 30
+
+	INCLUDE ~%MOD_FOLDER%/components/30_third_component.tpa~
