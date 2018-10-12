@@ -26,5 +26,6 @@ THEN
 		DisplayStringHead(Myself,@302) // ~*quaffs a Potion of Power*~
 		UseItem("potn24",Myself)
 		DisplayStringHead(Myself,@304) // ~*quaffs a Potion of Defense*~
+		ChangeAIScript("GENSHT01",CLASS)
 		SetGlobal("D9DIGDAGDRINK","AR1203",2)
 END
