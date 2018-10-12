@@ -1,0 +1,56 @@
+// Creatures names
+// ---------------
+@101 = ~Ogre Berserker~	// = BG2 string #17561 and 17562
+@102 = ~Ogre Barbarian~
+//@26  = ~Tenardiar~	DEPRECATED
+@104 = ~Groumf~
+@105 = ~Bourrinos~
+/* DEPRECATED
+@10023  = ~Barbarian~
+@11100  = ~Adepte Barbare~
+@11200  = ~Prêtre de Silvanus~
+*/
+
+// Creatures soundsets
+// -------------------
+@201 = ~Puny insects!~ [d9groua]
+@202 = ~By Tempus' rage!~ [d9grou8]
+@203 = ~By Hutgar's strength!~ [d9grou9]
+@204 = ~Ha Ha Ha !~ [d9groug]
+@205 = ~What?!~ [d9grouf]
+@206 = ~More blood!~ [d9grou0]
+
+@211 = ~You die now!~ [d9bara9]
+@212 = ~Baston!~ [d9baraa]
+@213 = ~Yeah!~ [d9barag]
+@214 = ~What?!~ [d9barah]
+
+// Creatures scripts
+// -----------------
+@301 = ~*quaffs a Potion of Absorption*~	// former @454
+@302 = ~*quaffs a Potion of Power*~			// former @456
+@303 = ~*quaffs a Potion of Agility*~		// former @457
+@304 = ~*quaffs a Potion of Defense*~		// former @453
+//@455 = ~*quaffs a Potion of Stone Form*~	// DEPRECATED
+//@452 = ~*gulp*~							// DEPRECATED
+
+// d9ar1203.baf
+// ------------
+@321 = ~A powerfull magic barrier is suddenly appearing, it's now impossible to turn back.~	// former @480
+@322 = ~DigDag, the hideous orc leader is dead now and his horde will soon stop fighting. However, you have the feeling it can't end up so easily and you should prepare yourself for the last challenge!~	// former @460
+@323 = ~This time, Tazok has defenitely rejoined Sarevok in hell and his minions will not disturb you for a long time.~	// former @461
+
+// d9cutta1.baf
+// ------------
+@331 = ~Ha ha ha! These fools have fallen into our trap!~	// former @470
+//@471 = ~Par la fureur de Tempus!~	DEPRECATED
+@333 = ~Attention!~	// former @472
+@334 = ~Damn, you're so ugly!~	// former @473
+@335 = ~Yes, sir!~	// former @474
+@336 = ~My Lord, the magic barrier is working now, intruders are trapped.~	// former @475
+@337 = ~Great job! The master will be pleased and I will have my revenge!~	// former @476
+/* DEPRECATED
+@477 = ~J'vais vous écraser 
+le nez !~
+@479 = ~Soignez ces deux imbéciles. Ils devront racheter leur incompétence auprès du maître.~
+*/

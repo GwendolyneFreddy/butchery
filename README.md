@@ -88,51 +88,51 @@ This component alters "a bit" stats, weapons, proficiencies of some generic orc 
 			<tr>
 				<td>OGRE01</td>
 				<td>Berserker</td>
-				<td>**5** (4)</td>
-				<td>**600** (270)</td>
-				<td>**50** (30)</td>
-				<td>**21** (18/100)</td>
-				<td>**18** (9)</td>
+				<td>5 (4)</td>
+				<td>600 (270)</td>
+				<td>50 (30)</td>
+				<td>21 (18/100)</td>
+				<td>18 (9)</td>
 				<td>MORNING STAR & MACE +++</td>
 			</tr>
 			<tr>
 				<td>ORC01</td>
 				<td>Barbarian</td>
-				<td>**5** (4)</td>
-				<td>**600** (95)</td>
-				<td>**60** (35)</td>
-				<td>**19** (18/10)</td>
-				<td>**18** (9)</td>
+				<td>5 (4)</td>
+				<td>600 (95)</td>
+				<td>60 (35)</td>
+				<td>19 (18/10)</td>
+				<td>18 (9)</td>
 				<td>AXE ++</td>
 			</tr>
 			<tr>
 				<td>ORC02</td>
 				<td>Fighter</td>
-				<td>**5**</td>
-				<td>**600** (35)</td>
-				<td>**50** (35)</td>
-				<td>**18** (11)</td>
-				<td>**17** (10)</td>
+				<td>5</td>
+				<td>600 (35)</td>
+				<td>50 (35)</td>
+				<td>18 (11)</td>
+				<td>17 (10)</td>
 				<td>COMPOSITE LONG BOW +++ & BASTARD ++</td>
 			</tr>
 			<tr>
 				<td>ORC05 (Orog)</td>
 				<td>Barbarian</td>
-				<td>**7** (5)</td>
-				<td>**800** (600)</td>
-				<td>**84** (40)</td>
-				<td>**20** (18/53)</td>
-				<td>**20** (9)</td>
+				<td>7 (5)</td>
+				<td>800 (600)</td>
+				<td>84 (40)</td>
+				<td>20 (18/53)</td>
+				<td>20 (9)</td>
 				<td>TWO-HANDED SWORD +++</td>
 			</tr>
 			<tr>
 				<td>ORC06 (Orog)</td>
 				<td>Berserker</td>
-				<td>**7** (5)</td>
-				<td>**800** (175)</td>
-				<td>**70** (40)</td>
-				<td>**20** (18/92)</td>
-				<td>**20** (9)</td>
+				<td>7 (5)</td>
+				<td>800 (175)</td>
+				<td>70 (40)</td>
+				<td>20 (18/92)</td>
+				<td>20 (9)</td>
 				<td>TWO-HANDED SWORD +++</td>
 			</tr>
 			</tr>
@@ -157,8 +157,8 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 			<tr>
 				<th>Creature</th>
 				<th>Kit</th>
-				<th>Niveau <span style="font-weight: normal">(ex)</span></th>
 				<th>Level <span style="font-weight: normal">(ex)</span></th>
+				<th>XP <span style="font-weight: normal">(ex)</span></th>
 				<th>HP <span style="font-weight: normal">(ex)</span></th>
 				<th>Strength <span style="font-weight: normal">(ex)</span></th>
 				<th>Constitution <span style="font-weight: normal">(ex)</span></th>
@@ -167,9 +167,9 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 			<tr>
 				<td>Tazok</td>
 				<td>--</td>
-				<td>**19** (18)</td>
-				<td>**12000** (6000)</td>
-				<td>**154** (136)</td>
+				<td>19 (18)</td>
+				<td>12000 (6000)</td>
+				<td>154 (136)</td>
 				<td>--</td>
 				<td>--</td>
 				<td>TWO-HANDED SWORD +++++</td>
@@ -177,11 +177,11 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 			<tr>
 				<td>FIRorc01 (DigDag)</td>
 				<td>Berserker</td>
-				<td>**13** (12)</td>
-				<td>**7000** (2000)</td>
-				<td>**107** (99)</td>
-				<td>**22** (17)</td>
-				<td>**22** (9)</td>
+				<td>13 (12)</td>
+				<td>7000 (2000)</td>
+				<td>107 (99)</td>
+				<td>22 (17)</td>
+				<td>22 (9)</td>
 				<td>BASTARD SWORD +++++</td>
 		</table><br>
 

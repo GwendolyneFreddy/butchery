@@ -1,0 +1,56 @@
+// Creatures names
+// ---------------
+@101 = ~Berserker ogre~	// = BG2 string #17561 and 17562
+@102 = ~Ogre barbare~
+//@26  = ~Tenardiar~	DEPRECATED
+@104 = ~Groumf~
+@105 = ~Bourrinos~
+/* DEPRECATED
+@10023  = ~Barbare~
+@11100  = ~Adepte Barbare~
+@11200  = ~Prêtre de Silvanus~
+*/
+
+// Creatures soundsets
+// -------------------
+@201 = ~Misérables insectes !~ [d9groua]
+@202 = ~Par la fureur de Tempus !~ [d9grou8]
+@203 = ~Par la force d'Hutgar !~ [d9grou9]
+@204 = ~Ha ha ha !~ [d9groug]
+@205 = ~Quoi ?!~ [d9grouf]
+@206 = ~Encore du sang !~ [d9grou0]
+
+@211 = ~À mort !~ [d9bara9]
+@212 = ~Baston !~ [d9baraa] brawl
+@213 = ~Ouais !~ [d9barag]
+@214 = ~Quoi ?!~ [d9barah]
+
+// Creatures scripts
+// -----------------
+@301 = ~avale une potion d'absorption~	// former @454
+@302 = ~avale une potion de pouvoir~	// former @456
+@303 = ~avale une potion d'agilité~		// former @457
+@304 = ~avale une potion de défense~	// former @453
+//@455 = ~avale une potion de statue~	// DEPRECATED
+//@452 = ~Gloups!~						// DEPRECATED
+
+// d9ar1203.baf
+// ------------
+@321 = ~Une barrière magique apparait soudainement et vous empêche de faire demi-tour.~ // former @480
+@322 = ~DigDag, le monstrueux chef des orques, est mort et sa horde de barbares abandonne peu à peu le combat. Cependant, vous sentez que la bataille ne fait que commençer et vous feriez mieux de vous préparer au prochain assaut !~ // former @460
+@323 = ~Cette fois-çi, Tazok a définitivement rejoint Sarevok en enfer, et ses laquais ne vous importuneront plus très longtemps.~ // former @461
+
+// d9cutta1.baf
+// ------------
+@331 = ~Ha ha ha ! Ces imbéciles sont tombés dans notre piège. Ils ont surement hâte que j'en finisse avec eux !~ // former @470
+//@471 = ~Par la fureur de Tempus !~	DEPRECATED
+@333 = ~Gaaarde à vous !~ // former @472
+@334 = ~Dis donc, qu'est ce que t'es moche, toi !~ // former @473
+@335 = ~Oui, Ô puissance démoniaque !~ // former @474
+@336 = ~La barrière magique est en place, mon seigneur. Ils ne peuvent pas s'échapper.~ // former @475
+@337 = ~Excellent ! Le maître sera satisfait, et j'aurai enfin ma vengeance !~ // former @476
+/* DEPRECATED
+@477 = ~J'vais vous écraser 
+le nez !~
+@479 = ~Soignez ces deux imbéciles. Ils devront racheter leur incompétence auprès du maître.~
+*/
