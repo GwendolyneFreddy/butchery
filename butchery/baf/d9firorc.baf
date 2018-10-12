@@ -5,7 +5,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("D9firkfirstspawn","AR1203",1)
-//		SetGlobalTimer("HordeTimer","AR1203",35)
 END
 
 IF
