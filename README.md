@@ -285,7 +285,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 	- Reorganized and merged tra files into 3 files.
 	- Updated installer <acronym title="Weimer Dialogue Utility">WeiDU</acronym> to v246.
 
-- Components specific modifications and fixes: please read the <a href="butchery/change-log.txt/">change-log file</a>.
+- Components specific modifications and fixes: please read the <a href="https://raw.githubusercontent.com/GwendolyneFreddy/butchery/master/butchery/change-log.txt">change-log file</a>.
 
 
 ##### Version 3.2 - October 10, 2011
