@@ -4,6 +4,7 @@
  *                                              *
  * ============================================ */
 
+// Concept borrowed from DavidW's Immutability and encapsulation in mod design (https://github.com/Gibberlings3/immutable)
 
 /* ---------------------------------------------------------------- *
  * This code only runs once, even if you install lots of components *

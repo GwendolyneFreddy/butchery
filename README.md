@@ -44,7 +44,40 @@ Though I am striving to make BuTcHeRy compatible with as many other mods as poss
 
 
 
+## Installation
+
+#### Notes
+
+<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-butchery.exe</strong>, uninstall all previously installed components and delete the butchery folder.</em>
+
+<em>When installing or uninstalling, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
+
+<em><strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.</em>
+
+
+#### Enhanced Editions Note
+
+The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+
+
+#### Windows
+
+BuTcHeRy for Windows is distributed as an extractable compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+
+Extract the contents of the mod archive into the folder of the game you wish to modify, using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. When properly extracted, your game directory will contain <strong>setup-butchery.exe</strong> and the folder <strong>butchery</strong>. To install, double-click <strong>setup-butchery.exe</strong> and follow the instructions on screen.
+
+You can run <strong>setup-butchery.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
+
+#### Note for Complete Uninstallation
+
+In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-butchery --uninstall</strong> at the command line to remove all components without wading through prompts.
+
+
+
+
 ## Components
+
+The installer includes the following components. The number of each is the component <em>DESIGNATED</em> number which gives it a fixed install position, lets other components detect it and allows automated installers like the BiG World Setup specify component choices.
 
 
 #### 10. DrAzTiK's revisited fight vs Tazok & DigDag
@@ -186,3 +219,50 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 		</table><br>
 
 
+
+
+## Version History
+
+##### Version 4.0.0 - October 1x, 2018
+
+- General overhaul and relooking:
+
+	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> changes COMPILE ~xyz.d/baf~ ~override~ to COMPILE ~xyz.d/baf~), and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
+	- Provides full compatibility with stratagems and Item revisions.
+	- tp2 split into components and commented for easier further updates.
+	- Reorganized components (DESIGNATED numbers).
+	- Added BG2EE compatibility (probably with EET, but not yet tested).
+	- Fixed wrong coding: turned WRITE_SHORT 0x028 to WRITE_LONG 0x028 (animation slot is a dword, not a word!) and WRITE_BYTE 0x242 to WRITE_SHORT 0x242 (Morale recovery is a word, not a byte).
+	- Polished WRITE_ASCII command with #n.
+	- No longer overwrites mod item files if there are already installed.
+	- Uses new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM command.
+	- Provides new portraits for BG2:EE.
+	- Reworked install procedure to use WeiDU's built-in HANDLE_AUDIO function to install soundsets.
+	- Uses HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
+	- Deleted unused files from mod folder.
+	- Updated readme (Butchery now supports translated readmes)
+	- Revamped French translation courtesy of Gwendolyne.
+	- Traified creatures soundsets (still waiting for English sound files).
+	- Reorganized and merged tra files into 3 files.
+	- Updated installer <acronym title="Weimer Dialogue Utility">WeiDU</acronym> to v246.
+
+- Components specific modifications and fixes: please read the <a href="butchery/change-log.txt/">change-log file</a>.
+
+
+##### Version 3.2 - October 10, 2011
+- Increased Tazok to level 19 Barbarian.
+- Added a magical armor to Tazok.
+- Increased DigDag to level 13 Berseker.
+- Decreased the number of Orcs spawned in final fight.
+
+
+##### Version 3 - March 1, 2011
+- Better compatibility with SCS II (especially more sensible choices of weapon proficiencies and kits for fighters component).
+
+
+##### Version 2 - November 30, 2010
+- Added French translation.
+
+
+##### Version 1 - November 11, 2010
+- Initial release.
