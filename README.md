@@ -68,6 +68,7 @@ Extract the contents of the mod archive into the folder of the game you wish to 
 
 You can run <strong>setup-butchery.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
 
+
 #### Note for Complete Uninstallation
 
 In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-butchery --uninstall</strong> at the command line to remove all components without wading through prompts.
@@ -221,13 +222,51 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 
 
+## Credits and Acknowledgements
+
+#### Author: <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a>
+
+
+#### Special Acknowledgements to:
+
+- <a href="https://www.baldursgateworld.fr"><acronym title="Copper Coronet">La Couronne de Cuivre</acronym></a> team for hosting the mod.
+- The creators of the Baldur's Gate series: <a href="http://www.bioware.com/">Bioware</a> and <a href="http://www.obsidian.net/">Black Isle Studios</a>.
+- Big thanks to Freddy_Gwendo (aka Gwendolyne) for make the update of this mod possible.
+- Thanks to Pen of Chaos for borrowing his barbarian French soundset.
+- Thanks to artists from <a href="https://www.pinterest.fr/">Pinterest</a> for their portraits.
+- Everyone else from the <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a>, <a href="http://gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.
+
+
+#### Programs/tools used in creation:
+
+- <a href="http://www.weidu.org/%7Ethebigg/"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>, by Wes Weimer, the bigg and Wisp.
+- <a href="http://forums.pocketplane.net/index.php/topic,25153.msg314249.html#msg314249">Near Infinity</a>, by Jon Olav Hauglid, FredSRichardson, and Argent77.
+- <a href="http://www.shsforums.net/topic/31285-infinity-explorer-v085/">Infinity Explorer</a>, by Dmitry Jemerov / bigmoshi.
+- <a href="http://www.gibberlings3.net/tools/dltcep.php"><acronym title="Dragonlance Total Conversion Editor Pro">DLTCEP</acronym></a>, by Avenger.
+- <a href="http://www.baldursgatemods.com/forums/index.php?action=downloads;sa=view;down=85">CreMaker_v3.1.9</a>.
+- <a href="https://gibberlings3.github.io/iesdp/"><acronym title="Infinity Engine Structures Description Project">IESDP</acronym></a>, maintained by igi and lynx.
+- <a href="http://notepad-plus-plus.org/">Notepad++</a>, by the Notepad++ team, Don Ho, and the spellcheck plug-in.
+- <a href="http://www.shsforums.net/files/file/1048-weidu-highlighter-for-notepad/">WeiDU Notepad++ Highlighters </a>, by Argent77.
+- <a href="http://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a>, by TGRMN Software.
+
+
+#### Copyrights Information
+
+###### The BuTcHeRy is not developed, supported, or endorsed by BioWare™ or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by DrAzTiK, based on material from the game Baldur's Gate II and its expansion.
+###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
+###### If there are any copyright issues or this statement needs revision, then please contact me and advise me what to do about it. Most notably, if you see any artwork in this mod that might conflict with Copyright rules, please let me know as soon as possible, and I will remove the conflicting content immediately.
+###### This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. Feel free to borrow what you need if you find something interesting. I will not sue anyone, don't worry.
+
+
+
+
 ## Version History
 
 ##### Version 4.0.0 - October 1x, 2018
 
 - General overhaul and relooking:
 
-	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> changes COMPILE ~xyz.d/baf~ ~override~ to COMPILE ~xyz.d/baf~), and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
+	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> (changes COMPILE xyz.d/baf override to COMPILE xyz.d/baf) and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
 	- Provides full compatibility with stratagems and Item revisions.
 	- tp2 split into components and commented for easier further updates.
 	- Reorganized components (DESIGNATED numbers).
