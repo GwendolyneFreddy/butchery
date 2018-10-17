@@ -39,6 +39,8 @@ Though I am striving to make BuTcHeRy compatible with as many other mods as poss
 - BuTcHeRY is not compatible with Revisited Battles component 'Improved Firkraag' (don't expect a crash but an impossible fight).
 - As I use vanilla scripts, expect the fight to be harder if you install stratagems (component 'Smarter general AI'). You should install my mod before stratagems of course.</br></br>
 
+Classical games players are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.</br></br>
+
 
 
 ## Installation
@@ -98,7 +100,7 @@ This is the major latest mod improvement. I know that it can be frustrating to h
 
 Be aware that even with Core Rules, the challenge might be quite difficult (especially before Underdark) because this mod adresses to players looking for a better challenge.
 
-#####Note for English language players:
+##### Note for English language players:
 
 Two new creatures get their own soundsets, unfortunately only available in French. But they have been traified as for the latest version &#128521; and they are still waiting for their English sound files. If anyone would provide them, I would be pleased to include them in the next version. &#128578;
 
@@ -224,7 +226,8 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 ## Screenshots
 
 <img src="butchery/images/baldr000.jpg">
-<img src="butchery/images/baldr001.jpg"></br></br>
+<img src="butchery/images/baldr001.jpg"></br>
+
 
 
 ## Credits and Acknowledgements
