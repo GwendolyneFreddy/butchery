@@ -6,8 +6,7 @@
 
 **Languages:** French, English
 
-**Platform:** Windows
-
+**Platform:** Windows</br></br>
 
 
 
@@ -27,8 +26,7 @@ Secondary objectives are:
 - Have 100% compatibility and optimisation with Sword Coast stratagems and Item Revisions (especially potions revisions component).
 - Keep 100% content of the original game. I add a few things, but I don't remove a single one.
 - Add a bit of fun dialogues and cutscenes.
-- No big loots or new magical items.
-
+- No big loots or new magical items.</br></br>
 
 
 
@@ -39,8 +37,7 @@ This mod is designed to work on the following Infinity Engine games: Baldur's Ga
 Though I am striving to make BuTcHeRy compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
 
 - BuTcHeRY is not compatible with Revisited Battles component 'Improved Firkraag' (don't expect a crash but an impossible fight).
-- As I use vanilla scripts, expect the fight to be harder if you install stratagems (component 'Smarter general AI'). You should install my mod before stratagems of course.
-
+- As I use vanilla scripts, expect the fight to be harder if you install stratagems (component 'Smarter general AI'). You should install my mod before stratagems of course.</br></br>
 
 
 
@@ -71,8 +68,7 @@ You can run <strong>setup-butchery.exe</strong> in your game folder to reinstall
 
 #### Note for Complete Uninstallation
 
-In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-butchery --uninstall</strong> at the command line to remove all components without wading through prompts.
-
+In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-butchery --uninstall</strong> at the command line to remove all components without wading through prompts.</br></br>
 
 
 
@@ -92,15 +88,19 @@ So I assume Tazok and DigDag are supposed to be the big vilains in Firkaag's lai
 
 This component also adds some of my customs creatures and especially two fighters of my own composition. Their duty is to protect Tazok and DigDag during the final fight.
 
-**Difficulty level scaling:**
+##### Difficulty level scaling:
 
-his is the recent big improvement of this mod. I know that it can be frustrating to have a too much difficult -or easy- fight, so this new possibility will surely be appreciated. The numbers and variety of opponents are now adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. These adjustments are reflected as follows:
+This is the major latest mod improvement. I know that it can be frustrating to have a too much difficult -or easy- fight, so this new possibility will surely be appreciated. The numbers and variety of opponents are now adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. These adjustments are reflected as follows:
 
 - Core Rules: normal and decent amount of enemies (no divine or arcane enemies spellcasters).
 - Difficult: a bit more numerous enemies and especially divine/arcane enemies spellcasters.
 - Very difficult: again, a bit more enemies and a even more divine/arcane enemies spellcasters.
 
-Be aware that even with Core Rules, the challenge should be quite difficult (especially before Underdark) because this mod adresses to players looking for a better challenge.
+Be aware that even with Core Rules, the challenge might be quite difficult (especially before Underdark) because this mod adresses to players looking for a better challenge.
+
+#####Note for English language players:
+
+Two new creatures get their own soundsets, unfortunately only available in French. But they have been traified as for the latest version &#128521; and they are still waiting for their English sound files. If anyone would provide them, I would be pleased to include them in the next version. &#128578;
 
 
 #### 20. Rebalancing a few generic creatures
@@ -221,6 +221,11 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 
 
+## Screenshots
+
+<img src="butchery/images/baldr000.jpg">
+<img src="butchery/images/baldr001.jpg"></br></br>
+
 
 ## Credits and Acknowledgements
 
@@ -250,19 +255,18 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 - <a href="http://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a>, by TGRMN Software.
 
 
-#### Copyrights Information
+#### Copyright Information
 
 ###### The BuTcHeRy is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by DrAzTiK, based on material from the game Baldur's Gate II and its expansion.
 ###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
 ###### If there are any copyright issues or this statement needs revision, then please contact me and advise me what to do about it. Most notably, if you see any artwork in this mod that might conflict with Copyright rules, please let me know as soon as possible, and I will remove the conflicting content immediately.
-###### This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. Feel free to borrow what you need if you find something interesting. I will not sue anyone, don't worry.
-
+###### This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. Feel free to borrow what you need if you find something interesting. I will not sue anyone, don't worry.</br></br>
 
 
 
 ## Version History
 
-##### Version 4.0.0 - October 1x, 2018
+#### Version 4.0.0 - October 1x, 2018
 
 - General overhaul and relooking:
 
@@ -283,25 +287,25 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 	- Revamped French translation courtesy of Gwendolyne.
 	- Traified creatures soundsets (still waiting for English sound files).
 	- Reorganized and merged tra files into 3 files.
-	- Updated installer <acronym title="Weimer Dialogue Utility">WeiDU</acronym> to v246.
+	- Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer to v246.
 
 - Components specific modifications and fixes: please read the <a href="https://raw.githubusercontent.com/GwendolyneFreddy/butchery/master/butchery/change-log.txt">change-log file</a>.
 
 
-##### Version 3.2 - October 10, 2011
+#### Version 3.2 - October 10, 2011
 - Increased Tazok to level 19 Barbarian.
 - Added a magical armor to Tazok.
 - Increased DigDag to level 13 Berseker.
 - Decreased the number of Orcs spawned in final fight.
 
 
-##### Version 3 - March 1, 2011
+#### Version 3 - March 1, 2011
 - Better compatibility with SCS II (especially more sensible choices of weapon proficiencies and kits for fighters component).
 
 
-##### Version 2 - November 30, 2010
+#### Version 2 - November 30, 2010
 - Added French translation.
 
 
-##### Version 1 - November 11, 2010
+#### Version 1 - November 11, 2010
 - Initial release.
