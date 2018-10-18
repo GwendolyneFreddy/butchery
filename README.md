@@ -4,7 +4,7 @@
 
 **Version:** 4.0.0
 
-**Languages:** French, English
+**Languages:** <a href="readme-FR.md">French</a>, English
 
 **Platform:** Windows</br></br>
 
@@ -143,7 +143,7 @@ This component alters "a bit" stats, weapons, proficiencies of some generic orc 
 			</tr>
 			<tr>
 				<td>ORC02</td>
-				<td>Fighter</td>
+				<td>--</td>
 				<td>5</td>
 				<td>600 (35)</td>
 				<td>50 (35)</td>
