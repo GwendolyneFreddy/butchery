@@ -4,7 +4,7 @@
 
 **Version :** 4.0.0
 
-**Langues :** français, <a href="readme.md">anglais</a>
+**Langues :** français, <a href="README.md">anglais</a>
 
 **Plateforme :** Windows</br></br>
 
@@ -249,8 +249,8 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 
 ###### The BuTcHeRy n'est pas développé, supporté ni approuvé par BioWare&trade; ou Interplay/Black Isle, Overhaul, Beamdog ou Wizards of the Coast. Il a été développé par DrAzTiK, et est basé sur le jeu Baldur's Gate II et son extension.
 ###### Baldur's Gate II : Les Ombres d'Amn et Baldur's Gate II : Trône de Bhaal appartiennent à &copy; TSR, Inc. Le moteur Infinity Engine appartient à &copy; BioWare Corp. Toutes les autres marques et droits d'auteur appartiennent à leurs propriétaires respectifs.
-###### S'il existe des problèmes de droits d'auteur ou si cette déclaration nécessite une révision, veuillez me contacter et conseillez-moi sur ce qu'il faut faire à ce sujet. Plus particulièrement, si vous trouvez dans ce mod des illustrations susceptibles d’être en conflit avec les règles de droit d’auteur, merci de bien vouloir me le faire savoir dès que possible et je supprimerai immédiatement le contenu en conflit.
-###### Ce mod a été créé pour être librement apprécié par tous les joueurs de Baldur's Gate II et son contenu est libre de droit. N"hésitez pas à lui « emprunter » ce qui vous intéresse, je promets de ne pas vous en vouloir.</br></br>
+###### S'il existe des problèmes de droits d'auteur ou si cette déclaration nécessite une révision, veuillez me contacter et conseillez-moi sur ce qu'il faut faire à ce sujet. Plus particulièrement, si vous trouvez dans ce mod des illustrations susceptibles d'être en conflit avec les règles de droit d'auteur, merci de bien vouloir me le faire savoir dès que possible et je supprimerai immédiatement le contenu en conflit.
+###### Ce mod a été créé pour être librement apprécié par tous les joueurs de Baldur's Gate II et son contenu est libre de droit. N'hésitez pas à lui « emprunter » ce qui vous intéresse, je promets de ne pas vous en vouloir.</br></br>
 
 
 
