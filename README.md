@@ -1,12 +1,12 @@
 # BuTcHeRy
 
-**Author:** DrAzTiK
+<p><strong>Author:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a><br />
+<strong>Version:</strong> 4.0.0<br />
+<strong>Languages:</strong> <a href="readme-FR.md">French</a>, English<br />
+<strong>Platform:</strong> Windows</p><br />
 
-**Version:** 4.0.0
-
-**Languages:** <a href="readme-FR.md">French</a>, English
-
-**Platform:** Windows</br></br>
+<strong>Mod Forum:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
+</br></br>
 
 
 
@@ -19,11 +19,11 @@ I like Baldur's Gate a lot, and I wrote this mod (first version in 2010) to beco
 Secondary objectives are:
 
 - Allow players to fight in a big room or large space because it is really boring and frustrating to fight in a corridor, especially in in BG2.
-- Difficulty level scaling: difficulty will be ajusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. (more info below).
+- Difficulty level scaling: difficulty will be ajusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. (more info <a href="#components">below</a>).
 - Have a 'butchery fight', with some spawn and respawn to spice up battles.
 - Make a few non-spellcaster creatures a bit more challenging (while non cheated) using kit abilities, having proficiencies in weapons, etc.
 - Have challenging and charismatic boss.
-- Have 100% compatibility and optimisation with Sword Coast stratagems and Item Revisions (especially potions revisions component).
+- Have 100% compatibility and optimisation with Sword Coast stratagems and Item Revisions (especially with its '<em<potions revisions</em>' component).
 - Keep 100% content of the original game. I add a few things, but I don't remove a single one.
 - Add a bit of fun dialogues and cutscenes.
 - No big loots or new magical items.</br></br>
@@ -36,8 +36,8 @@ This mod is designed to work on the following Infinity Engine games: Baldur's Ga
 
 Though I am striving to make BuTcHeRy compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
 
-- BuTcHeRY is not compatible with Revisited Battles component 'Improved Firkraag' (don't expect a crash but an impossible fight).
-- As I use vanilla scripts, expect the fight to be harder if you install stratagems (component 'Smarter general AI'). You should install my mod before stratagems of course.</br></br>
+- BuTcHeRY is not compatible with Revisited Battles component '<em>Improved Firkraag</em>' (don't expect a crash but an impossible fight).
+- As I use vanilla scripts, expect the fight to be harder if you install stratagems ('<em>Smarter general AI<em>' component). You should install BuTcHeRy before stratagems of course.</br></br>
 
 Classical games players are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.</br></br>
 
@@ -74,9 +74,9 @@ In addition to the methods above for removing individual components, you can com
 
 
 
-## Components
+## <a name="components" id="components"></a>Components
 
-The installer includes the following components. The number of each is the component <em>DESIGNATED</em> number which gives it a fixed install position, lets other components detect it and allows automated installers like the BiG World Setup specify component choices.
+The installer includes the following components. The number of each is the component <em>DESIGNATED</em> number which gives it a fixed install position, lets other components and mods detect it and allows automated installers like the BiG World Setup specify component choices.
 
 
 #### 10. DrAzTiK's revisited fight vs Tazok & DigDag
@@ -114,63 +114,62 @@ This component alters "a bit" stats, weapons, proficiencies of some generic orc 
 			<tr>
 				<th>Creature</th>
 				<th>Kit</th>
-				<th>Level <span style="font-weight: normal">(ex)</span></th>
-				<th>XP <span style="font-weight: normal">(ex)</span></th>
-				<th>HP <span style="font-weight: normal">(ex)</span></th>
-				<th>Strength <span style="font-weight: normal">(ex)</span></th>
-				<th>Constitution <span style="font-weight: normal">(ex)</span></th>
+				<th>Niveau <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>XP <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>PV <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>Force <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>Constitution <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
 				<th>Weapon proficiency</th>
 			</tr>
 			<tr>
 				<td>OGRE01</td>
 				<td>Berserker</td>
-				<td>5 (4)</td>
-				<td>600 (270)</td>
-				<td>50 (30)</td>
-				<td>21 (18/100)</td>
-				<td>18 (9)</td>
+				<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
+				<td><strong>600</strong>&#160;&#160;&#160;(270)</td>
+				<td><strong>50</strong>&#160;&#160;&#160;(30)</td>
+				<td><strong>21</strong>&#160;&#160;&#160;(18/100)</td>
+				<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
 				<td>MORNING STAR & MACE +++</td>
 			</tr>
 			<tr>
 				<td>ORC01</td>
 				<td>Barbarian</td>
-				<td>5 (4)</td>
-				<td>600 (95)</td>
-				<td>60 (35)</td>
-				<td>19 (18/10)</td>
-				<td>18 (9)</td>
+				<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
+				<td><strong>600</strong>&#160;&#160;&#160;(95)</td>
+				<td><strong>60</strong>&#160;&#160;&#160;(35)</td>
+				<td><strong>19</strong>&#160;&#160;&#160;(18/10)</td>
+				<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
 				<td>AXE ++</td>
 			</tr>
 			<tr>
 				<td>ORC02</td>
 				<td>--</td>
-				<td>5</td>
-				<td>600 (35)</td>
-				<td>50 (35)</td>
-				<td>18 (11)</td>
-				<td>17 (10)</td>
+				<td><strong>5</strong></td>
+				<td><strong>600</strong>&#160;&#160;&#160;(35)</td>
+				<td><strong>50</strong>&#160;&#160;&#160;(35)</td>
+				<td><strong>18</strong>&#160;&#160;&#160;(11)</td>
+				<td><strong>17</strong>&#160;&#160;&#160;(10)</td>
 				<td>COMPOSITE LONG BOW +++ & BASTARD ++</td>
 			</tr>
 			<tr>
 				<td>ORC05 (Orog)</td>
 				<td>Barbarian</td>
-				<td>7 (5)</td>
-				<td>800 (600)</td>
-				<td>84 (40)</td>
-				<td>20 (18/53)</td>
-				<td>20 (9)</td>
+				<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
+				<td><strong>800</strong>&#160;&#160;&#160;(600)</td>
+				<td><strong>84</strong>&#160;&#160;&#160;(40)</td>
+				<td><strong>20</strong>&#160;&#160;&#160;(18/53)</td>
+				<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
 				<td>TWO-HANDED SWORD +++</td>
 			</tr>
 			<tr>
 				<td>ORC06 (Orog)</td>
 				<td>Berserker</td>
-				<td>7 (5)</td>
-				<td>800 (175)</td>
-				<td>70 (40)</td>
-				<td>20 (18/92)</td>
-				<td>20 (9)</td>
+				<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
+				<td><strong>800</strong>&#160;&#160;&#160;(175)</td>
+				<td><strong>70</strong>&#160;&#160;&#160;40)</td>
+				<td><strong>20</strong>&#160;&#160;&#160;(18/92)</td>
+				<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
 				<td>TWO-HANDED SWORD +++</td>
-			</tr>
 			</tr>
 		</table><br>
 
@@ -178,14 +177,14 @@ Except high scores in STR and CON, these creatures have now the same features an
 
 You will find mostly theses creatures only in Windspear Hills and in Firkraag's lair. I also added a lot of them in my mod (the reason why I wrote this component).
 
-I didn't modify vanilla fighting scripts at all. So if you don't install stratagems 'Smarter general AI' component, theses creatures will not use their kit abilities.
+I didn't modify vanilla fighting scripts at all. So if you don't install stratagems '<em>Smarter general AI</em>' component, theses creatures will not use their kit abilities.
 
 
 #### 30. Rebalanced Tazok and DigDag
 
 In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok lightly (slightly better saving thrown and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). It is also cosmetic: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
 
-If you want Tazok to be a berseker, you must install stratagems 'Smarter general AI' component (no problem of compatibility issue).
+If you want Tazok to be a berseker, you must install stratagems '<em>Smarter general AI</em>' component (no problem of compatibility issue).
 
 Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
@@ -219,6 +218,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 				<td>22 (17)</td>
 				<td>22 (9)</td>
 				<td>BASTARD SWORD +++++</td>
+			</tr>
 		</table><br>
 
 
@@ -274,20 +274,20 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 - General overhaul and relooking:
 
 	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> (changes COMPILE xyz.d/baf override to COMPILE xyz.d/baf) and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
-	- Provides full compatibility with stratagems and Item revisions.
+	- Provided full compatibility with stratagems and Item revisions.
 	- tp2 split into components and commented for easier further updates.
 	- Reorganized components (DESIGNATED numbers).
 	- Added BG2EE compatibility (probably with EET, but not yet tested).
 	- Fixed wrong coding: turned WRITE_SHORT 0x028 to WRITE_LONG 0x028 (animation slot is a dword, not a word!) and WRITE_BYTE 0x242 to WRITE_SHORT 0x242 (Morale recovery is a word, not a byte).
 	- Polished WRITE_ASCII command with #n.
 	- No longer overwrites mod item files if there are already installed.
-	- Uses new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM command.
-	- Provides new portraits for BG2:EE.
+	- Used new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM command.
+	- Provided new portraits for BG2:EE.
 	- Reworked install procedure to use WeiDU's built-in HANDLE_AUDIO function to install soundsets.
-	- Uses HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
+	- Used HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
 	- Deleted unused files from mod folder.
 	- Updated readme (Butchery now supports translated readmes)
-	- Revamped French translation courtesy of Gwendolyne.
+	- Revamped French translation and fixed English typos courtesy of Gwendolyne.
 	- Traified creatures soundsets (still waiting for English sound files).
 	- Reorganized and merged tra files into 3 files.
 	- Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer to v246.

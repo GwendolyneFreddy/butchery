@@ -1,12 +1,12 @@
 # BuTcHeRy
 
-**Auteur :** DrAzTiK
+<p><strong>Auteur :</strong> <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a><br />
+<strong>Version :</strong> 4.0.0<br />
+<strong>Langues :</strong> français, <a href="README.md">anglais</a><br />
+<strong>Plateforme :</strong> Windows</p><br />
 
-**Version :** 4.0.0
-
-**Langues :** français, <a href="README.md">anglais</a>
-
-**Plateforme :** Windows</br></br>
+<strong>Mod Forum:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
+</br></br>
 
 
 
@@ -18,12 +18,12 @@ J'aime Baldur's Gate, et j'ai écrit ce mod (première version en 2010) pour compr
 
 Par ailleurs, ce mod a pour ambition de :
 
-- Permettre aux joueurs de conduire un combat "épique" dans de large espaces car j'ai toujours eu horreur de combattre dans des corridors (ce qui est malheureusement fréquent dans BG2).
-- Ajuster la difficulté du combat selon la manière dont le joueur règle le curseur de difficulté accessible dans le menu Options du jeu (voir la section Composants de ce document).
+- Permettre aux joueurs de conduire un combat « épique » dans de large espaces car j'ai toujours eu horreur de combattre dans des corridors (ce qui est malheureusement fréquent dans BG2).
+- Ajuster la difficulté du combat selon la manière dont le joueur règle le curseur de difficulté accessible dans le menu Options du jeu (voir la section <a href="#components">Composants</a> de ce document).
 - Générer des combats dynamiques avec des spawns/respawns d'ennemis pour pimenter les choses.
-- Améliorer légèrement certaines créatures de type "guerrier au corps à corps" en leur ajoutant un kit, des points de compétences martiales, etc.
-- Améliorer le charisme de certains boss (Tazok et Dig-Dag).
-- Assurer une intégration et une compatibilité totales avec stratagems et Item Revisions (especially potions revisions component).
+- Améliorer légèrement certaines créatures de type « guerrier au corps à corps » en leur ajoutant un kit, des points de compétences martiales, etc.
+- Améliorer le charisme de certains boss (Tazok et DigDag).
+- Assurer une intégration et une compatibilité totales avec stratagems et Item Revisions (n particulier son composant <em>Revision des potions</em>).
 - Conserver le contenu du jeux original.
 - Apporter un ou deux éléments comiques à l'aventure.
 - Ne pas offrir de récompenses disproportionnés.
@@ -38,8 +38,8 @@ BuTcHeRy est un mod <acronym title="Weimer Dialogue Utility">WeiDU</acronym> et 
 
 Bien que je m'efforce de rendre BuTcHeRy compatible avec le plus grand nombre possible de mods, des incompatibilités risquent toujours de se produire. Voici la liste de celles recensées jusqu'à présent :
 
-- BuTcHeRY n'est pas compatible avec le composant « Firkraag amelioré » du mod Revisited Battles.
-- Comme j'utilise les scripts de combat proposés par le jeux original, vous pouvez encore augmenter la difficulté si vous installez le mod stratagems (composant « IA générale plus efficace ») qui améliorera mes scripts de combat. Bien évidemment, vous devrez installer stratagems après BuTcHeRy.</br></br>
+- BuTcHeRY n'est pas compatible avec le composant « <em>Firkraag amelioré</em> » du mod Revisited Battles.
+- Comme j'utilise les scripts de combat proposés par le jeux original, vous pouvez encore augmenter la difficulté si vous installez le mod stratagems (composant « <em>IA générale plus efficace</em> ») qui améliorera mes scripts de combat. Bien évidemment, vous devrez installer stratagems après BuTcHeRy.</br></br>
 
 Si vous jouez avec BG2-ToB ou BGT, je vous recommande fortement d'installer la dernière version du <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> avant d'installer ce mod.</br></br>
 
@@ -60,7 +60,7 @@ Si vous jouez avec BG2-ToB ou BGT, je vous recommande fortement d'installer la d
 
 Les Éditions améliorées sont des jeux que le développeur fait encore évoluer, notamment par l'ajout de capacités supplémentaires destinées à la création de mods et par l'ajout de contenus. N'oubliez pas que chaque patch de mise à jour effacera les mods que vous avez installés ! Ce mod ne fera pas exception à la règle.
 
-Si vous pouvez retarder la mise à jour du patch en plein milieu d'un partie moddée (si vous en avez la possibilité, notamment chez Beamdog et Good Old Games), n'oubliez pas que même après avoir réinstallé les mods sur un nouveau patch, vous ne pourrez peut-être pas continuer le jeu avec vos anciennes sauvegardes, en particulier à cause de noms de personnages, de lieux, etc. qui pourraient être incorrects. Pour y remédier, copiez tout le dossier du jeu dans un nouveau dossier dans lequel vous installerez vos mods, et qui ne sera pas modifié par les patches de mise à jour. Il est important que vous installiez le mod dans la version linguistique dans laquelle vous jouez. Sinon, les dialogues du mod ne s'afficheront pas et provoqueront des messages d'erreur.
+Si vous pouvez retarder la mise à jour du patch en plein milieu d'un partie moddée (si vous en avez la possibilité, notamment chez Beamdog et Good Old Games), n'oubliez pas que même après avoir réinstallé les mods sur un nouveau patch, vous ne pourrez peut-être pas continuer le jeu avec vos anciennes sauvegardes, en particulier à cause de noms de personnages, de lieux, etc, qui pourraient être incorrects. Pour y remédier, copiez tout le dossier du jeu dans un nouveau dossier dans lequel vous installerez vos mods, et qui ne sera pas modifié par les patches de mise à jour. Il est important que vous installiez le mod dans la version linguistique dans laquelle vous jouez. Sinon, les dialogues du mod ne s'afficheront pas et provoqueront des messages d'erreur.
 
 
 #### Windows
@@ -78,9 +78,9 @@ En plus des méthodes détaillées plus haut pour supprimer des composants, il est 
 
 
 
-## Composants
+## <a name="components" id="components"></a>Composants
 
-Le programme d'installation comprend les composants suivants. Chacun possède un numéro distinct et pré-défini qui lui attribue une position déterminée (mot-clé <em>DESIGNATED</em> en langage WeiDU) ; ce qui permet aux autres composants de le détecter et aux utilitaires d'installation automatiques comme le BiG World Setup de préciser quels composants installer.
+Le programme d'installation comprend les composants suivants. Chacun possède un numéro distinct et pré-défini qui lui attribue une position déterminée (mot-clé <em>DESIGNATED</em> en langage WeiDU) ; ce qui permet aux autres composants et aux autres mods de le détecter et aux utilitaires d'installation automatiques comme le BiG World Setup de préciser quels composants installer.
 
 
 #### 10. Combat contre Tazok et DigDag révisé par DrAzTiK
@@ -111,88 +111,86 @@ Ce composant améliore un peu les statistiques, jets de sauvegarde et points de c
 			<tr>
 				<th>Créature</th>
 				<th>Kit</th>
-				<th>Niveau <span style="font-weight: normal">(ex)</span></th>
-				<th>XP <span style="font-weight: normal">(ex)</span></th>
-				<th>PV <span style="font-weight: normal">(ex)</span></th>
-				<th>Force <span style="font-weight: normal">(ex)</span></th>
-				<th>Constitution <span style="font-weight: normal">(ex)</span></th>
+				<th>Niveau <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>XP <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>PV <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>Force <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>Constitution <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
 				<th>Compétence martiale</th>
 			</tr>
 			<tr>
 				<td>OGRE01</td>
 				<td>Berserker</td>
-				<td>5 (4)</td>
-				<td>600 (270)</td>
-				<td>50 (30)</td>
-				<td>21 (18/100)</td>
-				<td>18 (9)</td>
+				<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
+				<td><strong>600</strong>&#160;&#160;&#160;(270)</td>
+				<td><strong>50</strong>&#160;&#160;&#160;(30)</td>
+				<td><strong>21</strong>&#160;&#160;&#160;(18/100)</td>
+				<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
 				<td>MORNING STAR & MACE +++</td>
 			</tr>
 			<tr>
 				<td>ORC01</td>
 				<td>Barbare</td>
-				<td>5 (4)</td>
-				<td>600 (95)</td>
-				<td>60 (35)</td>
-				<td>19 (18/10)</td>
-				<td>18 (9)</td>
+				<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
+				<td><strong>600</strong>&#160;&#160;&#160;(95)</td>
+				<td><strong>60</strong>&#160;&#160;&#160;(35)</td>
+				<td><strong>19</strong>&#160;&#160;&#160;(18/10)</td>
+				<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
 				<td>AXE ++</td>
 			</tr>
 			<tr>
 				<td>ORC02</td>
 				<td>--</td>
-				<td>5</td>
-				<td>600 (35)</td>
-				<td>50 (35)</td>
-				<td>18 (11)</td>
-				<td>17 (10)</td>
+				<td><strong>5</strong></td>
+				<td><strong>600</strong>&#160;&#160;&#160;(35)</td>
+				<td><strong>50</strong>&#160;&#160;&#160;(35)</td>
+				<td><strong>18</strong>&#160;&#160;&#160;(11)</td>
+				<td><strong>17</strong>&#160;&#160;&#160;(10)</td>
 				<td>COMPOSITE LONG BOW +++ & BASTARD ++</td>
 			</tr>
 			<tr>
 				<td>ORC05 (Orog)</td>
 				<td>Barbare</td>
-				<td>7 (5)</td>
-				<td>800 (600)</td>
-				<td>84 (40)</td>
-				<td>20 (18/53)</td>
-				<td>20 (9)</td>
+				<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
+				<td><strong>800</strong>&#160;&#160;&#160;(600)</td>
+				<td><strong>84</strong>&#160;&#160;&#160;(40)</td>
+				<td><strong>20</strong>&#160;&#160;&#160;(18/53)</td>
+				<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
 				<td>TWO-HANDED SWORD +++</td>
 			</tr>
 			<tr>
 				<td>ORC06 (Orog)</td>
 				<td>Berserker</td>
-				<td>7 (5)</td>
-				<td>800 (175)</td>
-				<td>70 (40)</td>
-				<td>20 (18/92)</td>
-				<td>20 (9)</td>
-				<td>TWO-HANDED SWORD +++</td>
-			</tr>
+				<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
+				<td><strong>800</strong>&#160;&#160;&#160;(175)</td>
+				<td><strong>70</strong>&#160;&#160;&#160;40)</td>
+				<td><strong>20</strong>&#160;&#160;&#160;(18/92)</td>
+				<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
 			</tr>
 		</table><br>
 
 
 #### 30. Rééquilibrage de Tazok et de DigDag
 
-Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, points de compétences...). DigDag est doté d'un kit de berserk. Je n'ai pas ajouté de kit à Tazok car stratagems le fait déjà (« IA générale plus efficace »). Ce composant est aussi cosmétique : Tazok est de nouveau un demi-ogre (comme dans BG1) tandis que DigDag endosse l'animation de chef orog.
+Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, points de compétences...). DigDag est doté d'un kit de berserk. Je n'ai pas ajouté de kit à Tazok car stratagems le fait déjà (« <em>IA générale plus efficace</em> »). Ce composant est aussi cosmétique : Tazok est de nouveau un demi-ogre (comme dans BG1) tandis que DigDag endosse l'animation de chef orog.
 
 <table style="margin-left: 80px" summary="Rebalanced Tazok and Dig-Dag">
 			<tr>
 				<th>Créature</th>
 				<th>Kit</th>
-				<th>Niveau <span style="font-weight: normal">(ex)</span></th>
-				<th>XP <span style="font-weight: normal">(ex)</span></th>
-				<th>PV <span style="font-weight: normal">(ex)</span></th>
-				<th>Force <span style="font-weight: normal">(ex)</span></th>
-				<th>Constitution <span style="font-weight: normal">(ex)</span></th>
+				<th>Niveau <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>XP <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>PV <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>Force <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>Constitution <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
 				<th>Compétence martiale</th>
 			</tr>
 			<tr>
 				<td>Tazok</td>
 				<td>--</td>
-				<td>19 (18)</td>
-				<td>12000 (6000)</td>
-				<td>154 (136)</td>
+				<td><strong>19</strong>&#160;&#160;&#160;(18)</td>
+				<td><strong>12000</strong>&#160;&#160;&#160;(6000)</td>
+				<td><strong>154</strong>&#160;&#160;&#160;(136)</td>
 				<td>--</td>
 				<td>--</td>
 				<td>TWO-HANDED SWORD +++++</td>
@@ -200,11 +198,11 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 			<tr>
 				<td>FIRorc01 (DigDag)</td>
 				<td>Berserker</td>
-				<td>13 (12)</td>
-				<td>7000 (2000)</td>
-				<td>107 (99)</td>
-				<td>22 (17)</td>
-				<td>22 (9)</td>
+				<td><strong>13</strong>&#160;&#160;&#160;(12)</td>
+				<td><strong>7000</strong>&#160;&#160;&#160;2000)</td>
+				<td><strong>107</strong>&#160;&#160;&#160;(99)</td>
+				<td><strong>22</strong>&#160;&#160;&#160;(17)</td>
+				<td><strong>22</strong>&#160;&#160;&#160;(9)</td>
 				<td>BASTARD SWORD +++++</td>
 		</table><br>
 
@@ -256,25 +254,27 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 
 ## Version History
 
-#### Version 4.0.0 - 1x octobre 2018
+<p>	Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p><br>
+
+#### Version 4.0.0 - 20 octobre 2018
 
 - General overhaul and relooking:
 
 	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> (changes COMPILE xyz.d/baf override to COMPILE xyz.d/baf) and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
-	- Provides full compatibility with stratagems and Item revisions.
+	- Provided full compatibility with stratagems and Item revisions.
 	- tp2 split into components and commented for easier further updates.
 	- Reorganized components (DESIGNATED numbers).
 	- Added BG2EE compatibility (probably with EET, but not yet tested).
 	- Fixed wrong coding: turned WRITE_SHORT 0x028 to WRITE_LONG 0x028 (animation slot is a dword, not a word!) and WRITE_BYTE 0x242 to WRITE_SHORT 0x242 (Morale recovery is a word, not a byte).
 	- Polished WRITE_ASCII command with #n.
 	- No longer overwrites mod item files if there are already installed.
-	- Uses new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM command.
-	- Provides new portraits for BG2:EE.
+	- Used new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM command.
+	- Provided new portraits for BG2:EE.
 	- Reworked install procedure to use WeiDU's built-in HANDLE_AUDIO function to install soundsets.
-	- Uses HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
+	- Used HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
 	- Deleted unused files from mod folder.
 	- Updated readme (Butchery now supports translated readmes)
-	- Revamped French translation courtesy of Gwendolyne.
+	- Revamped French translation and fixed English typos courtesy of Gwendolyne.
 	- Traified creatures soundsets (still waiting for English sound files).
 	- Reorganized and merged tra files into 3 files.
 	- Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer to v246.
