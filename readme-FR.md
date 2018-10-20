@@ -23,7 +23,7 @@ Par ailleurs, ce mod a pour ambition de :
 - Générer des combats dynamiques avec des spawns/respawns d'ennemis pour pimenter les choses.
 - Améliorer légèrement certaines créatures de type « guerrier au corps à corps » en leur ajoutant un kit, des points de compétences martiales, etc.
 - Améliorer le charisme de certains boss (Tazok et DigDag).
-- Assurer une intégration et une compatibilité totales avec stratagems et Item Revisions (n particulier son composant <em>Revision des potions</em>).
+- Assurer une intégration et une compatibilité totales avec stratagems et Item Revisions (en particulier son composant « <em>Révision des potions</em> »).
 - Conserver le contenu du jeux original.
 - Apporter un ou deux éléments comiques à l'aventure.
 - Ne pas offrir de récompenses disproportionnés.
@@ -255,7 +255,7 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 
 ## Version History
 
-<p>	Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p><br>
+<p>	Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p>
 
 #### Version 4.0.0 - 20 octobre 2018
 
