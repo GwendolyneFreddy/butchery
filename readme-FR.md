@@ -3,7 +3,7 @@
 <p><strong>Auteur :</strong> <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a><br />
 <strong>Version :</strong> 4.0.0<br />
 <strong>Langues :</strong> français, <a href="README.md">anglais</a><br />
-<strong>Plateforme :</strong> Windows</p><br />
+<strong>Plateforme :</strong> Windows</p>
 
 <strong>Mod Forum:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
 </br></br>
@@ -166,6 +166,7 @@ Ce composant améliore un peu les statistiques, jets de sauvegarde et points de c
 				<td><strong>70</strong>&#160;&#160;&#160;40)</td>
 				<td><strong>20</strong>&#160;&#160;&#160;(18/92)</td>
 				<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
+				<td>TWO-HANDED SWORD +++</td>
 			</tr>
 		</table><br>
 

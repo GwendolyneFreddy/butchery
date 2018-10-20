@@ -3,7 +3,7 @@
 <p><strong>Author:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a><br />
 <strong>Version:</strong> 4.0.0<br />
 <strong>Languages:</strong> <a href="readme-FR.md">French</a>, English<br />
-<strong>Platform:</strong> Windows</p><br />
+<strong>Platform:</strong> Windows</p>
 
 <strong>Mod Forum:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
 </br></br>
@@ -114,10 +114,10 @@ This component alters "a bit" stats, weapons, proficiencies of some generic orc 
 			<tr>
 				<th>Creature</th>
 				<th>Kit</th>
-				<th>Niveau <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>Level <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
 				<th>XP <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>PV <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>Force <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>HP <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+				<th>Strength <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
 				<th>Constitution <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
 				<th>Weapon proficiency</th>
 			</tr>
@@ -202,9 +202,9 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 			<tr>
 				<td>Tazok</td>
 				<td>--</td>
-				<td>19 (18)</td>
-				<td>12000 (6000)</td>
-				<td>154 (136)</td>
+				<td><strong>19</strong>&#160;&#160;&#160;(18)</td>
+				<td><strong>12000</strong>&#160;&#160;&#160;(6000)</td>
+				<td><strong>154</strong>&#160;&#160;&#160;(136)</td>
 				<td>--</td>
 				<td>--</td>
 				<td>TWO-HANDED SWORD +++++</td>
@@ -212,11 +212,11 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 			<tr>
 				<td>FIRorc01 (DigDag)</td>
 				<td>Berserker</td>
-				<td>13 (12)</td>
-				<td>7000 (2000)</td>
-				<td>107 (99)</td>
-				<td>22 (17)</td>
-				<td>22 (9)</td>
+				<td><strong>13</strong>&#160;&#160;&#160;(12)</td>
+				<td><strong>7000</strong>&#160;&#160;&#160;2000)</td>
+				<td><strong>107</strong>&#160;&#160;&#160;(99)</td>
+				<td><strong>22</strong>&#160;&#160;&#160;(17)</td>
+				<td><strong>22</strong>&#160;&#160;&#160;(9)</td>
 				<td>BASTARD SWORD +++++</td>
 			</tr>
 		</table><br>
