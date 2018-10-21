@@ -6,23 +6,23 @@ GENERAL OVERHAUL AND RE-LOOKING:
 ================================
 
 - Integrated all BWP Fixpack patches: Lollorian's override compilation fix (http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893) changes COMPILE ~xyz.d/baf~ ~override~ to COMPILE ~xyz.d/baf~), and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
-- Provides full compatibility with stratagems and Item revisions.
+- Provided full compatibility with stratagems and Item revisions.
 - tp2 split into components and commented for easier further updates.
 - Reorganized components (DESIGNATED numbers).
 - Added BG2EE compatibility (probably with EET, but not yet tested).
 - Fixed wrong coding: turns WRITE_SHORT 0x028 to WRITE_LONG 0x028 (animation slot is a dword, not a word!) and WRITE_BYTE 0x242 to WRITE_SHORT 0x242 (Morale recovery is a word, not a byte).
 - Polished WRITE_ASCII action with #n.
 - No longer overwrites mod item files if there are already installed.
-- Uses new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM action.
-- Uses HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
+- Used new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM action.
+- Used HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
 - Reworked install procedure to use WeiDU's built-in HANDLE_AUDIO function to install soundsets.
-- Provides new portraits for EE games.
+- Provided new portraits for EE games.
 - Deleted unused files from mod folder.
 - Updated readme (Butchery now supports translated readmes).
 - Updated translations.
 - Revamped French translation courtesy of Gwendolyne.
 - Traified creatures soundsets (still waiting for English sound files).
-- Reorganize and merge tra files into 3 files.
+- Reorganized and merged tra files into 3 files.
 - Updated installer to WeiDU to v246.
 
 
@@ -34,7 +34,7 @@ Component 10:
 - D9ORC01, D9ORGAHJ, D9ORC05, D9ORC5b and D9ORGAME get a barbaian kit (fixed compatibility issue with stratagems).
 - D9ORGAHJ and D8ORGAME no longer wear undroppable backstab immunity boots (D9boots).
 - Groumf: WTARSGT default script so he can use throwing axes, new ovveride script to let him drink 2 potions before fighting.
-- Bourrinos: new ovveride script to let him drink 2 potions before fighting.
+- Bourrinos: new override script to let him drink 2 potions before fighting.
 - AR1203: Orcs mage (ORC04) spawn instead of Ogres mage.
 - Fixed d9cutta2.baf (last cutscene script).
 
