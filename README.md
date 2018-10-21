@@ -47,7 +47,7 @@ Classical games players are also strongly recommended to download and install th
 
 #### Notes
 
-<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-butchery.exe</strong>, uninstall all previously installed components and delete the butchery folder.</em>
+<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-butchery.exe</strong>, uninstall all previously installed components and delete the <strong>butchery</strong> folder.</em>
 
 <em>When installing or uninstalling, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
 
@@ -269,7 +269,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 ## Version History
 
-#### Version 4.0.0 - October 1x, 2018
+#### Version 4.0.0 - October 20, 2018
 
 - General overhaul and relooking:
 
