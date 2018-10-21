@@ -5,7 +5,7 @@
 <strong>Langues :</strong> français, <a href="README.md">anglais</a><br />
 <strong>Plateforme :</strong> Windows</p>
 
-<strong>Forum du mod :</strong> <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
+<strong>Mod Forum:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
 </br></br>
 
 
@@ -253,7 +253,7 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 
 
 
-## Historique des versions
+## Version History
 
 <p>	Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p>
 
