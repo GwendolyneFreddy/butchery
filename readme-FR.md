@@ -108,66 +108,66 @@ Ce composant améliore un peu les statistiques, jets de sauvegarde et points de c
 
 
 <table style="margin-left: 80px" summary="Rebalanced generic creatures">
-			<tr>
-				<th>Créature</th>
-				<th>Kit</th>
-				<th>Niveau <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>XP <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>PV <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>Force <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>Constitution <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>Compétence martiale</th>
-			</tr>
-			<tr>
-				<td>OGRE01</td>
-				<td>Berserker</td>
-				<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
-				<td><strong>600</strong>&#160;&#160;&#160;(270)</td>
-				<td><strong>50</strong>&#160;&#160;&#160;(30)</td>
-				<td><strong>21</strong>&#160;&#160;&#160;(18/100)</td>
-				<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
-				<td>MORNING STAR & MACE +++</td>
-			</tr>
-			<tr>
-				<td>ORC01</td>
-				<td>Barbare</td>
-				<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
-				<td><strong>600</strong>&#160;&#160;&#160;(95)</td>
-				<td><strong>60</strong>&#160;&#160;&#160;(35)</td>
-				<td><strong>19</strong>&#160;&#160;&#160;(18/10)</td>
-				<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
-				<td>AXE ++</td>
-			</tr>
-			<tr>
-				<td>ORC02</td>
-				<td>--</td>
-				<td><strong>5</strong></td>
-				<td><strong>600</strong>&#160;&#160;&#160;(35)</td>
-				<td><strong>50</strong>&#160;&#160;&#160;(35)</td>
-				<td><strong>18</strong>&#160;&#160;&#160;(11)</td>
-				<td><strong>17</strong>&#160;&#160;&#160;(10)</td>
-				<td>COMPOSITE LONG BOW +++ & BASTARD ++</td>
-			</tr>
-			<tr>
-				<td>ORC05 (Orog)</td>
-				<td>Barbare</td>
-				<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
-				<td><strong>800</strong>&#160;&#160;&#160;(600)</td>
-				<td><strong>84</strong>&#160;&#160;&#160;(40)</td>
-				<td><strong>20</strong>&#160;&#160;&#160;(18/53)</td>
-				<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
-				<td>TWO-HANDED SWORD +++</td>
-			</tr>
-			<tr>
-				<td>ORC06 (Orog)</td>
-				<td>Berserker</td>
-				<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
-				<td><strong>800</strong>&#160;&#160;&#160;(175)</td>
-				<td><strong>70</strong>&#160;&#160;&#160;40)</td>
-				<td><strong>20</strong>&#160;&#160;&#160;(18/92)</td>
-				<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
-				<td>TWO-HANDED SWORD +++</td>
-			</tr>
+	<tr>
+		<th>Créature</th>
+		<th>Kit</th>
+		<th>Niveau <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>XP <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>PV <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>Force <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>Constitution <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>Compétence martiale</th>
+	</tr>
+	<tr>
+		<td>OGRE01</td>
+		<td>Berserker</td>
+		<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
+		<td><strong>600</strong>&#160;&#160;&#160;(270)</td>
+		<td><strong>50</strong>&#160;&#160;&#160;(30)</td>
+		<td><strong>21</strong>&#160;&#160;&#160;(18/100)</td>
+		<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
+		<td>MORNING STAR & MACE +++</td>
+	</tr>
+	<tr>
+		<td>ORC01</td>
+		<td>Barbare</td>
+		<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
+		<td><strong>600</strong>&#160;&#160;&#160;(95)</td>
+		<td><strong>60</strong>&#160;&#160;&#160;(35)</td>
+		<td><strong>19</strong>&#160;&#160;&#160;(18/10)</td>
+		<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
+		<td>AXE ++</td>
+	</tr>
+	<tr>
+		<td>ORC02</td>
+		<td>--</td>
+		<td><strong>5</strong></td>
+		<td><strong>600</strong>&#160;&#160;&#160;(35)</td>
+		<td><strong>50</strong>&#160;&#160;&#160;(35)</td>
+		<td><strong>18</strong>&#160;&#160;&#160;(11)</td>
+		<td><strong>17</strong>&#160;&#160;&#160;(10)</td>
+		<td>COMPOSITE LONG BOW +++ & BASTARD ++</td>
+	</tr>
+	<tr>
+		<td>ORC05 (Orog)</td>
+		<td>Barbare</td>
+		<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
+		<td><strong>800</strong>&#160;&#160;&#160;(600)</td>
+		<td><strong>84</strong>&#160;&#160;&#160;(40)</td>
+		<td><strong>20</strong>&#160;&#160;&#160;(18/53)</td>
+		<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
+		<td>TWO-HANDED SWORD +++</td>
+	</tr>
+	<tr>
+		<td>ORC06 (Orog)</td>
+		<td>Berserker</td>
+		<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
+		<td><strong>800</strong>&#160;&#160;&#160;(175)</td>
+		<td><strong>70</strong>&#160;&#160;&#160;40)</td>
+		<td><strong>20</strong>&#160;&#160;&#160;(18/92)</td>
+		<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
+		<td>TWO-HANDED SWORD +++</td>
+	</tr>
 		</table><br>
 
 
@@ -176,36 +176,37 @@ Ce composant améliore un peu les statistiques, jets de sauvegarde et points de c
 Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, points de compétences...). DigDag est doté d'un kit de berserk. Je n'ai pas ajouté de kit à Tazok car stratagems le fait déjà (« <em>IA générale plus efficace</em> »). Ce composant est aussi cosmétique : Tazok est de nouveau un demi-ogre (comme dans BG1) tandis que DigDag endosse l'animation de chef orog.
 
 <table style="margin-left: 80px" summary="Rebalanced Tazok and Dig-Dag">
-			<tr>
-				<th>Créature</th>
-				<th>Kit</th>
-				<th>Niveau <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>XP <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>PV <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>Force <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>Constitution <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
-				<th>Compétence martiale</th>
-			</tr>
-			<tr>
-				<td>Tazok</td>
-				<td>--</td>
-				<td><strong>19</strong>&#160;&#160;&#160;(18)</td>
-				<td><strong>12000</strong>&#160;&#160;&#160;(6000)</td>
-				<td><strong>154</strong>&#160;&#160;&#160;(136)</td>
-				<td>--</td>
-				<td>--</td>
-				<td>TWO-HANDED SWORD +++++</td>
-			</tr>
-			<tr>
-				<td>FIRorc01 (DigDag)</td>
-				<td>Berserker</td>
-				<td><strong>13</strong>&#160;&#160;&#160;(12)</td>
-				<td><strong>7000</strong>&#160;&#160;&#160;2000)</td>
-				<td><strong>107</strong>&#160;&#160;&#160;(99)</td>
-				<td><strong>22</strong>&#160;&#160;&#160;(17)</td>
-				<td><strong>22</strong>&#160;&#160;&#160;(9)</td>
-				<td>BASTARD SWORD +++++</td>
-		</table><br>
+	<tr>
+		<th>Créature</th>
+		<th>Kit</th>
+		<th>Niveau <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>XP <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>PV <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>Force <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>Constitution <span style="font-weight: normal">&#160;&#160;&#160;(ex)</span></th>
+		<th>Compétence martiale</th>
+	</tr>
+	<tr>
+		<td>Tazok</td>
+		<td>--</td>
+		<td><strong>19</strong>&#160;&#160;&#160;(18)</td>
+		<td><strong>12000</strong>&#160;&#160;&#160;(6000)</td>
+		<td><strong>154</strong>&#160;&#160;&#160;(136)</td>
+		<td>--</td>
+		<td>--</td>
+		<td>TWO-HANDED SWORD +++++</td>
+	</tr>
+	<tr>
+		<td>FIRorc01 (DigDag)</td>
+		<td>Berserker</td>
+		<td><strong>13</strong>&#160;&#160;&#160;(12)</td>
+		<td><strong>7000</strong>&#160;&#160;&#160;2000)</td>
+		<td><strong>107</strong>&#160;&#160;&#160;(99)</td>
+		<td><strong>22</strong>&#160;&#160;&#160;(17)</td>
+		<td><strong>22</strong>&#160;&#160;&#160;(9)</td>
+		<td>BASTARD SWORD +++++</td>
+	</tr>
+</table><br>
 
 
 

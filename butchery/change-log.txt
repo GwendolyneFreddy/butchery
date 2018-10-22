@@ -1,6 +1,6 @@
 BuTcHeRY change-log.
 
-Version 4.0.0 : October 1, 2018
+Version 4.0.0 : October 20, 2018
 
 GENERAL OVERHAUL AND RE-LOOKING:
 ================================
