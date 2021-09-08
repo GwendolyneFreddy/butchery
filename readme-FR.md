@@ -1,20 +1,52 @@
-# BuTcHeRy
 
-<p><strong>Auteur :</strong> <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a><br />
-<strong>Version :</strong> 4.0.0<br />
-<strong>Langues :</strong> français, <a href="README.md">anglais</a><br />
-<strong>Plateforme :</strong> Windows</p>
+![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/butchery?include_prereleases&color=darkred)<a name="top" id="top"> </a>
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/GwendolyneFreddy/butchery?color=gold)
+![Platform](https://img.shields.io/static/v1?label=plateformes&message=windows%20%7C%20macOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
+![Language](https://img.shields.io/static/v1?label=langues&message=Fran%C3%A7ais%20%7C%20Anglais%20%7C%20Russe&color=limegreen)
 
-<strong>Forum du mod :</strong> <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
-</br></br>
+![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
+<a href="README_EN.md"><img align="right" src="butchery/images/uk-flag-32.png" title="English Readme"></a>
 
+
+<div align="center"><h1><BuTcHeRy</h1>
+
+<h3>Un mod développé sur <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a> pour Baldur's Gate II: ToB,<br>
+BGT, BG2:EE et EET<h3>
+</div><br>
+
+**Auteur :** <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a>  
+**Site du mod :** https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/  
+**Forum du mod :** <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
+
+## 
+
+[![Created Badge](https://badges.pufler.dev/created/GwendolyneFreddy/butchery?style=plastic&label=cr%C3%A9ation)](https://badges.pufler.dev)
+![GitHub repo size](https://img.shields.io/github/repo-size/GwendolyneFreddy/butchery?style=plastic&label=taille)
+[![Visits Badge](https://badges.pufler.dev/visits/GwendolyneFreddy/butchery?color=cyan&style=plastic&label=visites)](https://badges.pufler.dev) 
+![Maintenance](https://img.shields.io/static/v1?label=maintenu%20%3F&message=oui&color=greenlight&style=plastic)
+![GitHub contributors](https://img.shields.io/github/contributors/GwendolyneFreddy/butchery?color=blueviolet&label=contributeurs&style=plastic) [![Contributors Display](https://badges.pufler.dev/contributors/GwendolyneFreddy/butchery?size=30&padding=5&bots=true)](https://badges.pufler.dev)
+
+## 
+
+:page_facing_up: [Lisez-moi du mod]()
+
+:inbox_tray: [Télécharger le mod sur le site de La Couronne de Cuivre]()<br>
+
+## 
+
+<div align="center">
+<a href="#intro">Présentation</a> &#8226; <a href="#compat">Compatibilité</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#components">Composants</a> &#8226; <a href="#componentslist">Composants (présentation alternative</a> &#8226; <a href="#images">Captures d'écran</a> &#8226; <a href="#credits">Crédits et remerciements</a> &#8226; <a href="#versions">Historique des versions</a><br>
+</div>
+
+
+<hr>
 
 
 ## Présentation
 
 L'objet principal de ce petit mod est d'ajouter un combat dynamique et plus relevé dans le repaire de Firkraag.
 
-J'aime Baldur's Gate, et j'ai écrit ce mod (première version en 2010) pour comprendre un minimum les arcanes du modding. Grâce à Freddy_Gwendo, ce mod est désormais compatible avec les versions améliorées (BG2:EE). Je lui aussi récemment apporté certaines améliorations et des ajustements.
+J'aime Baldur's Gate, et j'ai écrit ce mod (première version en 2010) pour comprendre un minimum les arcanes du modding. Grâce à Freddy_Gwendo, ce mod est désormais compatible avec les versions améliorées (BG2:EE). Je lui ai aussi récemment apporté certaines améliorations et des ajustements.
 
 Par ailleurs, ce mod a pour ambition de :
 
@@ -23,11 +55,14 @@ Par ailleurs, ce mod a pour ambition de :
 - Générer des combats dynamiques avec des spawns/respawns d'ennemis pour pimenter les choses.
 - Améliorer légèrement certaines créatures de type « guerrier au corps à corps » en leur ajoutant un kit, des points de compétences martiales, etc.
 - Améliorer le charisme de certains boss (Tazok et DigDag).
-- Assurer une intégration et une compatibilité totales avec stratagems et Item Revisions (en particulier son composant « <em>Révision des potions</em> »).
+- Assurer une intégration et une compatibilité totales avec stratagems et Item Revisions (en particulier son composant « *Révision des potions* »).
 - Conserver le contenu du jeux original.
 - Apporter un ou deux éléments comiques à l'aventure.
 - Ne pas offrir de récompenses disproportionnés.
+<div align="right"><a href="#top">Retour en haut de page</a></div>
 
+
+<hr>
 
 
 ## Compatibilité
@@ -39,10 +74,13 @@ BuTcHeRy est un mod <acronym title="Weimer Dialogue Utility">WeiDU</acronym> et 
 Bien que je m'efforce de rendre BuTcHeRy compatible avec le plus grand nombre possible de mods, des incompatibilités risquent toujours de se produire. Voici la liste de celles recensées jusqu'à présent :
 
 - BuTcHeRY n'est pas compatible avec le composant « <em>Firkraag amelioré</em> » du mod Revisited Battles.
-- Comme j'utilise les scripts de combat proposés par le jeux original, vous pouvez encore augmenter la difficulté si vous installez le mod stratagems (composant « <em>IA générale plus efficace</em> ») qui améliorera mes scripts de combat. Bien évidemment, vous devrez installer stratagems après BuTcHeRy.</br></br>
+- Comme j'utilise les scripts de combat proposés par le jeux original, vous pouvez encore augmenter la difficulté si vous installez le mod stratagems (composant « <em>IA générale plus efficace</em> ») qui améliorera mes scripts de combat. Bien évidemment, vous devrez installer stratagems après BuTcHeRy.<br><br>
 
-Si vous jouez avec BG2-ToB ou BGT, je vous recommande fortement d'installer la dernière version du <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> avant d'installer ce mod.</br></br>
+Si vous jouez avec BG2-ToB ou BGT, je vous recommande fortement d'installer la dernière version du <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> avant d'installer ce mod.<br><br>
+<div align="right"><a href="#top">Retour en haut de page</a></div>
 
+
+<hr>
 
 
 ## Installation
@@ -74,8 +112,12 @@ Vous pouvez lancer <strong>setup-butchery.exe</strong> dans votre répertoire de 
 
 #### Note pour effectuer une désinstallation complète
 
-En plus des méthodes détaillées plus haut pour supprimer des composants, il est possible de désinstaller complètement le mod en tapant <strong>setup-butchery --uninstall</strong> dans une ligne de commandes, ce qui supprimera tous les composants sans devoir ingurgiter tous les messages.</br></br>
+En plus des méthodes détaillées plus haut pour supprimer des composants, il est possible de désinstaller complètement le mod en tapant <strong>setup-butchery --uninstall</strong> dans une ligne de commandes, ce qui supprimera tous les composants sans devoir ingurgiter tous les messages.<br><br>
+<div align="right"><a href="#top">Retour en haut de page</a></div>
+<div align="right"><a href="#top">Retour en haut de page</a></div>
 
+
+<hr>
 
 
 ## <a name="components" id="components"></a>Composants
@@ -207,14 +249,20 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 		<td>BASTARD SWORD +++++</td>
 	</tr>
 </table><br>
+<div align="right"><a href="#top">Retour en haut de page</a></div>
 
+
+<hr>
 
 
 ## Captures d'écran
 
 <img src="butchery/images/baldr000.jpg">
-<img src="butchery/images/baldr001.jpg"></br>
+<img src="butchery/images/baldr001.jpg"><br>
+<div align="right"><a href="#top">Retour en haut de page</a></div>
 
+
+<hr>
 
 
 ## Crédits et remerciements
@@ -250,30 +298,33 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 ###### The BuTcHeRy n'est pas développé, supporté ni approuvé par BioWare&trade; ou Interplay/Black Isle, Overhaul, Beamdog ou Wizards of the Coast. Il a été développé par DrAzTiK, et est basé sur le jeu Baldur's Gate II et son extension.
 ###### Baldur's Gate II : Les Ombres d'Amn et Baldur's Gate II : Trône de Bhaal appartiennent à &copy; TSR, Inc. Le moteur Infinity Engine appartient à &copy; BioWare Corp. Toutes les autres marques et droits d'auteur appartiennent à leurs propriétaires respectifs.
 ###### S'il existe des problèmes de droits d'auteur ou si cette déclaration nécessite une révision, veuillez me contacter et conseillez-moi sur ce qu'il faut faire à ce sujet. Plus particulièrement, si vous trouvez dans ce mod des illustrations susceptibles d'être en conflit avec les règles de droit d'auteur, merci de bien vouloir me le faire savoir dès que possible et je supprimerai immédiatement le contenu en conflit.
-###### Ce mod a été créé pour être librement apprécié par tous les joueurs de Baldur's Gate II et son contenu est libre de droit. N'hésitez pas à lui « emprunter » ce qui vous intéresse, je promets de ne pas vous en vouloir.</br></br>
+###### Ce mod a été créé pour être librement apprécié par tous les joueurs de Baldur's Gate II et son contenu est libre de droit. N'hésitez pas à lui « emprunter » ce qui vous intéresse, je promets de ne pas vous en vouloir.<br><br>
+<div align="right"><a href="#top">Retour en haut de page</a></div>
 
+
+<hr>
 
 
 ## Historique des versions
 
 <p>	Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p>
 
-#### Version 4.0.0 - 20 octobre 2018
+#### Version 4.0.0 &nbsp;(20 octobre 2018)
 
 - General overhaul and relooking:
 
-	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> (changes COMPILE xyz.d/baf override to COMPILE xyz.d/baf) and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
+	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> (changes `COMPILE xyz.d/baf override` to `COMPILE xyz.d/baf`) and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
 	- Provided full compatibility with stratagems and Item revisions.
 	- tp2 split into components and commented for easier further updates.
-	- Reorganized components (DESIGNATED numbers).
+	- Reorganized components (`DESIGNATED` numbers).
 	- Added BG2EE compatibility (probably with EET, but not yet tested).
-	- Fixed wrong coding: turned WRITE_SHORT 0x028 to WRITE_LONG 0x028 (animation slot is a dword, not a word!) and WRITE_BYTE 0x242 to WRITE_SHORT 0x242 (Morale recovery is a word, not a byte).
-	- Polished WRITE_ASCII command with #n.
+	- Fixed wrong coding: turned `WRITE_SHORT 0x028` to `WRITE_LONG 0x028` (animation slot is a dword, not a word!) and `WRITE_BYTE 0x242` to `WRITE_SHORT 0x242` (Morale recovery is a word, not a byte).
+	- Polished `WRITE_ASCII` command with #n.
 	- No longer overwrites mod item files if there are already installed.
-	- Used new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM command.
+	- Used new WeiDU variables (INV RING QITEM...) with `ADD_CRE_ITEM` command.
 	- Provided new portraits for BG2:EE.
-	- Reworked install procedure to use WeiDU's built-in HANDLE_AUDIO function to install soundsets.
-	- Used HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
+	- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function to install soundsets.
+	- Used `HANDLE_CHARSETS` function to add BG2EE compatibility for languages other than English.
 	- Deleted unused files from mod folder.
 	- Updated readme (Butchery now supports translated readmes)
 	- Revamped French translation and fixed English typos courtesy of Gwendolyne.
@@ -283,21 +334,26 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 
 - Components specific modifications and fixes: please read the <a href="https://raw.githubusercontent.com/GwendolyneFreddy/butchery/master/butchery/change-log.txt">change-log file</a>.
 
+## 
 
-#### Version 3.2 - 10 Octobre 2011
+#### Version 3.2 &nbsp;(10 octobre 2011)
 - Increased Tazok to level 19 Barbarian.
 - Added a magical armor to Tazok.
 - Increased DigDag to level 13 Berseker.
 - Decreased the number of Orcs spawned in final fight.
 
+## 
 
-#### Version 3 - 1er Mars, 2011
+#### Version 3 &nbsp;(1er mars 2011)
 - Better compatibility with SCS II (especially more sensible choices of weapon proficiencies and kits for fighters component).
 
+## 
 
-#### Version 2 - 30 novembre 2010
+#### Version 2 &nbsp;(30 novembre 2010)
 - Added French translation.
 
+## 
 
-#### Version 1 - 11 novembre 2010
+#### Version 1 &nbsp;((11 novembre 2010)
 - Initial release.
+<div align="right"><a href="#top">Retour en haut de page</a></div>

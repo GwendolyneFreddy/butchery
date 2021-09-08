@@ -1,13 +1,49 @@
-# BuTcHeRy
 
-<p><strong>Author:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a><br />
-<strong>Version:</strong> 4.0.0<br />
-<strong>Languages:</strong> <a href="readme-FR.md">French</a>, English<br />
-<strong>Platform:</strong> Windows</p>
+![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/butchery?include_prereleases&color=darkred)<a name="top" id="top"> </a>
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/GwendolyneFreddy/butchery?color=gold)
+![Platform](https://img.shields.io/static/v1?label=platformes&message=windows%20%7C%20macOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
+![Language](https://img.shields.io/static/v1?label=language&message=French%20%7C%20English%20%7C%20Russian&color=limegreen)
 
-<strong>Mod Forum:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
-</br></br>
+![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
+<a href="README-FR.md"><img align="right" src="butchery/images/fr-flag-32.png" title="Readme français"></a>
 
+
+<div align="center"><h1>BuTcHeRy</h1>
+
+<h3>A <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a> for Baldur's Gate II:ToB (classical and EE games),<br>
+Baldur's Gate Trilogy and EET<h3>
+</div><br>
+
+**Author:** <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a>  
+**Mod Website:** https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/  
+**Mod Forum:** <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
+
+## 
+
+[![Created Badge](https://badges.pufler.dev/created/GwendolyneFreddy/butchery?style=plastic)](https://badges.pufler.dev)
+![GitHub repo size](https://img.shields.io/github/repo-size/GwendolyneFreddy/butchery?style=plastic)
+[![Visits Badge](https://badges.pufler.dev/visits/GwendolyneFreddy/butchery?color=cyan&style=plastic)](https://badges.pufler.dev) 
+![Maintenance](https://img.shields.io/static/v1?label=maintained%3F&message=yes&color=greenlight&style=plastic)
+![GitHub contributors](https://img.shields.io/github/contributors/GwendolyneFreddy/butchery?color=blueviolet&style=plastic) [![Contributors Display](https://badges.pufler.dev/contributors/GwendolyneFreddy/butchery?size=30&padding=5&bots=true)](https://badges.pufler.dev)
+
+## 
+
+:page_facing_up: [Read the mod's readme]()
+
+:inbox_tray: [Download the mod at La Couronne de Cuivre]()<br>
+
+## 
+
+
+<div align="center">
+<a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#faq">FAQ</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a><br>
+
+
+<a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#components">Components</a> &#8226; <a href="#images">Screenshots</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a><br>
+</div>
+
+
+<hr>
 
 
 ## Overview
@@ -23,11 +59,14 @@ Secondary objectives are:
 - Have a 'butchery fight', with some spawn and respawn to spice up battles.
 - Make a few non-spellcaster creatures a bit more challenging (while non cheated) using kit abilities, having proficiencies in weapons, etc.
 - Have challenging and charismatic boss.
-- Have 100% compatibility and optimisation with Sword Coast stratagems and Item Revisions (especially with its '<em<potions revisions</em>' component).
+- Have 100% compatibility and optimisation with Sword Coast stratagems and Item Revisions (especially with its '*potions revisions*' component).
 - Keep 100% content of the original game. I add a few things, but I don't remove a single one.
 - Add a bit of fun dialogues and cutscenes.
-- No big loots or new magical items.</br></br>
+- No big loots or new magical items.<br><br>
+<div align="right"><a href="#top">Back to top</a></div>
 
+
+<hr>
 
 
 ## Compatibility
@@ -37,10 +76,13 @@ This mod is designed to work on the following Infinity Engine games: Baldur's Ga
 Though I am striving to make BuTcHeRy compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
 
 - BuTcHeRY is not compatible with Revisited Battles component '<em>Improved Firkraag</em>' (don't expect a crash but an impossible fight).
-- As I use vanilla scripts, expect the fight to be harder if you install stratagems ('<em>Smarter general AI<em>' component). You should install BuTcHeRy before stratagems of course.</br></br>
+- As I use vanilla scripts, expect the fight to be harder if you install stratagems ('<em>Smarter general AI<em>' component). You should install BuTcHeRy before stratagems of course.<br><br>
 
-Classical games players are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.</br></br>
+Classical games players are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br><br>
+<div align="right"><a href="#top">Back to top</a></div>
 
+
+<hr>
 
 
 ## Installation
@@ -66,12 +108,16 @@ BuTcHeRy for Windows is distributed as an extractable compressed archive and inc
 Extract the contents of the mod archive into the folder of the game you wish to modify, using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. When properly extracted, your game directory will contain <strong>setup-butchery.exe</strong> and the folder <strong>butchery</strong>. To install, double-click <strong>setup-butchery.exe</strong> and follow the instructions on screen.
 
 You can run <strong>setup-butchery.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
+<div align="right"><a href="#top">Back to top</a></div>
 
 
 #### Note for Complete Uninstallation
 
-In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-butchery --uninstall</strong> at the command line to remove all components without wading through prompts.</br></br>
+In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-butchery --uninstall</strong> at the command line to remove all components without wading through prompts.<br><br>
+<div align="right"><a href="#top">Back to top</a></div>
 
+
+<hr>
 
 
 ## <a name="components" id="components"></a>Components
@@ -220,14 +266,20 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 		<td>BASTARD SWORD +++++</td>
 	</tr>
 </table><br>
+<div align="right"><a href="#top">Back to top</a></div>
 
+
+<hr>
 
 
 ## Screenshots
 
 <img src="butchery/images/baldr000.jpg">
-<img src="butchery/images/baldr001.jpg"></br>
+<img src="butchery/images/baldr001.jpg"><br>
+<div align="right"><a href="#top">Back to top</a></div>
 
+
+<hr>
 
 
 ## Credits and Acknowledgements
@@ -263,28 +315,31 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 ###### The BuTcHeRy is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by DrAzTiK, based on material from the game Baldur's Gate II and its expansion.
 ###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
 ###### If there are any copyright issues or this statement needs revision, then please contact me and advise me what to do about it. Most notably, if you see any artwork in this mod that might conflict with Copyright rules, please let me know as soon as possible, and I will remove the conflicting content immediately.
-###### This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. Feel free to borrow what you need if you find something interesting. I will not sue anyone, don't worry.</br></br>
+###### This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. Feel free to borrow what you need if you find something interesting. I will not sue anyone, don't worry.<br><br>
+<div align="right"><a href="#top">Back to top</a></div>
 
+
+<hr>
 
 
 ## Version History
 
-#### Version 4.0.0 - October 20, 2018
+#### Version 4.0.0 &nbsp;(October 20, 2018)
 
 - General overhaul and relooking:
 
-	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> (changes COMPILE xyz.d/baf override to COMPILE xyz.d/baf) and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
+	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> (changes `COMPILE xyz.d/baf override` to `COMPILE xyz.d/baf`) and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
 	- Provided full compatibility with stratagems and Item revisions.
 	- tp2 split into components and commented for easier further updates.
-	- Reorganized components (DESIGNATED numbers).
+	- Reorganized components (`DESIGNATED` numbers).
 	- Added BG2EE compatibility (probably with EET, but not yet tested).
-	- Fixed wrong coding: turned WRITE_SHORT 0x028 to WRITE_LONG 0x028 (animation slot is a dword, not a word!) and WRITE_BYTE 0x242 to WRITE_SHORT 0x242 (Morale recovery is a word, not a byte).
+	- Fixed wrong coding: turned `WRITE_SHORT 0x028` to `WRITE_LONG 0x028` (animation slot is a dword, not a word!) and `WRITE_BYTE 0x242` to `WRITE_SHORT 0x242` (Morale recovery is a word, not a byte).
 	- Polished WRITE_ASCII command with #n.
 	- No longer overwrites mod item files if there are already installed.
-	- Used new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM command.
+	- Used new WeiDU variables (INV RING QITEM...) with `ADD_CRE_ITEM` command.
 	- Provided new portraits for BG2:EE.
-	- Reworked install procedure to use WeiDU's built-in HANDLE_AUDIO function to install soundsets.
-	- Used HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
+	- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function to install soundsets.
+	- Used `HANDLE_CHARSETS` function to add BG2EE compatibility for languages other than English.
 	- Deleted unused files from mod folder.
 	- Updated readme (Butchery now supports translated readmes)
 	- Revamped French translation and fixed English typos courtesy of Gwendolyne.
@@ -294,21 +349,26 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 - Components specific modifications and fixes: please read the <a href="https://raw.githubusercontent.com/GwendolyneFreddy/butchery/master/butchery/change-log.txt">change-log file</a>.
 
+## 
 
-#### Version 3.2 - October 10, 2011
+#### Version 3.2 &nbsp;(October 10, 2011)
 - Increased Tazok to level 19 Barbarian.
 - Added a magical armor to Tazok.
 - Increased DigDag to level 13 Berseker.
 - Decreased the number of Orcs spawned in final fight.
 
+## 
 
-#### Version 3 - March 1, 2011
+#### Version 3 &nbsp;(March 1, 2011)
 - Better compatibility with SCS II (especially more sensible choices of weapon proficiencies and kits for fighters component).
 
+## 
 
-#### Version 2 - November 30, 2010
+#### Version 2 &nbsp;(November 30, 2010)
 - Added French translation.
 
+## 
 
-#### Version 1 - November 11, 2010
+#### Version 1 &nbsp;(November 11, 2010)
 - Initial release.
+<div align="right"><a href="#top">Back to top</a></div>
