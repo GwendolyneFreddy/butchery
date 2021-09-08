@@ -15,7 +15,7 @@ BGT, BG2:EE et EET<h3>
 </div><br>
 
 **Auteur :** <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a>  
-**Site du mod :** https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/  
+**Site du mod :** <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/">La Couronne de Cuivre</a>  
 **Forum du mod :** <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
 
 ## 
@@ -67,16 +67,29 @@ Par ailleurs, ce mod a pour ambition de :
 
 ## Compatibilité
 
-Ce mod est conçu pour fonctionner sur les jeux Infinity Engine suivants : Baldur's Gate II: Enhanced Edition (BG2EE), le jeu original Baldur's Gate II (Les Ombres d'Amn : BG2-SoA), avec son extension Trône de Bhaal (Throne of Bhaal : ToB), les mods de conversion Baldur's Gate Trilogy (BGT) et Enhanced Edition Trilogy (EET).
+#### Jeux concernés
 
-BuTcHeRy est un mod <acronym title="Weimer Dialogue Utility">WeiDU</acronym> et devrait par conséquent être compatible avec n'importe quel mod WeiDU. Si vous faites face à des bugs, veuillez les signaler dans le forum, s'il vous plaît.
+Ce mod est conçu pour fonctionner sur les jeux Infinity Engine suivants :
+- Baldur's Gate II: Enhanced Edition (BG2EE).
+- Le jeu original Baldur's Gate II (Les Ombres d'Amn : BG2-SoA), avec son extension Trône de Bhaal (Throne of Bhaal : ToB). *Assurez-vous que l'extension Trône de Bhaal dispose bien du patch 26498. Vérifiez le numéro de cette version dans le fichier readme de votre répertoire de jeu, et consultez éventuellement <a href="http://www.bioware.com/games/throne_bhaal/support/patches/">le site de BioWare</a>.*
+- Les mods de conversion basés sur le moteur ToB : <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy</a> (BGT)et <a href="https://github.com/Gibberlings3/EET/releases">Enhanced Edition Trilogy</a> (EET).
 
-Bien que je m'efforce de rendre BuTcHeRy compatible avec le plus grand nombre possible de mods, des incompatibilités risquent toujours de se produire. Voici la liste de celles recensées jusqu'à présent :
+## 
 
-- BuTcHeRY n'est pas compatible avec le composant « <em>Firkraag amelioré</em> » du mod Revisited Battles.
-- Comme j'utilise les scripts de combat proposés par le jeux original, vous pouvez encore augmenter la difficulté si vous installez le mod stratagems (composant « <em>IA générale plus efficace</em> ») qui améliorera mes scripts de combat. Bien évidemment, vous devrez installer stratagems après BuTcHeRy.<br><br>
+#### Compatibilité avec les autres mods
 
-Si vous jouez avec BG2-ToB ou BGT, je vous recommande fortement d'installer la dernière version du <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> avant d'installer ce mod.<br><br>
+Ce mod est un mod WeiDU et devrait par conséquent être compatible avec n'importe quel mod WeiDU. Bien que je m'efforce de rendre BuTcHeRy compatible avec le plus grand nombre possible de mods, des incompatibilités risquent toujours de se produire. Voici la liste de celles recensées jusqu'à présent :
+
+- BuTcHeRY n'est pas compatible avec le composant « *Firkraag amelioré<* » du mod Revisited Battles.
+- Comme j'utilise les scripts de combat proposés par le jeux original, vous pouvez encore augmenter la difficulté si vous installez le mod stratagems (composant « *IA générale plus efficace* ») qui améliorera mes scripts de combat. Bien évidemment, vous devrez installer stratagems après BuTcHeRy.<br><br>
+
+Si vous rencontrez des bugs, veuillez les signaler dans le <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">le forum du mod</a>, s'il vous plaît.
+
+## 
+
+#### Ordre d'installation
+
+>Je recommande fortement aux joueurs de ToB original de télécharger et d'installer la dernière version du <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> avant d'installer ce mod.<br>
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
 
@@ -87,12 +100,14 @@ Si vous jouez avec BG2-ToB ou BGT, je vous recommande fortement d'installer la d
 
 #### Mise en garde
 
-<em>Si une ancienne version de ce mod est déjà installée, il est nécessaire de la désinstaller d'abord. Pour cela, lancez <strong>setup-butchery.exe</strong> et désinstallez tous les composants précédemment installés. Une fois la désinstallation achevée, supprimez le répertoire <strong>butchery</strong> et le fichier <strong>setup-butchery.exe</strong> avant d'extraire la nouvelle version du mod.</em>
+*Si une ancienne version de ce mod est déjà installée, il est nécessaire de la désinstaller avant d'extraire la nouvelle. Pour cela, lancez __`setup-butchery.exe`__, et désinstallez tous les composants précédemment installés. Une fois la désinstallation achevée, supprimez le répertoire :file_folder: __butchery__ et le fichier __setup-butchery.exe__ (version Windows) avant d'extraire la nouvelle version du mod.*
 
-<em>Lorsque vous installez ou désinstallez, <strong>ne fermez pas la fenêtre <acronym title="Disk Operating System">DOS</acronym></strong> en cliquant sur le bouton <strong>X</strong> ! Au lieu de cela, appuyez sur la touche <strong>Entrée</strong> lorsque l'invite de commandes vous le demande.</em>
+*Lorsque vous installez ou désinstallez, __ne fermez pas la fenêtre DOS__ en cliquant sur le bouton __X__ ! Au lieu de cela, appuyez sur la touche __Entrée__ lorsque l'invite de commandes vous le demande.*
 
-<em>Par précaution, <strong>désactivez les antivirus</strong> ou tout logiciel résidant en mémoire avant d'installer ce mod, ou tout autre mod. Certains (en particulier avast et Norton !) ont une fâcheuse tendance à déclarer les exécutables des mods comme des faux positifs, provoquant ainsi l'échec de la procédure d'installation.</em>
+*Par précaution, __désactivez les antivirus__ ou tout logiciel résidant en mémoire avant d'installer ce mod, ou tout autre mod. Certains (en particulier avast et Norton !) ont une fâcheuse tendance à déclarer les exécutables des mods comme des faux positifs, provoquant ainsi l'échec de la procédure d'installation.*
 
+Vous pouvez extraire les fichiers de l'archive à l'aide de <a href="https://www.7-zip.org/download.html">7zip</a>, <a href="https://www.rarlab.com/download.htm">WinRAR</a>, <a href="https://zipgenius.com/">ZipGenius</a>, ou de tout autre utilitaire de compression gérant les fichiers .zip.
+## 
 
 #### Note pour les jeux en Édition Améliorée (EE)
 
@@ -100,20 +115,43 @@ Les Éditions améliorées sont des jeux que le développeur fait encore évoluer, no
 
 Si vous pouvez retarder la mise à jour du patch en plein milieu d'un partie moddée (si vous en avez la possibilité, notamment chez Beamdog et Good Old Games), n'oubliez pas que même après avoir réinstallé les mods sur un nouveau patch, vous ne pourrez peut-être pas continuer le jeu avec vos anciennes sauvegardes, en particulier à cause de noms de personnages, de lieux, etc, qui pourraient être incorrects. Pour y remédier, copiez tout le dossier du jeu dans un nouveau dossier dans lequel vous installerez vos mods, et qui ne sera pas modifié par les patches de mise à jour. Il est important que vous installiez le mod dans la version linguistique dans laquelle vous jouez. Sinon, les dialogues du mod ne s'afficheront pas et provoqueront des messages d'erreur.
 
+## 
 
 #### Windows
 
-BuTcHeRy pour Windows est livré et installé avec <acronym title="Weimer Dialogue Utility">WeiDU</acronym>, et est diffusé sous forme d'archive
+BuTcHeRy pour Windows est livré et installé avec WeiDU, et est diffusé sous forme d'archive
 
-Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu. Une fois l'archive extraite correctement, vous devriez trouver le répertoire <strong>butchery</strong> et le fichier <strong>setup-butchery.exe</strong> dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur <strong>setup-butchery.exe</strong> et de suivre les instructions affichées à l'écran.
+Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu (*le dossier qui contient le fichier CHITIN.KEY*). Une fois l'archive extraite correctement, vous devriez trouver le répertoire :file_folder: butchery et le fichier setup-butchery.exe dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur **`setup-butchery.exe<`** et de suivre les instructions affichées à l'écran.
 
-Vous pouvez lancer <strong>setup-butchery.exe</strong> dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore changer des composants.
+Pour réinstaller, désinstaller ou changer certains composants, lancez **`setup-butchery.exe`** dans votre répertoire de jeu.
 
+## 
+
+#### Mac OS
+
+BuTcHeRy pour Mac OS est livré avec WeiDU et est diffusé dans la même archive compressée.
+
+Extrayez le contenu de l'archive dans votre répertoire de jeu. Après une extraction réussie, ce dernier contiendra les fichiers setup-butchery, setup-butchery.command et le répertoire :file_folder: butchery. Pour installer, il suffit de double-cliquer sur **`setup-butchery.command`** et de suivre les instructions affichées à l'écran.
+
+Vous pouvez lancer **`setup-butchery.command`** dans votre répertoire de jeu pour réinstaller, désinstaller ou changer des composants.
+
+## 
+
+#### Linux
+
+BuTcHeRy pour Linux est diffusé dans la même archive compressée, mais sans l'installateur WeiDU.
+
+Extrayez le contenu du mod dans le répertoire du jeu que vous voulez modifier.
+
+Téléchargez la version la plus récente de WeiDU pour Linux sur <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a>, puis copiez weidu et weinstall dans `/usr/local/bin` (créez-le s'il n'existe pas). Ouvrez ensuite un terminal et allez (**`cd`**) dans le répertoire d'installation de votre jeu, lancez **`/usr/local/bin/tolower`** et répondez « Y » aux deux questions. Vous pouvez éviter d'exécuter la seconde option (linux.ini) si vous l'avez déjà lancée une fois dans le même dossier. Pour gagner du temps, l'archive est déjà passée en minuscules, aussi il n'est pas non plus nécessaire d'exécuter la première option (passer les noms de fichiers en minuscules) si vous n'avez extrait que ce mod depuis la dernière fois que vous avez passé les noms de fichiers en minuscules. Si vous avez un doute, il vaut mieux exécuter tolower et accepter les deux options.
+
+Tapez la commande **`export PATH=$PATH:/usr/local/bin`**, puis lancez **`weinstall setup-butchery`** depuis le dossier de votre jeu pour installer le mod. Exécutez ensuite **`wine bgmain.exe`** (ou **`wine baldur.exe`** pour les jeux EE) et commencez votre partie.
+
+## 
 
 #### Note pour effectuer une désinstallation complète
 
-En plus des méthodes détaillées plus haut pour supprimer des composants, il est possible de désinstaller complètement le mod en tapant <strong>setup-butchery --uninstall</strong> dans une ligne de commandes, ce qui supprimera tous les composants sans devoir ingurgiter tous les messages.<br><br>
-<div align="right"><a href="#top">Retour en haut de page</a></div>
+En plus des méthodes détaillées plus haut pour supprimer des composants, il est possible de désinstaller complètement le mod en tapant **`setup-butchery --uninstall`** dans une ligne de commandes, ce qui supprimera tous les composants sans devoir ingurgiter tous les messages.<br><br>
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
 

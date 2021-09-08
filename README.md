@@ -10,12 +10,12 @@
 
 <div align="center"><h1>BuTcHeRy</h1>
 
-<h3>A <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a> for Baldur's Gate II:ToB (classical and EE games),<br>
+<h3>A <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a> mod for Baldur's Gate II:ToB (classical and EE games),<br>
 Baldur's Gate Trilogy and EET<h3>
 </div><br>
 
 **Author:** <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a>  
-**Mod Website:** https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/  
+**Mod Website:** <a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/">La Couronne de Cuivre</a>  
 **Mod Forum:** <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">BuTcHeRy</a>
 
 ## 
@@ -36,9 +36,6 @@ Baldur's Gate Trilogy and EET<h3>
 
 
 <div align="center">
-<a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#faq">FAQ</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a><br>
-
-
 <a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#components">Components</a> &#8226; <a href="#images">Screenshots</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a><br>
 </div>
 
@@ -71,14 +68,31 @@ Secondary objectives are:
 
 ## Compatibility
 
-This mod is designed to work on the following Infinity Engine games: Baldur's Gate II: Enhanced Edition (BG2EE), the original Baldur's Gate II (BG2 or just SoA) with the Throne of Bhaal (ToB) expansion, the conversion projects Baldur's Gate Trilogy (BGT) and Enhanced Edition Trilogy (EET).
+#### Games supported
 
-Though I am striving to make BuTcHeRy compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
+This mod is designed to work on the following Infinity Engine games:
 
-- BuTcHeRY is not compatible with Revisited Battles component '<em>Improved Firkraag</em>' (don't expect a crash but an impossible fight).
-- As I use vanilla scripts, expect the fight to be harder if you install stratagems ('<em>Smarter general AI<em>' component). You should install BuTcHeRy before stratagems of course.<br><br>
+- Baldur's Gate II: Enhanced Edition (BG2EE).
+- The original Baldur's Gate II (BG2, or just SoA) with the Throne of Bhaal (ToB) expansion. **Make sure you have Throne of Bhaal patched to version 26498.** Check the ReadMe files related to your patch in your game folder and the <a href="http://www.bioware.com/games/throne_bhaal/support/patches/">BioWare</a> website if necessary.
+- The conversion projects based on ToB: <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/Gibberlings3/EET/releases">Enhanced Edition Trilogy</a> (EET).
 
-Classical games players are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br><br>
+## 
+
+#### Other Mods Compatibility
+
+This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. Though I am striving to make BuTcHeRy compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
+
+- BuTcHeRY is not compatible with Revisited Battles component '*Improved Firkraag*' (don't expect a crash but an impossible fight).
+- As I use vanilla scripts, expect the fight to be harder if you install stratagems ('*Smarter general AI*' component). You should install BuTcHeRy before stratagems of course.<br><br>
+
+If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">report them on the mod forum!</a>
+
+## 
+
+#### Installation Order
+
+>Classical games players are strongly recommended to download and install the latest version of the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
+
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -89,31 +103,57 @@ Classical games players are also strongly recommended to download and install th
 
 #### Notes
 
-<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-butchery.exe</strong>, uninstall all previously installed components and delete the <strong>butchery</strong> folder.</em>
+*If you've previously installed the mod, remove it before extracting the new version. To do this, run __setup-butchery.exe__, un-install all previously installed components and delete the :file_folder: __butchery__ folder.*
 
-<em>When installing or uninstalling, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
+*When installing or un-installing, __do not close the DOS window__ by clicking on the __X__ button! Instead, press the __Enter__ key whenever instructed to do so.*
 
-<em><strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.</em>
+*__Disable any antivirus__ or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.*
 
+You can extract files from the archive using <a href="https://www.7-zip.org/download.html">7zip</a>, <a href="https://www.rarlab.com/download.htm">WinRAR</a>, <a href="https://zipgenius.com/">ZipGenius</a> or another file compression utility that handles .zip files.
+
+## 
 
 #### Enhanced Editions Note
 
 The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 
+## 
 
 #### Windows
 
-BuTcHeRy for Windows is distributed as an extractable compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+BuTcHeRy for Windows is distributed as an extractable compressed archive and includes a WeiDU installer.
 
-Extract the contents of the mod archive into the folder of the game you wish to modify, using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. When properly extracted, your game directory will contain <strong>setup-butchery.exe</strong> and the folder <strong>butchery</strong>. To install, double-click <strong>setup-butchery.exe</strong> and follow the instructions on screen.
+Extract the contents of the mod archive into the folder of the game you wish to modify (*the folder which contains the "CHITIN.KEY" file*). On successful extraction, there should be a :file_folder: butchery folder and a setup-butchery.exe file in your game folder. To install, simply double-click **`setup-butchery.exe`** and follow the instructions on screen.
 
-You can run <strong>setup-butchery.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
-<div align="right"><a href="#top">Back to top</a></div>
+Run **`setup-butchery.exe`** in your game folder to reinstall, un-install or otherwise change components.
 
+## 
 
-#### Note for Complete Uninstallation
+#### Mac OS
 
-In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-butchery --uninstall</strong> at the command line to remove all components without wading through prompts.<br><br>
+BuTcHeRy for Mac OS is distributed in the same compressed archive and includes a WeiDU installer.
+
+First, extract the files from the archive into your game directory. On successful extraction, there should be a :file_folder: butchery folder, setup-butchery and setup-butchery.command files in your game folder. To install, simply double-click **`setup-butchery.command`** and follow the instructions on screen.
+
+Run **`setup-butchery.command`** in your game folder to reinstall, un-install or otherwise change the components settings.
+
+## 
+
+#### Linux
+
+The BuTcHeRy for Linux is distributed in the same compressed archive and does not include a WeiDU installer.
+
+Extract the contents of the mod to the folder of the game you wish to modify.
+
+Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidu and weinstall to `/usr/bin`. Following that, open a terminal, **cd** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
+
+To install, run **`weinstall setup-butchery`** in your game folder. Then run **`wine bgmain.exe`** (or **`wine baldur.exe`** for EE games) and start playing.
+
+## 
+
+#### Note for Complete Un-installation
+
+In addition to the methods above for removing individual components, you can completely un-install the mod using **`setup-butchery --uninstall`** at the command line to remove all components without wading through prompts.<br>
 <div align="right"><a href="#top">Back to top</a></div>
 
 

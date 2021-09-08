@@ -33,6 +33,12 @@ LANGUAGE ~Francais~
 //         ~butchery/lang/french/d9CutTa.tra~	// DEPRECATED as of v 3.2
          ~butchery/lang/french/d9firorc.tra~
 
+LANGUAGE ~Russian (translation by yota13)~
+         ~russian~
+         ~butchery/lang/russian/setup.tra~
+         ~butchery/lang/russian/butchery.tra~
+         ~butchery/lang/russian/d9firorc.tra~
+
 
 ///////////////////////////////////////////////////////////////////
 //          BUTCHERY IN FIRKRAAG'S LAIR (COMPONENT #10)          //
