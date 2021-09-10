@@ -1,0 +1,131 @@
+/* =====================================*================================================================ *
+ *  v 5.0.0                                                                                               *
+ *           B U T C H E R Y    :    R e b a l a n c i n g    T a z o k    a n d    D i g D a g           *
+ *                                                                                                        *
+ * ====================================================================================================== */
+
+SILENT
+
+/* ------------------ *
+ *  Installing Items  *
+ * ------------------ */
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9boots.itm~ BEGIN
+	COPY ~%MOD_FOLDER%/items/d9boots.itm~ ~override~  // Boots providing immunity to backstab for BARBARIAN
+END
+
+
+/* ---------------------- *
+ *  Installing Portraits  *
+ * ---------------------- */
+
+ACTION_IF (d9_ee = 1) BEGIN
+	COPY ~%MOD_FOLDER%/portraitsee/d9zoks.bmp~	~override~
+	COPY ~%MOD_FOLDER%/portraitsee/d9abs.bmp~	~override~
+END ELSE BEGIN
+	COPY ~%MOD_FOLDER%/portraits/d9zoks.bmp~	~override~
+	COPY ~%MOD_FOLDER%/portraits/d9abs.bmp~		~override~
+END
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// TAZOK Revisited
+// ---------------
+COPY_EXISTING ~tazok.cre~ ~override~
+/* DEPRECATED as of version > 3.2
+	REMOVE_CRE_ITEM ~PLAT14~                              // Full Plate Mail +1
+	ADD_CRE_ITEM ~LEAT16~ #0 #0 #0 ~NONE~ ~ARMOR~         // Orc Leather +3 */
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing (As of v5.0.0, all potions are flagged undroppable).
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Power
+	ADD_CRE_ITEM ~POTN18~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Absorption
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~ // Oil of Speed
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Magic Shielding (added as of v5.0.0)
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~         // Random treasure
+	WRITE_LONG  0x014 12000                               // XP when killed (vanilla = 6000)
+	WRITE_SHORT 0x024 154                                 // Current HP (vanilla = 136)
+	WRITE_SHORT 0x026 154                                 // Maximum HP (vanilla = 136)
+	WRITE_LONG  0x028 slot_halfogre                       // Half Ogre animation coz tazok is not an orc in BG1 - DEPRECATED WRITE_SHORT 0x028 28672
+	WRITE_ASCII 0x034 ~d9zoks~ #8                         // Small portrait
+	WRITE_BYTE  0x052 2                                   // THAC0 (vanilla = 5)
+	WRITE_BYTE  0x054 3                                   // Save vs. death (vanilla = 4)
+	WRITE_BYTE  0x055 5                                   // Save vs. wands (vanilla = 6)
+	WRITE_BYTE  0x056 4                                   // Save vs. polymorph (vanilla = 5)
+	WRITE_BYTE  0x057 4                                   // Save vs. breath (vanilla = 4)
+	WRITE_BYTE  0x058 6                                   // Save vs. spells (vanilla = 7)
+	WRITE_BYTE  0x234 19                                  // Level first class((vanilla = 18)
+	WRITE_BYTE  0x23c 14                                  // Dexterity (vanilla = 18)
+	WRITE_BYTE  0x23f 20                                  // Morale (vanilla = 12)
+	WRITE_BYTE  0x240 1                                   // Morale break (vanilla = 7)
+	WRITE_SHORT 0x242 1                                   // Morale recovery (vanilla = 60)
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TAZOKK~ #8             // vanilla = SHOUTDLG
+	WRITE_ASCII SCRIPT_CLASS ~GENSHT01~ #8                // vanilla = GPUSE
+/* DEPRECATED as of version > 3.2 : Tazok remains a plain fighter.
+	WRITE_LONG  0x244 0x00004000                          // Barbarian kit, giving barbarian bonus (speed, immunity to backstab, resistance).
+	REMOVE_KNOWN_SPELL ~spcl321~                          // Enrage
+	REMOVE_MEMORIZED_SPELL ~spcl321~                      // If SCSII in installed before, removes berseker rages
+	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~                 // Barbarian Rage
+	ADD_MEMORIZED_SPELL ~spcl152~ #0 ~INNATE~ #5 */
+	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 5     // 5 stars in two handed sword
+	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2            // Gives TAZOK 2 stars in the BG2 TWO HANDED
+	WRITE_BYTE  0x06e 0                                   // Large swords proficiency
+BUT_ONLY
+
+// Revisited Chieftain DigDag
+// --------------------------
+COPY_EXISTING ~firorc01.cre~ ~override~
+	REMOVE_CRE_ITEM ~SHLD05~                               // Large Shield
+	REMOVE_CRE_ITEM ~SW1H04~                               // Long Sword
+	REMOVE_CRE_ITEM ~HELM01~                               // Helmet
+	ADD_CRE_ITEM ~SW1H02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP  // Bastard Sword +1. Maybe SW1H42 +2 is better? Orcs don't take care and often change weapons.
+	ADD_CRE_ITEM ~SHLD30~ #0 #0 #0 ~NONE~ ~SHIELD~         // Large Shield +2
+	ADD_CRE_ITEM ~POTN24~ #1 #0 #0 ~undroppable~ ~QITEM1~  // Potion of Defense (As of v5.0.0, all potions are flagged undroppable).
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~     // Potion of Power
+	ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~undroppable~ ~QITEM2~  // 5 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~  // Oil of Speed
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~     // Potion of Magic Shielding (added as of v5.0.0)
+	ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~NONE~ ~RING~           // Ring of the Princes +1
+	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~         // Decorative Helmet (DigDag is the caudillo)
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~          // Random treasure
+	WRITE_LONG  0x014 7000                                 // XP when killed (vanilla = 2000)
+	WRITE_LONG  0x01c 399                                  // Gold (vanilla = 0)
+	WRITE_SHORT 0x024 107                                  // Current HP (vanilla = 99)
+	WRITE_SHORT 0x026 107                                  // Maximum HP (vanilla = 99)
+	WRITE_LONG  0x028 slot_orogchief                       // Tazok Orog Chieftain sprite suits more to DigDag - DEPRECATED WRITE_SHORT 0x028 59168
+	WRITE_ASCII 0x034 ~d9abs~ #8                           // Small portrait
+	WRITE_BYTE  0x052 8                                    // THAC0 (vanilla = 9)
+	WRITE_BYTE  0x053 1                                    // Number of attacks (vanilla = 2)
+	WRITE_BYTE  0x054 5                                    // Save vs. death (vanilla = 7)
+	WRITE_BYTE  0x055 7                                    // Save vs. wands (vanilla = 9)
+	WRITE_BYTE  0x056 6                                    // Save vs. polymorph (vanilla = 8)
+	WRITE_BYTE  0x057 5                                    // Save vs. breath (vanilla = 8)
+	WRITE_BYTE  0x058 8                                    // Save vs. spells (vanilla = 10)
+	WRITE_BYTE  0x234 13                                   // Level first class((vanilla = 12)
+	WRITE_BYTE  0x238 22                                   // Strength (vanilla = 17)
+	WRITE_BYTE  0x23d 22                                   // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 20                                   // Morale (vanilla = 12)
+	WRITE_BYTE  0x240 1                                    // Morale break (vanilla = 7)
+	WRITE_SHORT 0x242 1                                    // Morale recovery (vanilla = 60)
+	WRITE_LONG  0x244 0x40010000                           // Berserker kit
+//	WRITE_ASCII SCRIPT_CLASS ~~ #8                         // vanilla NONE - DEPRECATED as of version 3.2
+	WRITE_BYTE  0x273 2                                    // Class FIGHTER (vanilla = 181 ORC)
+	ADD_KNOWN_SPELL ~spcl321~ #0 ~INNATE~                  // Enrage
+	ADD_MEMORIZED_SPELL ~spcl321~ #0 ~INNATE~ #3
+	SET_BG2_PROFICIENCY ~PROFICIENCYBASTARDSWORD~ 5        // Gives DigDag 5 stars in the BG2 BASTARD SWORD proficiency (4 in former version: surely 5 stars is too much for a stupid orc)
+	SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
+BUT_ONLY
+
+
+/* ------------------ *
+ *  Installing Areas  *
+ * ------------------ *
+// DEPRECATED as of version > 3.2
+// ROMOVE ITEM USED BY TAZOK FROM ORIGINAL LOCATIONS
+
+COPY_EXISTING ~AR1301.are~ ~override~	// Removes Orc Leather +3
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "LEAT16" END 
+BUT_ONLY
+*/
