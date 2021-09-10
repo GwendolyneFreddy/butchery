@@ -5,9 +5,10 @@ THEN
 		SetGlobal("D9removevilains","AR1202",1)
 		ActionOverride("TAZOK",DestroySelf())
 		ActionOverride("FIRORC01",MoveBetweenAreas("AR1203",[1179.1199],9))
+		Continue()
 END
 
-/* DEPRECATED as of v > 3.2
+/* DEPRECATED as of v. > 3.2
 IF
 	Global("D9someorcExists","AR1202",0)
 THEN
@@ -48,4 +49,5 @@ THEN
 		ActionOverride("D9ORC01",DestroySelf())
 		ActionOverride("D9OGRGA",DestroySelf())
 //		ActionOverride("OGREMA01",DestroySelf())
+		Continue()
 END
