@@ -1,0 +1,1067 @@
+/* ======================================================================================================= *
+ *  v 5.0.0                                                                                                *
+ *           B U T C H E R Y    :    R e b a l a n c i n g    V a n i l l a    C r e a t u r e s           *
+ *                                                                                                         *
+ * ======================================================================================================= */
+
+SILENT
+
+/* ------------------ *
+ *  Installing Items  *
+ * ------------------ */
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9boots.itm~ BEGIN
+	COPY ~%MOD_FOLDER%/items/d9boots.itm~ ~override~  // Boots providing immunity to backstab for BARBARIAN
+END
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Ogre
+// ----
+COPY_EXISTING ~ogre01.cre~ ~override~
+//	REMOVE_CRE_ITEM ~B1-2~                                        // Removes undroppable natural weapon. DEPRECATED as of v5.0.0.
+//	ADD_CRE_ITEM ~BLUN06~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP  // Morning Star
+	ADD_CRE_ITEM ~BLUN06~ #0 #0 #0 ~NONE~ ~INV~     // Morning Star
+	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~   // Studded Leather Armor
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~   // Random treasure
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~   // Random treasure
+	WRITE_LONG  0x014 600                           // XP when killed (vanilla = 270)
+	WRITE_LONG  0x01c 15                            // Gold (vanilla = 0)
+	WRITE_SHORT 0x024 50                            // Current HP (vanilla = 30)
+	WRITE_SHORT 0x026 50                            // Maximum HP (vanilla = 30)
+	WRITE_BYTE  0x052 15                            // THAC0 (vanilla = 17). Was 16 in v4.0.0.
+	WRITE_BYTE  0x053 1                             // Number of attacks
+	WRITE_BYTE  0x054 11                            // Save vs. death (vanilla = 10)
+	WRITE_BYTE  0x055 13                            // Save vs. wands (vanilla = 12)
+	WRITE_BYTE  0x056 12                            // Save vs. polymorph (vanilla = 11)
+	WRITE_BYTE  0x057 13                            // Save vs. breath (vanilla = 13)
+	WRITE_BYTE  0x058 14                            // Save vs. spells (vanilla = 13)
+	WRITE_BYTE  0x234 5                             // Level first class (vanilla = 4)
+	WRITE_BYTE  0x238 20                            // Strength (vanilla = 18/100). Was 21 in v4.0.0.
+	WRITE_BYTE  0x23c 9                             // Dexterity (vanilla = 9)
+	WRITE_BYTE  0x23d 18                            // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 20                            // Morale (vanilla = 10)
+	WRITE_BYTE  0x240 5                             // Morale break (vanilla = 6)
+	WRITE_SHORT 0x242 30                            // Morale recovery (vanilla = 30)
+	WRITE_LONG  0x244 0x40010000                    // Berserker kit
+	WRITE_BYTE  0x273 2                             // Class FIGHTER (vanilla = 125 OGRE)
+	ADD_KNOWN_SPELL ~spcl321~ #0 ~INNATE~           // Enrage
+	ADD_MEMORIZED_SPELL ~spcl321~ #0 ~INNATE~ #2
+	SET_BG2_PROFICIENCY ~PROFICIENCYFLAILMORNINGSTAR~ 3
+	SET_BG2_PROFICIENCY ~PROFICIENCYMACE~ 3
+	SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2
+BUT_ONLY
+
+// Orque
+// -----
+COPY_EXISTING ~orc01.cre~ ~override~
+	REMOVE_CRE_ITEM ~SW1H01~                                     // Bastard Sword
+	REMOVE_CRE_ITEM ~LEAT01~                                     // Leather Armor
+	ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Battle Axe
+	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~                // Studded Leather Armor
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~               // Helmet
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~                // Random treasure
+	WRITE_LONG  0x014 600                                        // XP when killed (vanilla = 95)
+	WRITE_LONG  0x01c 15                                         // Gold (vanilla = 5)
+	WRITE_SHORT 0x024 50                                         // Current HP (vanilla = 35). Was 60 in v4.0.0.
+	WRITE_SHORT 0x026 50                                         // Maximum HP (vanilla = 35). Was 60 in v4.0.0.
+	WRITE_BYTE  0x052 15                                         // THAC0 (vanilla = 17). Was 16 in v4.0.0.
+	WRITE_BYTE  0x053 1                                          // Number of attacks (vanilla = 2)
+	WRITE_BYTE  0x054 11                                         // Save vs. death (vanilla = 10)
+	WRITE_BYTE  0x055 13                                         // Save vs. wands (vanilla = 12)
+	WRITE_BYTE  0x056 12                                         // Save vs. polymorph (vanilla = 11)
+	WRITE_BYTE  0x057 13                                         // Save vs. breath (vanilla = 13)
+	WRITE_BYTE  0x058 14                                         // Save vs. spells (vanilla = 12)
+	WRITE_BYTE  0x234 5                                          // Level first class (vanilla = 4)
+	WRITE_BYTE  0x238 19                                         // Strength (vanilla = 18/10)
+	WRITE_BYTE  0x23c 9                                          // Dexterity (vanilla = 9)
+	WRITE_BYTE  0x23d 18                                         // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 20                                         // Morale (vanilla = 10)
+	WRITE_BYTE  0x240 5                                          // Morale break (vanilla = 6)
+	WRITE_SHORT 0x242 30                                         // Morale recovery (vanilla = 60)
+	WRITE_LONG  0x244 0x00004000                                 // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_ASCII SCRIPT_RACE ~~ #8                                // vanilla = ORCWAR
+	WRITE_BYTE  0x273 2                                          // Class FIGHTER (vanilla = 181 ORC)
+	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~                        // Barbarian Rage
+	ADD_MEMORIZED_SPELL ~spcl152~ #0 ~INNATE~ #2
+	SET_BG2_PROFICIENCY ~PROFICIENCYAXE~ 2
+	SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2
+BUT_ONLY
+
+// Orc Archer
+// ----------
+COPY_EXISTING ~orc02.cre~ ~override~
+	REMOVE_CRE_ITEM ~BOW03~                                     // Longbow
+	REMOVE_CRE_ITEM ~AROW02~                                    // Arrow +1
+	ADD_CRE_ITEM ~BOW01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Composite Longbow
+	ADD_CRE_ITEM ~SW1H01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON2~      // Bastard Sword
+	ADD_CRE_ITEM ~AROW11~ #3 #0 #0 ~UNSTEALABLE~ ~QUIVER1~      // Arrow +2
+	ADD_CRE_ITEM ~AROW09~ #7 #0 #0 ~UNSTEALABLE~ ~QUIVER2~      // Arrow of Ice
+	ADD_CRE_ITEM ~AROW01~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER3~     // Arrow
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~               // Random treasure
+	WRITE_LONG  0x014 600                                       // XP when killed (vanilla = 35)
+	WRITE_LONG  0x01c 18                                        // Gold (vanilla = 0)
+	WRITE_SHORT 0x024 50                                        // Current HP (vanilla = 35)
+	WRITE_SHORT 0x026 50                                        // Maximum HP (vanilla = 35)
+	WRITE_BYTE  0x052 15                                        // THAC0 (vanilla = 18). Was 16 in v4.0.0.
+	WRITE_BYTE  0x053 1                                         // Number of attacks (vanilla = 2)
+	WRITE_BYTE  0x054 11                                        // Save vs. death (vanilla = 10)
+	WRITE_BYTE  0x055 13                                        // Save vs. wands (vanilla = 16)
+	WRITE_BYTE  0x056 12                                        // Save vs. polymorph (vanilla = 15)
+	WRITE_BYTE  0x057 13                                        // Save vs. breath (vanilla = 17)
+	WRITE_BYTE  0x058 14                                        // Save vs. spells (vanilla = 17)
+	WRITE_BYTE  0x234 5                                         // Level first class (vanilla = 5)
+	WRITE_BYTE  0x238 18                                        // Strength (vanilla = 11) : 18 to wield the Composite Longbow!
+	WRITE_BYTE  0x23c 12                                        // Dexterity (vanilla = 11)
+	WRITE_BYTE  0x23d 17                                        // Constitution (vanilla = 10)
+	WRITE_BYTE  0x23f 20                                        // Morale (vanilla = 10)
+	WRITE_BYTE  0x240 5                                         // Morale break (vanilla = 6)
+	WRITE_SHORT 0x242 30                                        // Morale recovery (vanilla = 60)
+/* DEPRECATED as of v > 3.2
+	WRITE_BYTE  0x273 2                                         // Class FIGHTER (vanilla = 181 ORC)
+	SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2 */
+	SET_BG2_PROFICIENCY ~PROFICIENCYLONGBOW~ 3
+	SET_BG2_PROFICIENCY ~PROFICIENCYBASTARDSWORD~ 2
+BUT_ONLY
+
+// Orog
+// ----
+COPY_EXISTING ~orc05.cre~ ~override~
+	REMOVE_CRE_ITEM ~LEAT01~                       // Leather Armor
+	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~  // Studded Leather Armor
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~ // Helmet
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~  // Random treasure
+	WRITE_LONG  0x014 800                          // XP when killed (vanilla = 600)
+	WRITE_LONG  0x01c 32                           // Gold (vanilla = 5)
+	WRITE_SHORT 0x024 91                           // Current HP (vanilla = 40). Was 84 in v4.0.0.
+	WRITE_SHORT 0x026 91                           // Maximum HP (vanilla = 40). Was 84 in v4.0.0.
+	WRITE_BYTE  0x052 10                           // THAC0 (vanilla = 14). Was 14 in v4.0.0.
+	WRITE_BYTE  0x053 1                            // Number of attacks (vanilla = 2)
+	WRITE_BYTE  0x054 10                           // Save vs. death (vanilla = 10)
+	WRITE_BYTE  0x055 12                           // Save vs. wands (vanilla = 12)
+	WRITE_BYTE  0x056 11                           // Save vs. polymorph (vanilla = 11)
+	WRITE_BYTE  0x057 12                           // Save vs. breath (vanilla = 13)
+	WRITE_BYTE  0x058 13                           // Save vs. spells (vanilla = 12)
+	WRITE_BYTE  0x234 7                            // Level first class (vanilla = 5)
+	WRITE_BYTE  0x238 20                           // Strength (vanilla = 18/53)
+	WRITE_BYTE  0x23c 9                            // Dexterity (vanilla = 9)
+	WRITE_BYTE  0x23d 20                           // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 20                           // Morale (vanilla = 10)
+	WRITE_BYTE  0x240 1                            // Morale break (vanilla = 6)
+	WRITE_SHORT 0x242 1                            // Morale recovery (vanilla = 60)
+	WRITE_LONG  0x244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_ASCII SCRIPT_RACE ~~ #8                  // vanilla = ORCWAR
+    WRITE_BYTE  0x273 2                            // Class FIGHTER (vanilla = 181 ORC)
+	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~          // Barbarian Rage
+	ADD_MEMORIZED_SPELL ~spcl152~ #0 ~INNATE~ #2
+	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2
+	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+BUT_ONLY
+
+// Orog
+// ----
+COPY_EXISTING ~orc06.cre~ ~override~
+	REMOVE_CRE_ITEM ~LEAT01~                                        // Leather Armor
+	REMOVE_CRE_ITEM ~SW1H01~                                        // Bastard Sword
+	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED // Two-handed Sword
+	ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~                   // Plate Mail
+	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~                  // Decorative Helmet
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~                   // Random treasure
+	WRITE_LONG  0x014 800                                           // XP when killed (vanilla = 175)
+	WRITE_LONG  0x01c 35                                            // Gold (vanilla = 5)
+	WRITE_SHORT 0x024 75                                            // Current HP (vanilla = 40). Was 70 in v4.0.0.
+	WRITE_SHORT 0x026 75                                            // Maximum HP (vanilla = 40). Was 70 in v4.0.0.
+	WRITE_BYTE  0x052 10                                            // THAC0 (vanilla = 14). Was 14 in v4.0.0.
+	WRITE_BYTE  0x053 1                                             // Number of attacks (vanilla = 2)
+	WRITE_BYTE  0x054 10                                            // Save vs. death (vanilla = 10)
+	WRITE_BYTE  0x055 12                                            // Save vs. wands (vanilla = 12)
+	WRITE_BYTE  0x056 11                                            // Save vs. polymorph (vanilla = 11)
+	WRITE_BYTE  0x057 12                                            // Save vs. breath (vanilla = 13)
+	WRITE_BYTE  0x058 13                                            // Save vs. spells (vanilla = 12)
+	WRITE_BYTE  0x234 7                                             // Level first class (vanilla = 5)
+	WRITE_BYTE  0x238 20                                            // Strength (vanilla = 18/92)
+	WRITE_BYTE  0x23c 9                                             // Dexterity (vanilla = 9)
+	WRITE_BYTE  0x23d 20                                            // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 20                                            // Morale (vanilla = 10)
+	WRITE_BYTE  0x240 1                                             // Morale break (vanilla = 6)
+	WRITE_SHORT 0x242 1                                             // Morale recovery (vanilla = 60)
+	WRITE_LONG  0x244 0x40010000                                    // Berserker kit
+	WRITE_ASCII SCRIPT_RACE ~~ #8                                   // vanilla = OARCH02
+	WRITE_BYTE  0x273 2                                             // Class FIGHTER (vanilla = 181 ORC)
+	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 3
+	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+	ADD_KNOWN_SPELL ~spcl321~ #0 ~INNATE~                           // Enrage
+	ADD_MEMORIZED_SPELL ~spcl321~ #0 ~INNATE~ #2
+BUT_ONLY
+
+// More HP for Black Bears
+// -----------------------
+COPY_EXISTING ~glbear2.cre~  ~override~ // vanilla = 40 HP
+              ~vbearbl.cre~  ~override~
+              ~bearbl.cre~   ~override~
+              ~bearbl01.cre~ ~override~
+	WRITE_SHORT 0x024 60  // Current HP (vanilla = 25)
+	WRITE_SHORT 0x026 60  // Maximum HP (vanilla = 25)
+	WRITE_BYTE  0x052 10  // THAC0 (vanilla = 17)
+BUT_ONLY
+
+// More HP for Brown Bears
+// -----------------------
+COPY_EXISTING ~bearbr.cre~ ~override~
+	WRITE_SHORT 0x024 70  // Current HP (vanilla = 41)
+	WRITE_SHORT 0x026 70  // Maximum HP (vanilla = 41)
+	WRITE_BYTE  0x052 6   // THAC0 (vanilla = 15)
+BUT_ONLY
+
+COPY_EXISTING ~bearbr01.cre~ ~override~
+	WRITE_SHORT 0x024 80  // Current HP (vanilla = 41)
+	WRITE_SHORT 0x026 80  // Maximum HP (vanilla = 41)
+	WRITE_BYTE  0x052 4   // THAC0 (vanilla = 15)
+BUT_ONLY
+
+// More HP for Grizzly Bears
+// -------------------------
+COPY_EXISTING ~vbearbr.cre~ ~override~ // Brown Bear ???
+              ~beargr.cre~  ~override~
+	WRITE_SHORT 0x024 80  // Current HP (vanilla = 74)
+	WRITE_SHORT 0x026 80  // Maximum HP (vanilla = 74)
+	WRITE_BYTE  0x052 4	  // THAC0 (vanilla = 11)
+	WRITE_BYTE  0x234 5   // Level first class (vanilla = 9)
+BUT_ONLY
+
+// More HP for Cave Bears
+// ----------------------
+COPY_EXISTING ~vbearca.cre~  ~override~
+              ~bearca01.cre~ ~override~
+	WRITE_SHORT 0x024 100  // Current HP (vanilla = 50)
+	WRITE_SHORT 0x026 100  // Maximum HP (vanilla = 50)
+	WRITE_BYTE  0x052 2    // THAC0 (vanilla = 13)
+	WRITE_BYTE  0x238 19   // Strength (vanilla = 16)
+BUT_ONLY
+
+// More HP for Polar Bears
+// -----------------------
+COPY_EXISTING ~bearpo01.cre~ ~override~
+	WRITE_LONG  0x0018 10                                             //level ???
+	WRITE_SHORT 0x024 120  // Current HP (vanilla = 66)
+	WRITE_SHORT 0x026 120  // Maximum HP (vanilla = 66)
+	WRITE_BYTE  0x052 0    // THAC0 (vanilla = 11)
+	WRITE_BYTE  0x238 20   // Strength (vanilla = 16)
+BUT_ONLY
+
+// More HP for Wild Cats
+// ---------------------
+COPY_EXISTING ~catjag01.cre~ ~override~ // Panther
+              ~catleo01.cre~ ~override~ // Leopard
+              ~catlio01.cre~ ~override~ // Lion
+              ~catlis01.cre~ ~override~ // Spotted Lion
+              ~catlyn01.cre~ ~override~ // Giant Lynx
+              ~catpan01.cre~ ~override~ // Panther
+              ~cattig01.cre~ ~override~ // Wild Tiger
+	WRITE_SHORT 0x024 70  // Current HP (vanilla = 33 / 26 / 42 / 48 / 18 / 33 / 45)
+	WRITE_SHORT 0x026 70  // Maximum HP (vanilla = 33)
+	WRITE_BYTE  0x054 11  // Save vs. death (vanilla = 13)
+	WRITE_BYTE  0x055 13  // Save vs. wands (vanilla = 15)
+	WRITE_BYTE  0x056 12  // Save vs. polymorph (vanilla = 14)
+	WRITE_BYTE  0x057 13  // Save vs. breath (vanilla = 16)
+	WRITE_BYTE  0x058 14  // Save vs. spells (vanilla = 16)
+	WRITE_BYTE  0x234 5   // Level first class (vanilla = 4)
+BUT_ONLY
+
+// Tabitha (Beastmaster)
+// ---------------------
+COPY_EXISTING ~coplion.cre~ ~override~
+	WRITE_SHORT 0x024 120  // Current HP (vanilla = 42)
+	WRITE_SHORT 0x026 120  // Maximum HP (vanilla = 42)
+	WRITE_BYTE	0x052 5    // THAC0 (vanilla = 15)
+	WRITE_BYTE  0x054 8    // Save vs. death (vanilla = 13)
+	WRITE_BYTE  0x055 10   // Save vs. wands (vanilla = 15)
+	WRITE_BYTE  0x056 9    // Save vs. polymorph (vanilla = 14)
+	WRITE_BYTE  0x057 10   // Save vs. breath (vanilla = 16)
+	WRITE_BYTE  0x058 11   // Save vs. spells (vanilla = 16)
+	WRITE_BYTE  0x234 9    // Level first class (vanilla = 4)
+	WRITE_BYTE	0x238 19   // Strength (vanilla = 18)
+BUT_ONLY
+
+// More HP for Small Spiders
+// -------------------------
+COPY_EXISTING ~spidsm01.cre~ ~override~
+	WRITE_SHORT 0x024 50  // Current HP (vanilla = 32)
+	WRITE_SHORT 0x026 50  // Maximum HP (vanilla = 32)
+BUT_ONLY
+
+// More HP for Phase Spiders
+// -------------------------
+COPY_EXISTING ~spidph01.cre~ ~override~
+	WRITE_SHORT 0x024 68  // Current HP (vanilla = 44)
+	WRITE_SHORT 0x026 68  // Maximum HP (vanilla = 44)
+BUT_ONLY
+
+// More HP for Giant Spiders
+// -------------------------
+COPY_EXISTING ~spidgi01.cre~ ~override~
+	WRITE_SHORT 0x024 68  // Current HP (vanilla = 35)
+	WRITE_SHORT 0x026 68  // Maximum HP (vanilla = 35)
+BUT_ONLY
+
+// More HP for Sword Spiders
+// -------------------------
+COPY_EXISTING ~spidsw01.cre~ ~override~
+ 	WRITE_SHORT 0x024 75  // Current HP (vanilla = 45)
+	WRITE_SHORT 0x026 75  // Maximum HP (vanilla = 45)
+BUT_ONLY
+
+// More HP for Mutated Spiders
+// ---------------------------
+COPY_EXISTING ~spidsm02.cre~ ~override~
+	WRITE_SHORT 0x024 110  // Current HP (vanilla = 30)
+	WRITE_SHORT 0x026 110  // Maximum HP (vanilla = 30)
+
+	WRITE_SHORT 0x028 31236                                         //  araignée en peine animation 7a04 SPIDER_WRAITH
+
+	WRITE_BYTE	0x052 0    // THAC0 (vanilla = 4)
+BUT_ONLY
+
+// More HP for Vortex Spiders
+// --------------------------
+COPY_EXISTING ~spidvo01.cre~ ~override~
+	WRITE_SHORT 0x024 80  // Current HP (vanilla = 60)
+	WRITE_SHORT 0x026 80  // Maximum HP (vanilla = 60)
+BUT_ONLY
+
+// More HP for Boalisks
+// --------------------
+COPY_EXISTING ~snakeb01.cre~ ~override~
+	WRITE_SHORT 0x024 80  // Current HP (vanilla = 41)
+	WRITE_SHORT 0x026 80  // Maximum HP (vanilla = 41)
+ 	WRITE_BYTE	0x052 3   // THAC0 (vanilla = 17)
+BUT_ONLY
+
+// More HP for Dire Wolves
+// -----------------------
+COPY_EXISTING ~wolfdi01.cre~ ~override~
+	WRITE_SHORT 0x024 50  // Current HP (vanilla = 33)
+	WRITE_SHORT 0x026 50  // Maximum HP (vanilla = 33)
+BUT_ONLY
+
+// More HP for Dread Wolves
+// ------------------------
+COPY_EXISTING ~wolfdr01.cre~ ~override~
+	WRITE_SHORT 0x024 70  // Current HP (vanilla = 33)
+	WRITE_SHORT 0x026 70  // Maximum HP (vanilla = 33)
+ 	WRITE_BYTE	0x052 7   // THAC0 (vanilla = 15)
+BUT_ONLY
+
+// More HP for Winter wolves
+// -------------------------
+COPY_EXISTING ~wolfwi01.cre~ ~override~
+	WRITE_SHORT 0x024 65  // Current HP (vanilla = 45)
+	WRITE_SHORT 0x026 65  // Maximum HP (vanilla = 45)
+ 	WRITE_BYTE	0x052 7   // THAC0 (vanilla = 15)
+BUT_ONLY
+
+// More HP for Wolfweres
+// ---------------------
+COPY_EXISTING ~wolfwe01.cre~ ~override~
+              ~wolfwe02.cre~ ~override~
+	WRITE_SHORT 0x024 100  // Current HP (vanilla = 41 / 35)
+	WRITE_SHORT 0x026 100  // Maximum HP (vanilla = 41 / 35)
+ 	WRITE_BYTE	0x052 4    // THAC0 (vanilla = 9 / 10)
+	WRITE_BYTE  0x059 30   // Fire resistance (vanilla = 0)
+	WRITE_BYTE  0x05a 30   // Cold resistance (vanilla = 0)
+	WRITE_BYTE  0x05b 30   // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x05c 30   // Acid resistance (vanilla = 0)
+	WRITE_BYTE  0x05d 30   // Magic resistance (vanilla = 50 / 0)
+	WRITE_BYTE  0x05e 30   // Magic fire resistance (vanilla = 0)
+	WRITE_BYTE  0x05f 30   // Magic cold resistance (vanilla = 0)
+BUT_ONLY
+
+// More HP for Greater Wolfwere
+// ----------------------------
+COPY_EXISTING ~wolfgr01.cre~ ~override~
+	WRITE_SHORT 0x024 130  // Current HP (vanilla = 66)
+	WRITE_SHORT 0x026 130  // Maximum HP (vanilla = 66)
+ 	WRITE_BYTE	0x052 0    // THAC0 (vanilla = 6)
+	WRITE_BYTE  0x05d 80   // Magic resistance (vanilla = 50)
+BUT_ONLY
+
+// More HP for Greater Werewolf
+// ----------------------------
+COPY_EXISTING ~weregr01.cre~ ~override~
+	WRITE_SHORT 0x024 130  // Current HP (vanilla = 94)
+	WRITE_SHORT 0x026 130  // Maximum HP (vanilla = 94)
+ 	WRITE_BYTE	0x052 0    // THAC0 (vanilla = 8)
+	WRITE_BYTE  0x05d 80   // Magic resistance (vanilla = 40)
+BUT_ONLY
+
+// More HP for Otyughs
+// -------------------
+COPY_EXISTING ~otyugh.cre~   ~override~
+              ~otyugh01.cre~ ~override~
+              ~iotyugh.cre~  ~override~ // Current HP (vanilla = 42)
+	WRITE_SHORT 0x024 90  // Current HP (vanilla = 64)
+	WRITE_SHORT 0x026 90  // Maximum HP (vanilla = 64)
+BUT_ONLY
+
+// More HP for Ochre Jellies
+// -------------------------
+COPY_EXISTING ~jelloc.cre~   ~override~
+              ~jeloch01.cre~ ~override~
+	WRITE_SHORT 0x024 65  // Current HP (vanilla = 41)
+	WRITE_SHORT 0x026 65  // Maximum HP (vanilla = 41)
+BUT_ONLY
+
+// More HP for Mustard Jellies
+// ---------------------------
+COPY_EXISTING ~jelmus01.cre~ ~override~
+              ~jellmu.cre~   ~override~
+	WRITE_SHORT 0x024 90  // Current HP (vanilla = 65)
+	WRITE_SHORT 0x026 90  // Maximum HP (vanilla = 65)
+BUT_ONLY
+
+// More HP for Grimwarders
+// -----------------------
+COPY_EXISTING ~bodfgt01.cre~ ~override~ // melee
+              ~bodfgt02.cre~ ~override~ // ranged
+	WRITE_LONG  0x018 8                                             //level
+	WRITE_SHORT 0x024 80   // Current HP (vanilla = 48)
+	WRITE_SHORT 0x026 80   // Maximum HP (vanilla = 48)
+	WRITE_BYTE	0x052 7    // THAC0 (vanilla = 10)
+	WRITE_BYTE  0x05a 100  // Cold resistance (vanilla = 0)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x05d 50   // Magic resistance (vanilla = 0)
+	WRITE_BYTE  0x05f 100  // Magic cold resistance (vanilla = 0)
+	WRITE_BYTE  0x060 50   // Slashing resistance (vanilla = 0)
+	WRITE_BYTE  0x061 0    // Crushing resistance (vanilla = 0)
+	WRITE_BYTE  0x062 50   // Piercing resistance (vanilla = 0)
+	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 100)
+BUT_ONLY
+
+// More HP for Vampiric Mists
+// --------------------------
+COPY_EXISTING ~mistva01.cre~ ~override~
+	WRITE_LONG  0x018 8                                             //level
+	WRITE_SHORT 0x024 80   // Current HP (vanilla = 36)
+	WRITE_SHORT 0x026 80   // Maximum HP (vanilla = 36)
+	WRITE_BYTE	0x052 0    // THAC0 (vanilla = 0)
+	WRITE_BYTE  0x05a 100  // Cold resistance (vanilla = 100)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x05d 50   // Magic resistance (vanilla = 0)
+	WRITE_BYTE  0x05f 100  // Magic cold resistance (vanilla = 100)
+	WRITE_BYTE  0x060 50   // Slashing resistance (vanilla = 0)
+	WRITE_BYTE  0x061 0    // Crushing resistance (vanilla = 0)
+	WRITE_BYTE  0x062 50   // Piercing resistance (vanilla = 0)
+	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 0)
+BUT_ONLY
+
+// More HP for Ghasts
+// -------------------
+COPY_EXISTING ~ghast01.cre~ ~override~
+	WRITE_SHORT 0x024 85   // Current HP (vanilla = 29)
+	WRITE_SHORT 0x026 85   // Maximum HP (vanilla = 29)
+	WRITE_BYTE	0x052 14   // THAC0 (vanilla = 0)
+	WRITE_BYTE  0x05a 100  // Cold resistance (vanilla = 100)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x05d 40   // Magic resistance (vanilla = 0)
+	WRITE_BYTE  0x05f 100  // Magic cold resistance (vanilla = 100)
+	WRITE_BYTE  0x060 25   // Slashing resistance (vanilla = 0)
+	WRITE_BYTE  0x061 0    // Crushing resistance (vanilla = 0)
+	WRITE_BYTE  0x062 25   // Piercing resistance (vanilla = 0)
+	WRITE_BYTE  0x063 50   // Missile resistance (vanilla = 0)
+BUT_ONLY
+
+// More HP for Greater Ghouls
+// --------------------------
+COPY_EXISTING ~ghogr01.cre~ ~override~
+	WRITE_SHORT 0x024 111  // Current HP (vanilla = 48)
+	WRITE_SHORT 0x026 111  // Maximum HP (vanilla = 48)
+	WRITE_BYTE	0x052 3    // THAC0 (vanilla = 8)
+	WRITE_BYTE  0x05a 100  // Cold resistance (vanilla = 100)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x05d 70   // Magic resistance (vanilla = 0)
+	WRITE_BYTE  0x05f 100  // Magic cold resistance (vanilla = 100)
+	WRITE_BYTE  0x060 25   // Slashing resistance (vanilla = 0)
+	WRITE_BYTE  0x061 0    // Crushing resistance (vanilla = 0)
+	WRITE_BYTE  0x062 25   // Piercing resistance (vanilla = 0)
+	WRITE_BYTE  0x063 50   // Missile resistance (vanilla = 0)
+BUT_ONLY
+
+// More HP for Ghoul Lords
+// -----------------------
+COPY_EXISTING ~gholor01.cre~ ~override~
+	WRITE_SHORT 0x024 150  // Current HP (vanilla = 48)
+	WRITE_SHORT 0x026 150  // Maximum HP (vanilla = 48)
+	WRITE_BYTE	0x052 0    // THAC0 (vanilla = 15)
+	WRITE_BYTE  0x05a 100  // Cold resistance (vanilla = 100)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x05f 100  // Magic cold resistance (vanilla = 100)
+	WRITE_BYTE  0x060 25   // Slashing resistance (vanilla = 25)
+	WRITE_BYTE  0x061 0    // Crushing resistance (vanilla = 25)
+	WRITE_BYTE  0x062 25   // Piercing resistance (vanilla = 25)
+	WRITE_BYTE  0x063 50   // Missile resistance (vanilla = 50)
+BUT_ONLY
+
+// More HP for Skeleton Archers
+// ----------------------------
+COPY_EXISTING ~skelar01.cre~ ~override~ // Skeleton Archer
+              ~skelar02.cre~ ~override~
+	REMOVE_CRE_ITEM ~S1-8~
+	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON2~ // Halberd
+	WRITE_SHORT 0x024 70  // Current HP (vanilla = 48 / 28)
+	WRITE_SHORT 0x026 70  // Maximum HP (vanilla = 48 / 28)
+	WRITE_BYTE  0x05d 50  // Magic resistance (vanilla = 0)
+	WRITE_BYTE  0x063 90  // Missile resistance (vanilla = 90)
+	SET_BG2_PROFICIENCY ~PROFICIENCYLONGBOW~ 4
+	SET_BG2_PROFICIENCY ~PROFICIENCYHALBERD~ 2
+BUT_ONLY
+
+// More HP for Skeleton Warriors
+// -----------------------------
+COPY_EXISTING ~skelwa.cre~ ~override~
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~ // Splint Mail
+	WRITE_SHORT 0x024 110  // Current HP (vanilla = 80)
+	WRITE_SHORT 0x026 110  // Maximum HP (vanilla = 80)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 60)
+BUT_ONLY
+
+COPY_EXISTING ~skelwa01.cre~ ~override~
+              ~skelwa02.cre~ ~override~
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~ // Splint Mail
+	WRITE_SHORT 0x024 110  // Current HP (vanilla = 80)
+	WRITE_SHORT 0x026 110  // Maximum HP (vanilla = 80)
+	WRITE_BYTE	0x052 5    // THAC0 (vanilla = 9)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 60)
+BUT_ONLY
+
+COPY_EXISTING ~skelwa03.cre~ ~override~
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~ // Splint Mail
+	WRITE_SHORT 0x024 110  // Current HP (vanilla = 80)
+	WRITE_SHORT 0x026 110  // Maximum HP (vanilla = 80)
+	WRITE_BYTE	0x052 0    // THAC0 (vanilla = 9)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 60)
+BUT_ONLY
+
+COPY_EXISTING ~skelwasu.cre~ ~override~
+              ~skelsu01.cre~ ~override~
+              ~skelsu07.cre~ ~override~
+              ~skelsu11.cre~ ~override~
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
+	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 60)
+BUT_ONLY
+
+// More HP for Mummies
+// -------------------
+COPY_EXISTING ~mummy01.cre~ ~override/d9mgre01.cre~
+	WRITE_SHORT 0x024 99   // Current HP (vanilla = 51)
+	WRITE_SHORT 0x026 99   // Maximum HP (vanilla = 51)
+	WRITE_BYTE	0x052 5    // THAC0 (vanilla = 13)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 40)
+	WRITE_BYTE  0x05d 50   // Magic resistance (vanilla = 0)
+	WRITE_BYTE  0x060 50   // Slashing resistance (vanilla = 50)
+	WRITE_BYTE  0x061 0    // Crushing resistance (vanilla = 50)
+	WRITE_BYTE  0x062 50   // Piercing resistance (vanilla = 50)
+	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 80)
+BUT_ONLY
+
+// More HP for Greater Mummies
+// ---------------------------
+COPY_EXISTING ~mumgre01.cre~ ~override/d9mgre01.cre~
+	WRITE_SHORT 0x024 155  // Current HP (vanilla = 104)
+	WRITE_SHORT 0x026 155  // Maximum HP (vanilla = 104)
+	WRITE_BYTE	0x052 6    // THAC0 (vanilla = 13)
+	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 100)
+	WRITE_BYTE  0x05d 100  // Magic resistance (vanilla = 0)
+	WRITE_BYTE  0x060 50   // Slashing resistance (vanilla = 50)
+	WRITE_BYTE  0x061 0    // Crushing resistance (vanilla = 50)
+	WRITE_BYTE  0x062 50   // Piercing resistance (vanilla = 50)
+	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 80)
+BUT_ONLY
+
+
+/* ------------------------------------------------------------------- *
+ *  Druids Grove: turn Adherent (cefgt01) into a 16th level Barbarian  *
+ * ------------------------------------------------------------------- */
+COPY_EXISTING ~cefgt01.cre~ ~override~
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Magic Shielding
+	WRITE_LONG  0x01c 48                                  // Gold (vanilla = 0)
+	WRITE_SHORT 0x024 129                                 // Current HP (vanilla = 111)
+	WRITE_SHORT 0x026 129                                 // Maximum HP (vanilla = 111)
+	WRITE_BYTE  0x053 1                                   // Number of attacks
+	WRITE_BYTE  0x238 18                                  // Strength (vanilla = 16)
+	WRITE_BYTE  0x23c 16                                  // Dexterity (vanilla = 16)
+	WRITE_BYTE  0x23d 18                                  // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 20                                  // Morale (vanilla = 12)
+	WRITE_BYTE  0x240 5                                   // Morale break (vanilla = 7)
+	WRITE_SHORT 0x242 5                                   // Morale recovery (vanilla = 60)
+	WRITE_LONG  0x244 0x00004000                          // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~                 // Barbarian Rage
+	ADD_MEMORIZED_SPELL ~spcl152~ #0 ~INNATE~ #5
+BUT_ONLY
+
+// Constitution: druids eat BIO food
+// ---------------------------------
+COPY_EXISTING ~cedruid2.cre~ ~override~ // Dalok
+              ~cefgt02.cre~  ~override~ // Shadow Druid
+	WRITE_BYTE 0x23d 16  // Constitution (vanilla = 13 / 9)
+BUT_ONLY
+
+
+/* ---------------------------------------------------------------- *
+ *  Tethyr Forest: turn Wyvern Cultist into a 16th level Barbarian  *
+ * ---------------------------------------------------------------- */
+COPY_EXISTING ~wyvfight.cre~ ~override~
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Magic Shielding
+	WRITE_LONG  0x01c 48                                  // Gold (vanilla = 30)
+	WRITE_SHORT 0x024 129                                 // Current HP (vanilla = 110)
+	WRITE_SHORT 0x026 129                                 // Maximum HP (vanilla = 110)
+	WRITE_BYTE  0x053 1                                   // Number of attacks
+	WRITE_BYTE  0x238 18                                  // Strength (vanilla = 16)
+	WRITE_BYTE  0x23c 16                                  // Dexterity (vanilla = 15)
+	WRITE_BYTE  0x23d 18                                  // Constitution (vanilla = 14)
+	WRITE_BYTE  0x23f 10                                  // Morale (vanilla = 12)
+	WRITE_BYTE  0x240 5                                   // Morale break (vanilla = 7)
+	WRITE_SHORT 0x242 30                                  // Morale recovery (vanilla = 60)
+	WRITE_LONG  0x244 0x00004000                          // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~                 // Barbarian Rage
+	ADD_MEMORIZED_SPELL ~spcl152~ #0 ~INNATE~ #5
+	WRITE_BYTE  0x06e 0                                   // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                   // Small swords proficiency
+	WRITE_BYTE  0x070 0                                   // Bows proficiency
+	WRITE_BYTE  0x071 0                                   // Spears proficiency
+	WRITE_BYTE  0x072 0                                   // Blunt proficiency
+	WRITE_BYTE  0x073 0                                   // Spiked proficiency
+	WRITE_BYTE  0x074 0                                   // Axe proficiency
+	WRITE_BYTE  0x075 0                                   // Missile proficiency
+	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+	SET_BG2_PROFICIENCY ~PROFICIENCYSPEAR~ 2
+BUT_ONLY
+
+
+/* ----------------------------------------------------------------------------- *
+ *  Umar Hill: Derrick (valran01) gains one Archer level (12 ==> 13)             *
+ *             Turn Ranger (valran03) into a 9th Archer level (instead of L11)   *
+ *             since I use this cre many times as a generic and "common" archer  *
+ * ----------------------------------------------------------------------------- */
+COPY_EXISTING ~valran01.cre~ ~override~
+	REMOVE_CRE_ITEM ~AROW01~
+	ADD_CRE_ITEM ~AROW10~ #10 #0 #0 ~UNSTEALABLE~ ~QUIVER1~ // Arrow of Piercing +1
+	ADD_CRE_ITEM ~AROW05~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER2~ // Arrow of Bitting
+	ADD_CRE_ITEM ~AROW04~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER3~ // Acid Arrow +1
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~   // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~      // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~      // Potion of Magic Shielding
+	WRITE_LONG	0x014 5000                                  // XP when killed (vanilla = 3200)
+	WRITE_LONG  0x01c 26                                    // Gold (vanilla = 0)
+	WRITE_SHORT 0x024 102                                   // Current HP (vanilla = 85)
+	WRITE_SHORT 0x026 102                                   // Maximum HP (vanilla = 85)
+	WRITE_SHORT 0x046 10                                    // Natural AC (vanilla = 2)
+	WRITE_SHORT 0x048 10                                    // Effective AC (vanilla = 2)
+	WRITE_BYTE	0x052 8                                     // THAC0 (vanilla = 9)
+	WRITE_BYTE  0x053 1                                     // Number of attacks
+	WRITE_BYTE  0x054 5                                     // Save vs. death (vanilla = 8)
+	WRITE_BYTE  0x055 7                                     // Save vs. wands (vanilla = 10)
+	WRITE_BYTE  0x056 6                                     // Save vs. polymorph (vanilla = 9)
+	WRITE_BYTE  0x057 5                                     // Save vs. breath (vanilla = 9)
+	WRITE_BYTE  0x058 8                                     // Save vs. spells (vanilla = 11)
+	WRITE_BYTE  0x234 13                                    // Level first class (vanilla = 11)
+	WRITE_BYTE  0x238 16                                    // Strength (vanilla = 17)
+	WRITE_BYTE  0x23a 10                                    // Intelligence (vanilla = 13)
+	WRITE_BYTE  0x23b 15                                    // Wisdom (vanilla = 13)
+	WRITE_BYTE  0x23c 19                                    // Dexterity (vanilla = 18)
+	WRITE_BYTE  0x23d 15                                    // Constitution (vanilla = 15)
+	WRITE_BYTE  0x23f 20                                    // Morale (vanilla = 19)
+	WRITE_BYTE  0x240 5                                     // Morale break (vanilla = 4)
+	WRITE_SHORT 0x242 5                                     // Morale recovery (vanilla = 60)
+
+	WRITE_LONG  0x244 0x40070000                            // Archer kit
+
+	ADD_KNOWN_SPELL ~spcl121~ #0 ~INNATE~                   // Called Shot
+	ADD_MEMORIZED_SPELL ~spcl121~ #0 ~INNATE~ #3
+	WRITE_BYTE  0x06e 0                                     // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                     // Small swords proficiency
+	WRITE_BYTE  0x070 0                                     // Bows proficiency
+	WRITE_BYTE  0x071 0                                     // Spears proficiency
+	WRITE_BYTE  0x072 0                                     // Blunt proficiency
+	WRITE_BYTE  0x073 0                                     // Spiked proficiency
+	WRITE_BYTE  0x074 0                                     // Axe proficiency
+	WRITE_BYTE  0x075 0                                     // Missile proficiency
+	SET_BG2_PROFICIENCY ~PROFICIENCYLONGBOW~ 5
+	SET_BG2_PROFICIENCY ~PROFICIENCYSHORTBOW~ 5
+	SET_BG2_PROFICIENCY ~PROFICIENCYLONGSWORD~ 1
+BUT_ONLY
+
+COPY_EXISTING ~valran03.cre~ ~override~
+	REMOVE_CRE_ITEM ~CHAN04~                                // Splint Mail 
+	REMOVE_CRE_ITEM ~BOW03~                                 // Longbow
+	REMOVE_CRE_ITEM ~AROW01~
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~          // Helmet
+	ADD_CRE_ITEM ~BOW02~ #0 #0 #0 ~NONE~ ~WEAPON1~          // Composite Longbow +1
+	ADD_CRE_ITEM ~LEAT10~ #0 #0 #0 ~NONE~ ~ARMOR~           // Hide Armor
+    ADD_CRE_ITEM ~AROW08~ #10 #0 #0 ~UNSTEALABLE~ ~QUIVER1~ // Arrow of Fire
+	ADD_CRE_ITEM ~AROW05~ #10 #0 #0 ~UNSTEALABLE~ ~QUIVER2~ // Arrow of Bitting
+	ADD_CRE_ITEM ~AROW04~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER3~ // Acid Arrow +1
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~   // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~      // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~      // Potion of Magic Shielding
+	WRITE_LONG  0x01c 26                                    // Gold (vanilla = 0)
+	WRITE_SHORT 0x024 90                                    // Current HP (vanilla = 75)
+	WRITE_SHORT 0x026 90                                    // Maximum HP (vanilla = 75)
+	WRITE_SHORT 0x046 10                                    // Natural AC (vanilla = 2)
+	WRITE_SHORT 0x048 10                                    // Effective AC (vanilla = 2)
+	WRITE_BYTE	0x052 12                                    // THAC0 (vanilla = 9)
+	WRITE_BYTE  0x053 1                                     // Number of attacks
+	WRITE_BYTE  0x054 8                                     // Save vs. death (vanilla = 8)
+	WRITE_BYTE  0x055 10                                    // Save vs. wands (vanilla = 10)
+	WRITE_BYTE  0x056 9                                     // Save vs. polymorph (vanilla = 9)
+	WRITE_BYTE  0x057 9                                     // Save vs. breath (vanilla = 9)
+	WRITE_BYTE  0x058 11                                    // Save vs. spells (vanilla = 11)
+
+    WRITE_LONG 0xc8 4917                                           // battle cry 1
+  WRITE_LONG 0xcc 4917                                            // battle cry 2
+    WRITE_LONG 0xec 61730                                             // damage string
+  WRITE_LONG 0xf0 61731                                            // dying string
+  WRITE_LONG 0x10c 4916                                            // select common 1
+  WRITE_LONG 0x110 4919                                          // select common 2
+  WRITE_LONG 0x114 4916                                            // select common 3
+  WRITE_LONG 0x118 4919                                            // select common 4
+
+	WRITE_BYTE  0x234 9                                     // Level first class (vanilla = 11)
+	WRITE_BYTE  0x238 16                                    // Strength (vanilla = 17)
+	WRITE_BYTE  0x23a 10                                    // Intelligence (vanilla = 13)
+	WRITE_BYTE  0x23b 15                                    // Wisdom (vanilla = 13)
+	WRITE_BYTE  0x23c 18                                    // Dexterity (vanilla = 18)
+	WRITE_BYTE  0x23d 17                                    // Constitution (vanilla = 15)
+	WRITE_BYTE  0x23f 20                                    // Morale (vanilla = 19)
+	WRITE_BYTE  0x240 5                                     // Morale break (vanilla = 4)
+	WRITE_SHORT 0x242 10                                    // Morale recovery (vanilla = 60)
+
+	WRITE_LONG  0x244 0x40070000                            // Archer kit
+
+	ADD_KNOWN_SPELL ~spcl121~ #0 ~INNATE~                   // Called Shot
+	ADD_MEMORIZED_SPELL ~spcl121~ #0 ~INNATE~ #3
+	WRITE_BYTE  0x06e 0                                     // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                     // Small swords proficiency
+	WRITE_BYTE  0x070 0                                     // Bows proficiency
+	WRITE_BYTE  0x071 0                                     // Spears proficiency
+	WRITE_BYTE  0x072 0                                     // Blunt proficiency
+	WRITE_BYTE  0x073 0                                     // Spiked proficiency
+	WRITE_BYTE  0x074 0                                     // Axe proficiency
+	WRITE_BYTE  0x075 0                                     // Missile proficiency
+	SET_BG2_PROFICIENCY ~PROFICIENCYLONGBOW~ 5
+	SET_BG2_PROFICIENCY ~PROFICIENCYLONGSWORD~ 1
+BUT_ONLY
+
+COPY_EXISTING ~valran02.cre~ ~override~
+	REMOVE_CRE_ITEM ~LEAT04~                              // Studded Leather Armor
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Full Plate Mail
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing
+	WRITE_LONG  0x01c 69                                  // Gold (vanilla = 46)
+	WRITE_SHORT 0x024 78                                  // Current HP (vanilla = 68)
+	WRITE_SHORT 0x026 78                                  // Maximum HP (vanilla = 68)
+
+  WRITE_LONG 0xc8 61729                                            // battle cry 1
+  WRITE_LONG 0xcc 61729                                            // battle cry 2
+  WRITE_LONG 0x10c 61724                                            // select common 1
+  WRITE_LONG 0x110 61725                                           // select common 2
+  WRITE_LONG 0x114 61726                                            // select common 3
+  WRITE_LONG 0x118 61727                                            // select common 4
+
+	WRITE_BYTE  0x238 16                                  // Strength (vanilla = 13)
+	WRITE_BYTE  0x23a 10                                  // Intelligence (vanilla = 14)
+	WRITE_BYTE  0x23b 18                                  // Wisdom (vanilla = 16)
+	WRITE_BYTE  0x23c 10                                  // Dexterity (vanilla = 15)
+	WRITE_BYTE  0x23d 16                                  // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 10                                  // Morale (vanilla = 13)
+	WRITE_BYTE  0x240 5                                   // Morale break (vanilla = 2)
+	WRITE_SHORT 0x242 10                                  // Morale recovery (vanilla = 60)
+BUT_ONLY
+
+
+// Mad Cleric
+// ----------
+COPY_EXISTING ~dcleric.cre~ ~override~
+	REMOVE_CRE_ITEM ~STAF01~
+WRITE_LONG 0x028 24576 //0x6000 (CLERIC_MALE_HUMAN)
+
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~          // Helmet
+	ADD_CRE_ITEM ~PLAT05~ #0 #0 #0 ~STOLEN~ ~ARMOR~         // Plate of the Dark +1
+	ADD_CRE_ITEM ~BLUN04~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP // Mace
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~STOLEN~ ~SHIELD~        // Large Shield
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~   // 7 Potions of Extra Healing
+	WRITE_LONG  0x01c 69                                    // Gold (vanilla = 20)
+	WRITE_SHORT 0x046 10                                    // Natural AC (vanilla = 4)
+	WRITE_SHORT 0x048 10                                    // Effective AC (vanilla = 4)
+	WRITE_BYTE	0x052 11                                    // THAC0 (vanilla = 14)
+	WRITE_BYTE  0x238 18                                    // Strength (vanilla = 16)
+	WRITE_BYTE  0x23c 10                                    // Dexterity (vanilla = 15)
+	WRITE_BYTE  0x23d 17                                    // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 10                                    // Morale (vanilla = 13)
+	WRITE_BYTE  0x240 5                                     // Morale break (vanilla = 7)
+	WRITE_SHORT 0x242 10                                    // Morale recovery (vanilla = 60)
+
+	WRITE_BYTE  0x06e 0                                     // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                     // Small swords proficiency
+	WRITE_BYTE  0x070 0                                     // Bows proficiency
+	WRITE_BYTE  0x071 0                                     // Spears proficiency
+	WRITE_BYTE  0x072 0                                     // Blunt proficiency
+	WRITE_BYTE  0x073 0                                     // Spiked proficiency
+	WRITE_BYTE  0x074 0                                     // Axe proficiency
+	WRITE_BYTE  0x075 0                                     // Missile proficiency
+	SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 1
+BUT_ONLY
+
+// Slaver Priest of Cyric
+// ----------------------
+COPY_EXISTING ~slapri.cre~ ~override~
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Full Plate Mail
+	ADD_CRE_ITEM ~BLUN04~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Mace
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~        // Large Shield
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing
+	WRITE_LONG  0x01c 69                                  // Gold (vanilla = 0)
+	WRITE_BYTE  0x238 18                                  // Strength (vanilla = 13)
+	WRITE_BYTE  0x23c 15                                  // Dexterity (vanilla = 15)
+	WRITE_BYTE  0x23d 17                                  // Constitution (vanilla = 9)
+	WRITE_BYTE  0x06e 0                                   // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                   // Small swords proficiency
+	WRITE_BYTE  0x070 0                                   // Bows proficiency
+	WRITE_BYTE  0x071 0                                   // Spears proficiency
+	WRITE_BYTE  0x072 0                                   // Blunt proficiency
+	WRITE_BYTE  0x073 0                                   // Spiked proficiency
+	WRITE_BYTE  0x074 0                                   // Axe proficiency
+	WRITE_BYTE  0x075 0                                   // Missile proficiency
+	SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 1
+BUT_ONLY
+
+
+/* ------------------------------------------------------ *
+ *  Rationalise Captain Haegan into a 15th Level Fighter  * TODO 13 dans le code ???
+ * ------------------------------------------------------ */
+COPY_EXISTING ~haegan.cre~ ~override~
+	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Full Plate Mail
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Magic Shielding
+	WRITE_LONG	0x014 5000                                // XP when killed (vanilla 580)
+	WRITE_LONG  0x01c 165                                 // Gold (vanilla = 31)
+	WRITE_SHORT 0x024 110                                 // Current HP (vanilla = 79)
+	WRITE_SHORT 0x026 110                                 // Maximum HP (vanilla = 79)
+	WRITE_SHORT 0x046 10                                  // Natural AC for a Kensai level 9 (vanilla = 0)
+	WRITE_SHORT 0x048 6                                   // Effective AC for a Kensai level 9 (vanilla = 0)
+	WRITE_BYTE	0x052 5                                   // THAC0 (vanilla = 12)
+	WRITE_BYTE  0x053 1                                   // Number of attacks
+	WRITE_BYTE  0x054 4                                   // Save vs. death (vanilla = 8)
+	WRITE_BYTE  0x055 6                                   // Save vs. wands (vanilla = 10)
+	WRITE_BYTE  0x056 6                                   // Save vs. polymorph (vanilla = 9)
+	WRITE_BYTE  0x057 6                                   // Save vs. breath (vanilla = 9)
+	WRITE_BYTE  0x058 7                                   // Save vs. spells (vanilla = 11)
+	WRITE_BYTE  0x234 13                                  // Level first class (vanilla = 9)
+	WRITE_BYTE  0x238 19                                  // Strength (vanilla = 17)
+	WRITE_BYTE  0x23a 10                                  // Intelligence (vanilla = 14)
+	WRITE_BYTE  0x23b 10                                  // Wisdom (vanilla = 11)
+	WRITE_BYTE  0x23c 16                                  // Dexterity (vanilla = 16)
+	WRITE_BYTE  0x23d 18                                  // Constitution (vanilla = 13)
+	WRITE_BYTE  0x06e 0                                   // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                   // Small swords proficiency
+	WRITE_BYTE  0x070 0                                   // Bows proficiency
+	WRITE_BYTE  0x071 0                                   // Spears proficiency
+	WRITE_BYTE  0x072 0                                   // Blunt proficiency
+	WRITE_BYTE  0x073 0                                   // Spiked proficiency
+	WRITE_BYTE  0x074 0                                   // Axe proficiency
+	WRITE_BYTE  0x075 0                                   // Missile proficiency
+BUT_ONLY
+
+
+/* -------------------- *
+ *  Rationalise Ilyich  *
+ * -------------------- */
+COPY_EXISTING ~duecla01.cre~ ~override~
+	REMOVE_CRE_ITEM ~SLNG01~
+	REMOVE_CRE_ITEM ~SHLD03~
+	REMOVE_CRE_ITEM ~BULL01~
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~        // Large Shield
+ 	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~ // Oil of Speed
+	ADD_CRE_ITEM ~POTN24~ #1 #0 #0 ~undroppable~ ~INV14~  // Potion of Defense
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Magic Shielding
+	WRITE_LONG	0x014 2000                                // XP when killed (vanilla 520)
+	WRITE_LONG  0x01c 288                                 // Gold (vanilla = 87)
+	WRITE_SHORT 0x024 90                                  // Current HP (vanilla = 38)
+	WRITE_SHORT 0x026 90                                  // Maximum HP (vanilla = 38)
+	WRITE_SHORT 0x046 10                                  // Natural AC (vanilla = 8)
+	WRITE_SHORT 0x048 10                                  // Effective AC (vanilla = 8)
+	WRITE_BYTE	0x052 12                                  // THAC0 (vanilla = 14)
+	WRITE_BYTE  0x053 1                                   // Number of attacks
+	WRITE_BYTE  0x054 3                                   // Save vs. death (vanilla = 10)
+	WRITE_BYTE  0x055 5                                   // Save vs. wands (vanilla = 12)
+	WRITE_BYTE  0x056 9                                   // Save vs. polymorph (vanilla = 11)
+	WRITE_BYTE  0x057 9                                   // Save vs. breath (vanilla = 12)
+	WRITE_BYTE  0x058 6                                   // Save vs. spells (vanilla = 13)
+	WRITE_BYTE  0x234 9                                   // Level first class (vanilla = 7)
+	WRITE_BYTE  0x238 19                                  // Strength (vanilla = 17)
+	WRITE_BYTE  0x23c 15                                  // Dexterity (vanilla = 14)
+	WRITE_BYTE  0x23d 19                                  // Constitution (vanilla = 16)
+	WRITE_BYTE  0x23f 10                                  // Morale (vanilla = 15)
+	WRITE_BYTE  0x240 5                                   // Morale break (vanilla = 7)
+	WRITE_SHORT 0x242 60                                  // Morale recovery (vanilla = 20)
+	WRITE_ASCII SCRIPT_DEFAULT ~WTASIGHT~ #8
+	ADD_KNOWN_SPELL ~spcl321~ #0 ~INNATE~                 // Enrage
+	ADD_MEMORIZED_SPELL ~spcl321~ #0 ~INNATE~ #3
+	WRITE_BYTE  0x06e 0                                   // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                   // Small swords proficiency
+	WRITE_BYTE  0x070 0                                   // Bows proficiency
+	WRITE_BYTE  0x071 0                                   // Spears proficiency
+	WRITE_BYTE  0x072 0                                   // Blunt proficiency
+	WRITE_BYTE  0x073 0                                   // Spiked proficiency
+	WRITE_BYTE  0x074 0                                   // Axe proficiency
+	WRITE_BYTE  0x075 0                                   // Missile proficiency
+	SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
+	SET_BG2_PROFICIENCY ~PROFICIENCYAXE~ 5
+BUT_ONLY
+
+
+/* -------------------------- *
+ *  Rationalise Beast Master  *
+ * -------------------------- */
+COPY_EXISTING ~beast.cre~ ~override~
+	REMOVE_CRE_ITEM ~PLAT01~
+	REMOVE_CRE_ITEM ~AROW01~
+	ADD_CRE_ITEM ~LEAT05~ #0 #0 #0 ~NONE~ ~ARMOR~           // Studded Leather Armor +1
+	ADD_CRE_ITEM ~AROW10~ #10 #0 #0 ~UNSTEALABLE~ ~QUIVER1~ // Arrow of Piercing +1
+	ADD_CRE_ITEM ~AROW05~ #20 #0 #0 ~UNSTEALABLE~ ~QUIVER2~ // Arrow of Bitting
+	ADD_CRE_ITEM ~AROW04~ #30 #0 #0 ~UNSTEALABLE~ ~QUIVER3~ // Acid Arrow +1
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~   // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~      // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~      // Potion of Magic Shielding
+	WRITE_LONG  0x01c 165                                   // Gold (vanilla = 87)
+	WRITE_SHORT 0x024 90                                    // Current HP (vanilla = 45)
+	WRITE_SHORT 0x026 90                                    // Maximum HP (vanilla = 45)
+	WRITE_SHORT 0x046 10                                    // Natural AC (vanilla = 5)
+	WRITE_SHORT 0x048 10                                    // Effective AC (vanilla = 5)
+	WRITE_BYTE	0x052 12                                    // THAC0 (vanilla = 15)
+	WRITE_BYTE  0x053 1                                     // Number of attacks
+	WRITE_BYTE  0x054 8                                     // Save vs. death (vanilla = 13)
+	WRITE_BYTE  0x055 10                                    // Save vs. wands (vanilla = 15)
+	WRITE_BYTE  0x056 9                                     // Save vs. polymorph (vanilla = 14)
+	WRITE_BYTE  0x057 9                                     // Save vs. breath (vanilla = 16)
+	WRITE_BYTE  0x058 11                                    // Save vs. spells (vanilla = 16)
+	WRITE_BYTE  0x234 9                                     // Level first class (vanilla = 8)
+	WRITE_BYTE  0x238 16                                    // Strength (vanilla = 18/48)
+	WRITE_BYTE  0x23a 10                                    // Intelligence (vanilla = 9)
+	WRITE_BYTE  0x23b 15                                    // Wisdom (vanilla = 6)
+	WRITE_BYTE  0x23c 18                                    // Dexterity (vanilla = 16)
+	WRITE_BYTE  0x23d 17                                    // Constitution (vanilla = 15)
+	WRITE_BYTE  0x23f 20                                    // Morale (vanilla = 15)
+	WRITE_BYTE  0x240 5                                     // Morale break (vanilla = 5)
+	WRITE_SHORT 0x242 10                                    // Morale recovery (vanilla = 20)
+
+       WRITE_LONG  0x0244 0x40070000                // Archer kit
+	WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~ #8
+	ADD_KNOWN_SPELL ~spcl121~ #0 ~INNATE~                   // Called Shot
+	ADD_MEMORIZED_SPELL ~spcl121~ #0 ~INNATE~ #3
+	WRITE_BYTE  0x06e 0                                     // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                     // Small swords proficiency
+	WRITE_BYTE  0x070 0                                     // Bows proficiency
+	WRITE_BYTE  0x071 0                                     // Spears proficiency
+	WRITE_BYTE  0x072 0                                     // Blunt proficiency
+	WRITE_BYTE  0x073 0                                     // Spiked proficiency
+	WRITE_BYTE  0x074 0                                     // Axe proficiency
+	WRITE_BYTE  0x075 0                                     // Missile proficiency
+	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 1
+	SET_BG2_PROFICIENCY ~PROFICIENCYLONGBOW~ 5
+	SET_BG2_PROFICIENCY ~PROFICIENCYSHORTBOW~ 5
+	SET_BG2_PROFICIENCY ~PROFICIENCYSPEAR~ 1
+BUT_ONLY
+
+
+/* -------------------------------------------------------------- *
+ *  Turn Minotaur (near Beast Master) into a 5th Level Barbarian  *
+ * -------------------------------------------------------------- */
+COPY_EXISTING ~icmin01.cre~ ~override~
+	REMOVE_CRE_ITEM ~AX1H01~  // Battle Axe
+	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~STOLEN~ ~ARMOR~                   // Studded Leather Armor
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~                    // Helmet
+	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP TWOHANDED // Halberd
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV1~                    // Random treasure
+	WRITE_LONG	0x014 600                                             // XP when killed (vanilla 3000)
+	WRITE_SHORT 0x024 60                                              // Current HP (vanilla = 50)
+	WRITE_SHORT 0x026 60                                              // Maximum HP (vanilla = 50)
+	WRITE_BYTE	0x052 16                                              // THAC0 (vanilla = 10)
+	WRITE_BYTE  0x053 1                                               // Number of attacks
+	WRITE_BYTE  0x054 11                                              // Save vs. death (vanilla = 8)
+	WRITE_BYTE  0x055 13                                              // Save vs. wands (vanilla = 8)
+	WRITE_BYTE  0x056 12                                              // Save vs. polymorph (vanilla = 8)
+	WRITE_BYTE  0x057 13                                              // Save vs. breath (vanilla = 9)
+	WRITE_BYTE  0x058 14                                              // Save vs. spells (vanilla = 9)
+	WRITE_BYTE  0x234 5                                               // Level first class (vanilla = 4)
+	WRITE_BYTE  0x238 19                                              // Strength (vanilla = 18/100)
+	WRITE_BYTE  0x23c 9                                               // Dexterity (vanilla = 9)
+	WRITE_BYTE  0x23d 18                                              // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 20                                              // Morale (vanilla = 10)
+	WRITE_BYTE  0x240 5                                               // Morale break (vanilla = 6)
+	WRITE_SHORT 0x242 30                                              // Morale recovery (vanilla = 30)
+
+	WRITE_LONG  0x244 0x00004000                                      // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~ #8
+	WRITE_BYTE	0x273 2										          // Class FIGHTER (vanilla = 125 OGRE)
+	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~                             // Barbarian Rage
+	ADD_MEMORIZED_SPELL ~spcl152~ #0 ~INNATE~ #2
+	WRITE_BYTE  0x06e 0                                               // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                               // Small swords proficiency
+	WRITE_BYTE  0x070 0                                               // Bows proficiency
+	WRITE_BYTE  0x071 0                                               // Spears proficiency
+	WRITE_BYTE  0x072 0                                               // Blunt proficiency
+	WRITE_BYTE  0x073 0                                               // Spiked proficiency
+	WRITE_BYTE  0x074 0                                               // Axe proficiency
+	WRITE_BYTE  0x075 0                                               // Missile proficiency
+	SET_BG2_PROFICIENCY ~PROFICIENCYHALBERD~ 2
+	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+BUT_ONLY
+
+
+/* ------------------------------ *
+ *  Wyverns physical resistances  *
+ * ------------------------------ */
+COPY_EXISTING ~wyvbab01.cre~ ~override~ // Baby Wyvern
+	WRITE_SHORT 0x024 50  // Current HP (vanilla = 30)
+	WRITE_SHORT 0x026 50  // Maximum HP (vanilla = 30)
+	WRITE_BYTE  0x060 90  // Slashing resistance (vanilla = 0)
+	WRITE_BYTE  0x061 90  // Crushing resistance (vanilla = 0)
+	WRITE_BYTE  0x062 90  // Piercing resistance (vanilla = 0)
+BUT_ONLY
+
+COPY_EXISTING ~wyvern01.cre~ ~override~ // Wyvern
+	WRITE_SHORT 0x024 50  // Current HP (vanilla = 63)
+	WRITE_SHORT 0x026 50  // Maximum HP (vanilla = 63)
+	WRITE_BYTE  0x060 90  // Slashing resistance (vanilla = 0)
+	WRITE_BYTE  0x061 90  // Crushing resistance (vanilla = 0)
+	WRITE_BYTE  0x062 90  // Piercing resistance (vanilla = 0)
+BUT_ONLY
+
+COPY_EXISTING ~wyvgre01.cre~ ~override~ // Greater Wyvern
+	WRITE_SHORT 0x024 120  // Current HP (vanilla = 83)
+	WRITE_SHORT 0x026 120  // Maximum HP (vanilla = 83)
+	WRITE_BYTE  0x060 90   // Slashing resistance (vanilla = 0)
+	WRITE_BYTE  0x061 90   // Crushing resistance (vanilla = 0)
+	WRITE_BYTE  0x062 90   // Piercing resistance (vanilla = 0)
+BUT_ONLY
+
+COPY_EXISTING ~wyvernsu.cre~ ~override~ // Wyvern
+	WRITE_BYTE  0x060 90  // Slashing resistance (vanilla = 0)
+	WRITE_BYTE  0x061 90  // Crushing resistance (vanilla = 0)
+	WRITE_BYTE  0x062 90  // Piercing resistance (vanilla = 0)
+BUT_ONLY
