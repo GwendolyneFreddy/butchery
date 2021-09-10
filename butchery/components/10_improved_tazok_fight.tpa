@@ -186,16 +186,18 @@ AT_INTERACTIVE_EXIT ~%MOD_FOLDER%/sounds/Audioin.bat~
 AT_INTERACTIVE_UNINSTALL ~%MOD_FOLDER%/sounds/Audiouninstall.bat~
 */
 
-ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
-	LAF HANDLE_AUDIO
-		STR_VAR audio_path  = EVAL ~butchery/audio/%LANGUAGE%~
-				oggdec_path = ~butchery/audio~
-				sox_path	= ~butchery/audio~
-	END
-END ELSE BEGIN
-	LAF HANDLE_AUDIO
-		STR_VAR audio_path  = ~butchery/audio/french~
-				oggdec_path = ~butchery/audio~
-				sox_path	= ~butchery/audio~
+ACTION_IF NOT is_soundset BEGIN
+	ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = EVAL ~butchery/audio/%LANGUAGE%~
+					oggdec_path = ~butchery/audio~
+					sox_path	= ~butchery/audio~
+		END
+	END ELSE BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = ~butchery/audio/french~
+					oggdec_path = ~butchery/audio~
+					sox_path	= ~butchery/audio~
+		END
 	END
 END

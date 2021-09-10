@@ -4,21 +4,37 @@
  *                                              *
  * ============================================ */
 
-// Concept borrowed from DavidW's Immutability and encapsulation in mod design (https://github.com/Gibberlings3/immutable)
+// Concept borrowed from DavidW's Immutability and encapsulation in mod design ( https://github.com/Gibberlings3/immutable )
 
-/* ---------------------------------------------------------------- *
- * This code only runs once, even if you install lots of components *
- * ---------------------------------------------------------------- */
+/* =================================================================== *
+ *  This code only runs once, even if you install lots of components.  *
+ * =================================================================== */
 
 ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
 
+	SILENT
+
 	OUTER_SET always_once_section = 1
 
-   /////////////////////////////////////////////////////////
-   //    Determine if the game is an Enhanced Edition.    //
-   /////////////////////////////////////////////////////////
+	/* -------------------------------------------------------------------------------- *
+	 *    Determines which game is installed and if the game is an Enhanced Edition.    *
+	 * -------------------------------------------------------------------------------- */
+	OUTER_SET is_tob   = (GAME_IS ~bgt tob~) ? 1 : 0     // based on vanilla ToB engine
+	OUTER_SET is_bg2ee = (GAME_IS "bg2ee") ? 1 : 0       // b2gee
+	OUTER_SET is_eet   = (GAME_IS "eet") ? 1 : 0         // eet
+	OUTER_SET is_ee    = (GAME_IS ~bg2ee eet~) ? 1 : 0   // EE game
 
-	OUTER_SET d9_ee =(GAME_IS "bg2ee eet") ? 1 : 0
+
+	/* ------------------------------------------------------- *
+	 *    Sets default variables if they're not set already    *
+	 * ------------------------------------------------------- */
+
+	// Variable used to properly install specific EE games ressources
+	ACTION_IF (is_ee) BEGIN
+		OUTER_SPRINT ee_file "_ee"
+	END ELSE BEGIN
+		OUTER_SPRINT ee_file ""
+	END
 
 
 	///////////////////////////////
@@ -42,7 +58,7 @@ ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
 	/////////////////////////////////////////////////////////////////////////////////////////
 
 	OUTER_SET slot_halfogre = IDS_OF_SYMBOL(~ANIMATE~ ~HALF_OGRE~)
-	OUTER_SET slot_orogchief = (d9_ee = 1) ? IDS_OF_SYMBOL(~ANIMATE~ ~OROG_CHIEFTAIN~) : IDS_OF_SYMBOL(~ANIMATE~ ~OROG3~)
+	OUTER_SET slot_orogchief = (is_ee = 1) ? IDS_OF_SYMBOL(~ANIMATE~ ~OROG_CHIEFTAIN~) : IDS_OF_SYMBOL(~ANIMATE~ ~OROG3~)
 
 
 	///////////////////////////////////////////////////////////////////////////////////////
@@ -81,3 +97,17 @@ ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
 
 END	// of ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
 
+
+/* =============================================================================================== *
+ *  This code runs for each component to make sure files are not installed when already installed  *
+ * =============================================================================================== */
+
+/* ----------------------- *
+ *    Detects soundsets    *
+ * ----------------------- */
+OUTER_SET is_soundset = (FILE_EXISTS_IN_GAME ~d9bara1.wav~) ? 1 : 0
+
+/* ----------------------- *
+ *    Detects portraits    *
+ * ----------------------- */
+OUTER_SET is_portraits = (FILE_EXISTS_IN_GAME ~d9zoks.bmp~) ? 1 : 0

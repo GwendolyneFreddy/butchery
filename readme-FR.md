@@ -204,7 +204,7 @@ Ce composant améliore un peu les statistiques, jets de sauvegarde et points de c
 		<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
 		<td><strong>600</strong>&#160;&#160;&#160;(270)</td>
 		<td><strong>50</strong>&#160;&#160;&#160;(30)</td>
-		<td><strong>21</strong>&#160;&#160;&#160;(18/100)</td>
+		<td><strong>20</strong>&#160;&#160;&#160;(18/100)</td>
 		<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
 		<td>MORNING STAR & MACE +++</td>
 	</tr>
@@ -213,7 +213,7 @@ Ce composant améliore un peu les statistiques, jets de sauvegarde et points de c
 		<td>Barbare</td>
 		<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
 		<td><strong>600</strong>&#160;&#160;&#160;(95)</td>
-		<td><strong>60</strong>&#160;&#160;&#160;(35)</td>
+		<td><strong>50</strong>&#160;&#160;&#160;(35)</td>
 		<td><strong>19</strong>&#160;&#160;&#160;(18/10)</td>
 		<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
 		<td>AXE ++</td>
@@ -233,7 +233,7 @@ Ce composant améliore un peu les statistiques, jets de sauvegarde et points de c
 		<td>Barbare</td>
 		<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
 		<td><strong>800</strong>&#160;&#160;&#160;(600)</td>
-		<td><strong>84</strong>&#160;&#160;&#160;(40)</td>
+		<td><strong>91</strong>&#160;&#160;&#160;(40)</td>
 		<td><strong>20</strong>&#160;&#160;&#160;(18/53)</td>
 		<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
 		<td>TWO-HANDED SWORD +++</td>
@@ -243,7 +243,7 @@ Ce composant améliore un peu les statistiques, jets de sauvegarde et points de c
 		<td>Berserker</td>
 		<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
 		<td><strong>800</strong>&#160;&#160;&#160;(175)</td>
-		<td><strong>70</strong>&#160;&#160;&#160;40)</td>
+		<td><strong>75</strong>&#160;&#160;&#160;40)</td>
 		<td><strong>20</strong>&#160;&#160;&#160;(18/92)</td>
 		<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
 		<td>TWO-HANDED SWORD +++</td>
@@ -287,6 +287,18 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 		<td>BASTARD SWORD +++++</td>
 	</tr>
 </table><br>
+
+@20 = ~Rencontre avec Groumf et Bourrinos devant le donjon de Firkraag (a installer avant Stratagems)~
+
+Ce composant ajoute un petit combat et une rencontre amusante avec 2 personnages rigolos devant l'entrée du donjon de Firkraag, ceux là même qui sont les gardes du corps de Tazok si vous avez installé les composants précédant.
+
+
+@21 = ~Rencontre avec Groumf et Bourrinos a Brynnlaw (a installer avant Stratagems)~
+Ce composant ajoute un autre petit combat et rencontre amusante avec 2 personnages rigolos.
+
+@22 = ~Rencontre avec Groumf et Bourrinos dans les Tréfonds Obscurs (a installer avant Stratagems)~
+Ce composant ajoute un autre petit combat et rencontre amusante avec 2 personnages rigolos.
+
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
 
@@ -345,9 +357,18 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 
 ## Historique des versions
 
-<p>	Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p>
+<p>Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p>
 
-#### Version 4.0.0 &nbsp;(20 octobre 2018)
+##### Version 5.0.0 &nbsp;(nn septembre 2021)
+
+- .
+- Added Russian translation (by yota13).
+- .
+- .
+
+## 
+
+##### Version 4.0.0 &nbsp;(20 octobre 2018)
 
 - General overhaul and relooking:
 
@@ -374,7 +395,8 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 
 ## 
 
-#### Version 3.2 &nbsp;(10 octobre 2011)
+##### Version 3.2 &nbsp;(10 octobre 2011)
+
 - Increased Tazok to level 19 Barbarian.
 - Added a magical armor to Tazok.
 - Increased DigDag to level 13 Berseker.
@@ -382,16 +404,19 @@ Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, 
 
 ## 
 
-#### Version 3 &nbsp;(1er mars 2011)
+##### Version 3 &nbsp;(1er mars 2011)
+
 - Better compatibility with SCS II (especially more sensible choices of weapon proficiencies and kits for fighters component).
 
 ## 
 
-#### Version 2 &nbsp;(30 novembre 2010)
+##### Version 2 &nbsp;(30 novembre 2010)
+
 - Added French translation.
 
 ## 
 
-#### Version 1 &nbsp;((11 novembre 2010)
+##### Version 1 &nbsp;((11 novembre 2010)
+
 - Initial release.
 <div align="right"><a href="#top">Retour en haut de page</a></div>

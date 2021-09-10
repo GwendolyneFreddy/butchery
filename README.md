@@ -195,6 +195,12 @@ Two new creatures get their own soundsets, unfortunately only available in Frenc
 
 This component alters "a bit" stats, weapons, proficiencies of some generic orc and ogre fighters. Most of them have now a barbarian or berseker kit, a weapon which suit their avatars, etc. but I often keep their vanilla level.
 
+@20 = ~Reequilibrage de certaines creatures generiques (install before SCS)~
+
+Ce composant améliore un peu les statistiques, jets de sauvegarde, point de vies et points de compétences de quelques créatures génériques. (orques, ogres, bon nombre d'animaux et autre créatures).
+Des kits de barbare et de Berseker sont ajoutés mais vous devenez installer SCS pour que les créatures utilisent leurs capacités spéciales.
+Les capacités et immunités des squelettes/momies ennemis sont standardisés : ils ont toujours 100 % de resistance à l'electricité et au froid ainsi que 10% de resistance magique par niveau. Leur resistance au attaque missiles est de 90%. Ceci afin de faire des squelettes/momies des ennemis redoutables.
+De plus quelques"demi-boss" ont été un peu améliorés au niveau des statistiques de combat/"équipement (Ilyich notamment)
 
 <table style="margin-left: 80px" summary="Rebalanced generic creatures">
 	<tr>
@@ -213,7 +219,7 @@ This component alters "a bit" stats, weapons, proficiencies of some generic orc 
 		<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
 		<td><strong>600</strong>&#160;&#160;&#160;(270)</td>
 		<td><strong>50</strong>&#160;&#160;&#160;(30)</td>
-		<td><strong>21</strong>&#160;&#160;&#160;(18/100)</td>
+		<td><strong>20</strong>&#160;&#160;&#160;(18/100)</td>
 		<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
 		<td>MORNING STAR & MACE +++</td>
 	</tr>
@@ -222,7 +228,7 @@ This component alters "a bit" stats, weapons, proficiencies of some generic orc 
 		<td>Barbarian</td>
 		<td><strong>5</strong>&#160;&#160;&#160;(4)</td>
 		<td><strong>600</strong>&#160;&#160;&#160;(95)</td>
-		<td><strong>60</strong>&#160;&#160;&#160;(35)</td>
+		<td><strong>50</strong>&#160;&#160;&#160;(35)</td>
 		<td><strong>19</strong>&#160;&#160;&#160;(18/10)</td>
 		<td><strong>18</strong>&#160;&#160;&#160;(9)</td>
 		<td>AXE ++</td>
@@ -242,7 +248,7 @@ This component alters "a bit" stats, weapons, proficiencies of some generic orc 
 		<td>Barbarian</td>
 		<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
 		<td><strong>800</strong>&#160;&#160;&#160;(600)</td>
-		<td><strong>84</strong>&#160;&#160;&#160;(40)</td>
+		<td><strong>91</strong>&#160;&#160;&#160;(40)</td>
 		<td><strong>20</strong>&#160;&#160;&#160;(18/53)</td>
 		<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
 		<td>TWO-HANDED SWORD +++</td>
@@ -252,7 +258,7 @@ This component alters "a bit" stats, weapons, proficiencies of some generic orc 
 		<td>Berserker</td>
 		<td><strong>7</strong>&#160;&#160;&#160;(4)</td>
 		<td><strong>800</strong>&#160;&#160;&#160;(175)</td>
-		<td><strong>70</strong>&#160;&#160;&#160;40)</td>
+		<td><strong>75</strong>&#160;&#160;&#160;40)</td>
 		<td><strong>20</strong>&#160;&#160;&#160;(18/92)</td>
 		<td><strong>20</strong>&#160;&#160;&#160;(9)</td>
 		<td>TWO-HANDED SWORD +++</td>
@@ -364,7 +370,31 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 ## Version History
 
-#### Version 4.0.0 &nbsp;(October 20, 2018)
+##### Version 5.0.0 &nbsp;(September nn, 2021)
+
+- .
+- .
+- Fixed installer to avoid installing the same files more than once, regardless of the components.
+- Added Russian translation (by yota13).
+- Added `Continue()` to script blocks patched via `EXTEND_TOP`.
+- .
+
+First component:
+- Renamed .tpa file name
+- Flagged potions as undroppable" in creatures' inventories
+- Added `Continue()` to script blocks patched via `EXTEND_TOP`.
+
+Second component:
+- Renamed .tpa file name
+- Improved more creatures statistics
+
+Third component:
+- Renamed .tpa file name
+- Flagged potions as undroppable" in creatures' inventories
+
+## 
+
+##### Version 4.0.0 &nbsp;(October 20, 2018)
 
 - General overhaul and relooking:
 
@@ -391,7 +421,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 ## 
 
-#### Version 3.2 &nbsp;(October 10, 2011)
+##### Version 3.2 &nbsp;(October 10, 2011)
 - Increased Tazok to level 19 Barbarian.
 - Added a magical armor to Tazok.
 - Increased DigDag to level 13 Berseker.
@@ -399,16 +429,16 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 ## 
 
-#### Version 3 &nbsp;(March 1, 2011)
+##### Version 3 &nbsp;(March 1, 2011)
 - Better compatibility with SCS II (especially more sensible choices of weapon proficiencies and kits for fighters component).
 
 ## 
 
-#### Version 2 &nbsp;(November 30, 2010)
+##### Version 2 &nbsp;(November 30, 2010)
 - Added French translation.
 
 ## 
 
-#### Version 1 &nbsp;(November 11, 2010)
+##### Version 1 &nbsp;(November 11, 2010)
 - Initial release.
 <div align="right"><a href="#top">Back to top</a></div>

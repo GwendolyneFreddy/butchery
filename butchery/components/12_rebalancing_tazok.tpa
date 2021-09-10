@@ -19,12 +19,9 @@ END
  *  Installing Portraits  *
  * ---------------------- */
 
-ACTION_IF (d9_ee = 1) BEGIN
-	COPY ~%MOD_FOLDER%/portraitsee/d9zoks.bmp~	~override~
-	COPY ~%MOD_FOLDER%/portraitsee/d9abs.bmp~	~override~
-END ELSE BEGIN
-	COPY ~%MOD_FOLDER%/portraits/d9zoks.bmp~	~override~
-	COPY ~%MOD_FOLDER%/portraits/d9abs.bmp~		~override~
+ACTION_IF (is_portraits = 0) BEGIN
+	COPY ~%MOD_FOLDER%/portraits%ee_file%/d9zoks.bmp~ ~override~
+	COPY ~%MOD_FOLDER%/portraits%ee_file%/d9abs.bmp~  ~override~
 END
 
 
