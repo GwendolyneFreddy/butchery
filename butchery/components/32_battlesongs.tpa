@@ -1,0 +1,55 @@
+/* =========================================================================================================================================================== *
+ *  v 5.0.0                                                                                                                                                    *
+ *           B U T C H E R Y    :    A d d    b a t t l e    s o n g s    i n    s o m e    a r e a s    t h a t    d o    n o t    h a v e    a n y           *
+ *                                                                                                                                                             *
+ * =========================================================================================================================================================== */
+
+SILENT
+
+// La première partie du code va chercher le numéro de la musique dans le fichier SONGLIST.2DA. Je le fais systématiquement au cas où un moddeur aurait modifié le fichier, mais tu peux t'en passer. Si tu ne souhaites pas l'utiliser, le code suivant devrait suffire.
+
+COPY_EXISTING ~SONGLIST.2DA~ ~override~
+	COUNT_2DA_COLS cols
+	READ_2DA_ENTRIES_NOW listsongs cols
+	SET battle_song_BD2 = "-1"
+
+	FOR (row = 1 ; row < listsongs ; ++row) BEGIN
+ 		PATCH_IF (battle_song_BD2 = "-1") BEGIN
+			READ_2DA_ENTRY_FORMER listsongs row 0 ~number~
+			READ_2DA_ENTRY_FORMER listsongs row 1 ~name~
+			PATCH_IF (~%name%~ STRING_EQUAL_CASE ~BD2~) BEGIN
+				SET battle_song_BD2 = %number%
+			END
+		END
+	END
+
+BUT_ONLY
+
+
+ACTION_FOR_EACH area IN ~AR0204~ ~AR0414~ ~AR1404~ ~AR1506~ ~AR2600~ BEGIN // The Forgotten Believers (Temple City) - Sewers beneath Coronet - Shadow Temple land shadowed - Troll Cave (Spellhold test) - Tethyr Wood
+
+	COPY_EXISTING ~%area%.are~ ~override~
+		READ_LONG 0x0bc "song_offset"
+		READ_LONG (song_offset + 12) "battle_song"
+		PATCH_IF (battle_song != %battle_song_BD2%) BEGIN
+			WRITE_LONG (song_offset + 12) %battle_song_BD2%
+		END
+	BUT_ONLY
+
+END
+
+/*
+// Je n'ai testé le code que dans NI : le thème musical est bien ajouté. Mais pas dans le jeu : à toi de vérifier si ça fonctionne. 
+// N'oublie pas que ces modifications ne seront pas prises en compte si tu as déjà visité ces cartes
+
+ACTION_FOR_EACH area IN ~AR0204~ ~AR0414~ ~AR1404~ ~AR1506~ ~AR2600~ BEGIN
+	COPY_EXISTING ~%area%.are~ ~override~
+		READ_LONG 0x0bc "song_offset"
+		READ_LONG (song_offset + 12) "battle_song"
+		PATCH_IF (battle_song != 49) BEGIN
+			WRITE_LONG (song_offset + 12) 49
+		END
+	BUT_ONLY
+
+END
+*/
