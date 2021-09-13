@@ -4,8 +4,8 @@ IF
 THEN
 	RESPONSE #100
 		UseItem("potn41",Myself)
-		DisplayStringHead(Myself,@302)	// ~*quaffs a Potion of Power*~
+		DisplayStringHead(Myself,@302)  // ~*quaffs a Potion of Power*~
 		UseItem("potn24",Myself)
-		DisplayStringHead(Myself,@304)	// ~*quaffs a Potion of Defense*~
+		DisplayStringHead(Myself,@304)  // ~*quaffs a Potion of Defense*~
 		SetGlobal("D9GROUMFDRINK","LOCALS",1)
 END

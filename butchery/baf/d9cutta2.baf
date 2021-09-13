@@ -4,26 +4,26 @@ THEN
 	RESPONSE #100
 		CutSceneId(Player1)
 		FadeFromColor([20.0],0)
-		ActionOverride("TAZOK",DestroySelf())
-		ActionOverride("ORC05",DestroySelf())
+		ActionOverride("TAZOK",DestroySelf())     // Tazok
+		ActionOverride("ORC05",DestroySelf())     // Orog
 
-		ActionOverride("d9groumt",DestroySelf())
-		ActionOverride("ORC06",DestroySelf())
+		ActionOverride("d9groumt",DestroySelf())  // Groumf
+		ActionOverride("ORC06",DestroySelf())     // Orog
 
-		ActionOverride("ORC02",DestroySelf())
+		ActionOverride("ORC02",DestroySelf())     // Orc Archer - Archer Orque
 
-		ActionOverride("D9ORC01",DestroySelf())
-		ActionOverride("d9bourt",DestroySelf())
-		ActionOverride("D9OGRGA",DestroySelf())
-		ActionOverride("OGREMA01",DestroySelf())
+		ActionOverride("D9ORC01",DestroySelf())   // Orc - Orque
+		ActionOverride("d9bourt",DestroySelf())   // Bourrinos
+		ActionOverride("D9OGRGA",DestroySelf())   // Berserker Ogre - Ogre Berserker
+		ActionOverride("OGREMA01",DestroySelf())  // Ogre Mage
 		ActionOverride("observe",DestroySelf())
 
-		ActionOverride("ORC03",DestroySelf())
-		ActionOverride("ORC04",DestroySelf())
+		ActionOverride("ORC03",DestroySelf())     // Orc Priest - Prêtre Orque
+		ActionOverride("ORC04",DestroySelf())     // Orc Mage - Magicien Orque
 
-		ActionOverride("HOBARC02",DestroySelf())
-		ActionOverride("HOBARC01",DestroySelf())
-		ActionOverride("HOBSHA01",DestroySelf())
+		ActionOverride("HOBARC02",DestroySelf())  // Hobgobelin Archer - Archer hobgobelin
+		ActionOverride("HOBARC01",DestroySelf())  // Hobgobelin Archer - Archer hobgobelin
+		ActionOverride("HOBSHA01",DestroySelf())  // Hobgobelin Shaman - Chaman Hobgobelin
 
 		LeaveAreaLUA("AR1203","",[600.565],4)
 		EndCutSceneMode()

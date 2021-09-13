@@ -1,10 +1,14 @@
+/* ========================================================================= *
+ *    DrAzTiK's revisited fight against Tazok and DigDag : Firkaag's Maze    *
+ * ========================================================================= */
+
 IF
 	Global("D9removevilains","AR1202",0)
 THEN
 	RESPONSE #100
 		SetGlobal("D9removevilains","AR1202",1)
 		ActionOverride("TAZOK",DestroySelf())
-		ActionOverride("FIRORC01",MoveBetweenAreas("AR1203",[1179.1199],9))
+		ActionOverride("FIRORC01",MoveBetweenAreas("AR1203",[1179.1199],9))  // Chieftain DigDag - Chef DigDag
 		Continue()
 END
 
@@ -32,22 +36,22 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("D9removevilains2","AR1202",1)
-		ActionOverride("TAZOK",DestroySelf())
-		ActionOverride("ORC05",DestroySelf())
-		ActionOverride("D9Groumt",DestroySelf())
-		ActionOverride("ORC06",DestroySelf())
-		ActionOverride("ORC02",DestroySelf())
+		ActionOverride("TAZOK",DestroySelf())     // Tazok
+		ActionOverride("ORC05",DestroySelf())     // Orog
+		ActionOverride("D9Groumt",DestroySelf())  // Groumf
+		ActionOverride("ORC06",DestroySelf())     // Orog
+		ActionOverride("ORC02",DestroySelf())     // Orc Archer - Archer Orque
 //		ActionOverride("D9ORC01",DestroySelf())
-		ActionOverride("D9Bourt",DestroySelf())
+		ActionOverride("D9Bourt",DestroySelf())   // Bourrinos
 		ActionOverride("observe",DestroySelf())
-		ActionOverride("ORC03",DestroySelf())
-		ActionOverride("ORC04",DestroySelf())
-		ActionOverride("HOBARC02",DestroySelf())
-		ActionOverride("HOBARC01",DestroySelf())
-		ActionOverride("HOBSHA01",DestroySelf())
-		ActionOverride("OGRE01",DestroySelf())
-		ActionOverride("D9ORC01",DestroySelf())
-		ActionOverride("D9OGRGA",DestroySelf())
+		ActionOverride("ORC03",DestroySelf())     // Orc Priest - Prêtre Orque
+		ActionOverride("ORC04",DestroySelf())     // Orc Mage - Magicien Orque
+		ActionOverride("HOBARC02",DestroySelf())  // Hobgobelin Archer - Archer hobgobelin
+		ActionOverride("HOBARC01",DestroySelf())  // Hobgobelin Archer - Archer hobgobelin
+		ActionOverride("HOBSHA01",DestroySelf())  // Hobgobelin Shaman - Chaman Hobgobelin
+		ActionOverride("OGRE01",DestroySelf())    // Ogre
+		ActionOverride("D9ORC01",DestroySelf())   // Orc - Orque
+		ActionOverride("D9OGRGA",DestroySelf())   // Berserker Ogre - Ogre Berserker
 //		ActionOverride("OGREMA01",DestroySelf())
 		Continue()
 END

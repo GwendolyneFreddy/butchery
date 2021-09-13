@@ -47,7 +47,7 @@ COPY ~%MOD_FOLDER%/cre/d9orc05.cre~   ~override~
 COPY ~%MOD_FOLDER%/cre/d9orgame.cre~  ~override~
 	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP  // Halberd
 //	ADD_CRE_ITEM ~d9boots~ #0 #0 #0 ~NONE~ ~BOOTS~
-	WRITE_LONG 0x0244 0x00004000                           // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_LONG 0x0244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
 
 // Ogre Berserker not following Player1
 // ------------------------------------
@@ -62,10 +62,10 @@ COPY ~%MOD_FOLDER%/cre/d9ogrga.cre~   ~override~
 COPY ~%MOD_FOLDER%/cre/d9ogrga2.cre~  ~override~
 	SAY NAME1 @102
 	SAY NAME2 @102
-	WRITE_LONG  0x014 600							// XP value (when killed)
-//	ADD_CRE_ITEM ~d9boots~ #0 #0 #0 ~NONE~ ~BOOTS~	// Useless : already in CRE file.
-	WRITE_LONG  0x0244 0x00004000					// Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
-//	WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~			// DEPRECATED as of v4.0.0: added to the file.
+	WRITE_LONG  0x014 600                           // XP value (when killed)
+//	ADD_CRE_ITEM ~d9boots~ #0 #0 #0 ~NONE~ ~BOOTS~  // Useless : already in CRE file.
+	WRITE_LONG  0x0244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+//	WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~          // DEPRECATED as of v4.0.0: added to the file.
 	WRITE_ASCII SCRIPT_RACE ~~ #8
 	WRITE_ASCII DEATHVAR ~D9OGRGA2~ #32
 
@@ -142,7 +142,7 @@ BUT_ONLY
  *  Installing Scripts and dialogues  *
  * ---------------------------------- */
 
-// Maybe I should let Groumf and Bourinos drink a potion like Tazok, I will see in the future.
+// Maybe I should let Groumf and Bourrinos drink a potion like Tazok, I will see in the future.
 COMPILE ~%MOD_FOLDER%/baf/d9groumt.baf~
         ~%MOD_FOLDER%/baf/d9bourt.baf~
         ~%MOD_FOLDER%/baf/d9orc05.baf~
@@ -190,14 +190,14 @@ ACTION_IF NOT is_soundset BEGIN
 	ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
 		LAF HANDLE_AUDIO
 			STR_VAR audio_path  = EVAL ~butchery/audio/%LANGUAGE%~
-					oggdec_path = ~butchery/audio~
-					sox_path	= ~butchery/audio~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
 		END
 	END ELSE BEGIN
 		LAF HANDLE_AUDIO
 			STR_VAR audio_path  = ~butchery/audio/french~
-					oggdec_path = ~butchery/audio~
-					sox_path	= ~butchery/audio~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
 		END
 	END
 END
