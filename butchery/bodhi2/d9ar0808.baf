@@ -1,0 +1,154 @@
+/* ======================================================================= *
+ *    Vampires butchery in Bodhi's Hideout (chapter 6, after Underdark)    *
+ * ======================================================================= */
+
+/*IF
+	Global("D9removevilains","AR0205",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9removevilains","AR0205",1)
+		ActionOverride("CULTBH1",DestroySelf())
+		ActionOverride("CULTBH1",DestroySelf())
+		ActionOverride("CULTBH2",DestroySelf())
+		ActionOverride("CULTBH3",DestroySelf())
+		ActionOverride("CULTBH3",DestroySelf())
+		ActionOverride("BRAIWA1",DestroySelf())
+		ActionOverride("BRAIWA2",DestroySelf())
+		ActionOverride("BRAIWA3",DestroySelf())
+		ActionOverride("BRAIWA4",DestroySelf())
+		ActionOverride("BRAIWA5",DestroySelf())
+		ActionOverride("BRAIWA5",DestroySelf())
+END
+
+IF
+	Global("D9lassaldead","AR1203",0)
+	Dead("LASSAL02")
+THEN
+	RESPONSE #100
+END */
+
+IF
+	Global("d9mavariable","AR0808",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("SPIKE01",FALSE)
+		TriggerActivation("SPIKE02",FALSE)
+		TriggerActivation("SPIKE03",FALSE)
+		TriggerActivation("SPIKE04",FALSE)
+		TriggerActivation("SPIKE05",FALSE)
+		SetGlobal("d9mavariable","AR0808",1)
+		ActionOverride("C6BGUARD",JumpToPoint([3353.430])) // Guard
+		ActionOverride("C6HAREI",JumpToPoint([3353.430]))  // Hareishan 
+END
+
+IF
+	Allegiance("C6BGUARD",ENEMY)
+	Global("D9beginbutchery","AR0808",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+		SetGlobal("D9beginbutchery","AR0808",1)
+END
+
+IF
+	Global("D9Bguarddead","AR0808",0)
+	Dead("C6BGUARD")
+THEN
+	RESPONSE #100
+		IncrementGlobal("EXTRACOUNT3","MYAREA",-1)
+		SetGlobal("D9Bguarddead","AR0808",1)
+END
+
+IF
+	Global("D9Hareidead","AR0808",0)
+	Dead("C6HAREI")
+THEN
+	RESPONSE #100
+		IncrementGlobal("EXTRACOUNT2","MYAREA",-1)
+		SetGlobal("D9Hareidead","AR0808",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0808",1)
+	GlobalLT("MaxSpawn","AR0808",65)
+	GlobalLT("EXTRACOUNT","MYAREA",5)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9DFGT02",0)  // Grimwarder Archer
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9stva01",0)  // Vampiric Mist - Brume vampirique
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9OGR0M",0)  // Goule Majeure
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9DFGT01",0)  // Grimwarder
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0808",1)
+	GlobalLT("MaxSpawn","AR0808",65)
+	GlobalLT("EXTRACOUNT2","MYAREA",5)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9stva03",0)  // Vampiric Mist - Brume vampirique
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("d9MFLF01",0)  // Fledging Vampire female - Vampire novice
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9mver01",0)  // Vampire (intermédiaire)
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("d9mmy",0)  // Mummy - Momie
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9mver01",0)  // Vampire
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0808",1)
+	GlobalLT("MaxSpawn","AR0808",65)
+	GlobalLT("EXTRACOUNT3","MYAREA",1)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9MEMI01",0)  // Vampire
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9BGUARD",0)  // Guard - Garde (Vampire)
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9mver02",0)  // Vampire
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0808",1)
+		CreateCreatureOffScreen("D9TANOV",0)  // Vampire Mage
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END

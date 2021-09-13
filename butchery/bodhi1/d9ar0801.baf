@@ -1,0 +1,142 @@
+/* ======================================================================== *
+ *    Vampires butchery in Bodhi's Hideout (chapter 2, before Underdark)    *
+ * ======================================================================== */
+
+/*IF
+	Global("D9removevilains","AR0205",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9removevilains","AR0205",1)
+		ActionOverride("CULTBH1",DestroySelf())
+		ActionOverride("CULTBH1",DestroySelf())
+		ActionOverride("CULTBH2",DestroySelf())
+		ActionOverride("CULTBH3",DestroySelf())
+		ActionOverride("CULTBH3",DestroySelf())
+		ActionOverride("BRAIWA1",DestroySelf())
+		ActionOverride("BRAIWA2",DestroySelf())
+		ActionOverride("BRAIWA3",DestroySelf())
+		ActionOverride("BRAIWA4",DestroySelf())
+		ActionOverride("BRAIWA5",DestroySelf())
+		ActionOverride("BRAIWA5",DestroySelf())
+END
+
+IF
+	Global("D9lassaldead","AR1203",0)
+	Dead("LASSAL02")
+THEN
+	RESPONSE #100
+END */
+
+IF
+	Global("d9mavariable","AR0801",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("SPIKE01",FALSE)
+		TriggerActivation("SPIKE02",FALSE)
+		TriggerActivation("SPIKE03",FALSE)
+		TriggerActivation("SPIKE04",FALSE)
+		TriggerActivation("SPIKE05",FALSE)
+		SetGlobal("d9mavariable","AR0801",1)
+END
+
+IF
+	Allegiance("LASSAL02",ENEMY)
+	Global("D9beginbutchery","AR0801",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+		SetGlobal("D9beginbutchery","AR0801",1)
+END
+
+IF
+	Global("D9lassaldead","AR0801",0)
+	Dead("LASSAL02")
+THEN
+	RESPONSE #100
+		IncrementGlobal("EXTRACOUNT2","MYAREA",-1)
+		SetGlobal("D9lassaldead","AR0801",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0801",1)
+	GlobalLT("MaxSpawn","AR0801",100)
+	GlobalLT("EXTRACOUNT","MYAREA",5)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("D9DFGT02",0)  // Archer grimwarder
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("D9DFGT02",0)  // Archer grimwarder
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("d9ast01",0)  // Ghast - Blême
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("D9DFGT01",0)  // Grimwarder
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0801",1)
+	GlobalLT("MaxSpawn","AR0801",100)
+	GlobalLT("EXTRACOUNT2","MYAREA",4)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("D9OGR01",0)  // Greater Ghoul - Goule majeure
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("D9DFGT03",0)  // Grimwarder
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("d9MFLF01",0)  // Fledging Vampire female - Vampire novice
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("d9MFLM01",0)  // Fledging Vampire male - Vampire novice
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("D9mver01",0)  // Vampire
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0801",1)
+	GlobalLT("MaxSpawn","AR0801",100)
+	GlobalLT("EXTRACOUNT3","MYAREA",2)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("D9MEMI01",0)  // Vampire
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("D9OLOR01",0)  // Ghoul Lord - Seigneur goule
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("d9MFLM03",0)  // Fledging Vampire male - Vampire novice
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0801",1)
+		CreateCreatureOffScreen("D9mver02",0)  // Vampire
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END
