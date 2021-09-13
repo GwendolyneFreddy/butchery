@@ -1,0 +1,38 @@
+/* ================================================================================= *
+ *  v 5.0.0                                                                          *
+ *           B U T C H E R Y    :    C o s m e t i c s    c o m p o n en t           *
+ *                                                                                   *
+ * ================================================================================= */
+
+SILENT
+
+/* ================================================= *
+ *   Changes Drow animations into elven animations   *
+ * ================================================= */
+
+OUTER_SET DrowMaleAnimID   = IDS_OF_SYMBOL (animate ~DROW~)
+OUTER_SET DrowFemaleAnimID = IDS_OF_SYMBOL (animate ~DROW_FEMALE~)
+
+COPY_EXISTING_REGEXP GLOB ~.*\.cre~ ~override~
+
+	PATCH_IF (SOURCE_SIZE > 0x2c8) BEGIN
+
+		SPRINT gw_sexe ""
+		READ_LONG 0x28 animID
+		READ_BYTE 0x273 class
+		PATCH_IF (animID = DrowMaleAnimID) BEGIN
+			SPRINT gw_sexe "MALE"
+		END ELSE
+			PATCH_IF (animID = DrowFemaleAnimID) BEGIN
+				SPRINT gw_sexe "FEMALE"
+		END
+		PATCH_IF ("%gw_sexe%" STR_CMP "") BEGIN
+			PATCH_MATCH ~%class%~ WITH
+				1       BEGIN WRITE_LONG 0x28 IDS_OF_SYMBOL (animate ~MAGE_%gw_sexe%_ELF~) END      // MAGE
+				2 7 8   BEGIN WRITE_LONG 0x28 IDS_OF_SYMBOL (animate ~FIGHTER_%gw_sexe%_ELF~) END   // FIGHTER, FIGHTER_MAGE, FIGHTER_CLERIC
+				3       BEGIN WRITE_LONG 0x28 IDS_OF_SYMBOL (animate ~CLERIC_%gw_sexe%_ELF~) END    // CLERIC
+				DEFAULT
+			END
+		END
+	END
+BUT_ONLY
