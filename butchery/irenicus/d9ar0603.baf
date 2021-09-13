@@ -1,0 +1,88 @@
+/* ======================================================== *
+ *    Dwarves butchery in Irenicus's Dungeon (2nd Floor)    *
+ * ======================================================== */
+
+IF
+	Global("D9addvilainZ","AR0603",1)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainZ","AR0603",2)
+ 		CreateCreature("D9earc01",[1350.878],12)  //
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)	
+END
+
+IF
+	Global("D9beginbutchery","AR0603",1)
+	Global("D9eyelessmessage","AR0603",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(player1,@14661) // ~Les ennemis semblent arriver de partout !~
+		SetGlobal("D9eyelessmessage","AR0603",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0603",1)
+	GlobalLT("MaxSpawn","AR0603",30)
+	GlobalLT("EXTRACOUNT","MYAREA",3)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0603",1)
+		CreateCreatureObjectOffScreen("D9DF3M",Player1,0,0,0)  // Berseker nain novice
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0603",1)
+		CreateCreatureObjectOffScreen("D9DF3R",Player1,0,0,0)  // Guerrier nain novice
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0603",1)
+	GlobalLT("MaxSpawn","AR0603",30)
+	GlobalLT("EXTRACOUNT2","MYAREA",2)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0603",1)
+		CreateCreatureOffScreen("D9DF5M",0)  // Berseker nain expérimenté
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0603",1)
+		CreateCreatureOffScreen("D9DF3M1",0)  // Berseker nain novice
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0603",1)
+		CreateCreatureOffScreen("D9dC5",0)  // Prêtre nain novice
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0603",1)
+	GlobalLT("MaxSpawn","AR0603",30)
+	GlobalLT("EXTRACOUNT3","MYAREA",1)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0603",1)
+		CreateCreatureOffScreen("D9dC7",0)  // Prêtre nain expérimenté
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0603",1)
+		CreateCreatureOffScreen("D9DF7M",0)  // Guerrier nain d'élite
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0603",1)
+		CreateCreatureOffScreen("D9DF3M2",0)  // Berseker nain novice
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0603",1)
+		CreateCreatureOffScreen("D9emag02",0)  // Mage
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END

@@ -1,0 +1,9 @@
+
+IF
+	Global("DuergarTalk","LOCALS",1)
+	Global("D9addvilainZ","AR0603",0)	
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainZ","AR0603",1)
+		Continue()
+END
