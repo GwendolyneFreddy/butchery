@@ -1,0 +1,85 @@
+/* ================================================================= *
+ *    Wolves butchery in Watcher's Keep (Carston and the machine)    *
+ * ================================================================= */
+
+IF
+	Global("D9addvilain","AR3017",0)
+	Global("ElvenSpirits","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR3017",1)
+ 		CreateCreature("GOLIROXT",[2467.1547],12) // Iron Golem - Golem de fer
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR3017",1)
+	Global("D9eyelessmessageu","AR3017",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
+		SetGlobal("D9eyelessmessageu","AR3017",1)
+END
+
+IF
+	Global("D9beginbutchery","AR3017",1)
+	GlobalLT("MaxSpawn","AR3017",60)
+	GlobalLT("EXTRACOUNT","MYAREA",4)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3017",1)
+		CreateCreatureOffScreen("D9LFLE01",0)  // Flesh Golem - Golem de chair
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR3017",1)
+	GlobalLT("MaxSpawn","AR3017",60)
+	GlobalLT("EXTRACOUNT2","MYAREA",4)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3017",1)
+		CreateCreatureOffScreen("D9LSTO01",0)  // GStone Golem - Golem de pierre
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3017",1)
+		CreateCreatureOffScreen("D9LIRO01",0)  // Iron Golem - Golem de fer
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3017",1)
+		CreateCreatureOffScreen("D9LICE01",0)  // Ice Golem - Golem de glace
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR3017",1)
+	GlobalLT("MaxSpawn","AR3017",60)
+	GlobalLT("EXTRACOUNT3","MYAREA",3)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3017",1)
+		CreateCreatureOffScreen("D9LJUG01",0)  // Juggernaut Golem
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3017",1)
+		CreateCreatureOffScreen("D9LSAN01",0)  // Sand Golem - Golem de sable
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3017",1)
+		CreateCreatureOffScreen("D9LCLA01",0)  // Clay Golem - Golem d'argile
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3017",1)
+		CreateCreatureOffScreen("D9LKILL2",0)  // Adamantite Golem - Golem d'adamantine
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END
