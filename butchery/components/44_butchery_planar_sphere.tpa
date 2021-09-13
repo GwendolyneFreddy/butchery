@@ -1,0 +1,121 @@
+/* ======================================================================================================================================= *
+ *  v 5.0.0                                                                                                                                *
+ *           B U T C H E R Y    :    B u t c h e r y    i n    t h e    P l a n a r    S p h e r e    ( D e m o n    P l a n e )           *
+ *                                                                                                                                         *
+ * ======================================================================================================================================= */
+
+SILENT
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+COMPILE~%MOD_FOLDER%/sphere/d9salfia.d~
+
+ACTION_IF NOT is_d9dwctyz BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9dwctyz.baf~
+END
+
+COMPILE ~%MOD_FOLDER%/sphere/d9salfia.baf~
+
+// Script Extension
+LAF extend_area_script STR_VAR area = "ar0414" top = "%MOD_FOLDER%/sphere/d9ar0414.baf" END
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Salamander with dialog initiating butchery
+// ------------------------------------------
+COPY_EXISTING ~icsalfir.cre~ ~override/d9salfia.cre~
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9SALFIA~ #8
+	WRITE_ASCII DIALOG ~D9SALFIA~ #8
+BUT_ONLY
+
+// Skeleton Archer - Squelette archer (6th Level)
+// ----------------------------------------------
+COPY_EXISTING ~skelar01.cre~ ~override/d9elartt.cre~
+	WRITE_BYTE  0x052 7    // THAC0 (vanilla = 2)
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Ghast - Blême
+// -------------
+COPY_EXISTING ~ghast01.cre~ ~override/d9ast0y.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+//	WRITE_ASCII SCRIPT_DEFAULT ~d9dwctyz~
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Imp (Diablotin)
+// ---------------
+COPY_EXISTING ~imp01.cre~ ~override/d9p01.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Quasit
+// ------
+COPY_EXISTING ~impqua01.cre~ ~override/d9pqua01.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Fire Elemental - Élémentaire de feu
+// -----------------------------------
+COPY_EXISTING ~elfir.cre~ ~override/d9fir.cre~
+	WRITE_BYTE  0x052 4     // THAC0 (vanilla = 9)
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Salamander
+// ----------
+COPY_EXISTING ~icsalfir.cre~ ~override/d9salfir.cre~
+	WRITE_BYTE  0x052 4     // THAC0 (vanilla = 11)
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Lesser Fire Elemental - Élémentaire de feu mineur
+// -------------------------------------------------
+COPY_EXISTING ~elefel01.cre~ ~override/d9efel01.cre~
+	WRITE_BYTE  0x052 6     // THAC0 (vanilla = 13)
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Maurezhi
+// --------
+COPY_EXISTING ~obsdem04.cre~ ~override/d9sdem04.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_CLASS ~d9dwctyz~ #8
+BUT_ONLY
+
+// Succubus - Succube
+// ------------------
+COPY_EXISTING ~demsuc01.cre~ ~override/d9msuc01.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Tanar'ri
+// --------
+COPY_EXISTING ~abydem01.cre~ ~override/d9ydem01.cre~
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	WRITE_ASCII DIALOG ~none~ #8
+BUT_ONLY
+
+// Salamander Noble
+// ----------------
+COPY_EXISTING ~salgrfir.cre~ ~override/d9lgrfir.cre~
+	WRITE_BYTE  0x052 0     // THAC0 (vanilla = 6)
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY

@@ -1,0 +1,99 @@
+/* =================================================================== *
+ *    Demonic creatures butchery in the planar sphere (Demon Plane)    *
+ * =================================================================== */
+
+IF
+	Global("D9addvilain","AR0414",0)
+	OR(2)
+		Dead("abydem01")
+		Dead("TANAR")
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0414",1)
+ 		CreateCreature("D9SALFIA",[2231.2782],12)  // Salamander
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)	
+END
+
+IF
+	Global("D9beginbutchery","AR0414",1)
+	Global("D9eyelessmessage","AR0414",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
+		SetGlobal("D9eyelessmessage","AR0414",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0414",1)
+	GlobalLT("MaxSpawn","AR0414",55)
+	GlobalLT("EXTRACOUNT","MYAREA",6)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9ELARTT",0)  // Skeleton Archer
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("d9ast0Y",0)  // Ghast - Blême
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9P01",0)  // Imp - Diablotin
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0414",1)
+	GlobalLT("MaxSpawn","AR0414",55)
+	GlobalLT("EXTRACOUNT2","MYAREA",4)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9PQUA01",0)  // Quasit
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9SALFIR",0)  // Salamander
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9EFEL01",0)  // Lesser Fire Elemental
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9FIR",0)  // Fire Elemental
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR0414",1)
+	GlobalLT("MaxSpawn","AR0414",55)
+	GlobalLT("EXTRACOUNT3","MYAREA",1)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9MSUC01",0)  // Succubus
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9YDEM01",0)  // Tanar'ri
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9SDEM04",0)  // Maurezhi
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0414",1)
+		CreateCreatureOffScreen("D9lgrfir",0)  // Salamander Noble
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END
