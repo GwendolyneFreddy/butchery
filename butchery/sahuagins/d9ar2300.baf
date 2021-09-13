@@ -1,0 +1,88 @@
+/* ========================================= *
+ *    Sahuagins butchery in Sahuagin City    *
+ * ========================================= */
+
+IF
+	Global("D9addvilain","AR2300",0)
+THEN
+	RESPONSE #100
+ 		CreateCreature("D9HGRDOX",[4301.655],3) // Sahuagin Rebel novice
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+		SetGlobal("D9addvilain","AR2300",1)
+END
+
+IF
+	Global("D9beginbutchery","AR2300",1)
+	Global("D9druidmessage","AR2300",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
+		SetGlobal("D9druidmessage","AR2300",1)
+END
+
+IF
+	Global("D9beginbutchery","AR2300",1)
+	GlobalLT("MaxSpawn","AR2300",60)
+	GlobalLT("EXTRACOUNT","MYAREA",5)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR2300",1)
+		CreateCreatureOffScreen("D9HGRD02",0)  // Rebel novice (melee)
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR2300",1)
+		CreateCreatureOffScreen("D9HGRD01",0)  // Rebel novice (ranged)
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR2300",1)
+	GlobalLT("MaxSpawn","AR2300",60)
+	GlobalLT("EXTRACOUNT2","MYAREA",4)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR2300",1)
+		CreateCreatureOffScreen("D9HPR5",0)  // Priestess novice - Prêtresse novice
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR2300",1)
+		CreateCreatureOffScreen("D9HGRD09",0)  // Rebel (melee)
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR2300",1)
+		CreateCreatureOffScreen("D9HGRD08",0)  // Rebel (ranged)
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR2300",1)
+	GlobalLT("MaxSpawn","AR2300",60)
+	GlobalLT("EXTRACOUNT3","MYAREA",2)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR2300",1)
+		CreateCreatureOffScreen("D9HCHF01",0)  // Elite Rebel - Rebelle d'élite (ranged)
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR2300",1)
+		CreateCreatureOffScreen("D9HPRI01",0)  // Elite Rebel - Rebelle d'élite (melee)
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR2300",1)
+		CreateCreatureOffScreen("D9HGRD09",0)  // Rebel (melee)
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR2300",1)
+		CreateCreatureOffScreen("D9HRAMB3",0)  // Priestess - Prêtresse
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END

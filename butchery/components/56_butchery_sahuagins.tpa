@@ -1,0 +1,196 @@
+/* ======================================================================================================================== *
+ *  v 5.0.0                                                                                                                 *
+ *           B U T C H E R Y    :    B u t c h e r i e s    i n    S a h u a g i n    C i t y                               *
+ *                                   W a t c h e r ' s    K e e p    ( G i t h y a n k i    E n c a m p m e n t )           *
+ *                                                                                                                          *
+ * ======================================================================================================================== */
+
+SILENT
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+COMPILE~%MOD_FOLDER%/sahuagins/d9hgrdox.d~
+COMPILE~%MOD_FOLDER%/sahuagins/d9hgrdou.d~
+
+ACTION_IF NOT is_d9dwctyz BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9dwctyz.baf~
+END
+
+COMPILE ~%MOD_FOLDER%/sahuagins/d9hgrdox.baf~
+COMPILE ~%MOD_FOLDER%/sahuagins/d9hgrdou.baf~
+
+// Scripts Extensions
+LAF extend_area_script STR_VAR area = "ar2300" bottom = "%MOD_FOLDER%/sahuagins/d9ar2300.baf" END
+LAF extend_area_script STR_VAR area = "ar3022" bottom = "%MOD_FOLDER%/sahuagins/d9ar3022.baf" END
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Sahuagin Rebel novice with dialog initiating butchery [AR2300 : Sahuagin City]
+// ------------------------------------------------------------------------------
+COPY_EXISTING ~sahgrd01.cre~ ~override/d9hgrd0x.cre~
+	SAY NAME1 @5600
+	SAY NAME2 @5600
+	WRITE_SHORT 0x024 80   // Current HP (vanilla = 81)
+	WRITE_SHORT 0x026 80   // Maximum HP (vanilla = 81)
+	WRITE_BYTE  0x234 7    // Level first class (vanilla = 2)
+	WRITE_BYTE  0x270 255  // Enemy
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9HGRDOX~ #8
+	WRITE_ASCII SCRIPT_CLASS ~none~ #8
+	WRITE_ASCII DEATHVAR ~D9HGRDOX~ #32
+	WRITE_ASCII DIALOG ~D9HGRDOX~ #8
+BUT_ONLY
+
+// Sahuagin Rebel novice with dialog initiating butchery [AR3022 : Githyanki Encampment in Watcher's Keep]
+// -------------------------------------------------------------------------------------------------------
+COPY_EXISTING ~sahgrd01.cre~ ~override/d9hgrdax.cre~
+	SAY NAME1 @5600
+	SAY NAME2 @5600
+	WRITE_SHORT 0x024 80   // Current HP (vanilla = 81)
+	WRITE_SHORT 0x026 80   // Maximum HP (vanilla = 81)
+	WRITE_BYTE  0x234 7    // Level first class (vanilla = 2)
+	WRITE_BYTE  0x270 255  // Enemy
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9HGRDOU~ #8
+	WRITE_ASCII SCRIPT_CLASS ~none~ #8
+	WRITE_ASCII DEATHVAR ~D9HGRDOU~ #32
+	WRITE_ASCII DIALOG ~D9HGRDOU~ #8
+BUT_ONLY
+
+// Sahuagin Rebel novice (melee 7th Level)
+// ---------------------------------------
+COPY_EXISTING ~sahgrd02.cre~ ~override/d9hgrd02.cre~
+	SAY NAME1 @5600
+	SAY NAME2 @5600
+	WRITE_SHORT 0x024 80   // Current HP (vanilla = 81)
+	WRITE_SHORT 0x026 80   // Maximum HP (vanilla = 81)
+	WRITE_BYTE  0x052 13   // THAC0 (vanilla = 11, but 2 in BG2EE !!!)
+	WRITE_BYTE  0x234 7    // Level first class (vanilla = 2)
+	WRITE_BYTE  0x270 255  // Enemy
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sahuagin Rebel novice (ranged 7th Level)
+// ----------------------------------------
+COPY_EXISTING ~sahgrd01.cre~ ~override/d9hgrd01.cre~
+	SAY NAME1 @5600
+	SAY NAME2 @5600
+	WRITE_SHORT 0x024 80   // Current HP (vanilla = 81)
+	WRITE_SHORT 0x026 80   // Maximum HP (vanilla = 81)
+	WRITE_BYTE  0x052 13   // THAC0 (vanilla = 11, but 4 in BG2EE !!!)
+	WRITE_BYTE  0x234 7    // Level first class (vanilla = 2)
+	WRITE_BYTE  0x270 255  // Enemy
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sahuagin Priestess novice - Prêtresse novice (9th Level)
+// --------------------------------------------------------
+COPY_EXISTING ~sahpr5.cre~ ~override/d9hpr5.cre~
+	SAY NAME1 @5601
+	SAY NAME2 @5601
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	WRITE_ASCII SCRIPT_CLASS ~none~ #8
+BUT_ONLY
+
+// Sahuagin Rebel (melee 12th Level) ???
+// -------------------------------------
+COPY_EXISTING ~sahgrd02.cre~ ~override/d9hgrd09.cre~
+	SAY NAME1 @5602
+	SAY NAME2 @5602
+	WRITE_SHORT 0x024 100   // Current HP (vanilla = 81)
+	WRITE_SHORT 0x026 100   // Maximum HP (vanilla = 81)
+	WRITE_BYTE  0x052 8     // THAC0 (vanilla = 11, but 2 in BG2EE !!!)
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sahuagin Rebel (ranged 12th Level) ???
+// --------------------------------------
+COPY_EXISTING ~sahgrd01.cre~ ~override/d9hgrd08.cre~
+	SAY NAME1 @5602
+	SAY NAME2 @5602
+	WRITE_SHORT 0x024 100   // Current HP (vanilla = 81)
+	WRITE_SHORT 0x026 100   // Maximum HP (vanilla = 81)
+	WRITE_BYTE  0x052 8     // THAC0 (vanilla = 11, but 2 in BG2EE !!!)
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sahuagin Elite Rebel - Rebelle d'élite (ranged 16th Level Fighter)
+// ------------------------------------------------------------------
+COPY_EXISTING ~sahchf01.cre~ ~override/d9hchf01.cre~
+	SAY NAME1 @5603
+	SAY NAME2 @5603
+	WRITE_SHORT 0x024 130   // Current HP (vanilla = 36)
+	WRITE_SHORT 0x026 130   // Maximum HP (vanilla = 36)
+
+	WRITE_LONG  0x028 32547 // SAHUAGIN LARGE ANIMATION
+
+	WRITE_BYTE  0x052 4     // THAC0 (vanilla = 13)
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sahuagin Elite Rebel - Rebelle d'élite (melee 16th Level Fighter) ???
+// ---------------------------------------------------------------------
+COPY_EXISTING ~Sahpri01.cre~ ~override/d9hpri01.cre~
+	SAY NAME1 @5603
+	SAY NAME2 @5603
+	WRITE_SHORT 0x024 130   // Current HP (vanilla = 72)
+	WRITE_SHORT 0x026 130   // Maximum HP (vanilla = 72)
+
+	WRITE_LONG  0x028 32547 // SAHUAGIN LARGE ANIMATION
+
+	WRITE_BYTE  0x052 4     // THAC0 (vanilla = 2)
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sahuagin High Priestess - Grande prêtresse (20th Level) NOT USED
+// -------------------------------------------------------
+COPY_EXISTING ~sahpr1.cre~ ~override/d9hpr1.cre~
+	SAY NAME1 @5605
+	SAY NAME2 @5605
+	REMOVE_CRE_ITEM ~misc8q~ // Rebel's Orb
+	WRITE_BYTE  0x270 255    // Enemy
+	WRITE_BYTE  0x275 ~11~   // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	WRITE_ASCII SCRIPT_CLASS ~none~ #8
+	WRITE_ASCII SCRIPT_RACE ~none~ #8
+	WRITE_ASCII DIALOG ~none~ #8
+BUT_ONLY
+
+// Fake Sahuagin Rebel (melee 12th Level) ???
+// ------------------------------------------
+COPY_EXISTING ~sahgrd02.cre~ ~override/d9hgrd09.cre~
+	WRITE_SHORT 0x024 100   // Current HP (vanilla = 81)
+	WRITE_SHORT 0x026 100   // Maximum HP (vanilla = 81)
+	WRITE_BYTE  0x052 8     // THAC0 (vanilla = 11, but 2 in BG2EE !!!)
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sahuagin Priestess - Prêtresse (14th Level) - Gender EXTRA3
+// -----------------------------------------------------------
+COPY_EXISTING ~sahramb3.cre~ ~override/d9hramb3.cre~
+	SAY NAME1 @5604
+	SAY NAME2 @5604
+	REMOVE_CRE_ITEM ~CLCK26~ // Cloak of Mirroring
+	WRITE_BYTE  0x270 255    // Enemy
+	WRITE_BYTE  0x275 ~11~   // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
