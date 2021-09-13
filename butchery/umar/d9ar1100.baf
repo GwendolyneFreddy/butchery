@@ -1,0 +1,76 @@
+/* =================================== *
+ *    Wolves butchery in Umar Hills    *
+ * =================================== */
+
+IF
+	Global("D9addvilain","AR1100",0)
+THEN
+	RESPONSE #100
+ 		CreateCreature("D9LFWEXX",[609.2963],12) // Wolfwere - Muloup
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+		SetGlobal("D9addvilain","AR1100",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1100",1)
+	Global("D9eyelessmessage","AR1100",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
+		SetGlobal("D9eyelessmessage","AR1100",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1100",1)
+	GlobalLT("MaxSpawn","AR1100",40)
+	GlobalLT("EXTRACOUNT","MYAREA",6)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1100",1)
+		CreateCreatureOffScreen("D9LFDI01",0)  // Dire Wolf - Loup noir
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1100",1)
+		CreateCreatureOffScreen("D9LFWI01",0)  // Winter Wolf - Loup des glaces
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1100",1)
+	GlobalLT("MaxSpawn","AR1100",40)
+	GlobalLT("EXTRACOUNT2","MYAREA",4)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1100",1)
+		CreateCreatureOffScreen("D9LFWE01",0)  // Wolfwere - Muloup
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1100",1)
+		CreateCreatureOffScreen("D9LFDI02",0)  // Dire Wolf - Loup noir
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1100",1)
+	GlobalLT("MaxSpawn","AR1100",40)
+	GlobalLT("EXTRACOUNT3","MYAREA",2)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1100",1)
+		CreateCreatureOffScreen("D9LFGR01",0)  // Greater Wolfwere - Muloup majeur
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1100",1)
+		CreateCreatureOffScreen("D9REGR01",0)  // Greater Werewolf - Muloup majeur
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END
