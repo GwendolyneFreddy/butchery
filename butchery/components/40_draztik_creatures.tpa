@@ -1,0 +1,604 @@
+/* ============================================================================== *
+ *  v 5.0.0                                                                       *
+ *           B U T C H E R Y    :    D r A z T i K    c r e a t u r e s           *
+ *                                                                                *
+ * ============================================================================== */
+
+SILENT
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+ACTION_IF NOT is_d9dwctyz BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9dwctyz.baf~
+END
+
+
+/* ============================== *
+ *  DWARVES for a butchery fight  *
+ * ============================== */
+
+// Melee Dwarf Berseker novice - Berseker nain novice (3rd Level)
+// --------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9df3m.cre~ ~override~
+	SAY NAME1 @4000
+	SAY NAME2 @4000
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Battle Axe
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Splint Mail
+	ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~        // Medium Shield
+	ADD_CRE_ITEM ~POTN08~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Healing
+	WRITE_BYTE  0x275 ~8~                                 // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Melee Dwarf Berseker novice - Berseker nain novice (3rd Level) - Gender EXTRA2
+// ------------------------------------------------------------------------------
+COPY_EXISTING ~d9df3m.cre~ ~override/d9df3m1.cre~
+	WRITE_BYTE 0x275 ~10~  // Gender = EXTRA2
+BUT_ONLY
+
+// Melee Dwarf Berseker novice - Berseker nain novice (3rd Level) - Gender EXTRA3
+// ------------------------------------------------------------------------------
+COPY_EXISTING ~d9df3m.cre~ ~override/d9df3m2.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+BUT_ONLY
+
+// Range Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+// ---------------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9df3r.cre~ ~override~
+	SAY NAME1 @4001
+	SAY NAME2 @4001
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~XBOW01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Heavy Crossbow
+	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // Halberd
+	ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Chain Mail Armor
+	ADD_CRE_ITEM ~BOLT01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bolt
+	ADD_CRE_ITEM ~BOLT01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bolt
+	ADD_CRE_ITEM ~POTN08~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Healing
+	WRITE_BYTE  0x275 ~8~                                 // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Melee Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level) with Halberd ???
+// -----------------------------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9df5m.cre~ ~override~
+	SAY NAME1 @4002
+	SAY NAME2 @4002
+	ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Halberd
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Splint Mail
+	ADD_CRE_ITEM ~POTN08~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Healing
+	WRITE_BYTE  0x275 ~10~                                // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Melee Dwarf Priest novice - Prêtre nain novice (5th Level)
+// ----------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9dc5.cre~ ~override~
+	SAY NAME1 @4004
+	SAY NAME2 @4004
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~HAMM01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // War Hammer
+	ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Chain Mail Armor
+	ADD_CRE_ITEM ~SHLD01~ #0 #0 #0 ~NONE~ ~SHIELD~        // Small Shield
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bullet
+	ADD_CRE_ITEM ~POTN08~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Healing
+	WRITE_BYTE  0x275 ~10~                                // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Melee Experienced Dwarf Priest - Prêtre nain expérimenté (7th Level)
+// --------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9dc7.cre~ ~override~
+	SAY NAME1 @4005
+	SAY NAME2 @4005
+   	ADD_CRE_ITEM ~HELM09~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~HAMM01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // War Hammer
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Splint Mail
+	ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~        // Medium Shield
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER3~      // Bullet
+	ADD_CRE_ITEM ~POTN52~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Extra Healing
+	WRITE_BYTE  0x275 ~11~                                // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Melee Elite Dwarf Warrior - Guerrier nain d'élite (7th Fighter)
+// ---------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9df7m.cre~ ~override~
+	SAY NAME1 @4003
+	SAY NAME2 @4003
+	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Battle Axe
+	ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Plate Mail
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~        // Large Shield
+	ADD_CRE_ITEM ~POTN52~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Magic Shielding
+	WRITE_BYTE  0x275 ~11~                                // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+
+/* ============================================================= *
+ *  DWARVES for "More ennemies scattered in the game" component  *
+ * ============================================================= */
+
+// Melee Dwarf Berseker novice - Berseker nain novice (3rd Level)
+// --------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9df3m.cre~ ~override/d9dfaa.cre~
+	SAY NAME1 @4000
+	SAY NAME2 @4000
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Battle Axe
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Splint Mail
+	ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~        // Medium Shield
+	ADD_CRE_ITEM ~POTN08~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Healing
+	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8
+BUT_ONLY
+
+// Range Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+// ---------------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9df3r.cre~ ~override/d9dfbb.cre~
+	SAY NAME1 @4001
+	SAY NAME2 @4001
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~XBOW01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Heavy Crossbow
+	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // Halberd
+	ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Chain Mail Armor
+	ADD_CRE_ITEM ~BOLT01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bolt
+	ADD_CRE_ITEM ~BOLT01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bolt
+	ADD_CRE_ITEM ~POTN08~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Healing
+	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8
+BUT_ONLY
+
+// Melee Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level) with Halberd ???
+// -----------------------------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9df5m.cre~ ~override/d9dfcc.cre~
+	SAY NAME1 @4002
+	SAY NAME2 @4002
+	ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Halberd
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Splint Mail
+	ADD_CRE_ITEM ~POTN08~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Healing
+	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8
+BUT_ONLY
+
+// Melee Dwarf Priest novice - Prêtre nain novice (5th Level)
+// ----------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9dc5.cre~ ~override/d9ddd.cre~
+	SAY NAME1 @4004
+	SAY NAME2 @4004
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~HAMM01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // War Hammer
+	ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Chain Mail Armor
+	ADD_CRE_ITEM ~SHLD01~ #0 #0 #0 ~NONE~ ~SHIELD~        // Small Shield
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER3~      // Bullet
+	ADD_CRE_ITEM ~POTN08~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Healing
+	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8
+BUT_ONLY
+
+// Melee Experienced Dwarf Priest - Prêtre nain expérimenté (7th Level)
+// --------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9dc7.cre~ ~override/d9dgg.cre~
+	SAY NAME1 @4005
+	SAY NAME2 @4005
+  	ADD_CRE_ITEM ~HELM09~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~HAMM01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // War Hammer
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Splint Mail
+	ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~        // Medium Shield
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER3~      // Bullet
+	ADD_CRE_ITEM ~POTN52~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Extra Healing
+	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8
+BUT_ONLY
+
+// Melee Elite Dwarf Warrior - Guerrier nain d'élite (7th Fighter)
+// ---------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9df7m.cre~ ~override/d9dfhh.cre~
+	SAY NAME1 @4003
+	SAY NAME2 @4003
+	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Battle Axe
+	ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Plate Mail
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~        // Large Shield
+	ADD_CRE_ITEM ~POTN52~ #4 #0 #0 ~undroppable~ ~QITEM2~ // 4 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~    // Potion of Magic Shielding
+	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8
+BUT_ONLY
+
+// Vanilla Dwarf Mage (5th Level)
+// ------------------------------
+COPY_EXISTING ~duemag01.cre~ ~override/d9emagaa.cre~
+	WRITE_BYTE  0x270 255        // Enemy
+	WRITE_ASCII DIALOG ~none~ #8
+	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8
+BUT_ONLY
+
+
+/* ============================= *
+ *  CULT of the EYELESS enemies  *
+ * ============================= */
+
+// Archer Elite Guard - Garde d'élite (9th Level) - Gender EXTRA3
+// --------------------------------------------------------------
+COPY_EXISTING ~bhguard2.cre~ ~override/d9xxard3.cre~
+	WRITE_BYTE 0x052 7    // THAC0
+	WRITE_BYTE 0x270 255  // Enemy
+BUT_ONLY
+
+//  hallebardier ??? Elite Guard - Garde d'élite (9th Level) - Gender EXTRA3
+// -------------------------------------------------------------------------
+COPY_EXISTING ~bhguard2.cre~ ~override/d9zzard4.cre~
+	REMOVE_CRE_ITEM ~XBOW01~                              // Heavy Crossbow
+	REMOVE_CRE_ITEM ~SW1H04~                              // Long Sword
+	REMOVE_CRE_ITEM ~BOLT01~                              // Bolt
+	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Two-handed Sword
+ 	WRITE_BYTE 0x052 7                                    // THAC0
+	WRITE_BYTE 0x270 255                                  // Enemy
+	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 5     // 5 stars in Two-Handed Sword
+	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2            // Gives 2 stars in the BG2 TWO HANDED
+BUT_ONLY
+
+
+/* ============================================================ *
+ *  UNDEAD for "More ennemies scattered in the game" component  *
+ * ============================================================ */
+
+// Skeleton Cleric novice - Prêtre squelette novice - Ranged (7th Level)
+// ---------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sc7.cre~ ~override~
+     ~%MOD_FOLDER%/drcrea/d9sc8.cre~ ~override~
+     ~%MOD_FOLDER%/drcrea/d9sc9.cre~ ~override~
+	SAY NAME1 @4010
+	SAY NAME2 @4010
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Splint Mail
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~HAMM01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // War Hammer
+	ADD_CRE_ITEM ~SHLD03~ #0 #0 #0 ~NONE~ ~SHIELD~        // Medium Shield
+	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~         // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~         // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~        // Amulet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bullet
+BUT_ONLY
+
+// Experienced Skeleton Cleric - Prêtre squelette expérimenté - Ranged (12th Level)
+// --------------------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sc12.cre~ ~override~
+     ~%MOD_FOLDER%/drcrea/d9sc13.cre~ ~override~
+     ~%MOD_FOLDER%/drcrea/d9sc14.cre~ ~override~
+	SAY NAME1 @4012
+	SAY NAME2 @4012
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Plate Mail
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~HAMM01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // War Hammer
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~        // Large Shield
+	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~         // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~         // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~        // Amulet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bullet
+BUT_ONLY
+
+// Elite Cleric - Prêtre squelette d"élite - Ranged (16th Level)  TODO 12 dans le fichier
+// -------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sc16.cre~ ~override~
+	SAY NAME1 @4015
+	SAY NAME2 @4015
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Plate Mail
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~HAMM01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // War Hammer
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~        // Large Shield
+	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~         // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~         // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~        // Amulet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bullet
+BUT_ONLY
+
+// Ranged Skeleton 16th Level Clerc bis 2
+// --------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sc17.cre~ ~override~
+	SAY NAME1 @4015
+	SAY NAME2 @4015
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Plate Mail
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~HAMM01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // War Hammer
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~        // Large Shield
+ 	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~         // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~         // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~        // Amulet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bullet
+BUT_ONLY
+
+// Ranged Skeleton 16th Level Clerc bis 3
+// --------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sc18.cre~ ~override~
+	SAY NAME1 @4015
+	SAY NAME2 @4015
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~         // Plate Mail
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~HAMM01~ #0 #0 #0 ~NONE~ ~WEAPON2~       // War Hammer
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~        // Large Shield
+	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~         // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~         // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~        // Amulet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER1~      // Bullet
+	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER2~      // Bullet
+BUT_ONLY
+
+// Skeleton Mage novice - Mage squelette novice (7th Level)
+// --------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sm7.cre~ ~override~
+     ~%MOD_FOLDER%/drcrea/d9sm8.cre~ ~override~
+     ~%MOD_FOLDER%/drcrea/d9sm9.cre~ ~override~
+	SAY NAME1 @4011
+	SAY NAME2 @4011
+	ADD_CRE_ITEM ~DAGG05~ #40 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Dagger or Sling ?
+ 	ADD_CRE_ITEM ~BULL01~ #40 #0 #0 ~NONE~ ~QUIVER3~
+	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~          // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~          // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~         // Amulet
+BUT_ONLY
+
+// Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+// -------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sm12.cre~ ~override~
+     ~%MOD_FOLDER%/drcrea/d9sm13.cre~ ~override~
+     ~%MOD_FOLDER%/drcrea/d9sm14.cre~ ~override~
+	SAY NAME1 @4013
+	SAY NAME2 @4013
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling mais pas de bille ???
+	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~         // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~         // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~        // Amulet
+BUT_ONLY
+
+// Elite Skeleton Mage - Magicien squelette d'élite (16th Level)
+// -------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sm16.cre~ ~override~
+	SAY NAME1 @4016
+	SAY NAME2 @4016
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~         // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~         // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~        // Amulet
+BUT_ONLY
+
+// Elite Skeleton Mage - Magicien squelette d'élite (16th Level) bis 2 TODO 12 dans le fichier
+// --------------------------------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sm17.cre~ ~override~
+	SAY NAME1 @4016
+	SAY NAME2 @4016
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~         // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~         // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~        // Amulet
+BUT_ONLY
+
+// Elite Skeleton Mage - Magicien squelette d'élite (16th Level) bis 3
+// -------------------------------------------------------------------
+COPY ~%MOD_FOLDER%/drcrea/d9sm18.cre~ ~override~
+	SAY NAME1 @4016
+	SAY NAME2 @4016
+	ADD_CRE_ITEM ~SLNG01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Sling
+	ADD_CRE_ITEM ~RING99~ #0 #0 #0 ~NONE~ ~LRING~         // Ring
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RRING~         // Ring
+	ADD_CRE_ITEM ~IMMCHS~ #0 #0 #0 ~NONE~ ~AMULET~        // Amulet
+BUT_ONLY
+
+
+/* =============================== *
+ *  UNDEAD Skeletons for butchery  *
+ * =============================== */
+
+// Skeleton Cleric novice - Prêtre squelette novice - Ranged (7th Level) - Gender EXTRA2
+// -------------------------------------------------------------------------------------
+COPY_EXISTING ~d9sc7.cre~ ~override/d9sc7a.cre~
+              ~d9sc8.cre~ ~override/d9sc8a.cre~
+              ~d9sc9.cre~ ~override/d9sc9a.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Mage novice - Mage squelette novice (7th Level) - Gender EXTRA2
+// ------------------------------------------------------------------------
+COPY_EXISTING ~d9sm7.cre~ ~override/d9sm7a.cre~
+              ~d9sm8.cre~ ~override/d9sm8a.cre~
+              ~d9sm9.cre~ ~override/d9sm9a.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Cleric novice - Prêtre squelette novice - Ranged (7th Level) - Gender EXTRA3
+// -------------------------------------------------------------------------------------
+COPY_EXISTING ~d9sc7.cre~ ~override/d9sc7b.cre~
+              ~d9sc8.cre~ ~override/d9sc8b.cre~
+              ~d9sc9.cre~ ~override/d9sc9b.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Mage novice - Mage squelette novice (7th Level) - Gender EXTRA3
+// ------------------------------------------------------------------------
+COPY_EXISTING ~d9sm7.cre~ ~override/d9sm7b.cre~
+              ~d9sm8.cre~ ~override/d9sm8b.cre~
+              ~d9sm9.cre~ ~override/d9sm9b.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Experienced Skeleton Mage - Mage squelette expérimenté (12th Level) - Gender EXTRA2
+// -----------------------------------------------------------------------------------
+COPY_EXISTING ~d9sm12.cre~ ~override/d9sm12a.cre~
+              ~d9sm13.cre~ ~override/d9sm13a.cre~
+              ~d9sm14.cre~ ~override/d9sm14a.cre~
+	WRITE_BYTE 0x275 ~10~  // Gender = EXTRA2
+BUT_ONLY
+
+// Experienced Skeleton Cleric - Prêtre squelette expérimenté - Ranged (12th Level) - Gender EXTRA2
+// ------------------------------------------------------------------------------------------------
+COPY_EXISTING ~d9sc12.cre~ ~override/d9sc12a.cre~
+              ~d9sc13.cre~ ~override/d9sc13a.cre~
+              ~d9sc14.cre~ ~override/d9sc14a.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Experienced Skeleton Mage - Mage squelette expérimenté (12th Level) - Gender EXTRA3
+// -----------------------------------------------------------------------------------
+COPY_EXISTING ~d9sm12.cre~ ~override/d9sm12b.cre~
+              ~d9sm13.cre~ ~override/d9sm13b.cre~
+              ~d9sm14.cre~ ~override/d9sm14b.cre~
+	WRITE_BYTE  0x234 16    // Level first class
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Experienced Skeleton Cleric - Prêtre squelette expérimenté - Ranged (12th Level) - Gender EXTRA3
+// ------------------------------------------------------------------------------------------------
+COPY_EXISTING ~d9sc12.cre~ ~override/d9sc12b.cre~
+              ~d9sc13.cre~ ~override/d9sc13b.cre~
+              ~d9sc14.cre~ ~override/d9sc14b.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Ranged Skeletons 16th Level Clerc - Gender EXTRA3
+// -------------------------------------------------
+COPY_EXISTING ~d9sc16.cre~ ~override/d9sc16b.cre~
+              ~d9sc17.cre~ ~override/d9sc17b.cre~
+              ~d9sc18.cre~ ~override/d9sc18b.cre~
+	WRITE_BYTE  0x234 16    // Level first class
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeletons 16th Level Mage - Gender EXTRA3
+// -----------------------------------------
+COPY_EXISTING ~d9sm16.cre~ ~override/d9sm16b.cre~
+              ~d9sm17.cre~ ~override/d9sm17b.cre~
+              ~d9sm16.cre~ ~override/d9sm18b.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+//----TOB-------TOB-------TOB-------TOB-------TOB-------TOB-------TOB-------TOB-------TOB-------TOB-------TOB-------TOB-------TOB---
+
+// Skeleton Cleric - Clerc squelette (20th Level) - Gender EXTRA2
+// --------------------------------------------------------------
+COPY_EXISTING ~hgskl01.cre~ ~override/d9skl06.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Mage - Mage squelette (20th Level) - Gender EXTRA2
+// -----------------------------------------------------------
+COPY_EXISTING ~hgskl03.cre~ ~override/d9skl07.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Assassin - Assassin Squelette (20th Level) - Gender EXTRA2
+// -------------------------------------------------------------------
+COPY_EXISTING ~hgskl02.cre~ ~override/d9skl08.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Warrior - Combattant squelette (20th Level) - Gender EXTRA2
+// --------------------------------------------------------------------
+COPY_EXISTING ~hgskl04.cre~ ~override/d9skl09.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Cleric - Clerc squelette (20th Level) - Gender EXTRA3
+// --------------------------------------------------------------
+COPY_EXISTING ~hgskl01.cre~ ~override/d9skl01.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Mage - Mage squelette (20th Level) - Gender EXTRA3
+// -----------------------------------------------------------
+COPY_EXISTING ~hgskl03.cre~ ~override/d9skl03.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Assassin - Assassin Squelette (20th Level) - Gender EXTRA3
+// -------------------------------------------------------------------
+COPY_EXISTING ~hgskl02.cre~ ~override/d9skl02.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Skeleton Warrior - Combattant squelette (20th Level) - Gender EXTRA3
+// --------------------------------------------------------------------
+COPY_EXISTING ~hgskl04.cre~ ~override/d9skl04.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+
+/* ====================== *
+ *  YUAN-TI for butchery  *
+ * ====================== */
+
+// Greater Yuan-ti (ranged) - Yuan-Ti majeur
+// -----------------------------------------
+COPY_EXISTING ~icyuan02.cre~ ~override/d9yuan02.cre~
+	REMOVE_CRE_ITEM ~SW1H04~
+	ADD_CRE_ITEM ~BOW01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Composite Longbow
+	ADD_CRE_ITEM ~SW1H04~ #0 #0 #0 ~NONE~ ~WEAPON2~      // Long Sword
+	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~        // Studded Leather Armor
+	ADD_CRE_ITEM ~AROW04~ #20 #0 #0 ~NONE~ ~QUIVER1~     // Acid Arrow +1
+	ADD_CRE_ITEM ~AROW11~ #20 #0 #0 ~NONE~ ~QUIVER2~     // Arrow +2
+	ADD_CRE_ITEM ~AROW01~ #40 #0 #0 ~NONE~ ~QUIVER3~     // Arrow
+	WRITE_BYTE  0x052 7                                  // THAC0 (vanilla = 9)
+	WRITE_BYTE  0x270 255                                // Enemy
+	WRITE_BYTE  0x275 ~8~                                // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	WRITE_ASCII SCRIPT_DEFAULT ~WTARSGT~ #8
+	SET_BG2_PROFICIENCY ~PROFICIENCYLONGBOW~ 4
+BUT_ONLY
+
+
+/* ========================== *
+ *  Salamanders for butchery  *
+ * ========================== */
+
+// Salamander (ranged)
+// -------------------
+COPY_EXISTING ~icsalfir.cre~ ~override/d9salf00.cre~
+	REMOVE_CRE_ITEM ~SALASPER~
+	ADD_CRE_ITEM ~BOW01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Composite Longbow
+	ADD_CRE_ITEM ~SALASPER~ #0 #0 #0 ~NONE~ ~WEAPON2~
+	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~        // Studded Leather Armor
+	ADD_CRE_ITEM ~AROW08~ #40 #0 #0 ~NONE~ ~QUIVER1~     // Arrow of Fire
+	ADD_CRE_ITEM ~AROW01~ #20 #0 #0 ~NONE~ ~QUIVER2~     // Arrow
+	ADD_CRE_ITEM ~AROW01~ #40 #0 #0 ~NONE~ ~QUIVER3~     // Arrow
+	WRITE_BYTE  0x052 7                                  // THAC0 (vanilla = 11)
+	WRITE_BYTE  0x270 255                                // Enemy
+	WRITE_BYTE  0x275 ~8~                                // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	WRITE_ASCII SCRIPT_DEFAULT ~WTARSGT~ #8
+	SET_BG2_PROFICIENCY ~PROFICIENCYLONGBOW~ 4
+BUT_ONLY
