@@ -1,0 +1,51 @@
+/* =============================================================================================== *
+ *    Butchery : More enemies in The Forgotten Believers area - Temple City (Unseeing Eye Plot)    *
+ * =============================================================================================== */
+
+IF
+	Global("D9addvilainXX","AR0204",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainXX","AR0204",1)
+		CreateCreature("SKELAR01",[3060.2711],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[3060.2711],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[3182.2800],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[3182.2800],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[2593.2613],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[2593.2613],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELWA",[2994.2766],5)    // Skeleton Warrior - Combattant squelette
+		CreateCreature("mumgre01",[2994.2766],5)  // Greater Mummy - Momie majeure
+		CreateCreature("SKELWA",[2994.2766],5)    // Skeleton Warrior - Combattant squelette
+		CreateCreature("SKELAR01",[3444.1546],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[3444.1546],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[3444.1546],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[3444.1546],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[3444.1546],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[3444.1546],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("ICBONE01",[3475.1587],5)  // Bone Golem - Golem d'os
+		CreateCreature("SKELWA",[3475.1587],5)    // Skeleton Warrior - Combattant squelette
+		CreateCreature("mumgre01",[3475.1587],5)  // Greater Mummy - Momie majeure
+		CreateCreature("SKELWA",[3475.1587],5)    // Skeleton Warrior - Combattant squelette
+END
+
+IF
+	Global("D9addvilain1","AR0204",0)
+	PartyHasItem("MISC5A")
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain1","AR0204",1)
+		CreateCreature("D9SM12",[841.3068],2)   // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+		CreateCreature("D9SM12",[883.3136],2)   // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+
+		CreateCreature("D9SC12",[937.3190],2)   // Experienced Skeleton Cleric - Prêtre squelette expérimenté (12th Level)
+
+		CreateCreature("D9SM12",[992.3237],2)   // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+		CreateCreature("D9SM12",[1061.3293],2)  // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+
+		CreateCreature("D9SC12",[3946.2320],2)  // Experienced Skeleton Cleric - Prêtre squelette expérimenté (12th Level)
+		CreateCreature("D9SC12",[3946.2320],2)  // Experienced Skeleton Cleric - Prêtre squelette expérimenté (12th Level)
+		CreateCreature("D9SC12",[4012.2300],2)  // Experienced Skeleton Cleric - Prêtre squelette expérimenté (12th Level)
+		CreateCreature("D9SC12",[4012.2300],2)  // Experienced Skeleton Cleric - Prêtre squelette expérimenté (12th Level)
+
+		CreateCreature("D9SM12",[4000.2333],2)  // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+END

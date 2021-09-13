@@ -1,0 +1,13 @@
+/* =========================================================== *
+ *    Butchery : More enemies in Lizardmen Hideout (Sphere)    *
+ * =========================================================== */
+
+IF
+	Global("D9addvilain","AR0420",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0420",1)
+		CreateCreature("ORC03",[767.322],5)  // Orc Priest - Prêtre orque
+		CreateCreature("ORC04",[767.322],5)  // Orc Mage - Magicien orque
+		CreateCreature("ORC04",[767.322],5)  // Orc Mage - Magicien orque
+END

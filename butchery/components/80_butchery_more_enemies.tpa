@@ -1,0 +1,80 @@
+/* ==================================================================================================================== *
+ *  v 5.0.0                                                                                                             *
+ *           B U T C H E R Y    :    M o r e    E n e m i e s    s c a t t e r e d    i n    t h e    g a m e           *
+ *                                                                                                                      *
+ * ==================================================================================================================== */
+
+SILENT
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+COMPILE~%MOD_FOLDER%/enemies/d9draztr.d~
+
+COMPILE ~%MOD_FOLDER%/enemies/d9draztr.baf~
+
+// Scripts Extensions
+LAF extend_area_script STR_VAR area = "ar0600" top = "%MOD_FOLDER%/enemies/d9ar0600.baf" END    // Waukeen's Promenade: Circus Tent (phased)
+LAF extend_area_script STR_VAR area = "ar0601" top = "%MOD_FOLDER%/enemies/d9ar0601.baf" END    // Air Plane in Irenicus's Dungeon
+LAF extend_area_script STR_VAR area = "ar0602" bottom = "%MOD_FOLDER%/enemies/d9ar0602.baf" END // Irenicus's Dungeon 1st Floor
+LAF extend_area_script STR_VAR area = "ar0603" top = "%MOD_FOLDER%/enemies/d9ar0603.baf" END    // Irenicus's Dungeon 2nd Floor
+LAF extend_area_script STR_VAR area = "ar0605" top = "%MOD_FOLDER%/enemies/d9ar0605.baf" END    // Waukeen's Promenade: Circus Tent 2nd Floor
+LAF extend_area_script STR_VAR area = "ar0606" top = "%MOD_FOLDER%/enemies/d9ar0606.baf" END    // Waukeen's Promenade: Circus Tent 3rd Floor
+
+LAF extend_area_script STR_VAR area = "ar0404" top = "%MOD_FOLDER%/enemies/d9ar0404.baf" END // Sewers beneath Coronet - Lilarcor
+LAF extend_area_script STR_VAR area = "ar0418" top = "%MOD_FOLDER%/enemies/d9ar0418.baf" END // Myconids (Sewers beneath Coronet)
+LAF extend_area_script STR_VAR area = "ar0405" top = "%MOD_FOLDER%/enemies/d9ar0405.baf" END // Slaver's Ship Building
+//LAF extend_area_script STR_VAR area = "ar0407" top = "%MOD_FOLDER%/enemies/d9ar0407.baf" END // Prebek's House EMPTY FILE !!!!
+LAF extend_area_script STR_VAR area = "ar0419" top = "%MOD_FOLDER%/enemies/d9ar0419.baf" END // Sphere: Myconid
+LAF extend_area_script STR_VAR area = "ar0420" top = "%MOD_FOLDER%/enemies/d9ar0420.baf" END // Sphere: Lizardmen Hideout
+
+LAF extend_area_script STR_VAR area = "ar0201" top = "%MOD_FOLDER%/enemies/d9ar0201.baf" END // Leading to ghoul village and beholder lair (Temple District)
+LAF extend_area_script STR_VAR area = "ar0206" top = "%MOD_FOLDER%/enemies/d9ar0206.baf" END // Ghoul village (Temple District)
+LAF extend_area_script STR_VAR area = "ar0204" top = "%MOD_FOLDER%/enemies/d9ar0204.baf" END // The Forgotten Believers - Temple City (Unseeing Eye Plot)
+LAF extend_area_script STR_VAR area = "ar0205" top = "%MOD_FOLDER%/enemies/d9ar0205.baf" END // The Beholder Hideout (Unseeing Eye Plot)
+
+LAF extend_area_script STR_VAR area = "ar0502" top = "%MOD_FOLDER%/enemies/d9ar0502.baf" END // Tanner's Hideout Cellar
+LAF extend_area_script STR_VAR area = "ar0503" top = "%MOD_FOLDER%/enemies/d9ar0503.baf" END // Tanner's Hideout Dock
+LAF extend_area_script STR_VAR area = "ar0525" top = "%MOD_FOLDER%/enemies/d9ar0525.baf" END // House 1st Floor
+
+LAF extend_area_script STR_VAR area = "ar0701" top = "%MOD_FOLDER%/enemies/d9ar0701.baf" END // The Sewers
+
+LAF extend_area_script STR_VAR area = "ar0801" top = "%MOD_FOLDER%/enemies/d9ar0801.baf" END // Bodhi's Hideout (sided with Aran)
+LAF extend_area_script STR_VAR area = "ar0803" top = "%MOD_FOLDER%/enemies/d9ar0803.baf" END // Bodhi's Lair (sided with Aran)
+LAF extend_area_script STR_VAR area = "ar0802" top = "%MOD_FOLDER%/enemies/d9ar0802.baf" END // Graveyard: Netherscroll, Korgan's Book, Edwin
+LAF extend_area_script STR_VAR area = "ar0805" top = "%MOD_FOLDER%/enemies/d9ar0805.baf" END // Crypt
+LAF extend_area_script STR_VAR area = "ar0810" top = "%MOD_FOLDER%/enemies/d9ar0810.baf" END // Crypt
+LAF extend_area_script STR_VAR area = "ar0811" top = "%MOD_FOLDER%/enemies/d9ar0811.baf" END // Crypt
+LAF extend_area_script STR_VAR area = "ar0812" top = "%MOD_FOLDER%/enemies/d9ar0812.baf" END // Crypt
+
+LAF extend_area_script STR_VAR area = "ar1106" top = "%MOD_FOLDER%/enemies/d9ar1106.baf" END // Umar's Cave
+
+LAF extend_area_script STR_VAR area = "ar1201" top = "%MOD_FOLDER%/enemies/d9ar1201.baf" END // Firkraag's Entrance
+LAF extend_area_script STR_VAR area = "ar1202" top = "%MOD_FOLDER%/enemies/d9ar1202.baf" END // Firkaag's Maze
+
+LAF extend_area_script STR_VAR area = "ar2013" top = "%MOD_FOLDER%/enemies/d9ar2013.baf" END // Trademeet Crypt
+
+LAF extend_area_script STR_VAR area = "ar2602" top = "%MOD_FOLDER%/enemies/d9ar2602.baf" END // Forest of Tethyr: Cave in Woods to Suldanessellar
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// DrAzTiK (Silver dragon)
+// -----------------------
+COPY_EXISTING ~udsilver.cre~ ~override/d9drazt.cre~
+	SAY NAME1 @8003
+	SAY NAME2 @8003
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9DRAZTR~ #8
+	WRITE_ASCII DIALOG ~D9DRAZTR~ #8
+BUT_ONLY
+
+// Miscellaneous
+// -------------
+COPY_EXISTING ~otyugh.cre~   ~override/d9yugh.cre~   // Otyugh
+              ~jelloc.cre~   ~override/d9lloc.cre~   // Ochre Jelly - Gelée ocre
+              ~jelmus01.cre~ ~override/d9lmus01.cre~ // Mustard Jelly - Gelée moutarde
+	WRITE_ASCII SCRIPT_OVERRIDE ~SHOUT~ #8
+BUT_ONLY

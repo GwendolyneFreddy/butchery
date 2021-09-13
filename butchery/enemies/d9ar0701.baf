@@ -1,0 +1,37 @@
+/* =========================================== *
+ *    Butchery : More enemies in The Sewers    *
+ * =========================================== */
+
+IF
+	Global("D9addvilain","AR0701",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0701",1)
+		CreateCreature("icyuan03",[823.223],5)    // Yuan-ti Mage
+		CreateCreature("icyuan03",[823.223],5)    // Yuan-ti Mage
+		CreateCreature("icyuan03",[823.223],5)    // Yuan-ti Mage
+
+		CreateCreature("GOLSTO01",[879.213],5)    // Stone Golem - Golem de pierre
+		CreateCreature("GOLSTO01",[772.250],5)    // Stone Golem - Golem de pierre
+
+		CreateCreature("KOBCOM01",[1385.1374],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[1616.1310],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[1851.1374],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[1934.1527],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[1837.1690],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[1613.1753],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[1388.1693],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[1291.1524],5)  // Kobold Commando
+
+
+		CreateCreature("JELMUS01",[2661.2269],5)  // Mustard Jelly - Gelée moutarde
+		CreateCreature("JELMUS01",[2661.2269],5)  // Mustard Jelly - Gelée moutarde
+		CreateCreature("JELMUS01",[2661.2269],5)  // Mustard Jelly - Gelée moutarde
+		CreateCreature("JELMUS01",[2661.2269],5)  // Mustard Jelly - Gelée moutarde
+		CreateCreature("JELMUS01",[2661.2269],5)  // Mustard Jelly - Gelée moutarde
+		CreateCreature("JELMUS01",[2661.2269],5)  // Mustard Jelly - Gelée moutarde
+
+		CreateCreature("OTYUGH",[2549.2200],5)    // Otyugh
+		CreateCreature("OTYUGH",[2549.2200],5)    // Otyugh
+		CreateCreature("OTYUGH",[2549.2200],5)    // Otyugh
+END

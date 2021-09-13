@@ -1,0 +1,31 @@
+/* =============================================================== *
+ *    Butchery : More enemies in Bodhi's Lair (sided with Aran)    *
+ * =============================================================== */
+
+IF
+	Global("D9addvilainX","AR0803",0)
+	Global("AranJob","GLOBAL",3)
+	Global("FindLassal","AR0803",1)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainX","AR0803",1)
+		CreateCreature("GHOGR01",[641.776],2)    // Greater Ghoul - Goule majeure
+		CreateCreature("GHOGR01",[641.776],2)    // Greater Ghoul - Goule majeure
+		CreateCreature("GHOGR01",[641.776],2)    // Greater Ghoul - Goule majeure
+		CreateCreature("GHOGR01",[982.749],2)    // Greater Ghoul - Goule majeure
+		CreateCreature("GHOGR01",[982.749],2)    // Greater Ghoul - Goule majeure
+		CreateCreature("GHOGR01",[982.749],2)    // Greater Ghoul - Goule majeure
+
+		CreateCreature("vamemi01",[1489.502],2)  // Vampire (13th Level)
+		CreateCreature("vamver01",[1489.502],2)  // Vampire (11th Level)
+
+		CreateCreature("vamver01",[990.239],2)  // Vampire (11th Level)
+		CreateCreature("vamver01",[990.239],2)  // Vampire (11th Level)
+		CreateCreature("vamver01",[990.239],2)  // Vampire (11th Level)
+		CreateCreature("vamver01",[990.239],2)  // Vampire (11th Level)
+
+		CreateCreature("vamemi01",[1702.223],2)  // Vampire (13th Level)
+		CreateCreature("vamemi01",[1702.223],2)  // Vampire (13th Level)
+		CreateCreature("vamemi01",[1702.223],2)  // Vampire (13th Level)
+		CreateCreature("vamemi01",[1702.223],2)  // Vampire (13th Level)
+END

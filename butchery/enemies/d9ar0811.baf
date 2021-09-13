@@ -1,0 +1,23 @@
+/* ================================================== *
+ *    Butchery : More enemies in Crypt (Graveyard)    *
+ * ================================================== */
+
+IF
+	Global("D9addvilain","AR0811",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0811",1)
+		CreateCreature("SKELAR01",[440.270],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[440.270],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[440.270],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[440.270],5)  // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[660.453],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[660.453],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[660.453],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[660.453],5)  // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELWA",[570.478],5)  // Skeleton Warrior - Combattant squelette
+		CreateCreature("SKELWA",[570.478],5)  // Skeleton Warrior - Combattant squelette
+		CreateCreature("SKELWA",[570.478],5)  // Skeleton Warrior - Combattant squelette
+END

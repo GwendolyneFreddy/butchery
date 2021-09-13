@@ -1,0 +1,25 @@
+/* ============================================ *
+ *    Butchery : More enemies in Umar's Cave    *
+ * ============================================ */
+
+IF
+	Global("D9addvilainX","AR1106",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainX","AR1106",1)
+		CreateCreature("SKELAR01",[645.874],2)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[645.874],2)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[645.874],2)   // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[831.992],2)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[831.992],2)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[831.992],2)   // Skeleton Archer - Squelette archer
+
+		CreateCreature("D9SM12",[567.980],2)     // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+		CreateCreature("D9SC12",[670.1000],2)    // Experienced Skeleton Cleric - Prêtre squelette expérimenté (12th Level)
+
+		CreateCreature("D9SM12",[756.1075],2)    // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+
+		CreateCreature("SKELWA01",[608.1049],2)  // Skeleton Warrior - Combattant squelette
+		CreateCreature("SKELWA01",[608.1049],2)  // Skeleton Warrior - Combattant squelette
+END

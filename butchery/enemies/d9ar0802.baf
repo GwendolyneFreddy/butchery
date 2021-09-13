@@ -1,0 +1,41 @@
+/* =============================================================================== *
+ *    Butchery : More enemies in Netherscroll, Korgan's Book, Edwin (Graveyard)    *
+ * =============================================================================== */
+
+IF
+	Global("D9addvilainP","AR0802",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainP","AR0802",1)
+		CreateCreature("SKELAR01",[749.536],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[749.536],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[749.536],5)   // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[920.393],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[920.393],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[920.393],5)   // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[561.1072],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[561.1072],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[485.1130],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[485.1130],5)   // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[355.1368],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[355.1368],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[355.1368],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[355.1368],5)   // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[1595.1553],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[1595.1553],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[1595.1553],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[1595.1553],5)  // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[530.1886],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[530.1886],5)   // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[530.1886],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[530.1886],5)   // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[530.1886],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[530.1886],5)   // Skeleton Archer - Squelette archer
+END

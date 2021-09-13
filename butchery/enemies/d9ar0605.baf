@@ -1,0 +1,17 @@
+/* ============================================================================= *
+ *    Butchery : More enemies in Waukeen's Promenade: Circus Tent (2nd Floor)    *
+ * ============================================================================= */
+
+IF
+	Global("D9addvilain","AR0605",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0605",1)
+ 		CreateCreature("KOBSHA01",[659.616],5)  // Kobold Shaman
+		CreateCreature("KOBCOM01",[659.616],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[659.616],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[666.473],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[812.568],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[629.560],5)  // Kobold Commando
+		CreateCreature("KOBCOM01",[760.628],5)  // Kobold Commando
+END

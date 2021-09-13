@@ -1,0 +1,26 @@
+/* =============================================================== *
+ *    Butchery : More enemies in Slaver's Ship Building (Slums)    *
+ * =============================================================== */
+
+IF
+	Global("D9addvilain","AR0405",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0405",1)
+		CreateCreature("SLGUARD1",[528.779],5)   // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLGUARD2",[526.881],5)   // Slaver Guard - Garde esclavagiste
+
+		CreateCreature("SLARCH1",[1510.1362],5)  // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLARCH1",[2071.1284],5)  // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLARCH1",[1411.1590],5)  // Slaver Guard - Garde esclavagiste
+
+		CreateCreature("SLGUARD1",[464.1301],5)  // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLGUARD2",[464.1301],5)  // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLGUARD1",[464.1301],5)  // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLGUARD2",[464.1301],5)  // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLAPRI",[400.1360],5)    // Priest of Cyric - Prêtre de Cyric
+		CreateCreature("SLARCH1",[400.1360],5)   // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLARCH1",[400.1360],5)   // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLARCH1",[400.1360],5)   // Slaver Guard - Garde esclavagiste
+		CreateCreature("SLARCH1",[400.1360],5)   // Slaver Guard - Garde esclavagiste
+END

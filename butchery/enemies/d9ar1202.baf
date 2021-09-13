@@ -1,0 +1,37 @@
+/* =============================================== *
+ *    Butchery : More enemies in Firkaag's Maze    *
+ * =============================================== */
+
+IF
+	Global("D9addvilainX","AR1202",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainX","AR1202",1)
+		CreateCreature("GOLIRO01",[1768.2245],2)  // Iron Golem - Golem de fer
+		CreateCreature("ORC03",[1745.2181],2)     // Orc Priest - Prêtre orque
+		CreateCreature("ORC04",[1867.2259],2)     // Orc Mage - Magicien orque
+
+		CreateCreature("ORC01",[1765.2245],2)     // Orc
+		CreateCreature("ORC01",[1768.2245],2)     // Orc
+		CreateCreature("ORC01",[1765.2245],2)     // Orc
+		CreateCreature("ORC01",[1768.2245],2)     // Orc
+
+		CreateCreature("ORC03",[1569.617],2)      // Orc Priest - Prêtre orque
+
+		CreateCreature("ORC04",[1162.1431],2)     // Orc Mage - Magicien orque
+
+		CreateCreature("ORC04",[779.715],2)       // Orc Mage - Magicien orque
+
+		CreateCreature("ORC04",[2284.785],2)      // Orc Mage - Magicien orque
+END
+
+IF
+	Global("D9addvilainX1","AR1202",0)
+	Global("Firmag01Move","GLOBAL",1)
+	Global("SpawnFirmag01","AR1202",1)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainX1","AR1202",1)
+		CreateCreature("GOLJUG01",[2253.774],2) // Juggernaut Golem
+		CreateCreature("GOLSTO01",[2253.774],2) // Stone Golem - Golem de pierre
+END

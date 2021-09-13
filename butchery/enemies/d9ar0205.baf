@@ -1,0 +1,42 @@
+/* ========================================================================= *
+ *    Butchery : More enemies in The Beholder Hideout (Unseeing Eye Plot)    *
+ * ========================================================================= */
+
+IF
+	Global("D9addvilainXX","AR0205",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainXX","AR0205",1)
+		CreateCreature("d9XXard3",[1857.368],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9XXard3",[1895.288],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9XXard3",[1814.278],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9XXard3",[1814.278],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9XXard3",[1814.278],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+
+		CreateCreature("d9ZZard4",[1960.333],5)  // Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9ZZard4",[1960.333],5)  // Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9ZZard4",[1960.333],5)  // Elite Guard - Garde d'élite (9th Level)
+
+		CreateCreature("BRAIWA1",[1960.333],5)   // Blind Priest - Prêtre aveugle (12th Level)
+		CreateCreature("BRAIWA2",[1960.333],5)   // Blind Priest - Prêtre aveugle (10th Level)
+
+		CreateCreature("d9XXard3",[1485.2300],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9XXard3",[1485.2300],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9XXard3",[1485.2300],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9XXard3",[1428.2369],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9XXard3",[1500.2223],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+
+		CreateCreature("d9ZZard4",[1390.2287],5)  // Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9ZZard4",[1390.2287],5)  // Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9ZZard4",[1390.2287],5)  // Elite Guard - Garde d'élite (9th Level)
+
+ 		CreateCreature("BRAIWA1",[1390.2287],5)   // Blind Priest - Prêtre aveugle (12th Level)
+ 		CreateCreature("BRAIWA2",[1390.2287],5)   // Blind Priest - Prêtre aveugle (10th Level)
+
+ 		CreateCreature("d9XXard3",[1676.1333],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9XXard3",[1676.1333],5)  // Archer Elite Guard - Garde d'élite (9th Level)
+
+		CreateCreature("d9ZZard4",[1676.1333],5)  // Elite Guard - Garde d'élite (9th Level)
+ 		CreateCreature("d9ZZard4",[1676.1333],5)  // Elite Guard - Garde d'élite (9th Level)
+		CreateCreature("d9ZZard4",[1676.1333],5)  // Elite Guard - Garde d'élite (9th Level)
+END

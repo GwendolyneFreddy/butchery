@@ -1,0 +1,28 @@
+/* =============================================================== *
+ *    Butchery : More enemies in Irenicus's Dungeon (Air Plane)    *
+ * =============================================================== */
+
+IF
+	PartyHasItem("sw2h16")  //sword of chaos
+	Global("D9addvilain","AR0601",0)
+	Global("HelpDjinni","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0601",1)
+ 		CreateCreature("D9DFAA",[1376.869],5)    // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+ 		CreateCreature("D9DFAA",[1376.869],5)    // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+
+ 	 	CreateCreature("D9DFBB",[1451.652],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+	 	CreateCreature("D9DFBB",[1448.764],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[1250.892],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+	 	CreateCreature("D9DFBB",[1419.911],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+
+		CreateCreature("D9dGG",[1313.765],5)     // Experienced Dwarf Priest - Prêtre nain expérimenté (7th Level)
+	 	CreateCreature("D9emagAA",[1419.911],5)  // Dwarf Mage (5th Level)
+	 	CreateCreature("D9DFCC",[1419.911],5)    // Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level)
+	 	CreateCreature("D9DFHH",[1419.911],5)    // Elite Dwarf Warrior - Guerrier nain d'élite (7th Fighter)
+
+		CreateCreature("D9DFHH",[2270.1735],5)   // Elite Dwarf Warrior - Guerrier nain d'élite (7th Fighter)
+		CreateCreature("D9dCC",[2323.1700],5)    // 
+		CreateCreature("D9dCC",[2216.1760],5)    // 
+END

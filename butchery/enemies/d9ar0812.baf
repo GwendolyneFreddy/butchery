@@ -1,0 +1,11 @@
+/* ================================================== *
+ *    Butchery : More enemies in Crypt (Graveyard)    *
+ * ================================================== */
+
+IF
+	Global("D9addvilain","AR0812",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0812",1)
+		CreateCreature("D9SM12",[362.324],5)  // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+END

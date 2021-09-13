@@ -1,0 +1,20 @@
+/* ==================================================================== *
+ *    Butchery : More enemies in the Ghoul village (Temple District)    *
+ * ==================================================================== */
+
+IF
+	Global("D9addvilain","AR0206",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0206",1)
+		CreateCreature("SKELAR01",[279.435],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[519.406],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[1059.612],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[905.730],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("GHOUL01",[762.908],5)    // Ghoul - Goule
+		CreateCreature("GHOUL01",[762.908],5)    // Ghoul - Goule
+		CreateCreature("GHOUL01",[1147.741],5)   // Ghoul - Goule
+		CreateCreature("SKELAR01",[620.878],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[751.841],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[909.782],5)   // Skeleton Archer - Squelette archer
+END

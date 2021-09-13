@@ -1,0 +1,23 @@
+/* ======================================================== *
+ *    Butchery : More enemies in Tanner's Hideout Cellar    *
+ * ======================================================== */
+
+IF
+	Global("D9addvilain","AR0502",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0502",1)
+		CreateCreature("SKELAR01",[752.523],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("D9SC7",[752.523],5)     // Skeleton Cleric novice - Prêtre squelette novice
+		CreateCreature("SKELAR01",[752.523],5)  // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[443.344],5)  // Skeleton Archer - Squelette archer
+//		CreateCreature("D9SM7",[443.344],5)     // Skeleton Mage novice - Mage squelette novice (7th Level)
+		CreateCreature("SKELAR01",[443.344],5)  // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[238.433],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[238.433],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[238.433],5)  // Skeleton Archer - Squelette archer
+//		CreateCreature("ICBONE01",[336.506],5)  // Bone Golem - Golem d'os
+//		CreateCreature("ICBONE01",[336.506],5)  // Bone Golem - Golem d'os
+END

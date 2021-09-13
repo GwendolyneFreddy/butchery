@@ -1,0 +1,27 @@
+/* ================================================= *
+ *    Butchery : More enemies in Myconid (Sphere)    *
+ * ================================================= */
+
+IF
+	Global("D9addvilain","AR0419",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0419",1)
+		CreateCreature("OTYUGH",[643.522],5)    // Otyugh
+		CreateCreature("OTYUGH",[643.522],5)    // Otyugh
+		CreateCreature("OTYUGH",[643.522],5)    // Otyugh
+		CreateCreature("OTYUGH",[613.667],5)    // Otyugh
+
+		CreateCreature("JELLOC",[487.646],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("JELMUS01",[487.646],5)  // Mustard Jelly - Gelée moutarde
+		CreateCreature("JELMUS01",[487.646],5)  // Mustard Jelly - Gelée moutarde
+
+		CreateCreature("JELLOC",[524.470],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("JELMUS01",[524.470],5)  // Mustard Jelly - Gelée moutarde
+		CreateCreature("JELMUS01",[524.470],5)  // Mustard Jelly - Gelée moutarde
+
+		CreateCreature("JELLOC",[367.422],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("JELMUS01",[367.422],5)  // Mustard Jelly - Gelée moutarde
+		CreateCreature("JELMUS01",[367.422],5)  // Mustard Jelly - Gelée moutarde
+		CreateCreature("JELMUS01",[367.422],5)  // Mustard Jelly - Gelée moutarde
+END

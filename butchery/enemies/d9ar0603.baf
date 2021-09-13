@@ -1,0 +1,45 @@
+/* =============================================================== *
+ *    Butchery : More enemies in Irenicus's Dungeon (2nd Floor)    *
+ * =============================================================== */
+
+IF
+	Global("D9addvilain","AR0603",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0603",1)
+		CreateCreature("D9DFAA",[1270.2515],5)    // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9emagAA",[1270.2515],5)  // Dwarf Mage (5th Level)
+		CreateCreature("D9DFBB",[1270.2515],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[1270.2515],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[1270.2515],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[1270.2515],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFAA",[400.1566],5)     // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFBB",[400.1566],5)     // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[400.1566],5)     // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DDD",[400.1566],5)      // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9DFCC",[400.1566],5)     // Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level)
+		CreateCreature("D9DFAA",[2905.1066],5)    // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFBB",[2905.1066],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[2905.1066],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DDD",[2905.1066],5)     // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9DFCC",[2905.1066],5)    // Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level)
+		CreateCreature("D9DFHH",[2905.1066],5)    // Elite Dwarf Warrior - Guerrier nain d'élite (7th Fighter)
+		CreateCreature("D9DFBB",[2486.1460],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[2486.1460],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFCC",[2486.1460],5)    // Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level)
+		CreateCreature("D9DFHH",[2486.1460],5)    // Elite Dwarf Warrior - Guerrier nain d'élite (7th Fighter)
+		CreateCreature("D9YUGH",[1913.2823],5)    // Otyugh
+		CreateCreature("D9YUGH",[1913.2823],5)    // Otyugh
+		CreateCreature("D9LLOC",[1849.2878],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LLOC",[1849.2878],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LLOC",[1849.2878],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("D9YUGH",[3137.2000],5)    // Otyugh
+		CreateCreature("D9YUGH",[3137.2000],5)    // Otyugh
+		CreateCreature("D9LLOC",[3215.1935],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LLOC",[3215.1935],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LLOC",[3215.1935],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LLOC",[3374.1635],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("D9YUGH",[3344.1705],5)    // Otyugh
+		CreateCreature("D9LLOC",[3374.1635],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LMUS01",[3374.1635],5)  // Mustard Jelly - Gelée moutarde
+END

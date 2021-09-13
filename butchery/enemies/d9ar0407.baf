@@ -1,0 +1,13 @@
+/* ======================================================= *
+ *    Butchery : More enemies in Prebek's House (Slums)    *
+ * ======================================================= */
+
+//IF
+//	Global("D9addvilain","AR0407",0)
+//THEN
+//	RESPONSE #100
+//		SetGlobal("D9addvilain","AR0407",1)
+//		CreateCreature("GOLFLE01",[355.415],5) // Flesh Golem - Golem de chair
+//		CreateCreature("GOLFLE01",[204.378],5) // Flesh Golem - Golem de chair
+//		CreateCreature("GOLFLE01",[506.181],5) // Flesh Golem - Golem de chair
+//END

@@ -1,0 +1,20 @@
+/* ================================================================== *
+ *    Butchery : More enemies in House 1st Floor (Bridge District)    *
+ * ================================================================== */
+
+IF
+	Global("D9addvilain","AR0525",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0525",1)
+		CreateCreature("SKELAR01",[509.278],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[509.278],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[509.278],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[549.307],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[549.307],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[549.307],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[646.188],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[646.188],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("ICBONE01",[425.374],5)  // Bone Golem - Golem d'os
+		CreateCreature("ICBONE01",[573.350],5)  // Bone Golem - Golem d'os
+END

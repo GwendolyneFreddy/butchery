@@ -1,0 +1,11 @@
+/* =================================================================================== *
+ *    Butchery : More enemies in Cave in Woods to Suldanessellar (Forest of Tethyr)    *
+ * =================================================================================== */
+
+IF
+	Global("D9addvilain","AR2602",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR2602",1)
+ 		CreateCreature("D9DRAZT",[739.926],5)  // DrAzTiK (Silver dragon)
+END

@@ -1,0 +1,45 @@
+/* ================================================================== *
+ *    Butchery : More enemies in Bodhi's Hideout (sided with Aran)    *
+ * ================================================================== */
+
+IF
+    Global("FleshAttack","AR0801",1)
+    Global("D9addvilainA","AR0801",0)
+THEN
+    RESPONSE #100
+        SetGlobal("D9addvilainA","AR0801",1)
+        CreateCreature("VAMFLF01",[1678.1229],6)  // Fledging Vampire female - Vampire novice
+        CreateCreature("VAMFLM01",[1443.1287],6)  // Fledging Vampire male - Vampire novice
+        CreateCreature("VAMFLM01",[1623.1080],6)  // Fledging Vampire male - Vampire novice
+        CreateCreature("VAMEMI01",[1311.1143],6)  // Vampire (13th Level)
+END
+
+IF
+    Global("D9addvilainX","AR0801",0)
+    Global("FindLassal","AR0801",1)
+    GlobalLT("Chapter","GLOBAL",4)
+THEN
+    RESPONSE #100
+        SetGlobal("D9addvilainX","AR0801",1)
+        CreateCreature("GOLCLA01",[505.1389],6)  // Clay Golem - Golem d'argile
+        CreateCreature("GOLCLA01",[505.1389],6)  // Clay Golem - Golem d'argile
+        CreateCreature("GOLCLA01",[505.1389],6)  // Clay Golem - Golem d'argile
+        CreateCreature("VAMEMI01",[549.781],6)   // Vampire (13th Level)
+        CreateCreature("VAMEMI01",[931.979],6)   // Vampire (13th Level)
+        CreateCreature("VAMFLM01",[986.583],6)   // Fledging Vampire male - Vampire novice
+        CreateCreature("VAMFLF01",[986.583],6)   // Fledging Vampire female - Vampire novice
+        CreateCreature("VAMFLM01",[986.583],6)   // Fledging Vampire male - Vampire novice
+        CreateCreature("GHOGR01",[1103.539],6)   // Greater Ghoul - Goule majeure
+        CreateCreature("GHOGR01",[176.855],6)    // Greater Ghoul - Goule majeure
+        CreateCreature("GHOGR01",[1103.539],6)   // Greater Ghoul - Goule majeure
+        CreateCreature("GHOGR01",[176.855],6)    // Greater Ghoul - Goule majeure
+        CreateCreature("GHOGR01",[1103.539],6)   // Greater Ghoul - Goule majeure
+        CreateCreature("GHOGR01",[176.855],6)    // Greater Ghoul - Goule majeure
+        CreateCreature("VAMFLM01",[280.946],6)   // Fledging Vampire male - Vampire novice
+        CreateCreature("VAMFLF01",[280.946],6)   // Fledging Vampire female - Vampire novice
+        CreateCreature("VAMFLM01",[280.946],6)   // Fledging Vampire male - Vampire novice
+        CreateCreature("VAMFLF01",[1991.670],6)  // Fledging Vampire female - Vampire novice
+        CreateCreature("VAMFLF01",[1991.670],6)  // Fledging Vampire female - Vampire novice
+        CreateCreature("VAMFLF01",[2121.683],6)  // Fledging Vampire female - Vampire novice
+        CreateCreature("VAMFLF01",[2121.683],6)  // Fledging Vampire female - Vampire novice
+END

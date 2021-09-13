@@ -1,0 +1,15 @@
+/* ==================================================== *
+ *    Butchery : More enemies in Firkraag's Entrance    *
+ * ==================================================== */
+
+IF
+	Global("D9addvilainX","AR1201",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilainX","AR1201",1)
+		CreateCreature("GOLSTO01",[1629.1993],2)  // Stone Golem - Golem de pierre
+		CreateCreature("GOLSTO01",[1629.1993],2)  // Stone Golem - Golem de pierre
+
+		CreateCreature("goliro01",[2696.1600],2)  // Iron Golem - Golem de fer
+		CreateCreature("goliro01",[2308.1392],2)  // Iron Golem - Golem de fer
+END

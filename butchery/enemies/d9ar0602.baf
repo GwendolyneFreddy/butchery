@@ -1,0 +1,80 @@
+/* ============================================================ *
+ *    Butchery : More enemies Irenicus's Dungeon (1st Floor)    *
+ * ============================================================ */
+
+IF
+	Global("D9addvilain","AR0602",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0602",1)
+		CreateCreature("D9DFAA",[3023.3433],5)   // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFAA",[3023.3433],5)   // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFBB",[3023.3433],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[3023.3433],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9dDD",[3023.3433],5)    // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9DFAA",[905.2520],5)    // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFBB",[905.2520],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[905.2520],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DDD",[905.2520],5)     // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9DFCC",[905.2520],5)    // Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level)
+		CreateCreature("D9DFAA",[558.1698],5)    // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFBB",[558.1698],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[558.1698],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DDD",[558.1698],5)     // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9DFCC",[558.1698],5)    // Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level)
+		CreateCreature("D9DFAA",[400.1150],5)    // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFBB",[400.1150],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[400.1150],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DDD",[400.1150],5)     // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9emagAA",[400.1150],5)  // Dwarf Mage (5th Level)
+		CreateCreature("D9DFAA",[2427.1114],5)   // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFBB",[2427.1114],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[2427.1114],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[2427.1114],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DDD",[2427.1114],5)    // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9DFHH",[2427.1114],5)   // Elite Dwarf Warrior - Guerrier nain d'élite (7th Fighter)
+		CreateCreature("D9YUGH",[2805.1942],5)   // Otyugh
+		CreateCreature("D9LLOC",[2805.1942],5)   // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LLOC",[2805.1942],5)   // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LLOC",[2697.2134],5)   // Ochre Jelly - Gelée ocre
+		CreateCreature("D9DFBB",[3122.672],5)    // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFHH",[3122.672],5)    // Elite Dwarf Warrior - Guerrier nain d'élite (7th Fighter)
+		CreateCreature("D9DFHH",[3122.672],5)    // Elite Dwarf Warrior - Guerrier nain d'élite (7th Fighter)
+		CreateCreature("D9DFBB",[3629.2049],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[3629.2049],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[3629.2049],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[3629.2049],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFBB",[3629.2049],5)   // Dwarf Warrior novice - Guerrier nain novice (3rd Level with Crossbow)
+		CreateCreature("D9DFAA",[3629.2049],5)   // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFAA",[3629.2049],5)   // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFAA",[3629.2049],5)   // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+		CreateCreature("D9DFAA",[3629.2049],5)   // Dwarf Berseker novice - Berseker nain novice (3rd Level)
+END
+
+IF
+	PartyHasItem("sw2h16")  //sword of chaos
+	Global("D9addvilain2","AR0602",0)
+	Global("HelpDjinni","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain2","AR0602",1)
+		CreateCreature("D9emagAA",[1450.550],5)  // Dwarf Mage (5th Level)
+		CreateCreature("GOLFLE01",[1450.550],5)  // Flesh Golem - Golem de chair
+		CreateCreature("D9emagAA",[1363.370],5)  // Dwarf Mage (5th Level)
+		CreateCreature("D9emagAA",[1418.440],5)  // Dwarf Mage (5th Level)
+		CreateCreature("D9dDD",[1368.933],5)     // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9dDD",[1368.933],5)     // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9dDD",[1368.933],5)     // Dwarf Priest novice - Prêtre nain novice (5th Level)
+		CreateCreature("D9dGG",[1368.933],5)     // Experienced Dwarf Priest - Prêtre nain expérimenté (7th Level)
+		CreateCreature("D9dGG",[1368.933],5)     // Experienced Dwarf Priest - Prêtre nain expérimenté (7th Level)
+		CreateCreature("D9YUGH",[2805.1942],5)   // Otyugh
+		CreateCreature("D9LLOC",[2805.1942],5)   // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LLOC",[2805.1942],5)   // Ochre Jelly - Gelée ocre
+		CreateCreature("D9YUGH",[2697.2134],5)   // Otyugh
+		CreateCreature("D9LLOC",[2697.2134],5)   // Ochre Jelly - Gelée ocre
+		CreateCreature("D9LLOC",[2697.2134],5)   // Ochre Jelly - Gelée ocre
+		CreateCreature("D9emagAA",[3821.988],5)  // Dwarf Mage (5th Level)
+		CreateCreature("GOLFLE01",[3757.933],5)  // Flesh Golem - Golem de chair
+		CreateCreature("GOLFLE01",[3757.933],5)  // Flesh Golem - Golem de chair
+END
+

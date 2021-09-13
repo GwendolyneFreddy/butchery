@@ -1,0 +1,13 @@
+/* ========================================================================== *
+ *    Butchery : More enemies in Waukeen's Promenade: Circus Tent (phased)    *
+ * ========================================================================== */
+
+IF
+	Global("D9addvilain","AR0600",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0600",1)
+ 		CreateCreature("D9SM7",[1240.1596],5)  // Skeleton Mage novice - Mage squelette novice (7th Level)
+		CreateCreature("D9SC7",[1277.1552],5)  // Skeleton Cleric novice - Prêtre squelette novice
+		CreateCreature("D9SM7",[1277.1552],5)  // Skeleton Mage novice - Mage squelette novice (7th Level)
+END

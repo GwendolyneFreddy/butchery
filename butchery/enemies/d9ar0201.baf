@@ -1,0 +1,25 @@
+/* ================================================================================================== *
+ *    Butchery : More enemies in Temple District (area Leading to ghoul village and beholder lair)    *
+ * ================================================================================================== */
+
+IF
+	Global("D9addvilain","AR0201",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0201",1)
+		CreateCreature("SKELAR01",[980.1508],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[980.1508],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[980.1508],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[980.1508],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[980.1508],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[1364.1086],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[1364.1086],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[1364.1086],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[1364.1086],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[1364.1086],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[2067.732],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[2067.732],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[2067.732],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[2067.732],5)   // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[2067.732],5)   // Skeleton Archer - Squelette archer
+END

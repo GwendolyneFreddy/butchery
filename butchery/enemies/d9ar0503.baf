@@ -1,0 +1,16 @@
+/* ====================================================== *
+ *    Butchery : More enemies in Tanner's Hideout Dock    *
+ * ====================================================== */
+
+IF
+	Global("D9addvilain","AR0503",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0503",1)
+		CreateCreature("SKELAR01",[624.534],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[624.534],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[624.534],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[637.282],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[637.282],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[908.454],5)  // Skeleton Archer - Squelette archer
+END

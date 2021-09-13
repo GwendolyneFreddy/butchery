@@ -1,0 +1,20 @@
+/* ================================================== *
+ *    Butchery : More enemies in Crypt (Graveyard)    *
+ * ================================================== */
+
+IF
+	Global("D9addvilain","AR0805",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0805",1)
+		CreateCreature("SKELAR01",[486.315],5) // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[486.315],5) // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[486.315],5) // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[684.442],5) // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[684.442],5) // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[684.442],5) // Skeleton Archer - Squelette archer
+
+		CreateCreature("D9SC12",[581.492],5)  // Experienced Skeleton Cleric - Prêtre squelette expérimenté (12th Level)
+		CreateCreature("D9SM12",[371.326],5)  // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+END

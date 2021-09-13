@@ -1,0 +1,19 @@
+/* ================================================================== *
+ *    Butchery : More enemies in Myconids (Sewers beneath Coronet)    *
+ * ================================================================== */
+
+IF
+	Global("D9addvilain","AR0418",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR0418",1)
+		CreateCreature("OTYUGH",[737.612],5)    // Otyugh
+		CreateCreature("OTYUGH",[737.612],5)    // Otyugh
+		CreateCreature("OTYUGH",[825.530],5)    // Otyugh
+
+		CreateCreature("JELLOC",[526.523],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("JELMUS01",[526.523],5)  // Mustard Jelly - Gelée moutarde
+
+		CreateCreature("JELLOC",[706.473],5)    // Ochre Jelly - Gelée ocre
+		CreateCreature("JELMUS01",[706.473],5)  // Mustard Jelly - Gelée moutarde
+END

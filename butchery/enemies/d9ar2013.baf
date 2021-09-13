@@ -1,0 +1,21 @@
+/* ================================================ *
+ *    Butchery : More enemies in Trademeet Crypt    *
+ * ================================================ */
+
+IF
+	Global("D9addvilain","AR2013",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR2013",1)
+		CreateCreature("D9SM12",[490.317],5)    // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+		CreateCreature("D9SC12",[490.317],5)    // Experienced Skeleton Cleric - Prêtre squelette expérimenté (12th Level)
+
+		CreateCreature("SKELWA",[386.354],5)    // Skeleton Warrior - Combattant squelette
+		CreateCreature("SKELWA",[609.459],5)    // Skeleton Warrior - Combattant squelette
+
+		CreateCreature("SKELAR01",[720.439],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[720.439],5)  // Skeleton Archer - Squelette archer
+
+		CreateCreature("SKELAR01",[432.245],5)  // Skeleton Archer - Squelette archer
+		CreateCreature("SKELAR01",[432.245],5)  // Skeleton Archer - Squelette archer
+END
