@@ -110,4 +110,16 @@ OUTER_SET is_soundset = (FILE_EXISTS_IN_GAME ~d9bara1.wav~) ? 1 : 0
 /* ----------------------- *
  *    Detects portraits    *
  * ----------------------- */
-OUTER_SET is_portraits = (FILE_EXISTS_IN_GAME ~d9zoks.bmp~) ? 1 : 0
+OUTER_SET is_portraits  = (FILE_EXISTS_IN_GAME ~d9zoks.bmp~) ? 1 : 0
+OUTER_SET is_portraits2 = (FILE_EXISTS_IN_GAME ~d9gros.bmp~) ? 1 : 0
+
+/* ------------------------------ *
+ *    Detects barbarian script    *
+ * ------------------------------ */
+OUTER_SET is_d9dwctyz = (FILE_EXISTS_IN_GAME ~d9dwctyz.bcs~) ? 1 : 0
+
+/* ------------------------------- *
+ *    Detects Grimwarder script    *
+ * ------------------------------- */
+OUTER_SET is_d9bodfgh = (FILE_EXISTS_IN_GAME ~d9bodfgh.bcs~) ? 1 : 0
+

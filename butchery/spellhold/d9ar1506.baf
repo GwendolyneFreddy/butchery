@@ -1,0 +1,121 @@
+/* ================================================================== *
+ *    Vampires butchery in Spellhold (Troll Cave - Spellhold Test)    *
+ * ================================================================== */
+
+IF
+	Global("D9addvilain","AR1506",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR1506",1)
+ 		CreateCreature("D9OLICFF",[1121.804],12)  // Ice Troll
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1506",1)
+	Global("D9eyelessmessage","AR1506",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
+		SetGlobal("D9eyelessmessage","AR1506",1)
+END
+
+IF
+	Global("D9Bguarddead","AR1506",0)
+	Dead("ELETRO01")
+THEN
+	RESPONSE #100
+		IncrementGlobal("EXTRACOUNT","MYAREA",-1)
+		SetGlobal("D9Bguarddead","AR1506",1)
+END
+
+IF
+	Global("D9Bguarddead1","AR1506",0)
+	Dead("ELETRO02")
+THEN
+	RESPONSE #100
+		IncrementGlobal("EXTRACOUNT","MYAREA",-1)
+		SetGlobal("D9Bguarddead1","AR1506",1)
+END
+
+IF
+	Global("D9Bguarddead2","AR1506",0)
+	Dead("TROLSP01")
+THEN
+	RESPONSE #100
+		IncrementGlobal("EXTRACOUNT","MYAREA",-1)
+		SetGlobal("D9Bguarddead2","AR1506",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1506",1)
+	GlobalLT("MaxSpawn","AR1506",60)
+	GlobalLT("EXTRACOUNT","MYAREA",4)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9OLIC01",0)  // Ice Troll - Troll des Glaces
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9OLL01",0)  // Troll
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9YUAN02",0)  // Greater Yuan-ti - Yuan-Ti majeur
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1506",1)
+	GlobalLT("MaxSpawn","AR1506",60)
+	GlobalLT("EXTRACOUNT2","MYAREA",3)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9OLGI01",0)  // Giant Troll - Troll géant
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9OLSP01",0)  // Spectral Troll - Troll spectral
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9UMB02",0)  // Umber Hulk - Ombre des roches
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1506",1)
+	GlobalLT("MaxSpawn","AR1506",60)
+	GlobalLT("EXTRACOUNT3","MYAREA",1)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9OLSI01",0)  // Spirit Troll - Troll fantôme
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9OLDE01",0)  // Desert Troll - Troll du désert
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9YUAN03",0)  // Yuan-ti Mage
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1506",1)
+		CreateCreatureOffScreen("D9YUAN05",0)  // Yuan-ti Prince
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END
