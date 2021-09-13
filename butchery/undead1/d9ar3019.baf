@@ -1,0 +1,116 @@
+/* ==================================================================== *
+ *    Undead butchery in Watcher's Keep (Helmite Level - Last Seals)    *
+ * ==================================================================== */
+
+IF
+	Global("D9addvilain","AR3019",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR3019",1)
+ 		CreateCreature("D9ELARKK",[2142.1481],12)  // Skeleton Archer - Squelette archer
+END
+
+IF
+	Global("D9beginbutchery4","AR3019",1)
+	Global("D9eyelessmessage4","AR3019",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
+		SetGlobal("D9eyelessmessage4","AR3019",1)
+END
+
+IF
+	Global("D9beginbutchery4","AR3019",1)
+	GlobalLT("MaxSpawn","AR3019",105)
+	GlobalLT("EXTRACOUNT","MYAREA",7)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9ELARAA",0)  // Skeleton Archer - Squelette archer
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9ELARZZ",0)  // Skeleton Archer - Squelette archer
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery4","AR3019",1)
+	GlobalLT("MaxSpawn","AR3019",105)
+	GlobalLT("EXTRACOUNT2","MYAREA",6)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9ELARYY",0)  // Skeleton Archer - Squelette archer
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9ELSU11",0)  // Skeleton Warrior - Combattant squelette
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9ELARBB",0)  // Skeleton Archer - Squelette archer
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+			RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("d9mmy",0)  // Mummy - Momie
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+
+END
+
+IF
+	Global("D9beginbutchery4","AR3019",1)
+	GlobalLT("MaxSpawn","AR3019",105)
+	GlobalLT("EXTRACOUNT3","MYAREA",3)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9SM12B",0)  // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9ELWA",0)  // Skeleton Warrior - Combattant squelette
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9SC12B",0)  // Experienced Skeleton Cleric - Prêtre squelette expérimenté
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9ELARXX",0)  // Skeleton Archer - Squelette archer
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+			RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9mgre01",0)  // Greater Mummy - Momie majeure
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9OLOR01",0)  // Ghoul Lord - Seigneur goule
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9SKL01",0)  // Skeleton Cleric - Clerc squelette (20th Level)
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9SKL03",0)  // Skeleton Mage - Mage squelette (20th Level)
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9SKL02",0)  // Skeleton Assassin - Assassin Squelette (20th Level)
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR3019",1)
+		CreateCreatureOffScreen("D9SKL04",0)  // Skeleton Warrior - Combattant squelette (20th Level)
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END
