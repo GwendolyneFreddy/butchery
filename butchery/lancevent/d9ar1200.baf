@@ -1,0 +1,83 @@
+/* ====================================== *
+ *    Orcs butchery in Windspear Hills    *
+ * ====================================== */
+
+IF
+	Global("D9addvilain","AR1200",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D9addvilain","AR1200",1)
+ 		CreateCreature("D9AAAXX",[3572.1444],12) // Orc
+END
+
+IF
+	Global("D9beginbutchery","AR1200",1)
+	Global("D9eyelessmessage","AR1200",0)
+THEN
+	RESPONSE #100
+	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
+		SetGlobal("D9eyelessmessage","AR1200",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1200",1)
+	GlobalLT("MaxSpawn","AR1200",45)
+	GlobalLT("EXTRACOUNT","MYAREA",5)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1200",1)
+		CreateCreatureOffScreen("D9C0Z",S)  // Orc
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1200",1)
+		CreateCreatureOffScreen("D9C0R",S)  // Orc Archer
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1200",1)
+	GlobalLT("MaxSpawn","AR1200",45)
+	GlobalLT("EXTRACOUNT2","MYAREA",5)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1200",1)
+		CreateCreatureOffScreen("D9C055",S)  // Orog
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1200",1)
+		CreateCreatureOffScreen("D9C066",S)  // Orog
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1200",1)
+		CreateCreatureOffScreen("D9C0Z1",S)  // Orc
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9beginbutchery","AR1200",1)
+	GlobalLT("MaxSpawn","AR1200",45)
+	GlobalLT("EXTRACOUNT3","MYAREA",1)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1200",1)
+		CreateCreatureOffScreen("ORC044",S)  // Orc Mage
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1200",1)
+		CreateCreatureOffScreen("ORC033",S)  // Orc Priest
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR1200",1)
+		CreateCreatureOffScreen("D9C0Z3",S)  // Orc
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END
