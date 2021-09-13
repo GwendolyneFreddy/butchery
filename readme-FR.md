@@ -5,7 +5,7 @@
 ![Language](https://img.shields.io/static/v1?label=langues&message=Fran%C3%A7ais%20%7C%20Anglais%20%7C%20Russe&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
-<a href="README_EN.md"><img align="right" src="butchery/images/uk-flag-32.png" title="English Readme"></a>
+<a href="README_EN.md"><img align="right" src="butchery/readme/images/uk-flag-32.png" title="English Readme"></a>
 
 
 <div align="center"><h1><BuTcHeRy</h1>
@@ -42,7 +42,7 @@ BGT, BG2:EE et EET<h3>
 <hr>
 
 
-## Présentation
+## <a name="intro" id="intro"></a>Présentation
 
 L'objet principal de ce petit mod est d'ajouter un combat dynamique et plus relevé dans le repaire de Firkraag.
 
@@ -65,7 +65,7 @@ Par ailleurs, ce mod a pour ambition de :
 <hr>
 
 
-## Compatibilité
+## <a name="compat" id="compat"></a>Compatibilité
 
 #### Jeux concernés
 
@@ -96,7 +96,7 @@ Si vous rencontrez des bugs, veuillez les signaler dans le <a href="https://www.
 <hr>
 
 
-## Installation
+## <a name="installation" id="installation"></a>Installation
 
 #### Mise en garde
 
@@ -305,17 +305,17 @@ Ce composant ajoute un autre petit combat et rencontre amusante avec 2 personnag
 <hr>
 
 
-## Captures d'écran
+## <a name="images" id="images"></a>Captures d'écran
 
-<img src="butchery/images/baldr000.jpg">
-<img src="butchery/images/baldr001.jpg"><br>
+<img src="butchery/readme/images/baldr000.jpg">
+<img src="butchery/readme/images/baldr001.jpg"><br>
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
 
 <hr>
 
 
-## Crédits et remerciements
+## <a name="credits" id="credits"></a>Crédits et remerciements
 
 #### Auteur : <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a>
 
@@ -355,7 +355,7 @@ Ce composant ajoute un autre petit combat et rencontre amusante avec 2 personnag
 <hr>
 
 
-## Historique des versions
+## <a name="versions" id="versions"></a>Historique des versions
 
 <p>Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p>
 

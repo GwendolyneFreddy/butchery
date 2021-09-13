@@ -5,7 +5,7 @@
 ![Language](https://img.shields.io/static/v1?label=language&message=French%20%7C%20English%20%7C%20Russian&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
-<a href="README-FR.md"><img align="right" src="butchery/images/fr-flag-32.png" title="Readme français"></a>
+<a href="README-FR.md"><img align="right" src="butchery/readme/images/fr-flag-32.png" title="Readme français"></a>
 
 
 <div align="center"><h1>BuTcHeRy</h1>
@@ -43,7 +43,7 @@ Baldur's Gate Trilogy and EET<h3>
 <hr>
 
 
-## Overview
+## <a name="intro" id="intro"></a>Overview
 
 The main objectif of this little mod is to add a challenging and fun fight in Firkraag's lair.
 
@@ -66,7 +66,7 @@ Secondary objectives are:
 <hr>
 
 
-## Compatibility
+## <a name="compat" id="compat"></a>Compatibility
 
 #### Games supported
 
@@ -99,7 +99,7 @@ If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacou
 <hr>
 
 
-## Installation
+## <a name="installation" id="installation"></a>Installation
 
 #### Notes
 
@@ -318,17 +318,17 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <hr>
 
 
-## Screenshots
+## <a name="images" id="images"></a>Screenshots
 
-<img src="butchery/images/baldr000.jpg">
-<img src="butchery/images/baldr001.jpg"><br>
+<img src="butchery/readme/images/baldr000.jpg">
+<img src="butchery/readme/images/baldr001.jpg"><br>
 <div align="right"><a href="#top">Back to top</a></div>
 
 
 <hr>
 
 
-## Credits and Acknowledgements
+## <a name="credits" id="credits"></a>Credits and Acknowledgements
 
 #### Author: <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a>
 
@@ -368,7 +368,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <hr>
 
 
-## Version History
+## <a name="versions" id="versions"></a>Version History
 
 ##### Version 5.0.0 &nbsp;(September nn, 2021)
 
