@@ -1,0 +1,197 @@
+/* ===================================================================================================================================================== *
+ *  v 5.0.0                                                                                                                                              *
+ *           B U T C H E R Y    :    B u t c h e r i e s    i n    T r a d e m e e t    a n d    o u t s i d e    W a t c h e r ' s    K e e p           *
+ *                                                                                                                                                       *
+ * ===================================================================================================================================================== */
+
+SILENT
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+ACTION_IF NOT is_d9dwctyz BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9dwctyz.baf~
+END
+
+COMPILE ~%MOD_FOLDER%/trademeet/d9lfdicc.baf~
+COMPILE ~%MOD_FOLDER%/trademeet/d9lfdich.baf~
+
+// Scripts Extensions
+LAF extend_area_script STR_VAR area = "ar2000" top = "%MOD_FOLDER%/trademeet/d9ar2000.baf" END
+LAF extend_area_script STR_VAR area = "ar3000" bottom = "%MOD_FOLDER%/trademeet/d9ar3000.baf" END
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Dire Wolf - Loup noir initiating butchery in Trademeet (AR2000)
+// ---------------------------------------------------------------
+COPY_EXISTING ~wolfdi01.cre~ ~override/d9lfdicc.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9LFDICC~ #8
+BUT_ONLY
+
+// Dire Wolf - Loup noir initiating butchery outside Watcher's Keep (AR3000)
+// -------------------------------------------------------------------------
+COPY_EXISTING ~wolfdI01.cre~ ~override/d9lfdich.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9LFDICH~ #8
+BUT_ONLY
+
+// REBALANCING WILD ANIMALS
+// ------------------------
+
+// Phase Spider - Araignée éclipsante
+// ----------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idph01.cre~ BEGIN
+	COPY_EXISTING ~spidph01.cre~ ~override/d9idph01.cre~
+		WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Giant Spider - Araignée géante NOT USED
+// ------------------------------
+COPY_EXISTING ~spidgi01.cre~ ~override/d9idgi01.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Dire Wolf - Loup noir NOT USED (dans 48 AR1100)
+// ---------------------
+COPY_EXISTING ~wolfdi01.cre~ ~override/d9lfdi01.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Winter Wolf - Loup des glaces
+// -----------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9lfwi01.cre~ BEGIN
+	COPY_EXISTING ~wolfwi01.cre~ ~override/d9lfwi01.cre~
+		WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Small Spider - Petite araignée NOT USED
+// ------------------------------
+COPY_EXISTING ~spidsm01.cre~ ~override/d9idsm01.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Black Bear - Ours noir
+// ----------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9earbl.cre~ BEGIN
+	COPY_EXISTING ~vbearbl.cre~ ~override/d9earbl.cre~
+		WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Brown Bear - Ours brun NOT USED
+// ----------------------
+COPY_EXISTING ~vbearbr.cre~ ~override/d9vbeat.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Panther - Panthère
+// ------------------
+COPY_EXISTING ~catjag01.cre~ ~override/d9catt.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Spotted Lion - Lion tacheté
+// ---------------------------
+COPY_EXISTING ~catlis01.cre~ ~override/d9cax.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sword Spider - Araignée sabre - Gender EXTRA2
+// ---------------------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsw01.cre~ BEGIN
+	COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw01.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Phase Spider - Araignée éclipsante - Gender EXTRA2 NOT USED
+// --------------------------------------------------
+COPY_EXISTING ~spidph01.cre~ ~override/d9idph02.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Dire Wolf - Loup noir - Gender EXTRA2
+// -------------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9lfdi02.cre~ BEGIN
+	COPY_EXISTING ~wolfdi01.cre~ ~override/d9lfdi02.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Brown Bear - Ours brun - Gender EXTRA2
+// --------------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9vbeae.cre~ BEGIN
+	COPY_EXISTING ~vbearbr.cre~ ~override/d9vbeae.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Boalisk - Gender EXTRA2
+// -----------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9akeb0x.cre~ BEGIN
+	COPY_EXISTING ~snakeb01.cre~ ~override/d9akeb0x.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Panther - Panthère - Gender EXTRA2 NOT USED
+// ----------------------------------
+COPY_EXISTING ~catjag01.cre~ ~override/d9caty.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Boalisk - Gender EXTRA3
+// -----------------------
+COPY_EXISTING ~snakeb01.cre~ ~override/d9akeb0d.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Mutated Spider - Araignée mutante - Gender EXTRA3
+// -------------------------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsm02.cre~ BEGIN
+	COPY_EXISTING ~spidsm02.cre~ ~override/d9idsm02.cre~
+		WRITE_LONG  0x028 31236 //  araignée en peine animation 7a04 SPIDER_WRAITH
+		WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Mountain Bear - Ours de montagne - Gender EXTRA3
+// ---------------------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9arpo01.cre~ BEGIN
+	COPY_EXISTING ~bearpo01.cre~ ~override/d9arpo01.cre~
+		WRITE_BYTE  0x270 255   // Enemy
+		WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Giant Spider - Araignée géante - Gender EXTRA3 NOT USED
+// ----------------------------------------------
+COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw03.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
