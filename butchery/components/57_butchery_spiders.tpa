@@ -1,0 +1,145 @@
+/* =========================================================================================================================== *
+ *  v 5.0.0                                                                                                                    *
+ *           B U T C H E R Y    :    B u t c h e r i e s    i n    B o d h i ' s    H i d e o u t    ( P a i ' N a )           *
+ *                                   T e m p l e    C i t y    ( U n s e e i n g    E y e    P l o t )                         *
+ *                                   W a t c h e r ' s    K e e p    ( A l t a r    l e v e l )                                *
+ *                                   A r e a    o u t s i d e    S e n d a i ' s    H i d e o u t                              *
+ *                                                                                                                             *
+ * =========================================================================================================================== */
+
+SILENT
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+ACTION_IF NOT is_d9dwctyz BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9dwctyz.baf~
+END
+
+COMPILE ~%MOD_FOLDER%/spiders/d9idsw0a.baf~
+COMPILE ~%MOD_FOLDER%/spiders/d9idsw0b.baf~
+COMPILE ~%MOD_FOLDER%/spiders/d9idsw0c.baf~
+COMPILE ~%MOD_FOLDER%/spiders/d9idswxc.baf~
+
+
+// Scripts Extensions
+LAF extend_area_script STR_VAR area = "ar0204" top = "%MOD_FOLDER%/spiders/d9ar0204.baf" END
+LAF extend_area_script STR_VAR area = "ar0801" top = "%MOD_FOLDER%/spiders/d9ar0801.baf" END
+LAF extend_area_script STR_VAR area = "ar3001" top = "%MOD_FOLDER%/spiders/d9ar3001.baf" END
+LAF extend_area_script STR_VAR area = "ar6100" top = "%MOD_FOLDER%/spiders/d9ar6100.baf" END
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Sword Spider initiating butchery in Bodhi's Hideout (Pai'Na's Hideout entrance) [AR0801]
+// ----------------------------------------------------------------------------------------
+COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw0a.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9IDSW0A~ #8
+BUT_ONLY
+
+// Sword Spider initiating butchery in Temple City (Unseeing Eye Plot) [AR0204]
+// ----------------------------------------------------------------------------
+COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw0b.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9IDSW0B~ #8
+BUT_ONLY
+
+// Sword Spider initiating butchery in Watcher's Keep first floor (Altar level) [AR3001]
+// -------------------------------------------------------------------------------------
+COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw0c.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9IDSW0C~ #8
+BUT_ONLY
+
+// Sword Spider initiating butchery in Area outside Sendai's Hideout [AR6100]
+// --------------------------------------------------------------------------
+COPY_EXISTING ~spidsw01.cre~ ~override/d9idswxc.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9IDSWXC~ #8
+BUT_ONLY
+
+
+// Phase Spider - Araignée éclipsante
+// ----------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idph01.cre~ BEGIN
+	COPY_EXISTING ~spidph01.cre~ ~override/d9idph01.cre~
+		WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Giant Spider - Araignée géante
+// ------------------------------
+COPY_EXISTING ~spidgi01.cre~ ~override/d9idgi01.cre~
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Small Spider - Petite araignée
+// ------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsm01.cre~ BEGIN
+	COPY_EXISTING ~spidsm01.cre~ ~override/d9idsm01.cre~
+		WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Sword Spider - Araignée sabre - Gender EXTRA2
+// ---------------------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsw01.cre~ BEGIN
+	COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw01.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+
+// Phase Spider - Araignée éclipsante - Gender EXTRA2 NOT USED
+// --------------------------------------------------
+COPY_EXISTING ~spidph01.cre~ ~override/d9idph02.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Giant Spider - Araignée géante - Gender EXTRA2 NOT USED
+// ----------------------------------------------
+COPY_EXISTING ~spidgi01.cre~ ~override/d9idgi02.cre~
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Mutated Spider - Araignée mutante - Gender EXTRA3
+// -------------------------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsm02.cre~ BEGIN
+	COPY_EXISTING ~spidsm02.cre~ ~override/d9idsm02.cre~
+		WRITE_LONG  0x028 31236 //  araignée en peine animation 7a04 SPIDER_WRAITH
+		WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
+/* TODO
+COPY_EXISTING ~SPIDSM02.cre~ ~override/d9idsm02.cre~
+	WRITE_SHORT 0x024 100  // Current HP (vanilla 30)
+	WRITE_SHORT 0x026 100  // Maximum HP (vanilla 30)
+	WRITE_BYTE  0x052 0    // THAC0 (vanilla = 4)
+11
+	WRITE_SHORT 0x024 110  // Current HP (vanilla = 30)
+	WRITE_SHORT 0x026 110  // Maximum HP (vanilla = 30)
+*/
+
+// Sword Spider - Araignée sabre - Gender EXTRA3 NOT USED
+// ---------------------------------------------
+COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw03.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Giant Spider - Araignée géante - Gender EXTRA3
+// ----------------------------------------------
+COPY_EXISTING ~spidgi01.cre~ ~override/d9idgi03.cre~
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
