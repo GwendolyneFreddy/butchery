@@ -224,7 +224,7 @@ BUT_ONLY
 
 // More HP for Grizzly Bears
 // -------------------------
-COPY_EXISTING ~vbearbr.cre~ ~override~ // Brown Bear ???
+COPY_EXISTING ~vbearbr.cre~ ~override~ // Brown Bear !!??
               ~beargr.cre~  ~override~
 	WRITE_SHORT 0x024 80  // Current HP (vanilla = 74)
 	WRITE_SHORT 0x026 80  // Maximum HP (vanilla = 74)
@@ -245,7 +245,7 @@ BUT_ONLY
 // More HP for Mountain Bears (Ours de montagne)
 // ---------------------------------------------
 COPY_EXISTING ~bearpo01.cre~ ~override~
-	WRITE_LONG  0x0018 10                                             //level ???
+	WRITE_LONG  0x018 10                                             //level ???
 	WRITE_SHORT 0x024 120  // Current HP (vanilla = 66)
 	WRITE_SHORT 0x026 120  // Maximum HP (vanilla = 66)
 	WRITE_BYTE  0x052 0    // THAC0 (vanilla = 11)
@@ -319,9 +319,7 @@ BUT_ONLY
 COPY_EXISTING ~spidsm02.cre~ ~override~
 	WRITE_SHORT 0x024 110  // Current HP (vanilla = 30)
 	WRITE_SHORT 0x026 110  // Maximum HP (vanilla = 30)
-
-	WRITE_LONG  0x028 31236                                         //  araignée en peine animation 7a04 SPIDER_WRAITH
-
+	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~SPIDER_WRAITH~)
 	WRITE_BYTE  0x052 0    // THAC0 (vanilla = 4)
 BUT_ONLY
 
@@ -992,7 +990,7 @@ BUT_ONLY
  *  Turn Minotaur (near Beast Master) into a 5th Level Barbarian  *
  * -------------------------------------------------------------- */
 COPY_EXISTING ~icmin01.cre~ ~override~
-	REMOVE_CRE_ITEM ~AX1H01~  // Battle Axe
+	REMOVE_CRE_ITEM ~AX1H01~                                          // Battle Axe
 	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~STOLEN~ ~ARMOR~                   // Studded Leather Armor
 	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~                    // Helmet
 	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP TWOHANDED // Halberd

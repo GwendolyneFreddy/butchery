@@ -15,6 +15,15 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9boots.itm~ BEGIN
 END
 
 
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9tazokk.bcs~ BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9tazokk.baf~ // This script enforces Tazok to drink 2 potions before fighting
+END
+
+
 /* ---------------------- *
  *  Installing Portraits  *
  * ---------------------- */

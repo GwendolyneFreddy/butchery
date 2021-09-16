@@ -411,7 +411,8 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 ## 
 
 <a name="41" id="41"></a>&#10173; **[41] Boucherie de nains dans le Donjon d'Irenicus**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
 &#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le second niveau du Donjon d'Irenicus.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
@@ -421,7 +422,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="42" id="42"></a>&#10173; **[42] Boucherie pour les hautes et basses reputations**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-!warning: Ce composant est désactivé car il est toujours en phase de développement. N'essayez surtout pas de forcer son installation car il est buggé.
+:warning: Ce composant est désactivé car il est toujours en phase de développement. N'essayez surtout pas de forcer son installation car il est buggé.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -443,7 +444,8 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 ## 
 
 <a name="45" id="45"></a>&#10173; **[45] 3 boucheries dans Spellhold (golems, vampires et trolls)**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
 &#10173; Ce composant ajoute 3 batailles contre quelques dizaines d'ennemis dans l'Asile de Spellhold: Asile, premier niveau du labyrinthe et cave des trolls (test de folie).
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
@@ -561,7 +563,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 ## 
 
 <a name="80" id="80"></a>&#10173; **[80] Transformer BG2 en Dungeon crawler**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em>
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
@@ -574,7 +576,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <details><summary>&#160;&#160;Liste des zones concernées :</summary>
 <p>
 
-&#9755; <span style="text-decoration: underline;">Promenade de Waukyne</span>
+&#9755; <ins>Promenade de Waukyne</ins>
 - AR0601 : Air Plane dans le Donjon d'Irenicus
 - AR0602 : Donjon d'Irenicus (premier niveau)
 - AR0603 : Donjon d'Irenicus (second niveau)
@@ -582,26 +584,26 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 - AR0605 : Chapiteau du cirque (2e niveau)
 - AR0606 : Chapiteau du cirque (3e niveau)
 
-&#9755; <span style="text-decoration: underline;">Les Bas Quartiers</span>
+&#9755; <ins>Les Bas Quartiers</ins>
 - AR0404 : Égouts sous la Couronne de Cuivre
 - AR0418 : Égouts sous la Couronne de Cuivre (Myconides)
 - AR0405 : Bloc des esclavagistes
 - AR0419 : Sphère planaire (Myconide)
 - AR0420 : Sphère planaire (Hommes-lézards)
 
-&#9755; <span style="text-decoration: underline;">Les Temples</span>
+&#9755; <ins>Les Temples</ins>
 - AR0201 : Chemin vers la ville des goules et l'antre de l'Œil aveugle
 - AR0206 : Ville des goules
 - AR0204 : Temple d'Amaunator (antre du culte de l'Œil aveugle)
 - AR0205 : Antre de l'Œil aveugle
 
-&#9755; <span style="text-decoration: underline;">Le Pont</span>
+&#9755; <ins>Le Pont</ins>
 - AR0502 : Échoppe du tanneur (cave)
 - AR0503 : Échoppe du tanneur (embarcadère)
 - AR0525 : Maison (1er étage)
 - AR0701 : Les égouts
 
-&#9755; <span style="text-decoration: underline;">Le Cimetière</span>
+&#9755; <ins>Le Cimetière</ins>
 - AR0801 : Repaire de Bodhi
 - AR0803 : Tombeau de Bodhi
 - AR0802 : Tombeaux du Parchemin Néthère
@@ -610,13 +612,13 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 - AR0811 : Crypte
 - AR0812 : Crypte
 
-&#9755; <span style="text-decoration: underline;">Autres cartes de SoA</span>
+&#9755; <ins>Autres cartes de SoA</ins>
 - AR1106 : Grotte d'Umar
 - AR1201 : Collines de Lancevent (entrée du Donjon de Firkraag)
 - AR1202 : Collines de Lancevent (Labyrinthe de Firkraag)
 - AR2013 : Crypte de Franc-Marché
 
-&#9755; <span style="text-decoration: underline;">ToB</span>
+&#9755; <ins>ToB</ins>
 - AR2602 : Forêt de Téthyr: Cave dans les bois
 </p>
 </details><br>
@@ -728,7 +730,7 @@ Les créateurs de la série Baldur's Gate : <a href="https://www.bioware.com/">Bio
 - <a href="https://gibberlings3.github.io/iesdp/">IESDP</a> maintenu par igi et lynx.
 - <a href="http://notepad-plus-plus.org/">Notepad++</a> par l'équipe de Notepad++, Don Ho, et le plug-in de correction orthographique.
 - <a href="http://www.shsforums.net/files/file/1048-weidu-highlighter-for-notepad/">WeiDU Notepad++ Highlighters </a> de Argent77.
-- <a href=""https://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a> de TGRMN Software.
+- <a href="https://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a> de TGRMN Software.
 
 ## 
 
@@ -769,7 +771,7 @@ Les créateurs de la série Baldur's Gate : <a href="https://www.bioware.com/">Bio
 	- Used new WeiDU variables (INV RING QITEM...) with `ADD_CRE_ITEM` command.
 	- Provided new portraits for BG2:EE.
 	- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function to install soundsets.
-	- Used `HANDLE_CHARSETS` function to add BG2EE compatibility for languages other than English.
+	- Used WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
 	- Deleted unused files from mod folder.
 	- Updated readme (Butchery now supports translated readmes)
 	- Revamped French translation and fixed English typos courtesy of Gwendolyne.

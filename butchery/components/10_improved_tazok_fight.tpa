@@ -10,8 +10,8 @@ SILENT
  *  Installing Items  *
  * ------------------ */
 
-COPY ~%MOD_FOLDER%/items/d9boots.itm~	~override~ // boots providing immunity to backstab for BARBARIAN
-COPY ~%MOD_FOLDER%/items/d9nofog.itm~	~override~ // clean fog ring
+COPY ~%MOD_FOLDER%/items/d9boots.itm~ ~override~ // boots providing immunity to backstab for BARBARIAN
+COPY ~%MOD_FOLDER%/items/d9nofog.itm~ ~override~ // clean fog ring
 
 
 /* ---------------------- *
@@ -20,38 +20,38 @@ COPY ~%MOD_FOLDER%/items/d9nofog.itm~	~override~ // clean fog ring
 
 // Another Tazok for cutscene
 // --------------------------
-COPY_EXISTING ~tazok.cre~  ~override/d9tazok.cre~
+COPY_EXISTING ~tazok.cre~ ~override/d9tazok.cre~
 	ADD_CRE_ITEM ~d9nofog~ #0 #0 #0 ~NONE~ ~RING~  // Adds a fog ring to d9tazok
 	WRITE_LONG 0x028 slot_halfogre                 // Half Ogre animation - DEPRECATED WRITE_SHORT 0x028 28672
 
 // Orc range weapon, throwing axe
 // ------------------------------
-COPY ~%MOD_FOLDER%/cre/d9orc01.cre~   ~override~
+COPY ~%MOD_FOLDER%/tazok1/d9orc01.cre~ ~override~
 	WRITE_LONG 0x0244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
 
 // Orc range weapon, following Player1
 // -----------------------------------
-COPY ~%MOD_FOLDER%/cre/d9orgahj.cre~  ~override~
+COPY ~%MOD_FOLDER%/tazok1/d9orgahj.cre~ ~override~
 	WRITE_LONG	0x0244 0x00004000                  // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
 //	ADD_CRE_ITEM ~d9boots~ #0 #0 #0 ~NONE~ ~BOOTS~
 
 // 2 Orogs tell Dig Dag to drink potions coz party is coming, they also drink a potion of absorption
 // -------------------------------------------------------------------------------------------------
-COPY ~%MOD_FOLDER%/cre/d9orc05.cre~   ~override~
-     ~%MOD_FOLDER%/cre/d9orc05b.cre~  ~override~
+COPY ~%MOD_FOLDER%/tazok1/d9orc05.cre~  ~override~
+     ~%MOD_FOLDER%/tazok1/d9orc05b.cre~ ~override~
 	ADD_CRE_ITEM ~POTN18~ #1 #0 #0 ~NONE~ ~INV~    // Potion of Absorption
 	WRITE_LONG 0x0244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity backstab, resistance)
 
 // Orc Melee following Player1
 // ---------------------------
-COPY ~%MOD_FOLDER%/cre/d9orgame.cre~  ~override~
+COPY ~%MOD_FOLDER%/tazok1/d9orgame.cre~ ~override~
 	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP  // Halberd
 //	ADD_CRE_ITEM ~d9boots~ #0 #0 #0 ~NONE~ ~BOOTS~
 	WRITE_LONG 0x0244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
 
 // Ogre Berserker not following Player1
 // ------------------------------------
-COPY ~%MOD_FOLDER%/cre/d9ogrga.cre~   ~override~
+COPY ~%MOD_FOLDER%/tazok1/d9ogrga.cre~ ~override~
 	SAY NAME1 @101
 	SAY NAME2 @101
 	WRITE_ASCII SCRIPT_RACE ~~ #8
@@ -59,7 +59,7 @@ COPY ~%MOD_FOLDER%/cre/d9ogrga.cre~   ~override~
 
 // Ogre Barbarian not following Player1
 // ------------------------------------
-COPY ~%MOD_FOLDER%/cre/d9ogrga2.cre~  ~override~
+COPY ~%MOD_FOLDER%/tazok1/d9ogrga2.cre~ ~override~
 	SAY NAME1 @102
 	SAY NAME2 @102
 	WRITE_LONG  0x014 600                           // XP value (when killed)
@@ -71,13 +71,13 @@ COPY ~%MOD_FOLDER%/cre/d9ogrga2.cre~  ~override~
 
 // Ogre Mage enemy with GENSHT01 script
 // ------------------------------------
-COPY_EXISTING ~ogrema01.cre~  ~override/d9ogmage.cre~
+COPY_EXISTING ~ogrema01.cre~ ~override/d9ogmage.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~ #8
 
 // Groumf (L13 Berserker) and Bourrinos (L11 Barbarian) protect TAZOK. d9gro ???
 // -----------------------------------------------------------------------------
 // NEW in cre file: writes sex variables and DEATHVAR set to D9GROUMT (former D9GROUM4) and D9BOURT (former D9BOUR14)
-COPY ~%MOD_FOLDER%/cre/d9groumt.cre~  ~override~
+COPY ~%MOD_FOLDER%/tazok1/d9groumt.cre~ ~override~
 	SAY NAME1 @104
 	SAY NAME2 @104
 	WRITE_BYTE  0x270 255                                         // Allegiance Enemy
@@ -110,7 +110,7 @@ COPY ~%MOD_FOLDER%/cre/d9groumt.cre~  ~override~
 	SAY REACT_TO_DIE_GENERAL    ~~ [d9grouw]
 BUT_ONLY
 
-COPY ~%MOD_FOLDER%/cre/d9bourt.cre~   ~override~
+COPY ~%MOD_FOLDER%/tazok1/d9bourt.cre~ ~override~
 	SAY NAME1 @105
 	SAY NAME2 @105
 	WRITE_BYTE  0x270 255                                           // Allegiance Enemy
@@ -143,25 +143,27 @@ BUT_ONLY
  * ---------------------------------- */
 
 // Maybe I should let Groumf and Bourrinos drink a potion like Tazok, I will see in the future.
-COMPILE ~%MOD_FOLDER%/baf/d9groumt.baf~
-        ~%MOD_FOLDER%/baf/d9bourt.baf~
-        ~%MOD_FOLDER%/baf/d9orc05.baf~
-        ~%MOD_FOLDER%/baf/d9orc05b.baf~
+COMPILE ~%MOD_FOLDER%/tazok1/d9groumt.baf~
+        ~%MOD_FOLDER%/tazok1/d9bourt.baf~
+        ~%MOD_FOLDER%/tazok1/d9orc05.baf~
+        ~%MOD_FOLDER%/tazok1/d9orc05b.baf~
 
 // CutScenes in Firkraag's lair
 // ----------------------------
-//COPY ~%MOD_FOLDER%/Items/d9nofog.itm~ ~override~	// DEPRECATED af of v4.0.0 : Removed because redundant.
-        ~%MOD_FOLDER%/baf/d9cutta.baf~
-        ~%MOD_FOLDER%/baf/d9cutta1.baf~
-        ~%MOD_FOLDER%/baf/d9cutta2.baf~
+//COPY ~%MOD_FOLDER%/Items/d9nofog.itm~ ~override~	// DEPRECATED as of v4.0.0 : Removed because redundant.
+        ~%MOD_FOLDER%/tazok1/d9cutta.baf~
+        ~%MOD_FOLDER%/tazok1/d9cutta1.baf~
+        ~%MOD_FOLDER%/tazok1/d9cutta2.baf~
 
 // Scripts and dialogues for Tazok and DigDag
 // ------------------------------------------
-        ~%MOD_FOLDER%/baf/d9tazokk.baf~ // This script enforces Tazok to drink 2 potions before fighting
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9tazokk.bcs~ BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9tazokk.baf~ // This script enforces Tazok to drink 2 potions before fighting
+END
 
-EXTEND_TOP ~firorc01.bcs~  ~%MOD_FOLDER%/baf/d9firorc.baf~
+EXTEND_TOP ~firorc01.bcs~ ~%MOD_FOLDER%/tazok1/d9firorc.baf~
 
-COMPILE ~%MOD_FOLDER%/dlg/d9firorc.d~  // USING ~%MOD_FOLDER%/lang/%s/d9firorc.tra~
+COMPILE ~%MOD_FOLDER%/tazok1/d9firorc.d~  // USING ~%MOD_FOLDER%/lang/%s/d9firorc.tra~
 
 
 /* DEPRECATED as of v4.0.0 (replaced with function extend_area_script defined in ALWAYS block): sets an area script to AR1203
@@ -171,8 +173,8 @@ BUT_ONLY */
 
 // Scripts Extensions (As of v5.0.0, extend top scripts instead of bottom)
 // -----------------------------------------------------------------------
-LAF ~extend_area_script~ STR_VAR area = "ar1202" top = "%MOD_FOLDER%/baf/d9ar1202.baf" END
-LAF ~extend_area_script~ STR_VAR area = "ar1203" top = "%MOD_FOLDER%/baf/d9ar1203.baf" END
+LAF ~extend_area_script~ STR_VAR area = "ar1202" top = "%MOD_FOLDER%/tazok1/d9ar1202.baf" END
+LAF ~extend_area_script~ STR_VAR area = "ar1203" top = "%MOD_FOLDER%/tazok1/d9ar1203.baf" END
 
 
 /* ---------------------- *

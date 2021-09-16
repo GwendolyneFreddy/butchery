@@ -431,7 +431,8 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 ## 
 
 <a name="41" id="41"></a>&#10173; **[41] Butchery in Irenicus Dungeon (Dwarves)**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em></em>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
 
 &#10173; This component adds a battle against a few dozen enemies in Irenicus Dungeon 2nd floor area.
 <div align="right"><a href="#components">Back to components list</a></div>
@@ -441,7 +442,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="42" id="42"></a>&#10173; **[42] Butchery for high and low reputation**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-!warning: This component is disabled because it is still under development. Do not try to force its installation as it is bugged.
+:warning: This component is disabled because it is still under development. Do not try to force its installation as it is bugged.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -463,7 +464,8 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 ## 
 
 <a name="45" id="45"></a>&#10173; **[45] 3 butcheries in Spellhold (Golems, Vampires and Trolls)**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
 
 &#10173; This component adds 3 battles against a few dozen enemies in Spellhold: Spellhold, Bodhi's Hunt Level 1, and Troll Cave (Spellhold Test).
 <div align="right"><a href="#components">Back to components list</a></div>
@@ -563,7 +565,8 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 ## 
 
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
+<a name="57" id="57"></a>&#10173; **[57] 4 butcheries of spiders**
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
 &#10173; This component adds a battle against a few dozen enemies in front of Pai'Na's Hideout entrance (Bodhi's Hideout), the Temple City (Unseeing Eye Plot) area, Watcher's Keep 1st floor (Altar level) and in the area outside Sendai's Hideout. 
 <div align="right"><a href="#components">Back to components list</a></div>
@@ -580,20 +583,18 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 ## 
 
 <a name="80" id="80"></a>&#10173; **[80] Transformer BG2 en Dungeon crawler**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em>
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
-<div align="right"><a href="#components">Retour à la liste des composants</a></div>
+&#10173; This component adds a lot of enemies in areas that are usually very quiet and unchallenging. This makes the gameplay more like a Dungeon Crawler, like in Icewind Dale.
 
-&#10173; Ce composant ajoute bon nombre d'ennemis dans des endroits habituellement très calmes et sans challenge. Le gameplay se rapproche ainsi davantage d'un Dungeon Crawler, comme dans Icewind Dale.
-
-<ins>Note</ins> : Ce composant étant assez difficile, contrairement aux composants précédents, régler le niveau de difficulté du jeu restera sans effet. J'ai pris cependant soin de définir un challenge raisonnable.
+<ins>Note</ins>: This component being quite difficult, unlike the previous ones, adjusting the difficulty level of the game will have no effect. However, I have taken care to set a reasonable challenge.
 
 
 <details><summary>&#160;&#160;List of affected areas:</summary>
 <p>
 
-&#9755; <span style="text-decoration: underline;">Waukeen's Promenade</span>
+&#9755; <ins>Waukeen's Promenade</ins>
 - AR0601: Air Plane in Irenicus's Dungeon
 - AR0602: Irenicus's Dungeon 1st Floor
 - AR0603: Irenicus's Dungeon 2nd Floor
@@ -601,26 +602,26 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 - AR0605: Circus Tent 2nd Floor
 - AR0606: Circus Tent 3rd Floor
 
-&#9755; <span style="text-decoration: underline;">Slums District</span>
+&#9755; <ins>Slums District</ins>
 - AR0404: Sewers beneath Coronet
 - AR0418: Sewers beneath Coronet (Myconids)
 - AR0405: Slaver's Ship Building
 - AR0419: Planar Sphere (Myconid)
 - AR0420: Planar Sphere (Lizardmen Hideout)
 
-&#9755; <span style="text-decoration: underline;">Temple District</span>
+&#9755; <ins>Temple District</ins>
 - AR0201: Leading to ghoul village and beholder lair
 - AR0206: Ghoul village
 - AR0204: The Forgotten Believers - Temple City (Unseeing Eye Plot)
 - AR0205: The Beholder Hideout (Unseeing Eye Plot)
 
-&#9755; <span style="text-decoration: underline;">Bridge</span>
+&#9755; <ins>Bridge</ins>
 - AR0502: Tanner's Hideout Cellar
 - AR0503: Tanner's Hideout Dock
 - AR0525: House 1st Floor
 - AR0701: The Sewers
 
-&#9755; <span style="text-decoration: underline;">Graveyard</span>
+&#9755; <ins>Graveyard</ins>
 - AR0801: Bodhi's Hideout (sided with Aran)
 - AR0803: Bodhi's Lair (sided with Aran)
 - AR0802: Netherscroll, Korgan's Book, Edwin
@@ -629,13 +630,13 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 - AR0811: Crypt
 - AR0812: Crypt
 
-&#9755; <span style="text-decoration: underline;">Other SoA areas</span>
+&#9755; <ins>Other SoA areas</ins>
 - AR1106: Umar's Cave
 - AR1201: Firkraag's Entrance
 - AR1202: Firkaag's Maze
 - AR2013: Trademeet Crypt
 
-&#9755; <span style="text-decoration: underline;">ToB</span>
+&#9755; <ins>ToB</ins>
 - AR2602 Forest of Tethyr: Cave in Woods to Suldanessellar
 </p>
 </details><br>
@@ -747,7 +748,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 - <a href="https://gibberlings3.github.io/iesdp/">IESDP</a>, maintained by igi and lynx.
 - <a href="http://notepad-plus-plus.org/">Notepad++</a>, by the Notepad++ team, Don Ho, and the spellcheck plug-in.
 - <a href="http://www.shsforums.net/files/file/1048-weidu-highlighter-for-notepad/">WeiDU Notepad++ Highlighters </a>, by Argent77.
-- <a href=""https://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a>, by TGRMN Software.
+- <a href="https://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a>, by TGRMN Software.
 
 ## 
 
@@ -808,7 +809,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 - "*Rebalancing some generic creatures*" component:
     - Renamed .tpa file name to *11_rebalancing_creatures.tpa*.
     - Improved more creatures statistics.
-- "*Rebalancing Tazok and DigDag*" component::
+- "*Rebalancing Tazok and DigDag*" component:
     - Renamed .tpa file name to *12_rebalancing_tazok.tpa*.
     - Flagged potions as "undroppable" in creatures' inventories.
 - ...
