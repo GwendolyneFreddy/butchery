@@ -769,7 +769,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 - Replaced `REQUIRE_FILE` condition with `REQUIRE_PREDICATE` to avoid installing the mod in inaccurate games.
 - Commented code as much as possible.
 - Fixed installer to avoid installing the same files more than once, regardless of the components installed.
-- Added native EE and EET compatibility (thanks Austin!):
+- Added native EE and EET compatibility:
     - Added chapters continuity for EET games.
     - Provided accurate sized NPC portraits for EE games.
 - Added "*Groumf and Bourrinos Encounter at Firkraag's Hideout entrance*" component.

@@ -152,7 +152,7 @@ END
 // -------------------------------------------------
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsm02.cre~ BEGIN
 	COPY_EXISTING ~spidsm02.cre~ ~override/d9idsm02.cre~
-		WRITE_LONG  0x028 31236 //  araignée en peine animation 7a04 SPIDER_WRAITH
+		WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~SPIDER_WRAITH~)
 		WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	BUT_ONLY
@@ -166,7 +166,7 @@ COPY_EXISTING ~valran03.cre~ ~override/d9valr2.cre~
 	WRITE_LONG  0x01c 26                  // Gold (vanilla = 0)
 	WRITE_SHORT 0x024 50                  // Current HP (vanilla = 75)
 	WRITE_SHORT 0x026 50                  // Maximum HP (vanilla = 75)
-	WRITE_LONG  0x028 24833               // fighter elf animation  male
+	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~FIGHTER_MALE_ELF~)
 	WRITE_SHORT 0x046 10                  // Natural AC (vanilla = 2)
 	WRITE_SHORT 0x048 12                  // Effective AC (vanilla = 2)
 	WRITE_BYTE  0x052 15                  // THAC0 (vanilla = 9)
@@ -220,7 +220,7 @@ COPY_EXISTING ~cefgt04.cre~ ~override/d9fgt0x.cre~   // 12B
 	WRITE_BYTE  0x0237 ~2~  // Sexe = female
 	WRITE_BYTE  0x270 255   // Enemy
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
-    WRITE_SHORT 0x28 24593                                         // fighter elf animation  female
+	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~CLERIC_FEMALE_ELF~)
 
 	SAY INITIAL_MEETING  #11063  // ~Greetings, adventurers.~ [FELFF01] - ~Bonjour, et salut à vous.~ [FELFF01]
 	SAY DAMAGE           #11075  // ~~ [FELFF05]
@@ -255,8 +255,7 @@ COPY_EXISTING ~druid8b.cre~ ~override/d9uid8b.cre~   //12 A
 	SAY NAME2 @5206
 	REMOVE_CRE_ITEM ~STAF01~
 	ADD_CRE_ITEM ~STAF01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP / Quaterstaff
-
-	WRITE_LONG 0x28 24593                                         // fighter elf animation  female
+	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~CLERIC_FEMALE_ELF~)
 	// Soundset
 	SAY INITIAL_MEETING  #11063  // ~Greetings, adventurers.~ [FELFF01] - ~Bonjour, et salut à vous.~ [FELFF01]
 	SAY DAMAGE           #11075  // ~~ [FELFF05]
@@ -305,8 +304,7 @@ COPY_EXISTING ~druid10b.cre~ ~override/d9uid10b.cre~   //12A
 	SAY NAME2 @5207
 	REMOVE_CRE_ITEM ~STAF01~
 	ADD_CRE_ITEM ~SPER01~ #0 #0 #0 ~NONE~ ~WEAPON1~ // Spear
-
-    WRITE_LONG 0x28 24592                                        // cleric female humain animation
+	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~CLERIC_FEMALE_HUMAN~)
 	// Soundset
 	SAY INITIAL_MEETING  #11063  // ~Greetings, adventurers.~ [FELFF01] - ~Bonjour, et salut à vous.~ [FELFF01]
 	SAY DAMAGE           #11075  // ~~ [FELFF05]

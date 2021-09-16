@@ -792,14 +792,13 @@ BUT_ONLY
 // ----------------------
 COPY_EXISTING ~dcleric.cre~ ~override~
 	REMOVE_CRE_ITEM ~STAF01~
-WRITE_LONG 0x028 24576 //0x6000 (CLERIC_MALE_HUMAN)
-
 	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~          // Helmet
 	ADD_CRE_ITEM ~PLAT05~ #0 #0 #0 ~STOLEN~ ~ARMOR~         // Plate of the Dark +1
 	ADD_CRE_ITEM ~BLUN04~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP // Mace
 	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~STOLEN~ ~SHIELD~        // Large Shield
 	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~   // 7 Potions of Extra Healing
 	WRITE_LONG  0x01c 69                                    // Gold (vanilla = 20)
+	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~CLERIC_MALE_HUMAN~)
 	WRITE_SHORT 0x046 10                                    // Natural AC (vanilla = 4)
 	WRITE_SHORT 0x048 10                                    // Effective AC (vanilla = 4)
 	WRITE_BYTE  0x052 11                                    // THAC0 (vanilla = 14)
