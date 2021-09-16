@@ -1,15 +1,17 @@
 // Creatures names
 // ---------------
-@101 = ~Berserker ogre~	// = BG2 string #17561 and 17562
+@101 = ~Berserker ogre~ // = BG2 strrefs #17561 and 17562
 @102 = ~Ogre barbare~
 //@26  = ~Tenardiar~	DEPRECATED
 @104 = ~Groumf~
 @105 = ~Bourrinos~
-/* DEPRECATED
+@106 = ~Barbare~        // = BG2 strrefs #45859 and 45863
+/* DEPRECATED ==> DO NOT TRANSLATE
 @10023  = ~Barbare~
 @11100  = ~Adepte Barbare~
 @11200  = ~Prêtre de Silvanus~
 */
+
 
 // Creatures soundsets
 // -------------------
@@ -21,36 +23,156 @@
 @206 = ~Encore du sang !~ [d9grou0]
 
 @211 = ~À mort !~ [d9bara9]
-@212 = ~Baston !~ [d9baraa] brawl
+@212 = ~Baston !~ [d9baraa] // "Baston!" in French is a slang word for rumble, brawl
 @213 = ~Ouais !~ [d9barag]
 @214 = ~Quoi ?!~ [d9barah]
 
+
 // Creatures scripts
 // -----------------
-@301 = ~avale une potion d'absorption~	// former @454
-@302 = ~avale une potion de pouvoir~	// former @456
-@303 = ~avale une potion d'agilité~		// former @457
-@304 = ~avale une potion de défense~	// former @453
-//@455 = ~avale une potion de statue~	// DEPRECATED
-//@452 = ~Gloups!~						// DEPRECATED
+@301 = ~avale une potion d'absorption~ // former @454
+@302 = ~avale une potion de pouvoir~   // former @456
+@303 = ~avale une potion d'agilité~    // former @457
+@304 = ~avale une potion de défense~   // former @453
+//@455 = ~avale une potion de statue~  // DEPRECATED ==> DO NOT TRANSLATE
+//@452 = ~Gloups!~                     // DEPRECATED ==> DO NOT TRANSLATE
 
 // d9ar1203.baf
 // ------------
 @321 = ~Une barrière magique apparait soudainement et vous empêche de faire demi-tour.~ // former @480
-@322 = ~DigDag, le monstrueux chef des orques, est mort et sa horde de barbares abandonne peu à peu le combat. Cependant, vous sentez que la bataille ne fait que commençer et vous feriez mieux de vous préparer au prochain assaut !~ // former @460
-@323 = ~Cette fois-çi, Tazok a définitivement rejoint Sarevok en enfer, et ses laquais ne vous importuneront plus très longtemps.~ // former @461
+@322 = ~DigDag, le monstrueux chef des orques, est mort et sa horde de barbares abandonne peu à peu le combat. Cependant, vous sentez que la bataille ne fait que commencer et vous feriez mieux de vous préparer au prochain assaut !~ // former @460
+@323 = ~Cette fois-ci, Tazok a définitivement rejoint Sarevok en enfer, et ses laquais ne vous importuneront plus très longtemps.~ // former @461
 
 // d9cutta1.baf
 // ------------
 @331 = ~Ha ha ha ! Ces imbéciles sont tombés dans notre piège. Ils ont surement hâte que j'en finisse avec eux !~ // former @470
-//@471 = ~Par la fureur de Tempus !~	DEPRECATED
-@333 = ~Gaaarde à vous !~ // former @472
-@334 = ~Dis donc, qu'est ce que t'es moche, toi !~ // former @473
-@335 = ~Oui, Ô puissance démoniaque !~ // former @474
-@336 = ~La barrière magique est en place, mon seigneur. Ils ne peuvent pas s'échapper.~ // former @475
-@337 = ~Excellent ! Le maître sera satisfait, et j'aurai enfin ma vengeance !~ // former @476
-/* DEPRECATED
+@333 = ~Gaaarde à vous !~                                                                                         // former @472
+@334 = ~Dis donc, qu'est ce que t'es moche, toi !~                                                                // former @473
+@335 = ~Oui, Ô puissance démoniaque !~                                                                            // former @474
+@336 = ~La barrière magique est en place, mon seigneur. Ils ne peuvent pas s'échapper.~                           // former @475
+@337 = ~Excellent ! Le maître sera satisfait, et j'aurai enfin ma vengeance !~                                    // former @476
+/* DEPRECATED ==> DO NOT TRANSLATE
 @477 = ~J'vais vous écraser 
 le nez !~
 @479 = ~Soignez ces deux imbéciles. Ils devront racheter leur incompétence auprès du maître.~
 */
+
+// d9groum8.baf : Meeting with Groumf and Bourrinos in the Underdark
+// -----------------------------------------------------------------
+@2201 = ~Encore des elfes noirs !
+À l'assaut et pas de 
+quartier !~
+
+
+/* ------------------------------------------------ *
+ *  Revisited fight against Wraith Sarevok in Hell  *
+ * ------------------------------------------------ */
+@3000 = ~Angelo~              // = BG2 strrefs #7161 and 7692
+@3001 = ~Semaj~               // = BG2 strrefs #19592 and 19593
+@3002 = ~Tamoko~              // = BG2 strrefs #11910 and 19935
+//@3003 = ~Tazok~             // DEPRECATED ==> DO NOT TRANSLATE
+@3004 = ~Mulahey~             // = BG2 strrefs #11918 and 2797
+@3007 = ~Diarmid~             // = BG2 strrefs #11023 and 11024
+@3008 = ~Cythandria~          // = BG2 strrefs #20435 and 20436
+@3009 = ~Krystin~             // = BG2 strrefs #12250 and 12295
+@3010 = ~Slythe~              // = BG2 strrefs #12249 and 12294
+@3011 = ~Gardush~             // = BG2 strrefs #1766 and 1767
+@3013 = ~Aasim~               // = BG2 strrefs #17817 and 17818
+//@14584 = ~Diyab~            // = BG2 strrefs #17820 and 17821 DEPRECATED ==> DO NOT TRANSLATE
+@3015 = ~Zhalimar Nuageloup~  // = BG2 strrefs #17828 and 17829
+@3016 = ~Davaeorn~            // = BG2 strrefs #12241 and 12286
+
+// d9sarevo.baf
+// ------------
+@3050 = ~À moi, mes fidèles !~
+@3051 = ~Ha ha ha ! Ce n'est pas fini !~
+//@14552 = ~Semaj ! Noooon !~  // unused ==> DO NOT TRANSLATE
+//@14553 = ~Tamoko ! Noooon !~ // unused ==> DO NOT TRANSLATE
+//@14554 = ~Tazok ! Noooon !~  // unused ==> DO NOT TRANSLATE
+@3056 = ~Non ! Regarde ce que tu as fait ! MEURS !~
+@3057 = ~Maintenant que ses larbins sont défaits, Sarevok est vulnérable à vos attaques.~
+
+
+/* ------------------- *
+ *  DrAzTiK creatures  *
+ * ------------------- */
+@4000 = ~Berseker nain novice~
+@4001 = ~Guerrier nain novice~
+@4002 = ~Berseker nain expérimenté~
+@4003 = ~Guerrier nain d'élite~
+@4004 = ~Prêtre nain novice~
+@4005 = ~Prêtre nain expérimenté~
+
+@4010 = ~Prêtre squelette novice~
+@4011 = ~Magicien squelette novice~
+@4012 = ~Prêtre squelette expérimenté~
+@4013 = ~Magicien squelette expérimenté~
+
+@14874 = ~Vampire mage~ 4014
+
+@4015 = ~Prêtre squelette d'élite~
+@4016 = ~Magicien squelette d'élite~
+
+
+/* --------------------------------- *
+ *  Butchery in Umar Hills - Wolves  *
+ * --------------------------------- */
+@4800 = ~Du sang, du sang pour la meute !~
+
+
+/* ---------------------------------- *
+ *  Butchery of Yaga Shura revisited  *
+ * ---------------------------------- */
+@5010 = ~Les ennemis sont en difficulté et Yaga Shura devrait bientôt faire son apparition !~
+
+
+/* ------------------------------------------------------- *
+ *  Butchery in the Druid Grove area (Animals and Druids)  *
+ * ------------------------------------------------------- */
+@5201 = ~Rôdeur de l'ombre~
+//@5202 = ~Rôdeur de l'ombre d'élite~ // unused ==> DO NOT TRANSLATE
+@5203 = ~Druide de l'ombre novice~
+@5204 = ~Druide de l'ombre~           // = strref #43845 (BG2EE)
+@5205 = ~Druide de l'ombre d'élite~
+@5206 = ~Druidesse de l'ombre~
+@5207 = ~Druidesse de l'ombre d'élite~
+
+@14650 = ~Avec la mort de leur druides, les forces de la nature semblent se manifester contre vous.~
+
+
+/* ------------------------- *
+ *  Butcheries of Sahuagins  *
+ * ------------------------- */
+@5600 = ~Rebelle novice~
+@5601 = ~Prêtresse novice~
+@5602 = ~Rebelle~          // = strref #46533 (BG2EE)
+@5603 = ~Rebelle d'élite~
+@5604 = ~Prêtresse~        // = strref #49747 (BG2EE)
+@5605 = ~Grande prêtresse~
+
+
+/* ------------------------- *
+ *  Butcheries of Skeletons  *
+ * ------------------------- */
+@5800 = ~Ha ha ha ! Jamais tu n'aurais dû parvenir jusqu'ici !~   // former @14662
+@5801 = ~Alerte ! Des intrus osent pénétrer dans notre repaire !~ // former @14663
+
+
+/* -------------------------------------------- *
+ *  More enemies scattered throughout the game  *
+ * -------------------------------------------- */
+@8000 = ~QUI OSE TROUBLER MON REPOS !~
+@8001 = ~ENCORE DES AVENTURIERS VENUS POUR VOLER MON TRÉSOR !~
+@8002 = ~JE VAIS TOUS VOUS EXTERMINER ! TREMBLEZ DEVANT MA PUISSANCE !~
+@8003 = ~DrAzTiK~
+
+
+/* --------------------------- *
+ *  Shared by many components  *
+ * --------------------------- */
+@14660 = ~Pauvre fou, nous sommes bien plus nombreux que tu ne le penses !~ ~Pauvre folle, nous sommes bien plus nombreux que tu ne le penses !~
+@14661 = ~Les ennemis semblent arriver de partout !~
+@14664 = ~Des intrus dans le repaire du maitre, détruisez les tous !~
+@14665 = ~Maitresse Bodhi a décidé de te tester, enfant de Bhaal !~
+@14666 = ~Ce lieu sera ton tombeau !~
+
