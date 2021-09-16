@@ -10,11 +10,9 @@
  *  This code only runs once, even if you install lots of components.  *
  * =================================================================== */
 
-ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
+ACTION_IF !VARIABLE_IS_SET bg2_chapter BEGIN // Always block must run only once per install!
 
 	SILENT
-
-	OUTER_SET always_once_section = 1
 
 	/* -------------------------------------------------------------------------------- *
 	 *    Determines which game is installed and if the game is an Enhanced Edition.    *
@@ -37,28 +35,43 @@ ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
 	END
 
 
-	///////////////////////////////
-	//    Create a blank file    //
-	///////////////////////////////
+	/* ----------------------------------------------------------------------------------- *
+	 *    Animation slot for chieftain orog in EE and classic BG2 have different labels    *
+	 * ----------------------------------------------------------------------------------- */
 
-	<<<<<<<< .../butchery-inline/blank
+	OUTER_SET slot_halfogre = IDS_OF_SYMBOL(~ANIMATE~ ~HALF_OGRE~)
+	OUTER_SET slot_orogchief = (is_ee = 1) ? IDS_OF_SYMBOL(~ANIMATE~ ~OROG_CHIEFTAIN~) : IDS_OF_SYMBOL(~ANIMATE~ ~OROG3~)
 
->>>>>>>>
+
+	/* ------------------------------------------- *
+	 *    EET chapters continuity compatibility    *
+	 * ------------------------------------------- */
+		ACTION_IF is_eet BEGIN
+			OUTER_SET bg2_chapter = 12
+		END ELSE BEGIN
+			OUTER_SET bg2_chapter = 0
+		END
+		OUTER_FOR (i = 1 ; i <= 10 ; ++i) BEGIN
+			OUTER_SET bg2_chapter = bg2_chapter + 1
+			OUTER_SPRINT name_source ~bg2_chapter_%i%~
+			OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+		END
 
 
-	/////////////////////////////////////////////////
-	//    Load in any shared function libraries    //
-	/////////////////////////////////////////////////
+	/* -------------------------------------------- *
+	 *    Loads in any shared function libraries    *
+	 * -------------------------------------------- */
 
 	INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 
 
-	/////////////////////////////////////////////////////////////////////////////////////////
-	//    Animation slot for chieftain orog in EE and classic BG2 have different labels    //
-	/////////////////////////////////////////////////////////////////////////////////////////
+	/* -------------------------- *
+	 *    Creates a blank file    *
+	 * -------------------------- */
 
-	OUTER_SET slot_halfogre = IDS_OF_SYMBOL(~ANIMATE~ ~HALF_OGRE~)
-	OUTER_SET slot_orogchief = (is_ee = 1) ? IDS_OF_SYMBOL(~ANIMATE~ ~OROG_CHIEFTAIN~) : IDS_OF_SYMBOL(~ANIMATE~ ~OROG3~)
+	<<<<<<<< .../butchery-inline/blank
+
+>>>>>>>>
 
 
 	///////////////////////////////////////////////////////////////////////////////////////

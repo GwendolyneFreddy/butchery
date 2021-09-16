@@ -17,7 +17,7 @@ END
 IF
     Global("D9addvilainX","AR0801",0)
     Global("FindLassal","AR0801",1)
-    GlobalLT("Chapter","GLOBAL",4)
+    GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)
 THEN
     RESPONSE #100
         SetGlobal("D9addvilainX","AR0801",1)
