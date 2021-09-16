@@ -2,482 +2,176 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
+  <head>
 	<meta charset="UTF-8">
-	<style type="text/css">
-/*<![CDATA[*/
-	<!-- 
-	body {
-		margin: 0;
-		padding: 0;
-		cursor: default;
-		text-align: center;
-		color: #D1D1D1;
-		background: #000 url('images/bg_lcc2.png');
-	}
+	<link rel="stylesheet" href="styles/style_lcc.css" type="text/css">
 
-/*	En-tête  */
-	#cartouche {
-		text-align: left;
-		margin: 0 auto;
-		margin-top: 20px;
-		width: 88%;
-		font-family: Verdana, Tahoma, Arial, sans-serif;
-		font-size: 12px;
-		color: #D1D1D1;
-/*		background-repeat: repeat-x;
-		background: url("images/degrade_titre.png");*/
-	}
-
-	#header {
-		text-align: center;
-*		background: #303030;
-		background-image: linear-gradient(#666666, #040404);
-		border: 1px solid #FFCC33;
-		border-top: 5px solid #FFCC33;
-		border-bottom: 5px solid #FFCC33;
-		padding: 5px 0 13px 0;
-		height: 310px;
-		border-radius: 3px 4px 3px 3px;
-		box-shadow: 8px 8px 15px black;
-	}
-/*	le décalage horizontal de l'ombre ;
-	le décalage vertical de l'ombre ;
-	l'adoucissement du dégradé ;
-	la couleur de l'ombre.	*/
-
-	#header .about {
-        margin: 7px 0 0 0;
-        padding: 0;
-/*		font-style: italic;
-		color: #555;*/
-		text-decoration: none;
-	}
-	#header .about a:link,
-	#header .about a:visited {
-	}
-	#header .about a:focus,
-	#header .about a:hover {
-		text-decoration: none;
-		color: #deded9;
-		border: 0;
-	}
-
-/*	Menu  */
-	#menu {
-		font-weight: bold;
-		margin: 0;
-		margin-top: 20px;
-		text-align: center;
-		color: #FFCC33;
-		background-repeat: repeat-x;
-		background: url("images/degrade_titre.png");
-		border-radius: 3px 4px 3px 3px;
-*		heigth: 50px;
-		line-height: 400%;
-*		vertical-align:middle;
-	}
-	#menu a:link,
-	#menu a:visited {
-	}
-	#menu a:focus,
-	#menu a:hover {
-		text-decoration: none;
-		color: #deded9;
-		border: 0;
-	}
-
-/*	Sections  */
-	#maindiv {
-		margin: 0 auto;
-		margin-top: -20px;
-		width: 100%;
-	}
-
-	#maindiv .content {
-		color: #deded9;
-		background-color: #5F5F5F;
-		padding: 0 0 25px 0;
-		margin: 50px auto;
-		border-width: 1px 1px 4px 10px;
-		border-style: solid;
-		border-color: #FFBF00;
-/*ou		border: 1px solid #FFCC33;
-		border-left: 10px solid #FFCC33;
-		border-bottom: 4px solid #FFCC33;*/
-		position: relative;
-		border-radius: 4px 4px 4px 5px;
-		box-shadow: 8px 8px 15px black;
-		display: block;
-	}
-
-	#maindiv .important {
-		font-size: 95%;
-		font-family: Verdana;
-		text-align: left;
-*		background-color: #F1F1F1;
-		border-width: 1px 4px 1px 4px;
-		border-style: solid;
-		border-color: #FFBF00;
-/*		border-top: solid 1px #FFBF00;
-		border-bottom: solid 1px #FFBF00;
-		border-left: solid 6px #FFBF00;
-		border-right: solid 6px #FFBF00;*/
-		padding: 10px;
-		margin: 10px auto;
-		width: 80%;
-		line-height: 160%;
-	}
-	#maindiv .important::before {
-		display: none;
-	}
-	#maindiv .important p {
-		width: 100%;
-		font-size: 100%;
-		text-indent: 0px;
-		margin: 5px 0 5px 0;
-		line-height: 180%;
-	}
-	#maindiv .important ol {
-		margin: -10px 0 0 20px;
-	}
-	#maindiv .important ul {
-		margin: -10px 0 0 15px;
-	}
-
-	#maindiv address {
-		font-size: 95%;
-		font-style: normal;
-		font-weight: bold;
-		text-decoration: none;
-		color: #303030;
-		background-color: #FFBF00;
-		padding: 3px 0px 0px;
-		margin: 0px;
-		width: 100%;
-		position: absolute;
-		bottom: -1px;
-		left: 0px;
-		display: block;
-		text-align: right;
-	}
-	#maindiv address a:link,
-	#maindiv address a:visited {
-		font-weight: bold;
-		text-decoration: underline;
-		background-color: transparent;
-		color: #000 !important;
-		padding-right: 5px;
-		padding-left: 6px;
-	}
-	#maindiv address a:focus,
-	#maindiv address a:hover {
-		text-decoration: none;
-		color: #000;
-	}
-
-	/*	Corps de texte  */
-	#maindiv p {
-		text-align: justify;
-		font-size: 110%;
-		font-style: normal;
-		text-decoration: none;
-		line-height: 150%;
-		padding: 0px;
-		margin: 10px auto;
-		width: 90%;
-		display: block;
-	}
-
-	/*	Listes  */
-	#maindiv ul {
-		line-height: 170%;
-		margin: 0px 0 0 70px;/*-10*/
-		*margin-left: 65px;
-		/*width: 90%;*/
-	}
-	#maindiv ul li {
-		/*list-style-type: square;*/
-		line-height: 170%;
-		margin-right: 20px;
-	}
-/* INUTILISE = liste numérique
-      #maindiv ol {
-        margin: 0px 0 0 35px;
-        *margin-left: 70px;
-      }
-      #maindiv ol li {
-        line-height: 170%;
-      }
-*/
-
-	/*	Titre des versions  */
-	#maindiv .version {
-		display: block;
-		width: 90%;
-		background-color: transparent;
-		text-align: left;
-/*		text-indent: 30px; */
-		font-weight: bold;
-		padding-top: 3px;
-		padding-bottom: 3px;
-		border-bottom: solid 1px #FFCC33;
-		border-top: solid 1px #FFCC33;
-	}
-
-	/*	Liens internet  */
-	a:link,
-	a:visited {
-		color: #FFCC33;
-		/*font-weight: bold; */
-		text-decoration: none;
-	}
-	a:focus,
-	a:hover {
-		text-decoration: underline;
-		*color: #deded9;
-	}
-
-	h1 {
-		line-height: 170%;
-		font-size: 225%;
-		color: #FFCC33; *5F5F5F
-		padding: 5px 0 5px 0;
-		margin: 0;
-		width: 100%;
-	}
-	/*	Titre de section (160 %)  */
-	h2 {
-		line-height: 170%;
-		display: block;
-		font-family: Verdana, Trebuchet MS, Arial, serif;
-		text-align: left;
-		text-indent: 30px;
-		padding: 0px;
-		margin: 20px 0 0 0;
-		border-bottom: dotted 2px #d0d0d0;
-		background: #303030;
-		font-size: 160%;
-	}
-	h2::first-letter {
-		color: #FFCC33;
-		background-color: transparent;
-	}
-
-	/*	Titres  */
-	h3, h4, h5, h6 {
-		line-height: 170%;
-		margin: 10px auto;
-		width: 90%;
-		padding: 0;
-	}
-	h3 {
-		font-size: 140%;
-	}
-	h4 {
-		font-size: 125%;
-		/*font-style: italic;*/
-	}
-
-	h5 {
-		/*margin: 10px auto;*/
-        font-size: 110%;
-	}
-/*	h5 {
-		font-size: 100%;
-	}*/
-	h6 {
-		font-size: 125%;
-		font-style: italic;
-	}
-
-	/*	Ligne dorée  */
-	hr {
-		/*margin: 10px 10 10px 10;*/
-		margin-top: 20px;
-		margin-bottom: 20px;
-		width: 90%;
-		/*padding: 0; */
-		height: 1px;
-		border: 0;
-		color: #FFCC33;
-		background-color: #FFCC33;
-	}
-
-	/*	Image d'en-tête */
-	img.image_left {
-		float: left;
-		padding:0px 5px 0px 70px;
-		overflow: auto;
-	}
-
-
-	/*	Tableaux */
-	table {
-		/*text-align: center;*/
-		width: 90%;
-		padding: 10px;
-		border-collapse: collapse;
-		/*margin-left: 70px;*/
-		/*padding: 20px 25px;*/
-		/*position: relative;*/
-	}
-	td, th {
-		font-size: 12px;
-		text-align: center;
-		*vertical-align: baseline;
-		padding-top: 4px;
-		padding-bottom: 4px;
-*		border: 1px outset #eee;
-		border: 1px solid #aaa;
-	}
-	th {
-		background-color: #303030; *#000099;
-		*color: #fff;
-		font-weight: bold;
-*		border:none;
-	}
-	*tr {)
-
-	.leftalign, table.leftalign tr th, table.leftalign tr td (
-		text-align: left;
-	}
-
-	-->
-/*]]>*/
-
-	</style>
 	<title>
 		BuTcHeRY - La Couronne de Cuivre
 	</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
 
-<body>
-  <div id="cartouche">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link href="images/logocc.png" rel="icon" type="image/png" />
+  </head>
+
+  <body>
+
+	<script type="module">
+		var test1 = document.getElementById('versionHistory').getElementsByClassName("version")[0].innerText;
+		document.getElementById("latestVersion").innerText = document.getElementById('versionHistory').getElementsByClassName("version")[0].innerText;
+		var versionnb = test1.substring(7, test1.length);
+		document.getElementById("versionnb1").innerText = versionnb;
+	</script>
+
+	<div id="cartouche">
 	<a name="top" id="top"></a>
-	<div id="header">
-		<h1>
+
+
+	  <div id="header">
+		<h1 style="text-shadow: 0.1rem 0.1rem 0.25rem black;">
 			BuTcHeRY
-			<a href="butchery-readme-french.html">
-				<img src="images/FR-flag-32.png" alt="version française" style="float:right;width:32px;height:16px;margin-right:20px;margin-top:15px;">
+			<a href="readme-lcc-fr.html">
+				<img src="images/fr-flag-32.png" alt="version française" style="float:right;width:32px;height:16px;margin-right:20px;margin-top:15px;">
 			</a>
 		</h1>
 
-		<strong>A <a href="https://www.baldursgateworld.fr"><acronym title="Copper Coronet">La Couronne de Cuivre</acronym></a> mod for Baldur's Gate II: <acronym title="Throne of Bhaal">ToB</acronym>, Baldur's Gate Trilogy and <acronym title="Baldur's Gate II Enhanced Edition">BG2:EE and EET</acronym></strong>
+		<strong>A <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a> mod for Baldur's Gate II: <acronym title="Throne of Bhaal">ToB</acronym>, Baldur's Gate Trilogy, <acronym title="Baldur's Gate II Enhanced Edition">BG2:EE</acronym> and <acronym title="Enhanced Edition Trilogy">EET</acronym></strong>
 
-<hr>
+		<hr>
+
 		<img src="images/logo_lcc.png" title="La Couronne de Cuivre" alt="La Couronne de Cuivre" class="image_left" />
 		<br><br><br>
 		<p class="about" style="text-align: left;margin-left: 70%">
 			<strong>Author:</strong> <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a>
 		</p>
 		<p class="about" style="text-align: left;margin-left: 70%">
-			<strong>Version:</strong> 4.0.0
+			<strong>Version:</strong> <span id="latestVersion" style="display: none";></span><span id="versionnb1"></span>
 		</p>
 		<p class="about" style="text-align: left;margin-left: 70%">
 			<strong>Languages:</strong> French, English
 		</p>
 		<p class="about" style="text-align: left;margin-left: 70%">
-			<strong>Platform:</strong> Windows
+			<strong>Platforms:</strong> Windows, Mac <acronym title="Operating System">OS</acronym> and Linux
 		</p>
 		<p class="about" style="text-align: left;margin-left: 70%">
 			<a href="https://www.baldursgateworld.fr/lacouronne/modules-crees-ou-en-cours-de-developpement/">Mod Website</a> &#8226; <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">Mod Forum</a> &#8226; <a href="http://www.baldursgateworld.fr/filesmods/ModsBG/butchery-4.0.0.zip">Download</a> &#8226; <a href="https://github.com/GwendolyneFreddy/butchery">GitHub</a>
 		</p>
 
-	</div>
+	  </div>
 
-	<div id="menu">
-		<a href="#intro">Introduction</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#compon">Components</a> &#8226; <a href="#trouble">Troubleshooting</a> &#8226; <a href="#images">Screenshots</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a>
-	</div>
+	  <div id="menu">
+		<a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#compon">Components</a> &#8226; <a href="#images">Screenshots and Videos</a> &#8226; <a href="#trouble">Troubleshooting</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a>
+	  </div>
 
-	<div id="maindiv">
-	<!-- ================== I n t r o d u c t i o n ================== -->
+	 <div id="maindiv">
+<!-- ================== I n t r o d u c t i o n ================== -->
 	  <a name="intro" id="intro"></a>
-		<div class="content">
+	  <div class="content">
+
 		<h2>
-			Introduction
+			Overview
 		</h2><br>
 
 		<p>
-			The main objectif of this little mod is to add a challenging and fun fight in Firkraag's lair.
+			The main objectif of this little mod was to add a challenging and fun fight in Firkraag's hideout.
 		</p>
 		<p>
-			I like Baldur's Gate a lot, and I wrote this mod (first version in 2010) to become a minimum familiar with modding technics. Thanks to Gwendolyne, the BuTcHeRy is now compatible with the Enhanced Editions. I also added a few improvements.
+			I like Baldur's Gate a lot, and I wrote this mod (first version in 2010) to become a minimum familiar with modding technics. Thanks to Gwendolyne, the BuTcHeRy is now compatible with the Enhanced Editions, EET and BGT. I also added a few improvements.
 		</p><br>
 		<p>
 			Secondary objectives are:
 		</p>
 		<ul>
-			<li>Allow players to fight in a big room or large space because it is really boring and frustrating to fight in a corridor, especially in in BG2.</li>
+			<li>Allow players to achieve 'epic' fight in large rooms or space because it is really boring and frustrating to fight in a corridor, especially in in BG2.</li>
+			<li>Bring BG2 as close as possible to a <em>Dungeon crawler</em>.</li>
 			<li>Difficulty level scaling: difficulty will be adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. (more info <a href="#compon">below</a>).</li>
 			<li>Have a 'butchery fight', with some spawn and respawn to spice up battles.</li>
 			<li>Make a few non-spellcaster creatures a bit more challenging (while non cheated) using kit abilities, having proficiencies in weapons, etc.</li>
-			<li>Have challenging and charismatic boss.</li>
-			<li>Have 100% compatibility and optimisation with Sword Coast stratagems and Item Revisions (especially with its '<em>potions revisions</em>' component).</li>
+			<li>Have challenging and charismatic boss (Tazok, DigDag, Sarevok).</li>
 			<li>Keep 100% content of the original game. I add a few things, but I don't remove a single one.</li>
 			<li>Add a bit of fun dialogues and cutscenes.</li>
 			<li>No big loots or new magical items.</li>
+			<li>Have 100% compatibility and optimisation with Stratagems and Item Revisions (especially with its '<em>potions revisions</em>' component).</li>
 		</ul><br>
 
-
 			<address>
-				<span class="footer">BuTcHeRy &gt; Introduction</span> &#8226; <a href="#top">BACK TO TOP</a>
+				<span class="footer">BuTcHeRy &gt; Overview</span> &#8226; <a href="#top">BACK TO TOP</a>
 			</address>
-		</div>
+	  </div>
 
-	<!-- ================= C o m p a t i b i l i t y ================= -->
+<!-- ================= C o m p a t i b i l i t y ================= -->
 	  <a name="compat" id="compat"></a>
-		<div class="content">
+	  <div class="content">
+
 		<h2>
 			Compatibility
 		</h2><br>
 
-		<p>
+		<h3>
+			Games supported
+		</h3>
+
+		<p style="margin-top:1%;">
 			This mod is designed to work on the following Infinity Engine games:
 		</p>
 		<ul>
-			<li>
-			  Baldur's Gate II: Enhanced Edition (BG2EE).
-			</li>
-			<li>
-			  The original Baldur's Gate II (BG2 or just SoA) with the Throne of Bhaal (ToB) expansion.
-			</li>
-			<li>
-			  The conversion projects Baldur's Gate Trilogy (BGT) and Enhanced Edition Trilogy (EET).
-			</li>
-		</ul>
+			<li>Baldur's Gate II: Enhanced Edition (BG2EE).</li>
+			<li>The original Baldur's Gate II (BG2, or just SoA), with the Throne of Bhaal (ToB) expansion. <strong>Make sure you have Throne of Bhaal patched to version 26498.</strong> Check the ReadMe files related to your patch in your game folder and the <a href="http://www.bioware.com/games/throne_bhaal/support/patches/">BioWare</a> website if necessary.</li>
+			<li>The conversion projects based on <acronym title="Throne of Bhaal">ToB</acronym>, <a href="http://www.shsforums.net/forum/261-bgt-weidu"><strong>Baldur's Gate Trilogy (BGT)</strong></a> and <a href="https://github.com/Gibberlings3/EET/releases"><strong>Enhanced Edition Trilogy (EET)</strong></a>.</li>
+		</ul><br>
 
-<hr>
-		<p>
-			BuTcHeRy is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all WeiDU mods. However, I cannot test every single one. If you encounter any bugs, please report them on the forum!
-		</p>
-		<p>
-			Though I am striving to make BuTcHeRy compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
+		<hr><br>
+
+		<h3>
+			Other mods Compatibility
+		</h3>
+
+		<p style="margin-top:1%;">
+			BuTcHeRy is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all WeiDU mods. Though I am striving to make BuTcHeRy compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
 		</p>
 		<ul>
-		  <li>
-			BuTcHeRY is not compatible with Revisited Battles component '<em>Improved Firkraag</em>' (don't expect a crash but an impossible fight).
-		  </li>
-		  <li>
-			As I use vanilla scripts, expect the fight to be harder if you install stratagems ('<em>Smarter general AI</em>' component). You should install my mod before stratagems of course.
-		  </li>
-		</ul>
+			<li>BuTcHeRY is not compatible with Revisited Battles component '<em>Improved Firkraag</em>' (don't expect a crash but an impossible fight)</li>
+		</ul><br>
 
-<hr>
 		<p>
-			Classical games players are also strongly recommended to download and install the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.
+			<span style="color: #FFCC33;"><strong>&#9755;</strong></span> If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">report them on the mod forum!</a>
 		</p><br>
 
+		<hr><br>
+
+		<h3>
+			Installation Order
+		</h3>
+
+		<p style="margin-top:1%;">
+			<span style="color: #FFCC33;"><strong>&#9755;</strong></span> &#9888;&#65039; Classical games players are strongly recommended to download and install the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.
+		</p><br>
+		<p>
+			Here is the recommended installation order:
+		</p>
+		<ul>
+			<li>Please install BuTcHeRY after TobEx, BG2 Fixpack, and EET.</li>
+			<li>Please install BuTcHeRY before any final "biffing" routines.</li>
+		</ul><br>
+
+
+		<p>
+			&#9888;&#65039; As I use vanilla scripts, you can further increase the difficulty if you install the Stratagems mod ('<em>Smarter general AI</em>' component). The first components are to be installed before Stratagem for a better experience and difficulty while the other components are to be installed after Stratagems (all this is detailed before the installation of each component).
+		</p><br>
+		<p>
+			RECOMMENDATION : you should also install the "<a href="http://www.mediafire.com/file/b9mtiwvj4aah42r/Derats_AutoRest_v4.zip/file">auto resting</a>" mod (from deratiseur) that allows you to restore your spells without having to rest for 8 hours. &#128521;
+		</p><br>
 
 			<address>
 				<span class="footer">BuTcHeRy &gt; Compatibility</span> &#8226; <a href="#top">BACK TO TOP</a>
 			</address>
-		</div>
+	  </div>
 
-	<!-- ================== I n s t a l l a t i o n ================== -->
+<!-- ================== I n s t a l l a t i o n ================== -->
 	  <a name="installation" id="installation"></a>
-		<div class="content">
+	  <div class="content">
+
 		<h2>
 			Installation
 		</h2><br>
@@ -485,67 +179,182 @@
 		<h3>
 			Notes
 		</h3>
-		<p><em>
-			If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-butchery.exe</strong>, uninstall all previously installed components and delete the butchery folder.</em>
+
+		<p style="margin-top:2%;"><em>
+			If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong><span class="weidu">&nbsp;setup-butchery.exe&nbsp;</span></strong> (or .command with Mac <acronym title="Operating System">OS</acronym>), un-install all previously installed components and delete both &#x1F4C1; <strong>butchery</strong> folder and <strong>setup-butchery.exe</strong> file.</em>
 		</p>
 		<p><em>
-			When installing or uninstalling, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
+			When installing or un-installing, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
 		</p>
 		<p><em>
 			<strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.</em>
 		</p><br>
 
+		<hr><br>
+
 		<h3>
 			Enhanced Editions Note
 		</h3>
-		<p>
+
+		<p style="margin-top:1%;">
 			The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 		</p><br>
 
-<hr>
+		<hr><br>
+
 		<h3>
 			Windows
 		</h3>
-		<p>
+
+		<p style="margin-top:2%;">
 			BuTcHeRy for Windows is distributed as an extractable compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
 		</p>
 		<p>
-			Extract the contents of the mod archive into the folder of the game you wish to modify, using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. When properly extracted, your game directory will contain <strong>setup-butchery.exe</strong> and the folder <strong>butchery</strong>. To install, double-click <strong>setup-butchery.exe</strong> and follow the instructions on screen.
+			Extract the contents of the mod archive into the folder of the game you wish to modify (<em>the folder which contains the "CHITIN.KEY" file</em>), using <a href="https://www.7-zip.org/download.html">7zip</a>, <a href="https://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. On successful extraction, there should be a &#x1F4C1; butchery folder and a setup-butchery.exe file in your game folder. To install, double-click <strong><span class="weidu">&nbsp;setup-butchery.exe&nbsp;</span></strong> and follow the instructions on screen.
 		</p>
 		<p>
-			You can run <strong>setup-butchery.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
-		</p>
-
-<hr>
-		<h3>
-			Note for Complete Uninstallation
-		</h3>
-		<p>
-			In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-butchery --uninstall</strong> at the command line to remove all components without wading through prompts.
+			You can run <strong><span class="weidu">&nbsp;setup-butchery.exe&nbsp;</span></strong> in your game folder to reinstall, un-install or otherwise change the components settings.
 		</p><br>
 
+		<hr><br>
+
+		<h3>
+			Mac OS
+		</h3>
+
+		<p style="margin-top:2%;">
+			BuTcHeRy for <acronym title="Operating System">OS</acronym> is distributed in the same compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+		</p>
+		<p>
+			First, extract the files from the archive into your game directory. On successful extraction, there should be a &#x1F4C1; butchery folder, setup-butchery and setup-butchery.command files in your game folder. To install, double-click <strong><span class="weidu">&nbsp;setup-butchery.command&nbsp;</span></strong> and follow the instructions on screen.
+		</p>
+		<p>
+			You can run <strong><span class="weidu">&nbsp;setup-butchery.command&nbsp;</span></strong> in your game folder to reinstall, un-install or otherwise the components settings.
+		</p><br>
+
+		<hr><br>
+
+		<h3>
+			Linux
+		</h3>
+
+		<p style="margin-top:2%;">
+			BuTcHeRy for Linux is distributed in the same compressed archive and does not include a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+		</p>
+		<p>
+			Extract the contents of the mod to the folder of the game you wish to modify.
+		</p>
+		<p>
+			Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidu, weinstall and tolower to <strong><span class="weidu">/usr/local/bin</span></strong> (create it if needed). Following that, open a terminal, <strong><span class="weidu">&nbsp;cd&nbsp;</span></strong> to your game installation directory, run <strong><span class="weidu">&nbsp;/usr/local/bin/tolower&nbsp;</span></strong> and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already run it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
+		</p>
+		<p>
+			To install, type <strong><span class="weidu">&nbsp;export PATH=$PATH:/usr/local/bin&nbsp;</span></strong>, then run <strong><span class="weidu">&nbsp;weinstall setup-butchery&nbsp;</span></strong> in your game folder. Then run <strong><span class="weidu">&nbsp;wine bgmain.exe&nbsp;</span></strong> (or <strong><span class="weidu">&nbsp;wine baldur.exe&nbsp;</span></strong> for EE games) and start playing.
+		</p><br>
+
+		<hr><br>
+
+		<h3>
+			Note for Complete Un-installation
+		</h3>
+
+		<p style="margin-top:2%;">
+			In addition to the methods above for removing individual components, you can completely un-install the mod using <strong><span class="weidu">&nbsp;setup-butchery --uninstall&nbsp;</span></strong> at the command line to remove all components without wading through prompts.
+		</p><br>
 
 			<address>
 				<span class="footer">BuTcHeRy &gt; Installation</span> &#8226; <a href="#top">BACK TO TOP</a>
 			</address>
-		</div>
+	  </div>
 
-	<!-- =================== C o m p o n e n t s ==================== -->
+<!-- =================== C o m p o n e n t s ==================== -->
 	  <a name="compon" id="compon"></a>
-		<div class="content">
+	  <div class="content">
+
 		<h2>
 			Components
 		</h2><br>
 
-		<p>
-			The installer includes the following components. The number of each is the component <em>DESIGNATED</em> number which gives it a fixed install position, lets other components and mods detect it and allows automated installers like the BiG World Setup specify component choices.
-		</p><br />
+		<p style="margin-top:2%;">
+			The installer includes the following components. The number of each is the component '<span class="tp2">DESIGNATED</span>' number which gives it a fixed install position, lets other components and mods detect it and allows automated installers to specify component choices.
+		</p><br>
 
-		<h3>
-			10. DrAzTiK's revisited fight vs Tazok & DigDag
-		</h3>
 		<p>
-			I have always found the fight vs Tazok and DigDag in Firkraag's lair nothing more than a pathetic joke. Obviously, Firkaag is supposed to be an optional boss (like the shadow dragon) surely unbeatable before Underdark. All banters and interjections suppose the party want to escape in front of Firkraag without thinking twice and come back later, really later.
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[10]</span><span style="margin-left: 20px;"><a href="#10">DrAzTiK's revisited fight against Tazok and DigDag</a> <em>&nbsp;[install before Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[11]</span><span style="margin-left: 20px;"><a href="#11">Rebalancing some generic creatures</a> <em>&nbsp;[install before Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[12]</span><span style="margin-left: 20px;"><a href="#12">Rebalancing Tazok and DigDag</a> <em>&nbsp;[install before Stratagems]</em></span></br></br>
+
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[20]</span><span style="margin-left: 20px;"><a href="#20">Groumf and Bourrinos Encounter at Firkraag's Hideout entrance</a> <em>&nbsp;[install before Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[21]</span><span style="margin-left: 20px;"><a href="#21">Groumf and Bourrinos Encounter at Brynnlaw</a> <em>&nbsp;[install before Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[22]</span><span style="margin-left: 20px;"><a href="#22">Groumf and Bourrinos Encounter in the Underdark</a> <em>&nbsp;[install before Stratagems]</em></span></br></br>
+
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[30]</span><span style="margin-left: 20px;"><a href="#30">Revisited fight against Wraith Sarevok in the Abyss</a> <em>&nbsp;[install before Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[31]</span><span style="margin-left: 20px;"><a href="#31">Move Samia group into Firkraag's Entrance (BETA and bugged)</a> <em>&nbsp;[install before or after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[32]</span><span style="margin-left: 20px;"><a href="#32">Add battle songs in some areas that do not have any</a> <em>&nbsp;[install before or after Stratagems]</em></span></br></br>
+
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[40]</span><span style="margin-left: 20px;"><a href="#40">DrAzTiK's Creatures</a> <em>&nbsp;[install before Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[41]</span><span style="margin-left: 20px;"><a href="#41">Butchery in Irenicus Dungeon (Dwarves)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[42]</span><span style="margin-left: 20px;"><a href="#42">Butchery for high and low reputation (BETA, BUGGED, NOT FINISHED)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[43]</span><span style="margin-left: 20px;"><a href="#43">Butchery in the Forest of Tethyr (Animals and Druids)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[44]</span><span style="margin-left: 20px;"><a href="#44">Butchery in the planar sphere (Demonic creatures)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[45]</span><span style="margin-left: 20px;"><a href="#45">3 butcheries in Spellhold (Golems, Vampires and Trolls)</a> <em>nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[46]</span><span style="margin-left: 20px;"><a href="#46">Butchery outside de'Arnise Keep (Trolls)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[47]</span><span style="margin-left: 20px;"><a href="#47">Butchery in Windspear Hills (Orcs)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[48]</span><span style="margin-left: 20px;"><a href="#48">Butchery in Umar Hills (Wolves)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[49]</span><span style="margin-left: 20px;"><a href="#49">2 butcheries in Trademeet and outside Watcher's Keep (Animals)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[50]</span><span style="margin-left: 20px;"><a href="#50">2 butcheries of golems in Suldanessellar and Watcher's Keep (Machine of Lum the Mad floor)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[51]</span><span style="margin-left: 20px;"><a href="#51">Butchery of Yaga-Shura revisited</a> <em>&nbsp;[install after Ascension and Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[52]</span><span style="margin-left: 20px;"><a href="#52">Butchery in the Druid Grove area (Animals and Druids)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[53]</span><span style="margin-left: 20px;"><a href="#53">Butchery in the Beholder Hideout (Fanatics)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[54]</span><span style="margin-left: 20px;"><a href="#54">Butchery in Bodhi's Hideout (chapter 2, before Underdark) - Vampires</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[55]</span><span style="margin-left: 20px;"><a href="#55">Butchery in Bodhi's Hideout (chapter 6, after Underdark) - Vampires</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[56]</span><span style="margin-left: 20px;"><a href="#56">2 butcheries of Sahuagins in Sahuagin City and Watcher's Keep (Githyanki Encampment)</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[57]</span><span style="margin-left: 20px;"><a href="#57">4 butcheries of spiders in Pai'Na's Hideout entrance, Temple City (Unseeing Eye Plot), Watcher's Keep 1st floor and area outside Sendai's Hideout</a> <em>&nbsp;[install after Stratagems]</em></span></br>
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[58]</span><span style="margin-left: 20px;"><a href="#58">6 butcheries of skeletons in lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Keep (Last Seals), and 2 in Nyalee's Hideout</a> <em>&nbsp;[install after Stratagems]</em></span></br></br>
+
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[80]</span><span style="margin-left: 20px;"><a href="#80">More enemies scattered throughout the game</a> <em>&nbsp;[install after Stratagems]</em></span></br></br>
+
+			<span style="color: #FFCC33;font-weight: bold;margin-left: 50px;">[90]</span><span style="margin-left: 20px;"><a href="#90">Cosmetic component</a> <em>&nbsp;[install before or after Stratagems]</em></span></br>
+		</p><br>
+
+		<hr><br>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> <strong>Difficulty level scaling:</strong>
+		</p>
+
+		<p style="margin-top:1%;">
+			This is the major latest mod improvement. I know that it can be frustrating to have a too much difficult -or easy- fight, so this new possibility will surely be appreciated. The numbers and variety of opponents are now adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. These adjustments are reflected as follows:
+		</p><br>
+
+		  <div class="important" style="font-size: 100%;">
+			<p style="margin-top:1%;">
+				<ul style="list-style-type:none;">
+					<li"><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">Core Rules</span>: normal and decent amount of enemies (no divine or arcane enemies spellcasters).</li>
+					<li><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">Difficult</span>: a bit more numerous enemies and especially divine/arcane enemies spellcasters.</li>
+					<li><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">Very difficult</span>: again, a bit more enemies and a even more divine/arcane enemies spellcasters.</li>
+				</ul>
+			</p>
+		  </div><br>
+
+		<p>
+			Be aware that even with Core Rules, the challenge might be quite difficult (especially before Underdark) because this mod adresses to players looking for a better challenge. &#128521;
+		</p><br>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   10 =================== -->
+		<a name="10" id="10"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[10]</span>DrAzTiK's revisited fight against Tazok and DigDag</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This is the very first component, and the genesis of this mod.
+		</p>
+
+		<p>
+			I have always found the fight against Tazok and DigDag in Firkraag's Hideout nothing more than a pathetic joke. Obviously, Firkaag is supposed to be an optional boss (like the shadow dragon) surely unbeatable before Underdark. All banters and interjections suppose the party want to escape in front of Firkraag without thinking twice and come back later, really later.
 		</p>
 		<p>
 			So I assume Tazok and DigDag are supposed to be the big vilains in Firkaag's lair and IMO the fight deserves to be a bit more challenging and fun. The fight vs Tazok and DigDag will now take place where you usually fight Firkraag (AR1203). Don't worry, you will be also able to fight Firkraag. This component doesn't modify or tweak creatures at all except:
@@ -559,35 +368,34 @@
 		</p><br>
 
 		<p>
-			<strong>Difficulty level scaling:</strong>
-		</p>
-		<p>
-			This is the major latest mod improvement. I know that it can be frustrating to have a too much difficult -or easy- fight, so this new possibility will surely be appreciated. The numbers and variety of opponents are now adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. These adjustments are reflected as follows:
-		</p>
-		<ul>
-			<li><span style="text-decoration: underline;">Core Rules</span>: normal and decent amount of enemies (no divine or arcane enemies spellcasters).</li>
-			<li><span style="text-decoration: underline;">Difficult</span>: a bit more numerous enemies and especially divine/arcane enemies spellcasters.</li>
-			<li><span style="text-decoration: underline;">Very difficult</span>: again, a bit more enemies and a even more divine/arcane enemies spellcasters.</li>
-		</ul>
-
-		<p>
-			Be aware that even with Core Rules, the challenge might be quite difficult (especially before Underdark) because this mod adresses to players looking for a better challenge.
-		</p><br>
-
-		<p>
-			<strong>Note for English language players:</strong>
+			&#9888;&#65039; <strong>Note for English language players:</strong>
 		</p>
 		<p>
 			Two new creatures get their own soundsets, unfortunately only available in French. But they have been traified as for the latest version &#128521; and they are still waiting for their English sound files. If anyone would provide them, I would be pleased to include them in the next version. &#128578;
 		</p>
 
-<hr>
-		<h3>
-			20. Rebalancing a few generic creatures
-		</h3>
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   11 =================== -->
+		<a name="11" id="11"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[11]</span>Rebalancing some generic creatures</h2>
 		<p>
-			This component alters "a bit" stats, weapons, proficiencies of some generic orc and ogre fighters. Most of them have now a barbarian or berseker kit, a weapon which suit their avatars, etc. but I often keep their vanilla level.
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component improves stats, saving throws, hit points and skill points of a few generic creatures (orc and ogre fighters at the beginning, and many animals and other creatures as of version 5.0.0). Most of them have now a barbarian or berserker kit, a weapon which suits their avatars, etc. but I often keep their vanilla level. But you will need to install Stratagems for these creatures to use their special abilities.
 		</p><br>
+
+		<p>
+			Enemy skeletons and mummies' abilities are standardised: they still have 100% resistance to electricity and cold and 10% magic resistance per level. Their resistance to missile attacks is 90%. This makes them fearsome foes.
+		</p>
+		<p>
+			In addition, some of the "half-bosses" have had their combat stats and equipment upgraded a bit (Ilyich in particular).
+		</p><br>
+
 
 		<table style="margin-left: 80px" summary="Rebalanced generic creatures">
 			<tr>
@@ -657,27 +465,28 @@
 			Except high scores in STR and CON, these creatures have now the same features and obey the same rules as other humanoids (thac0, saves, hit point, kit bonus etc..), except they remain a bit slow, have an incredible moral and a good AC.
 		</p>
 		<p>
-			You will find mostly theses creatures only in Windspear Hills and in Firkraag's lair. I also added a lot of them in my mod (the reason why I wrote this component).
+			You will find mostly theses creatures only in Windspear Hills and in Firkraag's Hideout. I also added a lot of them in my mod (the reason why I wrote this component).
 		</p>
 		<p>
-			I didn't modify vanilla fighting scripts at all. So if you don't install stratagems '<em>Smarter general AI</em>' component, theses creatures will not use their kit abilities.
+			I didn't modify vanilla fighting scripts at all. So if you don't install Stratagems '<em>Smarter general AI</em>' component, theses creatures will not use their kit abilities.
 		</p>
 		<p>
 			Of course, I am open to critics about my balance.
 		</p>
 
-<hr>
-		<h3>
-			30. Rebalanced Tazok and DigDag
-		</h3>
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   12 =================== -->
+		<a name="12" id="12"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[12]</span>Rebalancing Rebalancing Tazok and DigDag</h2>
 		<p>
-			In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok lightly (slightly better saving thrown and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). It is also cosmetic: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before Stratagems</span></em><br><br>
 		</p>
+
 		<p>
-			If you want Tazok to be a berseker, you must install stratagems '<em>Smarter general AI</em>' component (no problem of compatibility issue).
-		</p>
-		<p>
-			Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
+			<span style="color: #FFCC33;">&#10173;</span> In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok lightly (slightly better saving thrown and HP), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). It is also cosmetic: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation. Their equipments, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 		</p><br>
 
 		<table style="margin-left: 80px" summary="Rebalanced Tazok and Dig-Dag">
@@ -713,77 +522,530 @@
 			</tr>
 		</table><br>
 
+		<p>
+			Note: If you want Tazok to be a berseker, you must install Stratagems '<em>Smarter general AI</em>' component (no compatibility issue).
+		</p>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   20 =================== -->
+		<a name="20" id="20"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[20]</span>Groumf and Bourrinos Encounter at Firkraag's Hideout entrance</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a small fight and a funny encounter with 2 funny characters at Firkraag's Hideout entrance, the same ones who serve as Tazok's bodyguards if you have installed the previous components.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   21 =================== -->
+		<a name="21" id="21"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[21]</span>Groumf and Bourrinos Encounter at Brynnlaw</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds another little fight and a funny encounter with these same characters.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   22 =================== -->
+		<a name="22" id="22"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[22]</span>Groumf and Bourrinos Encounter in the Underdark</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds another little fight and a funny encounter with these same characters.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   30 =================== -->
+		<a name="30" id="30"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[30]</span>Revisited fight against Wraith Sarevok in the Abyss</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component greatly improves the final battle against Sarevok in the layer of the Abyss once ruled by Bhaal. The latter will be assisted by his former teammates from BG1.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   31 =================== -->
+		<a name="31" id="31"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[31]</span> Move Samia group into Firkraag's Entrance</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before or after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component moves Samia and her teammates into Firkraag's Entrance.
+		</p><br>
+
+		<p>
+			&#9888;&#65039; This component is disabled because it is still under development. Do not try to force its installation as it is bugged.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   32 =================== -->
+		<a name="32" id="32"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[32]</span> Add battle songs in some areas that do not have any</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before or after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component assigns battle song to a few areas that don't have one: Temple City (The Forgotten Believers), Sewers beneath Coronet, Shadow Temple land shadowed, Troll Cave (Spellhold test), and Tethyr Wood.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   40 =================== -->
+		<a name="40" id="40"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[40]</span>DrAzTiK's Creatures</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds creatures of my creation to the game's bestiary. It is required for some of the following components.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   41 =================== -->
+		<a name="41" id="41"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[41]</span>Butchery in Irenicus Dungeon (Dwarves)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in Irenicus Dungeon 2nd floor area.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   42 =================== -->
+		<a name="42" id="42"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[42]</span>Butchery for high and low reputation</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			&#9888;&#65039; This component is disabled because it is still under development. Do not try to force its installation as it is bugged.
+		</p><br>
+
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   43 =================== -->
+		<a name="43" id="43"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[43]</span>Butchery in the Forest of Tethyr (Animals and Druids)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in the Forest of Tethyr area.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   44 =================== -->
+		<a name="44" id="44"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[44]</span>Butchery in the planar sphere (Demonic creatures)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in the planar sphere (Demon Plane area).
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   45 =================== -->
+		<a name="45" id="45"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[45]</span>3 butcheries in Spellhold (Golems, Vampires and Trolls)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds 3 battles against a few dozen enemies in Spellhold: Spellhold, Bodhi's Hunt Level 1, and Troll Cave (Spellhold Test).
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   46 =================== -->
+		<a name="46" id="46"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[46]</span>Butchery outside de'Arnise Keep (Trolls)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br>
+			<em><span style="margin-left: 65px; font-variant:small-caps">Requires component <a href="#40">[40] DrAzTiK's Creatures</a></span>
+		</p><br>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in de'Arnise Keep outer courtyard.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   47 =================== -->
+		<a name="47" id="47"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[47]</span>Butchery in Windspear Hills (Orcs)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in the Windspear Hills area.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   48 =================== -->
+		<a name="48" id="48"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[48]</span>Butchery in Umar Hills (Wolves)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in the Umar Hills area.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   49 =================== -->
+		<a name="49" id="49"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[49]</span>2 butcheries in Trademeet and outside Watcher's Keep (Animals)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in Trademeet and outside Watcher's Keep areas.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   50 =================== -->
+		<a name="50" id="50"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[50]</span>2 butcheries of Golems in Suldanessellar and Watcher's Keep (Machine of Lum the Mad floor)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in Suldanessalar and in Watcher's Keep (Machine of Lum the Mad floor).
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   51 =================== -->
+		<a name="51" id="51"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[51]</span>Butchery of Yaga-Shura revisited</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Ascension and Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component greatly modifies the battle against Yaga-Shura army in ToB to make it longer and more difficult. It will only work if you have Acsension (David Wallace's version) and Stratagems installed.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   52 =================== -->
+		<a name="52" id="52"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[52]</span>Butchery in the Druid Grove area (Animals and Druids)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in the Druid Grove area.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   53 =================== -->
+		<a name="53" id="53"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[53]</span>Butchery in the Beholder Hideout (Fanatics)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in the Beholder Hideout (Unseeing Eye Plot).
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   54 =================== -->
+		<a name="54" id="54"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[54]</span>Butchery in Bodhi's Hideout (chapter 2, before Underdark) - Vampires</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in Bodhi's Hideout (chapter 2, before Underdark).
+		</p><br>
+		<p>
+			<span style="text-decoration: underline;">Note</span>: The traps on the spiked floor in the torture room with the blood-encrusted drain have been deactivated so that you can fight there without any hindrance.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   55 =================== -->
+		<a name="55" id="55"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[55]</span>Butchery in Bodhi's Hideout (chapter 6, after Underdark) - Vampires</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in Bodhi's Hideout (chapter 6, after Underdark).
+		</p><br>
+		<p>
+			<span style="text-decoration: underline;">Note</span>: The traps on the spiked floor in the torture room with the blood-encrusted drain have been deactivated so that you can fight there without any hindrance.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   56 =================== -->
+		<a name="56" id="56"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[56]</span>2 butcheries of Sahuagins in Sahuagin City and Watcher's Keep (Githyanki Encampment)</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in the Sahuagin and Watcher's Keep (Githyanki Encampment).
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   57 =================== -->
+		<a name="57" id="57"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[57]</span>4 butcheries of spiders</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen enemies in front of Pai'Na's Hideout entrance (Bodhi's Hideout), the Temple City (Unseeing Eye Plot) area, Watcher's Keep 1st floor (Altar level) and in the area outside Sendai's Hideout.
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   58 =================== -->
+		<a name="58" id="58"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[58]</span>6 butcheries of skeletons in lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Kee, and 2 in Nyalee's Hideout</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br>
+			<em><span style="margin-left: 65px; font-variant:small-caps">Requires component <a href="#40">[40] DrAzTiK's Creatures</a></span>
+		</p><br>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a battle against a few dozen skeletons throughout the game: in the lower tombs of Athkatla (Southern Dungeons), in the Shadow Temple Land (shadowed) at the Temple of Amaunator entrance, in Spellhold (Bodhi's Hunt Level 1), in Nyalee's Hideout and in the Watcher's Keep (Helmite Level - Last Seals).
+		</p><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   80 =================== -->
+		<a name="80" id="80"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[80]</span>More enemies scattered throughout the game</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install after Stratagems</span></em><br>
+			<em><span style="margin-left: 65px; font-variant:small-caps">Requires component <a href="#40">[40] DrAzTiK's Creatures</a></span>
+		</p><br>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> This component adds a lot of enemies in areas that are usually very quiet and unchallenging. This makes the gameplay more like a Dungeon Crawler, like in Icewind Dale
+		</p>
+		<p><br>
+			<span style="text-decoration: underline;">Note</span>: This component being quite difficult, unlike the previous ones, adjusting the difficulty level of the game will have no effect. However, I have taken care to set a reasonable challenge.
+		</p><br>
+
+		<div style="margin: 10px auto; width: 90%; border-style: solid; border-width: 1px; border-color: #FFCC33; margin-top: 32px; padding: 6px;">
+			<div class="quotetitle">
+				&nbsp;&nbsp;<span style="color: #FFCC33;">&#x25BA;</span> List of affected areas:&#160;&#160;
+				<input value="Show" style="margin: 0px; padding: 0px; width: 50px; background:#FFBF00;"
+				onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+			</div>
+			<div class="quotecontent">
+				<div style="display: none;"><br>
+					<div class="important" style="width: 90%; font-size: 100%; color: #303030; background-color: #999999;">
+						<p style ="width: 100%;"><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">Waukeen's Promenade</span></p>
+						<p style="margin-top:1%;">
+							<ul>
+								<li>AR0601: Air Plane in Irenicus's Dungeon</li>
+								<li>AR0602: Irenicus's Dungeon 1st Floor</li>
+								<li>AR0603: Irenicus's Dungeon 2nd Floor</li>
+								<li>AR0600: Circus Tent (phased)</li>
+								<li>AR0605: Circus Tent 2nd Floor</li>
+								<li>AR0606: Circus Tent 3rd Floor</li>
+							</ul>
+						</p><br>
+						<p style ="width: 100%;"><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">Slums District</span></p>
+						<p style="margin-top:1%;">
+							<ul>
+								<li>AR0404: Sewers beneath Coronet</li>
+								<li>AR0418: Sewers beneath Coronet (Myconids)</li>
+								<li>AR0405: Slaver's Ship Building</li>
+								<li>AR0419: Planar Sphere (Myconid)</li>
+								<li>AR0420: Planar Sphere (Lizardmen Hideout)</li>
+							</ul>
+						</p><br>
+						<p style ="width: 100%;"><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">Temple District</span></p>
+						<p style="margin-top:1%;">
+							<ul>
+								<li>AR0201: Leading to ghoul village and beholder lair</li>
+								<li>AR0206: Ghoul village</li>
+								<li>AR0204: The Forgotten Believers - Temple City (Unseeing Eye Plot)</li>
+								<li>AR0205: The Beholder Hideout (Unseeing Eye Plot)</li>
+							</ul>
+						</p><br>
+						<p style ="width: 100%;"><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">Bridge</span></p>
+						<p style="margin-top:1%;">
+							<ul>
+								<li>AR0502: Tanner's Hideout Cellar</li>
+								<li>AR0503: Tanner's Hideout Dock</li>
+								<li>AR0525: House 1st Floor</li>
+								<li>AR0701: The Sewers</li>
+							</ul>
+						</p><br>
+						<p style ="width: 100%;"><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">Graveyard</span></p>
+						<p style="margin-top:1%;">
+							<ul>
+								<li>AR0801: Bodhi's Hideout (sided with Aran)</li>
+								<li>AR0803: Bodhi's Lair (sided with Aran)</li>
+								<li>AR0802: Netherscroll, Korgan's Book, Edwin</li>
+								<li>AR0805: Crypt</li>
+								<li>AR0810: Crypt</li>
+								<li>AR0811: Crypt</li>
+								<li>AR0812: Crypt</li>
+							</ul>
+						</p><br>
+						<p style ="width: 100%;"><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">Other SoA areas</span></p>
+						<p style="margin-top:1%;">
+							<ul>
+								<li>AR1106: Umar's Cave</li>
+								<li>AR1201: Firkraag's Entrance</li>
+								<li>AR1202: Firkaag's Maze</li>
+								<li>AR2013: Trademeet Crypt</li>
+							</ul>
+						</p><br>
+						<p style ="width: 100%;"><span style="color: #FFCC33;">&#9755;</span> <span style="text-decoration: underline;">ToB</span></p>
+						<p style="margin-top:1%;">
+							<ul>
+								<li>AR2602: Forest of Tethyr: Cave in Woods to Suldanessellar</li>
+							</ul>
+						</p><br>
+					</div>
+				</div>
+			</div>
+		</div><br>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
+
+		<hr><br>
+
+<!-- ================= C o m p o n e n t   90 =================== -->
+		<a name="90" id="90"></a>
+		<h2 style="border-top: dotted 2px #d0d0d0;background-color: rgba(48, 48, 48, 0.6);"><span class="com">[90]</span>Cosmetic component</h2>
+		<p>
+			<em><span style="margin-left: 65px; font-variant:small-caps;">install before or after Stratagems</span></em><br><br>
+		</p>
+
+		<p>
+			<span style="color: #FFCC33;">&#10173;</span> With this component, drows get elven animations.
+		</p>
+
+		<p style="font-size:90%;text-align: right;"><a href="#compon">BACK TO COMPONENTS INDEX</a></p>
 
 			<address>
 				<span class="footer">BuTcHeRy &gt; Components</span> &#8226; <a href="#top">BACK TO TOP</a>
 			</address>
-		</div>
+	  </div>
 
-	<!-- ============== T r o u b l e s h o o t i n g =============== -->
-	  <a name="trouble" id="trouble"></a>
-		<div class="content">
-		<h2>
-			Troubleshooting and Bug Reporting
-		</h2><br>
-
-		<p>
-			If you should encounter any bugs, please report them to the authors at the <a href="https://www.baldursgateworld.fr/lacouronne/butchery/31626-rapports-de-bugs.html">BuTcHeRy</a> forum. In addition, BuTcHeRy is <a href="https://github.com/GwendolyneFreddy/butchery">available on GitHub</a>, so fixes and changes can be submitted by the community.
-		</p><br>
-
-		<p>
-			These are some general tips if you have problems getting the game working, with or without this or other mods. Many times, errors have to do with the game engine itself or the manner of installation or gameplay. The game recommends deleting all files out of the /cache, /temp and /tempsave subfolders in your game folder to see if that resolves the problem before any further troubleshooting.
-		</p>
-
-<hr>
-		<p>
-			<strong>Symptom: Game freezes or crashes to desktop (CTDs)</strong>
-		</p>
- 		<p>
-			Sometimes the game displays an 'assertion error' in a pop-up window when this happens, but often times it doesn't. To enable the full error message, open the file <strong>baldur.ini</strong> in your game folder with a text editor (such as Notepad). If you find you can't edit it or save changes in Windows Vista or 7, see <a href="http://forums.bioware.com/viewtopic.html?topic=662080&forum=10"> this topic</a> for assistance.
-		</p>
- 		<p>
-			Under the [Program Options] section in the file, type <strong> Logging On=1</strong> (unless it's already there). While you're there, you may also want to make sure <strong>Debug Mode=1</strong> is there to enable the <a href="https://gibberlings3.github.io/iesdp/appendices/clua/bg2.htm">CLUA Console</a> for debugging and testing. Save the file and exit. Now go back into the game and try to reproduce the crash. Then look in your game folder again for the <strong>Baldur.err</strong> file and open it with a text editor to analyse its contents.
-		</p>
-
-<hr>
- 		<p>
-			<strong>Symptom:</strong>
-		</p>
-          <div class="important" style="background-color: black;color: #deded9;">
-            <p style="font-family: Courier New;font-size: 100%;">ERROR: error copying [infinityanimations/content/somefile.bam]<br />
-			ERROR: [SOMEFILE.CRE] -> [override/SOMEFILE.CRE] Patching failed (COPY)<br />
-			Stopping installation because of error.<br /></p>
-			<p>(with no other error message)<br /></p>
-          </div>
- 		<p>
-			Less-than-informative messages like these may indicate you're installing to a hard drive with a low data transfer rate or an antivirus program is active during installation (which can also affect data transfer). Try installing to an internal drive with antivirus protection disabled during the install. If unsure, disconnect from the Internet (either unplug your network cable or disable your wireless adaptor) and turn off <strong>all</strong> memory-resident programs during the install. To get a list of these, go to Start > Run and type <strong>msconfig</strong> where it says "Open:" then click OK. When the System Configuration Utility appears, click on the Startup tab. The only really necessary programs that need to be loaded in memory at startup are those related to your graphics chip (typically ATI or NVIDIA). Uncheck everything else, reboot and try installing the mod again. There are well-documented issues with installing mods while Avast antivirus is running, so make absolutely sure all components of Avast are completely disabled.
-		</p>
-
-<hr>
-		<p>
-			<strong>Other issues</strong>
-		</p>
- 		<p>
-			If you have more than one large mod installed, please refer to the <a href="http://www.shsforums.net/index.php?showtopic=41036">Megamod FAQ</a> for more troubleshooting tips.
-		</p>
-
-<hr>
- 		<p>
-			If none of this resolves your issue, or you have mod-specific issues, please report the problem in the mod's <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">forum</a>. Include the contents of your <acronym title="Weimer Dialogue Utility">WeiDU</acronym>.log file in the post, or attach it if it's large.
-		</p><br>
-
-
-			<address>
-				<span class="footer">BuTcHeRy &gt; Troubleshooting</span> &#8226; <a href="#top">BACK TO TOP</a>
-			</address>
-		</div>
-
-	<!-- =================== I m a g e s ==================== -->
+<!-- =================== I m a g e s ==================== -->
 	  <a name="images" id="images"></a>
-		<div class="content">
+	  <div class="content">
+
 		<h2>
-			Screenshots
+			Screenshots and Videos
 		</h2><br>
+
+		<h3>
+			Screenshots
+		</h3>
 
 		<p>
 			<center><img src="images/baldr000.jpg" title="fun cutscene" /></center>
@@ -793,66 +1055,151 @@
 			<center><img src="images/baldr001.jpg" title="epic fight" /></center>
 		</p><br>
 
+		<p>
+			<span style="color: #FFCC33;">&#9755;</span> <a href="https://drive.google.com/drive/folders/1EVZWZKG49dUambKGScVvDqwSrgi-S-To?usp=sharing">More screenshots</a><br>
+		</p><br>
+
+		<hr><br>
+
+		<h3>
+			Videos
+		</h3>
+
+		<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/TVSPrh0ShmY" title="BG2EE : Revisited Tazok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+
+		<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/_mGCk_MEb4o" title="BG2EE : revisited Sarevok necrophage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+
+		<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/TrDc9rJQjdQ" title="BG2EE : combat d'animaux" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+
+		<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/rcpWwagKjkk" title="BG2EE : revisited Yaga Shura fight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+
+		<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/tJ7AACLLaeI" title="BG2EE : combat contre Kangaax" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+
+		<p>
+			<span style="color: #FFCC33;">&#9755;</span> <a href="https://www.youtube.com/playlist?list=PL7q-07v2VkmHTjJdTlaHkA2EHpmSi6rf9">More videos</a><br>
+		</p><br>
 
 			<address>
-				<span class="footer">BuTcHeRy &gt; Screenshots</span> &#8226; <a href="#top">BACK TO TOP</a>
+				<span class="footer">BuTcHeRy &gt; Screenshots and Videos</span> &#8226; <a href="#top">BACK TO TOP</a>
 			</address>
-		</div>
+	  </div>
 
-	<!-- ======================= C r e d i t s ====================== -->
+<!-- ============== T r o u b l e s h o o t i n g =============== -->
+	  <a name="trouble" id="trouble"></a>
+	  <div class="content">
+
+		<h2>
+			Troubleshooting and Bug Reporting
+		</h2><br>
+
+		<p>
+			If you should encounter any bugs, please report them to the authors at the <a href="https://www.baldursgateworld.fr/lacouronne/butchery/31626-rapports-de-bugs.html">BuTcHeRy</a> forum. In addition, BuTcHeRy is <a href="https://github.com/GwendolyneFreddy/butchery">available on GitHub</a>, so fixes and changes can be submitted by the community.
+		</p><br>
+
+		<p>
+			These are some general tips if you have problems getting the game working, with or without this or other mods. Many times, errors have to do with the game engine itself or the manner of installation or gameplay. The game recommends deleting all files out of the cache, /temp and /tempsave &#x1F4C1; sub-folders in your game folder to see if that resolves the problem before any further troubleshooting.
+		</p><br>
+
+		<hr><br>
+
+		<p>
+			<span style="color: #FFCC33;">&#9755;</span> <strong>Symptom: Game freezes or crashes to desktop (CTDs)</strong>
+		</p><br>
+ 		<p>
+			Sometimes the game displays an 'assertion error' in a pop-up window when this happens, but often times it doesn't. To enable the full error message, open the file <strong>baldur.ini</strong> in your game folder with a text editor (such as Notepad). If you find you can't edit it or save changes in Windows Vista or 7, see <a href="http://forums.bioware.com/viewtopic.html?topic=662080&forum=10"> this topic</a> for assistance.
+		</p>
+ 		<p>
+			Under the [Program Options] section in the file, type <strong> Logging On=1</strong> (unless it's already there). While you're there, you may also want to make sure <strong>Debug Mode=1</strong> is there to enable the <a href="https://gibberlings3.github.io/iesdp/appendices/clua/bg2.htm">CLUA Console</a> for debugging and testing. Save the file and exit. Now go back into the game and try to reproduce the crash. Then look in your game folder again for the <strong>Baldur.err</strong> file and open it with a text editor to analyse its contents.
+		</p><br>
+
+		<hr><br>
+
+ 		<p>
+			<span style="color: #FFCC33;">&#9755;</span> <strong>Symptom:</strong>
+		</p><br>
+		  <div class="important" style="background-color: black;color: #deded9;">
+			<p style="font-family: Courier New;font-size: 100%;"><strong>
+				ERROR: error copying [infinityanimations/content/somefile.bam]<br>
+				ERROR: [SOMEFILE.CRE] -> [override/SOMEFILE.CRE] Patching failed (COPY)<br>
+				Stopping installation because of error.</strong><br>
+				(with no other error message)<br>
+			</p>
+		  </div><br>
+
+ 		<p>
+			Less-than-informative messages like these may indicate you're installing to a hard drive with a low data transfer rate or an antivirus program is active during installation (which can also affect data transfer). Try installing to an internal drive with antivirus protection disabled during the install. If unsure, disconnect from the Internet (either unplug your network cable or disable your wireless adaptor) and turn off <strong>all</strong> memory-resident programs during the install. To get a list of these, go to <strong><span class="weidu">&nbsp;Start > Run&nbsp;</span></strong> and type <strong><span class="weidu">&nbsp;msconfig&nbsp;</span></strong> where it says "<em>Open</em>:", then click OK. When the System Configuration Utility appears, click on the Startup tab. The only really necessary programs that need to be loaded in memory at startup are those related to your graphics chip (typically ATI or NVIDIA). Uncheck everything else, reboot and try installing the mod again. There are well-documented issues with installing mods while Avast antivirus is running, so make absolutely sure all components of Avast are completely disabled.
+		</p><br>
+
+		<hr><br>
+
+		<p>
+			<span style="color: #FFCC33;">&#9755;</span> <strong>Other issues</strong>
+		</p><br>
+ 		<p>
+			If you have more than one large mod installed, please refer to the <a href="http://www.shsforums.net/topic/41036-faq-for-the-megamods/">Megamod FAQ</a> for more troubleshooting tips.
+		</p><br>
+
+		<hr><br>
+
+ 		<p>
+			If none of this resolves your issue, or you have mod-specific issues, please report the problem in the mod's <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">forum</a>. Include the contents of your <acronym title="Weimer Dialogue Utility">WeiDU</acronym>.log file in the post, or attach it if it's large.
+		</p><br>
+
+			<address>
+				<span class="footer">BuTcHeRy &gt; Troubleshooting</span> &#8226; <a href="#top">BACK TO TOP</a>
+			</address>
+	  </div>
+
+<!-- ======================= C r e d i t s ====================== -->
 	  <a name="credits" id="credits"></a>
-		<div class="content">
+	  <div class="content">
+
 		<h2>
 			Credits and Acknowledgements
 		</h2><br>
 
 		<h4>
 			  Author: <a href="https://www.baldursgateworld.fr/lacouronne/members/draztik.html">DrAzTiK</a>
-		</h4>
+		</h4><br>
 
-<hr>
+		<p>
+			<span style="color: #FFCC33;">&#9755;</span> For support or questions, please visit the <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">mod forum</a>.
+		</p><br>
+
+		<hr><br>
+
 		<h3>
 			Special Acknowledgements to:
 		</h3>
 
-		<ul>
-			<li>
-			  <a href="https://www.baldursgateworld.fr"><acronym title="Copper Coronet">La Couronne de Cuivre</acronym></a> team for hosting the mod.
- 			</li>
- 			<li>
-			  The creators of the Baldur's Gate series: <a href="http://www.bioware.com/">Bioware</a> and <a href="http://www.obsidian.net/">Black Isle Studios</a>.
-			</li>
-			<li>
-			  Big thanks to Freddy_Gwendo (aka Gwendolyne) for make the update of this mod possible.
- 			</li>
-			<li>
-			  Thanks to Pen of Chaos for borrowing his barbarian French soundset.
- 			</li>
-			<li>
-			  Thanks to artists from <a href="https://www.pinterest.fr/">Pinterest</a> for their portraits.
- 			</li>
-			<li>
-			  Everyone else from the <a href="https://www.baldursgateworld.fr"><acronym title="Copper Coronet">La Couronne de Cuivre</acronym></a>, <a href="http://gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.
- 			</li>
+		<ul style="margin-left: 6%;">
+			<li><a href="https://www.baldursgateworld.fr"><acronym title="Copper Coronet">La Couronne de Cuivre</acronym></a> team for hosting the mod.</li>
+ 			<li>The creators of the Baldur's Gate series: <a href="https://www.bioware.com/">Bioware</a> and <a href="https://www.obsidian.net/">Black Isle Studios</a>.</li>
+			<li>Big thanks to yota13 for providing the Russian translation.</li>
+			<li>Big thanks to Freddy_Gwendo (aka Gwendolyne) for make the update of this mod possible.</li>
+			<li>Thanks to Pen of Chaos for borrowing his barbarian French soundset.</li>
+			<li>Thanks to artists from <a href="https://www.pinterest.fr/">Pinterest</a> for their portraits.</li>
+			<li>Everyone else from the <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a>, <a href="https://www.gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.</li>
 		</ul><br>
 
-<hr>
+		<hr><br>
+
 		<h3>
 			Programs/tools used in creation:
 		</h3>
 
-		<ul>
+		<ul style="margin-left: 6%;">
 			<li>
-			  <a href="http://www.weidu.org/%7Ethebigg/"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>, by Wes Weimer, the bigg and Wisp.
+			  <a href="https://github.com/WeiDUorg/weidu/releases"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>, by Wes Weimer, the bigg and Wisp.
 			</li>
 			<li>
-			  <a href="http://forums.pocketplane.net/index.php/topic,25153.msg314249.html#msg314249">Near Infinity</a>, by Jon Olav Hauglid, FredSRichardson, and Argent77.
+			  <a href="https://github.com/Argent77/NearInfinity/releases">Near Infinity</a>, by Jon Olav Hauglid, FredSRichardson, and Argent77.
 			</li>
 			<li>
 			  <a href="http://www.shsforums.net/topic/31285-infinity-explorer-v085/">Infinity Explorer</a>, by Dmitry Jemerov / bigmoshi.
 			</li>
 			<li>
-			  <a href="http://www.gibberlings3.net/tools/dltcep.php"><acronym title="Dragonlance Total Conversion Editor Pro">DLTCEP</acronym></a>, by Avenger.
+			  <a href="https://www.gibberlings3.net/mods/tools/dltcep/"><acronym title="Dragonlance Total Conversion Editor Pro">DLTCEP</acronym></a>, by Avenger.
 			</li>
 			<li>
 			  <a href="http://www.baldursgatemods.com/forums/index.php?action=downloads;sa=view;down=85">CreMaker_v3.1.9</a>.
@@ -867,19 +1214,21 @@
 			  <a href="http://www.shsforums.net/files/file/1048-weidu-highlighter-for-notepad/">WeiDU Notepad++ Highlighters </a>, by Argent77.
  			</li>
 			<li>
-			  <a href="http://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a>, by TGRMN Software.
+			  <a href="https://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a>, by TGRMN Software.
  			</li>
 		</ul><br>
 
-<hr>
+		<hr><br>
+
 		<h3>
 			Copyrights Information
-		</h3>
+		</h3><br>
 
 		  <div class="important" style="color: #303030; background-color: #999999;">
 			<p>The BuTcHeRy is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by DrAzTiK, based on material from the game Baldur's Gate II and its expansion.</p>
+			<p>All mod content is &copy;DrAzTiK.</p>
 			<p>Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.</p>
-<br>
+			<br>
 			<p style="font-family: Verdana, Tahoma, Arial, sans-serif">If there are any copyright issues or this statement needs revision, then please contact me and advise me what to do about it. Most notably, if you see any artwork in this mod that might conflict with Copyright rules, please let me know as soon as possible, and I will remove the conflicting content immediately.</p>
 		  </div><br>
 		<p>
@@ -890,11 +1239,12 @@
 			<address>
 				<span class="footer">BuTcHeRy &gt; Credits and Acknowledgements</span> &#8226; <a href="#top">BACK TO TOP</a>
 			</address>
-		</div>
+	  </div>
 
-	<!-- ======================= V e r s i o n s ====================== -->
+<!-- ======================= V e r s i o n s ====================== -->
 	  <a name="versions" id="versions"></a>
-		<div class="content">
+	  <div class="content" id="versionHistory">
+
 		<h2>
 			Version History
 		</h2><br>
@@ -909,9 +1259,9 @@
 					<li style="margin-left: -70px;margin-right: 70px">Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> (changes COMPILE ~xyz.d/baf~ ~override~ to COMPILE ~xyz.d/baf~) and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.</li>
 					<li style="margin-left: -70px">Provided full compatibility with stratagems and Item revisions.</li>
 					<li style="margin-left: -70px">tp2 split into components and commented for easier further updates.</li>
-					<li style="margin-left: -70px">Reorganized components (DESIGNATED numbers).</li>
+					<li style="margin-left: -70px">Reorganized components (<span style="color:purple";>DESIGNATED</span> numbers).</li>
 					<li style="margin-left: -70px">Added BG2EE compatibility (probably with EET, but not yet tested).</li>
-					<li style="margin-left: -70px">Fixed wrong coding: turned WRITE_SHORT 0x028 to WRITE_LONG 0x028 (animation slot is a dword, not a word!) and WRITE_BYTE 0x242 to WRITE_SHORT 0x242 (Morale recovery is a word, not a byte).</li>
+					<li style="margin-left: -70px">Fixed wrong coding: turned <span style="color:red";>WRITE_SHORT</span> 0x028 to WRITE_LONG 0x028 (animation slot is a dword, not a word!) and WRITE_BYTE 0x242 to WRITE_SHORT 0x242 (Morale recovery is a word, not a byte).</li>
 					<li style="margin-left: -70px">Polished WRITE_ASCII command with #n.</li>
 					<li style="margin-left: -70px">No longer overwrites mod item files if there are already installed.</li>
 					<li style="margin-left: -70px">Used new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM command.</li>
@@ -926,7 +1276,7 @@
 					<li style="margin-left: -70px">Updated installer <acronym title="Weimer Dialogue Utility">WeiDU</acronym> to v246.</li>
 				</ul>
 			<li>Components specific modifications and fixes: please read the <a href="change-log.txt/">change-log file</a>.</li>
-		</ul>
+		</ul><br>
 
 		<p class="version">
 			Version 3.2 - October 10, 2011
@@ -937,7 +1287,7 @@
 			<li>Added a magical armor to Tazok.</li>
 			<li>Increased DigDag to level 13 Berseker.</li>
 			<li>Decreased the number of Orcs spawned in final fight.</li>
-		</ul>
+		</ul><br>
 
 		<p class="version">
 			Version 3 - March 1, 2011
@@ -945,7 +1295,7 @@
 
 		<ul>
 			<li>Better compatibility with SCS II (especially more sensible choices of weapon proficiencies and kits for fighters component).</li>
-		</ul>
+		</ul><br>
 
 		<p class="version">
 			Version 2 - November 30, 2010
@@ -953,7 +1303,7 @@
 
 		<ul>
 			<li>Added French translation.</li>
-		</ul>
+		</ul><br>
 
 		<p class="version">
 			Version 1 - November 11, 2010
@@ -961,8 +1311,7 @@
 
 		<ul>
 			<li>Initial release.</li>
-		</ul>
-
+		</ul><br>
 
 			<address>
 				<span class="footer">BuTcHeRy &gt; Version History</span> &#8226; <a href="#top">BACK TO TOP</a>

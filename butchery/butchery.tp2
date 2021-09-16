@@ -23,14 +23,14 @@ LANGUAGE ~English~
          ~english~
          ~butchery/lang/english/setup.tra~
          ~butchery/lang/english/butchery.tra~
-//         ~butchery/lang/english/d9CutTa.tra~	// DEPRECATED as of v 3.2
+//         ~butchery/lang/english/d9CutTa.tra~  // DEPRECATED as of v 3.2
          ~butchery/lang/english/d9firorc.tra~
 
 LANGUAGE ~Francais~
          ~french~
          ~butchery/lang/french/setup.tra~
          ~butchery/lang/french/butchery.tra~
-//         ~butchery/lang/french/d9CutTa.tra~	// DEPRECATED as of v 3.2
+//         ~butchery/lang/french/d9CutTa.tra~  // DEPRECATED as of v 3.2
          ~butchery/lang/french/d9firorc.tra~
 
 LANGUAGE ~Russian (translation by yota13)~
@@ -40,34 +40,335 @@ LANGUAGE ~Russian (translation by yota13)~
          ~butchery/lang/russian/d9firorc.tra~
 
 
-///////////////////////////////////////////////////////////////////
-//          BUTCHERY IN FIRKRAAG'S LAIR (COMPONENT #10)          //
-///////////////////////////////////////////////////////////////////
-
+/* ========================================================================= *
+ *    Firkraag's Lair: DrAzTiK's revisited fight against Tazok and DigDag    *
+ * ========================================================================= */
 BEGIN @10
-	REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// This mod requires ToB, BGT, BG2:EE or EET to be installed.
-	DESIGNATED 10
+DESIGNATED 10 LABEL ~d9_butchery_tazok~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
 
-	INCLUDE ~%MOD_FOLDER%/components/10_first_component.tpa~
+	INCLUDE ~%MOD_FOLDER%/components/10_improved_tazok_fight.tpa~
 
 
-/////////////////////////////////////////////////////////////////////
-//          REBALANCING VANILLA CREATURES (COMPONENT #20)          //
-/////////////////////////////////////////////////////////////////////
 
+/* ======================================== *
+ *    Rebalancing some generic creatures    *
+ * ======================================== */
+BEGIN @11
+DESIGNATED 11 LABEL ~d9_butchery_rebalanced_creatures~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/11_rebalancing_creatures.tpa~
+
+
+
+/* ================================== *
+ *    Rebalancing Tazok and DigDag    *
+ * ================================== */
+BEGIN @12
+DESIGNATED 12 LABEL ~d9_butchery_rebalanced_tazok~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/12_rebalancing_tazok.tpa~
+
+
+
+/* =================================================================== *
+ *    Groumf and Bourrinos Encounter at Firkraag's Hideout entrance    *
+ * =================================================================== */
 BEGIN @20
-	REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// This mod requires ToB, BGT, BG2:EE or EET to be installed.
-	DESIGNATED 20
+DESIGNATED 20 LABEL ~d9_butchery_groumf_firkraag~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
 
-	INCLUDE ~%MOD_FOLDER%/components/20_second_component.tpa~
+	INCLUDE ~%MOD_FOLDER%/components/20_groumf_firkraag.tpa~
 
 
-////////////////////////////////////////////////////////////////
-//          REBALANCING MINOR BOSSES (COMPONENT #30)          //
-////////////////////////////////////////////////////////////////
 
+/* ================================================ *
+ *    Groumf and Bourrinos Encounter at Brynnlaw    *
+ * ================================================ */
+BEGIN @21
+DESIGNATED 21 LABEL ~d9_butchery_groumf_brynnlaw~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/21_groumf_brynnlaw.tpa~
+
+
+
+/* ===================================================== *
+ *    Groumf and Bourrinos Encounter in the Underdark    *
+ * ===================================================== */
+BEGIN @22
+DESIGNATED 22 LABEL ~d9_butchery_groumf_underdark~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/22_groumf_underdark.tpa~
+
+
+
+/* ========================================================= *
+ *    Revisited fight against Wraith Sarevok in the Abyss    *
+ * ========================================================= */
 BEGIN @30
-	REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// This mod requires ToB, BGT, BG2:EE or EET to be installed.
-	DESIGNATED 30
+DESIGNATED 30 LABEL ~d9_butchery_sarevok~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
 
-	INCLUDE ~%MOD_FOLDER%/components/30_third_component.tpa~
+	INCLUDE ~%MOD_FOLDER%/components/30_revisited_sarevok.tpa~
+
+
+
+/* =============================================== *
+ *    Move Samia group into Firkraag's Entrance    *
+ * =============================================== *
+BEGIN @31
+DESIGNATED 31 LABEL ~d9_butchery_move_samia~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/31_samia.tpa~
+*/
+
+
+/* ========================================================= *
+ *    Add battle songs in some areas that do not have any    *
+ * ========================================================= */
+BEGIN @32
+DESIGNATED 32 LABEL ~d9_butchery_battlesongs~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/32_battlesongs.tpa~
+
+
+
+/* ========================= *
+ *    DrAzTiK's creatures    *
+ * ========================= */
+BEGIN @40
+DESIGNATED 40 LABEL ~d9_butchery_draztic_creatures~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/40_draztik_creatures.tpa~
+
+
+
+/* ============================================ *
+ *    Butchery in Irenicus Dungeon (Dwarves)    *
+ * ============================================ */
+BEGIN @41
+DESIGNATED 41 LABEL ~d9_butchery_irenicus_fungeon~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/41_irenicus_butchery.tpa~
+//DrAzTiK creatures
+
+
+/* ========================================== *
+ *    Butchery for high and low reputation    *
+ * ========================================== *
+BEGIN @42
+DESIGNATED 42 LABEL ~d9_butchery_reputation_trap~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/42_eighth_component.tpa~
+*/
+
+
+/* =========================================================== *
+ *    Butchery in the Forest of Tethyr (Animals and Druids)    *
+ * =========================================================== */
+BEGIN @43
+DESIGNATED 43 LABEL ~d9_butchery_tethyr_forest~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/43_butchery_tethyr.tpa~
+
+
+
+/* ======================================================= *
+ *    Butchery in the planar sphere (Demonic creatures)    *
+ * ======================================================= */
+BEGIN @44
+DESIGNATED 44 LABEL ~d9_butchery_planar_sphere~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/44_butchery_planar_sphere.tpa~
+
+
+
+/* ============================================================= *
+ *    3 butcheries in Spellhold (Golems, Vampires and Trolls)    *
+ * ============================================================= */
+BEGIN @45
+DESIGNATED 45 LABEL ~d9_butchery_spellhold~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/45_butchery_spellhold.tpa~
+//DrAzTiK creatures
+
+
+
+/* ============================================== *
+ *    Butchery outside de'Arnise Keep (Trolls)    *
+ * ============================================== */
+BEGIN @46
+DESIGNATED 46 LABEL ~d9_butchery_arnise_keep~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/46_butchery_de_arnise.tpa~
+//DrAzTiK creatures
+
+
+
+/* ======================================== *
+ *    Butchery in Windspear Hills (Orcs)    *
+ * ======================================== */
+BEGIN @47
+DESIGNATED 47 LABEL ~d9_butchery_windspear_hills~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/47_butchery_windspear_hills.tpa~
+
+
+
+/* ===================================== *
+ *    Butchery in Umar Hills (Wolves)    *
+ * ===================================== */
+BEGIN @48
+DESIGNATED 48 LABEL ~d9_butchery_umar_hills~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/48_butchery_umar_hills.tpa~
+
+
+
+/* ==================================================================== *
+ *    2 butcheries in Trademeet and outside Watcher's Keep (Animals)    *
+ * ==================================================================== */
+BEGIN @49
+DESIGNATED 49 LABEL ~d9_butchery_animals~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/49_butchery_trademeet.tpa~
+
+
+
+/* =========================================================================================== *
+ *    2 butcheries of Golems in Suldanessellar and Watcher's Keep (Carston and the machine)    *
+ * =========================================================================================== */
+BEGIN @50
+DESIGNATED 52 LABEL ~d9_butchery_golems~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/50_butchery_suldanessellar.tpa~
+
+
+
+/* ====================================== *
+ *    Butchery of Yaga-Shura revisited    *
+ * ====================================== */
+BEGIN @51
+DESIGNATED 51 LABEL ~d9_butchery_yaga_shura~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+//require predicate ACENSION
+
+	INCLUDE ~%MOD_FOLDER%/components/51_butchery_yaga_shura.tpa~
+
+
+
+/* =========================================================== *
+ *    Butchery in the Druid Grove area (Animals and Druids)    *
+ * =========================================================== */
+BEGIN @52
+DESIGNATED 52 LABEL ~d9_butchery_druid_grove~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/52_butchery_druid_grove.tpa~
+
+
+
+/* ================================================= *
+ *    Butchery in the Beholder Hideout (Fanatics)    *
+ * ================================================= */
+BEGIN @53
+DESIGNATED 53 LABEL ~d9_butchery_eyeless~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/53_butchery_eyeless_cult.tpa~
+
+
+/* ========================================================================== *
+ *    Butchery in Bodhi's Hideout (chapter 2, before Underdark) - Vampires    *
+ * ========================================================================== */
+BEGIN @54
+DESIGNATED 54 LABEL ~d9_butchery__bodi_chapter2~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/54_butchery_bodhi.tpa~
+
+
+
+/* ========================================================================= *
+ *    Butchery in Bodhi's Hideout (chapter 6, after Underdark) - Vampires    *
+ * ========================================================================= */
+BEGIN @55
+DESIGNATED 55 LABEL ~d9_butchery_bodi_chapter6~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/55_butchery_bodhi6.tpa~
+
+
+
+/* ========================================================================================== *
+ *    2 butcheries of Sahuagins in Sahuagin City and Watcher's Keep (Githyanki Encampment)    *
+ * ========================================================================================== */
+BEGIN @56
+DESIGNATED 56 LABEL ~d9_butchery_sahuagins~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/56_butchery_sahuagins.tpa~
+
+
+
+/* ============================================================================================================================================================================== *
+ *    4 butcheries of spiders in Pai'Na's Hideout entrance, Temple City (Unseeing Eye Plot), Watcher's Keep first floor (Altar level) and in the area outside Sendai's Hideout    *
+ * ============================================================================================================================================================================== */
+BEGIN @57
+DESIGNATED 57 LABEL ~d9_butchery_spiders~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/57_butchery_spiders.tpa~
+
+
+
+/* ===================================================================================================================================================== *
+ *    6 butcheries of skeletons in the lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Keep (Last Seals), and 2 in Nyalee's Hideout    *
+ * ===================================================================================================================================================== */
+BEGIN @58
+DESIGNATED 58 LABEL ~d9_butchery_skeletons~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/58_butchery_undead.tpa~
+//DrAzTiK creatures
+
+
+
+/* ================================================ *
+ *    More enemies scattered throughout the game    *
+ * ================================================ */
+BEGIN @80
+DESIGNATED 80 LABEL ~d9_butchery_more_ennemies~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/80_butchery_more_enemies.tpa~
+//DrAzTiK creatures
+
+
+
+/* ========================= *
+ *    Cosmetics component    *
+ * ========================= */
+BEGIN @90
+DESIGNATED 90 LABEL ~d9_butchery_cosmetics~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+
+	INCLUDE ~%MOD_FOLDER%/components/90_butchery_cosmetics.tpa~	
+
