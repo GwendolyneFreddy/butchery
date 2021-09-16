@@ -18,7 +18,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.cre~ ~override~
 	PATCH_IF (SOURCE_SIZE > 0x2c8) BEGIN
 
 		SPRINT gw_sexe ""
-		READ_LONG 0x28 animID
+		READ_LONG 0x028 animID
 		READ_BYTE 0x273 class
 		PATCH_IF (animID = DrowMaleAnimID) BEGIN
 			SPRINT gw_sexe "MALE"
@@ -28,9 +28,9 @@ COPY_EXISTING_REGEXP GLOB ~.*\.cre~ ~override~
 		END
 		PATCH_IF ("%gw_sexe%" STR_CMP "") BEGIN
 			PATCH_MATCH ~%class%~ WITH
-				1       BEGIN WRITE_LONG 0x28 IDS_OF_SYMBOL (animate ~MAGE_%gw_sexe%_ELF~) END      // MAGE
-				2 7 8   BEGIN WRITE_LONG 0x28 IDS_OF_SYMBOL (animate ~FIGHTER_%gw_sexe%_ELF~) END   // FIGHTER, FIGHTER_MAGE, FIGHTER_CLERIC
-				3       BEGIN WRITE_LONG 0x28 IDS_OF_SYMBOL (animate ~CLERIC_%gw_sexe%_ELF~) END    // CLERIC
+				1       BEGIN WRITE_LONG 0x028 IDS_OF_SYMBOL (animate ~MAGE_%gw_sexe%_ELF~) END     // MAGE
+				2 7 8   BEGIN WRITE_LONG 0x028 IDS_OF_SYMBOL (animate ~FIGHTER_%gw_sexe%_ELF~) END  // FIGHTER, FIGHTER_MAGE, FIGHTER_CLERIC
+				3       BEGIN WRITE_LONG 0x028 IDS_OF_SYMBOL (animate ~CLERIC_%gw_sexe%_ELF~) END   // CLERIC
 				DEFAULT
 			END
 		END

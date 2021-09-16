@@ -58,7 +58,7 @@ ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~helmet~
 ADD_CRE_ITEM ~RING95~	#0 #0 #0	~NONE~	~RING~
 	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9bodfgh~ #8
-WRITE_SHORT 0x28 25605                                        // Grimwarder animation
+WRITE_SHORT 0x028 25605                                        // Grimwarder animation
    	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2       // 2 stars in Two-handed Sword
 BUT_ONLY_IF */
 

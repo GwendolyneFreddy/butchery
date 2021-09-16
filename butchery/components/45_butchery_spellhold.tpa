@@ -73,7 +73,7 @@ COPY_EXISTING ~skelar01.cre~ ~override/d9elar0z.cre~
 	WRITE_BYTE  0x275 ~8~                                   // Gender = EXTRA
   	WRITE_BYTE  0x052 14									// THAC0 (vanilla 2)
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9BODFGH~ #8
-	WRITE_SHORT 0x28 25605                                        // Grimwarder animation
+	WRITE_SHORT 0x028 25605                                        // Grimwarder animation
 	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2       // 2 stars in Two-handed Sword
 BUT_ONLY */
 

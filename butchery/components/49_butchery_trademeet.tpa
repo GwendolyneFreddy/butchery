@@ -173,7 +173,7 @@ BUT_ONLY
 // -------------------------------------------------
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsm02.cre~ BEGIN
 	COPY_EXISTING ~spidsm02.cre~ ~override/d9idsm02.cre~
-		WRITE_LONG  0x028 31236 //  araignée en peine animation 7a04 SPIDER_WRAITH
+		WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~SPIDER_WRAITH~)
 		WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	BUT_ONLY
