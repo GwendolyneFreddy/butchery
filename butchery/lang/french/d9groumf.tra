@@ -1,0 +1,39 @@
+// Groumf
+// ------
+@400 = ~Ha haaa ! Voilà le groupe d'aventuriers que Firkraag veut que nous éliminions. Par la fureur de Tempus, je les imaginais bien plus impressionnants que ça !~
+@401 = ~Du calme, Bourrinos, n'oublies pas que c'est la courtoisie qui impose le respect !~
+@402 = ~Si Firkraak vous a engagés pour surveiller l'entrée de son donjon, c'est sûrement que vous êtes de faibles créatures que je vais encore expédier en deux coups de cuillère à pot. Il n'y a décidément que des créatures pathétiques sur cette carte. Mais que faut-il faire pour avoir une rencontre décente dans cette zone ? Je ne demande pas la lune, mais tout de même, à quoi bon avoir l'équipement magique que je possède si c'est pour terrasser des gobelins manchots !? Je vous pose la question ?~
+@403 = ~Humm... Et bien si vous voulez savoir, je dois avouer en fait que moi même et ma tribu ne savons pas exactement ce que nous faisons ici... J'ai l'impression qu'une puissante magie nous a créés ici tout récemment afin de satisfaire votre désir et ralentir un maximum votre progression. Et je ne pense pas que cela soit l'œuvre de ce Firkraag.~
+@404 = ~Cependant je sais qu'à la fin de notre dialogue, nous nous rendrons inévitablement hostiles envers votre groupe que je trouve pourtant bien sympathique.~
+@405 = ~Il semble que ma fonction était de me cacher ici et de vous interpeller à vue avant d'engager les hostilités : la routine donc.~
+@406 = ~Je me disais bien qu'il y avait quelque chose de bizarre. D'ailleurs pour un semi orque, vous me paraissez un peu trop intelligent et cultivé, cela dit sans vouloir vous offenser !~
+@407 = ~Veuillez excuser mon fidèle Bourrinos, c'est un élève doué mais un peu impulsif... Je ne dis pas que c'est toujours un bon garçon mais il est dur à la tâche; et puis il ne vénère pas Gruumsh, ce qui est bon signe.~
+@408 = ~Pour répondre à votre question, j'ai en effet l'impression que celui qui m'a envoyé ici a pris soin de m'octroyer généreusement un bonus en intelligence et je lui en suis assez reconnaissant à vrai dire... Je pensais au début que c'était pour combattre les Illithids, mais peut-être y a t-il au fond une autre raison... Sans doute vais-je me jumeler en mage dans un futur proche, mais à vrai dire je n'y crois pas trop, seul les humains possèdent ce talent; ce qui est profondément injuste, vous en conviendrez.~
+@409 = ~Et oui c'est un gros problème à notre époque. Mais certaines légendes racontent l'existence dans une 3e dimension de certains Semi-Orques paladin/barde ou bien mage/bouffon qui vivraient heureux, en harmonie et auraient beaucoup d'enfants. Gorion m'a enseigné cela quand j'étais jeune à Château-Suif, mais à vrai dire je n'y ai jamais cru sérieusement. Imoen, quant à elle, a toujours rêvé de voir ce "spectacle" un jour...~
+@410 = ~J'avoue que j'ai aussi du mal à y croire. Tout cela est contre nature, selon moi. Je me sens déjà mal à l'aise avec un score d'intelligence aussi élevé... Par contre, qu'est-ce que je suis laid ! Ce n'est pas facile à supporter tous les jours. J'essaye bien de faire abstraction autant que faire se peut, mais la réalité me rattrape souvent violemment quand j'aperçois l'ombre de mon profil sur le mur du jardin...~
+@411 = ~Vous savez, c'est la beauté du cœur caché qui compte !~
+@412 = ~Certes, certes, mais tout de même... ~
+@413 = ~Cela dit, je pense qu'il est grand temps pour nous d'engager les hostilités. Il n'y a de toute façon aucune autre alternative possible. J'ai déjà vérifié le parchemin.d plusieurs fois voyez-vous (le codage est d'ailleurs sacrément old school...). N'ayez donc crainte de vous battre à fond et de donner votre maximum, Je serais probablement ressuscité si je venais à mourir; et, qui sait, nos routes se croiseront peut être à nouveau dans une quête qui sera je l'espère un peu plus sérieuse que celle ci...~
+@414 = ~Entendu. Ce fut un grand plaisir de vous rencontrer, Groumf !~
+@415 = ~Pour votre propre sécurité, je vous conseille quand même d'élucider ce mystère au plus vite. Pour ma part, je sens bien que je suis obligé de vous combattre à mort, encore heureux que cela soit en parfait accord avec ma nature chaotique et destructrice. N'est-ce pas, Bourrinos ?~
+@416 = ~Au fait, avez vous installé l'excellent mod Stratagems de Messire David Wallace, et notamment le composant qui améliore l'intelligence artificielle des misérables créatures comme moi ?~
+@417 = ~?? Heuu... Oui, je pense...~
+@418 = ~Heuu... Non je ne crois pas, mais de quoi parlez vous ?~
+@419 = ~Alors le combat sera sûrement un peu plus facile pour vous. Cependant ne vous attendez pas à trouver d'objets magiques où des sommes d'or considérables sur nos misérables carcasses : notre "créateur" a visiblement insisté pour éviter tout grosbillisme lors de cette rencontre. J'ose espérer cependant que nous nous montrerons à la hauteur de ce combat...~
+@420 = ~À L'ASSAUT, MES FRÈRES, ET PAS DE QUARTIER !!! Pas de pitié pour les lâches et pour les traîtres ! Ceux qui battront en retraite seront abattus ! (Hé, c'est bon, ça !)~
+@421 = ~Alors le combat sera plus difficile pour vous. Par ailleurs ne vous  attendez pas non plus à trouver d'objets magiques ou des sommes d'or considérables sur nos misérables carcasses : notre "créateur" a visiblement insisté pour éviter tout grosbillisme lors de cette rencontre. J'ose espérer que nous allons vous donner du fil à retordre. Dans le pire des cas, vous pourrez toujours recharger la partie, bande de petits malins...~
+@422 = ~(soupir...)~
+
+// Bourrinos
+// ---------
+@600 = ~BASTON !~ [d9baraa]
+
+// Script
+// ------
+@450 = ~Du renfort !~
+@451 = ~Bourrinos est mort ! Sortez tous
+de vos cachettes et vengez notre frère !~
+
+// Seem to be unused...
+// --------------------
+//@452 = ~Gloups !~

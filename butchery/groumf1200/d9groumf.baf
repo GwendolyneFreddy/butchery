@@ -1,0 +1,100 @@
+IF
+	Global("D9Groumfenemy","AR1200",0)
+	NumTimesTalkedTo(0)
+	Allegiance(Myself,NEUTRAL)
+	See([PC])
+THEN
+	RESPONSE #100
+		Wait(1)
+		SetGlobal("D9Groumfenemy","AR1200",1)
+		StartDialogueNoSet([PC])
+END
+
+
+IF
+	Global("D9Groumfrespawn1","LOCALS",0)
+	HPPercentLT(Myself,70)
+THEN
+	RESPONSE #100
+		SetGlobal("D9Groumfrespawn1","LOCALS",1)
+		CreateCreature("D9BN7AA",[4339.600],0)  // Barbarian - Barbare
+		CreateCreature("D9ORNEU",[4339.600],0)  // Orc - Orque
+		CreateCreature("D9ORNEU",[4339.600],0)  // Orc - Orque
+		CreateCreature("D9BR7S",[4339.600],0)   // Barbarian - Barbare
+		DisplayStringHead(Myself,@450)          // ~Reinforcements!~
+END
+
+IF
+	Global("D9Groumfrespawn1","LOCALS",1)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	HPPercentLT(Myself,70)
+THEN
+	RESPONSE #100
+		SetGlobal("D9Groumfrespawn1","LOCALS",2)
+		CreateCreatureEffect("D9BN7AA","",[4339.600],0)  // Barbarian - Barbare
+		CreateCreatureEffect("D9ORNEU","",[4339.600],0)  // Orc - Orque
+		CreateCreatureEffect("D9ORNEU","",[4339.600],0)  // Orc - Orque
+		CreateCreatureEffect("D9ORC03","",[4339.600],0)  // Orc Priest
+
+END
+
+IF
+	Global("D9Groumfrespawn1","LOCALS",2)
+	Difficulty(HARDEST)
+	HPPercentLT(Myself,70)
+THEN
+	RESPONSE #100
+		SetGlobal("D9Groumfrespawn1","LOCALS",3)
+		CreateCreatureEffect("D9OGREMA","",[4339.600],0)  // Ogre Mage
+		CreateCreatureEffect("D9ORNEU","",[4339.600],0)   // Orc - Orque
+		CreateCreatureEffect("D9ORNEU","",[4339.600],0)   // Orc - Orque
+		CreateCreatureEffect("D9BR7S","",[4339.600],0)    // Barbarian - Barbare
+
+END
+
+// Bourrinos is dead
+// -----------------
+IF
+	Global("D9Bourrinosrespawn","LOCALS",0)
+	Dead("D9Bour11") // Bourrinos
+THEN
+	RESPONSE #100
+		SetGlobal("D9Bourrinosrespawn","LOCALS",1)
+		CreateCreature("D9BN7AA",[3827.1043],0)  // Barbarian - Barbare
+		CreateCreature("D9ORNEU",[3726.1084],0)  // Orc - Orque
+		CreateCreature("D9ORNEU",[3892.796],0)   // Orc - Orque
+		CreateCreature("D9BR7S",[4167.1264],0)   // Barbarian - Barbare
+		DisplayStringHead(Myself,@451)           // ~Bourrinos is dead! Come out of hiding and avenge your brother!~
+END
+
+IF
+	Global("D9Bourrinosrespawn","LOCALS",1)
+	Dead("D9Bour11")  // Bourrinos
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("D9Bourrinosrespawn","LOCALS",2)
+		CreateCreatureEffect("D9BN7AA","",[3827.1043],0)  // Barbarian - Barbare
+		CreateCreatureEffect("D9ORNEU","",[3726.1084],0)  // Orc - Orque
+		CreateCreatureEffect("D9ORNEU","",[3892.796],0)   // Orc - Orque
+		CreateCreatureEffect("D9ORC03","",[4307.1216],0)  // Orc Priest - Prêtre Orque
+
+END
+
+IF
+	Global("D9Bourrinosrespawn","LOCALS",2)
+	Dead("D9Bour11")  // Bourrinos
+	Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("D9Bourrinosrespawn","LOCALS",3)
+		CreateCreatureEffect("D9OGREMA","",[3827.1043],0)  // Ogre Mage
+		CreateCreatureEffect("D9ORNEU","",[3726.1084],0)   // Orc - Orque
+		CreateCreatureEffect("D9ORNEU","",[3892.796],0)    // Orc - Orque
+		CreateCreatureEffect("D9BR7S","",[4167.1264],0)    // Barbarian - Barbare
+
+END

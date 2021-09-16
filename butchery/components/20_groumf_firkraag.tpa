@@ -1,0 +1,189 @@
+/* ================================================================================================================================================= *
+ *  v 5.0.0                                                                                                                                          *
+ *           B U T C H E R Y    :    G r o u m f    a n d    B o u r r i n o s    a t    F i r k r a a g ' s    l a i r    e n t r a n c e           *
+ *                                                                                                                                                   *
+ * ================================================================================================================================================= */
+
+SILENT
+
+/* ------------------ *
+ *  Installing Items  *
+ * ------------------ */
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9boots.itm~ BEGIN
+	COPY ~%MOD_FOLDER%/items/d9boots.itm~ ~override~  // Boots providing immunity to backstab for BARBARIAN
+END
+
+
+/* ---------------------- *
+ *  Installing Portraits  *
+ * ---------------------- */
+
+ACTION_IF (is_portraits2 = 0) BEGIN
+	COPY ~%MOD_FOLDER%/portraits%ee_file%/d9gros.bmp~  ~override~
+	COPY ~%MOD_FOLDER%/portraits%ee_file%/d9ur11s.bmp~ ~override~
+END
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Groumf (L13 Berserker)
+// ----------------------
+COPY ~%MOD_FOLDER%/groumf1200/d9groumf.cre~ ~override~
+	SAY NAME1 @104
+	SAY NAME2 @104
+	ADD_CRE_ITEM ~AX1H02~ #1 #0 #0 ~IDENTIFIED~ ~WEAPON1~         // Battle Axe +1
+	ADD_CRE_ITEM ~AX1H04~ #30 #0 #0 ~IDENTIFIED~ ~WEAPON2~ EQUIP  // Throwing Axe
+	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~                // Large Shield
+	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~                 // Full Plate Mail
+	ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~IDENTIFIED~ ~QITEM1~          // 5 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~IDENTIFIED~ ~QITEM2~          // Oil of Speed
+	// Custom soundest
+	SAY BATTLE_CRY1             @201 // ~Misérables insectes !~ [d9groua]
+	SAY BATTLE_CRY2             @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY BATTLE_CRY3             @203 // ~Par la force d'Hutgar !~ [d9grou9]
+	SAY DAMAGE                  ~~ [d9groul]
+	SAY DYING                   ~~ [d9groum]
+	SAY HURT                    ~~ [d9groue]
+	SAY SELECT_COMMON1          @204 // ~Ha Ha Ha !~ [d9groug]
+	SAY SELECT_COMMON2          @205 // ~Quoi ?!~ [d9grouf]
+	SAY SELECT_COMMON3          @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY SELECT_COMMON4          @206 // ~Encore du sang !~ [d9grou0]
+	SAY CRITICAL_MISS           ~~ [d9grou1]
+	SAY TARGET_IMMUNE           ~~ [d9grou2]
+	SAY SPELL_DISRUPTED         ~~ [d9grou6]
+	SAY REACT_TO_DIE_GENERAL    ~~ [d9grouw]
+BUT_ONLY
+
+// Bourrinos (L11 Barbarian)
+// -------------------------
+COPY ~%MOD_FOLDER%/groumf1200/d9bour11.cre~ ~override~
+	SAY NAME1 @105
+	SAY NAME2 @105
+	ADD_CRE_ITEM ~HALB02~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP TWOHANDED // Halberd +1
+	ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~STOLEN~ ~ARMOR~                   // Splint Mail
+	// Custom soundest
+	SAY BATTLE_CRY1     @211 // ~À mort !~ [d9bara9]
+	SAY BATTLE_CRY2     @212 // ~Baston !~ [d9baraa]
+	SAY BATTLE_CRY3     @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON1  @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON2  @213 // ~Ouais !~ [d9barag]
+	SAY SELECT_COMMON3  @214 // ~Quoi ?!~ [d9barah]
+	SAY SELECT_COMMON4  @211 // ~À mort !~ [d9bara9]
+	SAY DAMAGE          ~~ [d9baral]
+	SAY DYING           ~~ [d9baram]
+	SAY HURT            ~~ [d9barae]
+	SAY CRITICAL_MISS   ~~ [d9bara1]
+	SAY SPELL_DISRUPTED ~~ [d9bara6]
+BUT_ONLY
+
+// Orc
+// ---
+COPY ~%MOD_FOLDER%/groumf1200/d9orneu.cre~ ~override~
+	WRITE_LONG  0x0244 0x00004000  // Barbarian kit
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+ 
+// Barbarians - Barbares
+// ---------------------
+COPY ~%MOD_FOLDER%/groumf1200/d9bv7hj.cre~ ~override~ // NOT USED
+	SAY NAME1 @106
+	SAY NAME2 @106
+	ADD_CRE_ITEM ~AX1H04~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP // Throwing Axe
+	ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~NONE~ ~HELMET~
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+COPY ~%MOD_FOLDER%/groumf1200/d9bn7aa.cre~ ~override~
+	SAY NAME1 @106
+	SAY NAME2 @106
+	ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP // Battle Axe
+	ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~NONE~ ~HELMET~
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+COPY ~%MOD_FOLDER%/groumf1200/d9bn7gg.cre~ ~override~
+	SAY NAME1 @106
+	SAY NAME2 @106
+	ADD_CRE_ITEM ~BLUN01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP // Club
+	ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~NONE~ ~HELMET~
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+COPY ~%MOD_FOLDER%/groumf1200/d9br7s.cre~ ~override~
+	SAY NAME1 @106
+	SAY NAME2 @106
+	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP TWOHANDED // Two-handed Sword
+	ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~NONE~ ~HELMET~
+	SAY DAMAGE			~~ [d9baral]
+	SAY DYING			~~ [d9baram]
+	SAY HURT			~~ [d9barae]
+	SAY CRITICAL_MISS	~~ [d9bara1]
+	SAY SPELL_DISRUPTED	~~ [d9bara6]
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+COPY ~%MOD_FOLDER%/groumf1200/d9bv7s.cre~ ~override~
+	SAY NAME1 @106
+	SAY NAME2 @106
+	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP TWOHANDED // Two-handed Sword
+	ADD_CRE_ITEM ~HELM33~ #0 #0 #0 ~IDENTIFIED~ ~HELMET~                  // Gold Horned Helm
+	SAY DAMAGE			~~ [d9baral]
+	SAY DYING			~~ [d9baram]
+	SAY HURT			~~ [d9barae]
+	SAY CRITICAL_MISS	~~ [d9bara1]
+	SAY SPELL_DISRUPTED	~~ [d9bara6]
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Ogre Mage
+// ---------
+COPY_EXISTING ~ogrema01.cre~ ~override/d9ogrema.cre~
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Orc Priest
+// ----------
+COPY_EXISTING ~orc03.cre~ ~override/d9orc03.cre~
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+LAF extend_area_script STR_VAR area = "ar1200" top = "%MOD_FOLDER%/groumf1200/d9ar1200.baf" END
+
+//COMPILE~%MOD_FOLDER%/dlg/d9bour11.d~ // empty
+COMPILE~%MOD_FOLDER%/dlg/d9groumf.d~
+
+COMPILE ~%MOD_FOLDER%/groumf1200/d9groumf.baf~
+//COMPILE ~%MOD_FOLDER%/groumf1200/d9bour11.baf~ // empty
+
+ACTION_IF NOT is_d9dwctyz BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9dwctyz.baf~
+END
+
+
+/* ---------------------- *
+ *  Installing Soundsets  *
+ * ---------------------- */
+
+ACTION_IF NOT is_soundset BEGIN
+	ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = EVAL ~butchery/audio/%LANGUAGE%~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
+		END
+	END ELSE BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = ~butchery/audio/french~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
+		END
+	END
+END

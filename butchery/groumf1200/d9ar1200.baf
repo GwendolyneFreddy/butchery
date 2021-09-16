@@ -1,0 +1,52 @@
+/* ===================================================================================== *
+ *    Groumf and Bourrinos Encounter at Firkraag's Hideout entrance (Windspear Hills)    *
+ * ===================================================================================== */
+
+IF
+	Global("D9GroumfExists","AR1200",0)
+THEN
+	RESPONSE #100
+		CreateCreature("D9Groumf",[4045.987],0)  // Groumf
+		CreateCreature("D9ORNEU",[4000.909],0)   // Orc - Orque
+		CreateCreature("D9BV7S",[4000.910],0)    // Barbarian - Barbare
+		CreateCreature("D9ORNEU",[4154.963],0)   // Orc - Orque
+		CreateCreature("D9BR7S",[4220.982],0)    // Barbarian - Barbare
+		CreateCreature("D9Bour11",[4082.997],0)  // Bourrinos
+		CreateCreature("D9BN7GG",[3995.945],0)   // Barbarian - Barbare
+		CreateCreature("D9BN7AA",[4133.996],0)   // Barbarian - Barbare
+		SetGlobal("D9GroumfExists","AR1200",1)
+END
+
+IF
+	Global("D9GroumfExists","AR1200",1)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		CreateCreature("ORC03",[4172.919],0)  // Orc Priest - Prêtre Orque
+		SetGlobal("D9GroumfExists","AR1200",2)
+END
+
+IF
+	Global("D9GroumfExists","AR1200",2)
+	Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		CreateCreature("OGREMA01",[4226.940],0)  // Ogre Mage
+		SetGlobal("D9GroumfExists","AR1200",3)
+END
+
+
+IF
+	Global("D9Samiaout","GLOBAL",1)
+THEN
+	RESPONSE #100
+        CreateCreature("Akae",[4048.1133],9)   // Akae
+		CreateCreature("Kaol",[3962.1103],9)   // Kaol
+		CreateCreature("Chak",[3936.1134],9)   // Chak
+		CreateCreature("Legdor",[3994.1152],9) // Legdoril
+		CreateCreature("Deshar",[4031.1168],9) // Ferric Ironblade
+		ActionOverride("Samia",Dialogue([PC])
+		SetGlobal("D9Samiaout","GLOBAL",2)
+END
