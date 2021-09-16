@@ -119,7 +119,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0808",1)
-		CreateCreatureOffScreen("d9mmy",0)  // Mummy - Momie
+		CreateCreatureOffScreen("d9mmy",0)     // Mummy - Momie
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0808",1)

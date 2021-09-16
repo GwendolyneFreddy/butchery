@@ -241,7 +241,7 @@ Ce composant ajoute aussi deux guerriers de ma composition avec des soundsets un
 <a name="11" id="11"></a>&#10173; **[11] Rééquilibrage de certaines creatures génériques**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems</em><br><br>
 
-&#10173; Ce composant améliore un peu les statistiques, jets de sauvegarde, points de vie et points de compétences de quelques créatures (orques et ogres notamment, et bon nombre d'animaux et d'autres créatures depuis la version 5.0.0). La plupart disposent dorénavant d'un kit de barbare ou de berserker, mais vous devrez installer Stratagems pour que ces créatures utilisent leurs capacités spéciales.
+&#9755; Ce composant améliore un peu les statistiques, jets de sauvegarde, points de vie et points de compétences de quelques créatures (orques et ogres notamment, et bon nombre d'animaux et d'autres créatures depuis la version 5.0.0). La plupart disposent dorénavant d'un kit de barbare ou de berserker, mais vous devrez installer Stratagems pour que ces créatures utilisent leurs capacités spéciales.
 
 Les capacités et immunités des squelettes et momies ennemis sont standardisés : ils ont toujours 100 % de résistance à l'électricité et au froid ainsi que 10 % de résistance magique par niveau. Leur resistance aux attaques de projectile est de 90 %. Ceci afin d'en faire des ennemis redoutables.
 
@@ -314,7 +314,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="12" id="12"></a>&#10173; **[12] Rééquilibrage de Tazok et de DigDag**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems</em><br><br>
 
-&#10173; Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, points de compétences...). DigDag est doté d'un kit de berserk. Je n'ai pas donné de kit à Tazok car Stratagems le fait déjà (« *IA générale plus efficace* »). Ce composant est aussi cosmétique : Tazok est de nouveau un demi-ogre (comme dans BG1) tandis que DigDag endosse l'animation de chef orog.
+&#9755; Ce composant améliore un peu Tazok et DigDag (statistiques, jets de sauvegarde, points de compétences...). DigDag est doté d'un kit de berserk. Je n'ai pas donné de kit à Tazok car Stratagems le fait déjà (« *IA générale plus efficace* »). Ce composant est aussi cosmétique : Tazok est de nouveau un demi-ogre (comme dans BG1) tandis que DigDag endosse l'animation de chef orog.
 
 <table style="margin-left: 80px" summary="Rebalanced Tazok and Dig-Dag">
 	<tr>
@@ -355,7 +355,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="20" id="20"></a>&#10173; **[20] Rencontre avec Groumf et Bourrinos devant le Donjon de Firkraag**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute un petit combat et une rencontre amusante avec 2 personnages rigolos devant l'entrée du Donjon de Firkraag, ceux-là même qui sont les gardes du corps de Tazok si vous avez installé les composants précédents.
+&#9755; Ce composant ajoute un petit combat et une rencontre amusante avec 2 personnages rigolos devant l'entrée du Donjon de Firkraag, ceux-là même qui sont les gardes du corps de Tazok si vous avez installé les composants précédents.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -363,7 +363,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="21" id="21"></a>&#10173; **[21] Rencontre avec Groumf et Bourrinos à Brynnlaw**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute un autre petit combat et une rencontre amusante avec ces mêmes personnages.
+&#9755; Ce composant ajoute un autre petit combat et une rencontre amusante avec ces mêmes personnages.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -371,7 +371,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="22" id="22"></a>&#10173; **[22] Rencontre avec Groumf et Bourrinos dans les Tréfonds Obscurs**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute un autre petit combat et une rencontre amusante avec ces mêmes personnages.
+&#9755; Ce composant ajoute un autre petit combat et une rencontre amusante avec ces mêmes personnages.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -379,7 +379,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="30" id="30"></a>&#10173; **[30] Combat revisité de Sarevok nécrophage dans les Abysses**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems</em><br><br>
 
-&#10173; Ce composant améliore grandement le combat final contre Sarevok dans le royaume abyssal de Bhaal. Ce dernier sera assisté de ses anciens équipiers de BG1.
+&#9755; Ce composant améliore grandement le combat final contre Sarevok dans le royaume abyssal de Bhaal. Ce dernier sera assisté de ses anciens équipiers de BG1.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -387,7 +387,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="31" id="31"></a>&#10173; **[31] Relocalisation du groupe de Samia à l'entrée du Donjon de Firkraag**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant ou après Stratagems</em><br><br>
 
-&#10173; Ce composant relocalise Samia et son groupe à l'entrée du Donjon de Firkraag.
+&#9755; Ce composant relocalise Samia et son groupe à l'entrée du Donjon de Firkraag.
 
 :warning: Ce composant est désactivé car il est toujours en phase de développement. N'essayez surtout pas de forcer son installation car il est buggé.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
@@ -397,7 +397,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="32" id="32"></a>&#10173; **[32] Musiques de combat dans les zones sans musique**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant ou après Stratagems</em><br><br>
 
-&#10173; Ce composant dote d'une musique de combat certaines zones qui n'en ont pas (Temple d'Amuaunator dans l'Antre du culte de l'Œil aveugle, Égouts sous la Couronne de Cuivre, Ruine du temple sous l'emprise des ombres, cave des trolls (test de folie de Spellhold) et Forêt de Téthyr.
+&#9755; Ce composant dote d'une musique de combat certaines zones qui n'en ont pas (Temple d'Amuaunator dans l'Antre du culte de l'Œil aveugle, Égouts sous la Couronne de Cuivre, Ruine du temple sous l'emprise des ombres, cave des trolls (test de folie de Spellhold) et Forêt de Téthyr.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -405,16 +405,15 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="40" id="40"></a>&#10173; **[40] Créatures de DrAzTiK**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute des créatures de ma création dans le bestiaire du jeu. Il est indispensable pour certains composants suivants.
+&#9755; Ce composant ajoute des créatures de ma création dans le bestiaire du jeu. Il est indispensable pour certains composants suivants.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
 
 <a name="41" id="41"></a>&#10173; **[41] Boucherie de nains dans le Donjon d'Irenicus**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le second niveau du Donjon d'Irenicus.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le second niveau du Donjon d'Irenicus.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -430,7 +429,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="43" id="43"></a>&#10173; **[43] Boucherie d'animaux et de druides dans la forêt de Téthyr**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans la forêt de Téthyr.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans la forêt de Téthyr.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -438,25 +437,23 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="44" id="44"></a>&#10173; **[44] Boucherie de démons dans la Sphère planaire**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le Plan des démons de la Sphère planaire.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le Plan des démons de la Sphère planaire.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
 
 <a name="45" id="45"></a>&#10173; **[45] 3 boucheries dans Spellhold (golems, vampires et trolls)**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
-&#10173; Ce composant ajoute 3 batailles contre quelques dizaines d'ennemis dans l'Asile de Spellhold: Asile, premier niveau du labyrinthe et cave des trolls (test de folie).
+&#9755; Ce composant ajoute 3 batailles contre quelques dizaines d'ennemis dans l'Asile de Spellhold: Asile, premier niveau du labyrinthe et cave des trolls (test de folie).
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
 
 <a name="46" id="46"></a>&#10173; **[46] Boucherie de trolls à l'extérieur du Château de'Arnise**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans la cour extérieure du Château de Nalia.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans la cour extérieure du Château de Nalia.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -464,7 +461,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="47" id="47"></a>&#10173; **[47] Boucherie d'orques dans les Collines de Lancevent**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans les Collines de Lancevent.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans les Collines de Lancevent.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -472,7 +469,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="48" id="48"></a>&#10173; **[48] Boucherie de loups dans les Collines d'Umar**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans les Collines d'Umar.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans les Collines d'Umar.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -480,7 +477,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="49" id="49"></a>&#10173; **[49] 2 boucheries d'animaux sauvages à Franc-Marché et à l'extérieur de la Tour de Garde**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis à Franc-Marché et à l'extérieur de la Tour de Garde.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis à Franc-Marché et à l'extérieur de la Tour de Garde.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -488,7 +485,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="50" id="50"></a>&#10173; **[50] 2 boucheries de golems à Sulanessellar et dans la Tour de Garde (Machine de Lum le Fou)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis à Suldanessalar et dans la Tour de Garde (étage de la Machine de Lum le Fou).
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis à Suldanessalar et dans la Tour de Garde (étage de la Machine de Lum le Fou).
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -496,7 +493,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="51" id="51"></a>&#10173; **[51] Boucherie de Yaga-Shura améliorée**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Ascension et Stratagems</em><br><br>
 
-&#10173; Ce composant modifie grandement la bataille contre l'armée de Yaga-Shura dans ToB pour la rendre plus longue et plus difficile. Il ne fonctionnera que si vous avez installé Ascension (version de David Wallace) et Stratagems.
+&#9755; Ce composant modifie grandement la bataille contre l'armée de Yaga-Shura dans ToB pour la rendre plus longue et plus difficile. Il ne fonctionnera que si vous avez installé Ascension (version de David Wallace) et Stratagems.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -504,7 +501,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="52" id="52"></a>&#10173; **[52] Boucherie d'animaux et de druides dans le Bosquet des druides**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le Bosquet des druides.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le Bosquet des druides.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -512,7 +509,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="53" id="53"></a>&#10173; **[53] Boucherie de fanatiques dans l'antre de l'Œil aveugle**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans l'antre de l'Œil aveugle.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans l'antre de l'Œil aveugle.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -520,7 +517,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="54" id="54"></a>&#10173; **[54] Boucherie de vampires dans l'antre de Bodhi au chapitre 2, avant l'Ombreterre**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le repaire de Bodhi au chapitre 2.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le repaire de Bodhi au chapitre 2.
 
 <ins>Note</ins> : Les pièges (pointes acérées) dans la grande salle où se trouve la mare de sang ont été désactivés pour qu'on puisse s'y battre sans gène.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
@@ -530,7 +527,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="55" id="55"></a>&#10173; **[55] Boucherie de vampires dans l'antre de Bodhi au chapitre 6, après l'Ombreterre**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le repaire de Bodhi au chapitre 6.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le repaire de Bodhi au chapitre 6.
 
 <ins>Note</ins> : Les pièges (pointes acérées) dans la grande salle où se trouve la mare de sang ont été désactivés pour qu'on puisse s'y battre sans gène.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
@@ -540,7 +537,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="56" id="56"></a>&#10173; **[56] 2 boucheries de sahuagins (Cité sous-marine et campement githyanki dans la Tour de Garde)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans la Cité sous-marine et dans la Tour de Garde (campement Githyanki).
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans la Cité sous-marine et dans la Tour de Garde (campement Githyanki).
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -548,27 +545,25 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="57" id="57"></a>&#10173; **[57] 4 boucheries d'araignées**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines d'ennemis devant l'antre de Pai'Na (repaire de Bodhi), dans la carte du Temple d'Amaunator (antre du culte de l'Œil aveugle), au 1er étage de la Tour de Garde et devant l'Enclave de Sendai. 
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis devant l'antre de Pai'Na (repaire de Bodhi), dans la carte du Temple d'Amaunator (antre du culte de l'Œil aveugle), au 1er étage de la Tour de Garde et devant l'Enclave de Sendai. 
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
 
 <a name="58" id="58"></a>&#10173; **[58] 6 boucheries de squelettes (catacombes d'Athkatla, Ruine du Temple, Spellhold, Tour de Garde et 2 dans le temple de Nyalee)**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
-&#10173; Ce composant ajoute une bataille contre quelques dizaines de squelettes tout le long du jeu : dans les catacombes d'Athkatla (tombeaux du Parchemin Néthère), à l'entrée du Temple d'Amaunator (Ruine du temple sous l'emprise des ombres), dans le premier niveau du labyrinthe de l'Asile de Spellhold, dans la Forêt de Mir (Temple de Nyalee) et dans la Tpur de Garde (Salle du Dernier sceau).
+&#9755; Ce composant ajoute une bataille contre quelques dizaines de squelettes tout le long du jeu : dans les catacombes d'Athkatla (tombeaux du Parchemin Néthère), à l'entrée du Temple d'Amaunator (Ruine du temple sous l'emprise des ombres), dans le premier niveau du labyrinthe de l'Asile de Spellhold, dans la Forêt de Mir (Temple de Nyalee) et dans la Tpur de Garde (Salle du Dernier sceau).
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
 
 <a name="80" id="80"></a>&#10173; **[80] Transformer BG2 en Dungeon crawler**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
-&#10173; Ce composant ajoute bon nombre d'ennemis dans des endroits habituellement très calmes et sans challenge. Le gameplay se rapproche ainsi davantage d'un Dungeon Crawler, comme dans Icewind Dale.
+&#9755; Ce composant ajoute bon nombre d'ennemis dans des endroits habituellement très calmes et sans challenge. Le gameplay se rapproche ainsi davantage d'un Dungeon Crawler, comme dans Icewind Dale.
 
 <ins>Note</ins> : Ce composant étant assez difficile, contrairement aux composants précédents, régler le niveau de difficulté du jeu restera sans effet. J'ai pris cependant soin de définir un challenge raisonnable.
 
@@ -629,7 +624,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="90" id="90"></a>&#10173; **[90] Composant cosmétique**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant ou après Stratagems</em><br><br>
 
-&#10173; Ce composant attribue aux drows des animations d'elfes.
+&#9755; Ce composant attribue aux drows des animations d'elfes.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 

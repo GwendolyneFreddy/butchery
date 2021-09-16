@@ -62,7 +62,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1506",1)
-		CreateCreatureOffScreen("D9OLL01",0)  // Troll
+		CreateCreatureOffScreen("D9OLL01",0)   // Troll
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1506",1)

@@ -5,22 +5,22 @@ Version 4.0.0 : October 20, 2018
 GENERAL OVERHAUL AND RE-LOOKING:
 ================================
 
-- Integrated all BWP Fixpack patches: Lollorian's override compilation fix (http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893) changes COMPILE ~xyz.d/baf~ ~override~ to COMPILE ~xyz.d/baf~), and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
-- Provided full compatibility with stratagems and Item revisions.
+- Integrated all BWP Fixpack patches: Lollorian's override compilation fix (http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893) changes `COMPILE ~xyz.d/baf~ ~override~` to` COMPILE ~xyz.d/baf~`), and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
+- Provided full compatibility with Stratagems and Item Revisions.
 - tp2 split into components and commented for easier further updates.
-- Reorganized components (DESIGNATED numbers).
+- Reorganized components (`DESIGNATED` numbers).
 - Added BG2EE compatibility (probably with EET, but not yet tested).
-- Fixed wrong coding: turns WRITE_SHORT 0x028 to WRITE_LONG 0x028 (animation slot is a dword, not a word!) and WRITE_BYTE 0x242 to WRITE_SHORT 0x242 (Morale recovery is a word, not a byte).
-- Polished WRITE_ASCII action with #n.
+- Fixed wrong coding: turns WRITE_SHORT 0x028 to `WRITE_LONG 0x028` (animation slot is a dword, not a word!) and `WRITE_BYTE 0x242` to `WRITE_SHORT 0x242` (Morale recovery is a word, not a byte).
+- Polished `WRITE_ASCII` command with #n.
 - No longer overwrites mod item files if there are already installed.
-- Used new WeiDU variables (INV RING QITEM...) with ADD_CRE_ITEM action.
-- Used HANDLE_CHARSETS function to add BG2EE compatibility for languages other than English.
-- Reworked install procedure to use WeiDU's built-in HANDLE_AUDIO function to install soundsets.
-- Provided new portraits for EE games.
-- Deleted unused files from mod folder.
+- Used new WeiDU variables (INV RING QITEM...) with `ADD_CRE_ITEM` command.
+- Used WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
+- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function to install soundsets.
+- Provided new portraits for BG2:EE.
+- Removed unused files from mod folder.
 - Updated readme (Butchery now supports translated readmes).
 - Updated translations.
-- Revamped French translation courtesy of Gwendolyne.
+- Revamped French translation and fixed English typos courtesy of Gwendolyne.
 - Traified creatures soundsets (still waiting for English sound files).
 - Reorganized and merged tra files into 3 files.
 - Updated installer to WeiDU to v246.
@@ -33,7 +33,7 @@ Component 10:
 - D9ORC05 gets one Potion of Absorption.
 - D9ORC01, D9ORGAHJ, D9ORC05, D9ORC5b and D9ORGAME get a barbaian kit (fixed compatibility issue with stratagems).
 - D9ORGAHJ and D8ORGAME no longer wear undroppable backstab immunity boots (D9boots).
-- Groumf: WTARSGT default script so he can use throwing axes, new ovveride script to let him drink 2 potions before fighting.
+- Groumf: WTARSGT default script so he can use throwing axes, new overrider script to let him drink 2 potions before fighting.
 - Bourrinos: new override script to let him drink 2 potions before fighting.
 - AR1203: Orcs mage (ORC04) spawn instead of Ogres mage.
 - Fixed d9cutta2.baf (last cutscene script).
@@ -44,5 +44,5 @@ Component 20:
 
 Component 30:
 -------------
-- DigDag: class script GENSHT01 only set when he attacks anf after he drinks potions. Drinks now a Potion of Defense insteaad of an Oil of Agility. Weapon proficiencies set to 5 with bastard sword.
+- DigDag: class script GENSHT01 only set when he attacks anf after he drinks potions. Drinks now a Potion of Defense instead of an Oil of Agility. Weapon proficiencies set to 5 with bastard sword.
 - Tazok: No longer barbarian (fixed compatibility issue with stratagems). Reverted to its vanilla armor (Orc Leather +3 no longer moved from its original container). Gets 7 Potions of Extra Healing and , Weapon proficiencies set to 5 with two handed sword.

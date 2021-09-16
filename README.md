@@ -248,7 +248,7 @@ This component also adds some of my customs creatures and especially two fighter
 <a name="12" id="11"></a>&#10173; **[11] Rebalancing some generic creatures**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#10173;</span> This component improves stats, saving throws, hit points and skill points of a few generic creatures (orc and ogre fighters at the beginning, and many animals and other creatures as of version 5.0.0). Most of them have now a barbarian or berserker kit, a weapon which suits their avatars, etc. but I often keep their vanilla level. But you will need to install Stratagems for these creatures to use their special abilities.
+&#9755;</span> This component improves stats, saving throws, hit points and skill points of a few generic creatures (orc and ogre fighters at the beginning, and many animals and other creatures as of version 5.0.0). Most of them have now a barbarian or berserker kit, a weapon which suits their avatars, etc. but I often keep their vanilla level. But you will need to install Stratagems for these creatures to use their special abilities.
 
 Enemy skeletons and mummies' abilities are standardised: they still have 100% resistance to electricity and cold and 10% magic resistance per level. Their resistance to missile attacks is 90%. This makes them fearsome foes.
 
@@ -329,7 +329,7 @@ I didn't modify vanilla fighting scripts at all. So if you don't install Stratag
 <a name="12" id="12"></a>&#10173; **[12] Rebalancing Rebalancing Tazok and DigDa**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#10173; In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok lightly (slightly better saving thrown and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). It is also cosmetic: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
+&#9755; In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok lightly (slightly better saving thrown and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). It is also cosmetic: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
 
 If you want Tazok to be a berseker, you must install stratagems '*Smarter general AI*' component (no problem of compatibility issue).
 
@@ -375,7 +375,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="20" id="20"></a>&#10173; **[20] Groumf and Bourrinos Encounter at Firkraag's Hideout entrance**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#10173; This component adds a small fight and a funny encounter with 2 funny characters at Firkraag's Hideout entrance, the same ones who serve as Tazok's bodyguards if you have installed the previous components.
+&#9755; This component adds a small fight and a funny encounter with 2 funny characters at Firkraag's Hideout entrance, the same ones who serve as Tazok's bodyguards if you have installed the previous components.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -383,7 +383,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="21" id="21"></a>&#10173; **[21] Groumf and Bourrinos Encounter at Brynnlaw**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#10173; This component adds another little fight and a funny encounter with these same characters.
+&#9755; This component adds another little fight and a funny encounter with these same characters.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -391,7 +391,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="22" id="22"></a>&#10173; **[22] Groumf and Bourrinos Encounter in the Underdark**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#10173; This component adds another little fight and a funny encounter with these same characters.
+&#9755; This component adds another little fight and a funny encounter with these same characters.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -399,7 +399,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="30" id="30"></a>&#10173; **[30] Revisited fight against Wraith Sarevok in the Abyss**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#10173; This component greatly improves the final battle against Sarevok in the layer of the Abyss once ruled by Bhaal. The latter will be assisted by his former teammates from BG1.
+&#9755; This component greatly improves the final battle against Sarevok in the layer of the Abyss once ruled by Bhaal. The latter will be assisted by his former teammates from BG1.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -407,7 +407,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="31" id="31"></a>&#10173; **[31] Move Samia group into Firkraag's Entrance**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before or after Stratagems</em><br><br>
 
-&#10173; This component moves Samia and her teammates into Firkraag's Entrance.
+&#9755; This component moves Samia and her teammates into Firkraag's Entrance.
 
 :warning: This component is disabled because it is still under development. Do not try to force its installation as it is bugged.
 <div align="right"><a href="#components">Back to components list</a></div>
@@ -417,7 +417,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="32" id="32"></a>&#10173; **[32] Add battle songs in some areas that do not have any**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before or after Stratagems</em><br><br>
 
-&#10173; This component assigns battle song to a few areas that don't have one: Temple City (The Forgotten Believers), Sewers beneath Coronet, Shadow Temple land shadowed, Troll Cave (Spellhold test), and Tethyr Wood.
+&#9755; This component assigns battle song to a few areas that don't have one: Temple City (The Forgotten Believers), Sewers beneath Coronet, Shadow Temple land shadowed, Troll Cave (Spellhold test), and Tethyr Wood.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -425,16 +425,15 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="40" id="40"></a>&#10173; **[40] DrAzTiK's Creatures**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#10173; This component adds creatures of my creation to the game's bestiary. It is required for some of the following components.
+&#9755; This component adds creatures of my creation to the game's bestiary. It is required for some of the following components.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
 
 <a name="41" id="41"></a>&#10173; **[41] Butchery in Irenicus Dungeon (Dwarves)**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em></em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em>&nbsp;&nbsp;-&nbsp;&nbsp;Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in Irenicus Dungeon 2nd floor area.
+&#9755; This component adds a battle against a few dozen enemies in Irenicus Dungeon 2nd floor area.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -450,7 +449,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="43" id="43"></a>&#10173; **[43] Butchery in the Forest of Tethyr (Animals and Druids)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in the Forest of Tethyr area.
+&#9755; This component adds a battle against a few dozen enemies in the Forest of Tethyr area.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -458,25 +457,23 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="44" id="44"></a>&#10173; **[44] Butchery in the planar sphere (Demonic creatures)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in the planar sphere (Demon Plane area).
+&#9755; This component adds a battle against a few dozen enemies in the planar sphere (Demon Plane area).
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
 
 <a name="45" id="45"></a>&#10173; **[45] 3 butcheries in Spellhold (Golems, Vampires and Trolls)**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
 
-&#10173; This component adds 3 battles against a few dozen enemies in Spellhold: Spellhold, Bodhi's Hunt Level 1, and Troll Cave (Spellhold Test).
+&#9755; This component adds 3 battles against a few dozen enemies in Spellhold: Spellhold, Bodhi's Hunt Level 1, and Troll Cave (Spellhold Test).
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
 
 <a name="46" id="46"></a>&#10173; **[46] Butchery outside de'Arnise Keep (Trolls)**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in de'Arnise Keep outer courtyard.
+&#9755; This component adds a battle against a few dozen enemies in de'Arnise Keep outer courtyard.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -484,7 +481,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="47" id="47"></a>&#10173; **[47] Butchery in Windspear Hills (Orcs)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in the Windspear Hills area.
+&#9755; This component adds a battle against a few dozen enemies in the Windspear Hills area.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -492,7 +489,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="48" id="48"></a>&#10173; **[48] Butchery in Umar Hills (Wolves)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in the Umar Hills area.
+&#9755; This component adds a battle against a few dozen enemies in the Umar Hills area.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -500,7 +497,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="49" id="49"></a>&#10173; **[49] 2 butcheries in Trademeet and outside Watcher's Keep (Animals)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in Trademeet and outside Watcher's Keep areas.
+&#9755; This component adds a battle against a few dozen enemies in Trademeet and outside Watcher's Keep areas.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -508,7 +505,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="50" id="50"></a>&#10173; **[50] 2 butcheries of Golems in Suldanessellar and Watcher's Keep (Machine of Lum the Mad floor)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in Suldanessalar and in Watcher's Keep (Machine of Lum the Mad floor).
+&#9755; This component adds a battle against a few dozen enemies in Suldanessalar and in Watcher's Keep (Machine of Lum the Mad floor).
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -516,7 +513,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="51" id="51"></a>&#10173; **[51] Butchery of Yaga-Shura revisited**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Ascension and Stratagems</em><br><br>
 
-&#10173; This component greatly modifies the battle against Yaga-Shura army in ToB to make it longer and more difficult. It will only work if you have Acsension (David Wallace's version) and Stratagems installed.
+&#9755; This component greatly modifies the battle against Yaga-Shura army in ToB to make it longer and more difficult. It will only work if you have Acsension (David Wallace's version) and Stratagems installed.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -524,7 +521,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="52" id="52"></a>&#10173; **[52] Butchery in the Druid Grove area (Animals and Druids)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in the Druid Grove area.
+&#9755; This component adds a battle against a few dozen enemies in the Druid Grove area.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -532,7 +529,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="53" id="53"></a>&#10173; **[53] Butchery in the Beholder Hideout (Fanatics)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in the Beholder Hideout (Unseeing Eye Plot).
+&#9755; This component adds a battle against a few dozen enemies in the Beholder Hideout (Unseeing Eye Plot).
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -540,7 +537,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="54" id="54"></a>&#10173; **[54] Butchery in Bodhi's Hideout (chapter 2, before Underdark) - Vampires**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in Bodhi's Hideout (chapter 2, before Underdark).
+&#9755; This component adds a battle against a few dozen enemies in Bodhi's Hideout (chapter 2, before Underdark).
 
 <ins>Note</ins>: The traps on the spiked floor in the torture room with the blood-encrusted drain have been deactivated so that you can fight there without any hindrance.
 <div align="right"><a href="#components">Back to components list</a></div>
@@ -550,7 +547,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="55" id="55"></a>&#10173; **[55] Butchery in Bodhi's Hideout (chapter 6, after Underdark) - Vampires**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in Bodhi's Hideout (chapter 6, after Underdark).
+&#9755; This component adds a battle against a few dozen enemies in Bodhi's Hideout (chapter 6, after Underdark).
 
 <ins>Note</ins>: The traps on the spiked floor in the torture room with the blood-encrusted drain have been deactivated so that you can fight there without any hindrance.
 <div align="right"><a href="#components">Back to components list</a></div>
@@ -560,7 +557,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="56" id="56"></a>&#10173; **[56] 2 butcheries of Sahuagins in Sahuagin City and Watcher's Keep (Githyanki Encampment)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in the Sahuagin and Watcher's Keep (Githyanki Encampment).
+&#9755; This component adds a battle against a few dozen enemies in the Sahuagin and Watcher's Keep (Githyanki Encampment).
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -568,25 +565,23 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="57" id="57"></a>&#10173; **[57] 4 butcheries of spiders**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#10173; This component adds a battle against a few dozen enemies in front of Pai'Na's Hideout entrance (Bodhi's Hideout), the Temple City (Unseeing Eye Plot) area, Watcher's Keep 1st floor (Altar level) and in the area outside Sendai's Hideout. 
+&#9755; This component adds a battle against a few dozen enemies in front of Pai'Na's Hideout entrance (Bodhi's Hideout), the Temple City (Unseeing Eye Plot) area, Watcher's Keep 1st floor (Altar level) and in the area outside Sendai's Hideout. 
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
 
 <a name="58" id="58"></a>&#10173; **[58] 6 butcheries of skeletons in lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Kee, and 2 in Nyalee's Hideout**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
 
-&#10173; This component adds a battle against a few dozen skeletons throughout the game: in the lower tombs of Athkatla (Southern Dungeons), in the Shadow Temple Land (shadowed) at the Temple of Amaunator entrance, in Spellhold (Bodhi's Hunt Level 1), in Nyalee's Hideout and in the Watcher's Keep (Helmite Level - Last Seals).
+&#9755; This component adds a battle against a few dozen skeletons throughout the game: in the lower tombs of Athkatla (Southern Dungeons), in the Shadow Temple Land (shadowed) at the Temple of Amaunator entrance, in Spellhold (Bodhi's Hunt Level 1), in Nyalee's Hideout and in the Watcher's Keep (Helmite Level - Last Seals).
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
 
 <a name="80" id="80"></a>&#10173; **[80] Transformer BG2 en Dungeon crawler**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em>
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
-&#10173; This component adds a lot of enemies in areas that are usually very quiet and unchallenging. This makes the gameplay more like a Dungeon Crawler, like in Icewind Dale.
+&#9755; This component adds a lot of enemies in areas that are usually very quiet and unchallenging. This makes the gameplay more like a Dungeon Crawler, like in Icewind Dale.
 
 <ins>Note</ins>: This component being quite difficult, unlike the previous ones, adjusting the difficulty level of the game will have no effect. However, I have taken care to set a reasonable challenge.
 
@@ -647,7 +642,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="90" id="90"></a>&#10173; **[90] Composant cosmétique**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before or after Stratagems</em><br><br>
 
-&#10173; Ce composant attribue aux drows des animations d'elfes.
+&#9755; Ce composant attribue aux drows des animations d'elfes.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 
@@ -812,6 +807,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 - "*Rebalancing Tazok and DigDag*" component:
     - Renamed .tpa file name to *12_rebalancing_tazok.tpa*.
     - Flagged potions as "undroppable" in creatures' inventories.
+    - Compiled *d9tazokk.baf* if 1st component has not been installed.
 - ...
 - Added Russian translation (by yota13).
 - Proofread English strrefs and completed English translation (Gwendolyne).

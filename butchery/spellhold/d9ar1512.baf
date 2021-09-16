@@ -43,7 +43,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1512",1)
-		CreateCreatureOffScreen("d9astHH",0)  // Ghast
+		CreateCreatureOffScreen("d9astHH",0)  // Ghast - Blême
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 END
 
@@ -59,7 +59,7 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1512",1)
-		CreateCreatureOffScreen("D9OGYYY",0)  // Greater Ghoul
+		CreateCreatureOffScreen("D9OGYYY",0)  // Greater Ghoul - Goule majeure
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1512",1)
@@ -93,11 +93,11 @@ THEN
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1512",1)
-		CreateCreatureOffScreen("D9OLO999",0)  // Ghoul Lord - Seigneur goule
+		CreateCreatureOffScreen("D9OLO999",0)  // Ghoul Lord - Seigneur des goules
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1512",1)
-		CreateCreatureOffScreen("d9MF444",0)  // Fledging Vampire
+		CreateCreatureOffScreen("d9MF444",0)   // Fledging Vampire male - Vampire novice
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 			RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1512",1)
