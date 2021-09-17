@@ -1,0 +1,59 @@
+IF
+	GlobalTimerExpired("D9GateTimer","AR5203")
+	Global("YagaShuraSpawn","AR5203",0)
+THEN
+	RESPONSE #100
+		CreateCreatureOffScreen("YAGA01",0) // Yaga-Shura
+		CreateCreatureOffScreen("YAGA02",0) // Lieutenant Mage
+		CreateCreatureOffScreen("YAGA03",0) // Lieutenant Fighter- Lieutenant guerrier
+		CreateCreatureOffScreen("YAGA04",0) // Lieutenant Cleric - Lieutenant clerc
+		CreateCreatureOffScreen("YAGA05",0) // Lieutenant Thief - Lieutenant voleur
+		SetGlobal("YagaShuraSpawn","AR5203",1)
+END
+
+IF
+	Global("YagaShuraSpawn","AR5203",1)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	Global("D9YagaShuraSpawnmore","AR5203",0)
+THEN
+	RESPONSE #100
+		CreateCreatureOffScreen("YSSOLD02",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		CreateCreatureOffScreen("YSSOLD02",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		CreateCreatureOffScreen("YSSOLD01",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		CreateCreatureOffScreen("YSSOLD02",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		CreateCreatureOffScreen("YSSOLD02",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		SetGlobal("D9YagaShuraSpawnmore","AR5203",1)
+END
+
+IF
+	Global("YagaShuraSpawn","AR5203",1)
+	Difficulty(HARDEST)
+	Global("D9YagaShuraSpawnmore","AR5203",1)
+THEN
+	RESPONSE #100
+		CreateCreatureOffScreen("YSSOLD02",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		CreateCreatureOffScreen("YSSOLD02",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		CreateCreatureOffScreen("YSSOLD01",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		CreateCreatureOffScreen("YSSOLD02",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		CreateCreatureOffScreen("YSSOLD02",0) // Yaga-Shura Soldier - Soldat de Yaga Shura
+		SetGlobal("D9YagaShuraSpawnmore","AR5203",2)
+END
+
+IF
+	Dead("Yaga01")  // Yaga-Shura
+	CombatCounter(0)
+	Global("HadBhaal25Dream1","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SaveGame(0)
+		Wait(1)
+		SetGlobal("HadBhaal25Dream1","GLOBAL",1)
+		AmbientActivate("Firepit1",FALSE)
+		AmbientActivate("Firepit2",FALSE)
+		AmbientActivate("Firepit3",FALSE)
+		StartCutSceneMode()
+		StartCutScene("cut217a")
+END

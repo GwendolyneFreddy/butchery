@@ -1,0 +1,28 @@
+IF
+	GlobalTimerExpired("YagaReturnTimer","AR5203")
+	Global("YagaShuraSpawn","AR5203",0)
+THEN
+	RESPONSE #100
+		SetGlobal("YagaShuraSpawn","AR5203",1)
+		CreateCreatureObjectOffScreen("YAGA01",Player1,0,0,0)
+		CreateCreatureObjectOffScreen("YAGA02",Player1,0,0,0)
+		CreateCreatureObjectOffScreen("YAGA03",Player1,0,0,0)
+		CreateCreatureObjectOffScreen("YAGA04",Player1,0,0,0)
+		CreateCreatureObjectOffScreen("YAGA05",Player1,0,0,0)
+END
+
+IF
+	Dead("Yaga01")
+	Global("HadBhaal25Dream1","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SaveGame(0)
+		Wait(1)
+		SetGlobal("HadBhaal25Dream1","GLOBAL",1)
+		AmbientActivate("Firepit1",FALSE)
+		AmbientActivate("Firepit2",FALSE)
+		AmbientActivate("Firepit3",FALSE)
+		StartCutSceneMode()
+		StartCutScene("cut217a")
+END

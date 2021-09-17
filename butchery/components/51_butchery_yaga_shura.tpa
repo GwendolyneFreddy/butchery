@@ -1,0 +1,70 @@
+/* ============================================================================================================== *
+ *  v 5.0.0                                                                                                       *
+ *           B U T C H E R Y    :    B u t c h e r y    o f    Y a g a - S h u r a    r e v i s i t e d           *
+ *                                                                                                                *
+ * ============================================================================================================== */
+
+SILENT
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+/*DEPRECATED (BCS block is better IMO)
+COPY_EXISTING ~ar5203.bcs~ ~override~
+	DECOMPILE_BCS_TO_BAF
+	REPLACE_TEXTUALLY EXACT_MATCH~GlobalLT("MaxSpawn","AR5203",60)~
+  ~GlobalLT("MaxSpawn","AR5203",100)~
+	COMPILE_BAF_TO_BCS
+BUT_ONLY */
+
+ACTION_IF NOT is_d9dwctyz BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9dwctyz.baf~
+END
+
+// Script Extension
+LAF extend_area_script STR_VAR area = "ar5203" top = "%MOD_FOLDER%/yaga/d9ar5203.baf" END // Yaga-Shura's Camp
+
+// Modifies 2 blocks: Yaga Shura appears after my own timer and the cutscene when Yaga-Shura is dead only occurs when CombatCounter(0).
+// ------------------------------------------------------------------------------------------------------------------------------------
+COPY_EXISTING ~ar5203.bcs~ ~override~
+	REPLACE_BCS_BLOCK ~%MOD_FOLDER%/yaga/d9yaold.baf~ ~%MOD_FOLDER%/yaga/d9yanew.baf~
+BUT_ONLY
+
+// Changement des blocs de génération de créatures si installation de Ascension + SCS
+COPY_EXISTING ~ar5203.bcs~ ~override~
+	REPLACE_BCS_BLOCK ~%MOD_FOLDER%/yaga/d9yaold1.baf~ ~%MOD_FOLDER%/yaga/d9yanew1.baf~
+BUT_ONLY
+
+// Changement des blocs de génération de créatures si installation de Ascension seulement
+COPY_EXISTING ~ar5203.bcs~ ~override~
+	REPLACE_BCS_BLOCK ~%MOD_FOLDER%/yaga/d9yaoldx.baf~ ~%MOD_FOLDER%/yaga/d9yanew1.baf~
+BUT_ONLY
+
+// Adds a few lines to Yaga-Shura script to make him dialogging with Player1 at range.
+// -----------------------------------------------------------------------------------
+EXTEND_BOTTOM ~yaga01.bcs~ ~%MOD_FOLDER%/yaga/d9yaga.baf~
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+COPY_EXISTING ~yssold01.cre~ ~override~ // Yaga-Shura Soldier - Soldat de Yaga Shura
+              ~yssold02.cre~ ~override~ // Yaga-Shura Soldier - Soldat de Yaga Shura
+              ~yssold03.cre~ ~override~ // Yaga-Shura Officer - Officier de Yaga Shura
+              ~yssold04.cre~ ~override~ // Yaga-Shura Elite - Soldat d'élite de Yaga Shura
+              ~yscler01.cre~ ~override~ // Yaga-Shura Cleric - Clerc de Yaga Shura (Ascension)
+              ~ysfire02.cre~ ~override~ // Fire Giant - Géant du feu
+              ~ysmage01.cre~ ~override~ // Yaga-Shura Mage - Mage de Yaga Shura
+              ~ysmage02.cre~ ~override~ // Yaga-Shura Mage - Mage de Yaga Shura
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY IF_EXISTS
+
+COPY_EXISTING ~yaga02.cre~ ~override~  // Lieutenant Mage
+              ~yaga03.cre~ ~override~  // Lieutenant Fighter - Lieutenant guerrier
+              ~yaga04.cre~ ~override~  // Lieutenant Cleric - Lieutenant clerc
+              ~yaga05.cre~ ~override~  // Lieutenant Thief - Lieutenant voleur
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	WRITE_ASCII SCRIPT_CLASS ~none~ #8 // vanilla = YAGA02
+BUT_ONLY

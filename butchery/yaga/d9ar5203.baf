@@ -1,0 +1,61 @@
+/* ========================================================== *
+ *    Butchery of Yaga-Shura revisited (Yaga-Shura's Camp)    *
+ * ========================================================== */
+
+/*	DEPRECATED
+// Moves Yaya-Shura so that the battle can take place in the map center of the map.
+// Déplace Yaga Shura dans un coin pour permettre se battre en plein milieu de la carte.
+// -------------------------------------------------------------------------------------
+IF
+	GlobalGT("YagaShuraHeart","GLOBAL",0)
+	Global("D9YAGASPAWN2","AR5203",0)
+THEN
+	RESPONSE #100
+		ActionOverride("YAGA01",JumpToPoint([256.807]))
+		SetGlobal("D9YAGASPAWN2","AR5203",1)
+END*/
+
+/*	DEPRECATED AGAIN
+// Ordonner à Yaga Shura de se déplacer vers le joueur 1 en milieu de boucherie au cas ou le joueur ne va pas lui parler
+IF
+	Global("D9YAGASPAWN3","AR5203",0)
+	GlobalGT("MaxSpawn","AR5203",30)
+THEN
+	RESPONSE #100
+		ActionOverride("YAGA01",MoveToObject(Player1))
+		SetGlobal("D9YAGASPAWN3","AR5203",1)
+END
+
+// Génération d'un timer quand la boucherie prend fin. La fin du timer spawnera Yaga Shura et ses alliés sur la carte AR5203
+// EXTEND_TOP might be better IMP
+IF
+	GlobalGT("MaxSpawn","AR5203",53)
+	Global("YagaShuraSpawn","AR5203",0)
+	Global("D9YagaTimer","AR5203",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D9GateTimer","AR5203",80)
+		DisplayStringHead(Player1,@5010)
+		SetGlobal("D9YagaTimer","AR5203",1)
+END */
+
+IF
+	GlobalGT("MaxSpawn","AR5203",53)     // Yaga-Shura's Camp
+	Global("YagaShuraSpawn","AR5203",0)
+	Global("D9YagaTimer","AR5203",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("D9GateTimer","AR5203",80)  // Yaga-Shura's Camp (SIXTEEN_MINUTES in BG2EE or oBG2 with BG2Fixpack)
+		DisplayStringHead(Player1,@5010)     // ~Enemies are in serious trouble and Yaga-Shura should appear soon!~ - ~Les ennemis sont en difficulté et Yaga Shura devrait bientôt faire son apparition !~
+		SetGlobal("D9YagaTimer","AR5203",1)
+END
+
+IF
+	GlobalTimerExpired("YagaReturnTimer","AR5203")  // Yaga-Shura's Camp
+	Global("DMWWYagaSave","GLOBAL",0)
+	!Dead("yaga01")  // Yaga-Shura
+THEN
+	RESPONSE #100
+		SetGlobal("DMWWYagaSave","GLOBAL",1)
+		SaveGame(0)
+END

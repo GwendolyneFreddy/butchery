@@ -1,0 +1,65 @@
+IF
+	!Dead("Yaga01")  // Yaga-Shura
+	Global("SpawnStart","AR5203",1)    // Yaga-Shura's Camp
+	GlobalLT("MaxSpawn","AR5203",105)
+	GlobalLT("EXTRACOUNT","MYAREA",7)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureOffScreen("YSSOLD01",0)   // Yaga-Shura Soldier - Soldat de Yaga Shura
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureOffScreen("YSSOLD02",0)   // Yaga-Shura Soldier - Soldat de Yaga Shura
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	!Dead("Yaga01")  // Yaga-Shura
+	Global("SpawnStart","AR5203",1)    // Yaga-Shura's Camp
+	GlobalLT("MaxSpawn","AR5203",105)
+	GlobalLT("EXTRACOUNT2","MYAREA",3)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureOffScreen("YSSOLD03",0)   // Yaga-Shura Officer - Officier de Yaga Shura
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureOffScreen("YSCLER01",0)   // Yaga-Shura Cleric - Clerc de Yaga Shura (Ascension)
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureOffScreen("YSMAGE01",0)   // Yaga-Shura Mage - Mage de Yaga Shura
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	!Dead("Yaga01")  // Yaga-Shura
+	Global("SpawnStart","AR5203",1)    // Yaga-Shura's Camp
+	GlobalLT("MaxSpawn","AR5203",105)
+	GlobalLT("EXTRACOUNT3","MYAREA",2)
+	Difficulty(HARDEST)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureOffScreen("YSSOLD04",0)   // Yaga-Shura Elite - Soldat d'élite de Yaga Shura
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureOffScreen("YSFIRE02",0)   // Fire Giant - Géant du feu
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureOffScreen("YSMAGE02",0)   // Yaga-Shura Mage - Mage de Yaga Shura
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END
