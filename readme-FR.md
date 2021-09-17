@@ -361,7 +361,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 ## 
 
 <a name="21" id="21"></a>&#10173; **[21] Rencontre avec Groumf et Bourrinos à Brynnlaw**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems</em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Composant pré-requis : <a href="#20">[20] Rencontre avec Groumf et Bourrinos devant le Donjon de Firkraag</a></em><br><br>
 
 &#9755; Ce composant ajoute un autre petit combat et une rencontre amusante avec ces mêmes personnages.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>

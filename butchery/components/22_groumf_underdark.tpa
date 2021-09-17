@@ -1,0 +1,112 @@
+/* ========================================================================================================================== *
+ *  v 5.0.0                                                                                                                   *
+ *           B U T C H E R Y    :    G r o u m f    a n d    B o u r r i n o s    i n    t h e    U n d e r d a r k           *
+ *                                                                                                                            *
+ * ========================================================================================================================== */
+
+SILENT
+
+/* ---------------------- *
+ *  Installing Portraits  *
+ * ---------------------- */
+
+ACTION_IF (is_portraits2 = 0) BEGIN
+	COPY ~%MOD_FOLDER%/portraits%ee_file%/d9gros.bmp~  ~override~
+	COPY ~%MOD_FOLDER%/portraits%ee_file%/d9ur11s.bmp~ ~override~
+END
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Groumf (L13 Berserker)
+// ----------------------
+COPY ~%MOD_FOLDER%/groumf2100/d9groum8.cre~ ~override~
+	SAY NAME1 @104
+	SAY NAME2 @104
+	ADD_CRE_ITEM ~DWBLUN01~ #1 #0 #0 ~NONE~ ~WEAPON1~ EQUIP  // Drow Flail +3
+	ADD_CRE_ITEM ~DWSHLD01~ #0 #0 #0 ~NONE~ ~SHIELD~         // Drow Shield +3
+	ADD_CRE_ITEM ~DWPLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~          // Drow Full Plate +5
+	ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~IDENTIFIED~ ~QITEM1~     // 5 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~IDENTIFIED~ ~QITEM2~     // Oil of Speed
+	// Custom soundest
+	SAY BATTLE_CRY1             @201 // ~Misérables insectes !~ [d9groua]
+	SAY BATTLE_CRY2             @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY BATTLE_CRY3             @203 // ~Par la force d'Hutgar !~ [d9grou9]
+	SAY DAMAGE                  ~~ [d9groul]
+	SAY DYING                   ~~ [d9groum]
+	SAY HURT                    ~~ [d9groue]
+	SAY SELECT_COMMON1          @204 // ~Ha Ha Ha !~ [d9groug]
+	SAY SELECT_COMMON2          @205 // ~Quoi ?!~ [d9grouf]
+	SAY SELECT_COMMON3          @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY SELECT_COMMON4          @206 // ~Encore du sang !~ [d9grou0]
+	SAY CRITICAL_MISS           ~~ [d9grou1]
+	SAY TARGET_IMMUNE           ~~ [d9grou2]
+	SAY SPELL_DISRUPTED         ~~ [d9grou6]
+	SAY REACT_TO_DIE_GENERAL    ~~ [d9grouw]
+BUT_ONLY
+
+// Bourrinos (L11 Barbarian)
+// -------------------------
+COPY ~%MOD_FOLDER%/groumf2100/d9bour18.cre~ ~override~
+	SAY NAME1 @105
+	SAY NAME2 @105
+	ADD_CRE_ITEM ~DWXBOW01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP    // Drow Crossbow of Speed +3
+	ADD_CRE_ITEM ~DWHALB01~ #0 #0 #0 ~NONE~ ~WEAPON2~          // Drow Halberd +3
+	ADD_CRE_ITEM ~DWCHAN02~ #0 #0 #0 ~NONE~ ~ARMOR~            // Drow Adamantine Chain +5
+	ADD_CRE_ITEM ~DWBOLT02~ #10 #0 #0 ~UNSTEALABLE~ ~QUIVER1~  // Drow Bolt of Stunning
+	ADD_CRE_ITEM ~DWBOLT03~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER2~  // Drow Bolt +1
+	ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~IDENTIFIED~ ~QITEM1~       // 5 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~IDENTIFIED~ ~QITEM2~       // Oil of Speed
+	// Custom soundest
+	SAY BATTLE_CRY1     @211 // ~À mort !~ [d9bara9]
+	SAY BATTLE_CRY2     @212 // ~Baston !~ [d9baraa]
+	SAY BATTLE_CRY3     @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON1  @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON2  @213 // ~Ouais !~ [d9barag]
+	SAY SELECT_COMMON3  @214 // ~Quoi ?!~ [d9barah]
+	SAY SELECT_COMMON4  @211 // ~À mort !~ [d9bara9]
+	SAY DAMAGE          ~~ [d9baral]
+	SAY DYING           ~~ [d9baram]
+	SAY HURT            ~~ [d9barae]
+	SAY CRITICAL_MISS   ~~ [d9bara1]
+	SAY SPELL_DISRUPTED ~~ [d9bara6]
+BUT_ONLY
+
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+COMPILE ~%MOD_FOLDER%/groumf2100/d9groum8.baf~
+COMPILE ~%MOD_FOLDER%/groumf2100/d9bour18.baf~ // empty ???
+
+// Adds Groumf and Bourrinos in AR2100.
+// ------------------------------------
+COPY_EXISTING ~ar2100.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		REPLACE_TEXTUALLY ~\(CreateCreature("gpfight1",\[3346\.2337\].+\)~ ~CreateCreature("D9Groum8",[3342.2277],12) CreateCreature("D9Bour18",[3164.2197],12) \1~
+	END
+BUT_ONLY
+
+
+/* ---------------------- *
+ *  Installing Soundsets  *
+ * ---------------------- */
+
+ACTION_IF NOT is_soundset BEGIN
+	ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = EVAL ~butchery/audio/%LANGUAGE%~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
+		END
+	END ELSE BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = ~butchery/audio/french~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
+		END
+	END
+END

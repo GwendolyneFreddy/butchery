@@ -381,7 +381,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 ## 
 
 <a name="21" id="21"></a>&#10173; **[21] Groumf and Bourrinos Encounter at Brynnlaw**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Requires component <a href="#20">[20] Groumf and Bourrinos Encounter at Firkraag's Hideout entrance</a></em><br><br>
 
 &#9755; This component adds another little fight and a funny encounter with these same characters.
 <div align="right"><a href="#components">Back to components list</a></div>

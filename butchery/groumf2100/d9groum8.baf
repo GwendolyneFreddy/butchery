@@ -1,0 +1,8 @@
+IF
+	See([PC])
+	Global("D9Groum2ola","LOCALS",0)
+THEN
+	RESPONSE #100
+	DisplayStringHead(Myself,@2201)  // ~Still more drows! Attack! And no mercy!~
+	SetGlobal("D9Groum2ola","LOCALS",1)
+END
