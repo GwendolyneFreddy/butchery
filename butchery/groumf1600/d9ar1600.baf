@@ -1,0 +1,13 @@
+/* ================================================ *
+ *    Groumf and Bourrinos Encounter at Brynnlaw    *
+ * ================================================ */
+
+IF
+	Global("D9Groumfbrynnlaw","AR1600",0)
+THEN
+	RESPONSE #100
+		CreateCreature("D9Groum3",[1123.1639],15)  // Groumf
+		CreateCreature("D9Bour13",[1179.1618],1)   // Bourrinos
+		SetGlobal("D9Groumfbrynnlaw","AR1600",1)
+		Continue()
+END

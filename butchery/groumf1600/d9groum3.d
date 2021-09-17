@@ -1,0 +1,77 @@
+BEGIN ~D9Bour13~
+
+BEGIN ~D9Groum3~
+
+IF ~NumTimesTalkedTo(0)~ THEN BEGIN shop
+  SAY @2101
+	IF ~~ THEN EXTERN ~D9Bour13~ baston
+END
+
+IF ~~ THEN BEGIN shop2
+  SAY @2102  = @2103
+	IF ~~ THEN REPLY @2104 GOTO shop3
+	IF ~~ THEN REPLY @2105 GOTO shop3
+	IF ~~ THEN REPLY @2106 GOTO shop3
+END
+
+IF ~~ THEN BEGIN shop3
+  SAY @2107 = @2108
+  IF ~~ THEN REPLY @2109 GOTO shop4
+  IF ~~ THEN REPLY @2110 GOTO shop4
+END
+
+IF ~~ THEN BEGIN shop4
+  SAY @2111 = @2112 = @2113 = @2114 = @2115
+	IF ~~ THEN REPLY @2116 GOTO shop5
+	IF ~~ THEN REPLY @2117 GOTO shop5
+	IF ~~ THEN REPLY @2118 GOTO shop5
+	IF ~~ THEN REPLY @2119 GOTO shop5
+	IF ~~ THEN REPLY @2120 GOTO shop5
+END
+
+IF ~~ THEN BEGIN shop5
+  SAY @2121 = @2122 = @2123 = @2124
+	IF ~~ THEN EXTERN ~D9Bour13~ lalala
+END
+
+IF ~~ THEN BEGIN shop6
+  SAY @2125
+	IF ~~ THEN REPLY @2126 GOTO shop7
+END
+
+IF ~~ THEN BEGIN shop7
+  SAY @2127 = @2128 = @2129 = @2130 = @2131
+	IF ~~ THEN REPLY @2132 GOTO shop8
+	IF ~~ THEN REPLY @2133 GOTO shop8
+	IF ~~ THEN REPLY @2134 GOTO shop8
+END
+
+IF ~~ THEN BEGIN shop8
+  SAY @2135
+	IF ~~ THEN EXTERN ~D9Bour13~ baston1
+END
+
+IF ~~ THEN BEGIN shop9
+  SAY @2136
+	IF ~~ THEN DO ~EscapeArea() ActionOverride("D9Bour13",EscapeArea())~ EXIT
+END
+
+
+APPEND ~D9Bour13~
+
+IF ~~ THEN BEGIN baston
+  SAY @2150
+	IF ~~ THEN EXTERN ~D9Groum3~ shop2
+END
+
+IF ~~ THEN BEGIN lalala
+  SAY @2151
+	IF ~~ THEN EXTERN ~D9Groum3~ shop6
+END
+
+IF ~~ THEN BEGIN baston1
+  SAY @2150
+	IF ~~ THEN EXTERN ~D9Groum3~ shop9
+END
+
+END // of APPEND

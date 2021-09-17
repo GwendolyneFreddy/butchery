@@ -1,0 +1,25 @@
+/* ================================================================= *
+ *    Groumf and Bourrinos Encounter at Brynnlaw (Brothel Prison)    *
+ * ================================================================= */
+
+IF
+	Global("D9Groumfbrynnlax","AR1610",0)
+THEN
+	RESPONSE #100
+		CreateCreature("D9Groum4",[407.217],14)  // Groumf
+		CreateCreature("D9Bour14",[407.214],14)  // Bourrinos
+		SetGlobal("D9Groumfbrynnlax","AR1610",1)
+		Continue()
+END
+
+IF
+	Allegiance("PIRMUR01",ENEMY)
+	Global("D9Groumfbrynnpir","AR1610",0)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly("D9Groum4",ENEMY)
+		ChangeEnemyAlly("D9Bour14",ENEMY)
+		CreateCreature("PIRMUR11",[479.554],8)  // Guard - Garde
+		CreateCreature("PIRMUR11",[479.554],8)  // GGuard - Garde
+		SetGlobal("D9Groumfbrynnpir","AR1610",1)
+END

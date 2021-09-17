@@ -1,0 +1,206 @@
+/* =============================================================================================================== *
+ *  v 5.0.0                                                                                                        *
+ *           B U T C H E R Y    :    G r o u m f    a n d    B o u r r i n o s    a t    B r y n n l a w           *
+ *                                                                                                                 *
+ * =============================================================================================================== */
+
+SILENT
+
+/* ---------------------- *
+ *  Installing Portraits  *
+ * ---------------------- */
+
+ACTION_IF (is_portraits2 = 0) BEGIN
+	COPY ~%MOD_FOLDER%/portraits%ee_file%/d9gros.bmp~  ~override~
+	COPY ~%MOD_FOLDER%/portraits%ee_file%/d9ur11s.bmp~ ~override~
+END
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Groumf (L13 Berserker) [AR1600]
+// -------------------------------
+COPY ~%MOD_FOLDER%/groumf1600/d9groum3.cre~ ~override~
+	SAY NAME1 @104
+	SAY NAME2 @104
+	ADD_CRE_ITEM ~AX1H01~ #1 #0 #0 ~STOLEN~ ~WEAPON1~             // Battle Axe
+	ADD_CRE_ITEM ~AX1H04~ #30 #0 #0 ~IDENTIFIED~ ~WEAPON2~ EQUIP  // Throwing Axe
+	ADD_CRE_ITEM ~SHLD06~ #0 #0 #0 ~STOLEN~ ~SHIELD~              // Large Shield +1
+	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~STOLEN~ ~ARMOR~               // Full Plate Mail
+	// Custom soundest
+	SAY BATTLE_CRY1             @201 // ~Misérables insectes !~ [d9groua]
+	SAY BATTLE_CRY2             @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY BATTLE_CRY3             @203 // ~Par la force d'Hutgar !~ [d9grou9]
+	SAY DAMAGE                  ~~ [d9groul]
+	SAY DYING                   ~~ [d9groum]
+	SAY HURT                    ~~ [d9groue]
+	SAY SELECT_COMMON1          @204 // ~Ha Ha Ha !~ [d9groug]
+	SAY SELECT_COMMON2          @205 // ~Quoi ?!~ [d9grouf]
+	SAY SELECT_COMMON3          @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY SELECT_COMMON4          @206 // ~Encore du sang !~ [d9grou0]
+	SAY CRITICAL_MISS           ~~ [d9grou1]
+	SAY TARGET_IMMUNE           ~~ [d9grou2]
+	SAY SPELL_DISRUPTED         ~~ [d9grou6]
+	SAY REACT_TO_DIE_GENERAL    ~~ [d9grouw]
+BUT_ONLY
+
+// Bourrinos (L11 Barbarian) [AR1600]
+// ----------------------------------
+COPY ~%MOD_FOLDER%/groumf1600/d9bour13.cre~ ~override~
+	SAY NAME1 @105
+	SAY NAME2 @105
+	ADD_CRE_ITEM ~HALB02~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP TWOHANDED // Halberd +1
+	ADD_CRE_ITEM ~CHAN05~ #0 #0 #0 ~STOLEN~ ~ARMOR~                   // Splint Mail +1
+	// Custom soundest
+	SAY BATTLE_CRY1     @211 // ~À mort !~ [d9bara9]
+	SAY BATTLE_CRY2     @212 // ~Baston !~ [d9baraa]
+	SAY BATTLE_CRY3     @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON1  @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON2  @213 // ~Ouais !~ [d9barag]
+	SAY SELECT_COMMON3  @214 // ~Quoi ?!~ [d9barah]
+	SAY SELECT_COMMON4  @211 // ~À mort !~ [d9bara9]
+	SAY DAMAGE          ~~ [d9baral]
+	SAY DYING           ~~ [d9baram]
+	SAY HURT            ~~ [d9barae]
+	SAY CRITICAL_MISS   ~~ [d9bara1]
+	SAY SPELL_DISRUPTED ~~ [d9bara6]
+BUT_ONLY
+
+// Add 2 custom Galvena Bodyguards: Groumf and Bourrinos [AR1610]
+// --------------------------------------------------------------
+COPY ~%MOD_FOLDER%/groumf1600/d9groum4.cre~ ~override~
+	SAY NAME1 @104
+	SAY NAME2 @104
+	ADD_CRE_ITEM ~AX1H02~ #1 #0 #0 ~STOLEN~ ~WEAPON1~             // Battle Axe +1
+	ADD_CRE_ITEM ~AX1H04~ #30 #0 #0 ~IDENTIFIED~ ~WEAPON2~ EQUIP  // Throwing Axe
+	ADD_CRE_ITEM ~SHLD06~ #0 #0 #0 ~STOLEN~ ~SHIELD~              // Large Shield +1
+	ADD_CRE_ITEM ~PLAT14~ #0 #0 #0 ~STOLEN~ ~ARMOR~               // Full Plate Mail +1
+	ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~IDENTIFIED~ ~QITEM1~          // 5 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~IDENTIFIED~ ~QITEM2~          // Oil of Speed
+	// Custom soundest
+	SAY BATTLE_CRY1             @201 // ~Misérables insectes !~ [d9groua]
+	SAY BATTLE_CRY2             @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY BATTLE_CRY3             @203 // ~Par la force d'Hutgar !~ [d9grou9]
+	SAY DAMAGE                  ~~ [d9groul]
+	SAY DYING                   ~~ [d9groum]
+	SAY HURT                    ~~ [d9groue]
+	SAY SELECT_COMMON1          @204 // ~Ha Ha Ha !~ [d9groug]
+	SAY SELECT_COMMON2          @205 // ~Quoi ?!~ [d9grouf]
+	SAY SELECT_COMMON3          @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY SELECT_COMMON4          @206 // ~Encore du sang !~ [d9grou0]
+	SAY CRITICAL_MISS           ~~ [d9grou1]
+	SAY TARGET_IMMUNE           ~~ [d9grou2]
+	SAY SPELL_DISRUPTED         ~~ [d9grou6]
+	SAY REACT_TO_DIE_GENERAL    ~~ [d9grouw]
+	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8 // class script
+BUT_ONLY
+
+COPY ~%MOD_FOLDER%/groumf1600/d9bour14.cre~ ~override~
+	SAY NAME1 @105
+	SAY NAME2 @105
+	ADD_CRE_ITEM ~HALB02~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP TWOHANDED // Halberd +1
+	ADD_CRE_ITEM ~CHAN05~ #0 #0 #0 ~STOLEN~ ~ARMOR~                   // Splint Mail +1
+	ADD_CRE_ITEM ~POTN52~ #4 #0 #0 ~IDENTIFIED~ ~QITEM1~              // 4 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~IDENTIFIED~ ~QITEM2~              // Oil of Speed
+	// Custom soundest
+	SAY BATTLE_CRY1     @211 // ~À mort !~ [d9bara9]
+	SAY BATTLE_CRY2     @212 // ~Baston !~ [d9baraa]
+	SAY BATTLE_CRY3     @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON1  @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON2  @213 // ~Ouais !~ [d9barag]
+	SAY SELECT_COMMON3  @214 // ~Quoi ?!~ [d9barah]
+	SAY SELECT_COMMON4  @211 // ~À mort !~ [d9bara9]
+	SAY DAMAGE          ~~ [d9baral]
+	SAY DYING           ~~ [d9baram]
+	SAY HURT            ~~ [d9barae]
+	SAY CRITICAL_MISS   ~~ [d9bara1]
+	SAY SPELL_DISRUPTED ~~ [d9bara6]
+	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8 // class script
+BUT_ONLY
+
+// Revisited Guard Capt - Capitaine des gardes [AR1613]
+// ----------------------------------------------------
+COPY_EXISTING ~pirmur05.cre~ ~override~
+              ~pirmur06.cre~ ~override~
+	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~   // Full Plate Mail
+	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~  // Decorative Helmet 
+	WRITE_LONG 0x244 0x40010000                     // Berserker kit
+	WRITE_BYTE 0x273 2                              // Class FIGHTER
+	ADD_KNOWN_SPELL ~spcl321~ #0 ~INNATE~           // Enrage
+	ADD_MEMORIZED_SPELL ~spcl321~ #0 ~INNATE~ #3
+BUT_ONLY
+
+// Revisited Guard - Garde [AR1608]
+// --------------------------------
+COPY_EXISTING ~pirmur08.cre~ ~override~
+	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~  // Decorative Helmet 
+	WRITE_BYTE 0x238 18                             // Strength (vanilla = 14)
+	WRITE_BYTE 0x23d 18                             // Constitution (vanilla = 16)
+	WRITE_LONG 0x244 0x40010000                     // Berserker kit
+	WRITE_BYTE 0x273 2                              // Class FIGHTER
+	ADD_KNOWN_SPELL ~spcl321~ #0 ~INNATE~           // Enrage
+	ADD_MEMORIZED_SPELL ~spcl321~ #0 ~INNATE~ #3
+BUT_ONLY
+
+// Revisited Galvena [AR1610]
+// --------------------------
+COPY_EXISTING ~pirmur01.cre~ ~override~
+	REMOVE_CRE_ITEM ~LEAT12~                        // Removes Leather Armor +3
+	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~   // Full Plate Mail
+	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~  // Decorative Helmet 
+	ADD_CRE_ITEM ~SHLD29~ #0 #0 #0 ~NONE~ ~SHIELD~  // Medium Shield +2
+	WRITE_BYTE 0x238 18                             // Strength (vanilla = 9)
+	WRITE_BYTE 0x23d 17                             // Constitution (vanilla = 9)
+BUT_ONLY
+
+// Revisited Guard - Garde [AR1608]
+// --------------------------------
+COPY_EXISTING ~pirmur11.cre~ ~override~
+              ~pirmur04.cre~ ~override~
+	WRITE_BYTE 0x238 18  // Strength (vanilla = 9)
+	WRITE_BYTE 0x23d 17  // Constitution (vanilla = 9)
+BUT_ONLY
+
+// Revisited Claire [AR1610]
+// -------------------------
+COPY_EXISTING ~pirmur10.cre~ ~override~
+	WRITE_ASCII SCRIPT_CLASS ~NONE~ #8 // vanilla = GPUSE (SHOUT in BG2EE)
+BUT_ONLY
+
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+COMPILE~%MOD_FOLDER%/groumf1600/d9groum3.d~
+COMPILE ~%MOD_FOLDER%/groumf1600/d9groum3.baf~
+
+COMPILE ~%MOD_FOLDER%/groumf1600/d9groum4.baf~ // empty ???
+COMPILE ~%MOD_FOLDER%/groumf1600/d9bour14.baf~ // empty ???
+
+LAF extend_area_script STR_VAR area = "ar1600" top = "%MOD_FOLDER%/groumf1600/d9ar1600.baf" END // Brynnlaw
+LAF extend_area_script STR_VAR area = "ar1608" top = "%MOD_FOLDER%/groumf1600/d9ar1608.baf" END // Cellar of Brothel
+LAF extend_area_script STR_VAR area = "ar1610" top = "%MOD_FOLDER%/groumf1600/d9ar1610.baf" END // Brothel Prison
+
+
+/* ---------------------- *
+ *  Installing Soundsets  *
+ * ---------------------- */
+
+ACTION_IF NOT is_soundset BEGIN
+	ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = EVAL ~butchery/audio/%LANGUAGE%~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
+		END
+	END ELSE BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = ~butchery/audio/french~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
+		END
+	END
+END

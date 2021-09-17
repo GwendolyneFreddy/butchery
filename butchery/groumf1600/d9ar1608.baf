@@ -1,0 +1,14 @@
+/* ==================================================================== *
+ *    Groumf and Bourrinos Encounter at Brynnlaw (Cellar of Brothel)    *
+ * ==================================================================== */
+
+IF
+	Global("SpawnCaptain","GLOBAL",1)
+	Global("D9SpawnCaptain","AR1608",0)
+ THEN
+	RESPONSE #100
+		CreateCreature("PIRMUR11",[334.259],0)  // Guard - Garde
+		CreateCreature("PIRMUR11",[334.259],0)  // Guard - Garde
+		SetGlobal("D9SpawnCaptain","AR1608",1)
+		Continue()
+END
