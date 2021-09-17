@@ -1,0 +1,170 @@
+/* ---------------- *
+ *  Create Helpers  *
+ * ---------------- */
+IF
+	See(NearestEnemyOf(Myself))
+	Global("CalledFriends","LOCALS",0)
+	Global("d9spawnskelleton","AR2905",0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		SetGlobal("CalledFriends","LOCALS",1)
+		SetGlobal("d9spawnskelleton","AR2905",1)
+		DisplayStringHead(Myself,@3050)  // ~To my side, my followers!~ - ~À moi, mes fidèles !~
+		Wait(2)
+		Explore()
+		CreateVisualEffect("SPGFLSH1",[605.675])
+		CreateVisualEffect("SPGFLSH1",[350.685])
+		CreateVisualEffect("SPGFLSH1",[690.515])
+		CreateVisualEffect("SPGFLSH1",[377.623])
+		CreateVisualEffect("SPGFLSH1",[545.564])
+		Wait(1)
+		CreateVisualEffect("SPFLESHS",[605.675])
+		CreateVisualEffect("SPFLESHS",[350.685])
+		CreateVisualEffect("SPFLESHS",[690.515])
+		CreateVisualEffect("SPFLESHS",[377.623])
+		CreateVisualEffect("SPFLESHS",[545.564])
+		Wait(1)
+		CreateCreature("d9tazokX",[605.675],14)  // Tazok
+		CreateCreature("d9angelo",[350.685],13)  // Angelo
+		CreateCreature("d9semaj",[690.515],15)   // Semaj
+		CreateCreature("D9Diarmi",[377.623],14)  // Diarmid
+		CreateCreature("D9tamoko",[545.564],14)  // Tamoko
+		Wait(3)
+		SetGlobalTimer("D9GateTimerx","AR2905",8)
+		EndCutSceneMode()
+END
+
+
+IF
+	NumberOfTimesTalkedTo(1)
+	GlobalTimerExpired("D9GateTimerx","AR2905")
+	Global("CalledFriends","LOCALS",1)
+	Detect([PC])
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(LastSeenBy(Myself))
+		SetGlobalTimer("D9speakTimerx","AR2905",8)
+END
+
+IF
+	Global("Player1Wrath","GLOBAL",1)
+	GlobalTimerExpired("D9speakTimerx","AR2905")
+THEN
+	RESPONSE #100
+		PlaySound("HELSAR18")
+		PlaySound("HELSAR18")
+		PlaySound("HELSAR18")
+		SetGlobalTimer("D9speakTimerx","AR2905",25)
+END
+
+IF
+	Global("Player1Wrath","GLOBAL",2)
+	GlobalTimerExpired("D9speakTimerx","AR2905")
+THEN
+	RESPONSE #100
+		PlaySound("HELSAR17")
+		PlaySound("HELSAR17")
+		PlaySound("HELSAR17")
+		SetGlobalTimer("D9speakTimerx","AR2905",25)
+END
+
+IF
+	Dead("d9angelo")
+	Dead("d9semaj")
+	Dead("d9tamoko")
+	Dead("d9tazokX")
+	Dead("d9diarmi")
+	Global("CalledFriends","LOCALS",1)
+	Global("d9spawnskelleton","AR2905",1)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+	    SetGlobal("CalledFriends","LOCALS",2)
+		SetGlobal("d9spawnskelleton","AR2905",2)
+		DisplayStringHead(Myself,@3051) // ~Hahaha! It is not over yet!~ - ~Ha ha ha ! Ce n'est pas fini !~
+		Wait(2)
+		Explore()
+		CreateVisualEffect("SPGFLSH1",[350.685])
+		CreateVisualEffect("SPGFLSH1",[690.515])
+		CreateVisualEffect("SPGFLSH1",[377.623])
+		CreateVisualEffect("SPGFLSH1",[545.564])
+		Wait(1)
+		CreateVisualEffect("SPFLESHS",[350.685])
+		CreateVisualEffect("SPFLESHS",[690.515])
+		CreateVisualEffect("SPFLESHS",[377.623])
+		CreateVisualEffect("SPFLESHS",[545.564])
+		Wait(1)
+		CreateCreature("d9slythe",[350.685],13)  // Slythe
+		CreateCreature("d9cythi",[690.515],15)   // Cythandria
+		CreateCreature("d9kryst",[377.623],14)   // Krystin
+		CreateCreature("D9mula",[545.564],14)    // Mulahey
+		Wait(3)
+		EndCutSceneMode()
+END
+
+
+IF
+	Dead("d9slythe")
+	Dead("d9cythi")
+	Dead("d9kryst")
+	Dead("D9mula")
+	Global("CalledFriends","LOCALS",2)
+	Global("d9spawnskelleton","AR2905",2)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		SetGlobal("CalledFriends","LOCALS",3)
+		SetGlobal("d9spawnskelleton","AR2905",3)
+		DisplayStringHead(Myself,@3051)
+		Wait(2)
+		Explore()
+		CreateVisualEffect("SPGFLSH1",[605.675])
+		CreateVisualEffect("SPGFLSH1",[350.685])
+		CreateVisualEffect("SPGFLSH1",[690.515])
+		CreateVisualEffect("SPGFLSH1",[545.564])
+		Wait(1)
+		CreateVisualEffect("SPFLESHS",[605.675])
+		CreateVisualEffect("SPFLESHS",[350.685])
+		CreateVisualEffect("SPFLESHS",[690.515])
+		CreateVisualEffect("SPFLESHS",[545.564])
+		Wait(1)
+		CreateCreature("D9dava",[605.675],14)   // Davaeorn
+		CreateCreature("d9aass",[350.685],13)   // Aasim
+		CreateCreature("d9zali",[690.515],15)   // Zhalimar
+		CreateCreature("d9gardu",[545.564],14)  // Gardush
+		Wait(3)
+		EndCutSceneMode()
+END
+
+
+/* ------------------ *
+ *  Helpers All Dead  *
+ * ------------------ */
+IF
+	Dead("d9gardu")
+	Dead("D9dava")
+	Dead("d9aass")
+	Dead("d9zali")
+	HasItem("MINHP1",Myself)
+	HasItem("INVULNER",Myself)
+	HasItem("SUREHP1",Myself)
+  	Global("CalledFriends","LOCALS",3)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+	    SetGlobal("CalledFriends","LOCALS",4)
+		DisplayStringHead(Myself,@3056)  // ~NO! Look what you did! DIE!~ - ~NON ! Regarde ce que tu as fait ! MEURS !~
+		Wait(2)
+		CreateVisualEffectObject("spsarmor",Myself)
+		DestroyItem("MINHP1")
+	    DestroyItem("INVULNER")
+	    DestroyItem("SUREHP1")
+		Wait(2)
+		EndCutSceneMode()
+		DisplayStringHead(Player1,@3057)  // ~Now that his minions are defeated, Sarevok is vulnerable to your attacks.~ - ~Maintenant que ses larbins sont défaits, Sarevok est vulnérable à vos attaques.~
+END

@@ -1,0 +1,350 @@
+/* ==================================================================================================================================================== *
+ *  v 5.0.0                                                                                                                                             *
+ *           B U T C H E R Y    :    R e v i s e d    f i g h t    a g a i n s t    W r a i t h    S a r e v o k    i n    T h e    A b y s s           *
+ *                                                                                                                                                      *
+ * ==================================================================================================================================================== */
+
+SILENT
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Tazok revisited
+// ---------------
+COPY ~%MOD_FOLDER%/sarevok/d9tazokx.cre~ ~override~
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~undroppable~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~SW2H20~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Two-handed Sword +3
+	ADD_CRE_ITEM ~PLAT23~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Full Plate Mail +2
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~           // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~           // Potion of Magic Shielding
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~        // Oil of Speed
+	ADD_CRE_ITEM ~MISC42~ #1 #0 #0 ~none~ ~INV~                  // Diamond
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Angelo revisited
+// ----------------
+COPY ~%MOD_FOLDER%/sarevok/d9angelo.cre~ ~override~
+	SAY NAME1 @3000
+	SAY NAME2 @3000
+	ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~NONE~ ~HELMET~
+	ADD_CRE_ITEM ~SW1H73~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Long Sword +3
+	ADD_CRE_ITEM ~SW1H74~ #0 #0 #0 ~undroppable~ ~SHIELD~        // Short Sword +3
+	ADD_CRE_ITEM ~DWCHAN01~ #0 #0 #0 ~undroppable~ ~ARMOR~       // Drow Elven Chain +3
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~           // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~           // Potion of Magic Shielding
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~        // Oil of Speed
+	ADD_CRE_ITEM ~MISC42~ #1 #0 #0 ~none~ ~INV~                  // Diamond
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Semaj revisited
+// ---------------
+COPY ~%MOD_FOLDER%/sarevok/d9semaj.cre~ ~override~
+	SAY NAME1 @3001
+	SAY NAME2 @3001
+	ADD_CRE_ITEM ~STAF08~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Martial Staff +3
+	ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Robe of the Evil Archmagi
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN10~ #4 #0 #0 ~undroppable~ ~INV~           // Potion of Invisibility
+	ADD_CRE_ITEM ~MISC42~ #1 #0 #0 ~none~ ~INV~                  // Diamond
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Tamoko revisited
+// ----------------
+COPY ~%MOD_FOLDER%/sarevok/d9tamoko.cre~ ~override~
+	SAY NAME1 @3002
+	SAY NAME2 @3002
+	ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~NONE~ ~HELMET~
+	ADD_CRE_ITEM ~BLUN33~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Mace +3
+	ADD_CRE_ITEM ~SHLD29~ #0 #0 #0 ~undroppable~ ~SHIELD~        // Medium Shield +2
+	ADD_CRE_ITEM ~PLAT23~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Full Plate Mail +2
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM1~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~MISC42~ #1 #0 #0 ~none~ ~INV~                  // Diamond
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Mulahey revisited
+// -----------------
+COPY ~%MOD_FOLDER%/sarevok/d9mula.cre~ ~override~
+	SAY NAME1 @3004
+	SAY NAME2 @3004
+	ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~NONE~ ~HELMET~
+	ADD_CRE_ITEM ~HAMM12~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // War Hammer +3
+	ADD_CRE_ITEM ~SHLD30~ #0 #0 #0 ~undroppable~ ~SHIELD~        // Large Shield +2
+	ADD_CRE_ITEM ~PLAT23~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Full Plate Mail +2
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM1~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~MISC43~ #1 #0 #0 ~none~ ~INV~                  // Emerald
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Diarmid revisited
+// -----------------
+COPY ~%MOD_FOLDER%/sarevok/d9diarmi.cre~ ~override~
+	SAY NAME1 @3007
+	SAY NAME2 @3007
+	ADD_CRE_ITEM ~HELM10~ #0 #0 #0 ~undroppable~ ~HELMET~       // Helmet
+	ADD_CRE_ITEM ~BOW24~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Composite Longbow +3
+	ADD_CRE_ITEM ~HALB12~ #0 #0 #0 ~undroppable~ ~WEAPON2~      // Halberd +3
+	ADD_CRE_ITEM ~LEAT12~ #0 #0 #0 ~undroppable~ ~ARMOR~        // Leather Armor +3
+	ADD_CRE_ITEM ~AROW05~ #10 #0 #0 ~undroppable~ ~QUIVER1~     // Arrow of Biting
+	ADD_CRE_ITEM ~AROW04~ #20 #0 #0 ~undroppable~ ~QUIVER2~     // Acid Arrow +1
+	ADD_CRE_ITEM ~AROW10~ #120 #0 #0 ~undroppable~ ~QUIVER3~    // Arrow of Piercing
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~       // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~          // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~          // Potion of Magic Shielding
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~       // Oil of Speed
+	ADD_CRE_ITEM ~MISC42~ #1 #0 #0 ~none~ ~INV~                 // Diamond
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Cythandria revisited
+// --------------------
+COPY ~%MOD_FOLDER%/sarevok/d9cythi.cre~ ~override~
+	SAY NAME1 @3008
+	SAY NAME2 @3008
+	ADD_CRE_ITEM ~STAF18~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Quaterstaff +2
+	ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Robe of the Evil Archmagi
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN10~ #4 #0 #0 ~undroppable~ ~INV~           // Potion of Invisibility
+	ADD_CRE_ITEM ~MISC43~ #1 #0 #0 ~none~ ~INV~                  // Emerald
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Krystin revisited
+// -----------------
+COPY ~%MOD_FOLDER%/sarevok/d9kryst.cre~ ~override~
+	SAY NAME1 @3009
+	SAY NAME2 @3009
+	ADD_CRE_ITEM ~STAF18~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Quaterstaff +2
+	ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Robe of the Evil Archmagi
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN10~ #4 #0 #0 ~undroppable~ ~INV~           // Potion of Invisibility
+	ADD_CRE_ITEM ~MISC43~ #1 #0 #0 ~none~ ~INV~                  // Emerald
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Slythe revisited
+// ----------------
+COPY ~%MOD_FOLDER%/sarevok/d9slythe.cre~ ~override~
+	SAY NAME1 @3010
+	SAY NAME2 @3010
+	ADD_CRE_ITEM ~HELMNOAN~ #0 #0 #0 ~NONE~ ~HELMET~
+	ADD_CRE_ITEM ~SW1H74~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Short Sword +3
+	ADD_CRE_ITEM ~SW1H74~ #0 #0 #0 ~undroppable~ ~SHIELD~        // Short Sword +3
+	ADD_CRE_ITEM ~LEAT12~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Leather Armor +3
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN10~ #12 #0 #0 ~undroppable~ ~INV~          // Potion of invisibility
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~           // Potion of Magic Shielding
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~        // Oil of Speed
+	ADD_CRE_ITEM ~MISC43~ #1 #0 #0 ~none~ ~INV~                  // Emerald
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Gardush revisited
+// -----------------
+COPY ~%MOD_FOLDER%/sarevok/d9gardu.cre~ ~override~
+	SAY NAME1 @3011
+	SAY NAME2 @3011
+	ADD_CRE_ITEM ~AX1H17~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Battle Axe +3
+	ADD_CRE_ITEM ~AX1H17~ #0 #0 #0 ~undroppable~ ~SHIELD~        // Battle Axe +3
+	ADD_CRE_ITEM ~PLAT23~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Full Plate Mail +2
+	ADD_CRE_ITEM ~HELM33~ #0 #0 #0 ~undroppable~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~POTN52~ #10 #0 #0 ~undroppable~ ~QITEM2~       // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~           // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~           // Potion of Magic Shielding
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~        // Oil of Speed
+	ADD_CRE_ITEM ~MISC41~ #1 #0 #0 ~none~ ~INV~                  // Star sapphire
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Aasim revisited
+// ---------------
+COPY ~%MOD_FOLDER%/sarevok/d9aass.cre~ ~override~
+	SAY NAME1 @3013
+	SAY NAME2 @3013
+	ADD_CRE_ITEM ~HELM10~ #0 #0 #0 ~undroppable~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~BLUN32~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Flail +3
+	ADD_CRE_ITEM ~SHLD28~ #0 #0 #0 ~undroppable~ ~SHIELD~        // Small Shield +2
+	ADD_CRE_ITEM ~PLAT23~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Full Plate Mail +2
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM1~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~MISC41~ #1 #0 #0 ~none~ ~INV~                  // Star sapphire
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Zhalimar revisited
+// ------------------
+COPY ~%MOD_FOLDER%/sarevok/d9zali.cre~ ~override~
+	SAY NAME1 @3015
+	SAY NAME2 @3015
+  	ADD_CRE_ITEM ~HELM10~ #0 #0 #0 ~undroppable~ ~HELMET~        // Helmet
+	ADD_CRE_ITEM ~SW1H75~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Katana +3
+	ADD_CRE_ITEM ~SHLD30~ #0 #0 #0 ~undroppable~ ~SHIELD~        // Large Shield +2
+	ADD_CRE_ITEM ~PLAT23~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Full Plate Mail +2
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~           // Potion of Power
+	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~           // Potion of Magic Shielding
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~        // Oil of Speed
+	ADD_CRE_ITEM ~MISC41~ #1 #0 #0 ~none~ ~INV~                  // Star sapphire
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Davaeorn revisited
+// ------------------
+COPY ~%MOD_FOLDER%/sarevok/d9dava.cre~ ~override~
+	SAY NAME1 @3016
+	SAY NAME2 @3016
+	ADD_CRE_ITEM ~STAF18~ #0 #0 #0 ~undroppable~ ~WEAPON1~ EQUIP // Quaterstaff +2
+	ADD_CRE_ITEM ~CLCK17~ #0 #0 #0 ~undroppable~ ~ARMOR~         // Robe of the Evil Archmagi
+	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~        // 7 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN10~ #4 #0 #0 ~undroppable~ ~INV~           // Potion of Invisibility
+	ADD_CRE_ITEM ~MISC41~ #1 #0 #0 ~none~ ~INV~                  // Star sapphire
+	WRITE_ASCII SCRIPT_CLASS ~GPSHOUT~ #8
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Groumf (L13 Berserker)
+// ----------------------
+COPY ~%MOD_FOLDER%/sarevok/d9groumx.cre~ ~override~
+	SAY NAME1 @104
+	SAY NAME2 @104
+	ADD_CRE_ITEM ~DWBLUN01~ #1 #0 #0 ~NONE~ ~WEAPON1~ EQUIP  // Drow Flail +3
+	ADD_CRE_ITEM ~DWSHLD01~ #0 #0 #0 ~NONE~ ~SHIELD~         // Drow Shield +3
+	ADD_CRE_ITEM ~DWPLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~          // Drow Full Plate +5
+	ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~IDENTIFIED~ ~QITEM1~     // 5 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~IDENTIFIED~ ~QITEM2~     // Oil of Speed
+	// Custom soundest
+	SAY BATTLE_CRY1             @201 // ~Misérables insectes !~ [d9groua]
+	SAY BATTLE_CRY2             @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY BATTLE_CRY3             @203 // ~Par la force d'Hutgar !~ [d9grou9]
+	SAY DAMAGE                  ~~ [d9groul]
+	SAY DYING                   ~~ [d9groum]
+	SAY HURT                    ~~ [d9groue]
+	SAY SELECT_COMMON1          @204 // ~Ha Ha Ha !~ [d9groug]
+	SAY SELECT_COMMON2          @205 // ~Quoi ?!~ [d9grouf]
+	SAY SELECT_COMMON3          @202 // ~Par la fureur de Tempus !~ [d9grou8]
+	SAY SELECT_COMMON4          @206 // ~Encore du sang !~ [d9grou0]
+	SAY CRITICAL_MISS           ~~ [d9grou1]
+	SAY TARGET_IMMUNE           ~~ [d9grou2]
+	SAY SPELL_DISRUPTED         ~~ [d9grou6]
+	SAY REACT_TO_DIE_GENERAL    ~~ [d9grouw]
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Bourrinos (L11 Barbarian)
+// -------------------------
+COPY ~%MOD_FOLDER%/sarevok/d9bourx.cre~ ~override~
+	SAY NAME1 @105
+	SAY NAME2 @105
+	ADD_CRE_ITEM ~DWXBOW01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP    // Drow Crossbow of Speed +3
+	ADD_CRE_ITEM ~DWHALB01~ #0 #0 #0 ~NONE~ ~WEAPON2~          // Drow Halberd +3
+	ADD_CRE_ITEM ~DWCHAN02~ #0 #0 #0 ~NONE~ ~ARMOR~            // Drow Adamantine Chain +5
+	ADD_CRE_ITEM ~DWBOLT02~ #10 #0 #0 ~UNSTEALABLE~ ~QUIVER1~  // Drow Bolt of Stunning
+	ADD_CRE_ITEM ~DWBOLT03~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER2~  // Drow Bolt +1
+	ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~IDENTIFIED~ ~QITEM1~       // 5 Potions of Extra Healing
+	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~IDENTIFIED~ ~QITEM2~       // Oil of Speed
+	// Custom soundest
+	SAY BATTLE_CRY1     @211 // ~À mort !~ [d9bara9]
+	SAY BATTLE_CRY2     @212 // ~Baston !~ [d9baraa]
+	SAY BATTLE_CRY3     @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON1  @212 // ~Baston !~ [d9baraa]
+	SAY SELECT_COMMON2  @213 // ~Ouais !~ [d9barag]
+	SAY SELECT_COMMON3  @214 // ~Quoi ?!~ [d9barah]
+	SAY SELECT_COMMON4  @211 // ~À mort !~ [d9bara9]
+	SAY DAMAGE          ~~ [d9baral]
+	SAY DYING           ~~ [d9baram]
+	SAY HURT            ~~ [d9barae]
+	SAY CRITICAL_MISS   ~~ [d9bara1]
+	SAY SPELL_DISRUPTED ~~ [d9bara6]
+	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
+BUT_ONLY
+
+// Wraith Sarevok revisited
+// ------------------------
+COPY_EXISTING ~hellsare.cre~ ~override~
+	PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN // protects against invalid files
+		ADD_CRE_ITEM ~MINHP1~	#0 #0 #0 ~NONE~	~BELT~
+		ADD_CRE_ITEM ~INVULNER~	#0 #0 #0 ~NONE~	~RING~
+		ADD_CRE_ITEM ~SUREHP1~	#0 #0 #0 ~NONE~	~RING~
+		ADD_CRE_ITEM ~MISC42~ #1 #0 #0 ~none~ ~INV~  // Diamond
+		ADD_CRE_ITEM ~MISC45~ #2 #0 #0 ~none~ ~INV~  // Rogue Stone
+		ADD_CRE_ITEM ~MISC41~ #4 #0 #0 ~none~ ~INV~  // Star sapphire
+		ADD_CRE_ITEM ~MISC43~ #10 #0 #0 ~none~ ~INV~ // Emerald
+		WRITE_ASCII SCRIPT_OVERRIDE ~D9SAREVO~ #8
+	END
+BUT_ONLY
+
+/*COPY ~%MOD_FOLDER%/sarevok/d9angelo.cre~ ~override~
+	SAY NAME1 @3000 SAY NAME2 @3000
+
+COPY ~%MOD_FOLDER%/sarevok/d9semaj.cre~ ~override~
+	SAY NAME1 @3001 SAY NAME2 @3001
+
+COPY ~%MOD_FOLDER%/sarevok/d9tamoko.cre~ ~override~
+	SAY NAME1 @3002 SAY NAME2 @3002
+
+COPY ~%MOD_FOLDER%/sarevok/d9tazoky.cre~ ~override~
+	AY NAME1 @3003 SAY NAME2 @3003 */
+
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+COMPILE ~%MOD_FOLDER%/sarevok/d9hellsare.d~
+
+COMPILE ~%MOD_FOLDER%/sarevok/d9sarevo.baf~
+COMPILE ~%MOD_FOLDER%/sarevok/d9tazokx.baf~
+
+/* NOT USED
+COMPILE ~%MOD_FOLDER%/sarevok/d9angelo.baf~
+COMPILE ~%MOD_FOLDER%/sarevok/d9bourx.baf~
+COMPILE ~%MOD_FOLDER%/sarevok/d9diarmi.baf~
+COMPILE ~%MOD_FOLDER%/sarevok/d9groumx.baf~
+COMPILE ~%MOD_FOLDER%/sarevok/d9mula.baf~
+COMPILE ~%MOD_FOLDER%/sarevok/d9semaj.baf~
+COMPILE ~%MOD_FOLDER%/sarevok/d9tamoko.baf~
+
+// Script Extension : All lines are commented!!!!
+LAF extend_area_script STR_VAR area = "ar2905" top = "%MOD_FOLDER%/sarevok/d9ar2905.baf" END
+*/
+
+
+// Gwen Note: To be restored if Groumf and Bourrinos are also restored!!!
+// ----------------------------------------------------------------------
+/* ---------------------- *
+ *  Installing Soundsets  *
+ * ---------------------- *
+
+ACTION_IF NOT is_soundset BEGIN
+	ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = EVAL ~butchery/audio/%LANGUAGE%~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
+		END
+	END ELSE BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = ~butchery/audio/french~
+			        oggdec_path = ~butchery/audio~
+			        sox_path    = ~butchery/audio~
+		END
+	END
+END
+*/
