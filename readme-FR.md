@@ -187,7 +187,7 @@ Le programme d'installation comprend les composants suivants. Chacun possède un 
 ><span style="margin-left: 50px;"><a href="#40">{40] Créatures de DrAzTiK</a> <em>&nbsp;[à installer avant Stratagems, composant indispensable pour les suivants !]</em></span><br>
 
 ><span style="margin-left: 50px;"><a href="#41">[41] Boucherie de nains dans le Donjon d'Irenicus</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
-><span style="margin-left: 50px;"><a href="#42">[42] Boucherie pour les hautes et basses reputations (BETA, buggé, NOT FINISHED)</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
+><span style="margin-left: 50px;"><a href="#42">[42] Boucherie pour les pièges de haute et basse reputation (BETA, buggé, NOT FINISHED)</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#43">[43] Boucherie d'animaux et de druides dans la forêt de Téthyr</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#44">[44] Boucherie de démons dans la Sphère planaire</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#45">[45] 3 boucheries dans Spellhold (golems, vampires et trolls)</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
@@ -418,7 +418,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 
 ## 
 
-<a name="42" id="42"></a>&#10173; **[42] Boucherie pour les hautes et basses reputations**
+<a name="42" id="42"></a>&#10173; **[42] Boucherie pour les pièges de haute et basse reputation**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
 :warning: Ce composant est désactivé car il est toujours en phase de développement. N'essayez surtout pas de forcer son installation car il est buggé.

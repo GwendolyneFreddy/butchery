@@ -1,0 +1,30 @@
+/* ================================================================= *
+ *    Move Samia group into Firkraag's Entrance (Firkraag's Maze)    *
+ * ================================================================= */
+
+IF
+	Global("SpawnSamia","AR1202",1)  // Firkraag's Maze
+	OR(2)
+		PartyHasItem("SW1H32")  // Peridan +2
+		PartyHasItem("SHLD21")  // Dragon Scale Shield +2
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnSamia","AR1202",2)
+		SetGlobal("D9speekSamia","GLOBAL",1)
+		ActionOverride("Samia",MoveBetweenAreas("AR1201",[1856.1333],10))  // Samia
+END
+
+IF
+	OR(2)
+		PartyHasItem("SW1H32")  // Peridan +2
+		PartyHasItem("SHLD21")  // Dragon Scale Shield +2
+	Global("SpawnSamiaFriends","AR1202",1)  // Firkraag's Maze
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnSamiaFriends","AR1202",2)
+		ActionOverride("Akae",MoveBetweenAreas("AR1201",[1898.1386],10))    // Akae
+		ActionOverride("Kaol",MoveBetweenAreas("AR1201",[1955.1388],10))    // Kaol
+		ActionOverride("Chak",MoveBetweenAreas("AR1201",[1856.1333],10))    // Chak
+		ActionOverride("Legdor",MoveBetweenAreas("AR1201",[1898.1386],10))  // Legdoril
+		ActionOverride("Deshar",MoveBetweenAreas("AR1201",[1955.1388],10))  // Ferric Ironblade
+END

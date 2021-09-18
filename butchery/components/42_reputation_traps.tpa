@@ -1,0 +1,107 @@
+/* ========================================================================================================= *
+ *  v 5.0.0                                                                                                  *
+ *           B U T C H E R Y    :    H i g h    a n d    L o w    R e p u t a t i o n    T r a p s           *
+ *                                                                                                           *
+ * ========================================================================================================= */
+
+/* ---------------------------------- *
+ *  Installing Scripts and dialogues  *
+ * ---------------------------------- */
+
+COPY_EXISTING ~amntrp01.bcs~ ~override~
+	REPLACE_BCS_BLOCK ~%MOD_FOLDER%/reputation2/d9oldrep.baf~ ~%MOD_FOLDER%/reputation2/d9newrep.baf~
+
+EXTEND_BOTTOM ~ar0300.bcs~ ~%MOD_FOLDER%/reputation2/d9ar0300.baf~
+EXTEND_BOTTOM ~ar0400.bcs~ ~%MOD_FOLDER%/reputation2/d9ar0400.baf~
+EXTEND_BOTTOM ~ar0500.bcs~ ~%MOD_FOLDER%/reputation2/d9ar0500.baf~
+EXTEND_BOTTOM ~ar0700.bcs~ ~%MOD_FOLDER%/reputation2/d9ar0700.baf~
+
+ACTION_IF NOT is_d9dwctyz BEGIN
+	COMPILE ~%MOD_FOLDER%/baf/d9dwctyz.baf~
+END
+
+COMPILE ~Groumf_encounters/bafs/d9dwctyy.baf~
+COMPILE ~Groumf_encounters/bafs/d9dwctyz.baf~
+COMPILE ~Groumf_encounters/bafs/d9dwctya.baf~
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Amnian Legionary - Légionnaire amnien
+// -------------------------------------
+COPY_EXISTING ~amnleg1.cre~ ~override/d9nleg1.cre~  // 11th Level
+              ~amnlegs.cre~ ~override/d9legs.cre~   // 9th Level
+              ~amng1.cre~   ~override/d9amng1.cre~  // Amnian Soldier - Soldat amnien (8th Level)
+	WRITE_BYTE  0x270 255  // Enemy
+	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Amnian Centurion - Centurion amnien (16th Level)
+// ------------------------------------------------
+COPY_EXISTING ~amncen1.cre~ ~override/d9ncen1.cre~
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Cowled Enforcer - Exécuteur cagoulé
+// -----------------------------------
+COPY_EXISTING ~cowenf2.cre~  ~override/d9wenf2.cre~   // 20th Level
+              ~cowenf02.cre~ ~override/d9wenf02.cre~  // 20th Level
+              ~cowenf3.cre~  ~override/d9wenf3.cre~   // 16th Level
+              ~cowenf4.cre~  ~override/d9wenf4.cre~   // 14th Level
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sir Jolus
+// ---------
+COPY_EXISTING ~jolus.cre~ ~override/d9jolus.cre~
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sir Branet Al-Thon
+// ------------------
+COPY_EXISTING ~william.cre~ ~override/d9lliam.cre~
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sir Beverus
+// -----------
+COPY_EXISTING ~alex.cre~ ~override/d9alex.cre~
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sir Paritin
+// -----------
+COPY_EXISTING ~ryan.cre~ ~override/d9ryan.cre~
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Alhelor
+// -------
+COPY_EXISTING ~alhel.cre~ ~override/d9alhel.cre~
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY
+
+// Sir Laren
+// ---------
+COPY_EXISTING ~kendak.cre~ ~override/d9kendak.cre~
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+BUT_ONLY

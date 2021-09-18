@@ -1,0 +1,64 @@
+/* =================================================================== *
+ *    Butchery for high and low reputation traps  (Bridge District)    *
+ * =================================================================== */
+
+IF
+	Global("D9trapboucherie","global",1)
+	GlobalLT("MaxSpawn","AR0500",100)
+	GlobalLT("EXTRACOUNT","MYAREA",7)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0500",1)
+		CreateCreatureOffScreen("YSSOLD01",0) // Yaga-Shura Soldier
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0500",1)
+		CreateCreatureOffScreen("YSSOLD02",0) // Yaga-Shura Soldier
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+END
+
+IF
+	Global("D9trapboucherie","global",1)
+	GlobalLT("MaxSpawn","AR0500",100)
+	GlobalLT("EXTRACOUNT2","MYAREA",2)
+	GlobalGT("RTWMyDifficulty","global",2)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0500",1)
+		CreateCreatureOffScreen("YSSOLD03",0) // Yaga-Shura Officer
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0500",1)
+		CreateCreatureOffScreen("YSCLER01",0) // Cleric Of Talos
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0500",1)
+		CreateCreatureOffScreen("YSMAGE01",0) // Yaga-Shura Mage
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+END
+
+IF
+	Global("D9trapboucherie","global",1)
+	GlobalLT("MaxSpawn","AR0500",100)
+	GlobalLT("EXTRACOUNT3","MYAREA",1)
+	GlobalGT("RTWMyDifficulty","global",4)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0500",1)
+		CreateCreatureOffScreen("YSSOLD04",0) // Yaga-Shura Elite
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0500",1)
+		CreateCreatureOffScreen("YSFIRE02",0) // Fire Giant
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR0500",1)
+		CreateCreatureOffScreen("YSMAGE02",0) // Yaga-Shura Mage
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+END

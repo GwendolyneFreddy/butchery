@@ -189,7 +189,7 @@ The installer includes the following components. The number of each is the compo
 ><span style="margin-left: 50px;"><a href="#40">{40] DrAzTiK's Creatures</a> <em>&nbsp;[install before Stratagems]</em></span><br>
 
 ><span style="margin-left: 50px;"><a href="#41">[41] Butchery in Irenicus Dungeon (Dwarves)</a> <em>&nbsp;[install after Stratagems]</em></span><br>
-><span style="margin-left: 50px;"><a href="#42">[42] Butchery for high and low reputation (BETA, BUGGED, NOT FINISHED)</a> <em>&nbsp;[install after Stratagems]</em></span><br>
+><span style="margin-left: 50px;"><a href="#42">[42] Butchery for high and low reputation traps (BETA, BUGGED, NOT FINISHED)</a> <em>&nbsp;[install after Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#43">[43] Butchery in the Forest of Tethyr (Animals and Druids)</a> <em>&nbsp;[install after Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#44">[44] Butchery in the planar sphere (Demonic creatures)</a> <em>&nbsp;[install after Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#45">[45] 3 butcheries in Spellhold (Golems, Vampires and Trolls)</a> <em>nbsp;[install after Stratagems]</em></span><br>
@@ -438,7 +438,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 ## 
 
-<a name="42" id="42"></a>&#10173; **[42] Butchery for high and low reputation**
+<a name="42" id="42"></a>&#10173; **[42] Butchery for high and low reputation traps**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems</em><br><br>
 
 :warning: This component is disabled because it is still under development. Do not try to force its installation as it is bugged.

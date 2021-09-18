@@ -1,0 +1,24 @@
+IF
+	Delay(10)
+	Range([PC],20)
+	ReputationLT([PC],4)
+	!StateCheck([PC],STATE_INVISIBLE)
+	!StateCheck([PC],STATE_IMPROVEDINVISIBILITY)
+	!GlobalTimerNotExpired("RepTrap","GLOBAL")
+THEN
+	RESPONSE #75
+		SetGlobalTimer("RepTrap","GLOBAL",TWO_HOURS)
+		Wait(3)
+		DisplayString(Myself,8205)  // Guards approach. Obviously, word of your misdeeds have reached the authorities.
+		CreateCreatureObject("AMNCEN1",Myself,0,0,0)  // Amnian Centurion
+		CreateCreatureObject("AMNLEG1",Myself,0,0,0)  // Amnian Legionary
+		CreateCreatureObject("AMNLEG1",Myself,0,0,0)  // Amnian Legionary
+		CreateCreatureObject("AMNLEG1",Myself,0,0,0)  // Amnian Legionary
+		CreateCreatureObject("AMNLEG1",Myself,0,0,0)  // Amnian Legionary
+		CreateCreatureObject("COWENF1",Myself,0,0,0)  // Cowled Enforcer
+		CreateCreatureObject("COWENF1",Myself,0,0,0)  // Cowled Enforcer
+		Wait(40)
+	RESPONSE #25
+		DisplayString(Myself,8205)  // Guards approach. Obviously, word of your misdeeds have reached the authorities.
+		Wait(2)
+END

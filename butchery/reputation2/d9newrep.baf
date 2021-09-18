@@ -1,0 +1,15 @@
+IF
+	Delay(5)
+	Range([PC],20)
+	ReputationLT([PC],2)
+	!StateCheck([PC],STATE_INVISIBLE)
+	!StateCheck([PC],STATE_IMPROVEDINVISIBILITY)
+	!GlobalTimerNotExpired("RepTrap","GLOBAL")
+	Global("D9trapboucherie","global",0)
+THEN
+	RESPONSE #75
+		SetGlobalTimer("RepTrap","GLOBAL",12000)
+		DisplayString(Myself,8205) // Guards approach. Obviously word of your misdeeds have reached the authorities.
+		Wait(3)
+		SetGlobal("D9trapboucherie","global",1)
+END
