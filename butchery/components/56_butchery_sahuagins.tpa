@@ -101,8 +101,8 @@ COPY_EXISTING ~sahpr5.cre~ ~override/d9hpr5.cre~
 	WRITE_ASCII SCRIPT_CLASS ~none~ #8
 BUT_ONLY
 
-// Sahuagin Rebel (melee 12th Level) ???
-// -------------------------------------
+// Sahuagin Rebel (melee 12th Level)
+// ---------------------------------
 COPY_EXISTING ~sahgrd02.cre~ ~override/d9hgrd09.cre~
 	SAY NAME1 @5602
 	SAY NAME2 @5602
@@ -114,8 +114,8 @@ COPY_EXISTING ~sahgrd02.cre~ ~override/d9hgrd09.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Sahuagin Rebel (ranged 12th Level) ???
-// --------------------------------------
+// Sahuagin Rebel (ranged 12th Level)
+// ----------------------------------
 COPY_EXISTING ~sahgrd01.cre~ ~override/d9hgrd08.cre~
 	SAY NAME1 @5602
 	SAY NAME2 @5602
@@ -142,9 +142,9 @@ COPY_EXISTING ~sahchf01.cre~ ~override/d9hchf01.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Sahuagin Elite Rebel - Rebelle d'élite (melee 16th Level Fighter) ???
-// ---------------------------------------------------------------------
-COPY_EXISTING ~Sahpri01.cre~ ~override/d9hpri01.cre~
+// Sahuagin Elite Rebel - Rebelle d'élite (melee 16th Level Fighter)
+// -----------------------------------------------------------------
+COPY_EXISTING ~sahpri01.cre~ ~override/d9hpri01.cre~
 	SAY NAME1 @5603
 	SAY NAME2 @5603
 	WRITE_SHORT 0x024 130   // Current HP (vanilla = 72)
@@ -171,8 +171,8 @@ COPY_EXISTING ~sahpr1.cre~ ~override/d9hpr1.cre~
 	WRITE_ASCII DIALOG ~none~ #8
 BUT_ONLY
 
-// Fake Sahuagin Rebel (melee 12th Level) ???
-// ------------------------------------------
+// Fake Sahuagin Rebel (melee 12th Level)
+// --------------------------------------
 COPY_EXISTING ~sahgrd02.cre~ ~override/d9hgrd09.cre~
 	WRITE_SHORT 0x024 100   // Current HP (vanilla = 81)
 	WRITE_SHORT 0x026 100   // Maximum HP (vanilla = 81)

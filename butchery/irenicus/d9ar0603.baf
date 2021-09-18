@@ -7,7 +7,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("D9addvilainZ","AR0603",2)
- 		CreateCreature("D9earc01",[1350.878],12)  //
+ 		CreateCreature("D9earc01",[1350.878],12)  // Duergar
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)	
 END
 
@@ -29,11 +29,11 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0603",1)
-		CreateCreatureObjectOffScreen("D9DF3M",Player1,0,0,0)  // Berseker nain novice
+		CreateCreatureObjectOffScreen("D9DF3M",Player1,0,0,0)  // Dwarf Berseker novice - Berseker nain novice
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0603",1)
-		CreateCreatureObjectOffScreen("D9DF3R",Player1,0,0,0)  // Guerrier nain novice
+		CreateCreatureObjectOffScreen("D9DF3R",Player1,0,0,0)  // Dwarf Warrior novice - Guerrier nain novice
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 END
 
@@ -49,15 +49,15 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0603",1)
-		CreateCreatureOffScreen("D9DF5M",0)  // Berseker nain expérimenté
+		CreateCreatureOffScreen("D9DF5M",0)   // Experienced Dwarf Berseker - Berseker nain expérimenté
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0603",1)
-		CreateCreatureOffScreen("D9DF3M1",0)  // Berseker nain novice
+		CreateCreatureOffScreen("D9DF3M1",0)  // Dwarf Berseker novice - Berseker nain novice
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0603",1)
-		CreateCreatureOffScreen("D9dC5",0)  // Prêtre nain novice
+		CreateCreatureOffScreen("D9dC5",0)    // Dwarf Priest novice - Prêtre nain novice
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 END
 
@@ -71,15 +71,15 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0603",1)
-		CreateCreatureOffScreen("D9dC7",0)  // Prêtre nain expérimenté
+		CreateCreatureOffScreen("D9dC7",0)     // Experienced Dwarf Priest - Prêtre nain expérimenté
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0603",1)
-		CreateCreatureOffScreen("D9DF7M",0)  // Guerrier nain d'élite
+		CreateCreatureOffScreen("D9DF7M",0)    // Elite Dwarf Warrior - Guerrier nain d'élite
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0603",1)
-		CreateCreatureOffScreen("D9DF3M2",0)  // Berseker nain novice
+		CreateCreatureOffScreen("D9DF3M2",0)   // Dwarf Berseker novice - Berseker nain novice
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0603",1)

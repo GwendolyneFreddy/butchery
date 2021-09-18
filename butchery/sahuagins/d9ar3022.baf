@@ -58,7 +58,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3022",1)
-		CreateCreatureOffScreen("D9HGRD08",0)  // Rebel (ranged
+		CreateCreatureOffScreen("D9HGRD08",0)  // Rebel (ranged)
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 END
 

@@ -1,6 +1,6 @@
 // Creatures names
 // ---------------
-@101 = ~Огр-берсерк~	// = BG2 string #17561 and 17562
+@101 = ~Огр-берсерк~	// = BG2 strrefs #17561 and 17562
 @102 = ~Огр-варвар~
 //@26  = ~Tenardiar~	DEPRECATED
 @104 = ~Грумф~
@@ -10,6 +10,7 @@
 @11100  = ~Adepte Barbare~
 @11200  = ~Prкtre de Silvanus~
 */
+
 
 // Creatures soundsets
 // -------------------
@@ -25,14 +26,15 @@
 @213 = ~Да! ~ [d9barag]
 @214 = ~Что?!~ [d9barah]
 
+
 // Creatures scripts
 // -----------------
-@301 = ~*пьет зелье поглощения*~	// former @454
-@302 = ~*пьет зелье могущества*~			// former @456
-@303 = ~*пьет зелье проворства*~		// former @457
-@304 = ~*пьет зелье защиты*~		// former @453
-//@455 = ~*quaffs a Potion of Stone Form*~	// DEPRECATED
-//@452 = ~*gulp*~							// DEPRECATED
+@301 = ~*пьет зелье поглощения*~            // former @454
+@302 = ~*пьет зелье могущества*~            // former @456
+@303 = ~*пьет зелье проворства*~            // former @457
+@304 = ~*пьет зелье защиты*~                // former @453
+//@455 = ~*quaffs a Potion of Stone Form*~  // DEPRECATED ==> DO NOT TRANSLATE
+//@452 = ~*gulp*~                           // DEPRECATED ==> DO NOT TRANSLATE
 
 // d9ar1203.baf
 // ------------
@@ -42,15 +44,70 @@
 
 // d9cutta1.baf
 // ------------
-@331 = ~Ха-ха-ха! Эти глупцы попали в нашу ловушку!~	// former @470
-//@471 = ~Par la fureur de Tempus!~	DEPRECATED
-@333 = ~Внимание!~	// former @472
-@334 = ~Вот же...ты просто уродина!~	// former @473
-@335 = ~Слушаюсь, хозяин!~	// former @474
-@336 = ~Хозяин, магический барьер действует, и незваные гости уже в западне.~	// former @475
-@337 = ~Отличная работа! Хозяин будет доволен, и моя месть будет исполнена!~	// former @476
-/* DEPRECATED
+@331 = ~Ха-ха-ха! Эти глупцы попали в нашу ловушку!~                          // former @470
+@333 = ~Внимание!~                                                            // former @472
+@334 = ~Вот же...ты просто уродина!~                                          // former @473
+@335 = ~Слушаюсь, хозяин!~                                                    // former @474
+@336 = ~Хозяин, магический барьер действует, и незваные гости уже в западне.~ // former @475
+@337 = ~Отличная работа! Хозяин будет доволен, и моя месть будет исполнена!~  // former @476
+/* DEPRECATED ==> DO NOT TRANSLATE
 @477 = ~J'vais vous йcraser 
 le nez !~
 @479 = ~Soignez ces deux imbйciles. Ils devront racheter leur incompйtence auprиs du maоtre.~
 */
+
+
+// d9groum8.baf : Meeting with Groumf and Bourrinos in the Underdark
+// -----------------------------------------------------------------
+@2201 = ~Still more drows!
+Attack! And no mercy!~
+
+
+/* ------------------------------------------------ *
+ *  Revisited fight against Wraith Sarevok in Hell  *
+ * ------------------------------------------------ */
+@3000 = ~Angelo~              // = BG2 strrefs #7161 and 7692
+@3001 = ~Semaj~               // = BG2 strrefs #19592 and 19593
+@3002 = ~Tamoko~              // = BG2 strrefs #11910 and 19935
+//@3003 = ~Tazok~             // DEPRECATED ==> DO NOT TRANSLATE
+@3004 = ~Mulahey~             // = BG2 strrefs #11918 and 2797
+@3007 = ~Diarmid~             // = BG2 strrefs #11023 and 11024
+@3008 = ~Cythandria~          // = BG2 strrefs #20435 and 20436
+@3009 = ~Krystin~             // = BG2 strrefs #12250 and 12295
+@3010 = ~Slythe~              // = BG2 strrefs #12249 and 12294
+@3011 = ~Gardush~             // = BG2 strrefs #1766 and 1767
+@3013 = ~Aasim~               // = BG2 strrefs #17817 and 17818
+//@14584 = ~Diyab~            // = BG2 strrefs #17820 and 17821 DEPRECATED ==> DO NOT TRANSLATE
+@3015 = ~Zhalimar Cloudwulfe~ // = BG2 strrefs #17828 and 17829
+@3016 = ~Davaeorn~            // = BG2 strrefs #12241 and 12286
+
+// d9sarevo.baf
+// ------------
+@3050 = ~To my side, my followers!~
+@3051 = ~Hahaha! It is not over yet!~
+//@14552 = ~Semaj ! Noooon !~  // unused ==> DO NOT TRANSLATE
+//@14553 = ~Tamoko ! Noooon !~ // unused ==> DO NOT TRANSLATE
+//@14554 = ~Tazok ! Noooon !~  // unused ==> DO NOT TRANSLATE
+@3056 = ~No! Look what you did! DIE!~
+@3057 = ~Now that his minions are defeated, Sarevok is vulnerable to your attacks.~
+
+
+/* ------------------- *
+ *  DrAzTiK creatures  *
+ * ------------------- */
+@4000 = ~Dwarf Berseker novice~
+@4001 = ~Dwarf Warrior novice~
+@4002 = ~Experienced Dwarf Berseker~
+@4003 = ~Elite Dwarf Warrior~
+@4004 = ~Dwarf Priest novice~
+@4005 = ~Experienced Dwarf Priest~
+
+@4010 = ~Skeleton Cleric novice~
+@4011 = ~Skeleton Mage novice~
+@4012 = ~Experienced Skeleton Cleric~
+@4013 = ~Experienced Skeleton Mage~
+
+@14874 = ~Vampire Mage~ 4014
+
+@4015 = ~Elite Skeleton Cleric~
+@4016 = ~Elite Skeleton Mage~

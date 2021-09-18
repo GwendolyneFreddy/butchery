@@ -5,7 +5,7 @@
 ![Language](https://img.shields.io/static/v1?label=langues&message=Fran%C3%A7ais%20%7C%20Anglais%20%7C%20Russe&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
-<a href="README_EN.md"><img align="right" src="butchery/readme/images/uk-flag-32.png" title="English Readme"></a>
+<a href="README.md"><img align="right" src="butchery/readme/images/uk-flag-32.png" title="English Readme"></a>
 
 
 <div align="center"><h1><BuTcHeRy</h1>
@@ -198,11 +198,11 @@ Le programme d'installation comprend les composants suivants. Chacun possède un 
 ><span style="margin-left: 50px;"><a href="#50">[50] 2 boucheries de golems à Sulanessellar et dans la Tour de Garde (Machine de Lum le Fou)</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#51">[51] Boucherie de Yaga-Shura améliorée</a> <em>&nbsp;[à installer après Ascension et Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#52">[52] Boucherie d'animaux/druides dans le Bosquet des druides</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
-><span style="margin-left: 50px;"><a href="#53">[53] Boucherie de fanatiques dans l'antre de l'Œil aveugle</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
+><span style="margin-left: 50px;"><a href="#53">[53] Boucherie de fanatiques dans l'antre de l'&OElig;il aveugle</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#54">[54] Boucherie de vampires dans l'antre de Bodhi au chapitre 2, avant l'Ombreterre</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#55">[55] Boucherie de vampires dans l'antre de Bodhi au chapitre 6, apres l'Ombreterre</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#56">[56] 2 boucheries de sahuagins (Cité sous-marine et campement githyanki dans la Tour de Garde)</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
-><span style="margin-left: 50px;"><a href="#57">[57] 4 boucheries d'araignées : entrée de l'antre de Pai'Na, Temple d'Amaunator (Œil aveugle), 1er étage de la Tour de Garde et devant l'Enclave de Sendai</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
+><span style="margin-left: 50px;"><a href="#57">[57] 4 boucheries d'araignées : entrée de l'antre de Pai'Na, Temple d'Amaunator (&OElig;il aveugle), 1er étage de la Tour de Garde et devant l'Enclave de Sendai</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#58">[58] 6 boucheries de squelettes (catacombes d'Athkatla, Ruine du Temple, Spellhold, Tour de Garde et 2 dans le temple de Nyalee)</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 
 ><span style="margin-left: 50px;"><a href="#80">[80] Transformer BG2 en Dungeon crawler</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
@@ -397,7 +397,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="32" id="32"></a>&#10173; **[32] Musiques de combat dans les zones sans musique**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant ou après Stratagems</em><br><br>
 
-&#9755; Ce composant dote d'une musique de combat certaines zones qui n'en ont pas (Temple d'Amuaunator dans l'Antre du culte de l'Œil aveugle, Égouts sous la Couronne de Cuivre, Ruine du temple sous l'emprise des ombres, cave des trolls (test de folie de Spellhold) et Forêt de Téthyr.
+&#9755; Ce composant dote d'une musique de combat certaines zones qui n'en ont pas (Temple d'Amuaunator dans l'Antre du culte de l'&OElig;il aveugle, Égouts sous la Couronne de Cuivre, Ruine du temple sous l'emprise des ombres, cave des trolls (test de folie de Spellhold) et Forêt de Téthyr.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -506,10 +506,10 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 
 ## 
 
-<a name="53" id="53"></a>&#10173; **[53] Boucherie de fanatiques dans l'antre de l'Œil aveugle**
+<a name="53" id="53"></a>&#10173; **[53] Boucherie de fanatiques dans l'antre de l'&OElig;il aveugle**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans l'antre de l'Œil aveugle.
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans l'antre de l'&OElig;il aveugle.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -545,7 +545,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="57" id="57"></a>&#10173; **[57] 4 boucheries d'araignées**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
-&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis devant l'antre de Pai'Na (repaire de Bodhi), dans la carte du Temple d'Amaunator (antre du culte de l'Œil aveugle), au 1er étage de la Tour de Garde et devant l'Enclave de Sendai. 
+&#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis devant l'antre de Pai'Na (repaire de Bodhi), dans la carte du Temple d'Amaunator (antre du culte de l'&OElig;il aveugle), au 1er étage de la Tour de Garde et devant l'Enclave de Sendai. 
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -553,7 +553,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="58" id="58"></a>&#10173; **[58] 6 boucheries de squelettes (catacombes d'Athkatla, Ruine du Temple, Spellhold, Tour de Garde et 2 dans le temple de Nyalee)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
 
-&#9755; Ce composant ajoute une bataille contre quelques dizaines de squelettes tout le long du jeu : dans les catacombes d'Athkatla (tombeaux du Parchemin Néthère), à l'entrée du Temple d'Amaunator (Ruine du temple sous l'emprise des ombres), dans le premier niveau du labyrinthe de l'Asile de Spellhold, dans la Forêt de Mir (Temple de Nyalee) et dans la Tpur de Garde (Salle du Dernier sceau).
+&#9755; Ce composant ajoute une bataille contre quelques dizaines de squelettes tout le long du jeu : dans les catacombes d'Athkatla (tombeaux du Parchemin Néthère), à l'entrée du Temple d'Amaunator (Ruine du temple sous l'emprise des ombres), dans le premier niveau du labyrinthe de l'Asile de Spellhold, dans la Tour de Garde (Salle du Dernier sceau), et deux dans la Forêt de Mir (Temple de Nyalee).
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -587,10 +587,10 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 - AR0420 : Sphère planaire (Hommes-lézards)
 
 &#9755; <ins>Les Temples</ins>
-- AR0201 : Chemin vers la ville des goules et l'antre de l'Œil aveugle
+- AR0201 : Chemin vers la ville des goules et l'antre de l'&OElig;il aveugle
 - AR0206 : Ville des goules
-- AR0204 : Temple d'Amaunator (antre du culte de l'Œil aveugle)
-- AR0205 : Antre de l'Œil aveugle
+- AR0204 : Temple d'Amaunator (antre du culte de l'&OElig;il aveugle)
+- AR0205 : Antre de l'&OElig;il aveugle
 
 &#9755; <ins>Le Pont</ins>
 - AR0502 : Échoppe du tanneur (cave)

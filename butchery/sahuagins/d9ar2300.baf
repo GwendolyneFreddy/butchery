@@ -49,7 +49,7 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR2300",1)
-		CreateCreatureOffScreen("D9HPR5",0)  // Priestess novice - Prêtresse novice
+		CreateCreatureOffScreen("D9HPR5",0)    // Priestess novice - Prêtresse novice
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR2300",1)

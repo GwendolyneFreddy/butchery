@@ -71,15 +71,15 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0802",1)
-		CreateCreatureOffScreen("D9SM7B",0)  // Skeleton Mage novice - Mage squelette novice
+		CreateCreatureOffScreen("D9SM7B",0)    // Skeleton Mage novice - Mage squelette novice
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0802",1)
-		CreateCreatureOffScreen("D9ELWA",0)  // Skeleton Warrior - Combattant squelette
+		CreateCreatureOffScreen("D9ELWA",0)    // Skeleton Warrior - Combattant squelette
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0802",1)
-		CreateCreatureOffScreen("D9SC7B",0)  // Skeleton Cleric novice - Prêtre squelette novice
+		CreateCreatureOffScreen("D9SC7B",0)    // Skeleton Cleric novice - Prêtre squelette novice
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR0802",1)

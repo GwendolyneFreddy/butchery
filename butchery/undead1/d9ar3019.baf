@@ -60,7 +60,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 			RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3019",1)
-		CreateCreatureOffScreen("d9mmy",0)  // Mummy - Momie
+		CreateCreatureOffScreen("d9mmy",0)     // Mummy - Momie
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 
 END
@@ -75,15 +75,15 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3019",1)
-		CreateCreatureOffScreen("D9SM12B",0)  // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+		CreateCreatureOffScreen("D9SM12B",0)   // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3019",1)
-		CreateCreatureOffScreen("D9ELWA",0)  // Skeleton Warrior - Combattant squelette
+		CreateCreatureOffScreen("D9ELWA",0)    // Skeleton Warrior - Combattant squelette
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3019",1)
-		CreateCreatureOffScreen("D9SC12B",0)  // Experienced Skeleton Cleric - Prêtre squelette expérimenté
+		CreateCreatureOffScreen("D9SC12B",0)   // Experienced Skeleton Cleric - Prêtre squelette expérimenté
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3019",1)
@@ -99,18 +99,18 @@ THEN
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3019",1)
-		CreateCreatureOffScreen("D9SKL01",0)  // Skeleton Cleric - Clerc squelette (20th Level)
+		CreateCreatureOffScreen("D9SKL01",0)   // Skeleton Cleric - Clerc squelette (20th Level)
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3019",1)
-		CreateCreatureOffScreen("D9SKL03",0)  // Skeleton Mage - Mage squelette (20th Level)
+		CreateCreatureOffScreen("D9SKL03",0)   // Skeleton Mage - Mage squelette (20th Level)
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3019",1)
-		CreateCreatureOffScreen("D9SKL02",0)  // Skeleton Assassin - Assassin Squelette (20th Level)
+		CreateCreatureOffScreen("D9SKL02",0)   // Skeleton Assassin - Assassin Squelette (20th Level)
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR3019",1)
-		CreateCreatureOffScreen("D9SKL04",0)  // Skeleton Warrior - Combattant squelette (20th Level)
+		CreateCreatureOffScreen("D9SKL04",0)   // Skeleton Warrior - Combattant squelette (20th Level)
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 END

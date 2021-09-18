@@ -29,15 +29,15 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1900",1)
-		CreateCreatureOffScreen("D9EARBL",0)  // Black Bear - Ours noir
+		CreateCreatureOffScreen("D9EARBL",0)   // Black Bear - Ours noir
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1900",1)
-		CreateCreatureOffScreen("d9Valr2",0)  // Shadow Ranger - Rôdeur de l'ombre
+		CreateCreatureOffScreen("d9Valr2",0)   // Shadow Ranger - Rôdeur de l'ombre
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1900",1)
-		CreateCreatureOffScreen("D9UID6A",0)  // Shadow Druid novice - Druide de l'ombre novice
+		CreateCreatureOffScreen("D9UID6A",0)   // Shadow Druid novice - Druide de l'ombre novice
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1900",1)
@@ -65,7 +65,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1900",1)
-		CreateCreatureOffScreen("D9UID8B",0)  // hadow Druid - Druidesse de l'ombre
+		CreateCreatureOffScreen("D9UID8B",0)  // Shadow Druid - Druidesse de l'ombre
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1900",1)

@@ -45,22 +45,22 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## <a name="intro" id="intro"></a>Overview
 
-The main objectif of this little mod is to add a challenging and fun fight in Firkraag's hideout.
+The main objectif of this little mod was to add a challenging and fun fight in Firkraag's hideout.
 
 I like Baldur's Gate a lot, and I wrote this mod (first version in 2010) to become a minimum familiar with some modding stuffs. Thanks to Freddy_Gwendo, the BuTcHeRy is now compatible with the Enhanced Editions, EET and BGT. I also added a few improvements.
 
 Secondary objectives are:
 
-- Allow players to fight in a big room or large space because it is really boring and frustrating to fight in a corridor, especially in in BG2.
-- Bring BG2 as close as possible to a *Dungeon crawler*.
-- Difficulty level scaling: difficulty will be adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. (more info <a href="#components">below</a>).
-- Have a 'butchery fight', with some spawn and respawn to spice up battles.
+- Allow players to fight in a big room or large space because it is really boring and frustrating to fight in a corridor, especially in BG2.
+- Bring BG2 as close as possible to a *Dungeon crawler* game.
+- Difficulty level scaling: difficulty will be adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. (more info <a href="#components">below</a>)
+- Spice up many battles by turning them into 'butchery fights', with a few spawns and respawns.
 - Make a few non-spellcaster creatures a bit more challenging (while non cheated) using kit abilities, having proficiencies in weapons, etc.
 - Have challenging and charismatic boss (Tazok, DigDag, Sarevok).
 - Keep 100% content of the original game. I add a few things, but I don't remove a single one.
 - Add a bit of fun dialogues and cutscenes.
 - No big loots or new magical items.
-- Have 100% compatibility and optimisation with Sword Coast stratagems and Item Revisions (especially with its '*potions revisions*' component).<br><br>
+- Have 100% compatibility and optimisation with Stratagems and Item Revisions (especially with its '*potions revisions*' component).<br><br>
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -183,8 +183,8 @@ The installer includes the following components. The number of each is the compo
 ><span style="margin-left: 50px;"><a href="#22">[22] Groumf and Bourrinos Encounter in the Underdark</a> <em>&nbsp;[install before Stratagems]</em></span><br>
 
 ><span style="margin-left: 50px;"><a href="#30">{30] Revisited fight against Wraith Sarevok in the Abyss</a> <em>&nbsp;[install before Stratagems]</em></span></br>
-><span style="margin-left: 50px;"><a href="#31">{31] Move Samia group into Firkraag's Entrance (BETA and bugged) <em>&nbsp;[install before or after Stratagems]</em></span></br>
-><span style="margin-left: 50px;"><a href="#32">{32] Add battle songs in some areas that do not have any</a> <em>&nbsp;[install before or after Stratagems]</em></span><br><br>
+><span style="margin-left: 50px;"><a href="#31">{31] Move Samia group into Firkraag's Entrance (BETA and bugged) <em>&nbsp;[install before or after Stratagems]</em></span><br>
+><span style="margin-left: 50px;"><a href="#32">{32] Add battle songs in some areas that do not have any</a> <em>&nbsp;[install before or after Stratagems]</em></span><br>
 
 ><span style="margin-left: 50px;"><a href="#40">{40] DrAzTiK's Creatures</a> <em>&nbsp;[install before Stratagems]</em></span><br>
 
@@ -205,7 +205,7 @@ The installer includes the following components. The number of each is the compo
 ><span style="margin-left: 50px;"><a href="#55">[55] Butchery in Bodhi's Hideout (chapter 6, after Underdark) - Vampires</a> <em>&nbsp;[install after Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#56">[56] 2 butcheries of Sahuagins in Sahuagin City and Watcher's Keep (Githyanki Encampment)</a> <em>&nbsp;[install after Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#57">[57] 4 butcheries of spiders in Pai'Na's Hideout entrance, Temple City (Unseeing Eye Plot), Watcher's Keep 1st floor and area outside Sendai's Hideout</a> <em>&nbsp;[install after Stratagems]</em></span><br>
-><span style="margin-left: 50px;"><a href="#58">[58] 6 butcheries of skeletons in lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Keep (Last Seals), and 2 in Nyalee's Hideout</a> <em>&nbsp;[install after Stratagems]</em></span><br>
+><span style="margin-left: 50px;"><a href="#58">[58] 6 butcheries of skeletons in lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Keep (Last Seals) and Nyalee's Hideout (2)</a> <em>&nbsp;[install after Stratagems]</em></span><br>
 
 ><span style="margin-left: 50px;"><a href="#80">[80] More enemies scattered throughout the game</a> <em>&nbsp;[install after Stratagems]</em></span><br>
 
@@ -570,10 +570,10 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 ## 
 
-<a name="58" id="58"></a>&#10173; **[58] 6 butcheries of skeletons in lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Kee, and 2 in Nyalee's Hideout**
+<a name="58" id="58"></a>&#10173; **[58] 6 butcheries of skeletons in lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Keep, and Nyalee's Hideout (2)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Requires component <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
 
-&#9755; This component adds a battle against a few dozen skeletons throughout the game: in the lower tombs of Athkatla (Southern Dungeons), in the Shadow Temple Land (shadowed) at the Temple of Amaunator entrance, in Spellhold (Bodhi's Hunt Level 1), in Nyalee's Hideout and in the Watcher's Keep (Helmite Level - Last Seals).
+&#9755; This component adds a battle against a few dozen skeletons throughout the game: in the lower tombs of Athkatla (Southern Dungeons), in the Shadow Temple Land (shadowed) at the Temple of Amaunator entrance, in Spellhold (Bodhi's Hunt Level 1), Watcher's Keep (Helmite Level - Last Seals), and two in Nyalee's Hideout.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -766,7 +766,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 - Added *butchery.ini* metadata file (including dynamic install order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
-- Replaced `REQUIRE_FILE` condition with `REQUIRE_PREDICATE` to avoid installing the mod in inaccurate games.
+- Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
 - Commented code as much as possible.
 - Fixed installer to avoid installing the same files more than once, regardless of the components installed.
 - Added native EE and EET compatibility:

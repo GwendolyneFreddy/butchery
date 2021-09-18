@@ -61,7 +61,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
-		CreateCreatureOffScreen("d9mmy",0)  // Mummy - Momie
+		CreateCreatureOffScreen("d9mmy",0)     // Mummy - Momie
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 
 END
@@ -76,15 +76,15 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
-		CreateCreatureOffScreen("D9SM12B",0)  // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
+		CreateCreatureOffScreen("D9SM12B",0)   // Experienced Skeleton Mage - Mage squelette expérimenté (12th Level)
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
-		CreateCreatureOffScreen("D9ELWA",0)  // Skeleton Warrior - Combattant squelette
+		CreateCreatureOffScreen("D9ELWA",0)    // Skeleton Warrior - Combattant squelette
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
-		CreateCreatureOffScreen("D9SC12B",0)  // Experienced Skeleton Cleric - Prêtre squelette expérimenté
+		CreateCreatureOffScreen("D9SC12B",0)   // Experienced Skeleton Cleric - Prêtre squelette expérimenté
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
@@ -140,7 +140,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
-		CreateCreatureOffScreen("D9OGR0M",0)  // Greater Ghoul - Goule majeure
+		CreateCreatureOffScreen("D9OGR0M",0)   // Greater Ghoul - Goule majeure
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
@@ -172,7 +172,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
-		CreateCreatureOffScreen("d9mmy",0)  // Mummy - Momie
+		CreateCreatureOffScreen("d9mmy",0)     // Mummy - Momie
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
@@ -202,7 +202,7 @@ THEN
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 			RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
-		CreateCreatureOffScreen("D9TANOV",0)  // Vampire Mage female (16th Level)
+		CreateCreatureOffScreen("D9TANOV",0)   // Vampire Mage female (16th Level)
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 			RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR5202",1)
