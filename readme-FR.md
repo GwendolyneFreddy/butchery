@@ -59,7 +59,7 @@ Par ailleurs, ce mod a pour ambition de :
 - Conserver le contenu du jeux original.
 - Apporter un ou deux éléments comiques à l'aventure.
 - Ne pas offrir de récompenses disproportionnés.
-- Assurer une intégration et une compatibilité totales avec Stratagems et Item Revisions (en particulier son composant « *Révision des potions* »).
+- Assurer une compatibilité optimisée avec <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> et <a href="https://github.com/Gibberlings3/ItemRevisions">Item Revisions</a> (en particulier son composant « *Révision des potions* »).
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
 
@@ -90,14 +90,13 @@ Si vous rencontrez des bugs, veuillez les signaler dans le <a href="https://www.
 #### Ordre d'installation
 
 >Je recommande fortement aux joueurs de ToB original de télécharger et d'installer la dernière version du <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> avant d'installer ce mod.<br>
+>Je vous conseille aussi de jouer avec le mod <a href="http://www.mediafire.com/file/b9mtiwvj4aah42r/Derats_AutoRest_v4.zip/file">auto resting</a> produit par deratiseur afin de pouvoir régénérer vos sorts entre les combats sans avoir à vous reposer 8 heures. :wink;
 
 Voici l'ordre d'installation conseillé :
-- Veuillez installer BuTcHeRY après TobEx, BG2 Fixpack et EET.
+- Veuillez installer BuTcHeRY après TobEx, BG2 Fixpack, Ascension et EET.
 - Veuillez installer BuTcHeRY avant les procédures finales de « biffing » [*NdT : archivage avec Generalized biffing*].
 
-:warning: Comme j'utilise les scripts de combat proposés par le original, vous pouvez encore augmenter la difficulté si vous installez le mod Stratagems (composant « *IA générale plus efficace* »). Les premiers composants sont à installer avant Stratagems pour une meilleure expérience et difficulté tandis que les autres composants sont à installer après Stratagems (tout ceci est détaillé avant l'installation de chaque composant).
-
-RECOMMANDATION : je vous conseille aussi de jouer avec le mod <a href="http://www.mediafire.com/file/b9mtiwvj4aah42r/Derats_AutoRest_v4.zip/file">auto resting</a> produit par deratiseur afin de pouvoir régénérer vos sorts entre les combats sans avoir à vous reposer 8 heures. :wink;
+:warning: Comme j'utilise les scripts de combat proposés par le original, vous pouvez encore augmenter la difficulté si vous installez le mod <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> (composant « *IA générale plus efficace* »). Les premiers composants sont à installer avant Stratagems pour une meilleure expérience et difficulté tandis que les autres composants sont à installer après Stratagems (tout ceci est détaillé avant l'installation de chaque <a href="#components">composant</a>).
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
 
@@ -493,7 +492,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="51" id="51"></a>&#10173; **[51] Boucherie de Yaga-Shura améliorée**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Ascension et Stratagems</em><br><br>
 
-&#9755; Ce composant modifie grandement la bataille contre l'armée de Yaga-Shura dans ToB pour la rendre plus longue et plus difficile. Il ne fonctionnera que si vous avez installé Ascension (version de David Wallace) et Stratagems.
+&#9755; Ce composant modifie grandement la bataille contre l'armée de Yaga-Shura dans ToB pour la rendre plus longue et plus difficile. Il ne fonctionnera que si vous avez installé <a href="https://www.gibberlings3.net/files/file/1011-ascension/">Ascension</a> (version de David Wallace) et <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a>.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -519,7 +518,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 
 &#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le repaire de Bodhi au chapitre 2.
 
-<ins>Note</ins> : Les pièges (pointes acérées) dans la grande salle où se trouve la mare de sang ont été désactivés pour qu'on puisse s'y battre sans gène.
+<ins>Note</ins> : Les pièges (pointes acérées) dans la grande salle où se trouve la mare de sang ont été désactivés pour qu'on puisse s'y battre sans gêne.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -529,7 +528,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 
 &#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis dans le repaire de Bodhi au chapitre 6.
 
-<ins>Note</ins> : Les pièges (pointes acérées) dans la grande salle où se trouve la mare de sang ont été désactivés pour qu'on puisse s'y battre sans gène.
+<ins>Note</ins> : Les pièges (pointes acérées) dans la grande salle où se trouve la mare de sang ont été désactivés pour qu'on puisse s'y battre sans gêne.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -774,7 +773,7 @@ Les créateurs de la série Baldur's Gate : <a href="https://www.bioware.com/">Bio
 	- Reorganized and merged tra files into 3 files.
 	- Updated WeiDU installer to v246.
 
-- Components specific modifications and fixes: please read the <a href="https://raw.githubusercontent.com/GwendolyneFreddy/butchery/master/butchery/change-log.txt">change-log file</a>.
+- Components specific modifications and fixes: please read the <a href="https://raw.githubusercontent.com/GwendolyneFreddy/butchery/master/butchery/readme/change-log.txt">change-log file</a>.
 
 ## 
 

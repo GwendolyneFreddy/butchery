@@ -53,14 +53,14 @@ Secondary objectives are:
 
 - Allow players to fight in a big room or large space because it is really boring and frustrating to fight in a corridor, especially in BG2.
 - Bring BG2 as close as possible to a *Dungeon crawler* game.
-- Difficulty level scaling: difficulty will be adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. (more info <a href="#components">below</a>)
+- Difficulty level scaling: difficulty will be adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. (more details <a href="#components">below</a>)
 - Spice up many battles by turning them into 'butchery fights', with a few spawns and respawns.
 - Make a few non-spellcaster creatures a bit more challenging (while non cheated) using kit abilities, having proficiencies in weapons, etc.
 - Have challenging and charismatic boss (Tazok, DigDag, Sarevok).
 - Keep 100% content of the original game. I add a few things, but I don't remove a single one.
 - Add a bit of fun dialogues and cutscenes.
 - No big loots or new magical items.
-- Have 100% compatibility and optimisation with Stratagems and Item Revisions (especially with its '*potions revisions*' component).<br><br>
+- Have 100% compatibility and optimisation with <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> and <a href="https://github.com/Gibberlings3/ItemRevisions">Item Revisions</a> (especially with its '*potions revisions*' component).<br><br>
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -92,15 +92,14 @@ If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacou
 #### Installation Order
 
 >Classical games players are strongly recommended to download and install the latest version of the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
+>You should also install the "<a href="http://www.mediafire.com/file/b9mtiwvj4aah42r/Derats_AutoRest_v4.zip/file">auto resting</a>" mod (from deratiseur) that allows you to restore your spells without having to rest for 8 hours. :wink:
 
 Here is the recommended installation order:
-- Please install BuTcHeRY after TobEx, BG2 Fixpack, and EET.
+- Please install BuTcHeRY after TobEx, BG2 Fixpack, Ascension and EET.
 - Please install BuTcHeRY before any final "biffing" routines.
 
+:warning: As I use vanilla scripts, you can further increase the difficulty if you install the <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> mod ('*Smarter general AI*' component). The first components are to be installed before Stratagems for a better experience and difficulty while the other components are to be installed after Stratagems (read the details before installing each <a href="#components">component</a>).
 
-:warning: As I use vanilla scripts, you can further increase the difficulty if you install the Stratagems mod ('*Smarter general AI*' component). The first components are to be installed before Stratagems for a better experience and difficulty while the other components are to be installed after Stratagems (all this is detailed before the installation of each component).
-
-RECOMMENDATION : you should also install the "<a href="http://www.mediafire.com/file/b9mtiwvj4aah42r/Derats_AutoRest_v4.zip/file">auto resting</a>" mod (from deratiseur) that allows you to restore your spells without having to rest for 8 hours. :wink:
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -513,7 +512,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="51" id="51"></a>&#10173; **[51] Butchery of Yaga-Shura revisited**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Ascension and Stratagems</em><br><br>
 
-&#9755; This component greatly modifies the battle against Yaga-Shura army in ToB to make it longer and more difficult. It will only work if you have Acsension (David Wallace's version) and Stratagems installed.
+&#9755; This component greatly modifies the battle against Yaga-Shura army in ToB to make it longer and more difficult. It will only work with <a href="https://www.gibberlings3.net/files/file/1011-ascension/">Ascension</a> (David Wallace's version) and <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a>.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -844,7 +843,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 	- Reorganized and merged tra files into 3 files.
 	- Updated WeiDU installer to v246.
 
-- Components specific modifications and fixes: please read the <a href="https://raw.githubusercontent.com/GwendolyneFreddy/butchery/master/butchery/change-log.txt">change-log file</a>.
+- Components specific modifications and fixes: please read the <a href="https://raw.githubusercontent.com/GwendolyneFreddy/butchery/master/butchery/readme/change-log.txt">change-log file</a>.
 
 ## 
 
