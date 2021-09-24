@@ -1,25 +1,53 @@
-/* DEPRECATED
-@1 = ~****************************************~
-@2 = ~*BuTcHeRy Mod Version 1.0        *~
-@3 = ~*DrAzTiK01@msn.com	  *~
-@4 = ~*Copyright 2009                         *~
-@5 = ~* A utiliser avec ToB Version 26498     *~
-@6 = ~* Ce fichier va installer               *~
-@7 = ~* BuTcHeRy dans votre             *~
-@8 = ~*    Répertoire BG2                     *~
-@9 = ~*****************************************~
-@10 = ~Il semble que ToB ne soit pas installe sur votre systeme.~
-*/
-
-@1 = ~Ce mod necessite l'installation de ToB, BGT, BG2:EE ou EET.~
-
-@10 = ~Combat contre Tazok et DigDag revise par DrAzTiK~
-@20 = ~Reequilibrage de certaines creatures generiques (orques et ogres)~
-@30 = ~Reequilibrage de Tazok et de DigDag~
+/* -------------------- *
+ *  Installer messages  *
+ * -------------------- */
+@1  = ~Ce mod necessite l'installation de ToB, BGT, BG2:EE ou EET.~
+@2  = ~Ce composant necessite l'installation du composant Rencontre avec Groumf et Bourrinos devant le donjon de Firkraag.~
+@3  = ~Ce composant necessite l'installation du composant Creatures de DrAzTiK.~
 
 
+/* ------------ *
+ *  Components  *
+ * ------------ */
+@10 = ~Combat contre Tazok et DigDag revise par DrAzTiK [a installer avant Stratagems]~
+@11 = ~Reequilibrage de certaines creatures generiques [a installer avant Stratagems]~
+@12 = ~Reequilibrage de Tazok et de DigDag [a installer apres Stratagems]~
 
-// WeiDU prompts
+@20 = ~Rencontre avec Groumf et Bourrinos devant le donjon de Firkraag [a installer avant Stratagems]~
+@21 = ~Rencontre avec Groumf et Bourrinos a Brynnlaw [a installer avant Stratagems]~
+@22 = ~Rencontre avec Groumf et Bourrinos dans les Trefonds Obscurs [a installer avant Stratagems]~
+
+@30 = ~Combat revisite de Sarevok necrophage dans les Abysses [a installer avant Stratagems]~
+//@31 = ~Relocalisation du groupe de Samia a l'entree du donjon de Firkraag (BETA et bugge) [a installer avant ou apres Stratagems]~
+@32 = ~Musiques de combat dans les zones sans musique [a installer avant ou apres Stratagems]~
+
+@40 = ~Creatures de DrAzTiK [a installer avant Stratagems, composant indispensable pour les suivants !]~
+@41 = ~Boucherie de nains dans le donjon d'Irenicus [a installer apres Stratagems]~
+//@42 = ~Boucherie pour les pieges de haute et basse reputation (BETA, bugge, NOT FINISHED) [a installer apres Stratagems]~
+@43 = ~Boucherie d'animaux/druides dans la foret de Tethyr [a installer apres Stratagems]~
+@44 = ~Boucherie de demons dans la Sphere planaire [a installer apres Stratagems]~
+@45 = ~3 boucheries dans Spellhold (golems, vampires et trolls) [a installer apres Stratagems]~
+@46 = ~Boucherie de trolls a l'exterieur du Chateau de'Arnise [a installer apres Stratagems]~
+@47 = ~Boucherie d'orques dans les Collines de Lancevent [a installer apres Stratagems]~
+@48 = ~Boucherie de loups dans les Collines d'Umar [a installer apres Stratagems]~
+@49 = ~2 boucheries d'animaux sauvages : Franc-Marche et Tour de Garde [a installer apres Stratagems]~
+@50 = ~2 boucheries de golems a Sulanessellar et dans la Tour de Garde (Machine de Lum le Fou) [a installer apres Stratagems]~
+@51 = ~Boucherie de Yaga Shura amelioree [a installer apres Ascension et Stratagems]~
+@52 = ~Boucherie d'animaux/druides dans le Bosquet aux druides [a installer apres Stratagems]~
+@53 = ~Boucherie de fanatiques dans l'antre de l'Oeil aveugle [a installer apres Stratagems]~
+@54 = ~Boucherie de vampires dans l'antre de Bodhi au chapitre 2, avant l'Ombreterre [a installer apres Stratagems]~
+@55 = ~Boucherie de vampires dans l'antre de Bodhi au chapitre 6, apres l'Ombreterre [a installer apres Stratagems]~
+@56 = ~2 boucheries de sahuagins (Cite sous-marine et campement githyanki dans la Tour de Garde) [a installer apres Stratagems]~
+@57 = ~4 boucheries d'araignees : entree de l'antre de Pai'Na, Temple d'Amaunator (Oeil aveugle), 1er etage de la Tour de Garde et devant l'Enclave de Sendai [a installer apres Stratagems]~
+@58 = ~6 boucheries de squelettes (catacombes d'Atkthtla, Ruine du Temple, Spellhold, Tour de Garde et 2 dans le temple de Nyalee) [a installer apres Stratagems]~
+
+@80 = ~Transformer BG2 en Dungeon crawler [a installer apres Stratagems]~ // Davantage d'ennemis pour ne pas s'endormir
+@90 = ~Composant cosmetique [a installer avant ou apres Stratagems]~
+
+
+/* =============== *
+ *  WeiDU prompts  *
+ * =============== */
 @-1000= "Le mod %TP2_FILE_NAME% contient"
 @-1001= "composants optionnels distincts.
 Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
@@ -112,3 +140,7 @@ Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe c
 @-1061= "
 Utilisation de"
 @-1062= " et "
+
+@-1063= "INSTALLATION ABANDONNEE"
+@-1064= "Abandon de l'installation de ["
+@-1065= "], retour a l'etat anterieur"

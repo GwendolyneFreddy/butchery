@@ -89,7 +89,7 @@ quartier !~
 //@14552 = ~Semaj ! Noooon !~  // unused ==> DO NOT TRANSLATE
 //@14553 = ~Tamoko ! Noooon !~ // unused ==> DO NOT TRANSLATE
 //@14554 = ~Tazok ! Noooon !~  // unused ==> DO NOT TRANSLATE
-@3056 = ~Non ! Regarde ce que tu as fait ! MEURS !~
+@3056 = ~NON ! Regarde ce que tu as fait ! MEURS !~
 @3057 = ~Maintenant que ses larbins sont défaits, Sarevok est vulnérable à vos attaques.~
 
 
@@ -107,9 +107,7 @@ quartier !~
 @4011 = ~Magicien squelette novice~
 @4012 = ~Prêtre squelette expérimenté~
 @4013 = ~Magicien squelette expérimenté~
-
-@14874 = ~Vampire mage~ 4014
-
+@4014 = ~Vampire Mage~ // Used by components #55 and #58
 @4015 = ~Prêtre squelette d'élite~
 @4016 = ~Magicien squelette d'élite~
 
@@ -137,7 +135,7 @@ quartier !~
 @5206 = ~Druidesse de l'ombre~
 @5207 = ~Druidesse de l'ombre d'élite~
 
-@14650 = ~Avec la mort de leur druides, les forces de la nature semblent se manifester contre vous.~
+//@14650 = ~Avec la mort de leur druides, les forces de la nature semblent se manifester contre vous.~ DEPRECATED ==> DO NOT TRANSLATE
 
 
 /* ------------------------- *

@@ -1,15 +1,17 @@
 // Creatures names
 // ---------------
-@101 = ~Ogre Berserker~	// = BG2 string #17561 and 17562
+@101 = ~Ogre Berserker~ // = BG2 strrefs #17561 and 17562
 @102 = ~Ogre Barbarian~
 //@26  = ~Tenardiar~	DEPRECATED
 @104 = ~Groumf~
 @105 = ~Bourrinos~
-/* DEPRECATED
+@106 = ~Barbarian~      // = BG2 strrefs #45859 and 45863
+/* DEPRECATED ==> DO NOT TRANSLATE
 @10023  = ~Barbarian~
 @11100  = ~Adepte Barbare~
 @11200  = ~Prêtre de Silvanus~
 */
+
 
 // Creatures soundsets
 // -------------------
@@ -21,36 +23,153 @@
 @206 = ~More blood!~ [d9grou0]
 
 @211 = ~You die now!~ [d9bara9]
-@212 = ~Baston!~ [d9baraa]
+@212 = ~Fight!~ [d9baraa] // "Baston!" in French is a slang word for rumble.
 @213 = ~Yeah!~ [d9barag]
 @214 = ~What?!~ [d9barah]
 
+
 // Creatures scripts
 // -----------------
-@301 = ~*quaffs a Potion of Absorption*~	// former @454
-@302 = ~*quaffs a Potion of Power*~			// former @456
-@303 = ~*quaffs a Potion of Agility*~		// former @457
-@304 = ~*quaffs a Potion of Defense*~		// former @453
-//@455 = ~*quaffs a Potion of Stone Form*~	// DEPRECATED
-//@452 = ~*gulp*~							// DEPRECATED
+@301 = ~*quaffs a Potion of Absorption*~    // former @454
+@302 = ~*quaffs a Potion of Power*~         // former @456
+@303 = ~*quaffs a Potion of Agility*~       // former @457
+@304 = ~*quaffs a Potion of Defense*~       // former @453
+//@455 = ~*quaffs a Potion of Stone Form*~  // DEPRECATED ==> DO NOT TRANSLATE
+//@452 = ~*gulp*~                           // DEPRECATED ==> DO NOT TRANSLATE
 
 // d9ar1203.baf
 // ------------
-@321 = ~A powerfull magic barrier is suddenly appearing, it's now impossible to turn back.~	// former @480
-@322 = ~DigDag, the hideous orc leader is dead now and his horde will soon stop fighting. However, you have the feeling it can't end up so easily and you should prepare yourself for the last challenge!~	// former @460
-@323 = ~This time, Tazok has defenitely rejoined Sarevok in hell and his minions will not disturb you for a long time.~	// former @461
+@321 = ~A powerful magic barrier is suddenly appearing, it's now impossible to turn back.~ // former @480
+@322 = ~DigDag, the hideous orc leader is dead now and his horde will soon stop fighting. However, you have the feeling it can't end up so easily and you should prepare yourself for the last challenge!~ // former @460
+@323 = ~This time, Tazok has definitely rejoined Sarevok in hell and his minions will not disturb you for a long time.~ // former @461
 
 // d9cutta1.baf
 // ------------
-@331 = ~Ha ha ha! These fools have fallen into our trap!~	// former @470
-//@471 = ~Par la fureur de Tempus!~	DEPRECATED
-@333 = ~Attention!~	// former @472
-@334 = ~Damn, you're so ugly!~	// former @473
-@335 = ~Yes, sir!~	// former @474
-@336 = ~My Lord, the magic barrier is working now, intruders are trapped.~	// former @475
-@337 = ~Great job! The master will be pleased and I will have my revenge!~	// former @476
-/* DEPRECATED
+@331 = ~Hahaha! These fools have fallen into our trap!~                    // former @470
+@333 = ~Attention!~                                                        // former @472
+@334 = ~Damn, you're so ugly!~                                             // former @473
+@335 = ~Yes, sir!~                                                         // former @474
+@336 = ~My Lord, the magic barrier is working now, intruders are trapped.~ // former @475
+@337 = ~Great job! The master will be pleased and I will have my revenge!~ // former @476
+/* DEPRECATED ==> DO NOT TRANSLATE
 @477 = ~J'vais vous écraser 
 le nez !~
 @479 = ~Soignez ces deux imbéciles. Ils devront racheter leur incompétence auprès du maître.~
 */
+
+// d9groum8.baf : Meeting with Groumf and Bourrinos in the Underdark
+// -----------------------------------------------------------------
+@2201 = ~Still more drows!
+Attack! And no mercy!~
+
+
+/* ------------------------------------------------ *
+ *  Revisited fight against Wraith Sarevok in Hell  *
+ * ------------------------------------------------ */
+@3000 = ~Angelo~              // = BG2 strrefs #7161 and 7692
+@3001 = ~Semaj~               // = BG2 strrefs #19592 and 19593
+@3002 = ~Tamoko~              // = BG2 strrefs #11910 and 19935
+//@3003 = ~Tazok~             // DEPRECATED ==> DO NOT TRANSLATE
+@3004 = ~Mulahey~             // = BG2 strrefs #11918 and 2797
+@3007 = ~Diarmid~             // = BG2 strrefs #11023 and 11024
+@3008 = ~Cythandria~          // = BG2 strrefs #20435 and 20436
+@3009 = ~Krystin~             // = BG2 strrefs #12250 and 12295
+@3010 = ~Slythe~              // = BG2 strrefs #12249 and 12294
+@3011 = ~Gardush~             // = BG2 strrefs #1766 and 1767
+@3013 = ~Aasim~               // = BG2 strrefs #17817 and 17818
+//@14584 = ~Diyab~            // = BG2 strrefs #17820 and 17821 DEPRECATED ==> DO NOT TRANSLATE
+@3015 = ~Zhalimar Cloudwulfe~ // = BG2 strrefs #17828 and 17829
+@3016 = ~Davaeorn~            // = BG2 strrefs #12241 and 12286
+
+// d9sarevo.baf
+// ------------
+@3050 = ~To my side, my followers!~
+@3051 = ~Hahaha! It is not over yet!~
+//@14552 = ~Semaj ! Noooon !~  // unused ==> DO NOT TRANSLATE
+//@14553 = ~Tamoko ! Noooon !~ // unused ==> DO NOT TRANSLATE
+//@14554 = ~Tazok ! Noooon !~  // unused ==> DO NOT TRANSLATE
+@3056 = ~NO! Look what you did! DIE!~
+@3057 = ~Now that his minions are defeated, Sarevok is vulnerable to your attacks.~
+
+
+/* ------------------- *
+ *  DrAzTiK creatures  *
+ * ------------------- */
+@4000 = ~Dwarf Berseker novice~
+@4001 = ~Dwarf Warrior novice~
+@4002 = ~Experienced Dwarf Berseker~
+@4003 = ~Elite Dwarf Warrior~
+@4004 = ~Dwarf Priest novice~
+@4005 = ~Experienced Dwarf Priest~
+
+@4010 = ~Skeleton Cleric novice~
+@4011 = ~Skeleton Mage novice~
+@4012 = ~Experienced Skeleton Cleric~
+@4013 = ~Experienced Skeleton Mage~
+@4014 = ~Vampire Mage~ // Used by components #55 and #58
+@4015 = ~Elite Skeleton Cleric~
+@4016 = ~Elite Skeleton Mage~
+
+
+/* --------------------------------- *
+ *  Butchery in Umar Hills - Wolves  *
+ * --------------------------------- */
+@4800 = ~Blood, blood for the pack!~
+
+
+/* ---------------------------------- *
+ *  Butchery of Yaga-Shura revisited  *
+ * ---------------------------------- */
+@5010 = ~Enemies are in serious trouble and Yaga-Shura should appear soon!~
+
+
+/* ------------------------------------------------------- *
+ *  Butchery in the Druid Grove area (Animals and Druids)  *
+ * ------------------------------------------------------- */
+@5201 = ~Shadow Ranger~
+//@5202 = ~Rôdeur de l'ombre d'élite~ // unused ==> DO NOT TRANSLATE
+@5203 = ~Shadow Druid novice~
+@5204 = ~Shadow Druid~                // = strref #43845 (BG2EE)
+@5205 = ~Elite Shadow Druid~
+@5206 = ~Shadow Druid~
+@5207 = ~Elite Shadow Druid~
+
+//@14650 = ~Avec la mort de leur druides, les forces de la nature semblent se manifester contre vous.~ DEPRECATED ==> DO NOT TRANSLATE
+
+
+/* ------------------------- *
+ *  Butcheries of Sahuagins  *
+ * ------------------------- */
+@5600 = ~Rebel novice~
+@5601 = ~Priestess novice~
+@5602 = ~Rebel~           // = strref #46533 (BG2EE)
+@5603 = ~Elite Rebel~
+@5604 = ~Priestess~      // = strref #49747 (BG2EE)
+@5605 = ~High Priestess~
+
+
+/* ------------------------- *
+ *  Butcheries of Skeletons  *
+ * ------------------------- */
+@5800 = ~Hahaha! You should never have made it this far!~ // former @14662
+@5801 = ~Alarm! Intruders dare to enter our lair!~        // former @14663
+
+
+/* -------------------------------------------- *
+ *  More enemies scattered throughout the game  *
+ * -------------------------------------------- */
+@8000 = ~WHO DARES TO DISTURB MY REST!~
+@8001 = ~MORE ADVENTURERS COME TO STEAL MY TREASURE!~
+@8002 = ~I WILL EXTERMINATE YOU ALL! TOU WILL SHAKE BENEATH MY POWER!~
+@8003 = ~DrAzTiK~
+
+
+/* --------------------------- *
+ *  Shared by many components  *
+ * --------------------------- */
+@14660 = ~Poor fool, there are more of us than you think!~
+@14661 = ~Enemies seem to spawn from everywhere!~
+@14664 = ~Intruders in the master's lair! Destroy them all!~
+@14665 = ~Mistress Bodhi has decided to test you, child of Bhaal!~
+@14666 = ~This place will be your tomb!~
+

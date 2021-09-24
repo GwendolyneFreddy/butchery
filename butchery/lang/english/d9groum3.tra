@@ -1,0 +1,42 @@
+// Groumf
+// ------
+@2101 = ~Hum ? Here are old acquaintances.~
+@2102 = ~Calm down Bourrinos, behave as a true gentleman. Fighting first and asking questions later is not an option here.~
+@2103 = ~Did you see this duel, my friends? No need to feel sorry for yourself. In this city, it is indeed time for strength, not for hope!~
+@2104 = ~Groumf and Bourrinos? But you should be dead!~
+@2105 = ~Damn! I thought you both were in half-orc heaven!~
+@2106 = ~Congratulations ! You've both come back from the dead.~
+@2107 = ~A thousand times we thought we were about to die, but we came back from hell so we could kill our enemies! And Tempus always gives its bravest warriors another chance.~
+@2108 = ~But I'm not going to teach you that. How many times have you and your teammates died and come back from the dead, wriggling health?~
+@2109 = ~What the hell are you doing on this island? I had to spend a phenomenal amount of gold and brave a thousand dangers to get here!~
+@2110 = ~Bande d'abrutis !? How on earth did you end up here?~
+@2111 = ~That, my friends, is our little secret...~
+@2112 = ~My faithful Bourrinos and I are planning to go on an adventure soon. A group of intrepid adventurers is waiting for us to go and fight in honour of Tempus, the great Lord of Battles.~
+@2113 = ~Have you ever heard of the Underdark? Drows, illithids, beholders and sahuagins: extreme races, ferocious and merciless, exterminating everyone in their way.~
+@2115 = ~This is very exciting! What better place to cross swords and find a death worthy of a great warrior, I ask you?~
+@2116 = ~Absolutely!~
+@2117 = ~Uh, yes...~
+@2118 = ~I agree 98.5% with you!~
+@2119 = ~Dying in bed is fine too, you know!~
+@2120 = ~You really are a complete idiot!~
+@2121 = ~Currently, we have been hired as personal bodyguards of Lady Galvena, a mistress woman who runs the Desthall next door.~
+@2122 = ~She is a cruel and dangerous woman, but she handsomely pays those who serve her.~
+@2123 = ~What do you expect, one has to live...~
+@2124 = ~And besides, we have to save a little more money before going for adventuring, don't we, Bourrinos?~
+@2125 = ~You see, even Bourrinos agrees with me.~
+@2126 = ~Are you serious? Last time I did not understand a single word you were saying...~
+@2127 = ~It is very serious, of course. Why? Does anything seem weird to you?~
+@2128 = ~In any case, I hope that you will not have to deal with Lady Galvena. We are bound to her service by a formal contract, and we would be obliged to attack you if you did anything to harm her.~
+@2129 = ~I have personally been given carte blanche to reorganise her security, you see. Before we arrived, a one-legged northern forest dwarf could have made his way to Lady Galvena without any trouble. What's the world coming to ?~
+@2130 = ~By the way, we should go back to our post, our lunch break is over. Lady Galvena is very strict about time, and I would rather face the wrath of Tempus than suffer her admonition.~
+@2131 = ~See you soon, friends. Perhaps we'll meet again sometime. It's not something as trivial as death that will stop us anyway.~
+@2132 = ~I sincerely hope so!~
+@2133 = ~See you in thirty years then!~
+@2134 = ~I'd rather kiss an anorexic ghoul than see you again!~
+@2135 = ~Let's hope that on that day we will fight together, side by side, and why not in a merciless struggle between good and evil, to the death!~
+@2136 = ~Be patient, Bourrinos. Something tells me that we will fight soon... O Tempus, great Lord of War, will you give no respite to your humble servants!~
+
+// Bourrinos
+// ---------
+@2150 = ~Fight!~ [d9baraa] // same as @212 - "Baston!" in French is a slang word for rumble.
+@2151 = ~Haa lala!~ [d9bara1]
