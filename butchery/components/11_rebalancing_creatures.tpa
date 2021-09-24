@@ -245,10 +245,11 @@ BUT_ONLY
 // More HP for Mountain Bears (Ours de montagne)
 // ---------------------------------------------
 COPY_EXISTING ~bearpo01.cre~ ~override~
-	WRITE_LONG  0x018 10                                             //level ???
+//	WRITE_LONG  0x018 10   // Creature Power Level (for summoning spells) / XP of the creature (for party members)
 	WRITE_SHORT 0x024 120  // Current HP (vanilla = 66)
 	WRITE_SHORT 0x026 120  // Maximum HP (vanilla = 66)
 	WRITE_BYTE  0x052 0    // THAC0 (vanilla = 11)
+	WRITE_BYTE  0x234 10   // Level first class (vanilla = 8)
 	WRITE_BYTE  0x238 20   // Strength (vanilla = 16)
 BUT_ONLY
 
@@ -424,7 +425,7 @@ BUT_ONLY
 // -----------------------
 COPY_EXISTING ~bodfgt01.cre~ ~override~ // melee
               ~bodfgt02.cre~ ~override~ // Archer
-	WRITE_LONG  0x018 8                                             //level
+//	WRITE_LONG  0x018 8    // Creature Power Level (for summoning spells) / XP of the creature (for party members)
 	WRITE_SHORT 0x024 80   // Current HP (vanilla = 48)
 	WRITE_SHORT 0x026 80   // Maximum HP (vanilla = 48)
 	WRITE_BYTE  0x052 7    // THAC0 (vanilla = 10)
@@ -436,12 +437,13 @@ COPY_EXISTING ~bodfgt01.cre~ ~override~ // melee
 	WRITE_BYTE  0x061 0    // Crushing resistance (vanilla = 0)
 	WRITE_BYTE  0x062 50   // Piercing resistance (vanilla = 0)
 	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 100)
+	WRITE_BYTE  0x234 8    // Level first class (vanilla = 6)
 BUT_ONLY
 
 // More HP for Vampiric Mist (Brume vampirique)
 // --------------------------------------------
 COPY_EXISTING ~mistva01.cre~ ~override~
-	WRITE_LONG  0x018 8                                             //level
+//	WRITE_LONG  0x018 8    // Creature Power Level (for summoning spells) / XP of the creature (for party members)
 	WRITE_SHORT 0x024 80   // Current HP (vanilla = 36)
 	WRITE_SHORT 0x026 80   // Maximum HP (vanilla = 36)
 	WRITE_BYTE  0x052 0    // THAC0 (vanilla = 0)
@@ -453,6 +455,7 @@ COPY_EXISTING ~mistva01.cre~ ~override~
 	WRITE_BYTE  0x061 0    // Crushing resistance (vanilla = 0)
 	WRITE_BYTE  0x062 50   // Piercing resistance (vanilla = 0)
 	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 0)
+	WRITE_BYTE  0x234 8    // Level first class (vanilla = 5)
 BUT_ONLY
 
 // More HP for Ghast (Blême)
@@ -548,14 +551,14 @@ BUT_ONLY
 COPY_EXISTING ~skelwasu.cre~ ~override~
               ~skelsu01.cre~ ~override~
               ~skelsu07.cre~ ~override~
-              ~skelsu11.cre~ ~override~ // PB
+              ~skelsu11.cre~ ~override~ // Only in EE games
 	WRITE_BYTE  0x05b 100  // Electricity resistance (vanilla = 0)
 	WRITE_BYTE  0x063 90   // Missile resistance (vanilla = 60)
-BUT_ONLY
+BUT_ONLY IF_EXISTS
 
 // More HP for Mummy (Momie)
 // -------------------------
-COPY_EXISTING ~mummy01.cre~ ~override/d9mgre01.cre~
+COPY_EXISTING ~mummy01.cre~ ~override~
 	WRITE_SHORT 0x024 99   // Current HP (vanilla = 51)
 	WRITE_SHORT 0x026 99   // Maximum HP (vanilla = 51)
 	WRITE_BYTE  0x052 5    // THAC0 (vanilla = 13)
@@ -569,7 +572,7 @@ BUT_ONLY
 
 // More HP for Greater Mummy (Momie majeure)
 // -----------------------------------------
-COPY_EXISTING ~mumgre01.cre~ ~override/d9mgre01.cre~
+COPY_EXISTING ~mumgre01.cre~ ~override~
 	WRITE_SHORT 0x024 155  // Current HP (vanilla = 104)
 	WRITE_SHORT 0x026 155  // Maximum HP (vanilla = 104)
 	WRITE_BYTE  0x052 6    // THAC0 (vanilla = 13)
@@ -808,7 +811,6 @@ COPY_EXISTING ~dcleric.cre~ ~override~
 	WRITE_BYTE  0x23f 10                                    // Morale (vanilla = 13)
 	WRITE_BYTE  0x240 5                                     // Morale break (vanilla = 7)
 	WRITE_SHORT 0x242 10                                    // Morale recovery (vanilla = 60)
-
 	WRITE_BYTE  0x06e 0                                     // Large swords proficiency
 	WRITE_BYTE  0x06f 0                                     // Small swords proficiency
 	WRITE_BYTE  0x070 0                                     // Bows proficiency
@@ -966,7 +968,8 @@ COPY_EXISTING ~beast.cre~ ~override~
 	WRITE_BYTE  0x240 5                                     // Morale break (vanilla = 5)
 	WRITE_SHORT 0x242 10                                    // Morale recovery (vanilla = 20)
 
-       WRITE_LONG  0x0244 0x40070000                // Archer kit
+	WRITE_LONG  0x244 0x40070000                            // Archer kit
+
 	WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~ #8
 	ADD_KNOWN_SPELL ~spcl121~ #0 ~INNATE~                   // Called Shot
 	ADD_MEMORIZED_SPELL ~spcl121~ #0 ~INNATE~ #3
@@ -1013,6 +1016,7 @@ COPY_EXISTING ~icmin01.cre~ ~override~
 	WRITE_SHORT 0x242 30                                              // Morale recovery (vanilla = 30)
 
 	WRITE_LONG  0x244 0x00004000                                      // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+
 	WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~ #8
 	WRITE_BYTE  0x273 2										          // Class FIGHTER (vanilla = 125 OGRE)
 	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~                             // Barbarian Rage
