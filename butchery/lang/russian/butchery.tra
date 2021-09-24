@@ -106,8 +106,70 @@ Attack! And no mercy!~
 @4011 = ~Skeleton Mage novice~
 @4012 = ~Experienced Skeleton Cleric~
 @4013 = ~Experienced Skeleton Mage~
-
-@14874 = ~Vampire Mage~ 4014
-
+@4014 = ~Vampire Mage~ // Used by components #55 and #58
 @4015 = ~Elite Skeleton Cleric~
 @4016 = ~Elite Skeleton Mage~
+
+
+/* --------------------------------- *
+ *  Butchery in Umar Hills - Wolves  *
+ * --------------------------------- */
+@4800 = ~Blood, blood for the pack!~
+
+
+/* ---------------------------------- *
+ *  Butchery of Yaga-Shura revisited  *
+ * ---------------------------------- */
+@5010 = ~Enemies are in serious trouble and Yaga-Shura should appear soon!~
+
+
+/* ------------------------------------------------------- *
+ *  Butchery in the Druid Grove area (Animals and Druids)  *
+ * ------------------------------------------------------- */
+@5201 = ~Shadow Ranger~
+//@5202 = ~Rodeur de l'ombre d'elite~ // unused ==> DO NOT TRANSLATE
+@5203 = ~Shadow Druid novice~
+@5204 = ~Shadow Druid~                // = strref #43845 (BG2EE)
+@5205 = ~Elite Shadow Druid~
+@5206 = ~Shadow Druid~
+@5207 = ~Elite Shadow Druid~
+
+//@14650 = ~Avec la mort de leur druides, les forces de la nature semblent se manifester contre vous.~ DEPRECATED ==> DO NOT TRANSLATE
+
+
+/* ------------------------- *
+ *  Butcheries of Sahuagins  *
+ * ------------------------- */
+@5600 = ~Rebel novice~
+@5601 = ~Priestess novice~
+@5602 = ~Rebel~           // = strref #46533 (BG2EE)
+@5603 = ~Elite Rebel~
+@5604 = ~Priestess~      // = strref #49747 (BG2EE)
+@5605 = ~High Priestess~
+
+
+/* ------------------------- *
+ *  Butcheries of Skeletons  *
+ * ------------------------- */
+@5800 = ~Hahaha! You should never have made it this far!~ // former @14662
+@5801 = ~Alarm! Intruders dare to enter our lair!~        // former @14663
+
+
+/* -------------------------------------------- *
+ *  More enemies scattered throughout the game  *
+ * -------------------------------------------- */
+@8000 = ~WHO DARES TO DISTURB MY REST!~
+@8001 = ~MORE ADVENTURERS COME TO STEAL MY TREASURE!~
+@8002 = ~I WILL EXTERMINATE YOU ALL! TOU WILL SHAKE BENEATH MY POWER!~
+@8003 = ~DrAzTiK~
+
+
+/* --------------------------- *
+ *  Shared by many components  *
+ * --------------------------- */
+@14660 = ~Poor fool, there are more of us than you think!~
+@14661 = ~Enemies seem to spawn from everywhere!~
+@14664 = ~Intruders in the master's lair! Destroy them all!~
+@14665 = ~Mistress Bodhi has decided to test you, child of Bhaal!~
+@14666 = ~This place will be your tomb!~
+
