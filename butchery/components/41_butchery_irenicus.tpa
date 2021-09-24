@@ -36,7 +36,7 @@ COPY_EXISTING ~duearc01.cre~ ~override/d9earc01.cre~
 	WRITE_ASCII DIALOG ~D9earc01~ #8
 BUT_ONLY
 
-// Vanilla Dwarf 5th Level Mage - Gender EXTRA2 NOT USED
+// Vanilla Dwarf 5th Level Mage - Gender EXTRA2 ==> NOT USED
 // --------------------------------------------
 COPY_EXISTING ~duemag01.cre~ ~override/d9emag01.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8

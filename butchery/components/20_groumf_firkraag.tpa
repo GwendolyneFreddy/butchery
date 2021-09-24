@@ -82,7 +82,7 @@ BUT_ONLY
 // Orc
 // ---
 COPY ~%MOD_FOLDER%/groumf1200/d9orneu.cre~ ~override~
-	WRITE_LONG  0x0244 0x00004000  // Barbarian kit
+	WRITE_LONG  0x244 0x00004000  // Barbarian kit
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
  

@@ -27,12 +27,12 @@ COPY_EXISTING ~tazok.cre~ ~override/d9tazok.cre~
 // Orc range weapon, throwing axe
 // ------------------------------
 COPY ~%MOD_FOLDER%/tazok1/d9orc01.cre~ ~override~
-	WRITE_LONG 0x0244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_LONG 0x244 0x00004000                    // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
 
 // Orc range weapon, following Player1
 // -----------------------------------
 COPY ~%MOD_FOLDER%/tazok1/d9orgahj.cre~ ~override~
-	WRITE_LONG	0x0244 0x00004000                  // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_LONG	0x244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
 //	ADD_CRE_ITEM ~d9boots~ #0 #0 #0 ~NONE~ ~BOOTS~
 
 // 2 Orogs tell Dig Dag to drink potions coz party is coming, they also drink a potion of absorption
@@ -40,14 +40,14 @@ COPY ~%MOD_FOLDER%/tazok1/d9orgahj.cre~ ~override~
 COPY ~%MOD_FOLDER%/tazok1/d9orc05.cre~  ~override~
      ~%MOD_FOLDER%/tazok1/d9orc05b.cre~ ~override~
 	ADD_CRE_ITEM ~POTN18~ #1 #0 #0 ~NONE~ ~INV~    // Potion of Absorption
-	WRITE_LONG 0x0244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity backstab, resistance)
+	WRITE_LONG 0x244 0x00004000                    // Barbarian kit, gives barbarian bonus (speed, immunity backstab, resistance)
 
 // Orc Melee following Player1
 // ---------------------------
 COPY ~%MOD_FOLDER%/tazok1/d9orgame.cre~ ~override~
 	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP  // Halberd
 //	ADD_CRE_ITEM ~d9boots~ #0 #0 #0 ~NONE~ ~BOOTS~
-	WRITE_LONG 0x0244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_LONG 0x244 0x00004000                    // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
 
 // Ogre Berserker not following Player1
 // ------------------------------------
@@ -64,7 +64,7 @@ COPY ~%MOD_FOLDER%/tazok1/d9ogrga2.cre~ ~override~
 	SAY NAME2 @102
 	WRITE_LONG  0x014 600                           // XP value (when killed)
 //	ADD_CRE_ITEM ~d9boots~ #0 #0 #0 ~NONE~ ~BOOTS~  // Useless : already in CRE file.
-	WRITE_LONG  0x0244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_LONG  0x244 0x00004000                    // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
 //	WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~          // DEPRECATED as of v4.0.0: added to the file.
 	WRITE_ASCII SCRIPT_RACE ~~ #8
 	WRITE_ASCII DEATHVAR ~D9OGRGA2~ #32

@@ -219,7 +219,7 @@ COPY ~%MOD_FOLDER%/sarevok/d9dava.cre~ ~override~
 	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
 BUT_ONLY
 
-// Groumf (L13 Berserker) NOT USED
+// Groumf (L13 Berserker) ==> NOT USED
 // ----------------------
 COPY ~%MOD_FOLDER%/sarevok/d9groumx.cre~ ~override~
 	SAY NAME1 @104
@@ -247,7 +247,7 @@ COPY ~%MOD_FOLDER%/sarevok/d9groumx.cre~ ~override~
 	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
 BUT_ONLY
 
-// Bourrinos (L11 Barbarian) NOT USED
+// Bourrinos (L11 Barbarian) ==> NOT USED
 // -------------------------
 COPY ~%MOD_FOLDER%/sarevok/d9bourx.cre~ ~override~
 	SAY NAME1 @105
@@ -312,7 +312,7 @@ COMPILE ~%MOD_FOLDER%/sarevok/d9hellsare.d~
 COMPILE ~%MOD_FOLDER%/sarevok/d9sarevo.baf~
 COMPILE ~%MOD_FOLDER%/sarevok/d9tazokx.baf~
 
-/* NOT USED
+/* ==> NOT USED
 COMPILE ~%MOD_FOLDER%/sarevok/d9angelo.baf~
 COMPILE ~%MOD_FOLDER%/sarevok/d9bourx.baf~
 COMPILE ~%MOD_FOLDER%/sarevok/d9diarmi.baf~

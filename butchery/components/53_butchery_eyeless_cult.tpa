@@ -56,13 +56,13 @@ COPY_EXISTING ~ghast01.cre~ ~override/d9ast0g.cre~
 //	WRITE_ASCII SCRIPT_DEFAULT ~d9dwctyz~~ #8
 BUT_ONLY
 
-// Skeleton Archer - Squelette archer (7th Level) NOT USED
-// -------------------------------------------------------
+/* Skeleton Archer - Squelette archer (7th Level) ==> NOT USED
+// ----------------------------------------------
 COPY_EXISTING ~skelar01.cre~ ~override/d9elar0b.cre~
  	WRITE_BYTE  0x052 5    // THAC0 (vanilla = 2)
 	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Elite Garde - Garde d'élite de l'Œil Aveugle (9th Level)
 // --------------------------------------------------------
@@ -73,12 +73,12 @@ COPY_EXISTING ~bhguard2.cre~ ~override/d9guard2.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Blind Priest - Prêtre aveugle (10th Level) NOT USED
+/* Blind Priest - Prêtre aveugle (10th Level) ==> NOT USED
 // ------------------------------------------
 COPY_EXISTING ~braiwa4.cre~ ~override/d9aiwa4.cre~
 	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Greater Ghoul - Goule majeure
 // -----------------------------
@@ -108,13 +108,13 @@ COPY_EXISTING ~bhguard2.cre~ ~override/d9guard6.cre~
 	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2                      // Gives 2 stars in the BG2 TWO HANDED
 BUT_ONLY
 
-// Ghoul Lord - Seigneur goule NOT USED
-// ---------------------------
+/* Ghoul Lord - Seigneur des goules ==> NOT USED
+// --------------------------------
 COPY_EXISTING ~gholor01.cre~ ~override/d9olordd.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 //	WRITE_ASCII SCRIPT_CLASS ~d9dwctyz~ #8
  	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Gauth
 // -----
@@ -137,27 +137,27 @@ COPY_EXISTING ~braiwa1.cre~ ~override/d9braim.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Mummy - Momie NOT USED
+/* Mummy - Momie ==> NOT USED (but used in components #55 and #58)
 // -------------
 COPY_EXISTING ~mummy.cre~ ~override/d9mmy.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
-// Greater Mummy - Momie majeure NOT USED
+// Greater Mummy - Momie majeure ==> NOT USED
 // -----------------------------
 COPY_EXISTING ~mumgre01.cre~ ~override/d9mgre01.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Elite Garde - Garde d'élite de l'Œil Aveugle (9th Level) - Gender EXTRA3 NOT USED
-// ---------------------------------------------------------------------------------
+/* Elite Garde - Garde d'élite de l'Œil Aveugle (9th Level) - Gender EXTRA3 ==> NOT USED
+// ------------------------------------------------------------------------
 COPY_EXISTING ~bhguard2.cre~ ~override/d9guard3.cre~
 	WRITE_BYTE  0x270 255   // Enemy
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Elite Garde - Garde d'élite de l'Œil Aveugle (9th Level) - Gender EXTRA3
 // ------------------------------------------------------------------------

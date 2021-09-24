@@ -41,7 +41,7 @@ COPY_EXISTING ~wolfdi01.cre~ ~override/d9lfdi01.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Dread Wolf - Loup effrayant NOT USED
+// Dread Wolf - Loup effrayant ==> NOT USED
 // ---------------------------
 COPY_EXISTING ~wolfdr01.cre~ ~override/d9lfdr01.cre~
 	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
@@ -73,7 +73,7 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9lfdi02.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Dread Wolf - Loup effrayant - Gender EXTRA2 NOT USED
+// Dread Wolf - Loup effrayant - Gender EXTRA2 ==> NOT USED
 // -------------------------------------------
 COPY_EXISTING ~wolfdr01.cre~ ~override/d9lfdr02.cre~
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
@@ -94,14 +94,14 @@ COPY_EXISTING ~weregr01.cre~ ~override/d9regr01.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Dire Wolf - Loup noir - Gender EXTRA3 NOT USED
+// Dire Wolf - Loup noir - Gender EXTRA3 ==> NOT USED
 // -------------------------------------
 COPY_EXISTING ~wolfdi01.cre~ ~override/d9lfdi03.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Dread Wolf - Loup effrayant - Gender EXTRA3 NOT USED
+// Dread Wolf - Loup effrayant - Gender EXTRA3 ==> NOT USED
 // -------------------------------------------
 COPY_EXISTING ~wolfdr01.cre~ ~override/d9lfdr03.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
