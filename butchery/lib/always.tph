@@ -39,8 +39,9 @@ ACTION_IF !VARIABLE_IS_SET bg2_chapter BEGIN // Always block must run only once 
 	 *    Animation slot for chieftain orog in EE and classic BG2 have different labels    *
 	 * ----------------------------------------------------------------------------------- */
 
-	OUTER_SET slot_halfogre = IDS_OF_SYMBOL(~ANIMATE~ ~HALF_OGRE~)
-	OUTER_SET slot_orogchief = (is_ee = 1) ? IDS_OF_SYMBOL(~ANIMATE~ ~OROG_CHIEFTAIN~) : IDS_OF_SYMBOL(~ANIMATE~ ~OROG3~)
+	OUTER_SET slot_halfogre       = IDS_OF_SYMBOL(~ANIMATE~ ~HALF_OGRE~)
+	OUTER_SET slot_orogchief      = (is_ee = 1) ? IDS_OF_SYMBOL(~ANIMATE~ ~OROG_CHIEFTAIN~) : IDS_OF_SYMBOL(~ANIMATE~ ~OROG3~)
+	OUTER_SET slot_sahuagin_large = (IDS_OF_SYMBOL(~ANIMATE~ ~SAHUAGIN_LARGE~) > 0) ? IDS_OF_SYMBOL(~ANIMATE~ ~SAHUAGIN_LARGE~) : 32547)
 
 
 	/* ------------------------------------------- *
@@ -111,9 +112,9 @@ ACTION_IF !VARIABLE_IS_SET bg2_chapter BEGIN // Always block must run only once 
 END	// of ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
 
 
-/* =============================================================================================== *
- *  This code runs for each component to make sure files are not installed when already installed  *
- * =============================================================================================== */
+/* ================================================================================ *
+ *  This code runs for each component to make sure files are not already installed  *
+ * ================================================================================ */
 
 /* ----------------------- *
  *    Detects soundsets    *

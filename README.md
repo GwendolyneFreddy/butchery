@@ -1,5 +1,5 @@
 
-![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/butchery?include_prereleases&color=darkred)<a name="top" id="top"> </a>
+![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/butchery?include_prereleases&color=gold)<a name="top" id="top"> </a>
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/GwendolyneFreddy/butchery?color=gold)
 ![Platform](https://img.shields.io/static/v1?label=platformes&message=windows%20%7C%20macOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=French%20%7C%20English%20%7C%20Russian&color=limegreen)
@@ -34,9 +34,8 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## 
 
-
 <div align="center">
-<a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#components">Components</a> &#8226; <a href="#images">Screenshots and Videos</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a><br>
+<a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#components">Components</a> &#8226; <a href="#10">Mod Details</a> &#8226; <a href="#images">Screenshots and Videos</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a><br>
 </div>
 
 
@@ -725,7 +724,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 - <a href="https://www.baldursgateworld.fr"><acronym title="Copper Coronet">La Couronne de Cuivre</acronym></a> team for hosting the mod.
 - The creators of the Baldur's Gate series: <a href="https://www.bioware.com/">Bioware</a> and <a href="https://www.obsidian.net/">Black Isle Studios</a>.
 - Big thanks to yota13 for providing the Russian translation.
-- Big thanks to Freddy_Gwendo (aka Gwendolyne) for make the update of this mod possible.
+- Big thanks to Freddy_Gwendo (aka Gwendolyne) for making possible the update of this mod.
 - Thanks to Pen of Chaos for borrowing his barbarian French soundset.
 - Thanks to artists from <a href="https://www.pinterest.fr/">Pinterest</a> for their portraits.
 - Everyone else from the <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a>, <a href="https://www.gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.
