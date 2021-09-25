@@ -158,7 +158,7 @@ BUT_ONLY
 LAF extend_area_script STR_VAR area = "ar1200" top = "%MOD_FOLDER%/groumf1200/d9ar1200.baf" END
 
 //COMPILE~%MOD_FOLDER%/dlg/d9bour11.d~ // empty
-COMPILE~%MOD_FOLDER%/dlg/d9groumf.d~
+COMPILE~%MOD_FOLDER%/groumf1200/d9groumf.d~
 
 COMPILE ~%MOD_FOLDER%/groumf1200/d9groumf.baf~
 //COMPILE ~%MOD_FOLDER%/groumf1200/d9bour11.baf~ // empty
