@@ -240,14 +240,14 @@ BUT_ONLY
 //  hallebardier ??? Elite Guard - Garde d'élite (9th Level) - Gender EXTRA3
 // -------------------------------------------------------------------------
 COPY_EXISTING ~bhguard2.cre~ ~override/d9zzard4.cre~
-	REMOVE_CRE_ITEM ~XBOW01~                              // Heavy Crossbow
-	REMOVE_CRE_ITEM ~SW1H04~                              // Long Sword
-	REMOVE_CRE_ITEM ~BOLT01~                              // Bolt
-	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Two-handed Sword
- 	WRITE_BYTE 0x052 7                                    // THAC0
-	WRITE_BYTE 0x270 255                                  // Enemy
-	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 5     // 5 stars in Two-Handed Sword
-	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2            // Gives 2 stars in the BG2 TWO HANDED
+	REMOVE_CRE_ITEM ~XBOW01~                                        // Heavy Crossbow
+	REMOVE_CRE_ITEM ~SW1H04~                                        // Long Sword
+	REMOVE_CRE_ITEM ~BOLT01~                                        // Bolt
+	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED // Two-handed Sword
+ 	WRITE_BYTE 0x052 7                                              // THAC0
+	WRITE_BYTE 0x270 255                                            // Enemy
+	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 5               // 5 stars in Two-Handed Sword
+	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2                      // Gives 2 stars in the BG2 TWO HANDED
 BUT_ONLY
 
 

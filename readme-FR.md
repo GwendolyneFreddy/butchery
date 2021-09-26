@@ -50,7 +50,7 @@ J'aime Baldur's Gate, et j'ai écrit ce mod (première version en 2010) pour compr
 
 Par ailleurs, ce mod a pour ambition de :
 
-- Permettre aux joueurs de conduire un combat « épique » dans de large espaces car j'ai toujours eu horreur de combattre dans des corridors (ce qui est malheureusement fréquent dans BG2).
+- Permettre aux joueurs de conduire un combat « épique » dans de larges espaces car j'ai toujours eu horreur de combattre dans des corridors (ce qui est malheureusement fréquent dans BG2).
 - Rapprocher BG2 d'un *Dungeon crawler*.
 - Ajuster la difficulté du combat selon la manière dont le joueur règle le curseur de difficulté accessible dans le menu Options du jeu (voir la section <a href="#components">Composants</a> de ce document).
 - Générer des combats dynamiques avec des spawns/respawns d'ennemis pour pimenter les choses.
@@ -96,7 +96,7 @@ Voici l'ordre d'installation conseillé :
 - Veuillez installer BuTcHeRY après TobEx, BG2 Fixpack, Ascension et EET.
 - Veuillez installer BuTcHeRY avant les procédures finales de « biffing » [*NdT : archivage avec Generalized biffing*].
 
-:warning: Comme j'utilise les scripts de combat proposés par le original, vous pouvez encore augmenter la difficulté si vous installez le mod <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> (composant « *IA générale plus efficace* »). Les premiers composants sont à installer avant Stratagems pour une meilleure expérience et difficulté tandis que les autres composants sont à installer après Stratagems (tout ceci est détaillé avant l'installation de chaque <a href="#components">composant</a>).
+:warning: Comme j'utilise les scripts de combat proposés par le jeu original, vous pouvez encore augmenter la difficulté en installant le mod <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> (composant « *IA générale plus efficace* »). Les premiers composants sont à installer avant Stratagems pour une meilleure expérience et difficulté tandis que les autres composants sont à installer après Stratagems (tout ceci est détaillé avant l'installation de chaque <a href="#components">composant</a>).
 <div align="right"><a href="#top">Retour en haut de page</a></div>
 
 
@@ -168,7 +168,7 @@ En plus des méthodes détaillées plus haut pour supprimer des composants, il est 
 
 ## <a name="components" id="components"></a>Composants
 
-Le programme d'installation comprend les composants suivants. Chacun possède un numéro distinct et pré-défini qui lui attribue une position déterminée (mot-clé `DESIGNATED` en langage WeiDU] ; ce qui permet aux autres composants de le détecter et aux utilitaires d'installation automatiques de préciser quels composants installer.
+Le programme d'installation comprend les composants suivants. Chacun possède un numéro distinct et pré-défini qui lui attribue une position déterminée (mot-clé `DESIGNATED` en langage WeiDU] ; ce qui permet aux autres composants de le détecter, et aux utilitaires d'installation automatiques de préciser quels composants installer.
 
 ## 
 
