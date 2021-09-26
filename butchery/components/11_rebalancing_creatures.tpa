@@ -59,9 +59,8 @@ BUT_ONLY
 // ---
 COPY_EXISTING ~orc01.cre~ ~override~
 	REMOVE_CRE_ITEM ~SW1H01~                                     // Bastard Sword
-	REMOVE_CRE_ITEM ~LEAT01~                                     // Leather Armor
 	ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Battle Axe
-	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~                // Studded Leather Armor
+	REPLACE_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~            // Studded Leather Armor replaces Leather Armor (LEAT01)
 	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~               // Helmet
 	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~                // Random treasure
 	WRITE_LONG  0x014 600                                        // XP when killed (vanilla = 95)
@@ -94,34 +93,33 @@ BUT_ONLY
 // Orc Archer
 // ----------
 COPY_EXISTING ~orc02.cre~ ~override~
-	REMOVE_CRE_ITEM ~BOW03~                                     // Longbow
-	REMOVE_CRE_ITEM ~AROW02~                                    // Arrow +1
-	ADD_CRE_ITEM ~BOW01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Composite Longbow
-	ADD_CRE_ITEM ~SW1H01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON2~      // Bastard Sword
-	ADD_CRE_ITEM ~AROW11~ #3 #0 #0 ~UNSTEALABLE~ ~QUIVER1~      // Arrow +2
-	ADD_CRE_ITEM ~AROW09~ #7 #0 #0 ~UNSTEALABLE~ ~QUIVER2~      // Arrow of Ice
-	ADD_CRE_ITEM ~AROW01~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER3~     // Arrow
-	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~               // Random treasure
-	WRITE_LONG  0x014 600                                       // XP when killed (vanilla = 35)
-	WRITE_LONG  0x01c 18                                        // Gold (vanilla = 0)
-	WRITE_SHORT 0x024 50                                        // Current HP (vanilla = 35)
-	WRITE_SHORT 0x026 50                                        // Maximum HP (vanilla = 35)
-	WRITE_BYTE  0x052 15                                        // THAC0 (vanilla = 18). Was 16 in v4.0.0.
-	WRITE_BYTE  0x053 1                                         // Number of attacks (vanilla = 2)
-	WRITE_BYTE  0x054 11                                        // Save vs. death (vanilla = 10)
-	WRITE_BYTE  0x055 13                                        // Save vs. wands (vanilla = 16)
-	WRITE_BYTE  0x056 12                                        // Save vs. polymorph (vanilla = 15)
-	WRITE_BYTE  0x057 13                                        // Save vs. breath (vanilla = 17)
-	WRITE_BYTE  0x058 14                                        // Save vs. spells (vanilla = 17)
-	WRITE_BYTE  0x234 5                                         // Level first class (vanilla = 5)
-	WRITE_BYTE  0x238 18                                        // Strength (vanilla = 11) : 18 to wield the Composite Longbow!
-	WRITE_BYTE  0x23c 12                                        // Dexterity (vanilla = 11)
-	WRITE_BYTE  0x23d 17                                        // Constitution (vanilla = 10)
-	WRITE_BYTE  0x23f 20                                        // Morale (vanilla = 10)
-	WRITE_BYTE  0x240 5                                         // Morale break (vanilla = 6)
-	WRITE_SHORT 0x242 30                                        // Morale recovery (vanilla = 60)
+	REMOVE_CRE_ITEM ~AROW02~                                        // Arrow +1
+	REPLACE_CRE_ITEM ~BOW01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Composite Longbow replaces Longbow (BOW03)
+	ADD_CRE_ITEM ~SW1H01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON2~          // Bastard Sword
+	ADD_CRE_ITEM ~AROW11~ #3 #0 #0 ~UNSTEALABLE~ ~QUIVER1~          // Arrow +2
+	ADD_CRE_ITEM ~AROW09~ #7 #0 #0 ~UNSTEALABLE~ ~QUIVER2~          // Arrow of Ice
+	ADD_CRE_ITEM ~AROW01~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER3~         // Arrow
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~                   // Random treasure
+	WRITE_LONG  0x014 600                                           // XP when killed (vanilla = 35)
+	WRITE_LONG  0x01c 18                                            // Gold (vanilla = 0)
+	WRITE_SHORT 0x024 50                                            // Current HP (vanilla = 35)
+	WRITE_SHORT 0x026 50                                            // Maximum HP (vanilla = 35)
+	WRITE_BYTE  0x052 15                                            // THAC0 (vanilla = 18). Was 16 in v4.0.0.
+	WRITE_BYTE  0x053 1                                             // Number of attacks (vanilla = 2)
+	WRITE_BYTE  0x054 11                                            // Save vs. death (vanilla = 10)
+	WRITE_BYTE  0x055 13                                            // Save vs. wands (vanilla = 16)
+	WRITE_BYTE  0x056 12                                            // Save vs. polymorph (vanilla = 15)
+	WRITE_BYTE  0x057 13                                            // Save vs. breath (vanilla = 17)
+	WRITE_BYTE  0x058 14                                            // Save vs. spells (vanilla = 17)
+	WRITE_BYTE  0x234 5                                             // Level first class (vanilla = 5)
+	WRITE_BYTE  0x238 18                                            // Strength (vanilla = 11) : 18 to wield the Composite Longbow!
+	WRITE_BYTE  0x23c 12                                            // Dexterity (vanilla = 11)
+	WRITE_BYTE  0x23d 17                                            // Constitution (vanilla = 10)
+	WRITE_BYTE  0x23f 20                                            // Morale (vanilla = 10)
+	WRITE_BYTE  0x240 5                                             // Morale break (vanilla = 6)
+	WRITE_SHORT 0x242 30                                            // Morale recovery (vanilla = 60)
 /* DEPRECATED as of v > 3.2
-	WRITE_BYTE  0x273 2                                         // Class FIGHTER (vanilla = 181 ORC)
+	WRITE_BYTE  0x273 2                                             // Class FIGHTER (vanilla = 181 ORC)
 	SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2 */
 	SET_BG2_PROFICIENCY ~PROFICIENCYLONGBOW~ 3
 	SET_BG2_PROFICIENCY ~PROFICIENCYBASTARDSWORD~ 2
@@ -130,32 +128,31 @@ BUT_ONLY
 // Orog
 // ----
 COPY_EXISTING ~orc05.cre~ ~override~
-	REMOVE_CRE_ITEM ~LEAT01~                       // Leather Armor
-	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~  // Studded Leather Armor
-	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~ // Helmet
-	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~  // Random treasure
-	WRITE_LONG  0x014 800                          // XP when killed (vanilla = 600)
-	WRITE_LONG  0x01c 32                           // Gold (vanilla = 5)
-	WRITE_SHORT 0x024 91                           // Current HP (vanilla = 40). Was 84 in v4.0.0.
-	WRITE_SHORT 0x026 91                           // Maximum HP (vanilla = 40). Was 84 in v4.0.0.
-	WRITE_BYTE  0x052 10                           // THAC0 (vanilla = 14). Was 14 in v4.0.0.
-	WRITE_BYTE  0x053 1                            // Number of attacks (vanilla = 2)
-	WRITE_BYTE  0x054 10                           // Save vs. death (vanilla = 10)
-	WRITE_BYTE  0x055 12                           // Save vs. wands (vanilla = 12)
-	WRITE_BYTE  0x056 11                           // Save vs. polymorph (vanilla = 11)
-	WRITE_BYTE  0x057 12                           // Save vs. breath (vanilla = 13)
-	WRITE_BYTE  0x058 13                           // Save vs. spells (vanilla = 12)
-	WRITE_BYTE  0x234 7                            // Level first class (vanilla = 5)
-	WRITE_BYTE  0x238 20                           // Strength (vanilla = 18/53)
-	WRITE_BYTE  0x23c 9                            // Dexterity (vanilla = 9)
-	WRITE_BYTE  0x23d 20                           // Constitution (vanilla = 9)
-	WRITE_BYTE  0x23f 20                           // Morale (vanilla = 10)
-	WRITE_BYTE  0x240 1                            // Morale break (vanilla = 6)
-	WRITE_SHORT 0x242 1                            // Morale recovery (vanilla = 60)
-	WRITE_LONG  0x244 0x00004000                   // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
-	WRITE_ASCII SCRIPT_RACE ~~ #8                  // vanilla = ORCWAR
-	WRITE_BYTE  0x273 2                            // Class FIGHTER (vanilla = 181 ORC)
-	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~          // Barbarian Rage
+	REPLACE_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~ // Studded Leather Armor replaces Leather Armor (LEAT01)
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~    // Helmet
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~     // Random treasure
+	WRITE_LONG  0x014 800                             // XP when killed (vanilla = 600)
+	WRITE_LONG  0x01c 32                              // Gold (vanilla = 5)
+	WRITE_SHORT 0x024 91                              // Current HP (vanilla = 40). Was 84 in v4.0.0.
+	WRITE_SHORT 0x026 91                              // Maximum HP (vanilla = 40). Was 84 in v4.0.0.
+	WRITE_BYTE  0x052 10                              // THAC0 (vanilla = 14). Was 14 in v4.0.0.
+	WRITE_BYTE  0x053 1                               // Number of attacks (vanilla = 2)
+	WRITE_BYTE  0x054 10                              // Save vs. death (vanilla = 10)
+	WRITE_BYTE  0x055 12                              // Save vs. wands (vanilla = 12)
+	WRITE_BYTE  0x056 11                              // Save vs. polymorph (vanilla = 11)
+	WRITE_BYTE  0x057 12                              // Save vs. breath (vanilla = 13)
+	WRITE_BYTE  0x058 13                              // Save vs. spells (vanilla = 12)
+	WRITE_BYTE  0x234 7                               // Level first class (vanilla = 5)
+	WRITE_BYTE  0x238 20                              // Strength (vanilla = 18/53)
+	WRITE_BYTE  0x23c 9                               // Dexterity (vanilla = 9)
+	WRITE_BYTE  0x23d 20                              // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 20                              // Morale (vanilla = 10)
+	WRITE_BYTE  0x240 1                               // Morale break (vanilla = 6)
+	WRITE_SHORT 0x242 1                               // Morale recovery (vanilla = 60)
+	WRITE_LONG  0x244 0x00004000                      // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_ASCII SCRIPT_RACE ~~ #8                     // vanilla = ORCWAR
+	WRITE_BYTE  0x273 2                               // Class FIGHTER (vanilla = 181 ORC)
+	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~             // Barbarian Rage
 	ADD_MEMORIZED_SPELL ~spcl152~ #0 ~INNATE~ #2
 	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2
 	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
@@ -164,10 +161,9 @@ BUT_ONLY
 // Orog
 // ----
 COPY_EXISTING ~orc06.cre~ ~override~
-	REMOVE_CRE_ITEM ~LEAT01~                                        // Leather Armor
 	REMOVE_CRE_ITEM ~SW1H01~                                        // Bastard Sword
 	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED // Two-handed Sword
-	ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~                   // Plate Mail
+	REPLACE_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~               // Plate Mail replaces Leather Armor (LEAT01)
 	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~                  // Decorative Helmet
 	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~                   // Random treasure
 	WRITE_LONG  0x014 800                                           // XP when killed (vanilla = 175)
@@ -256,7 +252,7 @@ BUT_ONLY
 // More HP for Wild Cats
 // ---------------------
 COPY_EXISTING ~catjag01.cre~ ~override~ // Panther - Panthère
-              ~catleo01.cre~ ~override~ // Leopard - Lopard
+              ~catleo01.cre~ ~override~ // Leopard - Léopard
               ~catlio01.cre~ ~override~ // Lion
               ~catlis01.cre~ ~override~ // Spotted Lion - Lion tacheté
               ~catlyn01.cre~ ~override~ // Giant Lynx - Lynx géant
@@ -509,8 +505,7 @@ BUT_ONLY
 // -------------------------------------------------
 COPY_EXISTING ~skelar01.cre~ ~override~
               ~skelar02.cre~ ~override~
-	REMOVE_CRE_ITEM ~S1-8~
-	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON2~ // Halberd
+	REPLACE_CRE_ITEM ~HALB01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON2~ // Halberd replaces S1-8
 	WRITE_SHORT 0x024 70  // Current HP (vanilla = 48 / 28)
 	WRITE_SHORT 0x026 70  // Maximum HP (vanilla = 48 / 28)
 	WRITE_BYTE  0x05d 50  // Magic resistance (vanilla = 0)
@@ -705,12 +700,10 @@ COPY_EXISTING ~valran01.cre~ ~override~
 BUT_ONLY
 
 COPY_EXISTING ~valran03.cre~ ~override~
-	REMOVE_CRE_ITEM ~CHAN04~                                // Splint Mail
-	REMOVE_CRE_ITEM ~BOW03~                                 // Longbow
 	REMOVE_CRE_ITEM ~AROW01~
 	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~          // Helmet
-	ADD_CRE_ITEM ~BOW02~ #0 #0 #0 ~NONE~ ~WEAPON1~          // Composite Longbow +1
-	ADD_CRE_ITEM ~LEAT10~ #0 #0 #0 ~NONE~ ~ARMOR~           // Hide Armor
+	REPLACE_CRE_ITEM ~BOW02~ #0 #0 #0 ~NONE~ ~WEAPON1~      // Composite Longbow +1 replaces Longbow (BOW03)
+	REPLACE_CRE_ITEM ~LEAT10~ #0 #0 #0 ~NONE~ ~ARMOR~       // Hide Armor replaces Splint Mail (CHAN04)
 	ADD_CRE_ITEM ~AROW08~ #10 #0 #0 ~UNSTEALABLE~ ~QUIVER1~ // Arrow of Fire
 	ADD_CRE_ITEM ~AROW05~ #10 #0 #0 ~UNSTEALABLE~ ~QUIVER2~ // Arrow of Bitting
 	ADD_CRE_ITEM ~AROW04~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER3~ // Acid Arrow +1
@@ -766,9 +759,8 @@ COPY_EXISTING ~valran03.cre~ ~override~
 BUT_ONLY
 
 COPY_EXISTING ~valran02.cre~ ~override~
-	REMOVE_CRE_ITEM ~LEAT04~                              // Studded Leather Armor
 	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~        // Helmet
-	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Full Plate Mail
+	REPLACE_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~     // Full Plate Mail replaces Studded Leather Armor (LEAT04)
 	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing
 	WRITE_LONG  0x01c 69                                  // Gold (vanilla = 46)
 	WRITE_SHORT 0x024 78                                  // Current HP (vanilla = 68)
@@ -795,10 +787,9 @@ BUT_ONLY
 // Mad Cleric - Clerc fou
 // ----------------------
 COPY_EXISTING ~dcleric.cre~ ~override~
-	REMOVE_CRE_ITEM ~STAF01~
 	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~          // Helmet
 	ADD_CRE_ITEM ~PLAT05~ #0 #0 #0 ~STOLEN~ ~ARMOR~         // Plate of the Dark +1
-	ADD_CRE_ITEM ~BLUN04~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP // Mace
+	REPLACE_CRE_ITEM ~BLUN04~ #0 #0 #0 ~STOLEN~ ~WEAPON1~   // Full Plate Mail replaces Quaterstaff (STAF01)
 	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~STOLEN~ ~SHIELD~        // Large Shield
 	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~   // 7 Potions of Extra Healing
 	WRITE_LONG  0x01c 69                                    // Gold (vanilla = 20)
@@ -890,9 +881,8 @@ BUT_ONLY
  * -------------------- */
 COPY_EXISTING ~duecla01.cre~ ~override~
 	REMOVE_CRE_ITEM ~SLNG01~
-	REMOVE_CRE_ITEM ~SHLD03~
 	REMOVE_CRE_ITEM ~BULL01~
-	ADD_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~        // Large Shield
+	REPLACE_CRE_ITEM ~SHLD05~ #0 #0 #0 ~NONE~ ~SHIELD~    // Large Shield replaces Medium Shield (SHLD03)
  	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing
 	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~ // Oil of Speed
 	ADD_CRE_ITEM ~POTN24~ #1 #0 #0 ~undroppable~ ~INV14~  // Potion of Defense
@@ -938,9 +928,8 @@ BUT_ONLY
  *  Rationalise Beast Master (Dompteur)  *
  * ------------------------------------- */
 COPY_EXISTING ~beast.cre~ ~override~
-	REMOVE_CRE_ITEM ~PLAT01~
 	REMOVE_CRE_ITEM ~AROW01~
-	ADD_CRE_ITEM ~LEAT05~ #0 #0 #0 ~NONE~ ~ARMOR~           // Studded Leather Armor +1
+	REPLACE_CRE_ITEM ~LEAT05~ #0 #0 #0 ~NONE~ ~ARMOR~       // Studded Leather Armor +1 replaces Plate Mail Armor (PLAT01)
 	ADD_CRE_ITEM ~AROW10~ #10 #0 #0 ~UNSTEALABLE~ ~QUIVER1~ // Arrow of Piercing +1
 	ADD_CRE_ITEM ~AROW05~ #20 #0 #0 ~UNSTEALABLE~ ~QUIVER2~ // Arrow of Bitting
 	ADD_CRE_ITEM ~AROW04~ #30 #0 #0 ~UNSTEALABLE~ ~QUIVER3~ // Acid Arrow +1
@@ -993,43 +982,42 @@ BUT_ONLY
  *  Turn Minotaur (near Beast Master) into a 5th Level Barbarian  *
  * -------------------------------------------------------------- */
 COPY_EXISTING ~icmin01.cre~ ~override~
-	REMOVE_CRE_ITEM ~AX1H01~                                          // Battle Axe
-	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~STOLEN~ ~ARMOR~                   // Studded Leather Armor
-	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~                    // Helmet
-	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP TWOHANDED // Halberd
-	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV1~                    // Random treasure
-	WRITE_LONG  0x014 600                                             // XP when killed (vanilla 3000)
-	WRITE_SHORT 0x024 60                                              // Current HP (vanilla = 50)
-	WRITE_SHORT 0x026 60                                              // Maximum HP (vanilla = 50)
-	WRITE_BYTE  0x052 16                                              // THAC0 (vanilla = 10)
-	WRITE_BYTE  0x053 1                                               // Number of attacks
-	WRITE_BYTE  0x054 11                                              // Save vs. death (vanilla = 8)
-	WRITE_BYTE  0x055 13                                              // Save vs. wands (vanilla = 8)
-	WRITE_BYTE  0x056 12                                              // Save vs. polymorph (vanilla = 8)
-	WRITE_BYTE  0x057 13                                              // Save vs. breath (vanilla = 9)
-	WRITE_BYTE  0x058 14                                              // Save vs. spells (vanilla = 9)
-	WRITE_BYTE  0x234 5                                               // Level first class (vanilla = 4)
-	WRITE_BYTE  0x238 19                                              // Strength (vanilla = 18/100)
-	WRITE_BYTE  0x23c 9                                               // Dexterity (vanilla = 9)
-	WRITE_BYTE  0x23d 18                                              // Constitution (vanilla = 9)
-	WRITE_BYTE  0x23f 20                                              // Morale (vanilla = 10)
-	WRITE_BYTE  0x240 5                                               // Morale break (vanilla = 6)
-	WRITE_SHORT 0x242 30                                              // Morale recovery (vanilla = 30)
+	ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~STOLEN~ ~ARMOR~                        // Studded Leather Armor
+	ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~HELMET~                         // Helmet
+	REPLACE_CRE_ITEM ~HALB01~ #0 #0 #0 ~STOLEN~ ~WEAPON1~ EQUIP TWOHANDED  // Halberd replaces Battle Axe (AX1H01)
+	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV1~                         // Random treasure
+	WRITE_LONG  0x014 600                                                  // XP when killed (vanilla 3000)
+	WRITE_SHORT 0x024 60                                                   // Current HP (vanilla = 50)
+	WRITE_SHORT 0x026 60                                                   // Maximum HP (vanilla = 50)
+	WRITE_BYTE  0x052 16                                                   // THAC0 (vanilla = 10)
+	WRITE_BYTE  0x053 1                                                    // Number of attacks
+	WRITE_BYTE  0x054 11                                                   // Save vs. death (vanilla = 8)
+	WRITE_BYTE  0x055 13                                                   // Save vs. wands (vanilla = 8)
+	WRITE_BYTE  0x056 12                                                   // Save vs. polymorph (vanilla = 8)
+	WRITE_BYTE  0x057 13                                                   // Save vs. breath (vanilla = 9)
+	WRITE_BYTE  0x058 14                                                   // Save vs. spells (vanilla = 9)
+	WRITE_BYTE  0x234 5                                                    // Level first class (vanilla = 4)
+	WRITE_BYTE  0x238 19                                                   // Strength (vanilla = 18/100)
+	WRITE_BYTE  0x23c 9                                                    // Dexterity (vanilla = 9)
+	WRITE_BYTE  0x23d 18                                                   // Constitution (vanilla = 9)
+	WRITE_BYTE  0x23f 20                                                   // Morale (vanilla = 10)
+	WRITE_BYTE  0x240 5                                                    // Morale break (vanilla = 6)
+	WRITE_SHORT 0x242 30                                                   // Morale recovery (vanilla = 30)
 
-	WRITE_LONG  0x244 0x00004000                                      // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
+	WRITE_LONG  0x244 0x00004000                                           // Barbarian kit, gives barbarian bonus (speed, immunity to backstab, resistance)
 
 	WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~ #8
-	WRITE_BYTE  0x273 2										          // Class FIGHTER (vanilla = 125 OGRE)
-	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~                             // Barbarian Rage
+	WRITE_BYTE  0x273 2			     							           // Class FIGHTER (vanilla = 125 OGRE)
+	ADD_KNOWN_SPELL ~spcl152~ #0 ~INNATE~                                  // Barbarian Rage
 	ADD_MEMORIZED_SPELL ~spcl152~ #0 ~INNATE~ #2
-	WRITE_BYTE  0x06e 0                                               // Large swords proficiency
-	WRITE_BYTE  0x06f 0                                               // Small swords proficiency
-	WRITE_BYTE  0x070 0                                               // Bows proficiency
-	WRITE_BYTE  0x071 0                                               // Spears proficiency
-	WRITE_BYTE  0x072 0                                               // Blunt proficiency
-	WRITE_BYTE  0x073 0                                               // Spiked proficiency
-	WRITE_BYTE  0x074 0                                               // Axe proficiency
-	WRITE_BYTE  0x075 0                                               // Missile proficiency
+	WRITE_BYTE  0x06e 0                                                    // Large swords proficiency
+	WRITE_BYTE  0x06f 0                                                    // Small swords proficiency
+	WRITE_BYTE  0x070 0                                                    // Bows proficiency
+	WRITE_BYTE  0x071 0                                                    // Spears proficiency
+	WRITE_BYTE  0x072 0                                                    // Blunt proficiency
+	WRITE_BYTE  0x073 0                                                    // Spiked proficiency
+	WRITE_BYTE  0x074 0                                                    // Axe proficiency
+	WRITE_BYTE  0x075 0                                                    // Missile proficiency
 	SET_BG2_PROFICIENCY ~PROFICIENCYHALBERD~ 2
 	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
 BUT_ONLY

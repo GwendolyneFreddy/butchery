@@ -83,18 +83,15 @@ BUT_ONLY
 // Revisited Chieftain DigDag
 // --------------------------
 COPY_EXISTING ~firorc01.cre~ ~override~
-	REMOVE_CRE_ITEM ~SHLD05~                               // Large Shield
-	REMOVE_CRE_ITEM ~SW1H04~                               // Long Sword
-	REMOVE_CRE_ITEM ~HELM01~                               // Helmet
-	ADD_CRE_ITEM ~SW1H02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP  // Bastard Sword +1. Maybe SW1H42 +2 is better? Orcs don't take care and often change weapons.
-	ADD_CRE_ITEM ~SHLD30~ #0 #0 #0 ~NONE~ ~SHIELD~         // Large Shield +2
+	REPLACE_CRE_ITEM ~SW1H02~ #0 #0 #0 ~NONE~ ~WEAPON1~    // Bastard Sword +1 replaces Long Sword (SW1H04)
+	REPLACE_CRE_ITEM ~SHLD30~ #0 #0 #0 ~NONE~ ~SHIELD~     // Large Shield +2 replaces Large Shield (SHLD05)
+	REPLACE_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~     // Decorative Helmet (DigDag is the caudillo) replaces Helmet (HELM01)
 	ADD_CRE_ITEM ~POTN24~ #1 #0 #0 ~undroppable~ ~QITEM1~  // Potion of Defense (As of v5.0.0, all potions are flagged undroppable).
 	ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~undroppable~ ~INV~     // Potion of Power
 	ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~undroppable~ ~QITEM2~  // 5 Potions of Extra Healing
 	ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~undroppable~ ~QITEM3~  // Oil of Speed
 	ADD_CRE_ITEM ~POTN35~ #1 #0 #0 ~undroppable~ ~INV~     // Potion of Magic Shielding (added as of v5.0.0)
 	ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~NONE~ ~RING~           // Ring of the Princes +1
-	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~         // Decorative Helmet (DigDag is the caudillo)
 	ADD_CRE_ITEM ~RNDTRE03~ #0 #0 #0 ~NONE~ ~INV~          // Random treasure
 	WRITE_LONG  0x014 7000                                 // XP when killed (vanilla = 2000)
 	WRITE_LONG  0x01c 399                                  // Gold (vanilla = 0)

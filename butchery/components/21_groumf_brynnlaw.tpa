@@ -147,12 +147,11 @@ BUT_ONLY
 // Revisited Galvena [AR1610]
 // --------------------------
 COPY_EXISTING ~pirmur01.cre~ ~override~
-	REMOVE_CRE_ITEM ~LEAT12~                        // Removes Leather Armor +3
-	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~   // Full Plate Mail
-	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~  // Decorative Helmet 
-	ADD_CRE_ITEM ~SHLD29~ #0 #0 #0 ~NONE~ ~SHIELD~  // Medium Shield +2
-	WRITE_BYTE 0x238 18                             // Strength (vanilla = 9)
-	WRITE_BYTE 0x23d 17                             // Constitution (vanilla = 9)
+	REPLACE_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~ // Full Plate Mail replaces Leather Armor +3 (LEAT12)
+	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~HELMET~    // Decorative Helmet 
+	ADD_CRE_ITEM ~SHLD29~ #0 #0 #0 ~NONE~ ~SHIELD~    // Medium Shield +2
+	WRITE_BYTE 0x238 18                               // Strength (vanilla = 9)
+	WRITE_BYTE 0x23d 17                               // Constitution (vanilla = 9)
 BUT_ONLY
 
 // Revisited Guard - Garde [AR1608]
