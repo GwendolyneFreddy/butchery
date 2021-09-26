@@ -33,10 +33,10 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("D9Groumfrespawn1","LOCALS",2)
-		CreateCreatureEffect("D9BN7AA","",[4339.600],0)  // Barbarian - Barbare
-		CreateCreatureEffect("D9ORNEU","",[4339.600],0)  // Orc - Orque
-		CreateCreatureEffect("D9ORNEU","",[4339.600],0)  // Orc - Orque
-		CreateCreatureEffect("D9ORC03","",[4339.600],0)  // Orc Priest
+		CreateCreature("D9BN7AA",[4339.600],0)  // Barbarian - Barbare
+		CreateCreature("D9ORNEU",[4339.600],0)  // Orc - Orque
+		CreateCreature("D9ORNEU",[4339.600],0)  // Orc - Orque
+		CreateCreature("D9ORC03",[4339.600],0)  // Orc Priest
 
 END
 
@@ -47,10 +47,10 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("D9Groumfrespawn1","LOCALS",3)
-		CreateCreatureEffect("D9OGREMA","",[4339.600],0)  // Ogre Mage
-		CreateCreatureEffect("D9ORNEU","",[4339.600],0)   // Orc - Orque
-		CreateCreatureEffect("D9ORNEU","",[4339.600],0)   // Orc - Orque
-		CreateCreatureEffect("D9BR7S","",[4339.600],0)    // Barbarian - Barbare
+		CreateCreature("D9OGREMA",[4339.600],0)  // Ogre Mage
+		CreateCreature("D9ORNEU",[4339.600],0)   // Orc - Orque
+		CreateCreature("D9ORNEU",[4339.600],0)   // Orc - Orque
+		CreateCreature("D9BR7S",[4339.600],0)    // Barbarian - Barbare
 
 END
 
@@ -78,10 +78,10 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("D9Bourrinosrespawn","LOCALS",2)
-		CreateCreatureEffect("D9BN7AA","",[3827.1043],0)  // Barbarian - Barbare
-		CreateCreatureEffect("D9ORNEU","",[3726.1084],0)  // Orc - Orque
-		CreateCreatureEffect("D9ORNEU","",[3892.796],0)   // Orc - Orque
-		CreateCreatureEffect("D9ORC03","",[4307.1216],0)  // Orc Priest - Prêtre Orque
+		CreateCreature("D9BN7AA",[3827.1043],0)  // Barbarian - Barbare
+		CreateCreature("D9ORNEU",[3726.1084],0)  // Orc - Orque
+		CreateCreature("D9ORNEU",[3892.796],0)   // Orc - Orque
+		CreateCreature("D9ORC03",[4307.1216],0)  // Orc Priest - Prêtre Orque
 
 END
 
@@ -92,9 +92,9 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("D9Bourrinosrespawn","LOCALS",3)
-		CreateCreatureEffect("D9OGREMA","",[3827.1043],0)  // Ogre Mage
-		CreateCreatureEffect("D9ORNEU","",[3726.1084],0)   // Orc - Orque
-		CreateCreatureEffect("D9ORNEU","",[3892.796],0)    // Orc - Orque
-		CreateCreatureEffect("D9BR7S","",[4167.1264],0)    // Barbarian - Barbare
+		CreateCreature("D9OGREMA",[3827.1043],0)  // Ogre Mage
+		CreateCreature("D9ORNEU",[3726.1084],0)   // Orc - Orque
+		CreateCreature("D9ORNEU",[3892.796],0)    // Orc - Orque
+		CreateCreature("D9BR7S",[4167.1264],0)    // Barbarian - Barbare
 
 END
