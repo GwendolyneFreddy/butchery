@@ -14,11 +14,11 @@ END
 
 IF
 	Global("D9beginbutchery","AR3022",1)
-	Global("D9druidmessages","AR3022",0)
+	Global("D9sahuaginmessage","AR3022",0)
 THEN
 	RESPONSE #100
 	    DisplayStringHead(Player1,@14661)  // ~Les ennemis semblent arriver de partout !~
-		SetGlobal("D9druidmessages","AR3022",1)
+		SetGlobal("D9sahuaginmessage","AR3022",1)
 END
 
 IF

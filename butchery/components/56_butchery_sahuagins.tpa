@@ -32,7 +32,7 @@ LAF extend_area_script STR_VAR area = "ar3022" bottom = "%MOD_FOLDER%/sahuagins/
 
 // Sahuagin Rebel novice with dialog initiating butchery [AR2300 : Sahuagin City]
 // ------------------------------------------------------------------------------
-COPY_EXISTING ~sahgrd01.cre~ ~override/d9hgrd0x.cre~
+COPY_EXISTING ~sahgrd01.cre~ ~override/d9hgrdox.cre~
 	SAY NAME1 @5600
 	SAY NAME2 @5600
 	WRITE_SHORT 0x024 80   // Current HP (vanilla = 81)
@@ -48,7 +48,7 @@ BUT_ONLY
 
 // Sahuagin Rebel novice with dialog initiating butchery [AR3022 : Githyanki Encampment in Watcher's Keep]
 // -------------------------------------------------------------------------------------------------------
-COPY_EXISTING ~sahgrd01.cre~ ~override/d9hgrdax.cre~
+COPY_EXISTING ~sahgrd01.cre~ ~override/d9hgrdou.cre~
 	SAY NAME1 @5600
 	SAY NAME2 @5600
 	WRITE_SHORT 0x024 80   // Current HP (vanilla = 81)
