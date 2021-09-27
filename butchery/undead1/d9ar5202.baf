@@ -181,8 +181,8 @@ THEN
 END
 
 IF
-	Global("D9beginbutchery5","AR0808",1)
-	GlobalLT("MaxSpawn","AR0808",105)
+	Global("D9beginbutchery5","AR5202",1)
+	GlobalLT("MaxSpawn","AR5202",105)
 	GlobalLT("EXTRACOUNT3","MYAREA",2)
 	Difficulty(HARDEST)
 	ActionListEmpty()

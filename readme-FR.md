@@ -195,7 +195,7 @@ Le programme d'installation comprend les composants suivants. Chacun possède un 
 ><span style="margin-left: 50px;"><a href="#47">[47] Boucherie d'orques dans les Collines de Lancevent</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#48">[48] Boucherie de loups dans les Collines d'Umar</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#49">[49] 2 boucheries d'animaux sauvages à Franc-Marché et à l'extérieur de la Tour de Garde</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
-><span style="margin-left: 50px;"><a href="#50">[50] 2 boucheries de golems à Sulanessellar et dans la Tour de Garde (Machine de Lum le Fou)</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
+><span style="margin-left: 50px;"><a href="#50">[50] 2 boucheries de golems à Suldanessellar et dans la Tour de Garde (Machine de Lum le Fou)</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#51">[51] Boucherie de Yaga-Shura améliorée</a> <em>&nbsp;[à installer après Ascension et Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#52">[52] Boucherie d'animaux/druides dans le Bosquet des druides</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#53">[53] Boucherie de fanatiques dans l'antre de l'&OElig;il aveugle</a> <em>&nbsp;[à installer après Stratagems]</em></span><br>
@@ -482,7 +482,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 
 ## 
 
-<a name="50" id="50"></a>&#10173; **[50] 2 boucheries de golems à Sulanessellar et dans la Tour de Garde (Machine de Lum le Fou)**
+<a name="50" id="50"></a>&#10173; **[50] 2 boucheries de golems à Suldanessellar et dans la Tour de Garde (Machine de Lum le Fou)**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Stratagems</em><br><br>
 
 &#9755; Ce composant ajoute une bataille contre quelques dizaines d'ennemis à Suldanessalar et dans la Tour de Garde (étage de la Machine de Lum le Fou).
