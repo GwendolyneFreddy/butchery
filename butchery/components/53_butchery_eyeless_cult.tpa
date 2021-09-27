@@ -139,17 +139,17 @@ BUT_ONLY
 
 /* Mummy - Momie ==> NOT USED (but used in components #55 and #58)
 // -------------
-COPY_EXISTING ~mummy.cre~ ~override/d9mmy.cre~
+COPY_EXISTING ~mummy01.cre~ ~override/d9mmy.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY*/
 
-// Greater Mummy - Momie majeure ==> NOT USED
+/* Greater Mummy - Momie majeure ==> NOT USED (but used in components #58)
 // -----------------------------
 COPY_EXISTING ~mumgre01.cre~ ~override/d9mgre01.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 /* Elite Garde - Garde d'élite de l'Œil Aveugle (9th Level) - Gender EXTRA3 ==> NOT USED
 // ------------------------------------------------------------------------

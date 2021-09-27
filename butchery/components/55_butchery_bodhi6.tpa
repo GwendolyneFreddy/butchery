@@ -51,14 +51,15 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9dfgt02.cre~ BEGIN
 	BUT_ONLY
 END
 
-/* archer squelette level 7 turned into Grimwalder Archer
+/* Archer squelette 7th level turned into Grimwalder Archer
+// --------------------------------------------------------
 COPY_EXISTING ~SKELAR01.cre~ ~override/D9ELAR0X.cre~
 	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON2~    // Two-handed Sword
 	ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~helmet~
 	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RING~
-	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_LONG  0x028 25605                            // Grimwarder animation
+	WRITE_BYTE  0x275 ~8~                              // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9bodfgh~ #8
-WRITE_SHORT 0x028 25605                                // Grimwarder animation
    	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2  // 2 stars in Two-handed Sword
 BUT_ONLY_IF */
 
@@ -123,7 +124,7 @@ END
 // Mummy - Momie
 // -------------
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9mmy.cre~ BEGIN
-	COPY_EXISTING ~mummy.cre~ ~override/d9mmy.cre~
+	COPY_EXISTING ~mummy01.cre~ ~override/d9mmy.cre~
 		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	BUT_ONLY
@@ -164,12 +165,12 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9tanov.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Greater Mummy - Momie majeure ==> NOT USED aussi dans 11
+/* Greater Mummy - Momie majeure ==> NOT USED (but used in component #58)
 // -----------------------------
 COPY_EXISTING ~mumgre01.cre~ ~override/d9mgre01.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 /* Fledging Vampire male - Vampire novice ==> NOT USED (but used in component #54)
 // --------------------------------------
