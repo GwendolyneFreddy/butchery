@@ -28,11 +28,11 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1200",1)
-		CreateCreatureOffScreen("D9C0Z",S)  // Orc
+		CreateCreatureOffScreen("D9C0Z",0)  // Orc
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1200",1)
-		CreateCreatureOffScreen("D9C0R",S)  // Orc Archer
+		CreateCreatureOffScreen("D9C0R",0)  // Orc Archer
 		IncrementGlobal("EXTRACOUNT","MYAREA",1)
 END
 
@@ -48,15 +48,15 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1200",1)
-		CreateCreatureOffScreen("D9C055",S)  // Orog
+		CreateCreatureOffScreen("D9C055",0)  // Orog
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1200",1)
-		CreateCreatureOffScreen("D9C066",S)  // Orog
+		CreateCreatureOffScreen("D9C066",0)  // Orog
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1200",1)
-		CreateCreatureOffScreen("D9C0Z1",S)  // Orc
+		CreateCreatureOffScreen("D9C0Z1",0)  // Orc
 		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
 END
 
@@ -70,14 +70,14 @@ IF
 THEN
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1200",1)
-		CreateCreatureOffScreen("ORC044",S)  // Orc Mage
+		CreateCreatureOffScreen("ORC044",0)  // Orc Mage
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1200",1)
-		CreateCreatureOffScreen("ORC033",S)  // Orc Priest
+		CreateCreatureOffScreen("ORC033",0)  // Orc Priest
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 	RESPONSE #100
 		IncrementGlobal("MaxSpawn","AR1200",1)
-		CreateCreatureOffScreen("D9C0Z3",S)  // Orc
+		CreateCreatureOffScreen("D9C0Z3",0)  // Orc
 		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
 END
