@@ -51,19 +51,23 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9oll01.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Umber Hulk - Ombre des roches - Gender EXTRA2 NOT USED
+// Umber Hulk - Ombre des roches - Gender EXTRA2 ==> NOT USED
 // ---------------------------------------------
-COPY_EXISTING ~kpumb01.cre~ ~override/d9umb01.cre~
-	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
-	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9umb01.cre~ BEGIN
+	COPY_EXISTING ~kpumb01.cre~ ~override/d9umb01.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
 
-// Umber Hulk - Ombre des roches - Gender EXTRA2
+// Umber Hulk - Ombre des roches - Gender EXTRA2 ==> NOT USED
 // ---------------------------------------------
-COPY_EXISTING ~kpumb01.cre~ ~override/d9umb02.cre~
-	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
-	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9umb02.cre~ BEGIN
+	COPY_EXISTING ~kpumb01.cre~ ~override/d9umb02.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
 
 // Giant Troll - Troll géant - Gender EXTRA2
 // -----------------------------------------
@@ -90,13 +94,13 @@ COPY_EXISTING ~troll01.cre~ ~override/d9oll0r.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Spirit Troll - Troll fantôme - Gender EXTRA2 NOT USED (aussi dans 45)
+/* Spirit Troll - Troll fantôme - Gender EXTRA2 ==> NOT USED (also in component #45)
 // --------------------------------------------
 COPY_EXISTING ~trolsi01.cre~ ~override/d9olsi02.cre~
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	WRITE_ASCII SCRIPT_CLASS ~TROLSI01~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Spirit Troll - Troll fantôme - Gender EXTRA3
 // --------------------------------------------

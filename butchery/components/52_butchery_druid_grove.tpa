@@ -26,8 +26,9 @@ LAF extend_area_script STR_VAR area = "ar1900" top = "%MOD_FOLDER%/dalok/d9ar190
  *  Installing Creatures  *
  * ---------------------- */
 
-/*
+/* NOT USED
 // Druid male 12th Level with dialog initiating butchery
+// -----------------------------------------------------
 COPY_EXISTING ~cefgt02.cre~ ~override/d9fgt09.cre~   //12A
 	WRITE_BYTE  0x270 255   // Enemy
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
@@ -58,26 +59,28 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9earbl.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Brown Bear - Ours brun NOT USED
+// Brown Bear - Ours brun ==> NOT USED (also in component #49)
 // ----------------------
-COPY_EXISTING ~vbearbr.cre~ ~override/d9vbeat.cre~
-	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
-	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9vbeat.cre~ BEGIN
+	COPY_EXISTING ~vbearbr.cre~ ~override/d9vbeat.cre~
+		WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
 
-// Panther - Panthère NOT USED
+/* Panther - Panthère ==> NOT USED (but used in component #49)
 // ------------------
 COPY_EXISTING ~catjag01.cre~ ~override/d9catt.cre~
 	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Spotted Lion - Lion tacheté NOT USED
+// Spotted Lion - Lion tacheté ==> NOT USED (but used in component #49)
 // ---------------------------
 COPY_EXISTING ~catlis01.cre~ ~override/d9cax.cre~
 	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Winter Wolf - Loup des glaces
 // -----------------------------
@@ -115,12 +118,12 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9akeb0x.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Panther - Panthère - Gender EXTRA2 NOT USED
+/* Panther - Panthère - Gender EXTRA2 ==> NOT USED (also in component #49)
 // ----------------------------------
 COPY_EXISTING ~catjag01.cre~ ~override/d9caty.cre~
-	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
+	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Sword Spider - Araignée sabre - Gender EXTRA2
 // ---------------------------------------------
@@ -131,12 +134,12 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsw01.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Boalisk - Gender EXTRA3 NOT USED
+/* Boalisk - Gender EXTRA3 ==> NOT USED (but used in component #49)
 // -----------------------
 COPY_EXISTING ~snakeb01.cre~ ~override/d9akeb0d.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Mountain Bear - Ours de montagne - Gender EXTRA3
 // ------------------------------------------------
@@ -163,31 +166,30 @@ END
 COPY_EXISTING ~valran03.cre~ ~override/d9valr2.cre~
 	SAY NAME1 @5201
 	SAY NAME2 @5201
-	WRITE_LONG  0x01c 26                  // Gold (vanilla = 0)
-	WRITE_SHORT 0x024 50                  // Current HP (vanilla = 75)
-	WRITE_SHORT 0x026 50                  // Maximum HP (vanilla = 75)
+	WRITE_LONG  0x01c 26    // Gold (vanilla = 0)
+	WRITE_SHORT 0x024 50    // Current HP (vanilla = 75)
+	WRITE_SHORT 0x026 50    // Maximum HP (vanilla = 75)
 	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~FIGHTER_MALE_ELF~)
-	WRITE_SHORT 0x046 10                  // Natural AC (vanilla = 2)
-	WRITE_SHORT 0x048 12                  // Effective AC (vanilla = 2)
-	WRITE_BYTE  0x052 15                  // THAC0 (vanilla = 9)
-	WRITE_BYTE  0x053 1                   // Number of attacks
-	WRITE_BYTE  0x054 10                  // Save vs. death (vanilla = 8)
-	WRITE_BYTE  0x055 12                  // Save vs. wands (vanilla = 10)
-	WRITE_BYTE  0x056 11                  // Save vs. polymorph (vanilla = 9)
-	WRITE_BYTE  0x057 11                  // Save vs. breath (vanilla = 9)
-	WRITE_BYTE  0x058 13                  // Save vs. spells (vanilla = 11)
-
-	WRITE_BYTE  0x234 5                   // Level first class (vanilla = 11)
-	WRITE_BYTE  0x238 17                  // Strength (vanilla = 17)
-	WRITE_BYTE  0x23a 10                  // Intelligence (vanilla = 13)
-	WRITE_BYTE  0x23b 15                  // Wisdom (vanilla = 13)
-	WRITE_BYTE  0x23c 18                  // Dexterity (vanilla = 18)
-	WRITE_BYTE  0x23d 18                  // Constitution (vanilla = 15)
-	WRITE_BYTE  0x23f 20                  // Morale (vanilla = 19)
-	WRITE_BYTE  0x240 5                   // Morale break (vanilla = 4)
-	WRITE_SHORT 0x242 10                  // Morale recovery (vanilla = 60)
-	WRITE_BYTE  0x270 255                 // Enemy
-	WRITE_BYTE  0x275 ~8~                 // Gender = EXTRA
+	WRITE_SHORT 0x046 10    // Natural AC (vanilla = 2)
+	WRITE_SHORT 0x048 10    // Effective AC (vanilla = 2)
+	WRITE_BYTE  0x052 15    // THAC0 (vanilla = 9)
+	WRITE_BYTE  0x053 1     // Number of attacks
+	WRITE_BYTE  0x054 10    // Save vs. death (vanilla = 8)
+	WRITE_BYTE  0x055 12    // Save vs. wands (vanilla = 10)
+	WRITE_BYTE  0x056 11    // Save vs. polymorph (vanilla = 9)
+	WRITE_BYTE  0x057 11    // Save vs. breath (vanilla = 9)
+	WRITE_BYTE  0x058 13    // Save vs. spells (vanilla = 11)
+	WRITE_BYTE  0x234 5     // Level first class (vanilla = 11)
+	WRITE_BYTE  0x238 17    // Strength (vanilla = 17)
+	WRITE_BYTE  0x23a 10    // Intelligence (vanilla = 13)
+	WRITE_BYTE  0x23b 15    // Wisdom (vanilla = 13)
+	WRITE_BYTE  0x23c 18    // Dexterity (vanilla = 18)
+	WRITE_BYTE  0x23d 18    // Constitution (vanilla = 15)
+	WRITE_BYTE  0x23f 20    // Morale (vanilla = 19)
+	WRITE_BYTE  0x240 5     // Morale break (vanilla = 4)
+	WRITE_SHORT 0x242 10    // Morale recovery (vanilla = 60)
+	WRITE_BYTE  0x270 255   // Enemy
+	WRITE_BYTE  0x275 ~8~   // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
@@ -221,7 +223,7 @@ COPY_EXISTING ~cefgt04.cre~ ~override/d9fgt0x.cre~   // 12B
 	WRITE_BYTE  0x270 255   // Enemy
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~CLERIC_FEMALE_ELF~)
-
+	// Soundset
 	SAY INITIAL_MEETING  #11063  // ~Greetings, adventurers.~ [FELFF01] - ~Bonjour, et salut à vous.~ [FELFF01]
 	SAY DAMAGE           #11075  // ~~ [FELFF05]
 	SAY DYING            #11076  // ~~ [FELFF06]
@@ -239,7 +241,6 @@ BUT_ONLY */
 COPY_EXISTING ~druid8a.cre~ ~override/d9uid8a.cre~   //12 A
 	SAY NAME1 @5204
 	SAY NAME2 @5204
-	REMOVE_CRE_ITEM ~STAF01~
 	ADD_CRE_ITEM ~STAF01~ #0 #0 #0 ~NONE~ ~WEAPON1~ // Quaterstaff
 	WRITE_BYTE  0x270 255                           // Enemy
 	WRITE_BYTE  0x275 ~10~                          // Gender = EXTRA2
@@ -253,8 +254,7 @@ BUT_ONLY
 COPY_EXISTING ~druid8b.cre~ ~override/d9uid8b.cre~   //12 A
 	SAY NAME1 @5206
 	SAY NAME2 @5206
-	REMOVE_CRE_ITEM ~STAF01~
-	ADD_CRE_ITEM ~STAF01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP / Quaterstaff
+	ADD_CRE_ITEM ~STAF01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP // Quaterstaff
 	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~CLERIC_FEMALE_ELF~)
 	// Soundset
 	SAY INITIAL_MEETING  #11063  // ~Greetings, adventurers.~ [FELFF01] - ~Bonjour, et salut à vous.~ [FELFF01]
@@ -263,7 +263,6 @@ COPY_EXISTING ~druid8b.cre~ ~override/d9uid8b.cre~   //12 A
 	SAY SELECT_COMMON1   #11063  // ~Greetings, adventurers.~ [FELFF01] - ~Bonjour, et salut à vous.~ [FELFF01]
 	SAY SELECT_COMMON2   #11065  // ~The fair folk will inherit the earth.~ [FELFF02] - ~Je préfère de beaucoup les régions boisées, mais il faut savoir s'adapter, par les temps qui courent.~ [FELFF02]
 	SAY SELECT_COMMON3   #11070  // ~Few of the fair folk concern themselves with the affairs of the state.~ [FELFF03] - ~Peu des membres du Peuple-Fée s'intéressent aux affaires d'État.~ [FELFF03]
-
 	WRITE_BYTE  0x0237 ~2~       // Sexe = female
 	WRITE_BYTE  0x270 255        // Enemy
 	WRITE_BYTE  0x275 ~10~       // Gender = EXTRA2
@@ -273,9 +272,9 @@ COPY_EXISTING ~druid8b.cre~ ~override/d9uid8b.cre~   //12 A
 	WRITE_ASCII DIALOG ~none~ #8
 BUT_ONLY
 
-/*
-// Druid level 14
-COPY_EXISTING ~GDRUID.cre~ ~override/d9RUIX.cre~   // druid level 14
+/* Druid 14th Level
+// ----------------
+COPY_EXISTING ~gdruid.cre~ ~override/d9ruix.cre~   // druid level 14
 	ADD_CRE_ITEM ~LEAT10~ #0 #0 #0 ~NONE~ ~ARMOR~
 	WRITE_BYTE  0x270 255   // Enemy
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
@@ -289,7 +288,7 @@ COPY_EXISTING ~druid10a.cre~ ~override/d9uid10a.cre~   //12 A
 	SAY NAME1 @5205
 	SAY NAME2 @5205
 	REMOVE_CRE_ITEM ~STAF01~
-	ADD_CRE_ITEM ~SPER01~ #0 #0 #0 ~NONE~ ~WEAPON1~ // Spear
+	ADD_CRE_ITEM ~SPER01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED // Spear
 	WRITE_BYTE  0x270 255                           // Enemy
 	WRITE_BYTE  0x275 ~11~                          // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
@@ -303,7 +302,7 @@ COPY_EXISTING ~druid10b.cre~ ~override/d9uid10b.cre~   //12A
 	SAY NAME1 @5207
 	SAY NAME2 @5207
 	REMOVE_CRE_ITEM ~STAF01~
-	ADD_CRE_ITEM ~SPER01~ #0 #0 #0 ~NONE~ ~WEAPON1~ // Spear
+	ADD_CRE_ITEM ~SPER01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED // Spear
 	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~CLERIC_FEMALE_HUMAN~)
 	// Soundset
 	SAY INITIAL_MEETING  #11063  // ~Greetings, adventurers.~ [FELFF01] - ~Bonjour, et salut à vous.~ [FELFF01]
@@ -312,7 +311,6 @@ COPY_EXISTING ~druid10b.cre~ ~override/d9uid10b.cre~   //12A
 	SAY SELECT_COMMON1   #11063  // ~Greetings, adventurers.~ [FELFF01] - ~Bonjour, et salut à vous.~ [FELFF01]
 	SAY SELECT_COMMON2   #11065  // ~The fair folk will inherit the earth.~ [FELFF02] - ~Je préfère de beaucoup les régions boisées, mais il faut savoir s'adapter, par les temps qui courent.~ [FELFF02]
 	SAY SELECT_COMMON3   #11070  // ~Few of the fair folk concern themselves with the affairs of the state.~ [FELFF03] - ~Peu des membres du Peuple-Fée s'intéressent aux affaires d'État.~ [FELFF03]
-
 	WRITE_BYTE  0x0237 ~2~       // Sexe = female
 	WRITE_BYTE  0x270 255        // Enemy
 	WRITE_BYTE  0x275 ~11~       // Gender = EXTRA3

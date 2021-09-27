@@ -97,14 +97,14 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsw01.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Phase Spider - Araignée éclipsante - Gender EXTRA2 NOT USED
+/* Phase Spider - Araignée éclipsante - Gender EXTRA2 ==> NOT USED (also in component #49)
 // --------------------------------------------------
 COPY_EXISTING ~spidph01.cre~ ~override/d9idph02.cre~
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
-// Giant Spider - Araignée géante - Gender EXTRA2 NOT USED
+// Giant Spider - Araignée géante - Gender EXTRA2 ==> NOT USED
 // ----------------------------------------------
 COPY_EXISTING ~spidgi01.cre~ ~override/d9idgi02.cre~
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
@@ -121,7 +121,7 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsm02.cre~ BEGIN
 	BUT_ONLY
 END
 /* TODO
-COPY_EXISTING ~SPIDSM02.cre~ ~override/d9idsm02.cre~
+COPY_EXISTING ~spidsm02.cre~ ~override/d9idsm02.cre~
 	WRITE_SHORT 0x024 100  // Current HP (vanilla 30)
 	WRITE_SHORT 0x026 100  // Maximum HP (vanilla 30)
 	WRITE_BYTE  0x052 0    // THAC0 (vanilla = 4)
@@ -130,12 +130,14 @@ COPY_EXISTING ~SPIDSM02.cre~ ~override/d9idsm02.cre~
 	WRITE_SHORT 0x026 110  // Maximum HP (vanilla = 30)
 */
 
-// Sword Spider - Araignée sabre - Gender EXTRA3 NOT USED
+// Sword Spider - Araignée sabre - Gender EXTRA3 ==> NOT USED
 // ---------------------------------------------
-COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw03.cre~
-	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
-	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsw03.cre~ BEGIN
+	COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw03.cre~
+		WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
 
 // Giant Spider - Araignée géante - Gender EXTRA3
 // ----------------------------------------------

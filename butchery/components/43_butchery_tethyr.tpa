@@ -35,8 +35,8 @@ COPY_EXISTING ~cefgt02.cre~ ~override/d9fgt0h.cre~
 	WRITE_ASCII DIALOG ~d9FGT0H~ #8
 BUT_ONLY
 
-// Shadow Druid male- Druide de l'ombre (12th Level)
-// -------------------------------------------------
+// Shadow Druid male - Druide de l'ombre (12th Level)
+// --------------------------------------------------
 COPY_EXISTING ~cefgt02.cre~ ~override/d9fgt02.cre~
 	WRITE_BYTE  0x270 255   // Enemy
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
@@ -45,8 +45,8 @@ COPY_EXISTING ~cefgt02.cre~ ~override/d9fgt02.cre~
 	WRITE_ASCII DIALOG ~none~ #8
 BUT_ONLY
 
-// Shadow Druid female- Druide de l'ombre (12th Level)
-// ---------------------------------------------------
+// Shadow Druid female - Druide de l'ombre (12th Level)
+// ----------------------------------------------------
 COPY_EXISTING ~cefgt04.cre~ ~override/d9fgt04.cre~
 	WRITE_LONG  0x028 IDS_OF_SYMBOL(~ANIMATE~ ~CLERIC_FEMALE_ELF~)
 	WRITE_BYTE  0x237 ~2~   // Sex Female
@@ -59,7 +59,6 @@ COPY_EXISTING ~cefgt04.cre~ ~override/d9fgt04.cre~
 	SAY SELECT_COMMON1   #11063  // ~Greetings, adventurers.~ [FELFF01] - ~Bonjour, et salut à vous.~ [FELFF01]
 	SAY SELECT_COMMON2   #11065  // ~The fair folk will inherit the earth.~ [FELFF02] - ~Je préfère de beaucoup les régions boisées, mais il faut savoir s'adapter, par les temps qui courent.~ [FELFF02]
 	SAY SELECT_COMMON3   #11070  // ~Few of the fair folk concern themselves with the affairs of the state.~ [FELFF03] - ~Peu des membres du Peuple-Fée s'intéressent aux affaires d'État.~ [FELFF03]
-
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	WRITE_ASCII SCRIPT_CLASS ~none~ #8
 	WRITE_ASCII SCRIPT_GENERAL ~none~ #8
@@ -76,7 +75,7 @@ COPY_EXISTING ~gdruid.cre~ ~override/d9ruid.cre~
 	WRITE_ASCII DIALOG ~none~ #8
 BUT_ONLY
 
-// Turn Ranger into a 5th Archer level (instead of L11) since I use this cre many times as a generic and "common" archer NOT USED
+/* Turn Ranger into a 5th Archer level (instead of L11) since I use this cre many times as a generic and "common" archer ==> NOT USED
 // ---------------------------------------------------------------------------------------------------------------------
 COPY_EXISTING ~valran03.cre~ ~override/d9valr2.cre~
 	SAY NAME1 @5201
@@ -106,14 +105,14 @@ COPY_EXISTING ~valran03.cre~ ~override/d9valr2.cre~
 	WRITE_BYTE  0x270 255   // Enemy
 	WRITE_BYTE  0x275 ~8~   // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 
 // REBALANCING WILD ANIMALS
 // ------------------------
 
-// Brown Bear - Ours brun NOT USED
-// -------------------------------
+// Brown Bear - Ours brun
+// ----------------------
 COPY_EXISTING ~vbearbr.cre~ ~override/d9vbear.cre~
 	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
@@ -159,7 +158,7 @@ COPY_EXISTING ~snakeb01.cre~ ~override/d9akeb01.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Fake Boalisk - Gender EXTRA3 NOT USED
+// Fake Boalisk - Gender EXTRA3 ==> NOT USED
 // ----------------------------
 COPY_EXISTING ~snakeb01.cre~ ~override/d9akeb03.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
@@ -176,12 +175,14 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9arpo01.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Giant Spider - Araignée géante - Gender EXTRA3 NOT USED
+// Giant Spider - Araignée géante - Gender EXTRA3 ==> NOT USED
 // ----------------------------------------------
-COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw03.cre~
-	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
-	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsw03.cre~ BEGIN
+	COPY_EXISTING ~spidsw01.cre~ ~override/d9idsw03.cre~
+		WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
 
 // Mutated Spider - Araignée mutante - Gender EXTRA3
 // -------------------------------------------------

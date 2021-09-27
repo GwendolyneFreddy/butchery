@@ -64,17 +64,17 @@ COPY_EXISTING ~bodfgt02.cre~ ~override/d9dfbbb.cre~
 	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2       // 2 stars in Two-handed Sword
 BUT_ONLY
 
-/*
-// Archer squelette level 7 turned into Grimwalder Archer
+/* Archer squelette 7th level turned into Grimwalder Archer
+// --------------------------------------------------------
 COPY_EXISTING ~skelar01.cre~ ~override/d9elar0z.cre~
-	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON2~         // Two-handed Sword
+	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON2~    // Two-handed Sword
 	ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~helmet~
-	ADD_CRE_ITEM ~RING95~	#0 #0 #0	~NONE~	~RING~
-	WRITE_BYTE  0x275 ~8~                                   // Gender = EXTRA
-  	WRITE_BYTE  0x052 14									// THAC0 (vanilla 2)
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RING~
+	WRITE_LONG  0x028 25605                            // Grimwarder animation
+	WRITE_BYTE  0x052 14                               // THAC0 (vanilla 2)
+	WRITE_BYTE  0x275 ~8~                              // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9BODFGH~ #8
-	WRITE_SHORT 0x028 25605                                        // Grimwarder animation
-	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2       // 2 stars in Two-handed Sword
+	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2  // 2 stars in Two-handed Sword
 BUT_ONLY */
 
 // Ghast - Blême
@@ -104,7 +104,8 @@ COPY_EXISTING ~bodfgt01.cre~ ~override/d9djjj.cre~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9BODFGH~ #8
 BUT_ONLY
 
-/* Ghast fake - Gender EXTRA2
+/* Ghast fake - Blême - Gender EXTRA2
+// ----------------------------------
 COPY_EXISTING ~ghast01.cre~ ~override/d9ast02.cre~
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 	WRITE_ASCII SCRIPT_DEFAULT ~d9dwctyz~ #8
@@ -258,19 +259,23 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9oll01.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Umber Hulk - Ombre des roches - Gender EXTRA NOT USED
-// --------------------------------------------
-COPY_EXISTING ~kpumb01.cre~ ~override/d9umb01.cre~
-	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
-	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+// Umber Hulk - Ombre des roches - Gender EXTRA2 ==> NOT USED
+// ---------------------------------------------
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9umb01.cre~ BEGIN
+	COPY_EXISTING ~kpumb01.cre~ ~override/d9umb01.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
 
 // Umber Hulk - Ombre des roches - Gender EXTRA2
 // ---------------------------------------------
-COPY_EXISTING ~kpumb01.cre~ ~override/d9umb02.cre~
-	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
-	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9umb02.cre~ BEGIN
+	COPY_EXISTING ~kpumb01.cre~ ~override/d9umb02.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+	BUT_ONLY
+END
 
 // Giant Troll - Troll géant - Gender EXTRA2
 // -----------------------------------------
@@ -290,20 +295,20 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9olsp01.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Troll - Gender EXTRA2 NOT USED (dans 46 AR1300)
+/* Troll - Gender EXTRA2 ==> NOT USED (but used in AR1300 - component #46)
 // ---------------------
 COPY_EXISTING ~troll01.cre~ ~override/d9oll0r.cre~
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Spirit Troll - Troll fantôme - Gender EXTRA2 NOT USED (aussi dans 46)
+// Spirit Troll - Troll fantôme - Gender EXTRA2 ==> NOT USED (also in component #46)
 // --------------------------------------------
 COPY_EXISTING ~trolsi01.cre~ ~override/d9olsi02.cre~
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	WRITE_ASCII SCRIPT_CLASS ~TROLSI01~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Spirit Troll - Troll fantôme - Gender EXTRA3
 // --------------------------------------------
@@ -315,12 +320,12 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9olsi01.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Troll - Gender EXTRA3 NOT USED (dans 46 AR1300)
+/* Troll - Gender EXTRA3 ==> NOT USED (but used in AR1300 - component #46)
 // ---------------------
 COPY_EXISTING ~troll01.cre~ ~override/d9oll0y.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY*/
 
 // Desert Troll - Troll du désert - Gender EXTRA3
 // ----------------------------------------------

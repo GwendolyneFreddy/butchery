@@ -49,16 +49,17 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9dfgt02.cre~ BEGIN
 	BUT_ONLY
 END
 
-/* archer squelette level 7 turned into Grimwalder Archer
+/* Archer squelette 7th level turned into Grimwalder Archer
+// --------------------------------------------------------
 COPY_EXISTING ~SKELAR01.cre~ ~override/D9ELAR0Z.cre~
-	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON2~         // Two-handed Sword
-ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~helmet~
-ADD_CRE_ITEM ~RING95~	#0 #0 #0	~NONE~	~RING~
-	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
-  	WRITE_BYTE  0x052 14									// THAC0 (vanilla 2)
+	ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON2~    // Two-handed Sword
+	ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~helmet~
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RING~
+	WRITE_LONG  0x028 25605                            // Grimwarder animation
+  	WRITE_BYTE  0x052 14                               // THAC0 (vanilla 2)
+	WRITE_BYTE  0x275 ~8~                              // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9bodfgh~ #8
-WRITE_SHORT 0x028 25605                                        // Grimwarder animation
-   	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2       // 2 stars in Two-handed Sword
+   	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2  // 2 stars in Two-handed Sword
 BUT_ONLY */
 
 // Ghast - Blême
@@ -101,10 +102,12 @@ END
 
 // Fledging Vampire male - Vampire novice
 // --------------------------------------
-COPY_EXISTING ~vamflm01.cre~ ~override/d9mflm01.cre~
-	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
-	WRITE_ASCII SCRIPT_CLASS ~d9dwctyz~ #8  // for better compatibility with ATweaks
-BUT_ONLY
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9mflm01.cre~ BEGIN
+	COPY_EXISTING ~vamflm01.cre~ ~override/d9mflm01.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_CLASS ~d9dwctyz~ #8  // for better compatibility with ATweaks
+	BUT_ONLY
+END
 
 // Vampire (11th Level)
 // --------------------
