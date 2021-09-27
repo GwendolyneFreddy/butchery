@@ -102,7 +102,7 @@ BUT_ONLY
 COPY_EXISTING ~vamflm01.cre~ ~override/d9ggggg.cre~
 	WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
 	WRITE_ASCII SCRIPT_OVERRIDE ~D9GGGGG~ #8
-	WRITE_ASCII DIALOG ~D9GGGGG~ 8
+	WRITE_ASCII DIALOG ~D9GGGGG~ #8
 	WRITE_ASCII DEATHVAR ~D9GGGGG~ #32
 BUT_ONLY
 
@@ -128,7 +128,7 @@ COPY_EXISTING ~skelar01.cre~ ~override/d9elaraa.cre~
 	SET_BG2_PROFICIENCY ~PROFICIENCYSPEAR~ 2
 BUT_ONLY
 
-/* Skeleton Archer - Squelette archer (7th Level) NOT USED
+/* Skeleton Archer - Squelette archer (7th Level) ==> NOT USED
 // ---------------------------------------------
 COPY_EXISTING ~skelar01.cre~ ~override/d9elarab.cre~
 	REMOVE_CRE_ITEM ~S1-8~
@@ -173,7 +173,7 @@ COPY_EXISTING ~skelar01.cre~ ~override/d9elarbb.cre~
 	SET_BG2_PROFICIENCY ~PROFICIENCYSPEAR~ 2
 BUT_ONLY
 
-// Greater Ghoul - Goule majeure NOT USED
+// Greater Ghoul - Goule majeure ==> NOT USED
 // -----------------------------
 COPY_EXISTING ~ghogr01.cre~ ~override/d9ogr01.cre~
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
@@ -184,7 +184,7 @@ BUT_ONLY
 // Mummy - Momie
 // -------------
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9mmy.cre~ BEGIN
-	COPY_EXISTING ~mummy.cre~ ~override/d9mmy.cre~
+	COPY_EXISTING ~mummy01.cre~ ~override/d9mmy.cre~
 		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	BUT_ONLY
@@ -207,7 +207,7 @@ COPY_EXISTING ~skelar01.cre~ ~override/d9elaryy.cre~
 		ADD_CRE_ITEM ~SHLD01~ #0 #0 #0 ~UNSTEALABLE~ ~SHIELD~    // Small Shield
 	END
 	WRITE_LONG  0x018 11                                         // Creature Power Level (for summoning spells) / XP of the creature (for party members)
- 	WRITE_BYTE	0x052 4                                          // THAC0 (vanilla = 2)
+ 	WRITE_BYTE  0x052 4                                          // THAC0 (vanilla = 2)
 	WRITE_BYTE  0x238 15                                         // Strength (vanilla = 9)
 	WRITE_BYTE  0x275 ~10~                                       // Gender = EXTRA2
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
@@ -215,15 +215,19 @@ COPY_EXISTING ~skelar01.cre~ ~override/d9elaryy.cre~
 	SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
 BUT_ONLY
 
-// Skeleton Warrior - Combattant squelette (7th Level) - Gender EXTRA2 PB : pas dans classique
+// Skeleton Warrior - Combattant squelette (7th Level) - Gender EXTRA2
 // -------------------------------------------------------------------
 COPY_EXISTING ~skelsu11.cre~ ~override/d9elsu11.cre~
 	WRITE_LONG  0x018 11    // Creature Power Level (for summoning spells) / XP of the creature (for party members)
-	WRITE_BYTE	0x052 2     // THAC0 (vanilla = 13)
+	WRITE_BYTE  0x052 2     // THAC0 (vanilla = 13)
 	WRITE_BYTE  0x270 255   // Enemy
 	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
-BUT_ONLY
+BUT_ONLY IF_EXISTS
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~skelsu11.cre~ BEGIN // Workaround for oBG2 (skelsu11.cre does not exists)
+	COPY ~%MOD_FOLDER%/undead1/skelsu11.cre~ ~override/d9elsu11.cre~
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
+END
 
 // Skeleton Archer - Squelette archer (6th Level with Spear) - Gender EXTRA3
 // -------------------------------------------------------------------------
@@ -233,31 +237,31 @@ COPY_EXISTING ~skelar01.cre~ ~override/d9elarxx.cre~
 	REMOVE_CRE_ITEM ~ARROW01~
 	REMOVE_CRE_ITEM ~ARROW01~
 	REMOVE_CRE_ITEM ~S1-8~
-	ADD_CRE_ITEM ~HELM11~ #0 #0 #0 ~undroppable~ ~HELMET~        // Helmet
-	ADD_CRE_ITEM ~SPER01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Spear
-	WRITE_LONG  0x018 13                                         // Creature Power Level (for summoning spells) / XP of the creature (for party members)
- 	WRITE_BYTE	0x052 1                                          // THAC0 (vanilla = 2)
-	WRITE_BYTE  0x238 15                                         // Strength (vanilla = 9)
-	WRITE_BYTE  0x275 ~11~                                       // Gender = EXTRA3
+	ADD_CRE_ITEM ~HELM11~ #0 #0 #0 ~undroppable~ ~HELMET~                  // Helmet
+	ADD_CRE_ITEM ~SPER01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP TWOHANDED // Spear
+	WRITE_LONG  0x018 13                                                   // Creature Power Level (for summoning spells) / XP of the creature (for party members)
+ 	WRITE_BYTE  0x052 1                                                    // THAC0 (vanilla = 2)
+	WRITE_BYTE  0x238 15                                                   // Strength (vanilla = 9)
+	WRITE_BYTE  0x275 ~11~                                                 // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	SET_BG2_PROFICIENCY ~PROFICIENCYSPEAR~ 4
 	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
 BUT_ONLY
 
-/* Skeleton Archer - Squelette archer (6th Level with Halberd) - Gender EXTRA3 NOT USED
+/* Skeleton Archer - Squelette archer (6th Level with Halberd) - Gender EXTRA3 ==> NOT USED
 // ---------------------------------------------------------------------------
-COPY_EXISTING ~SKELAR01.cre~ ~override/d9elarvv.cre~
+COPY_EXISTING ~skelar01.cre~ ~override/d9elarvv.cre~
 	REMOVE_CRE_ITEM ~BOW03~
 	REMOVE_CRE_ITEM ~ARROW08~
 	REMOVE_CRE_ITEM ~ARROW01~
 	REMOVE_CRE_ITEM ~ARROW01~
 	REMOVE_CRE_ITEM ~S1-8~
-	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~undroppable~ ~HELMET~        // Helmet
-	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Halberd
-	WRITE_LONG  0x018 13                                         // Creature Power Level (for summoning spells) / XP of the creature (for party members)
- 	WRITE_BYTE	0x052 1                                          // THAC0 (vanilla = 2)
-	WRITE_BYTE  0x238 15                                         // Strength (vanilla = 9)
-	WRITE_BYTE  0x275 ~11~                                       // Gender = EXTRA3
+	ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~undroppable~ ~HELMET~                  // Helmet
+	ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP TWOHANDED // Halberd
+	WRITE_LONG  0x018 13                                                   // Creature Power Level (for summoning spells) / XP of the creature (for party members)
+ 	WRITE_BYTE  0x052 1                                                    // THAC0 (vanilla = 2)
+	WRITE_BYTE  0x238 15                                                   // Strength (vanilla = 9)
+	WRITE_BYTE  0x275 ~11~                                                 // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	SET_BG2_PROFICIENCY ~PROFICIENCYHALBERD~ 4
 	SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
@@ -267,7 +271,7 @@ BUT_ONLY */
 // -------------------------------------------------------------------
 COPY_EXISTING ~skelwa.cre~ ~override/d9elwa.cre~
 	WRITE_LONG  0x018 15    // Creature Power Level (for summoning spells) / XP of the creature (for party members)
-	WRITE_BYTE	0x052 0     // THAC0 (vanilla = 2)
+	WRITE_BYTE  0x052 0     // THAC0 (vanilla = 2)
 	WRITE_BYTE  0x270 255   // Enemy
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
@@ -283,7 +287,7 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9olor01.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Greater Mummy - Momie majeure !!!!!!! aussi dans 11
+// Greater Mummy - Momie majeure
 // -----------------------------
 COPY_EXISTING ~mumgre01.cre~ ~override/d9mgre01.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
@@ -294,7 +298,7 @@ BUT_ONLY
 // ----------
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9dfgt01.cre~ BEGIN
 	COPY_EXISTING ~bodfgt01.cre~ ~override/d9dfgt01.cre~
-		WRITE_BYTE  0x052 15   // THAC0 (vanilla = 10)
+//		WRITE_BYTE  0x052 15   // THAC0 (vanilla = 10)
 		WRITE_BYTE  0x275 ~8~  // Gender = EXTRA
 		WRITE_ASCII SCRIPT_OVERRIDE ~d9bodfgh~ #8
 	BUT_ONLY
@@ -308,22 +312,23 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9dfgt02.cre~ BEGIN
 		ADD_CRE_ITEM ~AROW09~ #10 #0 #0 ~undroppable~ ~QUIVER1~ // Arrow of Ice
 		ADD_CRE_ITEM ~AROW04~ #10 #0 #0 ~undroppable~ ~QUIVER2~ // Acid Arrow +1
 		ADD_CRE_ITEM ~AROW01~ #40 #0 #0 ~IDENTIFIED~ ~QUIVER3~  // Arrow
-		WRITE_BYTE  0x052 15                                    // THAC0 (vanilla = 10)
+//		WRITE_BYTE  0x052 15                                    // THAC0 (vanilla = 10)
 		WRITE_BYTE  0x275 ~8~                                   // Gender = EXTRA
 		WRITE_ASCII SCRIPT_OVERRIDE ~d9bodfgh~ #8
 		SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2       // 2 stars in Two-handed Sword
 	BUT_ONLY
 END
 
-/* archer squelette level 7 turned into Grimwalder Archer
+/* Archer squelette 7th level turned into Grimwalder Archer
+// --------------------------------------------------------
 COPY_EXISTING ~SKELAR01.cre~ ~override/D9ELAR0X.cre~
-	ADD_CRE_ITEM ~sw2h01~ #0 #0 #0 ~NONE~ ~WEAPON2~ // Two-handed Sword
-ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~helmet~
-ADD_CRE_ITEM ~RING95~	#0 #0 #0	~NONE~	~RING~
-  WRITE_BYTE 0x275 ~8~  //  Creature gender extra
- WRITE_ASCII 0x248 ~d9BODFGH~ #8
-WRITE_SHORT 0x028 25605                                        // Grimwarder animation
-   	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2	// 2 stars in two handed sword
+	ADD_CRE_ITEM ~sw2h01~ #0 #0 #0 ~NONE~ ~WEAPON2~    // Two-handed Sword
+	ADD_CRE_ITEM ~HELM08~ #0 #0 #0 ~NONE~ ~helmet~
+	ADD_CRE_ITEM ~RING95~ #0 #0 #0 ~NONE~ ~RING~
+	WRITE_LONG  0x028 25605                            // Grimwarder animation
+	WRITE_BYTE  0x275 ~8~                              // Gender = EXTRA
+	WRITE_ASCII SCRIPT_OVERRIDE ~d9bodfgh~ #8
+   	SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2  // 2 stars in two handed sword
 BUT_ONLY */
 
 // Vampiric Mist - Brume vampirique - Gender EXTRA
@@ -366,12 +371,14 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9mflf01.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Fledging Vampire male - Vampire novice NOT USED
+/* Fledging Vampire male - Vampire novice ==> NOT USED (but used in component #54)
 // --------------------------------------
-COPY_EXISTING ~vamflm01.cre~ ~override/d9mflm01.cre~
-	WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
-	WRITE_ASCII SCRIPT_CLASS ~d9dwctyz~ #8  // for better compatibility with ATweaks
-BUT_ONLY
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9mflm01.cre~ BEGIN
+	COPY_EXISTING ~vamflm01.cre~ ~override/d9mflm01.cre~
+		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
+		WRITE_ASCII SCRIPT_CLASS ~d9dwctyz~ #8  // for better compatibility with ATweaks
+	BUT_ONLY
+END*/
 
 // Vampire (11th Level)
 // --------------------
@@ -417,12 +424,12 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9tanov.cre~ BEGIN
 	BUT_ONLY
 END
 
-// Fledging Vampire male - Vampire novice NOT USED
+/* Fledging Vampire male - Vampire novice ==> NOT USED (but used in component #54)
 // --------------------------------------
 COPY_EXISTING ~vamflm01.cre~ ~override/d9mflm03.cre~
 	WRITE_BYTE  0x275 ~11~  // Gender = EXTRA3
 	WRITE_ASCII SCRIPT_CLASS ~d9dwctyz~ #8  // for better compatibility with ATweaks
-BUT_ONLY
+BUT_ONLY*/
 
 // Vampire (13th Level) - Gender EXTRA3
 // ------------------------------------
