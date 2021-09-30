@@ -101,8 +101,8 @@ COPY_EXISTING ~sahpr5.cre~ ~override/d9hpr5.cre~
 	WRITE_ASCII SCRIPT_CLASS ~none~ #8
 BUT_ONLY
 
-// Sahuagin Rebel (melee 12th Level)
-// ---------------------------------
+// Fake Sahuagin Rebel (melee 12th Level) - Gender EXTRA2
+// ------------------------------------------------------
 COPY_EXISTING ~sahgrd02.cre~ ~override/d9hgrd09.cre~
 	SAY NAME1 @5602
 	SAY NAME2 @5602
@@ -134,7 +134,7 @@ COPY_EXISTING ~sahchf01.cre~ ~override/d9hchf01.cre~
 	SAY NAME2 @5603
 	WRITE_SHORT 0x024 130                  // Current HP (vanilla = 36)
 	WRITE_SHORT 0x026 130                  // Maximum HP (vanilla = 36)
-	WRITE_LONG  0x028 slot_sahuagin_large  // IDS_OF_SYMBOL(~ANIMATE~ ~SAHUAGIN_LARGE~) // SAHAUGIN_LARGE ???
+	WRITE_LONG  0x028 slot_sahuagin_large  // IDS_OF_SYMBOL(~ANIMATE~ ~SAHUAGIN_LARGE~)
 	WRITE_BYTE  0x052 4                    // THAC0 (vanilla = 13)
 	WRITE_BYTE  0x270 255                  // Enemy
 	WRITE_BYTE  0x275 ~11~                 // Gender = EXTRA3
@@ -148,7 +148,7 @@ COPY_EXISTING ~sahpri01.cre~ ~override/d9hpri01.cre~
 	SAY NAME2 @5603
 	WRITE_SHORT 0x024 130                  // Current HP (vanilla = 72)
 	WRITE_SHORT 0x026 130                  // Maximum HP (vanilla = 72)
-	WRITE_LONG  0x028 slot_sahuagin_large  // IDS_OF_SYMBOL(~ANIMATE~ ~SAHUAGIN_LARGE~) // SAHAUGIN_LARGE ???
+	WRITE_LONG  0x028 slot_sahuagin_large  // IDS_OF_SYMBOL(~ANIMATE~ ~SAHUAGIN_LARGE~)
 	WRITE_BYTE  0x052 4                    // THAC0 (vanilla = 2)
 	WRITE_BYTE  0x270 255                  // Enemy
 	WRITE_BYTE  0x275 ~11~                 // Gender = EXTRA3
@@ -169,9 +169,9 @@ COPY_EXISTING ~sahpr1.cre~ ~override/d9hpr1.cre~
 	WRITE_ASCII DIALOG ~none~ #8
 BUT_ONLY
 
-// Fake Sahuagin Rebel (melee 12th Level)
-// --------------------------------------
-COPY_EXISTING ~sahgrd02.cre~ ~override/d9hgrd09.cre~
+// Fake Sahuagin Rebel (melee 12th Level) - Gender EXTRA3
+// ------------------------------------------------------
+COPY_EXISTING ~sahgrd02.cre~ ~override/d9hgrd99.cre~
 	WRITE_SHORT 0x024 100   // Current HP (vanilla = 81)
 	WRITE_SHORT 0x026 100   // Maximum HP (vanilla = 81)
 	WRITE_BYTE  0x052 8     // THAC0 (vanilla = 11, but 2 in BG2EE !!!)
