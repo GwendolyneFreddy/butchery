@@ -219,7 +219,8 @@ COPY ~%MOD_FOLDER%/sarevok/d9dava.cre~ ~override~
 	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
 BUT_ONLY
 
-// Groumf (L13 Berserker) ==> NOT USED
+/* ==> NOT USED
+// Groumf (L13 Berserker)
 // ----------------------
 COPY ~%MOD_FOLDER%/sarevok/d9groumx.cre~ ~override~
 	SAY NAME1 @104
@@ -274,7 +275,7 @@ COPY ~%MOD_FOLDER%/sarevok/d9bourx.cre~ ~override~
 	SAY SPELL_DISRUPTED ~~ [d9bara6]
 	WRITE_ASCII SCRIPT_OVERRIDE ~D9TazokX~ #8
 BUT_ONLY
-
+*/
 // Wraith Sarevok revisited
 // ------------------------
 COPY_EXISTING ~hellsare.cre~ ~override~
@@ -326,12 +327,12 @@ LAF extend_area_script STR_VAR area = "ar2905" top = "%MOD_FOLDER%/sarevok/d9ar2
 */
 
 
-// Gwen Note: To be restored if Groumf and Bourrinos are also restored!!!
-// ----------------------------------------------------------------------
 /* ---------------------- *
  *  Installing Soundsets  *
  * ---------------------- *
 
+// Gwen Note: To be restored if Groumf and Bourrinos are also restored!!!
+// ----------------------------------------------------------------------
 ACTION_IF NOT is_soundset BEGIN
 	ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
 		LAF HANDLE_AUDIO
