@@ -114,7 +114,8 @@ END
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9mver01.cre~ BEGIN
 	COPY_EXISTING ~vamver01.cre~ ~override/d9mver01.cre~
 		WRITE_BYTE  0x275 ~10~  // Gender = EXTRA2
-		WRITE_ASCII SCRIPT_CLASS ~d9dwctyz~ #8  // for better compatibility with ATweaks
+//		WRITE_ASCII SCRIPT_CLASS ~d9dwctyz~ #8  // for better compatibility with ATweaks
+		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	BUT_ONLY
 END
 
