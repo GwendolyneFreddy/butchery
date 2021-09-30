@@ -838,9 +838,9 @@ COPY_EXISTING ~slapri.cre~ ~override~
 BUT_ONLY
 
 
-/* ------------------------------------------------------ *
- *  Rationalise Captain Haegan into a 15th Level Fighter  * TODO 13 dans le code ???
- * ------------------------------------------------------ */
+/* ------------------------------------------------------- *
+ *  Rationalizes Captain Haegan into a 15th Level Fighter  *
+ * ------------------------------------------------------- */
 COPY_EXISTING ~haegan.cre~ ~override~
 	ADD_CRE_ITEM ~PLAT04~ #0 #0 #0 ~NONE~ ~ARMOR~         // Full Plate Mail
 	ADD_CRE_ITEM ~POTN52~ #7 #0 #0 ~undroppable~ ~QITEM2~ // 7 Potions of Extra Healing
@@ -876,9 +876,9 @@ COPY_EXISTING ~haegan.cre~ ~override~
 BUT_ONLY
 
 
-/* -------------------- *
- *  Rationalise Ilyich  *
- * -------------------- */
+/* --------------------- *
+ *  Rationalizes Ilyich  *
+ * --------------------- */
 COPY_EXISTING ~duecla01.cre~ ~override~
 	REMOVE_CRE_ITEM ~SLNG01~
 	REMOVE_CRE_ITEM ~BULL01~
@@ -924,9 +924,9 @@ COPY_EXISTING ~duecla01.cre~ ~override~
 BUT_ONLY
 
 
-/* ------------------------------------- *
- *  Rationalise Beast Master (Dompteur)  *
- * ------------------------------------- */
+/* -------------------------------------- *
+ *  Rationalizes Beast Master (Dompteur)  *
+ * -------------------------------------- */
 COPY_EXISTING ~beast.cre~ ~override~
 	REMOVE_CRE_ITEM ~AROW01~
 	REPLACE_CRE_ITEM ~LEAT05~ #0 #0 #0 ~NONE~ ~ARMOR~       // Studded Leather Armor +1 replaces Plate Mail Armor (PLAT01)

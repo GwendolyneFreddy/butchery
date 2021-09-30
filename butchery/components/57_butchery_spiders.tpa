@@ -120,15 +120,6 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~d9idsm02.cre~ BEGIN
 		WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 	BUT_ONLY
 END
-/* TODO
-COPY_EXISTING ~spidsm02.cre~ ~override/d9idsm02.cre~
-	WRITE_SHORT 0x024 100  // Current HP (vanilla 30)
-	WRITE_SHORT 0x026 100  // Maximum HP (vanilla 30)
-	WRITE_BYTE  0x052 0    // THAC0 (vanilla = 4)
-11
-	WRITE_SHORT 0x024 110  // Current HP (vanilla = 30)
-	WRITE_SHORT 0x026 110  // Maximum HP (vanilla = 30)
-*/
 
 // Sword Spider - Araignée sabre - Gender EXTRA3 ==> NOT USED
 // ---------------------------------------------
