@@ -5,7 +5,7 @@
 ![Language](https://img.shields.io/static/v1?label=langues&message=Fran%C3%A7ais%20%7C%20Anglais%20%7C%20Russe&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=jeux%20support%C3%A9s&message=BGII:ToB%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
-<a href="README.md"><img align="right" src="butchery/readme/images/uk-flag-32.png" title="English Readme"></a>
+<a href="README.md"><img align="right" src="butchery/readme/images/uk-flag-32.png" title="English Readme"> <img align="right" src="butchery/readme/images/us-flag-32.png" title="English Readme"></a>
 
 
 <div align="center"><h1><BuTcHeRy</h1>

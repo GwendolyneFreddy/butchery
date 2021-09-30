@@ -324,7 +324,7 @@ I didn't modify vanilla fighting scripts at all. So if you don't install Stratag
 
 ## 
 
-<a name="12" id="12"></a>&#10173; **[12] Rebalancing Rebalancing Tazok and DigDa**
+<a name="12" id="12"></a>&#10173; **[12] Rebalancing Rebalancing Tazok and DigDag**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
 &#9755; In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok slightly (slightly better saving thrown and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). There are also cosmetic changes: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
