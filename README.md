@@ -1,7 +1,7 @@
 
 ![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/butchery?include_prereleases&color=gold)<a name="top" id="top"> </a>
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/GwendolyneFreddy/butchery?color=gold)
-![Platform](https://img.shields.io/static/v1?label=platformes&message=windows%20%7C%20macOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
+![Platform](https://img.shields.io/static/v1?label=platforms&message=windows%20%7C%20macOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=French%20%7C%20English%20%7C%20Russian&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
@@ -10,7 +10,7 @@
 
 <div align="center"><h1>BuTcHeRy</h1>
 
-<h3>A <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a> mod for Baldur's Gate II:ToB (classical and EE games),<br>
+<h3>A <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a> mod for Baldur's Gate II:ToB (original and EE games),<br>
 Baldur's Gate Trilogy and EET<h3>
 </div><br>
 
@@ -44,9 +44,9 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## <a name="intro" id="intro"></a>Overview
 
-The main objectif of this little mod was to add a challenging and fun fight in Firkraag's hideout.
+The main objective of this little mod was to add a challenging and fun fight in Firkraag's hideout.
 
-I like Baldur's Gate a lot, and I wrote this mod (first version in 2010) to become a minimum familiar with some modding stuffs. Thanks to Freddy_Gwendo, the BuTcHeRy is now compatible with the Enhanced Editions, EET and BGT. I also added a few improvements.
+I like Baldur's Gate a lot, and I wrote this mod (first version in 2010) to become a little familiar with some modding stuff. Thanks to Freddy_Gwendo, the BuTcHeRy is now compatible with the Enhanced Editions, EET and BGT. I also added a few improvements.
 
 Secondary objectives are:
 
@@ -55,11 +55,11 @@ Secondary objectives are:
 - Difficulty level scaling: difficulty will be adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. (more details <a href="#components">below</a>)
 - Spice up many battles by turning them into 'butchery fights', with a few spawns and respawns.
 - Make a few non-spellcaster creatures a bit more challenging (while non cheated) using kit abilities, having proficiencies in weapons, etc.
-- Have challenging and charismatic boss (Tazok, DigDag, Sarevok).
+- Have challenging and charismatic bosses (Tazok, DigDag, Sarevok).
 - Keep 100% content of the original game. I add a few things, but I don't remove a single one.
-- Add a bit of fun dialogues and cutscenes.
+- Add some fun dialogues and cutscenes.
 - No big loots or new magical items.
-- Have 100% compatibility and optimisation with <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> and <a href="https://github.com/Gibberlings3/ItemRevisions">Item Revisions</a> (especially with its '*potions revisions*' component).<br><br>
+- Have 100% compatibility and optimization with <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> and <a href="https://github.com/Gibberlings3/ItemRevisions">Item Revisions</a> (especially with its '*potions revisions*' component).<br><br>
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -90,7 +90,7 @@ If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacou
 
 #### Installation Order
 
->Classical games players are strongly recommended to download and install the latest version of the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
+>Classic games players are strongly recommended to download and install the latest version of the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
 >You should also install the "<a href="http://www.mediafire.com/file/b9mtiwvj4aah42r/Derats_AutoRest_v4.zip/file">auto resting</a>" mod (from deratiseur) that allows you to restore your spells without having to rest for 8 hours. :wink:
 
 Here is the recommended installation order:
@@ -121,7 +121,7 @@ You can extract files from the archive using <a href="https://www.7-zip.org/down
 
 #### Enhanced Editions Note
 
-The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old save games. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 
 ## 
 
@@ -147,7 +147,7 @@ Run **`setup-butchery.command`** in your game folder to reinstall, un-install or
 
 #### Linux
 
-The BuTcHeRy for Linux is distributed in the same compressed archive and does not include a WeiDU installer.
+BuTcHeRy for Linux is distributed in the same compressed archive and does not include a WeiDU installer.
 
 Extract the contents of the mod to the folder of the game you wish to modify.
 
@@ -181,7 +181,7 @@ The installer includes the following components. The number of each is the compo
 ><span style="margin-left: 50px;"><a href="#22">[22] Groumf and Bourrinos Encounter in the Underdark</a> <em>&nbsp;[install before Stratagems]</em></span><br>
 
 ><span style="margin-left: 50px;"><a href="#30">{30] Revisited fight against Wraith Sarevok in the Abyss</a> <em>&nbsp;[install before Stratagems]</em></span></br>
-><span style="margin-left: 50px;"><a href="#31">{31] Move Samia group into Firkraag's Entrance (BETA and bugged) <em>&nbsp;[install before or after Stratagems]</em></span><br>
+><span style="margin-left: 50px;"><a href="#31">{31] Move Samia group into Firkraag's Entrance (BETA and bugged)</a> <em>&nbsp;[install before or after Stratagems]</em></span><br>
 ><span style="margin-left: 50px;"><a href="#32">{32] Add battle songs in some areas that do not have any</a> <em>&nbsp;[install before or after Stratagems]</em></span><br>
 
 ><span style="margin-left: 50px;"><a href="#40">{40] DrAzTiK's Creatures</a> <em>&nbsp;[install before Stratagems]</em></span><br>
@@ -216,9 +216,9 @@ This is the major latest mod improvement. I know that it can be frustrating to h
 
 - <ins>Core Rules</ins>: normal and decent amount of enemies (no divine or arcane enemies spellcasters).
 - <ins>Difficult</ins>: a bit more numerous enemies and especially divine/arcane enemies spellcasters.
-- <ins>Very difficult</ins>: again, a bit more enemies and a even more divine/arcane enemies spellcasters.
+- <ins>Very difficult</ins>: again, a few more enemies and even more divine/arcane enemies spellcasters.
 
-Be aware that even with Core Rules, the challenge might be quite difficult (especially before Underdark) because this mod adresses to players looking for a better challenge. :wink:
+Be aware that even with Core Rules, the challenge might be quite difficult (especially before Underdark) because this mod addresses players looking for a better challenge. :wink:
 
 <div align="right"><a href="#top">Back to top</a></div>
 
@@ -231,14 +231,14 @@ This is the very first component, and the genesis of this mod.
 
 I have always found the fight against Tazok and DigDag in Firkraag's Hideout nothing more than a pathetic joke. Obviously, Firkaag is supposed to be an optional boss (like the shadow dragon) surely unbeatable before Underdark. All banters and interjections suppose the party want to escape in front of Firkraag without thinking twice and come back later, really later.
 
-So I assume Tazok and DigDag are supposed to be the big vilains in Firkaag's lair and IMO the fight deserves to be a bit more challenging and fun. The fight vs Tazok and DigDag will now take place where you usually fight Firkraag (AR1203). Don't worry, you will be also able to fight Firkraag. This component doesn't modify or tweak creatures at all except:
+So I assume Tazok and DigDag are supposed to be the big villains in Firkaag's lair and IMO the fight deserves to be a bit more challenging and fun. The fight vs Tazok and DigDag will now take place where you usually fight Firkraag (AR1203). Don't worry, you will be also able to fight Firkraag. This component doesn't modify or tweak creatures at all except:
 
 - DigDag gets a new script, letting him have some new dialogs and drink 2 potions before fighting.
 - Tazok gets a new script, allowing him to drink 2 potions before fighting.
 
 This component also adds some of my customs creatures and especially two fighters of my own composition. Their duty is to protect Tazok and DigDag during the final fight.
 
-:warning: <ins>Note for English language players</ins>: Two new creatures get their own soundsets, unfortunately only available in French. But they have been traified as for the latest version &#128521; and they are still waiting for their English sound files. If anyone would provide them, I would be pleased to include them in the next version. &#128578;
+:warning: <ins>Note for English language players</ins>: Two new creatures get their own sound sets, unfortunately only available in French. But they have been traified as for the latest version &#128521; and they are still waiting for their English sound files. If anyone would provide them, I would be pleased to include them in the next version. &#128578;
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -248,7 +248,7 @@ This component also adds some of my customs creatures and especially two fighter
 
 &#9755;</span> This component improves stats, saving throws, hit points and skill points of a few generic creatures (orc and ogre fighters at the beginning, and many animals and other creatures as of version 5.0.0). Most of them have now a barbarian or berserker kit, a weapon which suits their avatars, etc. but I often keep their vanilla level. But you will need to install Stratagems for these creatures to use their special abilities.
 
-Enemy skeletons and mummies' abilities are standardised: they still have 100% resistance to electricity and cold and 10% magic resistance per level. Their resistance to missile attacks is 90%. This makes them fearsome foes.
+Enemy skeletons and mummies' abilities are standardized: they still have 100% resistance to electricity and cold and 10% magic resistance per level. Their resistance to missile attacks is 90%. This makes them fearsome foes.
 
 In addition, some of the "half-bosses" have had their combat stats and equipment upgraded a bit (Ilyich in particular).
 
@@ -315,11 +315,11 @@ In addition, some of the "half-bosses" have had their combat stats and equipment
 	</tr>
 </table><br>
 
-Except high scores in STR and CON, these creatures have now the same features and obey the same rules as other humanoids (thac0, saves, hit point, kit bonus etc..), except they remain a bit slow, have an incredible moral and a good AC.
+Except high scores in STR and CON, these creatures have now the same features and obey the same rules as other humanoids (thac0, saves, hit point, kit bonus etc..), except they remain a bit slow, have an incredible morale and a good AC.
 
-You will find mostly theses creatures only in Windspear Hills and in Firkraag's Hideout. I also added a lot of them in my mod (the reason why I wrote this component).
+You will find mostly these creatures only in Windspear Hills and in Firkraag's Hideout. I also added a lot of them in my mod (the reason why I wrote this component).
 
-I didn't modify vanilla fighting scripts at all. So if you don't install Stratagems '*Smarter general AI*' component, theses creatures will not use their kit abilities.
+I didn't modify vanilla fighting scripts at all. So if you don't install Stratagems '*Smarter general AI*' component, these creatures will not use their kit abilities.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -327,11 +327,11 @@ I didn't modify vanilla fighting scripts at all. So if you don't install Stratag
 <a name="12" id="12"></a>&#10173; **[12] Rebalancing Rebalancing Tazok and DigDa**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#9755; In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok lightly (slightly better saving thrown and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). It is also cosmetic: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
+&#9755; In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok slightly (slightly better saving thrown and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). There are also cosmetic changes: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
 
-If you want Tazok to be a berseker, you must install stratagems '*Smarter general AI*' component (no problem of compatibility issue).
+If you want Tazok to be a berserker, you must install stratagems '*Smarter general AI*' component (no problem of compatibility issue).
 
-Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
+Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
 
 
 <table style="margin-left: 80px" summary="Rebalanced Tazok and Dig-Dag">
@@ -511,7 +511,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 <a name="51" id="51"></a>&#10173; **[51] Butchery of Yaga-Shura revisited**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Ascension and Stratagems</em><br><br>
 
-&#9755; This component greatly modifies the battle against Yaga-Shura army in ToB to make it longer and more difficult. It will only work with <a href="https://www.gibberlings3.net/files/file/1011-ascension/">Ascension</a> (David Wallace's version) and <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a>.
+&#9755; This component greatly modifies the battle against Yaga-Shura army in ToB to make it longer and more difficult. It was designed to be fully operational with <a href="https://www.gibberlings3.net/files/file/1011-ascension/">Ascension</a> (David Wallace's version) and <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a>. Therefore I strongly recommend to install it together with these two mods to fully enjoy it.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -576,8 +576,8 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 ## 
 
-<a name="80" id="80"></a>&#10173; **[80] Transformer BG2 en Dungeon crawler**
-###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Composant pré-requis : <a href="#40">[40] Créatures de DrAzTiK</a></em><br><br>
+<a name="80" id="80"></a>&#10173; **[80] More enemies scattered throughout the game**
+###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install after Stratagems&nbsp;&nbsp;-&nbsp;&nbsp;Requires component : <a href="#40">[40] DrAzTiK's Creatures</a></em><br><br>
 
 &#9755; This component adds a lot of enemies in areas that are usually very quiet and unchallenging. This makes the gameplay more like a Dungeon Crawler, like in Icewind Dale.
 
@@ -637,10 +637,10 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 ## 
 
-<a name="90" id="90"></a>&#10173; **[90] Composant cosmétique**
+<a name="90" id="90"></a>&#10173; **[90] Cosmetic component**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before or after Stratagems</em><br><br>
 
-&#9755; Ce composant attribue aux drows des animations d'elfes.
+&#9755; With this component, drows get elven animations.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 
@@ -723,9 +723,10 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 - <a href="https://www.baldursgateworld.fr"><acronym title="Copper Coronet">La Couronne de Cuivre</acronym></a> team for hosting the mod.
 - The creators of the Baldur's Gate series: <a href="https://www.bioware.com/">Bioware</a> and <a href="https://www.obsidian.net/">Black Isle Studios</a>.
+- Huge thanks to Lauriel for proofreading the English translation.
 - Big thanks to yota13 for providing the Russian translation.
 - Big thanks to Freddy_Gwendo (aka Gwendolyne) for making possible the update of this mod.
-- Thanks to Pen of Chaos for borrowing his barbarian French soundset.
+- Thanks to Pen of Chaos for borrowing his barbarian French sound set.
 - Thanks to artists from <a href="https://www.pinterest.fr/">Pinterest</a> for their portraits.
 - Everyone else from the <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a>, <a href="https://www.gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.
 
@@ -747,7 +748,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 
 #### Copyright Information
 
-###### The BuTcHeRy is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by DrAzTiK, based on material from the game Baldur's Gate II and its expansion.
+###### BuTcHeRy is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by DrAzTiK, based on material from the game Baldur's Gate II and its expansion.
 ###### All mod content is &copy;DrAzTiK.
 ###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
 ###### If there are any copyright issues or this statement needs revision, then please contact me and advise me what to do about it. Most notably, if you see any artwork in this mod that might conflict with Copyright rules, please let me know as soon as possible, and I will remove the conflicting content immediately.
@@ -808,13 +809,13 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
     - Compiled *d9tazokk.baf* if 1st component has not been installed.
 - ...
 - Added Russian translation (by yota13).
-- Proofread English strrefs and completed English translation (Gwendolyne).
+- Proofread English strrefs and completed English translation (Gwendolyne and Lauriel).
 - Added brand new *butchery-readme-%LANGUAGE%.html* files, with videos and moved them into new :file_folder: *readme* folder.
 - Removed useless :file_folder: "*backup*" folder.
 - Lower cased files.
 - Included Linux and macOS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Updated OggDec to v1.9.7 and added sox v14.4.1 for mac.
-- Added archive libiconv-1.9.2-1-src.7z with iconv licence info.
+- Added archive libiconv-1.9.2-1-src.7z with iconv license info.
 - Updated WeiDU installer to v247.
 
 ## 
@@ -833,12 +834,12 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 	- No longer overwrites mod item files if there are already installed.
 	- Used new WeiDU variables (INV RING QITEM...) with `ADD_CRE_ITEM` command.
 	- Provided new portraits for BG2:EE.
-	- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function to install soundsets.
+	- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function to install sound sets.
 	- Used `HANDLE_CHARSETS` function to add BG2EE compatibility for languages other than English.
 	- Removed unused files from mod folder.
 	- Updated readme (Butchery now supports translated readmes)
 	- Revamped French translation and fixed English typos courtesy of Gwendolyne.
-	- Traified creatures soundsets (still waiting for English sound files).
+	- Traified creatures sound sets (still waiting for English sound files).
 	- Reorganized and merged tra files into 3 files.
 	- Updated WeiDU installer to v246.
 
@@ -849,7 +850,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's ones.
 ##### Version 3.2 &nbsp;(October 10, 2011)
 - Increased Tazok to level 19 Barbarian.
 - Added a magical armor to Tazok.
-- Increased DigDag to level 13 Berseker.
+- Increased DigDag to level 13 Berserker.
 - Decreased the number of Orcs spawned in final fight.
 
 ## 

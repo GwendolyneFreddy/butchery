@@ -493,7 +493,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 <a name="51" id="51"></a>&#10173; **[51] Boucherie de Yaga-Shura améliorée**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer après Ascension et Stratagems</em><br><br>
 
-&#9755; Ce composant modifie grandement la bataille contre l'armée de Yaga-Shura dans ToB pour la rendre plus longue et plus difficile. Il ne fonctionnera que si vous avez installé <a href="https://www.gibberlings3.net/files/file/1011-ascension/">Ascension</a> (version de David Wallace) et <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a>.
+&#9755; Ce composant modifie grandement la bataille contre l'armée de Yaga-Shura dans ToB pour la rendre plus longue et plus difficile. Il a été conçu pour être pleinement opérationnel avec <a href="https://www.gibberlings3.net/files/file/1011-ascension/">Ascension</a> (version de David Wallace) et <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a>, et il est conseillé de l'installer conjointement avec ces deux mods pour en profiter à fond.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 
@@ -706,6 +706,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 
 - L'équipe de <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a> pour l'hébergement de ce mod.
 - Les créateurs de la série Baldur's Gate : <a href="https://www.bioware.com/">Bioware</a> et <a href="https://www.obsidian.net/">Black Isle Studios</a>.
+- Un énorme merci à Lauriel pour avoir relu et corrigé la version anglaise.
 - Merci à yota13 pour la traduction russe.
 - Un grand merci à Freddy_Gwendo pour avoir rendu possible la mise à jour de ce mod.
 - Merci à Pen of Chaos pour son pack de sons de barbare.
@@ -764,12 +765,12 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 	- No longer overwrites mod item files if there are already installed.
 	- Used new WeiDU variables (INV RING QITEM...) with `ADD_CRE_ITEM` command.
 	- Provided new portraits for BG2:EE.
-	- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function to install soundsets.
+	- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function to install sound sets.
 	- Used WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
 	- Deleted unused files from mod folder.
 	- Updated readme (Butchery now supports translated readmes)
 	- Revamped French translation and fixed English typos courtesy of Gwendolyne.
-	- Traified creatures soundsets (still waiting for English sound files).
+	- Traified creatures sound sets (still waiting for English sound files).
 	- Reorganized and merged tra files into 3 files.
 	- Updated WeiDU installer to v246.
 
@@ -781,7 +782,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 
 - Increased Tazok to level 19 Barbarian.
 - Added a magical armor to Tazok.
-- Increased DigDag to level 13 Berseker.
+- Increased DigDag to level 13 Berserker.
 - Decreased the number of Orcs spawned in final fight.
 
 ## 

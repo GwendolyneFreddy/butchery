@@ -11,7 +11,7 @@
  * ------------ */
 @10 = ~Combat contre Tazok et DigDag revise par DrAzTiK [a installer avant Stratagems]~
 @11 = ~Reequilibrage de certaines creatures generiques [a installer avant Stratagems]~
-@12 = ~Reequilibrage de Tazok et de DigDag [a installer apres Stratagems]~
+@12 = ~Reequilibrage de Tazok et de DigDag [a installer avant Stratagems]~
 
 @20 = ~Rencontre avec Groumf et Bourrinos devant le donjon de Firkraag [a installer avant Stratagems]~
 @21 = ~Rencontre avec Groumf et Bourrinos a Brynnlaw [a installer avant Stratagems]~
@@ -31,7 +31,7 @@
 @47 = ~Boucherie d'orques dans les Collines de Lancevent [a installer apres Stratagems]~
 @48 = ~Boucherie de loups dans les Collines d'Umar [a installer apres Stratagems]~
 @49 = ~2 boucheries d'animaux sauvages : Franc-Marche et Tour de Garde [a installer apres Stratagems]~
-@50 = ~2 boucheries de golems a Sulanessellar et dans la Tour de Garde (Machine de Lum le Fou) [a installer apres Stratagems]~
+@50 = ~2 boucheries de golems a Suldanessellar et dans la Tour de Garde (Machine de Lum le Fou) [a installer apres Stratagems]~
 @51 = ~Boucherie de Yaga Shura amelioree [a installer apres Ascension et Stratagems]~
 @52 = ~Boucherie d'animaux/druides dans le Bosquet aux druides [a installer apres Stratagems]~
 @53 = ~Boucherie de fanatiques dans l'antre de l'Oeil aveugle [a installer apres Stratagems]~
