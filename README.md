@@ -214,9 +214,9 @@ The installer includes the following components. The number of each is the compo
 
 This is the major latest mod improvement. I know that it can be frustrating to have a too much difficult -or easy- fight, so this new possibility will surely be appreciated. The numbers and variety of opponents are now adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. These adjustments are reflected as follows:
 
-- <ins>Core Rules</ins>: normal and decent amount of enemies (no divine or arcane enemies spellcasters).
-- <ins>Difficult</ins>: a bit more numerous enemies and especially divine/arcane enemies spellcasters.
-- <ins>Very difficult</ins>: again, a few more enemies and even more divine/arcane enemies spellcasters.
+- <ins>Core Rules</ins>: normal and decent amount of enemies (no divine or arcane enemy spellcasters).
+- <ins>Difficult</ins>: a bit more numerous enemies and especially divine/arcane enemy spellcasters.
+- <ins>Very difficult</ins>: again, a few more enemies and even more divine/arcane enemy spellcasters.
 
 Be aware that even with Core Rules, the challenge might be quite difficult (especially before Underdark) because this mod addresses players looking for a better challenge. :wink:
 
