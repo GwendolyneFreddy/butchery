@@ -5,7 +5,7 @@
 ![Language](https://img.shields.io/static/v1?label=language&message=French%20%7C%20English%20%7C%20Russian&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
-<a href="README-FR.md"><img align="right" src="butchery/readme/images/fr-flag-32.png" title="Readme français"></a>
+<a href="readme-FR.md"><img align="right" src="butchery/readme/images/fr-flag-32.png" title="Readme français"></a>
 
 
 <div align="center"><h1>BuTcHeRy</h1>
@@ -214,9 +214,9 @@ The installer includes the following components. The number of each is the compo
 
 This is the major latest mod improvement. I know that it can be frustrating to have a too much difficult -or easy- fight, so this new possibility will surely be appreciated. The numbers and variety of opponents are now adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. These adjustments are reflected as follows:
 
-- <ins>Core Rules</ins>: normal and decent amount of enemies (no divine or arcane enemies spellcasters).
-- <ins>Difficult</ins>: a bit more numerous enemies and especially divine/arcane enemies spellcasters.
-- <ins>Very difficult</ins>: again, a few more enemies and even more divine/arcane enemies spellcasters.
+- <ins>Core Rules</ins>: normal and decent amount of enemies (no divine or arcane enemy spellcasters).
+- <ins>Difficult</ins>: a bit more numerous enemies and especially divine/arcane enemy spellcasters.
+- <ins>Very difficult</ins>: again, a few more enemies and even more divine/arcane enemy spellcasters.
 
 Be aware that even with Core Rules, the challenge might be quite difficult (especially before Underdark) because this mod addresses players looking for a better challenge. :wink:
 
@@ -229,16 +229,16 @@ Be aware that even with Core Rules, the challenge might be quite difficult (espe
 
 This is the very first component, and the genesis of this mod.
 
-I have always found the fight against Tazok and DigDag in Firkraag's Hideout nothing more than a pathetic joke. Obviously, Firkaag is supposed to be an optional boss (like the shadow dragon) surely unbeatable before Underdark. All banters and interjections suppose the party want to escape in front of Firkraag without thinking twice and come back later, really later.
+I have always found the fight against Tazok and DigDag in Firkraag's Hideout nothing more than a pathetic joke. Obviously, Firkaag is supposed to be an optional boss (like the shadow dragon) surely unbeatable before Underdark. All banters and interjections suppose the party wants to escape before engaging Firkraag without thinking twice and come back later, really later.
 
 So I assume Tazok and DigDag are supposed to be the big villains in Firkaag's lair and IMO the fight deserves to be a bit more challenging and fun. The fight vs Tazok and DigDag will now take place where you usually fight Firkraag (AR1203). Don't worry, you will be also able to fight Firkraag. This component doesn't modify or tweak creatures at all except:
 
 - DigDag gets a new script, letting him have some new dialogs and drink 2 potions before fighting.
 - Tazok gets a new script, allowing him to drink 2 potions before fighting.
 
-This component also adds some of my customs creatures and especially two fighters of my own composition. Their duty is to protect Tazok and DigDag during the final fight.
+This component also adds some of my custom creatures and especially two fighters of my own composition. Their duty is to protect Tazok and DigDag during the final fight.
 
-:warning: <ins>Note for English language players</ins>: Two new creatures get their own sound sets, unfortunately only available in French. But they have been traified as for the latest version &#128521; and they are still waiting for their English sound files. If anyone would provide them, I would be pleased to include them in the next version. &#128578;
+:warning: <ins>Note for English language players</ins>: Two new creatures get their own sound sets, unfortunately only available in French. But they have been traified for the latest version &#128521; and are only waiting for their English sound files. If anyone would provide them, I would be pleased to include them in the next version. &#128578;
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
@@ -246,7 +246,7 @@ This component also adds some of my customs creatures and especially two fighter
 <a name="12" id="11"></a>&#10173; **[11] Rebalancing some generic creatures**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#9755;</span> This component improves stats, saving throws, hit points and skill points of a few generic creatures (orc and ogre fighters at the beginning, and many animals and other creatures as of version 5.0.0). Most of them have now a barbarian or berserker kit, a weapon which suits their avatars, etc. but I often keep their vanilla level. But you will need to install Stratagems for these creatures to use their special abilities.
+&#9755;</span> This component improves stats, saving throws, hit points and skill points of a few generic creatures (orc and ogre fighters at the beginning, and many animals and other creatures as of version 5.0.0). Most of them have now a barbarian or berserker kit, a weapon which suits their avatars, etc, but I often keep their vanilla level. But you will need to install Stratagems for these creatures to use their special abilities.
 
 Enemy skeletons and mummies' abilities are standardized: they still have 100% resistance to electricity and cold and 10% magic resistance per level. Their resistance to missile attacks is 90%. This makes them fearsome foes.
 
@@ -327,7 +327,7 @@ I didn't modify vanilla fighting scripts at all. So if you don't install Stratag
 <a name="12" id="12"></a>&#10173; **[12] Rebalancing Rebalancing Tazok and DigDag**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#9755; In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok slightly (slightly better saving thrown and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). There are also cosmetic changes: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
+&#9755; In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok slightly (slightly better saving throws and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). There are also cosmetic changes: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
 
 If you want Tazok to be a berserker, you must install stratagems '*Smarter general AI*' component (no problem of compatibility issue).
 
@@ -397,7 +397,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
 <a name="30" id="30"></a>&#10173; **[30] Revisited fight against Wraith Sarevok in the Abyss**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#9755; This component greatly improves the final battle against Sarevok in the layer of the Abyss once ruled by Bhaal. The latter will be assisted by his former teammates from BG1.
+&#9755; This component greatly improves the final battle against Sarevok in the layer of the Abyss once ruled by Bhaal. He will be assisted by his former teammates from BG1.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 

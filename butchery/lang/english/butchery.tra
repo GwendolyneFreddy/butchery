@@ -40,7 +40,7 @@
 // d9ar1203.baf
 // ------------
 @321 = ~A powerful magic barrier is suddenly appearing, it's now impossible to turn back.~ // former @480
-@322 = ~DigDag, the hideous orc leader is dead now and his horde will soon stop fighting. However, you have the feeling it can't end up so easily and you should prepare yourself for the last challenge!~ // former @460
+@322 = ~DigDag, the hideous orc leader is now dead and his horde will soon stop fighting. However, you have the feeling it can't end quite so easily and should prepare yourself for the final challenge!~ // former @460
 @323 = ~This time, Tazok has definitely rejoined Sarevok in hell and his minions will not disturb you for a long time.~ // former @461
 
 // d9cutta1.baf
@@ -49,7 +49,7 @@
 @333 = ~Attention!~                                                        // former @472
 @334 = ~Damn, you're so ugly!~                                             // former @473
 @335 = ~Yes, sir!~                                                         // former @474
-@336 = ~My Lord, the magic barrier is working now, intruders are trapped.~ // former @475
+@336 = ~My Lord, the magic barrier is working now, the intruders are trapped.~ // former @475
 @337 = ~Great job! The master will be pleased and I will have my revenge!~ // former @476
 /* DEPRECATED ==> DO NOT TRANSLATE
 @477 = ~J'vais vous écraser 
@@ -59,7 +59,7 @@ le nez !~
 
 // d9groum8.baf : Meeting with Groumf and Bourrinos in the Underdark
 // -----------------------------------------------------------------
-@2201 = ~Still more drows!
+@2201 = ~Still more Drow!
 Attack! And no mercy!~
 
 
@@ -83,7 +83,7 @@ Attack! And no mercy!~
 
 // d9sarevo.baf
 // ------------
-@3050 = ~To my side, my followers!~
+@3050 = ~To me, my followers!~
 @3051 = ~Hahaha! It is not over yet!~
 //@14552 = ~Semaj ! Noooon !~  // unused ==> DO NOT TRANSLATE
 //@14553 = ~Tamoko ! Noooon !~ // unused ==> DO NOT TRANSLATE
@@ -160,7 +160,7 @@ Attack! And no mercy!~
  * -------------------------------------------- */
 @8000 = ~WHO DARES TO DISTURB MY REST!~
 @8001 = ~MORE ADVENTURERS COME TO STEAL MY TREASURE!~
-@8002 = ~I WILL EXTERMINATE YOU ALL! TOU WILL SHAKE BENEATH MY POWER!~
+@8002 = ~I WILL EXTERMINATE YOU ALL! YOU WILL SHAKE BENEATH MY POWER!~
 @8003 = ~DrAzTiK~
 
 
