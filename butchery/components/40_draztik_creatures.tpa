@@ -61,8 +61,8 @@ COPY ~%MOD_FOLDER%/drcrea/d9df3r.cre~ ~override~
 	WRITE_ASCII SCRIPT_OVERRIDE ~d9dwctyz~ #8
 BUT_ONLY
 
-// Melee Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level) with Halberd ???
-// -----------------------------------------------------------------------------------------
+// Melee Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level) with Halberd
+// -------------------------------------------------------------------------------------
 COPY ~%MOD_FOLDER%/drcrea/d9df5m.cre~ ~override~
 	SAY NAME1 @4002
 	SAY NAME2 @4002
@@ -157,8 +157,8 @@ COPY ~%MOD_FOLDER%/drcrea/d9df3r.cre~ ~override/d9dfbb.cre~
 	WRITE_ASCII SCRIPT_CLASS ~SHOUT~ #8
 BUT_ONLY
 
-// Melee Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level) with Halberd ???
-// -----------------------------------------------------------------------------------------
+// Melee Experienced Dwarf Berseker - Berseker nain expérimenté (5th Level) with Halberd
+// -------------------------------------------------------------------------------------
 COPY ~%MOD_FOLDER%/drcrea/d9df5m.cre~ ~override/d9dfcc.cre~
 	SAY NAME1 @4002
 	SAY NAME2 @4002
