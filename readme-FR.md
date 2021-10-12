@@ -83,7 +83,7 @@ Ce mod est un mod WeiDU et devrait par conséquent être compatible avec n'importe
 
 - BuTcHeRY n'est pas compatible avec le composant « *Firkraag amelioré* » du mod Revisited Battles.
 
-Si vous rencontrez des bugs, veuillez les signaler dans le <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">le forum du mod</a>, s'il vous plaît.
+Si vous rencontrez des bugs, veuillez les signaler dans le <a href="https://www.baldursgateworld.fr/lacouronne/butchery/31626-rapports-de-bugs-bug-report.html">le forum du mod</a>, s'il vous plaît.
 
 ## 
 
@@ -746,7 +746,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 
 <p>Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p>
 
-##### Version 5.0.0 &nbsp;(nn septembre 2021)
+##### Version 5.0.0 &nbsp;(nn octobre 2021)
 
 
 ## 

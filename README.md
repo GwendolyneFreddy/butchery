@@ -50,7 +50,7 @@ I like Baldur's Gate a lot, and I wrote this mod (first version in 2010) to beco
 
 Secondary objectives are:
 
-- Allow players to fight in a big room or large space because it is really boring and frustrating to fight in a corridor, especially in BG2.
+- Allow players to achieve 'epic' fights in large rooms or spaces because it is really boring and frustrating to fight in a corridor, especially in BG2.
 - Bring BG2 as close as possible to a *Dungeon crawler* game.
 - Difficulty level scaling: difficulty will be adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. (more details <a href="#components">below</a>)
 - Spice up many battles by turning them into 'butchery fights', with a few spawns and respawns.
@@ -84,7 +84,7 @@ This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. Tho
 
 - BuTcHeRY is not compatible with Revisited Battles component '*Improved Firkraag*' (don't expect a crash but an impossible fight).
 
-If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacouronne/butchery/">report them on the mod forum!</a>
+If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacouronne/butchery/31626-rapports-de-bugs-bug-report.html">report them on the mod forum!</a>
 
 ## 
 
@@ -212,7 +212,7 @@ The installer includes the following components. The number of each is the compo
 
 #### &#10173; Difficulty level scaling:
 
-This is the major latest mod improvement. I know that it can be frustrating to have a too much difficult -or easy- fight, so this new possibility will surely be appreciated. The numbers and variety of opponents are now adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. These adjustments are reflected as follows:
+This is the latest major mod improvement. I know that it can be frustrating to have a too much difficult -or easy- fight, so this new possibility will surely be appreciated. The numbers and variety of opponents are now adjusted according to the game difficulty level which can be set in the Gameplay subsection of the Options menu. These adjustments are reflected as follows:
 
 - <ins>Core Rules</ins>: normal and decent amount of enemies (no divine or arcane enemy spellcasters).
 - <ins>Difficult</ins>: a bit more numerous enemies and especially divine/arcane enemy spellcasters.
@@ -327,7 +327,7 @@ I didn't modify vanilla fighting scripts at all. So if you don't install Stratag
 <a name="12" id="12"></a>&#10173; **[12] Rebalancing Rebalancing Tazok and DigDag**
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
-&#9755; In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok slightly (slightly better saving throws and hp), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). There are also cosmetic changes: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
+&#9755; In vanilla, Tazok is an ORC Level 18 standard fighter, and DigDag an ORC level 12 standard fighter. This component tweaks Tazok slightly (slightly better saving throws and HP), turns DigDag into a Berserker, and improves their levels by one (level 19 for Tazok and 13 for DigDag). There are also cosmetic changes: Tazok is now a half ogre again (as in BG1) while DigDag inherits the OROG CHIEFTAIN animation.
 
 If you want Tazok to be a berserker, you must install stratagems '*Smarter general AI*' component (no problem of compatibility issue).
 
@@ -761,7 +761,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
 
 ## <a name="versions" id="versions"></a>Version History
 
-##### Version 5.0.0 &nbsp;(September nn, 2021)
+##### Version 5.0.0 &nbsp;(October nn, 2021)
 
 - Added *butchery.ini* metadata file (including dynamic install order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.

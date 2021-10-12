@@ -43,7 +43,7 @@ THEN
 		MoveToPointNoInterrupt([2069.650])
 		CreateCreature("observe",[1833.393],0)
 		Wait(1)
-		DisplayStringHead("ORC04",@336) // ~My Lord, the magic barrier is working now, intruders are trapped.~
+		DisplayStringHead("ORC04",@336) // ~My Lord, the magic barrier is working now, the intruders are trapped~
 		Wait(2)
 		DisplayStringHead(Myself,@337) // ~Excellent, the master will be pleased and I will have my revenge!~
 		PlaySound("OGREE01")

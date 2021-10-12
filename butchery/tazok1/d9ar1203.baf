@@ -245,7 +245,7 @@ IF
 	Dead("FIRORC01")
 THEN
 	RESPONSE #100
-		DisplayStringHead(Player1,@322)  // ~DigDag, the hideous orc leader is dead now and his horde will soon stop fighting. However, you have the feeling it can't end up so easily and you should prepare yourself for the last challenge!~
+		DisplayStringHead(Player1,@322)  // ~DigDag, the hideous orc leader is now dead and his horde will soon stop fighting. However, you have the feeling it can't end quite so easily and should prepare yourself for the final challenge!~
 		SetGlobal("D9deaddigdagstring","AR1203",1)
 END
 
@@ -257,7 +257,7 @@ IF
 	Dead("TAZOK")
 THEN
 	RESPONSE #100
-		DisplayStringHead(Player1,@323)  // ~This time, Tazok has definitively rejoined Sarevok in Hell and his minions will not disturb you for a long time.~
+		DisplayStringHead(Player1,@323)  // ~This time, Tazok has definitively rejoined Sarevok in hell and his minions will not disturb you for a long time.~
 		SetGlobal("D9deadtazokstring","AR1203",1)
 		SetGlobal("D9deaddigdag","AR1203",2)
 END

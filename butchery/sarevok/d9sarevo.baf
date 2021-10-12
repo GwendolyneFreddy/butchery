@@ -11,7 +11,7 @@ THEN
 		StartCutSceneMode()
 		SetGlobal("CalledFriends","LOCALS",1)
 		SetGlobal("d9spawnskelleton","AR2905",1)
-		DisplayStringHead(Myself,@3050)  // ~To my side, my followers!~ - ~À moi, mes fidèles !~
+		DisplayStringHead(Myself,@3050)  // ~To me, my followers!~ - ~À moi, mes fidèles !~
 		Wait(2)
 		Explore()
 		CreateVisualEffect("SPGFLSH1",[605.675])
