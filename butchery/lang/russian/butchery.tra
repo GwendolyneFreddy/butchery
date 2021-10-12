@@ -5,6 +5,7 @@
 //@26  = ~Tenardiar~	DEPRECATED
 @104 = ~Грумф~
 @105 = ~Бурринос~
+@106 = ~Barbarian~      // = BG2 strrefs #45859 and 45863
 /* DEPRECATED
 @10023  = ~Barbarian~
 @11100  = ~Adepte Barbare~
@@ -59,7 +60,7 @@ le nez !~
 
 // d9groum8.baf : Meeting with Groumf and Bourrinos in the Underdark
 // -----------------------------------------------------------------
-@2201 = ~Still more drows!
+@2201 = ~Still more Drow!
 Attack! And no mercy!~
 
 
@@ -83,7 +84,7 @@ Attack! And no mercy!~
 
 // d9sarevo.baf
 // ------------
-@3050 = ~To my side, my followers!~
+@3050 = ~To me, my followers!~
 @3051 = ~Hahaha! It is not over yet!~
 //@14552 = ~Semaj ! Noooon !~  // unused ==> DO NOT TRANSLATE
 //@14553 = ~Tamoko ! Noooon !~ // unused ==> DO NOT TRANSLATE
@@ -160,7 +161,7 @@ Attack! And no mercy!~
  * -------------------------------------------- */
 @8000 = ~WHO DARES TO DISTURB MY REST!~
 @8001 = ~MORE ADVENTURERS COME TO STEAL MY TREASURE!~
-@8002 = ~I WILL EXTERMINATE YOU ALL! TOU WILL SHAKE BENEATH MY POWER!~
+@8002 = ~I WILL EXTERMINATE YOU ALL! YOU WILL SHAKE BENEATH MY POWER!~
 @8003 = ~DrAzTiK~
 
 
