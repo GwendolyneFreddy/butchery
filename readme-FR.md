@@ -82,6 +82,7 @@ Ce mod est conçu pour fonctionner sur les jeux Infinity Engine suivants :
 Ce mod est un mod WeiDU et devrait par conséquent être compatible avec n'importe quel mod WeiDU. Bien que je m'efforce de rendre BuTcHeRy compatible avec le plus grand nombre possible de mods, des incompatibilités risquent toujours de se produire. Voici la liste de celles recensées jusqu'à présent :
 
 - BuTcHeRY n'est pas compatible avec le composant « *Firkraag amelioré* » du mod Revisited Battles.
+- Le composant « *Combat revisite de Sarevok necrophage dans les Abysses* » n'est pas compatible avec le mod Angelo NPC for Baldur's Gate II.
 
 Si vous rencontrez des bugs, veuillez les signaler dans le <a href="https://www.baldursgateworld.fr/lacouronne/butchery/31626-rapports-de-bugs-bug-report.html">le forum du mod</a>, s'il vous plaît.
 
@@ -380,6 +381,8 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisés : 
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>à installer avant Stratagems</em><br><br>
 
 &#9755; Ce composant améliore grandement le combat final contre Sarevok dans le royaume abyssal de Bhaal. Ce dernier sera assisté de ses anciens équipiers de BG1.
+
+:warning: Le contenu de ce composant est incompatible avec le mod Angelo NPC for Baldur's Gate II.
 <div align="right"><a href="#components">Retour à la liste des composants</a></div>
 
 ## 

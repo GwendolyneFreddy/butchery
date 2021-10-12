@@ -109,6 +109,7 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 BEGIN @30
 DESIGNATED 30 LABEL ~d9_butchery_sarevok~
 REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~setup-angelo.tp2~ (ID_OF_LABEL ~setup-angelo.tp2~ ~SisterVigilantes_Angelo-main~) @4 // ~This component is content-wise not compatible with Angelo NPC for Baldur's Gate II.~
 
 	INCLUDE ~%MOD_FOLDER%/components/30_revisited_sarevok.tpa~
 

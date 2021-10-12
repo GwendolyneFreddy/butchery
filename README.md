@@ -83,6 +83,7 @@ This mod is designed to work on the following Infinity Engine games:
 This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. Though I am striving to make BuTcHeRy compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. Below are the ones discovered thus far:
 
 - BuTcHeRY is not compatible with Revisited Battles component '*Improved Firkraag*' (don't expect a crash but an impossible fight).
+- The '*Revisited fight against Wraith Sarevok in the Abyss*' component is not compatible with Angelo NPC mod for Baldur's Gate II.
 
 If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacouronne/butchery/31626-rapports-de-bugs-bug-report.html">report them on the mod forum!</a>
 
@@ -398,6 +399,8 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
 ###### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>install before Stratagems</em><br><br>
 
 &#9755; This component greatly improves the final battle against Sarevok in the layer of the Abyss once ruled by Bhaal. He will be assisted by his former teammates from BG1.
+
+:warning: This component is content-wise not compatible with Angelo NPC for Baldur's Gate II.
 <div align="right"><a href="#components">Back to components list</a></div>
 
 ## 
