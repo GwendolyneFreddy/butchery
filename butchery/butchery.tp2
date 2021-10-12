@@ -1,12 +1,11 @@
 BACKUP ~butchery\backup~
-AUTHOR ~"draztik.vince@gmail.com"~
+//AUTHOR ~"draztik.vince@gmail.com"~
+SUPPORT ~https://www.baldursgateworld.fr/lacouronne/butchery/~
 
-VERSION ~4.0.0~
+VERSION ~v5.0.0~
 
-README ~butchery/butchery-readme-%LANGUAGE%.html~ ~butchery/butchery-readme-english.html~
+README ~butchery/readme/butchery-readme-%LANGUAGE%.html~ ~butchery/readme/butchery-readme-english.html~
 AUTO_EVAL_STRINGS
-
-AUTO_TRA ~butchery\lang\autotra\%s~
 
 ALWAYS
 
@@ -15,22 +14,24 @@ ALWAYS
 END	// of ALWAYS block
 
 
-//////////////////////////////////////
-//          CHOSE LANGUAGE          //
-//////////////////////////////////////
+AUTO_TRA ~butchery\lang\autotra\%s~
+
+///////////////////////////////////////
+//          CHOOSE LANGUAGE          //
+///////////////////////////////////////
 
 LANGUAGE ~English~
          ~english~
          ~butchery/lang/english/setup.tra~
          ~butchery/lang/english/butchery.tra~
-//         ~butchery/lang/english/d9CutTa.tra~  // DEPRECATED as of v 3.2
+//         ~butchery/lang/english/d9cutta.tra~  // DEPRECATED as of v3.2
          ~butchery/lang/english/d9firorc.tra~
 
 LANGUAGE ~Francais~
          ~french~
          ~butchery/lang/french/setup.tra~
          ~butchery/lang/french/butchery.tra~
-//         ~butchery/lang/french/d9CutTa.tra~  // DEPRECATED as of v 3.2
+//         ~butchery/lang/french/d9cutta.tra~  // DEPRECATED as of v3.2
          ~butchery/lang/french/d9firorc.tra~
 
 LANGUAGE ~Russian (translation by yota13)~
@@ -40,15 +41,15 @@ LANGUAGE ~Russian (translation by yota13)~
          ~butchery/lang/russian/d9firorc.tra~
 
 
+
 /* ========================================================================= *
  *    Firkraag's Lair: DrAzTiK's revisited fight against Tazok and DigDag    *
  * ========================================================================= */
 BEGIN @10
 DESIGNATED 10 LABEL ~d9_butchery_tazok~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  // ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
 
 	INCLUDE ~%MOD_FOLDER%/components/10_improved_tazok_fight.tpa~
-
 
 
 /* ======================================== *
@@ -56,10 +57,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ======================================== */
 BEGIN @11
 DESIGNATED 11 LABEL ~d9_butchery_rebalanced_creatures~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/11_rebalancing_creatures.tpa~
-
 
 
 /* ================================== *
@@ -67,10 +67,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ================================== */
 BEGIN @12
 DESIGNATED 12 LABEL ~d9_butchery_rebalanced_tazok~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/12_rebalancing_tazok.tpa~
-
 
 
 /* =================================================================== *
@@ -78,10 +77,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * =================================================================== */
 BEGIN @20
 DESIGNATED 20 LABEL ~d9_butchery_groumf_firkraag~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/20_groumf_firkraag.tpa~
-
 
 
 /* ================================================ *
@@ -89,10 +87,10 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ================================================ */
 BEGIN @21
 DESIGNATED 21 LABEL ~d9_butchery_groumf_brynnlaw~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+REQUIRE_PREDICATE MOD_IS_INSTALLED ~butchery.tp2~ (ID_OF_LABEL ~butchery.tp2~ ~d9_butchery_groumf_firkraag~) @2 // ~This component requires the Groumf and Bourrinos Encounter at Firkraag's Hideout entrance component to be installed.~
 
 	INCLUDE ~%MOD_FOLDER%/components/21_groumf_brynnlaw.tpa~
-
 
 
 /* ===================================================== *
@@ -100,10 +98,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ===================================================== */
 BEGIN @22
 DESIGNATED 22 LABEL ~d9_butchery_groumf_underdark~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/22_groumf_underdark.tpa~
-
 
 
 /* ========================================================= *
@@ -111,10 +108,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ========================================================= */
 BEGIN @30
 DESIGNATED 30 LABEL ~d9_butchery_sarevok~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/30_revisited_sarevok.tpa~
-
 
 
 /* =============================================== *
@@ -122,7 +118,7 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * =============================================== *
 BEGIN @31
 DESIGNATED 31 LABEL ~d9_butchery_move_samia~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/31_samia.tpa~
 */
@@ -133,10 +129,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ========================================================= */
 BEGIN @32
 DESIGNATED 32 LABEL ~d9_butchery_battlesongs~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/32_battlesongs.tpa~
-
 
 
 /* ========================= *
@@ -144,31 +139,30 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ========================= */
 BEGIN @40
 DESIGNATED 40 LABEL ~d9_butchery_draztic_creatures~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/40_draztik_creatures.tpa~
-
 
 
 /* ============================================ *
  *    Butchery in Irenicus Dungeon (Dwarves)    *
  * ============================================ */
 BEGIN @41
-DESIGNATED 41 LABEL ~d9_butchery_irenicus_fungeon~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+DESIGNATED 41 LABEL ~d9_butchery_irenicus_dungeon~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+REQUIRE_PREDICATE MOD_IS_INSTALLED ~butchery.tp2~ (ID_OF_LABEL ~butchery.tp2~ ~d9_butchery_draztic_creatures~) @3 // ~This component requires the DrAzTiK's Creatures component to be installed.~
 
-	INCLUDE ~%MOD_FOLDER%/components/41_irenicus_butchery.tpa~
-//DrAzTiK creatures
+	INCLUDE ~%MOD_FOLDER%/components/41_butchery_irenicus.tpa~
 
 
-/* ========================================== *
- *    Butchery for high and low reputation    *
- * ========================================== *
+/* ================================================ *
+ *    Butchery for high and low reputation traps    *
+ * ================================================ *
 BEGIN @42
-DESIGNATED 42 LABEL ~d9_butchery_reputation_trap~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+DESIGNATED 42 LABEL ~d9_butchery_reputation_traps~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
-	INCLUDE ~%MOD_FOLDER%/components/42_eighth_component.tpa~
+	INCLUDE ~%MOD_FOLDER%/components/42_reputation_traps.tpa~
 */
 
 
@@ -177,10 +171,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * =========================================================== */
 BEGIN @43
 DESIGNATED 43 LABEL ~d9_butchery_tethyr_forest~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/43_butchery_tethyr.tpa~
-
 
 
 /* ======================================================= *
@@ -188,10 +181,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ======================================================= */
 BEGIN @44
 DESIGNATED 44 LABEL ~d9_butchery_planar_sphere~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/44_butchery_planar_sphere.tpa~
-
 
 
 /* ============================================================= *
@@ -199,11 +191,10 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ============================================================= */
 BEGIN @45
 DESIGNATED 45 LABEL ~d9_butchery_spellhold~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+REQUIRE_PREDICATE MOD_IS_INSTALLED ~butchery.tp2~ (ID_OF_LABEL ~butchery.tp2~ ~d9_butchery_draztic_creatures~) @3 // ~This component requires the DrAzTiK's Creatures component to be installed.~
 
 	INCLUDE ~%MOD_FOLDER%/components/45_butchery_spellhold.tpa~
-//DrAzTiK creatures
-
 
 
 /* ============================================== *
@@ -211,11 +202,10 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ============================================== */
 BEGIN @46
 DESIGNATED 46 LABEL ~d9_butchery_arnise_keep~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+REQUIRE_PREDICATE MOD_IS_INSTALLED ~butchery.tp2~ (ID_OF_LABEL ~butchery.tp2~ ~d9_butchery_draztic_creatures~) @3 // ~This component requires the DrAzTiK's Creatures component to be installed.~
 
 	INCLUDE ~%MOD_FOLDER%/components/46_butchery_de_arnise.tpa~
-//DrAzTiK creatures
-
 
 
 /* ======================================== *
@@ -223,10 +213,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ======================================== */
 BEGIN @47
 DESIGNATED 47 LABEL ~d9_butchery_windspear_hills~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/47_butchery_windspear_hills.tpa~
-
 
 
 /* ===================================== *
@@ -234,10 +223,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ===================================== */
 BEGIN @48
 DESIGNATED 48 LABEL ~d9_butchery_umar_hills~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/48_butchery_umar_hills.tpa~
-
 
 
 /* ==================================================================== *
@@ -245,21 +233,19 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ==================================================================== */
 BEGIN @49
 DESIGNATED 49 LABEL ~d9_butchery_animals~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/49_butchery_trademeet.tpa~
-
 
 
 /* =========================================================================================== *
  *    2 butcheries of Golems in Suldanessellar and Watcher's Keep (Carston and the machine)    *
  * =========================================================================================== */
 BEGIN @50
-DESIGNATED 52 LABEL ~d9_butchery_golems~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+DESIGNATED 50 LABEL ~d9_butchery_golems~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/50_butchery_suldanessellar.tpa~
-
 
 
 /* ====================================== *
@@ -267,11 +253,10 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ====================================== */
 BEGIN @51
 DESIGNATED 51 LABEL ~d9_butchery_yaga_shura~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
-//require predicate ACENSION
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+//REQUIRE_PREDICATE (MOD_IS_INSTALLED ~ascension.tp2~ (ID_OF_LABEL "ascension.tp2" "Ascension-TougherYagaShura")) AND (MOD_IS_INSTALLED ~setup-stratagems.tp2~ (ID_OF_LABEL "setup-stratagems.tp2" 6000)) @10
 
 	INCLUDE ~%MOD_FOLDER%/components/51_butchery_yaga_shura.tpa~
-
 
 
 /* =========================================================== *
@@ -279,7 +264,7 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * =========================================================== */
 BEGIN @52
 DESIGNATED 52 LABEL ~d9_butchery_druid_grove~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/52_butchery_druid_grove.tpa~
 
@@ -290,7 +275,7 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ================================================= */
 BEGIN @53
 DESIGNATED 53 LABEL ~d9_butchery_eyeless~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/53_butchery_eyeless_cult.tpa~
 
@@ -300,10 +285,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ========================================================================== */
 BEGIN @54
 DESIGNATED 54 LABEL ~d9_butchery__bodi_chapter2~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/54_butchery_bodhi.tpa~
-
 
 
 /* ========================================================================= *
@@ -311,10 +295,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ========================================================================= */
 BEGIN @55
 DESIGNATED 55 LABEL ~d9_butchery_bodi_chapter6~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/55_butchery_bodhi6.tpa~
-
 
 
 /* ========================================================================================== *
@@ -322,10 +305,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ========================================================================================== */
 BEGIN @56
 DESIGNATED 56 LABEL ~d9_butchery_sahuagins~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/56_butchery_sahuagins.tpa~
-
 
 
 /* ============================================================================================================================================================================== *
@@ -333,10 +315,9 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ============================================================================================================================================================================== */
 BEGIN @57
 DESIGNATED 57 LABEL ~d9_butchery_spiders~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/57_butchery_spiders.tpa~
-
 
 
 /* ===================================================================================================================================================== *
@@ -344,11 +325,10 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ===================================================================================================================================================== */
 BEGIN @58
 DESIGNATED 58 LABEL ~d9_butchery_skeletons~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+REQUIRE_PREDICATE MOD_IS_INSTALLED ~butchery.tp2~ (ID_OF_LABEL ~butchery.tp2~ ~d9_butchery_draztic_creatures~) @3 // ~This component requires the DrAzTiK's Creatures component to be installed.~
 
 	INCLUDE ~%MOD_FOLDER%/components/58_butchery_undead.tpa~
-//DrAzTiK creatures
-
 
 
 /* ================================================ *
@@ -356,11 +336,10 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ================================================ */
 BEGIN @80
 DESIGNATED 80 LABEL ~d9_butchery_more_ennemies~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+REQUIRE_PREDICATE MOD_IS_INSTALLED ~butchery.tp2~ (ID_OF_LABEL ~butchery.tp2~ ~d9_butchery_draztic_creatures~) @3 // ~This component requires the DrAzTiK's Creatures component to be installed.~
 
 	INCLUDE ~%MOD_FOLDER%/components/80_butchery_more_enemies.tpa~
-//DrAzTiK creatures
-
 
 
 /* ========================= *
@@ -368,7 +347,7 @@ REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT,
  * ========================= */
 BEGIN @90
 DESIGNATED 90 LABEL ~d9_butchery_cosmetics~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1	// ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
 
 	INCLUDE ~%MOD_FOLDER%/components/90_butchery_cosmetics.tpa~	
 
