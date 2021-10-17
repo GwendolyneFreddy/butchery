@@ -1,0 +1,497 @@
+	/////////////////////////
+	/////////////////////////
+	//BuTcHeRyMod     //
+	/////////////////////////
+	/////////////////////////
+	
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Language Selection
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+BACKUP ~BuTcHeRy\backup~
+AUTHOR ~"DrAzTiK=====DrAzTiK01@msn.com"~
+
+
+LANGUAGE ~English~
+         ~english~
+         ~BuTcHeRy/translations/english/Setup.tra~
+         ~BuTcHeRy/translations/english/D9CutTa.tra~
+         ~BuTcHeRy/translations/english/D9firorc.tra~
+
+LANGUAGE ~French~
+         ~french~
+         ~BuTcHeRy/translations/french/Setup.tra~
+         ~BuTcHeRy/translations/french/D9CutTa.tra~
+         ~BuTcHeRy/translations/french/D9firorc.tra~
+
+
+////////////////////////////////////////////////////////////
+// /BUTCHERYS IN FIRKRAAG LAIR                               //
+////////////////////////////////////////////////////////////
+
+
+BEGIN @0
+
+
+///////////////////////////////
+//Add some BUTCHERY in FIRKRAAG LAIR                         //
+
+
+///items :
+
+ COPY ~BuTcHeRy/Items/D9boots.itm~ ~override/D9boots.itm~    //boots providing immunity to backstap for BARBARIAN
+ COPY ~BuTcHeRy/Items/D9NoFog.itm~ ~override/D9NoFog.itm~    //clean fog ring
+
+// Customs CRE
+ COPY_EXISTING ~TAZOK.cre~  ~override/D9TAZOK.CRE~             // A custom tazok for cutscene
+ADD_CRE_ITEM ~D9NoFog~ #0 #0 #0 ~NONE~ ~lring~                    // add a fog ring  to D9tazok
+
+COPY ~BuTcHeRy/cre/D9ORC01.CRE~ ~override/D9ORC01.CRE~
+ ADD_CRE_ITEM ~D9boots~ #0 #0 #0 ~NONE~ ~boots~
+
+// the next 2 cre tell Dig Dag to drink potions coz party is coming, the 2 cre also drink a potion of absoprtion
+COPY ~BuTcHeRy/cre/D9ORC05.CRE~ ~override/D9ORC05.CRE~
+ADD_CRE_ITEM ~POTN18~ #1 #0 #0 ~NONE~ ~inv11~       // potion d'absorption
+COPY ~BuTcHeRy/cre/D9ORC05b.CRE~ ~override/D9ORC05b.CRE~
+ADD_CRE_ITEM ~POTN18~ #1 #0 #0 ~NONE~ ~inv11~       // potion d'absorption
+
+
+COPY ~BuTcHeRy/cre/D9ORGAHJ.CRE~ ~override/D9ORGAHJ.CRE~    //ORC ranged   following player 1
+ ADD_CRE_ITEM ~D9boots~ #0 #0 #0 ~NONE~ ~boots~
+
+COPY ~BuTcHeRy/cre/D9ORGAME.CRE~ ~override/D9ORGAME.CRE~   //ORC MELE  following player 1
+ADD_CRE_ITEM ~HALB01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+ ADD_CRE_ITEM ~D9boots~ #0 #0 #0 ~NONE~ ~boots~
+
+COPY ~BuTcHeRy/cre/D9OGRGA.CRE~ ~override/D9OGRGA.CRE~    //berserker ogre   following player 1
+  SAY NAME1 @25
+  SAY NAME2 @25
+
+
+  COPY ~BuTcHeRy/cre/D9OGRGA2.CRE~ ~override/D9OGRGA2.CRE~  //barbare ogre  following player 1
+   ADD_CRE_ITEM ~D9boots~ #0 #0 #0 ~NONE~ ~boots~
+   WRITE_ASCII SCRIPT_OVERRIDE ~GENSHT01~
+   WRITE_LONG 0x14 600                                             // XP value (when killed)
+  SAY NAME1 @27
+  SAY NAME2 @27
+
+
+// Groumf (lvel 13 berserk) and Bourrinos (level 11 barbarian) protect TAZOK.
+
+COPY ~BuTcHeRy/cre/D9Groum4.CRE~ ~override/D9Groumt.CRE~
+ADD_CRE_ITEM ~AX1H02~ #10 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP
+ADD_CRE_ITEM ~SHLD06~ #0 #0 #0 ~NONE~ ~shield~
+ADD_CRE_ITEM ~PLAT14~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~NONE~ ~RRING LRING~
+ADD_CRE_ITEM ~POTN52~ #3 #0 #0 ~IDENTIFIED~ ~qitem1~
+ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~IDENTIFIED~ ~qitem2~
+ADD_CRE_ITEM ~POTN19~ #1 #0 #0 ~IDENTIFIED~ ~qitem3~       // potion d'agilité
+  WRITE_BYTE 0x270 255       //Ennemy
+
+  SAY NAME1 @10022
+  SAY NAME2 @10022
+SAY BATTLE_CRY1~Misérables insects !~ [D9Groua]
+SAY BATTLE_CRY2~Par la fureur de Tempus!~ [D9Grou8]
+SAY BATTLE_CRY3~Par la force d'Hutgar!~ [D9Grou9]
+SAY DAMAGE~~ [D9Groul]
+SAY DYING~~ [D9Groum]
+SAY HURT~~ [D9Groue]
+SAY SELECT_COMMON1~Ha Ha Ha !~ [D9Groug]
+SAY SELECT_COMMON2~Quoi?!~ [D9Grouf]
+SAY SELECT_COMMON3~Par la fureur de Tempus!~ [D9Grou8]
+SAY SELECT_COMMON4~Encore du sang!~ [D9Grou0]
+SAY CRITICAL_MISS~~ [D9rou1]
+SAY TARGET_IMMUNE~~ [D9Grou2]
+SAY SPELL_DISRUPTED~~ [D9Grou6]
+SAY REACT_TO_DIE_GENERAL~~ [D9Grouw]
+
+  COPY ~BuTcHeRy/cre/D9Bour14.CRE~ ~override/D9Bourt.CRE~
+ADD_CRE_ITEM ~HALB07~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~CHAN04~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~POTN52~ #3 #0 #0 ~IDENTIFIED~ ~qitem1~
+ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~IDENTIFIED~ ~qitem2~
+ADD_CRE_ITEM ~POTN18~ #1 #0 #0 ~IDENTIFIED~ ~inv11~       // potion d'absorption
+  WRITE_BYTE 0x270 255       //Ennemy
+
+  SAY NAME1 @10024
+  SAY NAME2 @10024
+SAY BATTLE_CRY1~A mort!~ [D9bara9]
+SAY BATTLE_CRY2~Baston!~ [D9baraa]
+SAY BATTLE_CRY3~Baston!~ [D9baraa]
+SAY SELECT_COMMON1~Baston!~ [D9baraa]
+SAY SELECT_COMMON2~Ouai!~ [D9barag]
+SAY SELECT_COMMON3~Quoi?!~ [D9barah]
+SAY SELECT_COMMON4~A mort!~ [D9bara9]
+SAY DAMAGE~~ [D9baral]
+SAY DYING~~ [D9baram]
+SAY HURT~~ [D9barae]
+SAY CRITICAL_MISS~~ [D9bara1]
+SAY SPELL_DISRUPTED~~ [D9bara6]
+
+
+// Maybe I  should let Groumf and Bourinos drink a potion like TAzok, I will see in the future
+COMPILE ~BuTcHeRy/bafs/D9Groum4.baf~
+COMPILE ~BuTcHeRy/bafs/D9Bour14.baf~
+COMPILE ~BuTcHeRy/bafs/D9ORC05.baf~
+COMPILE ~BuTcHeRy/bafs/D9ORC05b.baf~
+
+//Scripts et dialogues for Tazok and Dig DAG, 
+
+COMPILE ~BuTcHeRy/bafs/D9TAZOKK.baf~   // This script make Tazok Drink 2 potions before fighting
+EXTEND_TOP    ~FIRORC01.bcs~   ~BuTcHeRy/bafs/D9firorc.baf~
+
+
+
+COMPILE ~BuTcHeRy/dlg/D9firorc.d~ ~override~
+  USING ~BuTcHeRy/Translations/%s/D9firorc.tra~
+
+// Customs tazok for cutsecne
+ COPY_EXISTING ~TAZOK.cre~  ~override/D9TAZOK.CRE~             // A custom tazok for cutscene
+ADD_CRE_ITEM ~D9NoFog~ #0 #0 #0 ~NONE~ ~lring~                    // add a fog ring  to tazok
+WRITE_SHORT 0x28 28672                                           //half ogre animation
+
+//add a area script for AR1203
+ COPY_EXISTING ~AR1203.are~ ~override~
+   WRITE_ASCII 0x0094 ~AR1203~
+   BUT_ONLY_IF_IT_CHANGES
+
+  // Scripts Extensions
+EXTEND_BOTTOM ~AR1202.bcs~ ~BuTcHeRy/bafs/D9AR1202.baf~
+EXTEND_BOTTOM ~AR1203.bcs~ ~BuTcHeRy/bafs/D9AR1203.baf~
+
+
+
+  
+ // CutScenes  in Firkraag laiR
+ 
+
+COPY ~BuTcHeRy/Items/D9NoFog.itm~ ~override/D9NoFog.itm~
+
+
+COMPILE ~BuTcHeRy/bafs/D9CutTa.baf~
+USING ~BuTcHeRy/Translations/%s/D9CutTa.tra~
+COMPILE ~BuTcHeRy/bafs/D9CutTa1.baf~
+USING ~BuTcHeRy/Translations/%s/D9CutTa.tra~
+COMPILE ~BuTcHeRy/bafs/D9CutTa2.baf~
+USING ~BuTcHeRy/Translations/%s/D9CutTa.tra~
+
+
+// Commandes décodeurs/encodeurs
+
+COPY ~BuTcHeRy/Sounds~ ~override~
+
+AT_INTERACTIVE_EXIT ~BuTcHeRy/Sounds/Audioin.bat~
+AT_INTERACTIVE_UNINSTALL ~BuTcHeRy/Sounds/Audiouninstall.bat~
+
+
+// Ouverture Read-Me à l'installation
+
+AT_INTERACTIVE_EXIT ~VIEW BuTcHeRy\readme-BuTcHeRy.txt~
+
+
+
+
+////////////////////////////////////////////////////////////
+// REBALANCING SOME GENERIQUES CRE                     //
+////////////////////////////////////////////////////////////
+
+BEGIN @10000
+
+
+COPY ~BuTcHeRy/Items/D9boots.itm~ ~override/D9boots.itm~    //boots providing immunity to backstap for BARBARIAN
+
+
+COPY_EXISTING ~OGRE01.cre~ ~override~
+REMOVE_CRE_ITEM ~B1-2~                                          // removes undropable weapons
+   ADD_CRE_ITEM ~BLUN06~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP            // add morning star
+   ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
+   ADD_CRE_ITEM ~rndtre03~ #0 #0 #0 ~NONE~ ~inv1~                          // add a random treasure
+   ADD_CRE_ITEM ~rndtre03~ #0 #0 #0 ~NONE~ ~inv2~                          // add another random treasure
+   WRITE_LONG 0x001c 15         //Add gold
+WRITE_LONG 0x0244 0x40010000                               //kit berserk
+WRITE_SHORT 0x24 50                                              // current hit points
+  WRITE_SHORT 0x26 50                                               // maximum hit points
+  WRITE_BYTE 0x53 1                                                 // base number of attacks
+  WRITE_BYTE 0x23f 20                                               // morale
+  WRITE_BYTE 0x240 5                                                // morale break
+  WRITE_BYTE 0x242 30                                               // morale recovery
+  WRITE_BYTE 0x54 11                                                 // save vs. death
+  WRITE_BYTE 0x55 13                                                 // save vs. wands
+  WRITE_BYTE 0x56 12                                                 // save vs. polymorph
+  WRITE_BYTE 0x57 13                                                 // save vs. breath
+  WRITE_BYTE 0x58 14                                                 // save vs. spells
+  WRITE_BYTE 0x52 16                                                // THAC0
+  WRITE_BYTE 0x234 5                                                // level (first class)
+  WRITE_BYTE 0x238 21                                             // Strength
+  WRITE_BYTE 0x23c 9                                               // Dexterity
+  WRITE_BYTE 0x23d 18                                              // Constitution
+    WRITE_BYTE 0x273 2                                                // class
+       WRITE_LONG 0x14 600                                             // Xp when killed
+  ADD_KNOWN_SPELL 	~spcl321~ 	#0 	~INNATE~
+ADD_MEMORIZED_SPELL 	~spcl321~ 	#0	~INNATE~ 	#2
+SET_BG2_PROFICIENCY ~PROFICIENCYFLAILMORNINGSTAR~ 3
+SET_BG2_PROFICIENCY ~PROFICIENCYMACE~ 3
+SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2
+BUT_ONLY_IF_IT_CHANGES
+
+
+
+ COPY_EXISTING ~ORC01.cre~ ~override~
+REMOVE_CRE_ITEM ~SW1H01~
+   REMOVE_CRE_ITEM ~LEAT01~
+   ADD_CRE_ITEM ~AX1H01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP
+   ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
+   ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~helmet~
+    ADD_CRE_ITEM ~rndtre03~ #0 #0 #0 ~NONE~ ~inv2~                   // add another random treasure
+WRITE_ASCII SCRIPT_RACE ~None~
+WRITE_LONG 0x001c 15         //Add gold
+WRITE_LONG 0x0244 0x00004000          //barbarian kit , give barbarian bonus(speed, immunity backstap , resistance)
+WRITE_SHORT 0x24 60                                              // current hit points
+  WRITE_SHORT 0x26 60                                               // maximum hit points
+  WRITE_BYTE 0x53 1                                                 // base number of attacks
+  WRITE_BYTE 0x23f 20                                               // morale
+  WRITE_BYTE 0x240 5                                                // morale break
+  WRITE_BYTE 0x242 30                                               // morale recovery
+  WRITE_BYTE 0x54 11                                                 // save vs. death
+  WRITE_BYTE 0x55 13                                                 // save vs. wands
+  WRITE_BYTE 0x56 12                                                 // save vs. polymorph
+  WRITE_BYTE 0x57 13                                                 // save vs. breath
+  WRITE_BYTE 0x58 14                                                 // save vs. spells
+  WRITE_BYTE 0x52 16                                                // THAC0
+  WRITE_BYTE 0x234 5                                                // level (first class)
+  WRITE_BYTE 0x238 19                                              // Strength
+  WRITE_BYTE 0x23c 9                                               // Dexterity
+  WRITE_BYTE 0x23d 18                                              // Constitution
+   WRITE_BYTE 0x273 2                                                // class
+      WRITE_LONG 0x14 600                                             // Xp when killed
+ADD_KNOWN_SPELL 	~spcl152~ 	#0 	~INNATE~
+ADD_MEMORIZED_SPELL 	~spcl152~ 	#0	~INNATE~ 	#2
+SET_BG2_PROFICIENCY ~PROFICIENCYAXE~ 2                         //
+SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2
+
+BUT_ONLY_IF_IT_CHANGES
+
+
+ COPY_EXISTING ~ORC02.cre~ ~override~
+REMOVE_CRE_ITEM ~BOW03~
+REMOVE_CRE_ITEM ~AROW02~
+ ADD_CRE_ITEM ~BOW01~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP
+   ADD_CRE_ITEM ~AROW11~ #3 #0 #0 ~UNSTEALABLE~ ~quiver1~
+   ADD_CRE_ITEM ~AROW09~ #7 #0 #0 ~UNSTEALABLE~ ~quiver2~
+   ADD_CRE_ITEM ~AROW01~ #40 #0 #0 ~UNSTEALABLE~ ~quiver3~
+      ADD_CRE_ITEM ~rndtre03~ #0 #0 #0 ~NONE~ ~inv2~                  // add another random treasure
+   WRITE_LONG 0x001c 18         //Add gold
+WRITE_SHORT 0x24 50                                              // current hit points
+  WRITE_SHORT 0x26 50                                              // maximum hit points
+  WRITE_BYTE 0x53 1                                                 // base number of attacks
+  WRITE_BYTE 0x23f 20                                               // morale
+  WRITE_BYTE 0x240 5                                                // morale break
+  WRITE_BYTE 0x242 30                                               // morale recovery
+  WRITE_BYTE 0x54 11                                                 // save vs. death
+  WRITE_BYTE 0x55 13                                                 // save vs. wands
+  WRITE_BYTE 0x56 12                                                 // save vs. polymorph
+  WRITE_BYTE 0x57 13                                                 // save vs. breath
+  WRITE_BYTE 0x58 14                                                 // save vs. spells
+  WRITE_BYTE 0x52 16                                                // THAC0
+  WRITE_BYTE 0x234 5                                                // level (first class)
+  WRITE_BYTE 0x238 17                                              // Strength
+  WRITE_BYTE 0x23c 12                                               // Dexterity
+  WRITE_BYTE 0x23d 17                                              // Constitution
+   WRITE_BYTE 0x273 2                                                // class
+      WRITE_LONG 0x14 600                                             // Xp when killed                      //
+SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2
+BUT_ONLY_IF_IT_CHANGES
+
+
+
+  COPY_EXISTING ~ORC05.cre~ ~override~
+REMOVE_CRE_ITEM ~LEAT01~                                       // removes dig dag shield
+ADD_CRE_ITEM ~LEAT04~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~helmet~
+    ADD_CRE_ITEM ~rndtre03~ #0 #0 #0 ~NONE~ ~inv2~                   // add another random treasure
+WRITE_ASCII SCRIPT_RACE ~None~
+WRITE_LONG 0x0244 0x00004000          //barbarian kit , give barbarian bonus(speed, immunity backstap , resistance)
+WRITE_LONG 0x001c 32         //Add gold
+ WRITE_SHORT 0x24 84                                              // current hit points
+  WRITE_SHORT 0x26 84                                               // maximum hit points
+  WRITE_BYTE 0x53 1                                                 // base number of attacks
+  WRITE_BYTE 0x23f 20                                               // morale
+  WRITE_BYTE 0x240 1                                               // morale break
+  WRITE_BYTE 0x242 1                                               // morale recovery
+  WRITE_BYTE 0x54 10                                                 // save vs. death
+  WRITE_BYTE 0x55 12                                                 // save vs. wands
+  WRITE_BYTE 0x56 11                                                 // save vs. polymorph
+  WRITE_BYTE 0x57 12                                                 // save vs. breath
+  WRITE_BYTE 0x58 13                                                 // save vs. spells
+  WRITE_BYTE 0x52 14                                                // THAC0
+  WRITE_BYTE 0x234 7                                                // level (first class)
+  WRITE_BYTE 0x238 20                                             // Strength
+  WRITE_BYTE 0x23c 9                                               // Dexterity
+  WRITE_BYTE 0x23d 20                                              // Constitution
+   WRITE_BYTE 0x273 2                                                // class
+
+   WRITE_LONG 0x14 800                                             // Xp when killed
+ADD_KNOWN_SPELL 	~spcl152~ 	#0 	~INNATE~
+ADD_MEMORIZED_SPELL 	~spcl152~ 	#0	~INNATE~ 	#2
+SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2
+SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+BUT_ONLY_IF_IT_CHANGES
+
+
+
+  COPY_EXISTING ~ORC06.cre~ ~override~
+REMOVE_CRE_ITEM ~LEAT01~
+REMOVE_CRE_ITEM ~SW1H01~
+ADD_CRE_ITEM ~SW2H01~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED
+ADD_CRE_ITEM ~PLAT01~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~helmet~
+ADD_CRE_ITEM ~rndtre03~ #0 #0 #0 ~NONE~ ~inv2~           // add another random treasure
+WRITE_ASCII SCRIPT_RACE ~None~
+WRITE_LONG 0x0244 0x40010000                               //kit berserk
+WRITE_LONG 0x001c 35                                           //Add gold
+WRITE_SHORT 0x24 70                                              // current hit points
+  WRITE_SHORT 0x26 70                                               // maximum hit points
+  WRITE_BYTE 0x53 1                                                 // base number of attacks
+  WRITE_BYTE 0x23f 20                                               // morale
+  WRITE_BYTE 0x240 1                                                // morale break
+  WRITE_BYTE 0x242 1                                              // morale recovery
+  WRITE_BYTE 0x54 10                                                 // save vs. death
+  WRITE_BYTE 0x55 12                                                 // save vs. wands
+  WRITE_BYTE 0x56 11                                                 // save vs. polymorph
+  WRITE_BYTE 0x57 12                                                 // save vs. breath
+  WRITE_BYTE 0x58 13                                                 // save vs. spells
+  WRITE_BYTE 0x52 14                                                // THAC0
+  WRITE_BYTE 0x234 7                                                // level (first class)
+  WRITE_BYTE 0x238 20                                              // Strength
+  WRITE_BYTE 0x23c 9                                               // Dexterity
+  WRITE_BYTE 0x23d 20                                              // Constitution
+   WRITE_BYTE 0x273 2                                                // class
+   WRITE_LONG 0x14 800                                             // Xp when killed
+SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 3
+SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+  ADD_KNOWN_SPELL 	~spcl321~ 	#0 	~INNATE~
+ADD_MEMORIZED_SPELL 	~spcl321~ 	#0	~INNATE~ 	#2
+
+BUT_ONLY_IF_IT_CHANGES
+
+
+
+ 
+
+
+
+////////////////////////////////////////////////////////////
+// REBALANCING MINOR BOSS                    //
+////////////////////////////////////////////////////////////
+
+BEGIN @11000
+
+COPY ~BuTcHeRy/portraits/D9zoks.bmp~ ~override~
+COPY ~BuTcHeRy/portraits/D9abs.bmp~ ~override~
+
+
+COPY ~BuTcHeRy/Items/D9boots.itm~ ~override/D9boots.itm~    //boots providing immunity to backstap for BARBARIAN
+
+
+//Revisited TAZOK
+
+ COPY_EXISTING ~TAZOK.cre~ ~override~
+REMOVE_CRE_ITEM ~PLAT14~
+ADD_CRE_ITEM ~HELM01~ #0 #0 #0 ~NONE~ ~helmet~
+ADD_CRE_ITEM ~LEAT16~ #0 #0 #0 ~NONE~ ~ARMOR~
+ADD_CRE_ITEM ~POTN52~ #3 #0 #0 ~NONE~ ~qitem2~       //add 3 potions of extra healing
+ADD_CRE_ITEM ~POTN41~ #1 #0 #0 ~NONE~ ~inv13~       // potion de pouvoir
+ADD_CRE_ITEM ~POTN18~ #1 #0 #0 ~NONE~ ~inv11~       // potion d'absorption
+ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~NONE~ ~qitem3~       // potion de rapidité
+ADD_CRE_ITEM ~rndtre03~ #0 #0 #0 ~NONE~ ~inv2~           // add another random treasure
+WRITE_ASCII 0x34 ~D9zoks~                           // Small portrait
+WRITE_ASCII SCRIPT_OVERRIDE ~D9TAZOKK~                        // add my custom script
+WRITE_ASCII SCRIPT_CLASS ~GENSHT01~
+   WRITE_LONG 0x0244 0x00004000          //barbarian kit , giving barbarian bonus(speed, immunity backstap , resistance)
+  WRITE_BYTE 0x234 19                                                // level (first class)
+WRITE_SHORT 0x28 28672                                           //half ogre avatar coz tazok is not an Orc in BG1
+WRITE_BYTE 0x52 2                                               // THAC0
+  WRITE_SHORT 0x24 154                                              // current hit points
+  WRITE_SHORT 0x26 154                                              // maximum hit points
+  WRITE_BYTE 0x54 3                                                 // save vs. death
+  WRITE_BYTE 0x55 5                                                 // save vs. wands
+  WRITE_BYTE 0x56 4                                                 // save vs. polymorph
+  WRITE_BYTE 0x57 4                                                // save vs. breath
+  WRITE_BYTE 0x58 6                                                 // save vs. spells
+
+  WRITE_BYTE 0x23c 14                                               // Dexterity
+  WRITE_BYTE 0x23f 20                                               // morale
+  WRITE_BYTE 0x240 1                                                // morale break
+  WRITE_BYTE 0x242 1                                                // morale recovery
+  WRITE_LONG 0x14 12000                                            // Xp when killed
+REMOVE_KNOWN_SPELL ~spcl321~
+REMOVE_MEMORIZED_SPELL ~spcl321~ ~spcl321~ ~spcl321~ ~spcl321~ ~spcl321~       // if SCSII in installed before, remove bersekers rages
+ADD_KNOWN_SPELL 	~spcl152~ 	#0 	~INNATE~
+ADD_MEMORIZED_SPELL 	~spcl152~ 	#0	~INNATE~ 	#5
+WRITE_BYTE 0x006e 0                                     // Large swords proficiency  , remove BG1 stars 
+SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 2           // 2 stars in two handed sword
+SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2                         // Give TAZOK 2 stars in the BG2 TWO HANDED
+  WRITE_BYTE 0x006e 0                                     // Large swords proficiency (
+
+BUT_ONLY_IF_IT_CHANGES
+
+ // Revisited DIG DAG
+
+ COPY_EXISTING ~FIRORC01.cre~ ~override~
+
+REMOVE_CRE_ITEM ~SHLD05~           // removes non magical dig dag shield
+   REMOVE_CRE_ITEM ~SW1H04~       // removes dig dag non magical sword
+   REMOVE_CRE_ITEM ~HELM01~       // removes dig dag standart helmet
+   ADD_CRE_ITEM ~SW1H02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP            // maybe SW1H42 +2 is better ? Orcs don't take care and ofen change  weapons.
+   ADD_CRE_ITEM ~SHLD30~ #0 #0 #0 ~NONE~ ~shield~                  //large shield +1
+   ADD_CRE_ITEM ~POTN24~ #1 #0 #0 ~NONE~ ~qitem1~        // potion de défense
+   ADD_CRE_ITEM ~POTN19~ #1 #0 #0 ~NONE~ ~inv14~       // potion d'agilité
+   ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~NONE~ ~qitem2~       // potion de soins
+   ADD_CRE_ITEM ~POTN14~ #1 #0 #0 ~NONE~ ~qitem3~       // potion de rapidité
+   ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~NONE~ ~RRING LRING~  //ring of protection+1
+   ADD_CRE_ITEM ~HELM12~ #0 #0 #0 ~NONE~ ~helmet~        // decorative helmet (dig dag is the caudillo)
+   ADD_CRE_ITEM ~rndtre03~ #0 #0 #0 ~NONE~ ~inv2~           // add another random treasure
+   WRITE_ASCII 0x34 ~D9abs~ // Small portrait
+   WRITE_ASCII SCRIPT_CLASS ~GENSHT01~
+   WRITE_BYTE 0x234 13                                               // level (first class)
+   WRITE_BYTE 0x52 8                                                // THAC0
+  WRITE_BYTE 0x54 5                                                 // save vs. death
+  WRITE_BYTE 0x55 7                                                 // save vs. wands
+  WRITE_BYTE 0x56 6                                                 // save vs. polymorph
+  WRITE_BYTE 0x57 5                                                 // save vs. breath
+  WRITE_BYTE 0x58 8                                                 // save vs. spells
+   WRITE_LONG 0x0244 0x40010000                               //kit berserk
+   WRITE_LONG 0x001c 399                                         //Add gold
+  WRITE_SHORT 0x28 59168                                            //tazok Big ORC avatar, suit more for Dig dag
+  WRITE_SHORT 0x24 107                                              // current hit points
+  WRITE_SHORT 0x26 107                                               // maximum hit points
+  WRITE_BYTE 0x53 1                                                 // base number of attacks
+  WRITE_BYTE 0x23f 20                                               // morale
+  WRITE_BYTE 0x240 1                                                // morale break
+  WRITE_BYTE 0x242 1                                                // morale recovery
+  WRITE_BYTE 0x238 22                                              // Strength
+  WRITE_BYTE 0x23d 22                                              // Constitution
+  WRITE_BYTE 0x273 2                                                // class
+  WRITE_LONG 0x14 7000                                            // Xp when killed
+  ADD_KNOWN_SPELL 	~spcl321~ 	#0 	~INNATE~
+ADD_MEMORIZED_SPELL 	~spcl321~ 	#0	~INNATE~ 	#3
+SET_BG2_PROFICIENCY ~PROFICIENCYBASTARDSWORD~ 4                         // Give DIG DAG 4 stars in the BG2 BASTARD SWORD proficiency, surely 5 stars is too much for a atupid orc
+SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
+
+BUT_ONLY_IF_IT_CHANGES
+
+
+
+//////////////////////////////
+///ROMOVE ITEMS USED BY tAZOK BORROWED IN FOLLOWING ORIGINAL LOCACATIONS
+
+
+   COPY_EXISTING ~AR1301.are~ ~override~      //   remove orc leather +3
+WRITE_LONG 0x2220 0
+BUT_ONLY_IF_IT_CHANGES
+
+
+
+

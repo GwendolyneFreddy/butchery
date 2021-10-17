@@ -1,0 +1,11 @@
+IF
+ Global("D9ORC05bmove","LOCALS",0)
+	Detect([PC])
+THEN
+	RESPONSE #100
+               UseItem("potn18",Myself)
+   DisplayStringHead(Myself,@454)
+MoveToPointNoInterrupt([2097.1773])
+ SetGlobal("D9ORC05bmove","LOCALS",1)
+
+END

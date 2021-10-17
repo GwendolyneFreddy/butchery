@@ -1,0 +1,12 @@
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("#TBud")
+Wait(1)
+CreateVisualEffectObject("SPGENHLA","#TBud")
+Kill("#TBud")
+Wait(1)
+EndCutSceneMode()
+END

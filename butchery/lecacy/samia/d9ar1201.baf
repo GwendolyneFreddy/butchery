@@ -1,0 +1,17 @@
+IF
+	OR(2)
+		PartyHasItem("SW1H32")  // Peridan +2
+		PartyHasItem("SHLD21")  // Dragon Scale Shield +2
+	Global("SpawnSamiaFriends","AR1202",1)
+	!Dead("Samia") // Samia
+	Global("SamiaPreempted","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateCreature("Samia",[1856.1333],10) // Samia
+		CreateCreature("Akae",[1898.1386],10)  // Akae
+		CreateCreature("Kaol",[1955.1388],9)   // Kaol
+		CreateCreature("Chak",[1856.1333],10)  // Chak
+		CreateCreature("Legdor",[1898.1386],9) // Legdoril
+		CreateCreature("Deshar",[1955.1388],9) // Ferric Ironblade
+		SetGlobal("SpawnSamiaFriends","AR1202",2)
+END

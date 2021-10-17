@@ -1,0 +1,138 @@
+/*IF
+	Global("d9spawnskelleton","AR2905",1)
+	Global("d9spawnskelletonX","AR2905",0)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("d9spawnskelletonX","AR2905",1)
+		CreateVisualEffect("SPRAISED",[629.1007])
+		CreateVisualEffect("SPRAISED",[386.891])
+		CreateVisualEffect("SPRAISED",[335.743])
+		CreateVisualEffect("SPRAISED",[1137.766])
+		CreateVisualEffect("SPRAISED",[1087.627])
+		CreateVisualEffect("SPRAISED",[891.538])
+		Wait(4)
+		CreateCreature("SKELAR01",[629.1007],14)  // Squelette archer
+		CreateCreature("SKELAR01",[386.891],14)  // Squelette archer
+		CreateCreature("SKELAR01",[335.743],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1137.766],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1087.627],14)  // Squelette archer
+		CreateCreature("SKELAR01",[891.538],14)  // Squelette archer
+END
+
+IF
+    Global("d9spawnskelleton","AR2905",1)
+	Global("d9spawnskelletonX","AR2905",1)
+	Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("d9spawnskelletonX","AR2905",2)
+		CreateVisualEffect("SPRAISED",[629.1007])
+		CreateVisualEffect("SPRAISED",[386.891])
+		CreateVisualEffect("SPRAISED",[335.743])
+		CreateVisualEffect("SPRAISED",[1137.766])
+		CreateVisualEffect("SPRAISED",[1087.627])
+		CreateVisualEffect("SPRAISED",[891.538])
+		Wait(4)
+		CreateCreature("SKELAR01",[629.1007],14)  // Squelette archer
+		CreateCreature("SKELAR01",[386.891],14)  // Squelette archer
+		CreateCreature("SKELAR01",[335.743],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1137.766],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1087.627],14)  // Squelette archer
+		CreateCreature("SKELAR01",[891.538],14)  // Squelette archer
+END
+
+IF
+    Global("d9spawnskelleton","AR2905",2)
+	Global("d9spawnskelletonY","AR2905",0)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("d9spawnskelletonY","AR2905",1)
+		CreateVisualEffect("SPRAISED",[629.1007])
+		CreateVisualEffect("SPRAISED",[386.891])
+		CreateVisualEffect("SPRAISED",[335.743])
+		CreateVisualEffect("SPRAISED",[1137.766])
+		CreateVisualEffect("SPRAISED",[1087.627])
+		CreateVisualEffect("SPRAISED",[891.538])
+		Wait(4)
+		CreateCreature("SKELAR01",[629.1007],14)  // Squelette archer
+		CreateCreature("SKELAR01",[386.891],14)  // Squelette archer
+		CreateCreature("SKELAR01",[335.743],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1137.766],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1087.627],14)  // Squelette archer
+		CreateCreature("SKELAR01",[891.538],14)  // Squelette archer
+END
+
+IF
+    Global("d9spawnskelleton","AR2905",2)
+	Global("d9spawnskelletonY","AR2905",1)
+	Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("d9spawnskelletonY","AR2905",2)
+		CreateVisualEffect("SPRAISED",[629.1007])
+		CreateVisualEffect("SPRAISED",[386.891])
+		CreateVisualEffect("SPRAISED",[335.743])
+		CreateVisualEffect("SPRAISED",[1137.766])
+		CreateVisualEffect("SPRAISED",[1087.627])
+		CreateVisualEffect("SPRAISED",[891.538])
+		Wait(4)
+		CreateCreature("SKELAR01",[629.1007],14)  // Squelette archer
+		CreateCreature("SKELAR01",[386.891],14)  // Squelette archer
+		CreateCreature("SKELAR01",[335.743],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1137.766],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1087.627],14)  // Squelette archer
+		CreateCreature("SKELAR01",[891.538],14)  // Squelette archer
+END
+
+IF
+    Global("d9spawnskelleton","AR2905",3)
+	Global("d9spawnskelletonZ","AR2905",0)
+	OR(2)
+		Difficulty(HARD)
+		Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("d9spawnskelletonZ","AR2905",1)
+		CreateVisualEffect("SPRAISED",[629.1007])
+		CreateVisualEffect("SPRAISED",[386.891])
+		CreateVisualEffect("SPRAISED",[335.743])
+		CreateVisualEffect("SPRAISED",[1137.766])
+		CreateVisualEffect("SPRAISED",[1087.627])
+		CreateVisualEffect("SPRAISED",[891.538])
+		Wait(4)
+		CreateCreature("SKELAR01",[629.1007],14)  // Squelette archer
+		CreateCreature("SKELAR01",[386.891],14)  // Squelette archer
+		CreateCreature("SKELAR01",[335.743],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1137.766],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1087.627],14)  // Squelette archer
+		CreateCreature("SKELAR01",[891.538],14)  // Squelette archer
+END
+
+IF
+    Global("d9spawnskelleton","AR2905",3)
+	Global("d9spawnskelletonZ","AR2905",1)
+			Difficulty(HARDEST)
+THEN
+	RESPONSE #100
+		SetGlobal("d9spawnskelletonZ","AR2905",2)
+		CreateVisualEffect("SPRAISED",[629.1007])
+		CreateVisualEffect("SPRAISED",[386.891])
+		CreateVisualEffect("SPRAISED",[335.743])
+		CreateVisualEffect("SPRAISED",[1137.766])
+		CreateVisualEffect("SPRAISED",[1087.627])
+		CreateVisualEffect("SPRAISED",[891.538])
+		Wait(4)
+		CreateCreature("SKELAR01",[629.1007],14)  // Squelette archer
+		CreateCreature("SKELAR01",[386.891],14)  // Squelette archer
+		CreateCreature("SKELAR01",[335.743],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1137.766],14)  // Squelette archer
+		CreateCreature("SKELAR01",[1087.627],14)  // Squelette archer
+		CreateCreature("SKELAR01",[891.538],14)  // Squelette archer
+END
+*/	

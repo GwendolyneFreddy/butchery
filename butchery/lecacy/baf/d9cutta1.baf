@@ -1,0 +1,59 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("TAZOK")
+		MoveViewPoint([1679.589],VERY_FAST)
+END
+
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("TAZOK")
+		PlaySound("HOGRE03")
+		PlaySound("HOGRE03")
+		PlaySound("HOGRE03")
+		 DisplayStringHead(Myself,@470)
+		 		Wait(2)
+
+		PlaySound("HOBGL04")
+		PlaySound("HOBGL04")
+		PlaySound("HOBGL04")
+
+			MoveToPointNoInterrupt([1253.696])
+			Wait(1)
+			DisplayStringHead("HOBARC02",@472)
+
+
+
+			Wait(1)
+		MoveToPointNoInterrupt([1484.650])
+		PlaySound("HOBGL01")
+		PlaySound("HOBGL01")
+		PlaySound("HOBGL01")
+			Wait(1)
+		 DisplayStringHead(Myself,@473)
+		Wait(3)
+		    DisplayStringHead("ORC03",@474)
+		    Wait(1)
+    		PlaySound("HOGRE04")
+		PlaySound("HOGRE04")
+		PlaySound("HOGRE04")
+
+ 	    ActionOverride("observe",DestroySelf())
+		MoveToPointNoInterrupt([2069.650])
+			CreateCreature("observe",[1833.393],0)
+			Wait(1)
+		DisplayStringHead("ORC04",@475)
+			Wait(2)
+		 DisplayStringHead(Myself,@476)
+		PlaySound("OGREE01")
+		PlaySound("OGREE01")
+		PlaySound("OGREE01")
+Wait(8)
+
+		StartCutScene("D9CutTa2")
+END
+

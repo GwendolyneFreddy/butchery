@@ -1,0 +1,34 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeFromColor([20.0],0)
+		ActionOverride("TAZOK",DestroySelf())
+		ActionOverride("ORC05",DestroySelf())
+
+		ActionOverride("D9Groumt",DestroySelf())
+		ActionOverride("ORC06",DestroySelf())
+
+		ActionOverride("ORC02",DestroySelf())
+
+		ActionOverride("D9ORC01",DestroySelf())
+		ActionOverride("D9Bourt",DestroySelf())
+		ActionOverride("D9OGRGA",DestroySelf())
+		ActionOverride("OGREMA01",DestroySelf())
+		ActionOverride("observe",DestroySelf())
+
+		ActionOverride("ORC03",DestroySelf())
+		ActionOverride("ORC04",DestroySelf())
+
+
+		ActionOverride("HOBARC02",DestroySelf())
+		ActionOverride("HOBARC01",DestroySelf())
+		ActionOverride("HOBSHA01",DestroySelf())
+
+
+
+		LeaveAreaLUA("AR1203","",[600.565],4)
+		EndCutSceneMode()
+END
+

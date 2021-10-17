@@ -1,0 +1,22 @@
+EXTEND_BOTTOM FIRORC01 1
+IF ~~ THEN EXTERN FIRORC01 bordel2
+END
+
+
+APPEND FIRORC01
+
+
+IF ~~ THEN BEGIN bordel2
+   SAY @141
+   IF ~~ THEN DO ~MoveToPointNoInterrupt([1406.1337])
+   JumpToPoint([2042.1825])
+ ~ EXIT
+  END
+
+END
+
+
+CHAIN IF WEIGHT #-1 ~NumTimesTalkedTo(2)~ THEN "FIRORC01" plaa
+@142
+END
+IF ~~ THEN DO ~~ EXIT

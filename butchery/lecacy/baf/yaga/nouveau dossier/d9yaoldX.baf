@@ -1,0 +1,69 @@
+IF
+	Global("SpawnStart","AR5203",1)
+	GlobalLT("MaxSpawn","AR5203",60)
+	!Dead("Yaga01")  // Yaga-Shura
+	GlobalLT("EXTRACOUNT","MYAREA",7)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureObjectOffScreen("YSSOLD01",Player1,0,0,0)  // Soldat de Yaga-Shura
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+		Continue()
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureObjectOffScreen("YSSOLD02",Player1,0,0,0)  // Soldat de Yaga-Shura
+		IncrementGlobal("EXTRACOUNT","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("SpawnStart","AR5203",1)
+	GlobalLT("MaxSpawn","AR5203",60)
+	!Dead("Yaga01")  // Yaga-Shura
+	GlobalLT("EXTRACOUNT2","MYAREA",4)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureObjectOffScreen("YSSOLD03",Player1,0,0,0)  // Officier de Yaga-Shura
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+		Continue()
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureObjectOffScreen("YSMAGE01",Player1,0,0,0)  // Mage de Yaga-Shura
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+		Continue()
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureObjectOffScreen("YSCLER01",Player1,0,0,0)  // Clerc de Talos
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+		Continue()
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureObjectOffScreen("YSFIRE01",Player1,0,0,0)  // Géant du feu
+		IncrementGlobal("EXTRACOUNT2","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("SpawnStart","AR5203",1)
+	GlobalLT("MaxSpawn","AR5203",60)
+	!Dead("Yaga01")  // Yaga-Shura
+	GlobalLT("EXTRACOUNT3","MYAREA",1)
+	ActionListEmpty()
+	InActiveArea(Myself)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureObjectOffScreen("YSSOLD04",Player1,0,0,0)  // Soldat d'élite de Yaga-Shura
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+		Continue()
+	RESPONSE #100
+		IncrementGlobal("MaxSpawn","AR5203",1)
+		CreateCreatureObjectOffScreen("YSFIRE02",Player1,0,0,0)  // Géant du feu
+		IncrementGlobal("EXTRACOUNT3","MYAREA",1)
+		Continue()
+END

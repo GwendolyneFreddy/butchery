@@ -1,0 +1,11 @@
+////////////////////////////////////////
+// Self Destroy
+////////////////////////////////////////
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("SPFLESHS",Myself)
+		DestroySelf()
+END

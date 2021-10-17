@@ -1,0 +1,24 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ClearAllActions()
+		Wait(4)
+		FadeToColor([20.0],0)
+		Wait(3)
+		LeaveAreaLUAPanic("D92500","",[1350.11458],4)
+		LeaveAreaLUA("D92500","",[1350.1145],4)
+		ActionOverride(Player2,LeaveAreaLUA("D92500","",[1350.1145],3))
+		ActionOverride(Player3,LeaveAreaLUA("D92500","",[1350.1145],3))
+		ActionOverride(Player4,LeaveAreaLUA("D92500","",[1350.1145],3))
+		ActionOverride(Player5,LeaveAreaLUA("D92500","",[1350.1145],3))
+		ActionOverride(Player6,LeaveAreaLUA("D92500","",[1350.1145],3))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Explore()
+		DayNight(DUSK_START)
+		Wait(2)
+		EndCutSceneMode()
+END
+
