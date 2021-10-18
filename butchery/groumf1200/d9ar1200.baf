@@ -37,7 +37,7 @@ THEN
 		SetGlobal("D9GroumfExists","AR1200",3)
 END
 
-
+/* DEPRECATED as of v5.0.0 as it is non-sense
 IF
 	Global("D9Samiaout","GLOBAL",1)
 THEN
@@ -50,3 +50,4 @@ THEN
 		ActionOverride("Samia",Dialogue([PC])
 		SetGlobal("D9Samiaout","GLOBAL",2)
 END
+*/

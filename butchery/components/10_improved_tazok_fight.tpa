@@ -163,7 +163,7 @@ END
 
 EXTEND_TOP ~firorc01.bcs~ ~%MOD_FOLDER%/tazok1/d9firorc.baf~
 
-COMPILE ~%MOD_FOLDER%/tazok1/d9firorc.d~  // USING ~%MOD_FOLDER%/lang/%s/d9firorc.tra~
+COMPILE ~%MOD_FOLDER%/tazok1/d9firorc.d~
 
 /* DEPRECATED as of v4.0.0 (replaced with function extend_area_script defined in ALWAYS block): sets an area script to AR1203
 COPY_EXISTING ~AR1203.are~ ~override~
