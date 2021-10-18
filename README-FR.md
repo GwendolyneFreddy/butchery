@@ -82,7 +82,7 @@ Ce mod est conçu pour fonctionner sur les jeux Infinity Engine suivants :
 Ce mod est un mod WeiDU et devrait par conséquent être compatible avec n'importe quel mod WeiDU. Bien que je m'efforce de rendre BuTcHeRy compatible avec le plus grand nombre possible de mods, des incompatibilités risquent toujours de se produire. Voici la liste de celles recensées jusqu'à présent :
 
 - BuTcHeRY n'est pas compatible avec le composant « *Firkraag amelioré* » du mod Revisited Battles.
-- Le composant « *Combat revisite de Sarevok necrophage dans les Abysses* » n'est pas compatible avec le mod Angelo NPC for Baldur's Gate II.
+- Le composant « *Combat revisité de Sarevok necrophage dans les Abysses* » n'est pas compatible avec le mod Angelo NPC for Baldur's Gate II.
 
 Si vous rencontrez des bugs, veuillez les signaler dans le <a href="https://www.baldursgateworld.fr/lacouronne/butchery/31626-rapports-de-bugs-bug-report.html">le forum du mod</a>, s'il vous plaît.
 
@@ -244,7 +244,7 @@ Ce composant ajoute aussi deux guerriers de ma composition avec des soundsets un
 
 &#9755; Ce composant améliore un peu les statistiques, jets de sauvegarde, points de vie et points de compétences de quelques créatures (orques et ogres notamment, et bon nombre d'animaux et d'autres créatures depuis la version 5.0.0). La plupart disposent dorénavant d'un kit de barbare ou de berserker, mais vous devrez installer Stratagems pour que ces créatures utilisent leurs capacités spéciales.
 
-Les capacités et immunités des squelettes et momies ennemis sont standardisés : ils ont toujours 100 % de résistance à l'électricité et au froid ainsi que 10 % de résistance magique par niveau. Leur resistance aux attaques de projectile est de 90 %. Ceci afin d'en faire des ennemis redoutables.
+Les capacités et immunités des squelettes et momies ennemis sont standardisées : ils ont toujours 100 % de résistance à l'électricité et au froid ainsi que 10 % de résistance magique par niveau. Leur resistance aux attaques de projectile est de 90 %. Ceci afin d'en faire des ennemis redoutables.
 
 <table style="margin-left: 80px" summary="Rebalanced generic creatures">
 	<tr>
