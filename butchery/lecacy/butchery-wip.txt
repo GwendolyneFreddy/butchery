@@ -1,0 +1,111 @@
+BOUCHERIES :
+
+- Firkraag's hideout                                                    DONE
+- Bosquet des druides                                                   DONE
+- Bateau pour Spellhold
+- Reputation trap
+- Vampires 1 : Bodhi lair before underdar, spike room                   DONE
+- Vampires 2 : Bodhi lair after underdark, spike room                   DONE
+- BG2EE : Sphère Planaire - Plan démoniaque (ar0414)                    DONE
+- BG2EE : Culte de l'Œil Aveugle (ar0205)                               DONE
+- boucheries d'araignées I et II                                        DONE
+- 3 boucheries de squelettes                                            DONE
+- boucherie de sahuagins                                                DONE
+- butchery Tethyr woods (druides de l'ombre)                            DONE
+- 3 bucheries in spellhold [SetGlobal("AsylumDaceGone","GLOBAL",1)]     DONE
+- Guilde des Voleurs de l'ombre
+- butchery small teeth path (orcs)
+- butchery exit Underdark
+- butchery in HELL
+- NALIA troll butchery                                                  DONE
+- Suldanessellar GOLEM Butchery
+- butchery land Firkraag (orcs)                                         DONE
+- butchery wolves (Umar village)                                        DONE
+- butchery Trademeet                                                    DONE
+
+- Improved YAGA-SHURA butchery                                          DONE  (add some créatures later)
+- Monk butchery
+- forêt de Mir ( ) before YAGA SHURA HEART : SQUELETTES
+- forêt de Mir ( ) after YAGA SHURA HEART : VAMPIRES
+- boucherie elfe noir outside
+
+- Tour de garde, étage 5,  épreuve 1                                    DONE
+- Tour de garde Githyanki Encampment                                    DONE
+- Tour de garde labyrinthe demons
+
+
+
+
+ROUGH WORLD :
+
+- Conster golems
+
+- Elementals in Underdark                                               NEXT
+- Sarevok in hell                                                       DONE
+
+
+DAVANTAGE d'ENNEMIS :
+
+- Maevar
+- Prêtre de Cyric
+- Cirque
+- Pai'Na
+- Amis de Valygar
+- Œil aveugle path
+- Sphère planaire
+- Sahuagins
+- Small Teeth path
+- North forest
+- Tethyr Wood (dragon)
+- Catacombes
+- Firkraag entrance
+- Tour de garde, Lum le fou floor
+
+- Suddanesselar ?
+- Spellhold
+- Map encounters
+
+- Grotte Umar Hills
+- PP challenges
+
+
+GROUMF ENCOUNTER :
+
+- Firkraag                                                              DONE
+- Brynnlaw                                                              DONE
+- Underdark                                                             DONE
+- Exit Underdark (SoA and ToB)
+
+
+- In hell (Sarevok fight)
+- juste avant Gromnir
+- boucherie de Yaga-Shura
+- Enclave de Sendai (avec les nains ou avec le gardien des clés)
+- Lieutenant de Baltahazar
+
+
+COMESTICS :
+
+- Elfes noirs                                                           DONE
+
+
+Rabalancing minor CRE (stats, trowing saves, equipment)
+- Orques, ogres, orog, drows, dwarf, Galvena
+- Squelettes :  more magic resistance, missile resistance and electricity resistance.
+- Goules, zombies : more HP
+- Animaux : more HP
+- Gelées, Otyugh : more HP +50%
+- Serpent
+- Ours blanc more HP
+- Araignées ?
+- Loup
+- Werewolf
+
+REBALANCING BOSS
+
+
+Sache que je possède un grand pouvoir dans cette partie des abysses car nous sommes dans le royaume de notre père.
+Les âmes de mes anciens acolytes me sont soumises et nourrissent ma chair continuellement.
+L'issue du combat ne fait aucun doute et j'aurai ma vengeance.
+
+Un allié en moins, mais rassure-toi; j'ai encore des âmes qui me sont soumises.
