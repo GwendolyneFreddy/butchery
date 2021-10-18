@@ -1,19 +1,50 @@
-/* DEPRECATED
-@1 = ~****************************************~
-@2 = ~*BuTcHeRy Mod Version 1.0        *~
-@3 = ~*DrAzTiK01@msn.com	  *~
-@4 = ~*Copyright 2009                         *~
-@5 = ~* A utiliser avec ToB Version 26498     *~
-@6 = ~* Ce fichier va installer               *~
-@7 = ~* BuTcHeRy dans votre             *~
-@8 = ~*    Répertoire BG2                     *~
-@9 = ~*****************************************~
-@10 = ~Il semble que ToB ne soit pas installe sur votre systeme.~
-*/
+/* -------------------- *
+ *  Installer messages  *
+ * -------------------- */
+@1  = ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
+@2  = ~This component requires the Groumf and Bourrinos Encounter at Firkraag's Hideout entrance component to be installed.~
+@3  = ~This component requires the DrAzTiK's Creatures component to be installed.~
+@4  = ~This component is content-wise not compatible with Angelo NPC for Baldur's Gate II.~
 
-@1 = ~This mod requires ToB, BGT, BG2:EE or EET to be installed.~
 
-@10 = ~DrAzTiK's revisited fight against Tazok and DigDag~
-@20 = ~Rebalancing a few generic creatures (orcs and ogres)~
-@30 = ~Rebalanced Tazok and DigDag~
+/* ------------ *
+ *  Components  *
+ * ------------ */
+@10 = ~DrAzTiK's revisited fight against Tazok and DigDag [install before Stratagems]~
+@11 = ~Rebalancing some generic creatures [install before Stratagems]~
+@12 = ~Rebalancing Tazok and DigDag [install before Stratagems]~
 
+@20 = ~Groumf and Bourrinos Encounter at Firkraag's Hideout entrance [install before Stratagems]~
+@21 = ~Groumf and Bourrinos Encounter at Brynnlaw [install before Stratagems]~
+@22 = ~Groumf and Bourrinos Encounter in the Underdark [install before Stratagems]~
+
+@30 = ~Revisited fight against Wraith Sarevok in the Abyss [install before Stratagems]~
+//@31 = ~Move Samia group into Firkraag's Entrance (BETA and bugged) [install before or after Stratagems]~
+@32 = ~Add battle songs in some areas that do not have any [install before or after Stratagems]~
+
+@40 = ~DrAzTiK's Creatures [install before Stratagems, some following components need it]~
+@41 = ~Butchery in Irenicus Dungeon (Dwarves) [install after Stratagems]~
+//@42 = ~Butchery for high and low reputation traps (BETA, BUGGED, NOT FINISHED) [install after Stratagems]~
+@43 = ~Butchery in the Forest of Tethyr (Animals and Druids) [install after Stratagems]~
+@44 = ~Butchery in the planar sphere (Demonic creatures) [install after Stratagems]~
+@45 = ~3 butcheries in Spellhold (Golems, Vampires and Trolls) [install after Stratagems]~
+@46 = ~Butchery outside de'Arnise Keep (Trolls) [install after Stratagems]~
+@47 = ~Butchery in Windspear Hills (Orcs) [install after Stratagems]~
+@48 = ~Butchery in Umar Hills (Wolves) [install after Stratagems]~
+@49 = ~2 butcheries in Trademeet and outside Watcher's Keep (Animals) [install) after Stratagems]~
+@50 = ~2 butcheries of Golems in Suldanessellar and Watcher's Keep (Machine of Lum the Mad floor) [install after Stratagems]~
+@51 = ~Butchery of Yaga-Shura revisited [install after Ascension and Stratagems]~
+@52 = ~Butchery in the Druid Grove area (Animals and Druids) [install after Stratagems]~
+@53 = ~Butchery in the Beholder Hideout (Fanatics) [install after Stratagems]~
+@54 = ~Butchery in Bodhi's Hideout (chapter 2, before Underdark) - Vampires [install after Stratagems]~
+@55 = ~Butchery in Bodhi's Hideout (chapter 6, after Underdark) - Vampires [install after Stratagems]~
+@56 = ~2 butcheries of Sahuagins in Sahuagin City and Watcher's Keep (Githyanki Encampment) [install after Stratagems]~
+@57 = ~4 butcheries of spiders in Pai'Na's Hideout entrance, Temple City (Unseeing Eye Plot), Watcher's Keep first floor (Altar level) and in the area outside Sendai's Hideout [install after Stratagems]~
+@58 = ~6 butcheries of skeletons in the lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Keep (Last Seals), and 2 in Nyalee's Hideout [install after Stratagems]~
+
+@80 = ~More enemies scattered throughout the game [install after Stratagems]~ // Turns BG2 into a Dungeon Crawler!!!
+@90 = ~Cosmetic component [install before or after Stratagems]~
+
+@91 = ~Patching creature files...~
+@95 = ~%SOURCE_FILE%: d9yaold1.baf block not found. Pass...~
+@96 = ~%SOURCE_FILE%: d9yaoldx.baf block not found. Pass...~

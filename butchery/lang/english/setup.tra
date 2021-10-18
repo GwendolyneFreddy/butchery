@@ -44,3 +44,7 @@
 
 @80 = ~More enemies scattered throughout the game [install after Stratagems]~ // Turns BG2 into a Dungeon Crawler!!!
 @90 = ~Cosmetic component [install before or after Stratagems]~
+
+@91 = ~Patching creature files...~
+@95 = ~%SOURCE_FILE%: d9yaold1.baf block not found. Pass...~
+@96 = ~%SOURCE_FILE%: d9yaoldx.baf block not found. Pass...~

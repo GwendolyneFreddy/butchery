@@ -33,12 +33,12 @@ BUT_ONLY
 
 // Changement des blocs de génération de créatures si installation de Ascension + SCS
 COPY_EXISTING ~ar5203.bcs~ ~override~
-	R_B_B ~%MOD_FOLDER%/yaga/d9yaold1.baf~ ~%MOD_FOLDER%/yaga/d9yanew1.baf~ ON_MISMATCH PATCH_PRINT ~%SOURCE_FILE%: d9yaold1.baf block not found, pass~ PATCH_SILENT END
+	R_B_B ~%MOD_FOLDER%/yaga/d9yaold1.baf~ ~%MOD_FOLDER%/yaga/d9yanew1.baf~ ON_MISMATCH PATCH_PRINT @95 PATCH_SILENT END // ~%SOURCE_FILE%: d9yaold1.baf block not found. Pass...~
 BUT_ONLY
 
 // Changement des blocs de génération de créatures si installation de Ascension seulement
 COPY_EXISTING ~ar5203.bcs~ ~override~
-	R_B_B ~%MOD_FOLDER%/yaga/d9yaoldx.baf~ ~%MOD_FOLDER%/yaga/d9yanew1.baf~ ON_MISMATCH PATCH_PRINT ~%SOURCE_FILE%: d9yaoldx.baf block not found, pass~ PATCH_SILENT END
+	R_B_B ~%MOD_FOLDER%/yaga/d9yaoldx.baf~ ~%MOD_FOLDER%/yaga/d9yanew1.baf~ ON_MISMATCH PATCH_PRINT @96 PATCH_SILENT END // ~%SOURCE_FILE%: d9yaoldx.baf block not found. Pass...~
 BUT_ONLY
 
 // Adds a few lines to Yaga-Shura script to make him dialogging with Player1 at range.

@@ -45,6 +45,10 @@
 @80 = ~Transformer BG2 en Dungeon crawler [a installer apres Stratagems]~ // Davantage d'ennemis pour ne pas s'endormir
 @90 = ~Composant cosmetique [a installer avant ou apres Stratagems]~
 
+@91 = ~Modification des fichiers de creatures...~
+@95 = ~%SOURCE_FILE%: le bloc d9yaold1.baf n'existe pas. Passe...~
+@96 = ~%SOURCE_FILE%: d9yaoldx.baf block n'existe pas. Passe...~
+
 
 /* =============== *
  *  WeiDU prompts  *
