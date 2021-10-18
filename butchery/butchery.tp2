@@ -1,20 +1,21 @@
-BACKUP ~butchery\backup~
+BACKUP ~weidu_external/backup/butchery~
 //AUTHOR ~"draztik.vince@gmail.com"~
 SUPPORT ~https://www.baldursgateworld.fr/lacouronne/butchery/~
 
-VERSION ~v5.0.0~
+VERSION ~v5.0.0 beta~
 
 README ~butchery/readme/butchery-readme-%LANGUAGE%.html~ ~butchery/readme/butchery-readme-english.html~
 AUTO_EVAL_STRINGS
 
 ALWAYS
 
-	INCLUDE ~%MOD_FOLDER%/lib/always.tph~
+	INCLUDE ~butchery/lib/always.tph~
 
 END	// of ALWAYS block
 
 
-AUTO_TRA ~butchery\lang\autotra\%s~
+AUTO_TRA ~weidu_external/lang/butchery/%s~
+
 
 ///////////////////////////////////////
 //          CHOOSE LANGUAGE          //
@@ -23,23 +24,22 @@ AUTO_TRA ~butchery\lang\autotra\%s~
 LANGUAGE ~English~
          ~english~
          ~butchery/lang/english/setup.tra~
-         ~butchery/lang/english/butchery.tra~
+         ~weidu_external/lang/butchery/english/butchery.tra~
 //         ~butchery/lang/english/d9cutta.tra~  // DEPRECATED as of v3.2
-         ~butchery/lang/english/d9firorc.tra~
+         ~weidu_external/lang/butchery/english/d9firorc.tra~
 
 LANGUAGE ~Francais~
          ~french~
          ~butchery/lang/french/setup.tra~
-         ~butchery/lang/french/butchery.tra~
+         ~weidu_external/lang/butchery/french/butchery.tra~
 //         ~butchery/lang/french/d9cutta.tra~  // DEPRECATED as of v3.2
-         ~butchery/lang/french/d9firorc.tra~
+         ~weidu_external/lang/butchery/french/d9firorc.tra~
 
 LANGUAGE ~Russian (translation by yota13)~
          ~russian~
          ~butchery/lang/russian/setup.tra~
-         ~butchery/lang/russian/butchery.tra~
-         ~butchery/lang/russian/d9firorc.tra~
-
+         ~weidu_external/lang/butchery/russian/butchery.tra~
+         ~weidu_external/lang/butchery/russian/d9firorc.tra~
 
 
 /* ========================================================================= *

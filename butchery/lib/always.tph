@@ -17,6 +17,7 @@ ACTION_IF !VARIABLE_IS_SET bg2_chapter BEGIN // Always block must run only once 
 	/* -------------------------------------------------------------------------------- *
 	 *    Determines which game is installed and if the game is an Enhanced Edition.    *
 	 * -------------------------------------------------------------------------------- */
+
 	OUTER_SET is_tob   = (GAME_IS ~bgt tob~) ? 1 : 0     // based on vanilla ToB engine
 	OUTER_SET is_bg2ee = (GAME_IS "bg2ee") ? 1 : 0       // b2gee
 	OUTER_SET is_eet   = (GAME_IS "eet") ? 1 : 0         // eet
@@ -34,19 +35,36 @@ ACTION_IF !VARIABLE_IS_SET bg2_chapter BEGIN // Always block must run only once 
 		OUTER_SPRINT ee_file ""
 	END
 
-
-	/* ----------------------------------------------------------------------------------- *
-	 *    Animation slot for chieftain orog in EE and classic BG2 have different labels    *
-	 * ----------------------------------------------------------------------------------- */
-
+	// Animation slot for chieftain orog in EE and classic BG2 have different labels
 	OUTER_SET slot_halfogre       = IDS_OF_SYMBOL(~ANIMATE~ ~HALF_OGRE~)
 	OUTER_SET slot_orogchief      = (is_ee = 1) ? IDS_OF_SYMBOL(~ANIMATE~ ~OROG_CHIEFTAIN~) : IDS_OF_SYMBOL(~ANIMATE~ ~OROG3~)
 	OUTER_SET slot_sahuagin_large = (IDS_OF_SYMBOL(~ANIMATE~ ~SAHUAGIN_LARGE~) > 0) ? IDS_OF_SYMBOL(~ANIMATE~ ~SAHUAGIN_LARGE~) : 32547
+
+	// Required because of non-standard BACKUP path
+	OUTER_TEXT_SPRINT MOD_FOLDER "butchery"
+
+	// Sets variables for the external locations
+	OUTER_SPRINT tra_base     "lang"
+	OUTER_SPRINT marker_loc   "weidu_external/markers"
+	OUTER_SPRINT ext_lang_loc EVAL "weidu_external/lang/%MOD_FOLDER%"
+	OUTER_SPRINT marker_name  EVAL "%marker_loc%/d9#%MOD_FOLDER%_languages_installed.mrk"
+
+
+	/* ---------------------------------- *
+	 *    Creates the external folders    *
+	 * ---------------------------------- */
+
+	ACTION_FOR_EACH folder IN ~weidu_external~ ~%marker_loc%~ ~weidu_external/lang/~ ~%ext_lang_loc%~ BEGIN
+		ACTION_IF (NOT DIRECTORY_EXISTS ~%folder%~) BEGIN
+			MKDIR ~%folder%~
+		END
+	END
 
 
 	/* ------------------------------------------- *
 	 *    EET chapters continuity compatibility    *
 	 * ------------------------------------------- */
+
 		ACTION_IF is_eet BEGIN
 			OUTER_SET bg2_chapter = 12
 		END ELSE BEGIN
@@ -75,41 +93,39 @@ ACTION_IF !VARIABLE_IS_SET bg2_chapter BEGIN // Always block must run only once 
 >>>>>>>>
 
 
-	///////////////////////////////////////////////////////////////////////////////////////
-	//    ---------------- Handling of correctly formatted tra-files ----------------    //
-	//    Copies tra files into the autotra folder (to leave the originals untouched)    //
-	///////////////////////////////////////////////////////////////////////////////////////
+	/* --------------------------------------------- *
+	 *    Convert strings to UTF-8 for BGEE/BG2EE    *
+	 * --------------------------------------------- */
 
-	ACTION_IF (!FILE_EXISTS "%MOD_FOLDER%/lang/languages_installed.mrk") BEGIN
+	ACTION_IF (!FILE_EXISTS "%marker_name%") BEGIN
 
-		DEFINE_ACTION_FUNCTION ~autotra_workaround~ BEGIN
-			MKDIR "%MOD_FOLDER%/lang/autotra/%LANGUAGE%"
-			COPY ~%MOD_FOLDER%/lang/%LANGUAGE%~	~%MOD_FOLDER%/lang/autotra/%LANGUAGE%~
-		END
+		COPY ~.../butchery-inline/blank~ ~%marker_name%~
+
+		MKDIR "%ext_lang_loc%/%LANGUAGE%"
+		COPY ~%MOD_FOLDER%/lang/%LANGUAGE%~	~%ext_lang_loc%/%LANGUAGE%~
 
 		/* Converts tra files to UTF-8 */
-		LAF ~autotra_workaround~ END
+		ACTION_IF is_ee BEGIN  // Do conversions (EE only)
 		
-		ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
-		ACTION_DEFINE_ARRAY fl#reload BEGIN butchery d9firorc END
-		LAF HANDLE_CHARSETS 
-			INT_VAR	infer_charsets = 1
-			STR_VAR	tra_path = EVAL ~%MOD_FOLDER%/lang/autotra~
-					iconv_path = EVAL ~%MOD_FOLDER%/lang/iconv~
-					noconvert_array = fl#noconvert
-					reload_array = fl#reload
+			ACTION_DEFINE_ARRAY d9#noconvert BEGIN setup END
+			ACTION_DEFINE_ARRAY d9#reload BEGIN butchery d9firorc END
+			LAF HANDLE_CHARSETS 
+				INT_VAR infer_charsets  = 1
+				STR_VAR tra_path        = EVAL ~%MOD_FOLDER%/lang~
+                        out_path        = EVAL ~%ext_lang_loc%~
+                        iconv_path      = EVAL ~%MOD_FOLDER%/lang/iconv~
+                        noconvert_array = d9#noconvert
+                        reload_array    = d9#reload
+			END
+
 		END
 
-		COPY ~.../butchery-inline/blank~ ~%MOD_FOLDER%/lang/languages_installed.mrk~
+	END // of ACTION_IF (!FILE_EXISTS "%marker_name%")
 
-	END // of ACTION_IF (!FILE_EXISTS "%MOD_FOLDER%/lang/languages_installed.mrk")
+	// TRAs declared in LANGUAGE must be reloaded - by hand, because of the copying (for non-EE version)
+	LOAD_TRA "%ext_lang_loc%/%LANGUAGE%/setup.tra" "%ext_lang_loc%/%LANGUAGE%/butchery.tra" "%ext_lang_loc%/%LANGUAGE%/d9firorc.tra"
 
-	/* TRAs declared in LANGUAGE must be reloaded - by hand, because of the copying (for non-EE version */
-	LOAD_TRA ~butchery/lang/autotra/%LANGUAGE%/setup.tra~
-	LOAD_TRA ~butchery/lang/autotra/%LANGUAGE%/butchery.tra~
-	LOAD_TRA ~butchery/lang/autotra/%LANGUAGE%/d9firorc.tra~
-
-END	// of ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
+END	// of ACTION_IF !VARIABLE_IS_SET bg2_chapter BEGIN
 
 
 /* ================================================================================ *
@@ -136,4 +152,3 @@ OUTER_SET is_d9dwctyz = (FILE_EXISTS_IN_GAME ~d9dwctyz.bcs~) ? 1 : 0
  *    Detects Grimwarder script    *
  * ------------------------------- */
 OUTER_SET is_d9bodfgh = (FILE_EXISTS_IN_GAME ~d9bodfgh.bcs~) ? 1 : 0
-
