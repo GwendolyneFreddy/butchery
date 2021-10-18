@@ -28,9 +28,9 @@ BGT, BG2:EE et EET<h3>
 
 ## 
 
-:page_facing_up: [Lisez-moi du mod]()
+:page_facing_up: [Lisez-moi du mod](https://www.baldursgateworld.fr/filesmods/ModsBG/butchery-readme-french.html)
 
-:inbox_tray: [Télécharger le mod sur le site de La Couronne de Cuivre]()<br>
+:inbox_tray: [Télécharger le mod sur le site de La Couronne de Cuivre](https://www.baldursgateworld.fr/filesmods/ModsBG/butchery-v5.0.0.zip)<br>
 
 ## 
 
@@ -749,17 +749,72 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisées :
 
 <p>Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p>
 
-##### Version 5.0.0 &nbsp;(nn octobre 2021)
+##### Version 5.0.0 &nbsp;(October nn, 2021)
 
+- Added *butchery.ini* metadata file (including dynamic install order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
+- Replaced `AUTHOR` keyword with `SUPPORT`.
+- Added Immutability concept.
+- Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
+- Commented code as much as possible.
+- Fixed installer to avoid installing the same files more than once, regardless of the components installed.
+- Added native EE and EET compatibility:
+    - Added chapters continuity for EET games.
+    - Provided accurate sized NPC portraits for EE games.
+- Added "*Groumf and Bourrinos Encounter at Firkraag's Hideout entrance*" component.
+- Added "*Groumf and Bourrinos Encounter at Brynnlaw*" component.
+- Added "*Groumf and Bourrinos Encounter in the Underdark*" component.
+- Added "*Revisited fight against Wraith Sarevok in the Abyss*" component.
+- Added "*Add battle songs in some areas that do not have any*" component.
+- Added "*DrAzTiK's Creatures*" component.
+- Added "*Butchery in Irenicus Dungeon (Dwarves)*" component.
+- Added "*Butchery in the Forest of Tethyr (Animals and Druids)*" component.
+- Added "*Butchery in the planar sphere (Demonic creatures)*" component.
+- Added "*3 butcheries in Spellhold (Golems, Vampires and Trolls)*" component.
+- Added "*Butchery outside de'Arnise Keep (Trolls)*" component.
+- Added "*Butchery in Windspear Hills (Orcs)*" component.
+- Added "*Butchery in Umar Hills (Wolves)*" component.
+- Added "*2 butcheries in Trademeet and outside Watcher's Keep (Animals)*" component.
+- Added "*2 butcheries of Golems in Suldanessellar and Watcher's Keep (Machine of Lum the Mad floor)*" component.
+- Added "*Butchery of Yaga-Shura revisited*" component.
+- Added "*Butchery in the Druid Grove area (Animals and Druids)*" component.
+- Added "*Butchery in the Beholder Hideout (Fanatics)*" component.
+- Added "*Butchery in Bodhi's Hideout (chapter 2, before Underdark) - Vampires*" component.
+- Added "*Butchery in Bodhi's Hideout (chapter 6, after Underdark) - Vampires*" component.
+- Added "*2 butcheries of Sahuagins in Sahuagin City and Watcher's Keep (Githyanki Encampment)*" component.
+- Added "*4 butcheries of spiders in Pai'Na's Hideout entrance, Temple City (Unseeing Eye Plot), Watcher's Keep first floor (Altar level) and in the area outside Sendai's Hideout*" component.
+- Added *6 butcheries of skeletons in the lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Keep (Last Seals), and 2 in Nyalee's Hideout*" component.
+- Added "*More enemies scattered throughout the game*" component.
+- Added "*Cosmetic component*" component.
+- "*DrAzTiK's revisited fight against Tazok and DigDag*" component:
+    - Renamed .tpa file name to *10_improved_tazok_fight.tpa*.
+    - Flagged potions as "undroppable" in creatures' inventories.
+    - Added `Continue()` action when appending are .bcs files with `EXTEND_TOP` command.
+- "*Rebalancing some generic creatures*" component:
+    - Renamed .tpa file name to *11_rebalancing_creatures.tpa*.
+    - Improved more creatures statistics.
+- "*Rebalancing Tazok and DigDag*" component:
+    - Renamed .tpa file name to *12_rebalancing_tazok.tpa*.
+    - Flagged potions as "undroppable" in creatures' inventories.
+    - Compiled *d9tazokk.baf* if 1st component has not been installed.
+- ...
+- Added Russian translation (by yota13).
+- Proofread English strrefs and completed English translation (Gwendolyne and Lauriel).
+- Added brand new *butchery-readme-%LANGUAGE%.html* files, with videos and moved them into new :file_folder: *readme* folder.
+- Removed useless :file_folder: "*backup*" folder.
+- Lower cased files.
+- Included Linux and mac OS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
+- Updated OggDec to v1.9.7 and added sox v14.4.1 for mac.
+- Added archive libiconv-1.9.2-1-src.7z with iconv license info.
+- Updated WeiDU installer to v247.
 
 ## 
 
-##### Version 4.0.0 &nbsp;(20 octobre 2018)
+##### Version 4.0.0 &nbsp;(October 20, 2018)
 
 - General overhaul and relooking:
 
 	- Integrated all BWP Fixpack patches: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/?p=524893">Lollorian's override compilation fix</a> (changes `COMPILE xyz.d/baf override` to `COMPILE xyz.d/baf`) and unknown origin patch that set ORC05.CRE's BG1 Long Swords proficiency to 0.
-	- Provided full compatibility with stratagems and Item revisions.
+	- Provided full compatibility with Stratagems and Item Revisions.
 	- tp2 split into components and commented for easier further updates.
 	- Reorganized components (`DESIGNATED` numbers).
 	- Added BG2EE compatibility (probably with EET, but not yet tested).
@@ -769,8 +824,8 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisées :
 	- Used new WeiDU variables (INV RING QITEM...) with `ADD_CRE_ITEM` command.
 	- Provided new portraits for BG2:EE.
 	- Reworked install procedure to use WeiDU's built-in `HANDLE_AUDIO` function to install sound sets.
-	- Used WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
-	- Deleted unused files from mod folder.
+	- Used `HANDLE_CHARSETS` function to add BG2EE compatibility for languages other than English.
+	- Removed unused files from mod folder.
 	- Updated readme (Butchery now supports translated readmes)
 	- Revamped French translation and fixed English typos courtesy of Gwendolyne.
 	- Traified creatures sound sets (still waiting for English sound files).
@@ -781,8 +836,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisées :
 
 ## 
 
-##### Version 3.2 &nbsp;(10 octobre 2011)
-
+##### Version 3.2 &nbsp;(October 10, 2011)
 - Increased Tazok to level 19 Barbarian.
 - Added a magical armor to Tazok.
 - Increased DigDag to level 13 Berserker.
@@ -790,19 +844,16 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisées :
 
 ## 
 
-##### Version 3 &nbsp;(1er mars 2011)
-
+##### Version 3 &nbsp;(March 1, 2011)
 - Better compatibility with SCS II (especially more sensible choices of weapon proficiencies and kits for fighters component).
 
 ## 
 
-##### Version 2 &nbsp;(30 novembre 2010)
-
+##### Version 2 &nbsp;(November 30, 2010)
 - Added French translation.
 
 ## 
 
-##### Version 1 &nbsp;((11 novembre 2010)
-
+##### Version 1 &nbsp;(November 11, 2010)
 - Initial release.
 <div align="right"><a href="#top">Retour en haut de page</a></div>

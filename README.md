@@ -5,7 +5,7 @@
 ![Language](https://img.shields.io/static/v1?label=language&message=French%20%7C%20English%20%7C%20Russian&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
-<a href="readme-FR.md"><img align="right" src="butchery/readme/images/fr-flag-32.png" title="Readme français"></a>
+<a href="README-FR.md"><img align="right" src="butchery/readme/images/fr-flag-32.png" title="Readme français"></a>
 
 
 <div align="center"><h1>BuTcHeRy</h1>
@@ -28,9 +28,9 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## 
 
-:page_facing_up: [Read the mod's readme]()
+:page_facing_up: [Read the mod's readme](https://www.baldursgateworld.fr/filesmods/ModsBG/butchery-readme-english.html)
 
-:inbox_tray: [Download the mod at La Couronne de Cuivre]()<br>
+:inbox_tray: [Download the mod at La Couronne de Cuivre](https://www.baldursgateworld.fr/filesmods/ModsBG/butchery-v5.0.0.zip)<br>
 
 ## 
 
@@ -91,7 +91,7 @@ If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacou
 
 #### Installation Order
 
->Classic games players are strongly recommended to download and install the latest version of the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
+>Original game players are strongly recommended to download and install the latest version of the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
 >You should also install the "<a href="http://www.mediafire.com/file/b9mtiwvj4aah42r/Derats_AutoRest_v4.zip/file">auto resting</a>" mod (from deratiseur) that allows you to restore your spells without having to rest for 8 hours. :wink:
 
 Here is the recommended installation order:
@@ -768,6 +768,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
 
 - Added *butchery.ini* metadata file (including dynamic install order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
+- Added Immutability concept.
 - Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
 - Commented code as much as possible.
 - Fixed installer to avoid installing the same files more than once, regardless of the components installed.
@@ -816,7 +817,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
 - Added brand new *butchery-readme-%LANGUAGE%.html* files, with videos and moved them into new :file_folder: *readme* folder.
 - Removed useless :file_folder: "*backup*" folder.
 - Lower cased files.
-- Included Linux and macOS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
+- Included Linux and mac OS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Updated OggDec to v1.9.7 and added sox v14.4.1 for mac.
 - Added archive libiconv-1.9.2-1-src.7z with iconv license info.
 - Updated WeiDU installer to v247.
