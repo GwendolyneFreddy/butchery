@@ -5,7 +5,7 @@
 //@26  = ~Tenardiar~	DEPRECATED
 @104 = ~Грумф~
 @105 = ~Бурринос~
-@106 = ~Barbarian~      // = BG2 strrefs #45859 and 45863
+@106 = ~‚арвар~         // = BG2 strrefs #45859 and 45863
 /* DEPRECATED
 @10023  = ~Barbarian~
 @11100  = ~Adepte Barbare~
@@ -60,80 +60,80 @@ le nez !~
 
 // d9groum8.baf : Meeting with Groumf and Bourrinos in the Underdark
 // -----------------------------------------------------------------
-@2201 = ~Still more Drow!
-Attack! And no mercy!~
+@2201 = ~Еще больше дроу!
+В атаку! И никакой пощады!~
 
 
 /* ------------------------------------------------ *
  *  Revisited fight against Wraith Sarevok in Hell  *
  * ------------------------------------------------ */
-@3000 = ~Angelo~              // = BG2 strrefs #7161 and 7692
-@3001 = ~Semaj~               // = BG2 strrefs #19592 and 19593
-@3002 = ~Tamoko~              // = BG2 strrefs #11910 and 19935
+@3000 = ~Анджело~              // = BG2 strrefs #7161 and 7692
+@3001 = ~Семадж~               // = BG2 strrefs #19592 and 19593
+@3002 = ~Тамоко~              // = BG2 strrefs #11910 and 19935
 //@3003 = ~Tazok~             // DEPRECATED ==> DO NOT TRANSLATE
-@3004 = ~Mulahey~             // = BG2 strrefs #11918 and 2797
-@3007 = ~Diarmid~             // = BG2 strrefs #11023 and 11024
-@3008 = ~Cythandria~          // = BG2 strrefs #20435 and 20436
-@3009 = ~Krystin~             // = BG2 strrefs #12250 and 12295
-@3010 = ~Slythe~              // = BG2 strrefs #12249 and 12294
-@3011 = ~Gardush~             // = BG2 strrefs #1766 and 1767
-@3013 = ~Aasim~               // = BG2 strrefs #17817 and 17818
+@3004 = ~Мулахей~             // = BG2 strrefs #11918 and 2797
+@3007 = ~Диармид~             // = BG2 strrefs #11023 and 11024
+@3008 = ~Ситандрия~          // = BG2 strrefs #20435 and 20436
+@3009 = ~Кристин~             // = BG2 strrefs #12250 and 12295
+@3010 = ~Слит~              // = BG2 strrefs #12249 and 12294
+@3011 = ~Гардуш~             // = BG2 strrefs #1766 and 1767
+@3013 = ~Аасим~               // = BG2 strrefs #17817 and 17818
 //@14584 = ~Diyab~            // = BG2 strrefs #17820 and 17821 DEPRECATED ==> DO NOT TRANSLATE
-@3015 = ~Zhalimar Cloudwulfe~ // = BG2 strrefs #17828 and 17829
-@3016 = ~Davaeorn~            // = BG2 strrefs #12241 and 12286
+@3015 = ~Залимар Клаудвульф~ // = BG2 strrefs #17828 and 17829
+@3016 = ~Даваэорн~            // = BG2 strrefs #12241 and 12286
 
 // d9sarevo.baf
 // ------------
-@3050 = ~To me, my followers!~
-@3051 = ~Hahaha! It is not over yet!~
+@3050 = ~Ко мне, мои последователи!~
+@3051 = ~Хахаха! Это еще не конец!~
 //@14552 = ~Semaj ! Noooon !~  // unused ==> DO NOT TRANSLATE
 //@14553 = ~Tamoko ! Noooon !~ // unused ==> DO NOT TRANSLATE
 //@14554 = ~Tazok ! Noooon !~  // unused ==> DO NOT TRANSLATE
-@3056 = ~No! Look what you did! DIE!~
-@3057 = ~Now that his minions are defeated, Sarevok is vulnerable to your attacks.~
+@3056 = ~Нет! Смотри, что случилось! УМРИ!~
+@3057 = ~Сейчас, когда его приспешники повержены, Саревок уязвим для ваших атак.~
 
 
 /* ------------------- *
  *  DrAzTiK creatures  *
  * ------------------- */
-@4000 = ~Dwarf Berseker novice~
-@4001 = ~Dwarf Warrior novice~
-@4002 = ~Experienced Dwarf Berseker~
-@4003 = ~Elite Dwarf Warrior~
-@4004 = ~Dwarf Priest novice~
-@4005 = ~Experienced Dwarf Priest~
+@4000 = ~Гном-берсерк послушник~
+@4001 = ~Гном-воин послушник~
+@4002 = ~Опытный гном-берсерк~
+@4003 = ~Элитный гном-воин~
+@4004 = ~Гном-жрец послушник~
+@4005 = ~Опытный гном-жрец~
 
-@4010 = ~Skeleton Cleric novice~
-@4011 = ~Skeleton Mage novice~
-@4012 = ~Experienced Skeleton Cleric~
-@4013 = ~Experienced Skeleton Mage~
-@4014 = ~Vampire Mage~ // Used by components #55 and #58
-@4015 = ~Elite Skeleton Cleric~
-@4016 = ~Elite Skeleton Mage~
+@4010 = ~Скелет-жрец послушник~
+@4011 = ~Скелет-маг послушник~
+@4012 = ~Опытный скелет-жрец~
+@4013 = ~Опытный скелет-маг~
+@4014 = ~Вампир-маг~ // Used by components #55 and #58
+@4015 = ~Элитный  скелет-жрец~
+@4016 = ~Элитный скелет-маг~
 
 
 /* --------------------------------- *
  *  Butchery in Umar Hills - Wolves  *
  * --------------------------------- */
-@4800 = ~Blood, blood for the pack!~
+@4800 = ~Кровь, кровь для стаи!~
 
 
 /* ---------------------------------- *
  *  Butchery of Yaga-Shura revisited  *
  * ---------------------------------- */
-@5010 = ~Enemies are in serious trouble and Yaga-Shura should appear soon!~
+@5010 = ~Враги в серьезной беде, и Яга-Шура вскоре объявится!~
 
 
 /* ------------------------------------------------------- *
  *  Butchery in the Druid Grove area (Animals and Druids)  *
  * ------------------------------------------------------- */
-@5201 = ~Shadow Ranger~
+@5201 = ~Теневой рейнджер~
 //@5202 = ~Rodeur de l'ombre d'elite~ // unused ==> DO NOT TRANSLATE
-@5203 = ~Shadow Druid novice~
-@5204 = ~Shadow Druid~                // = strref #43845 (BG2EE)
-@5205 = ~Elite Shadow Druid~
-@5206 = ~Shadow Druid~
-@5207 = ~Elite Shadow Druid~
+@5203 = ~Теневой друид послушник~
+@5204 = ~Теневой друид~                // = strref #43845 (BG2EE)
+@5205 = ~Элитный теневой друид~
+@5206 = ~Теневой друид~
+@5207 = ~Элитный теневой друид~
 
 //@14650 = ~Avec la mort de leur druides, les forces de la nature semblent se manifester contre vous.~ DEPRECATED ==> DO NOT TRANSLATE
 
@@ -141,36 +141,36 @@ Attack! And no mercy!~
 /* ------------------------- *
  *  Butcheries of Sahuagins  *
  * ------------------------- */
-@5600 = ~Rebel novice~
-@5601 = ~Priestess novice~
-@5602 = ~Rebel~           // = strref #46533 (BG2EE)
-@5603 = ~Elite Rebel~
-@5604 = ~Priestess~      // = strref #49747 (BG2EE)
-@5605 = ~High Priestess~
+@5600 = ~Мятежник послушник~
+@5601 = ~Жрица послушница~
+@5602 = ~Мятежник~           // = strref #46533 (BG2EE)
+@5603 = ~Элитный мятежник~
+@5604 = ~Жрица~      // = strref #49747 (BG2EE)
+@5605 = ~Верховная жрица~
 
 
 /* ------------------------- *
  *  Butcheries of Skeletons  *
  * ------------------------- */
-@5800 = ~Hahaha! You should never have made it this far!~ // former @14662
-@5801 = ~Alarm! Intruders dare to enter our lair!~        // former @14663
+@5800 = ~Хахаха! Тебе не следовало заходить так далеко!~ // former @14662
+@5801 = ~Тревога! Непрошеные гости осмелились проникнуть в наше логово!~        // former @14663
 
 
 /* -------------------------------------------- *
  *  More enemies scattered throughout the game  *
  * -------------------------------------------- */
-@8000 = ~WHO DARES TO DISTURB MY REST!~
-@8001 = ~MORE ADVENTURERS COME TO STEAL MY TREASURE!~
-@8002 = ~I WILL EXTERMINATE YOU ALL! YOU WILL SHAKE BENEATH MY POWER!~
-@8003 = ~DrAzTiK~
+@8000 = ~КТО ПОСМЕЛ НАРУШИТЬ МОЙ ПОКОЙ!~
+@8001 = ~ОЧЕРЕДНЫЕ ИСКАТЕЛИ ПРИКЛЮЧЕНИЙ ЯВИЛИСЬ, ЧТОБЫ УКРАСТЬ МОИ СОКРОВИЩА!~
+@8002 = ~Я ИСТРЕБЛЮ ВАС ВСЕХ! ВСЕ СОДРОГНУТСЯ ПОД МОЕЙ МОЩЬЮ!~
+@8003 = ~Дразтик~
 
 
 /* --------------------------- *
  *  Shared by many components  *
  * --------------------------- */
-@14660 = ~Poor fool, there are more of us than you think!~
-@14661 = ~Enemies seem to spawn from everywhere!~
-@14664 = ~Intruders in the master's lair! Destroy them all!~
-@14665 = ~Mistress Bodhi has decided to test you, child of Bhaal!~
-@14666 = ~This place will be your tomb!~
+@14660 = ~Бедняга, нас больше, чем ты думаешь!~
+@14661 = ~Враги будто появляются отовсюду!~
+@14664 = ~Незваные гости в логове хозяина! Уничтожьте их всех!~
+@14665 = ~Хозяйка Бодхи решила испытать тебя, дитя Баала!~
+@14666 = ~Это место станет твоей могилой!~
 
