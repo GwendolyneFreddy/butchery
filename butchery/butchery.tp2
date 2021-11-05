@@ -2,7 +2,7 @@ BACKUP ~weidu_external/backup/butchery~
 //AUTHOR ~"draztik.vince@gmail.com"~
 SUPPORT ~https://www.baldursgateworld.fr/lacouronne/butchery/~
 
-VERSION ~vEAOB5~
+VERSION ~v5.0.0~
 
 README ~butchery/readme/butchery-readme-%LANGUAGE%.html~ ~butchery/readme/butchery-readme-english.html~
 AUTO_EVAL_STRINGS
