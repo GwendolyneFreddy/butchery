@@ -766,7 +766,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
 
 ##### Version 5.0.0 &nbsp;(November 5, 2021)
 
-- Added *butchery.ini* metadata file (including dynamic install order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
+- Added *butchery.ini* metadata file (including dynamic installation order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
 - Added Immutability concept.
 - Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
@@ -806,7 +806,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
     - Added `Continue()` action when appending are .bcs files with `EXTEND_TOP` command.
 - "*Rebalancing some generic creatures*" component:
     - Renamed .tpa file name to *11_rebalancing_creatures.tpa*.
-    - Improved more creatures statistics.
+    - Improved more creatures' statistics.
 - "*Rebalancing Tazok and DigDag*" component:
     - Renamed .tpa file name to *12_rebalancing_tazok.tpa*.
     - Flagged potions as "undroppable" in creatures' inventories.
