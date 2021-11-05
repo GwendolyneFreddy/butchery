@@ -54,7 +54,7 @@ ACTION_IF !VARIABLE_IS_SET bg2_chapter BEGIN // Always block must run only once 
 	 *    Creates the external folders    *
 	 * ---------------------------------- */
 
-	ACTION_FOR_EACH folder IN ~weidu_external~ ~%marker_loc%~ ~weidu_external/lang/~ ~%ext_lang_loc%~ BEGIN
+	ACTION_FOR_EACH folder IN ~weidu_external~ ~%marker_loc%~ ~weidu_external/lang~ ~%ext_lang_loc%~ BEGIN
 		ACTION_IF (NOT DIRECTORY_EXISTS ~%folder%~) BEGIN
 			MKDIR ~%folder%~
 		END

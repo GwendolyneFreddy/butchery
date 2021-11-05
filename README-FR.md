@@ -91,11 +91,11 @@ Si vous rencontrez des bugs, veuillez les signaler dans le <a href="https://www.
 #### Ordre d'installation
 
 >Je recommande fortement aux joueurs de ToB original de télécharger et d'installer la dernière version du <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> avant d'installer ce mod.<br>
->Je vous conseille aussi de jouer avec le mod <a href="http://www.mediafire.com/file/b9mtiwvj4aah42r/Derats_AutoRest_v4.zip/file">auto resting</a> produit par deratiseur afin de pouvoir régénérer vos sorts entre les combats sans avoir à vous reposer 8 heures. :wink;
+>Je vous conseille aussi de jouer avec le mod <a href="http://www.mediafire.com/file/b9mtiwvj4aah42r/Derats_AutoRest_v4.zip/file">auto resting</a> produit par deratiseur afin de pouvoir régénérer vos sorts entre les combats sans avoir à vous reposer 8 heures. :wink:
 
 Voici l'ordre d'installation conseillé :
 - Veuillez installer BuTcHeRY après TobEx, BG2 Fixpack, Ascension et EET.
-- Veuillez installer BuTcHeRY avant les procédures finales de « biffing » [*NdT : archivage avec Generalized biffing*].
+- Veuillez installer BuTcHeRY avant EET_End et les procédures finales de « biffing » [*NdT : archivage avec Generalized biffing*].
 
 :warning: Comme j'utilise les scripts de combat proposés par le jeu original, vous pouvez encore augmenter la difficulté en installant le mod <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> (composant « *IA générale plus efficace* »). Les premiers composants sont à installer avant Stratagems pour une meilleure expérience et difficulté tandis que les autres composants sont à installer après Stratagems (tout ceci est détaillé avant l'installation de chaque <a href="#components">composant</a>).
 <div align="right"><a href="#top">Retour en haut de page</a></div>
@@ -710,7 +710,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisées :
 - L'équipe de <a href="https://www.baldursgateworld.fr">La Couronne de Cuivre</a> pour l'hébergement de ce mod.
 - Les créateurs de la série Baldur's Gate : <a href="https://www.bioware.com/">Bioware</a> et <a href="https://www.obsidian.net/">Black Isle Studios</a>.
 - Un énorme merci à Lauriel pour avoir relu et corrigé la version anglaise.
-- Merci à yota13 pour la traduction russe.
+- Merci à yota13 pour la traduction russe. skusha
 - Un grand merci à Freddy_Gwendo pour avoir rendu possible la mise à jour de ce mod.
 - Merci à Pen of Chaos pour son pack de sons de barbare.
 - Merci aux artistes de portraits du site <a href="https://www.pinterest.fr/">Pinterest</a>.
@@ -749,7 +749,7 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisées :
 
 <p>Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour par l'auteur.</p>
 
-##### Version 5.0.0 &nbsp;(October nn, 2021)
+##### Version 5.0.0 &nbsp;(November 5, 2021)
 
 - Added *butchery.ini* metadata file (including dynamic install order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
@@ -796,7 +796,6 @@ Les capacités et immunités des squelettes et momies ennemis sont standardisées :
     - Renamed .tpa file name to *12_rebalancing_tazok.tpa*.
     - Flagged potions as "undroppable" in creatures' inventories.
     - Compiled *d9tazokk.baf* if 1st component has not been installed.
-- ...
 - Added Russian translation (by yota13).
 - Proofread English strrefs and completed English translation (Gwendolyne and Lauriel).
 - Added brand new *butchery-readme-%LANGUAGE%.html* files, with videos and moved them into new :file_folder: *readme* folder.

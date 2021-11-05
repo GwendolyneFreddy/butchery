@@ -96,7 +96,7 @@ If you encounter any bugs, please <a href="https://www.baldursgateworld.fr/lacou
 
 Here is the recommended installation order:
 - Please install BuTcHeRY after TobEx, BG2 Fixpack, Ascension and EET.
-- Please install BuTcHeRY before any final "biffing" routines.
+- Please install BuTcHeRY before EET_End, any final "biffing" routines.
 
 :warning: As I use vanilla scripts, you can further increase the difficulty if you install the <a href="https://github.com/Gibberlings3/SwordCoastStratagems">Stratagems</a> mod ('*Smarter general AI*' component). The first components are to be installed before Stratagems for a better experience and difficulty while the other components are to be installed after Stratagems (read the details before installing each <a href="#components">component</a>).
 
@@ -152,7 +152,7 @@ BuTcHeRy for Linux is distributed in the same compressed archive and does not in
 
 Extract the contents of the mod to the folder of the game you wish to modify.
 
-Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidu and weinstall to `/usr/bin`. Following that, open a terminal, **cd** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
+Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidu and weinstall to `/usr/bin`. Following that, open a terminal, **`cd`** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
 
 To install, run **`weinstall setup-butchery`** in your game folder. Then run **`wine bgmain.exe`** (or **`wine baldur.exe`** for EE games) and start playing.
 
@@ -764,7 +764,7 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
 
 ## <a name="versions" id="versions"></a>Version History
 
-##### Version 5.0.0 &nbsp;(October nn, 2021)
+##### Version 5.0.0 &nbsp;(November 5, 2021)
 
 - Added *butchery.ini* metadata file (including dynamic install order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
@@ -811,7 +811,6 @@ Equipment, stats and proficiencies are tweaked a bit, especially DigDag's.
     - Renamed .tpa file name to *12_rebalancing_tazok.tpa*.
     - Flagged potions as "undroppable" in creatures' inventories.
     - Compiled *d9tazokk.baf* if 1st component has not been installed.
-- ...
 - Added Russian translation (by yota13).
 - Proofread English strrefs and completed English translation (Gwendolyne and Lauriel).
 - Added brand new *butchery-readme-%LANGUAGE%.html* files, with videos and moved them into new :file_folder: *readme* folder.
